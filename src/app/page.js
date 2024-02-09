@@ -43,14 +43,14 @@ export default function Home() {
     </main> */}
         <main className="bg-[#037bd1] text-white p-3">
           <h1 className="text-4xl text-white font-bold text-center my-6">
-            <span className="text-white font-inter">Planned Maintenance in Progress</span>
+            <span className="text-white font-mono">Planned Maintenance in Progress</span>
           </h1>
           <p className="text-center px-[70px]">
-            <span className="text-white text-2xl font-inter">
+            <span className="text-white text-2xl font-mono">
             Welcome to the Business Site of <b className="text-[#df350a]">BFG Global Consulting Limited</b> 
             </span>
           </p>
-          <p className="text-center text-xl font-inter">
+          <p className="text-center text-xl font-mono">
           Our site is currently scheduled for maintenance and service update.
 While we are working to complete our maintenance 
           </p>
