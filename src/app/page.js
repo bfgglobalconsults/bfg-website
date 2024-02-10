@@ -5,7 +5,7 @@ import Logo from "./bfg-logo.png";
 import Animation from "../../public/office_banner.jpg";
 
 export default function Home() {
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
       const timer = setInterval(() => {
@@ -30,6 +30,7 @@ export default function Home() {
 
       return timeLeft;
   }
+  
   return (
     <>
       <div className="w-screen h-screen">
@@ -41,7 +42,7 @@ export default function Home() {
         {/* <main className="flex min-h-screen flex-col items-center justify-between">
 
     </main> */}
-        <main className="bg-[#037bd1] text-white p-3">
+        <div className="bg-[#037bd1] text-white p-3">
           <h1 className="text-4xl text-white font-bold text-center my-6">
             <span className="text-white font-inter">Planned Maintenance in Progress</span>
           </h1>
@@ -83,21 +84,8 @@ While we are working to complete our maintenance
             <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg></span> <span>info@bfgconsults.com</span>
           </p>
 </div>
-        </main>
+        </div>
       </div>
-      {/* <div className="relative w-screen h-screen">
-    <Image src={Animation} alt="banner" className="w-[100%] h-[100%] object-fit" />
-					<div>
-						<div className="absolute top-0 left-10">
-							<Image src={Logo} alt="logo" className="w-32 h-32" />
-						</div>
-
-						<div className="absolute inset-x-0 bottom-10 text-center">
-							<p className="text-black text-4xl font-bold">Scheduled Maintenance in Progress...</p>
-							<p className="text-black text-2xl italic">We will be back soon!!!</p>
-						</div>
-					</div>
-				</div> */}
     </>
   );
 }
