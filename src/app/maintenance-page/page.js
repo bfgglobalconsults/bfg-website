@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Logo from "./bfg-logo.png";
-import Animation from "../../public/office_banner.jpg";
+import Logo from "../bfg-logo.png";
 
 export default function Maintenance() {
   const [timeLeft, setTimeLeft] = useState({
