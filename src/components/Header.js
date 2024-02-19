@@ -196,7 +196,7 @@ const Header = () => {
                   {/* <div className="w-[100px] h-[100px]">
                     <Image src={Logo} className="w-full h-full object-fit" alt="logo" />
                   </div> */}
-                  <div className="font-bold text-center text-[16px] text-gray-800">
+                  <div className="py-[40px] font-bold text-center text-[16px] text-gray-800">
                 {links.map(({ id, link, label }) => (
                     <div key={id} className="pl-[32px] py-[20px]">
             <Link href={link} className="hover:text-[#E45F11]">{label}</Link>
