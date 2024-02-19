@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Logo from "@/bfg-logo.png";
+import Logo from "../../app/bfg-logo.png";
 
 export default function Maintenance() {
   const [timeLeft, setTimeLeft] = useState({
