@@ -15,7 +15,7 @@ export default function Main() {
           <div className="w-[50%]">
               <div className="p-[40px]">
                 <h3 className="font-bold text-4xl text-[#E45F11]">We Grow Your Business & Organization with the Latest Technology</h3>
-                <p className="text-xl my-2">With expertise  in research and analytics, business strategy and operations, training and development, and information technology, we empower companies to thrive in today's dynamic business landscape.  </p>
+                <p className="text-xl my-2">With expertise  in research and analytics, business strategy and operations, training and development, and information technology, we empower companies to thrive in todays dynamic business landscape.  </p>
               </div>
           </div>
           <div className="w-[50%]">
