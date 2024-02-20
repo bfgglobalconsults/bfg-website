@@ -66,7 +66,7 @@ export default function Main() {
           </div>
         </div>
         <div className="p-[40px]">
-          <h3 className="my-4 text-2xl font-bold">Featured Insights</h3>
+          <h3 className="my-4 text-3xl font-bold text-center">Featured Insights</h3>
           <div className="w-full flex flex-wrap gap-[40px]">
             {banner.map((item, index) => (
               <div
@@ -98,7 +98,7 @@ export default function Main() {
           </div>
         </div>
         <div className="p-[40px]">
-        <h3 className="my-4 text-2xl font-bold">Our Solutions</h3>
+        <h3 className="my-4 text-3xl font-bold text-center">Our Solutions</h3>
         <p className="text-xl my-3">We offer a bespoke broad spectrum of consulting practice within a four-product line of service for all businesses across sectors. Either as a startup, SME or as a large enterprise </p>
               <div>
               <div className="w-full flex flex-wrap gap-[20px] justify-center">
