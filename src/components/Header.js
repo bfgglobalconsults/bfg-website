@@ -88,7 +88,7 @@ const Header = () => {
 
         <div
           className={`${
-            active === true ? "w-full p-[10px] px-[20px] bg-[#037bd1] fixed top-0 left-0 z-10" : null
+            active === true ? "w-full p-[10px] px-[20px] bg-[#016EF8] fixed top-0 left-0 z-10" : null
           } px-[40px] text-white border-b border-[#e4e4eb]`}
         >
             <div className="flex justify-between items-center">
@@ -144,7 +144,7 @@ const Header = () => {
         <MediaQuery max="lg">
         <div
           className={`${
-            active === true ? "w-full p-[10px] px-[20px] bg-[#037bd1] fixed top-0 left-0 z-10" : null
+            active === true ? "w-full p-[10px] px-[20px] bg-[#016EF8] fixed top-0 left-0 z-10" : null
           } px-[40px] text-white border-b border-[#e4e4eb]`}
         >
             <div className="flex justify-between items-center gap-2">
