@@ -13,10 +13,30 @@ export default function Main() {
   const [toggle, setToggle] = useState(false);
 
   const cards = [
-    { id: 1, title: 'Research & Analytics', content: 'We provide startups, and SMEs with valuable insights and information that can inform business strategies, decision-making processes, and problem-solving efforts. We serve as an impartial partner for businesses in the process of gathering, analyzing and interpreting data in order to make informed decisions' },
-    { id: 2, title: 'Business Strategy & Operations', content: 'Earn your business the ability to achieve desired goals through the development and implementation of plans and processes aimed at improving competitiveness. Through this service, we help startups and SMEs align their operations with their overall business objectives, streamline processes and optimise resources.' },
-    { id: 3, title: 'Training & Development', content: 'Improve job performance through employee training. Win the process of enhancing the skills, knowledge and abilities of employees to perform their jobs more  effectively. Through this solution, we help startups and SMEs improve their overall performance by investing in the development of their employees. ' },
-    { id: 4, title: 'Information Technology', content: 'Boost your business growth with digital tools. We take you through the process of designing and developing cutting-edge technology to enhance business effectiveness, ranging from web development and artificial intelligence to machine learning and block chain technology.  ' }
+    {
+      id: 1,
+      title: "Research & Analytics",
+      content:
+        "We provide startups, and SMEs with valuable insights and information that can inform business strategies, decision-making processes, and problem-solving efforts. We serve as an impartial partner for businesses in the process of gathering, analyzing and interpreting data in order to make informed decisions",
+    },
+    {
+      id: 2,
+      title: "Business Strategy & Operations",
+      content:
+        "Earn your business the ability to achieve desired goals through the development and implementation of plans and processes aimed at improving competitiveness. Through this service, we help startups and SMEs align their operations with their overall business objectives, streamline processes and optimise resources.",
+    },
+    {
+      id: 3,
+      title: "Training & Development",
+      content:
+        "Improve job performance through employee training. Win the process of enhancing the skills, knowledge and abilities of employees to perform their jobs more  effectively. Through this solution, we help startups and SMEs improve their overall performance by investing in the development of their employees. ",
+    },
+    {
+      id: 4,
+      title: "Information Technology",
+      content:
+        "Boost your business growth with digital tools. We take you through the process of designing and developing cutting-edge technology to enhance business effectiveness, ranging from web development and artificial intelligence to machine learning and block chain technology.  ",
+    },
   ];
 
   const handleClick = (id) => {
@@ -66,7 +86,39 @@ export default function Main() {
           </div>
         </div>
         <div className="p-[40px]">
-          <h3 className="my-4 text-3xl font-bold text-center">Featured Insights</h3>
+          <h3 className="my-4 text-3xl text-[#016EF8] font-bold text-center">Our Solutions</h3>
+          <p className="text-xl my-3">
+            We offer a bespoke broad spectrum of consulting practice within a
+            four-product line of service for all businesses across sectors.
+            Either as a startup, SME or as a large enterprise{" "}
+          </p>
+          <div>
+            <div className="w-full flex flex-wrap gap-[20px] justify-center">
+              {cards.map((card) => (
+                <div
+                  key={card.id}
+                  className={`w-[30%] h-[300px] border-2 rounded-md border-[#ccc] p-[20px] cursor-pointer text-center hover:border-[#016EF8] transition-all duration-300 ease-in-out  ${
+                    selectedCard === card.id
+                      ? toggle
+                        ? "bg-[#016EF8] text-white"
+                        : "bg-[#E45F11] text-white"
+                      : ""
+                  } flex flex-col justify-center`}
+                  onClick={() => handleClick(card.id)}
+                >
+                  <h2 className="text-xl font-bold">{card.title}</h2>
+                  {selectedCard === card.id && (
+                    <p className="text-lg p-2">{card.content}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="p-[40px]">
+          <h3 className="my-4 text-3xl text-[#016EF8] font-bold text-center">
+            Featured Insights
+          </h3>
           <div className="w-full flex flex-wrap gap-[40px]">
             {banner.map((item, index) => (
               <div
@@ -79,9 +131,8 @@ export default function Main() {
                   className="w-[400px] h-[100%] object-fit"
                 />
                 <div>
-                 
-                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Transparent overlay */}
-
+                  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>{" "}
+                  {/* Transparent overlay */}
                   <div className="absolute bottom-14 left-10">
                     <p className="text-white text-xl my-4">{item.title}</p>
                     <a
@@ -96,24 +147,6 @@ export default function Main() {
               </div>
             ))}
           </div>
-        </div>
-        <div className="p-[40px]">
-        <h3 className="my-4 text-3xl font-bold text-center">Our Solutions</h3>
-        <p className="text-xl my-3">We offer a bespoke broad spectrum of consulting practice within a four-product line of service for all businesses across sectors. Either as a startup, SME or as a large enterprise </p>
-              <div>
-              <div className="w-full flex flex-wrap gap-[20px] justify-center">
-      {cards.map(card => (
-        <div
-          key={card.id}
-          className={`w-[30%] h-[300px] border-2 rounded-md border-[#ccc] p-[10px] cursor-pointer text-center hover:border-[#016EF8] transition-all duration-300 ease-in-out  ${selectedCard === card.id ? (toggle ? 'bg-[#016EF8] text-white' : 'bg-[#E45F11] text-white') : ''} flex flex-col justify-center`}
-          onClick={() => handleClick(card.id)}
-        >
-          <h2 className="text-xl font-bold">{card.title}</h2>
-          {selectedCard === card.id && <p className="text-lg p-2">{card.content}</p>}
-        </div>
-      ))}
-    </div>
-              </div>
         </div>
       </div>
     </>
