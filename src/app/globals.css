@@ -31,3 +31,25 @@
     text-wrap: balance;
   }
 }
+
+/* Front of the card */
+.front {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Back of the card */
+.back {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  transform: rotateY(-180deg);
+}
+
+/* Applied when the card is flipped */
+.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.flipped .back {
+  transform: rotateY(0deg);
+}
