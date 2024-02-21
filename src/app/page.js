@@ -69,7 +69,7 @@ export default function Main() {
               <h3 className="font-bold text-3xl lg:text-4xl text-[#E45F11]">
                 We Grow Your Business & Organization with the Latest Technology
               </h3>
-              <p className="text-xl my-2">
+              <p className="text-xl text-[#656565] my-2">
                 With expertise in research and analytics, business strategy and
                 operations, training and development, and information
                 technology, we empower companies to thrive in todays dynamic
@@ -87,7 +87,7 @@ export default function Main() {
         </div>
         <div className="p-[40px]">
           <h3 className="my-4 text-3xl  font-bold text-center">Our Solutions</h3>
-          <p className="text-xl my-3">
+          <p className="text-xl text-[#656565] text-center my-3">
             We offer a bespoke broad spectrum of consulting practice within a
             four-product line of service for all businesses across sectors.
             Either as a startup, SME or as a large enterprise{" "}
