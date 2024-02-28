@@ -107,11 +107,11 @@ export default function Main() {
   return (
     <>
       <div className="py-[30px]">
-        <div className="w-full lg:flex items-center">
+        <div className="w-full lg:flex items-center my-4">
           <div className="w-full lg:w-[50%]">
             <div className="p-[40px]">
               <h3 className="font-bold text-3xl lg:text-4xl text-[#E45F11]">
-                We Grow Your Business & Organization with the Latest Technology
+               Your Partner in Research, Strategy, Training and Technology
               </h3>
               <p className="text-xl text-[#656565] my-2">
                 With expertise in research and analytics, business strategy and
@@ -129,9 +129,9 @@ export default function Main() {
             />
           </div>
         </div>
-        <div className="p-[40px]">
-          <h3 className="my-4 text-3xl  font-bold text-center">
-            Our Solutions
+        <div className="bg-[#faf8f8bd] p-[40px]">
+          <h3 className="my-4 text-3xl  font-bold text-center text-[#016EF8]">
+            OUR SOLUTIONS
           </h3>
           <p className="text-xl text-[#656565] text-center my-3">
             We offer a bespoke broad spectrum of consulting practice within a
@@ -143,7 +143,7 @@ export default function Main() {
               {cards.map((card) => (
                 <div
                   key={card.id}
-                  className={`w-[30%] h-[300px] shadow-lg rounded-md  p-[20px] cursor-pointer text-center hover:border hover:border-black transition-all duration-300 ease-in-out  ${
+                  className={`w-[40%] h-[300px] shadow-lg rounded-md  p-[20px] cursor-pointer text-center hover:border hover:border-black transition-all duration-300 ease-in-out  ${
                     selectedCard === card.id
                       ? toggle
                         ? "bg-[#016EF8] text-white"
@@ -157,7 +157,7 @@ export default function Main() {
                   )}{" "}
                   <h2 className="text-xl font-bold">{card.title}</h2>
                   {selectedCard === card.id && (
-                    <p className="text-lg p-2">{card.content}</p>
+                    <p className="text-[14px] p-2">{card.content}</p>
                   )}
                 </div>
               ))}
@@ -165,8 +165,8 @@ export default function Main() {
           </div>
         </div>
         <div className="p-[40px]">
-          <h3 className="my-4 text-3xl font-bold text-center">
-            Featured Insights
+          <h3 className="my-4 text-3xl font-bold text-center text-[#016EF8]">
+            FEATURED INSIGHTS
           </h3>
           <div className="w-full flex flex-wrap gap-[40px]">
             {banner.map((item, index) => (

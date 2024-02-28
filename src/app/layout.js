@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter"});
+// const poppins = Poppins({ subsets: ["latin"], variable: "--poppins"});
 
 export const metadata = {
   title: "BFG Global Consulting, LLC",
