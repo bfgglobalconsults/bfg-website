@@ -29,6 +29,14 @@ export const navigation_links = [
       label: "Portfolio",
       link: "portfolio",
       dropdown: true,
+      dropdown_item: [
+        {
+            id: 1,
+            label: "Projects Executed",
+            link: "portfolio/projects"
+        },
+       
+      ],
 
     },
     {
