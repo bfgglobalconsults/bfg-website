@@ -86,22 +86,22 @@ export const navigation_links = [
         {
             id: 1,
             label: "Research & Analytics",
-            link: "solution/research-analytics"
+            link: "solutions/research-analytics"
         },
         {
             id: 2,
             label: "Business Strategy & Operations",
-            link: "solution/business"
+            link: "solutions/business-strategy"
         },
         {
             id: 3,
             label: "Training & Development",
-            link: "solution/training-development"
+            link: "solutions/training-development"
         },
         {
             id: 4,
             label: "Information Technology",
-            link: "solution/it"
+            link: "solutions/information-technology"
         },
       ],
 

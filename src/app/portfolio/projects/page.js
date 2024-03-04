@@ -7,13 +7,12 @@ import Project4 from "../../../../public/assets/project-4.jpg";
 import Project5 from "../../../../public/assets/project-5.jpg";
 import Project6 from "../../../../public/assets/project-6.jpg";
 
-
 const page = () => {
   return (
     <>
       <div className="py-[30px]">
         <div className="p-[40px]">
-          <h2 className="text-2xl font-bold">Project Executed</h2>
+          <h2 className="text-2xl font-bold text-center">Project Executed</h2>
           <p>
             Our solutions help clients gain resilience and manage industry
             challenges toward maximising greater opportunities. See a brief
@@ -163,23 +162,19 @@ const page = () => {
                 </div>
                 <div className="w-[60%]">
                   <p className="text-[#016EF8] font-bold my-2">
-                  Projected Business Plan and Advisory service for WorkaHQ.
+                    Projected Business Plan and Advisory service for WorkaHQ.
                   </p>
                   <p>
-                  WorkaHQ, a tech-based provider of
-household services, specialises in
-laundry, kitchen maintenance, and
-support services. This initiative was
-launched to attract investors and grow.
-A market insight strategy was created by
-our business planning and advising
-team for the companys initiative to
-draw in over $20,000 in funding
+                    WorkaHQ, a tech-based provider of household services,
+                    specialises in laundry, kitchen maintenance, and support
+                    services. This initiative was launched to attract investors
+                    and grow. A market insight strategy was created by our
+                    business planning and advising team for the companys
+                    initiative to draw in over $20,000 in funding
                   </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
