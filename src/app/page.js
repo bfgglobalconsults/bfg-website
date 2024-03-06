@@ -1,12 +1,18 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
 import Banner from "../../public/assets/header-banner.png";
 import ImageBanner from "../../public/assets/banner-image1.jpg";
 import ImageBanner2 from "../../public/assets/banner-image2.jpg";
 
 import Logo from "./bfg-logo.png";
 import Animation from "../../public/office_banner.jpg";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import { partners_links } from "@/constants/partners-constants";
 
 export default function Main() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -83,7 +89,6 @@ export default function Main() {
     },
   ];
 
-
   const handleClick = (id) => {
     setSelectedCard(id === selectedCard ? null : id);
     setToggle(!toggle);
@@ -112,7 +117,7 @@ export default function Main() {
           <div className="w-full lg:w-[50%]">
             <div className="p-[40px]">
               <h3 className="font-bold text-3xl lg:text-4xl text-[#E45F11]">
-               Your Partner in Research, Strategy, Training and Technology
+                Your Partner in Research, Strategy, Training and Technology
               </h3>
               <p className="text-xl text-[#656565] my-2">
                 With expertise in research and analytics, business strategy and
@@ -196,6 +201,48 @@ export default function Main() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="py-28">
+<h3 className="text-center text-2xl font-bold my-2 text-[#016EF8]">OUR PARTNERS</h3>
+            <Swiper
+              style={{ "--swiper-navigation-size": "20px" }}
+              slidesPerView={2}
+              breakpoints={{
+                0: {
+                  slidesPerView: 2,
+                },
+                300: {
+                  slidesPerView: 3,
+                },
+                600: {
+                  slidesPerView: 6,
+                },
+              }}
+              autoplay={{ delay: 5000, disableOnInteraction: false }}
+              spaceBetween={1}
+              navigation={true}
+              modules={[Navigation, Autoplay]}
+              className="w-full flex justify-center items-center"
+            >
+              {partners_links.map(({ image, name }, index) => {
+                return (
+                  <SwiperSlide className="flex justify-center" key={index}>
+                    <div className="w-[400px] h-[200px] text-center">
+                      <div className="p-4">
+                        <div className="w-[150px] h-[100px]">
+                          <Image
+                            src={image}
+                            alt={name}
+                            className="w-full h-full object-fit"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
       </div>

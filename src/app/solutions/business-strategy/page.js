@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/business-strategy.jpg";
+import MapBanner from "../../../../public/assets/map-banner.jpg";
+import Accordion from "@/components/Accordion";
 
 const page = () => {
   return (
     <>
       <div className="py-[30px]">
         <div className="p-[40px]">
-          <h2 className="text-2xl font-bold my-3 text-center text-[#016EF8]">
+          <h2 className="text-3xl font-bold my-3 text-center text-[#016EF8]">
             BUSINESS STRATEGY AND OPERATIONS
           </h2>
           <div className="w-full flex items-center gap-2">
@@ -41,175 +43,105 @@ const page = () => {
             <h3 className="my-3 text-[#016EF8] text-center font-bold text-2xl">
               A key focus of our Business Strategy and Operations solutions
             </h3>
-            <p className="my-4">
-              <span className="font-bold">Business Formation:</span> We take the
-              stress off our clients in the process of choosing a business
-              structure and registering their business with the appropriate
-              government agency. Common business structures often include sole
-              proprietorships, partnerships, limited liability companies (LLCs),
-              and corporations.
-            </p>
-            <p className="my-2">
-              <span className="font-bold">
-                Business strategy development and implementation:
-              </span>{" "}
-              This includes market research and analysis, competitive analysis,
-              and the development of a comprehensive business plan for your
-              business.
-            </p>
+            <div className="">
+              <div className="relative w-[80%] h-[100%] bg-[#016EF8] shadow-lg p-8 mx-auto ">
+                  <div className="text-white">
+                    <ul className="list-disc">
+                      <li className="my-2">
+                        <span className="font-bold">Business Formation:</span>{" "}
+                        We take the stress off our clients in the process of
+                        choosing a business structure and registering their
+                        business with the appropriate government agency. Common
+                        business structures often include sole proprietorships,
+                        partnerships, limited liability companies (LLCs), and
+                        corporations.
+                      </li>
+                      <li className="my-2">
+                        <span className="font-bold">
+                          Business strategy development and implementation:
+                        </span>{" "}
+                        This includes market research and analysis, competitive
+                        analysis, and the development of a comprehensive
+                        business plan for your business.
+                      </li>
+                      <li className="my-2">
+                        <span className="font-bold">
+                          Operations assessment and optimisation:
+                        </span>{" "}
+                        This covers our single-mindedness in reviewing and
+                        analysing current operations to identify areas for
+                        improvement and implementing changes to increase
+                        efficiency and reduce costs for organisations.
+                      </li>
+                      <li className="my-2">
+                        <span className="font-bold">
+                          Organisational design and restructuring:
+                        </span>{" "}
+                        This include reviewing your current organisational
+                        structure and making changes to improve alignment with
+                        business goals and objectives.
+                      </li>
+                      <li className="my-2">
+                        <span className="font-bold">
+                          Performance management:
+                        </span>{" "}
+                        We accelerate business decisions through the
+                        implementation of systems and processes for monitoring
+                        and measuring performance, as well as providing guidance
+                        and support for achieving performance goals in your
+                        business.
+                      </li>
+                      <li className="my-2">
+                        <span className="font-bold">Change management:</span>{" "}
+                        This includes planning and executing changes to systems,
+                        processes, and organisational structure in a way that
+                        minimise disruption and maximise benefits.
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
 
-            <p className="my-2">
-              <span className="font-bold">
-                Operations assessment and optimisation:
-              </span>{" "}
-              This covers our single-mindedness in reviewing and analysing
-              current operations to identify areas for improvement and
-              implementing changes to increase efficiency and reduce costs for
-              organisations.
-            </p>
-
-            <p className="my-2">
-              <span className="font-bold">
-                Organisational design and restructuring:
-              </span>{" "}
-              This include reviewing your current organisational structure and
-              making changes to improve alignment with business goals and
-              objectives.
-            </p>
-
-            <p className="my-2">
-              <span className="font-bold">Performance management:</span> We
-              accelerate business decisions through the implementation of
-              systems and processes for monitoring and measuring performance, as
-              well as providing guidance and support for achieving performance
-              goals in your business.
-            </p>
-
-            <p className="my-2">
-              <span className="font-bold">Change management:</span> This
-              includes planning and executing changes to systems, processes, and
-              organisational structure in a way that minimise disruption and
-              maximise benefits.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-center font-bold">Service Benefits</h3>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">
-                Market Feasibility and Planning:
-              </span>{" "}
-              For business plan drafting, get real-time information about your
-              market. This service offers you the ability to recognise new data
-              architecture and market entry strategies. It makes it easier for
-              your organisation to obtain data for market service while
-              guaranteeing customer-valued goods. This service enables you
-              Product Concept Testing: to understand the properties,
-              characteristics, and performance of products before, during, and
-              after launch by capturing real-real time feedback on your product.
-              This makes it possible for a producer to use a UI/UX process to
-              evaluate a products functionality, safety, quality, and adherence
-              to specified standards.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">Measure production agility:</span>{" "}
-              With unmatched scalability and resilience, this service provides
-              you with insights into your production process and quality level
-              with your production managers. You can improve cost performance
-              and productivity through end- to-end real-time data collection and
-              analytical management.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">
-                Measure Customer Needs and Satisfaction (CNSAT):
-              </span>{" "}
-              Have real-time knowledge about your customers needs and understand
-              if you are meeting them. Our research and analytics service are
-              used to forecast, manage, and get insight into customer needs and
-              satisfaction levels. This will help you manage your future service
-              process.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">
-                Measure experience with customers:
-              </span>{" "}
-              Collect real-time data about customer satisfaction with your
-              product. This service can improve client connections across any
-              channel by providing clearer, more accurate responses to questions
-              in any language.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">
-                Employee Satisfaction and Performance Appraisal:
-              </span>{" "}
-              Engage your employees in decision- making through a quality
-              feedback mechanism. By periodically evaluating an employees work
-              performance and the manager-employee relationship in light of your
-              organisations competence requirements, you may strengthen the
-              operational connection of your organisation.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-center font-bold">Service Benefits</h3>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">
-                Increased efficiency and productivity:
-              </span>{" "}
-              By streamlining operations and identifying areas for improvement,
-              our business strategy and operations service helps organisations
-              to increase their overall efficiency and productivity.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">
-                Increased efficiency and productivity:
-              </span>{" "}
-              By streamlining operations and identifying areas for improvement,
-              our business strategy and operations service helps organisations
-              to increase their overall efficiency and productivity.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">Cost savings:</span> Identifying and
-              implementing cost-saving measures can help your organisation
-              reduce expenses and increase its bottom line.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">Improved decision-making:</span>{" "}
-              Access to accurate, up-to-date information and expert analysis
-              helps our clients make more informed and effective decisions for
-              their businesses.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">Enhanced competitive advantage:</span>{" "}
-              Identifying and leveraging competitive advantages helps our
-              clients gain an edge over their rivals in the marketplace.
-            </p>
-          </div>
-          <div>
-            <p>
-              <span className="font-bold">Greater scalability:</span> Developing
-              scalable systems and processes, also helps leaders and managers of
-              organisations prepare for and manage growth in their business.
-            </p>
+            {/* services container */}
+            <div className="container mx-auto py-8">
+              <h1 className="text-2xl font-bold mb-4">Service Benefits</h1>
+              <Accordion title="Increased efficiency and productivity">
+                <p>
+                  By streamlining operations and identifying areas for
+                  improvement, our business strategy and operations service
+                  helps organisations to increase their overall efficiency and
+                  productivity.
+                </p>
+              </Accordion>
+              <Accordion title="Cost savings">
+                <p>
+                  Identifying and implementing cost-saving measures can help
+                  your organisation reduce expenses and increase its bottom
+                  line.
+                </p>
+              </Accordion>
+              <Accordion title="Improved decision-making">
+                <p>
+                  Access to accurate, up-to-date information and expert analysis
+                  helps our clients make more informed and effective decisions
+                  for their businesses.
+                </p>
+              </Accordion>
+              <Accordion title="Enhanced competitive advantage">
+                <p>
+                  Identifying and leveraging competitive advantages helps our
+                  clients gain an edge over their rivals in the marketplace.
+                </p>
+              </Accordion>
+              <Accordion title="Greater scalability">
+                <p>
+                  Developing scalable systems and processes, also helps leaders
+                  and managers of organisations prepare for and manage growth in
+                  their business.
+                </p>
+              </Accordion>
+            </div>
+            {/* services container end */}
           </div>
         </div>
       </div>
