@@ -1,3 +1,8 @@
+import { AboutComponent } from "@/components/navigation-components/AboutComponent";
+import PortfolioComponent from "@/components/navigation-components/PortfolioComponent";
+import ProductComponent from "@/components/navigation-components/ProductComponent";
+import SolutionsComponent from "@/components/navigation-components/SolutionsComponent";
+
 export const navigation_links = [
     {
       id: 1,
@@ -9,6 +14,7 @@ export const navigation_links = [
       id: 2,
       label: "About",
       link: "about",
+      component: <AboutComponent/>,
       dropdown: true,
       dropdown_item: [
         {
@@ -28,6 +34,7 @@ export const navigation_links = [
       id: 3,
       label: "Portfolio",
       link: "portfolio",
+      component: <PortfolioComponent />,
       dropdown: true,
       dropdown_item: [
         {
@@ -43,6 +50,7 @@ export const navigation_links = [
       id: 4,
       label: "Product",
       link: "product",
+      component: <ProductComponent />,
       dropdown: true,
       dropdown_item: [
         {
@@ -81,6 +89,7 @@ export const navigation_links = [
       id: 6,
       label: "Solutions",
       link: "solutions",
+      component: <SolutionsComponent />,
       dropdown: true,
       dropdown_item: [
         {

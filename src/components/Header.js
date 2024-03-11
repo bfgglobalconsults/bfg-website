@@ -16,6 +16,14 @@ const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false);
 
+  const [activeTab, setActiveTab] = useState(null);
+
+  const handleTabClick = (id) => {
+    setActiveTab(activeTab === id ? null : id);
+  };
+
+  
+
   const maskTransitions = useTransition(showMenu, {
     from: { position: "absolute", opacity: 0 },
     enter: { opacity: 1 },
@@ -102,6 +110,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             {active ? (
               <>
+              <Link href="/">
                 <div className="w-[80px] h-15">
                   <Image
                     src={WhiteLogo}
@@ -109,69 +118,44 @@ const Header = () => {
                     className="w-full h-full object-fit"
                   />
                 </div>
+                </Link>
                 <div>
                   <ul className="flex gap-2">
                     {navigation_links.map(
                       ({ id, link, label, dropdown, dropdown_item }) => (
                         <li
                           key={id}
-                          className="nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 hover:text-white duration-200 link-underline"
+                          className={`${activeTab === id ? 'nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white border-b-2 border-white hover:scale-105 hover:text-white duration-200 link-underline':'nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 hover:text-white duration-200 link-underline'} rounded-tl-md ${id === navigation_links.length - 1 ? 'rounded-tr-md' : ''}`}
+                          onClick={() => handleTabClick(id)}
                         >
-                          <Link href={link}>{label}</Link>
-                          {dropdown && (
-                            <div>
-                              <Menu
-                                as="div"
-                                className="relative inline-block text-left"
-                              >
-                                <div>
-                                  <Menu.Button className="inline-flex w-full justify-center rounded-md   text-sm font-medium text-white hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      viewBox="0 0 24 24"
-                                      width="24"
-                                      height="24"
-                                      fill="rgba(255,255,255,1)"
-                                    >
-                                      <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
-                                    </svg>
-                                  </Menu.Button>
-                                </div>
-                                <Transition
-                                  as={Fragment}
-                                  enter="transition ease-out duration-100"
-                                  enterFrom="transform opacity-0 scale-95"
-                                  enterTo="transform opacity-100 scale-100"
-                                  leave="transition ease-in duration-75"
-                                  leaveFrom="transform opacity-100 scale-100"
-                                  leaveTo="transform opacity-0 scale-95"
-                                >
-                                  <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
-                                    {dropdown_item &&
-                                      dropdown_item.map(
-                                        ({ id, label, link }) => (
-                                          <Menu.Item key={id}>
-                                            <button className="text-gray-900 hover:text-[#016EF8] group flex w-full items-center rounded-md px-2 py-2 text-sm">
-                                              <Link href={link}>{label}</Link>
-                                            </button>
-                                          </Menu.Item>
-                                        )
-                                      )}
-
-                                  
-                                  </Menu.Items>
-                                </Transition>
-                              </Menu>
-                            </div>
-                          )}
+                          {/* <Link href={link}>{label}</Link> */}
+                          <button>{label}</button>
+                         
                         </li>
                       )
                     )}
                   </ul>
                 </div>
+                <div>
+        {navigation_links.map(({ id, label, component }) => (
+          <div key={id} className={`modal fixed z-10 inset-0 overflow-y-auto ${activeTab === id ? 'block' : 'hidden'}`}>
+            <div className={`fixed flex w-full justify-center mt-[90px] min-h-[80vh]  ${activeTab === id ? 'animate-slide-in' : 'animate-slide-out'}`}>
+              <div className="relative modal-content bg-[#3781e0] w-full p-8 rounded-lg">
+                <div className="flex flex-col items-center justify-center">
+                <span className="absolute bottom-5 justify-center p-2 cursor-pointer" onClick={() => handleTabClick(id)}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg></span>
+
+                </div>
+                <div>{component}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
               </>
             ) : (
               <>
+                            <Link href="/">
+
                 <div className="w-[100px] h-[90px]">
                   <Image
                     src={Logo}
@@ -179,54 +163,40 @@ const Header = () => {
                     className="w-full h-full object-fit"
                   />
                 </div>
+                </Link>
                 <div>
                   <ul className="flex gap-2">
-                    {navigation_links.map(({ id, link, label, dropdown, dropdown_item }) => (
-                      <li
-                        key={id}
-                        className="nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E45F11] duration-200 link-underline"
-                      >
-                        <Link href={link}>{label}</Link>
-                        {dropdown && (
-                            <div>
-                              <Menu
-                                as="div"
-                                className="relative inline-block text-left"
-                              >
-                                <div>
-                                  <Menu.Button className="inline-flex w-full justify-center rounded-md   text-sm font-medium text-gray-500 hover:text-[#E45F11] hover:bg-[#E45F11]/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
-                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path></svg>
-                                  </Menu.Button>
-                                </div>
-                                <Transition
-                                  as={Fragment}
-                                  enter="transition ease-out duration-100"
-                                  enterFrom="transform opacity-0 scale-95"
-                                  enterTo="transform opacity-100 scale-100"
-                                  leave="transition ease-in duration-75"
-                                  leaveFrom="transform opacity-100 scale-100"
-                                  leaveTo="transform opacity-0 scale-95"
-                                >
-                                  <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
-                                    {dropdown_item &&
-                                      dropdown_item.map(
-                                        ({ id, label, link }) => (
-                                          <Menu.Item key={id}>
-                                            <button className="text-gray-900 hover:text-[#E45F11] group flex w-full items-center rounded-md px-2 py-2 text-sm">
-                                              <Link href={link}>{label}</Link>
-                                            </button>
-                                          </Menu.Item>
-                                        )
-                                      )}
-                                  </Menu.Items>
-                                </Transition>
-                              </Menu>
-                            </div>
-                          )}
-                      </li>
-                    ))}
+                  {navigation_links.map(
+                      ({ id, link, label, dropdown, dropdown_item }) => (
+                        <li
+                          key={id}
+                          className={`${activeTab === id ? 'nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E45F11] border-b-2 border-[#E45F11] duration-200 link-underline':'nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E45F11] duration-200 link-underline'} rounded-tl-md ${id === navigation_links.length - 1 ? 'rounded-tr-md' : ''}`}
+                          onClick={() => handleTabClick(id)}
+                        >
+                          {/* <Link href={link}>{label}</Link> */}
+                          <button>{label}</button>
+                         
+                        </li>
+                      )
+                    )}
+                    
                   </ul>
                 </div>
+                <div>
+        {navigation_links.map(({ id, label, component }) => (
+          <div key={id} className={`modal fixed z-10 inset-0 overflow-y-auto ${activeTab === id ? 'block' : 'hidden'}`}>
+            <div className={`fixed flex w-full justify-center mt-[90px] min-h-[80vh]  ${activeTab === id ? 'animate-slide-in' : 'animate-slide-out'}`}>
+              <div className="relative modal-content bg-[#f39f6e] w-full p-8 rounded-lg">
+                <div className="flex flex-col items-center justify-center">
+                <span className="absolute bottom-5 justify-center p-2 cursor-pointer" onClick={() => handleTabClick(id)}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg></span>
+
+                </div>
+                <div>{component}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
               </>
             )}
           </div>

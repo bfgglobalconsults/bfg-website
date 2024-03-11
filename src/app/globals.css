@@ -33,6 +33,7 @@
 }
 
 /* Front of the card */
+
 .front {
   transform-style: preserve-3d;
   transition: transform 0.6s;
@@ -53,3 +54,34 @@
 .flipped .back {
   transform: rotateY(0deg);
 }
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
