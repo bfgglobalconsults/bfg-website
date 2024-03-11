@@ -18,6 +18,7 @@ export default function Main() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [toggle, setToggle] = useState(false);
 
+
   const cards = [
     {
       id: 1,
