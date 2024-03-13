@@ -1,6 +1,6 @@
 import React from "react";
 
-const PortfolioComponent = () => {
+const IndustryComponent = () => {
   return (
     <>
       <div>
@@ -49,4 +49,4 @@ const PortfolioComponent = () => {
   );
 };
 
-export default PortfolioComponent;
+export default IndustryComponent;

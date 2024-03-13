@@ -29,7 +29,7 @@ const SolutionsComponent = () => {
             </p>
             <p className="text-lg py-4 mx-4 border-t border-b border-white font-semibold">
               
- Information Technology
+ Innovation and Technology
 
             </p>
            
