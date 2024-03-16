@@ -7,13 +7,13 @@ const page = () => {
     <>
       <div className="py-[30px]">
         <div className="p-[40px]">
-          <h2 className="text-4xl text-[#E45F11] font-bold">BFG Global Consulting, LLC</h2>
-          <h3 className="text-3xl font-semibold">Your Growth Partner in a Changing Business Landscape</h3>
+          <h2 className="text-3xl text-[#E45F11] font-bold">BFG Global Consulting, LLC</h2>
+          <h3 className="text-2xl font-semibold">Your Growth Partner in a Changing Business Landscape</h3>
           <div className="flex gap-2 w-full">
             <div className="w-[70%]">
               <p className="text-lg my-2 text-[#656565]">
-                I am delighted to address you today as the Managing Partner and
-                CEO of BFG Global Consulting Limited and introduce our firm.
+                I am delighted to address you today as the <span className="font-bold">Managing Partner</span> and 
+                 <span className="font-bold"> CEO</span> of <span className="font-bold">BFG Global Consulting Limited</span> and introduce our firm.
                 With great passion and commitment, our team at BFG Global
                 Consulting is dedicated to assisting organizations from diverse
                 industries in their pursuit of business growth. We aim to be
@@ -51,7 +51,7 @@ const page = () => {
                   alt="festus-bello"
                   className="w-full h-full object-fit"
                 />
-                <p className="font-semibold">Festus Bello</p>
+                <p className="font-bold">Festus Bello</p>
             </div>
           </div>
           <div>

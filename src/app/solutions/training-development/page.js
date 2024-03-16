@@ -8,9 +8,12 @@ const page = () => {
     <>
       <div className="py-[30px]">
         <div className="p-[40px]">
-          <h2 className="text-2xl font-bold my-3 text-center text-[#E45F11]">
-            TRAINING AND DEVELOPMENT
-          </h2>
+        <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="bg-[#f89d68] p-2 text-white rounded-xl">
+            Training and Development
+            </span>
+          </h3>
+          
           <div className="w-full flex items-center gap-2">
             <div className="w-[50%]">
               <h3 className="text-xl text-[#E45F11] font-bold">
@@ -44,14 +47,14 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="my-3 text-[#E45F11] text-center font-bold text-2xl">
+            <h3 className="my-3 text-[#E45F11] text-center font-bold text-lg">
               While our training and development solution cuts across hard
               (technical) and soft (nontechnical) skill development, the
               solution includes a wide range of services such as:
             </h3>
             <div className="">
-              <div className="relative w-[80%] h-[100%] bg-[#E45F11] rounded-md shadow-lg p-8 mx-auto ">
-                <div className="text-white">
+              <div className="relative w-[80%] h-[100%] bg-white border-b-2 border-[#E45F11] shadow-lg p-8 mx-auto ">
+                <div className="text-black">
                   <ul className="list-disc">
                     <li className="my-2">
                       <span className="font-bold">Needs analysis:</span>{" "}
@@ -109,7 +112,7 @@ const page = () => {
           </div>
 
           <div className="container mx-auto py-8">
-            <h1 className="text-2xl font-bold mb-4">Service Benefits</h1>
+            <h1 className="text-xl font-bold mb-4">Service Benefits</h1>
             <Accordion title="Improved employee performance">
               <p>
                 By providing employees with the knowledge, skills, and abilities

@@ -8,11 +8,15 @@ const page = () => {
     <>
       <div className="py-[30px]">
         <div className="p-[40px]">
-          <h2 className="text-2xl font-bold my-3 text-center text-[#E45F11]">
-            INFORMATION TECHNOLOGY
-          </h2>
+        <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="bg-[#f89d68] p-2 text-white rounded-xl">
+              Information Technology
+            </span>
+          </h3>
+          
           <div className="w-full flex items-center gap-2">
             <div className="w-[50%]">
+            
               <h3 className="text-[#E45F11] font-bold text-xl">
                 Innovative solutions, secure technology, and unparalleled
                 support for your business
@@ -43,12 +47,15 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="my-3 text-[#E45F11] text-center font-bold text-2xl">
-              Top of our service unit on Information Technology
-            </h3>
+          <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="bg-[#f89d68] p-2 text-white rounded-xl">
+            Top of our service unit on Information Technology
+            </span>
+          </h3>
+           
             <div className="">
-              <div className="relative w-[80%] h-[100%] bg-[#E45F11] shadow-lg p-8 mx-auto ">
-                <div className="text-white">
+              <div className="relative w-[80%] h-[100%] bg-white border-b-2 border-[#E45F11] shadow-lg p-8 mx-auto ">
+                <div className="text-black">
                   <ul className="list-disc">
                     <li className="my-2">
                       <span className="font-bold">
@@ -104,7 +111,7 @@ const page = () => {
           </div>
 
           <div className="container mx-auto py-8">
-            <h1 className="text-2xl font-bold mb-4">Service Benefits</h1>
+            <h1 className="text-lg font-bold mb-4">Service Benefits</h1>
             <Accordion title="Improved efficiency and productivity">
               <p>
                 {" "}

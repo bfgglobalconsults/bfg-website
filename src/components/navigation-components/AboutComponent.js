@@ -1,7 +1,8 @@
+import { about_links } from "@/constants/aboutcomponent-constant";
 import Link from "next/link";
 import React from "react";
 
-export const AboutComponent = () => {
+export const AboutComponent = ({ closeModal, color }) => {
   return (
     <>
       <div>
@@ -13,12 +14,25 @@ export const AboutComponent = () => {
               to growth. We are at the intersection of research, strategy,
               workforce training, and information technology.
             </p>
-            <button className="my-8 px-6 py-4 border-2 border-white text-lg font-semibold">
-              <Link href="/about">Explore</Link>
-            </button>
+            
+              <Link href="/about">
+              <button onClick={closeModal} className="my-8 px-6 py-4 border-2 border-white text-lg font-semibold">
+                Explore
+                </button>
+
+                </Link>
           </div>
           <div className="w-[40%]">
-            <p className="text-lg py-4 mx-4 border-t border-b border-white font-semibold">
+            {about_links.map(({id, label, link}) =>(
+              <>
+              <Link key={id} href={link}>
+              <p className={`mx-4 py-4 border-t border-b border-white text-lg font-semibold ${color ? `hover:bg-white hover:text-${color}` : ''}`}>
+                {label}
+                </p>
+                </Link>
+                </>
+            ))}
+            {/* <p className="text-lg py-4 mx-4 border-t border-b border-white font-semibold hover:bg-white hover:text-transparent">
               Who we are
             </p>
             <p className="text-lg py-4 mx-4  font-semibold">Our people</p>
@@ -30,7 +44,7 @@ export const AboutComponent = () => {
             </p>
             <p className="text-lg py-4 mx-4 border-t border-b border-white font-semibold">
               Governance & Culture
-            </p>
+            </p> */}
           </div>
           <div className="w-[40%]"></div>
         </div>

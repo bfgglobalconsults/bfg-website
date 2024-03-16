@@ -8,9 +8,11 @@ const page = () => {
     <>
       <div className="py-[30px]">
         <div className="p-[40px]">
-          <h2 className="text-2xl font-bold my-3 text-center text-[#016EF8]">
-            RESEARCH AND ANALYTICS
-          </h2>
+        <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
+              Research and Analytics
+            </span>
+          </h3>
           <div className="w-full flex items-center gap-2">
             <div className="w-[50%]">
               <p className="text-lg text-[#656565] my-3">
@@ -40,12 +42,14 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="my-3 text-[#016EF8] text-center font-bold text-2xl">
-              ANALYTICS AND TOOLS AND SOLUTIONS
-            </h3>
+          <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
+              Analytic Tools and Solutions
+            </span>
+          </h3>
             <div className="">
-              <div className="relative w-[80%] h-[100%] bg-[#016EF8] shadow-lg p-8 mx-auto ">
-                <div className="text-white">
+              <div className="relative w-[80%] h-[100%] bg-white shadow-lg border-b-2 border-[#016EF8] p-8 mx-auto ">
+                <div className="text-black">
                 <ul className="list-disc">
 
                   <li className="my-2">
@@ -77,7 +81,7 @@ const page = () => {
           </div>
 
           <div className="container mx-auto py-8">
-            <h1 className="text-2xl font-bold mb-4">Service Benefits</h1>
+            <h1 className="text-lg font-bold mb-4">Service Benefits</h1>
             <Accordion title="Market Feasibility and Planning">
               <p>
                 For business plan drafting, get real-time information about your

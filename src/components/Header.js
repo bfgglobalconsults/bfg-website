@@ -17,13 +17,17 @@ const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false);
   const [activeTab, setActiveTab] = useState(null);
+  const modalRef = useRef(null);
 
-
-
-  const handleTabClick = (id) => {
-    // setActiveTab(id === activeTab ? null : id);
-    setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
+  const handleClick = (e) => {
+    if (activeTab !== null) {
+      e.stopPropagation(); // Prevent event propagation only if modal is open
+    }
   };
+
+  // const handleTabClick = (id) => {
+  //   setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
+  // };
 
   const maskTransitions = useTransition(showMenu, {
     from: { position: "absolute", opacity: 0 },
@@ -53,6 +57,42 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target)
+      ) {
+        setActiveTab(null); // Close the modal when clicked outside
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Remove event listener when component unmounts
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const handleTabClick = (id) => {
+    setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
+  };
+
+  const closeModal = () => {
+    setActiveTab(null);
+  };
+
+  const ModalContentWrapper = ({ component, color }) => {
+    const handleClick = (e) => {
+      if (activeTab !== null) {
+        e.stopPropagation(); // Prevent event propagation only if modal is open
+      }
+    };
+  
+    return component && React.cloneElement(component, { closeModal, onClick: handleClick, hoverText: color});
+  };
 
   return (
     <div>
@@ -91,9 +131,9 @@ const Header = () => {
                               ? "rounded-tr-md"
                               : ""
                           }`}
-                          onClick={() => handleTabClick(id)}
+                         
                         >
-                          <button>{label}</button>
+                          <button  onClick={() => handleTabClick(id)}>{label}</button>
                         </li>
                       )
                     )}
@@ -103,6 +143,7 @@ const Header = () => {
                   {navigation_links.map(({ id, label, component }) => (
                     <div
                       key={id}
+                      ref={modalRef}
                       className={`modal fixed z-5 inset-0 overflow-y-auto ${
                         activeTab === id ? "block" : "hidden"
                       }`}
@@ -131,7 +172,7 @@ const Header = () => {
                               </svg>
                             </span>
                           </div>
-                          <div>{component}</div>
+                          <ModalContentWrapper component={component} closeModal={closeModal} color="#016EF8" />
                         </div>
                       </div>
                     </div>
@@ -150,24 +191,24 @@ const Header = () => {
                   </div>
                 </Link>
                 <div>
-                  <ul className="flex gap-2">
+                  <ul className="relative flex gap-2">
                     {navigation_links.map(
                       ({ id, link, label, dropdown, dropdown_item }) => (
                         <li
                           key={id}
+                          ref={modalRef}
                           className={`${
                             activeTab === id
                               ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E45F11] border-b-2 border-[#E45F11] duration-200 link-underline"
                               : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E45F11] duration-200 link-underline"
-                          } rounded-tl-md ${
+                          } rounded-tl-md z-10 ${
                             id === navigation_links.length - 1
                               ? "rounded-tr-md"
                               : ""
                           }`}
-                          onClick={() => handleTabClick(id)}
                         >
                           {/* <Link href={link}>{label}</Link> */}
-                          <button>{label}</button>
+                          <button  onClick={() => handleTabClick(id)}>{label}</button>
                         </li>
                       )
                     )}
@@ -177,7 +218,7 @@ const Header = () => {
                   {navigation_links.map(({ id, label, component }) => (
                     <div
                       key={id}
-                      className={`modal fixed z-10 inset-0 overflow-y-auto ${
+                      className={`modal fixed z-5 inset-0 overflow-y-auto ${
                         activeTab === id ? "block" : "hidden"
                       }`}
                     >
@@ -188,7 +229,7 @@ const Header = () => {
                             : "animate-slide-out"
                         }`}
                       >
-                        <div className="relative modal-content bg-gray-600 w-full p-8">
+                        <div className="relative z-10 modal-content bg-gray-600 w-full p-8">
                           <div className="flex flex-col items-center justify-center">
                             <span
                               className="absolute bottom-5 justify-center p-2 cursor-pointer"
@@ -205,9 +246,10 @@ const Header = () => {
                               </svg>
                             </span>
                           </div>
-                          <div className="">{component}</div>
-                        </div>
+                          <ModalContentWrapper component={component} onClick={activeTab !== null ? handleClick : null} color="#6B7280" />
+                       
                       </div>
+                    </div>
                     </div>
                   ))}
                 </div>

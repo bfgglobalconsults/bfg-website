@@ -106,8 +106,9 @@ export default function Main() {
 
                   <h2 className="text-xl font-bold my-2 text-[#016EF8]">{card.title}</h2>
                   <p className="text-[14px] p-2">{card.content}</p>
-                  <Link href={card.link}>
-                    <p className="text-black hover:text-[#016EF8] font-semibold">Read more ...</p>
+                  <Link className="flex gap-2 items-center justify-center " href={card.link}>
+                    <p className="text-sm text-[#016EF8] hover:text-black font-semibold">READ MORE </p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(1,110,248,1)"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></span>
                   </Link>
                 </div>
               ))}
