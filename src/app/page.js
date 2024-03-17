@@ -28,22 +28,10 @@ export default function Main() {
     setToggle(!toggle);
   };
 
-  const banner = [
-    {
-      id: 1,
-      image: ImageBanner,
-      img_name: "banner",
-      title: "The BFG Story",
-      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
-    },
-    {
-      id: 2,
-      image: ImageBanner2,
-      img_name: "banner2",
-      title: "BFG Consults bags UK Award for Research",
-      link: "https://guardian.ng/news/bfg-consults-bags-uk-award-for-research-others/",
-    },
-  ];
+
+  function calculateTimeLeft() {
+    const difference = +new Date("2024-03-20") - +new Date();
+    let timeLeft = {};
 
   const currentDate = new Date();
 
