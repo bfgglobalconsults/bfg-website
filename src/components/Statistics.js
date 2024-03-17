@@ -85,8 +85,8 @@ const Statistics = ({ y, e, l, t }) => {
 
   return (
     <div ref={targetRef} className="bg-[#F5F5F5] py-28 my-14">
-      <div className="w-full flex gap-8 justify-center">
-        <div className="w-[20%] text-center">
+      <div className="w-full flex flex-wrap gap-8 justify-center">
+        <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
           <animated.h3 className="">
             {animatedYears.value.to((n) => n.toFixed(0))} 
@@ -94,7 +94,7 @@ const Statistics = ({ y, e, l, t }) => {
           </div>
           <p className="my-2">Years in Business</p>
         </div>
-        <div className="w-[20%] text-center">
+        <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
           <animated.h3 className="">
             {animatedEnterprises.value.to((n) => n.toFixed(0))} 
@@ -105,7 +105,7 @@ const Statistics = ({ y, e, l, t }) => {
             Served enterprises from tech start-up to growing brands
           </p>
         </div>
-        <div className="w-[20%] text-center">
+        <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
           <animated.h3 className="">
             {animatedLocations.value.to((n) => n.toFixed(0))} 
@@ -113,7 +113,7 @@ const Statistics = ({ y, e, l, t }) => {
           </div>
           <p className="my-2">Country Locations</p>
         </div>
-        <div className="w-[20%] text-center">
+        <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
             <span>$</span>
           <animated.h3 className="">

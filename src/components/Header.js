@@ -2,6 +2,8 @@
 import { Menu, Transition } from "@headlessui/react";
 import React, { Fragment, useState, useEffect, useRef } from "react";
 import { animated, useTransition } from "@react-spring/web";
+import Collapsible from "react-collapsible";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -337,13 +339,232 @@ const Header = () => {
                     <Image src={Logo} className="w-full h-full object-fit" alt="logo" />
                   </div> */}
                   <div className="py-[40px] font-bold text-center text-[16px] text-gray-800">
-                    {navigation_links.map(({ id, link, label }) => (
+                    {/* {navigation_links.map(({ id, link, label }) => (
                       <div key={id} className="pl-[32px] py-[20px]">
                         <Link href={link} className="hover:text-[#E45F11]">
                           {label}
                         </Link>
                       </div>
-                    ))}
+                    ))} */}
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px]  flex items-center justify-between">
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]"> Solutions</p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF]">
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/research-analytics">Research and Analytics</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/business-strategy">Business Strategy and Operations</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/training-development">Training and development</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/information-technology">Innovation and Technology</Link>
+                      </p>
+
+                       
+                      </div>
+                    </Collapsible>
+
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px] flex items-center justify-between">
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Industry</p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF]">
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Consumer and Retailer</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Financial Services</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Hospitality and Tourism</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Real Estate</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Technology and Finance</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Government and Non-for-Profit</Link>
+                      </p>
+
+                       
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px]  flex items-center justify-between">
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Product</p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF]">
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Consumer and Retailer</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Financial Services</Link>
+                      </p>
+                     
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px] flex items-center justify-between">
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Program</p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF]">
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Consumer and Retailer</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Financial Services</Link>
+                      </p>
+                     
+
+                       
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px] flex items-center justify-between">
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">About</p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF]">
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Consumer and Retailer</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Financial Services</Link>
+                      </p>
+                     
+
+                       
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px] flex items-center justify-between">
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Contact</p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF]">
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Consumer and Retailer</Link>
+                      </p>
+                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Financial Services</Link>
+                      </p>
+                     
+
+                       
+                      </div>
+                    </Collapsible>
                   </div>
                 </animated.div>
               )

@@ -6,7 +6,7 @@ export const AboutComponent = ({ closeModal, color }) => {
   return (
     <>
       <div>
-        <div className="w-full flex gap-8">
+        <div className="w-full flex gap-8 modal">
           <div className="w-[20%]">
             <h3 className="text-2xl text-white font-semibold my-3">About us</h3>
             <p className="text-white text-lg">

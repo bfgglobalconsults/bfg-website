@@ -32,6 +32,34 @@
   }
 }
 
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.01); /* Adjust the scale value as needed */
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.01); /* Adjust the scale value as needed */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 9s infinite; /* Adjust the duration of the animation */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.modal {
+  z-index: 1000; /* Adjust the value as needed */
+}
+
 /* Front of the card */
 
 .front {
