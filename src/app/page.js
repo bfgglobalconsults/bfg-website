@@ -34,10 +34,24 @@ export default function Main() {
     setToggle(!toggle);
   };
 
+  const banner = [
+    {
+      id: 1,
+      image: ImageBanner,
+      img_name: "banner",
+      title: "The BFG Story",
+      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
+    },
+    {
+      id: 2,
+      image: ImageBanner2,
+      img_name: "banner2",
+      title: "BFG Consults bags UK Award for Research",
+      link: "https://guardian.ng/news/bfg-consults-bags-uk-award-for-research-others/",
+    },
+  ];
 
-  function calculateTimeLeft() {
-    const difference = +new Date("2024-03-20") - +new Date();
-    let timeLeft = {};
+ 
 
   const currentDate = new Date();
 
@@ -46,6 +60,8 @@ export default function Main() {
   const differenceInMillis = currentDate - fixedDate;
 
   const differenceInYears = differenceInMillis / (1000 * 60 * 60 * 24 * 365);
+  
+
   return (
     <>
       <div className="py-[30px]">
@@ -252,7 +268,7 @@ export default function Main() {
             </h3>
 
             <div>
-              <div className="w-full h-[100px] flex gap-8">
+              {/* <div className="w-full h-[100px] flex gap-8">
               <div className="w-[300px]">
                 <Image src={Microsoft} alt="microsoft" className="w-full h-full object-fit" />
               </div>
@@ -263,7 +279,7 @@ export default function Main() {
               <div className="w-[300px]">
                 <Image src={Netline} alt="netline" className="w-full h-full object-fit" />
               </div>
-              </div>
+              </div> */}
             </div>
             {/* <Swiper
               style={{ "--swiper-navigation-size": "20px" }}
