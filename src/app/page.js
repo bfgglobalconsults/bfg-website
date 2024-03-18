@@ -67,7 +67,7 @@ export default function Main() {
         <div className="w-full lg:flex items-center my-4">
           <div className="w-full lg:w-[45%]">
             <div className="p-[40px]">
-              <h3 className="font-bold text-3xl lg:text-[42px] text-[#E45F11]">
+              <h3 className="font-bold text-3xl lg:text-5xl text-[#E45F11]">
                 Your Partner in Research, Strategy, Training and Technology
               </h3>
               <p className="text-xl text-[#656565] my-2">
