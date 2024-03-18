@@ -101,11 +101,11 @@ export default function Main() {
             Either as a startup, SME or as a large enterprise{" "}
           </p>
           <div>
-            <div className="w-full flex flex-wrap gap-[20px] justify-center">
+            <div className="w-full flex flex-wrap gap-[80px] justify-center">
               {card_links.map((card) => (
                 <div
                   key={card.id}
-                  className="w-[100%] md:w-[60%] lg:w-[40%] h-full shadow-lg rounded-md  p-[20px] cursor-pointer text-center hover:border hover:border-black transition-all duration-300 ease-in-out"
+                  className="w-[100%] md:w-[60%] lg:w-[30%] h-full shadow-lg rounded-md  p-[20px] cursor-pointer text-center hover:border hover:border-black transition-all duration-300 ease-in-out"
                 >
                   <div className="w-full h-[250px]">
                     {" "}
@@ -153,7 +153,7 @@ export default function Main() {
           <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px]">
             {banner.map((item, index) => (
               <div
-                className="relative w-[100%] md:w-[50%] lg:w-[40%] xl:w-[30%] h-[500px] bg-cover bg-center"
+                className="relative w-[100%] md:w-[50%] lg:w-[30%] h-[500px] bg-cover bg-center"
                 key={index}
               >
                 <Image
@@ -241,7 +241,7 @@ export default function Main() {
             </div>
           </div>
 
-          <div className="py-4">
+          {/* <div className="py-4">
             <h3 className="my-4 flex justify-center text-lg font-bold">
               <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
                 Our Products
@@ -255,13 +255,13 @@ export default function Main() {
                 <Image src={Careerfun} alt="careerfun" href="" className="w-full h-full object-fit" />
               </div>
             </div>
-            </div>
+            </div> */}
 
          
 
           <div className="">
-            <h3 className="my-4 flex justify-center text-lg font-bold">
-              <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
+            <h3 className="my-4 flex justify-center text-[36px] font-bold">
+              <span className="p-2 text-black rounded-xl">
                 Our Partners
               </span>
             </h3>
