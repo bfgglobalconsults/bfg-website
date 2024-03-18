@@ -10,7 +10,7 @@ import MidBanner from "../../public/assets/midbanner.jpg";
 import HeadGrowth from "../../public/assets/moses-sunday.jpg";
 import Marketer from "../../public/assets/ifeoma.jpg";
 import Appetizer from "../../public/assets/appetiza.jpg";
-import Careerfun from "../../public/assets/careerfun.jpg"
+import Careerfun from "../../public/assets/careerfun.jpg";
 
 import Apex from "../../public/assets/apex-img.png";
 import Microsoft from "../../public/assets/microsoft-img.png";
@@ -53,8 +53,6 @@ export default function Main() {
     },
   ];
 
- 
-
   const currentDate = new Date();
 
   const fixedDate = new Date("2018-03-26");
@@ -62,7 +60,6 @@ export default function Main() {
   const differenceInMillis = currentDate - fixedDate;
 
   const differenceInYears = differenceInMillis / (1000 * 60 * 60 * 24 * 365);
-  
 
   return (
     <>
@@ -146,9 +143,7 @@ export default function Main() {
         </div>
         <div className="p-[40px]">
           <h3 className="my-4 flex justify-center text-[36px] font-bold">
-            <span className="p-2 text-black rounded-xl">
-              Featured insights
-            </span>
+            <span className="p-2 text-black rounded-xl">Featured insights</span>
           </h3>
           <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px]">
             {banner.map((item, index) => (
@@ -189,10 +184,10 @@ export default function Main() {
               <div className="w-[100%] md:w-[100%] lg:w-[30%] h-full p-6">
                 <h3 className="my-4 text-lg font-bold">
                   <span className="bg-[#abcaf1] p-2 text-[#016EF8] rounded-xl">
-                    Meet With
+                    Meet With Our
                   </span>
                 </h3>{" "}
-                <h3 className="text-2xl font-bold">Expert Advisor</h3>
+                <h3 className="text-2xl font-bold">Management Team</h3>
                 <p className="text-[#656565] my-3">
                   Meet the dedicated team of people who make our business what
                   it is today. They represent our primary point of contact with
@@ -202,15 +197,26 @@ export default function Main() {
                   View All
                 </button>
               </div>
-             
+
               <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6">
-                <Image src={HeadGrowth} alt="" className="w-full h-full object-fit" />
-                <p className="text-[#656565] font-semibold">Senior Associate, Information and Technology</p>
+                <Image
+                  src={HeadGrowth}
+                  alt=""
+                  className="w-full h-full object-fit"
+                />
+                <p className="text-[#656565] font-semibold">
+                  Senior Associate, Information and Technology
+                </p>
               </div>
               <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6">
-                <Image src={Marketer} alt="" className="w-full h-full object-fit" />
-                <p className="text-[#656565] font-semibold">Senior Associate, Business Strategy and Operations</p>
-
+                <Image
+                  src={Marketer}
+                  alt=""
+                  className="w-full h-full object-fit"
+                />
+                <p className="text-[#656565] font-semibold">
+                  Senior Associate, Business Strategy and Operations
+                </p>
               </div>
             </div>
           </div>
@@ -225,13 +231,11 @@ export default function Main() {
             {/* Transparent overlay */}
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
               <h3 className="text-white font-bold text-2xl md:text-3xl lg:text-4xl">
-                Your partner in Research, Strategy, Training, and Technology
+                Securing Industry Relevance for Individuals and Businesses
               </h3>
               <p className="text-[#ffffff9a] my-2 text-lg lg:text-xl">
-                With expertise in research and analytics, business strategy and
-                operations, training and development, and information
-                technology, we empower companies to thrive in todays dynamic
-                business landscape.
+                Our growth services are designed to help you either as an
+                individual, startup, or SME secure industry relevance.
               </p>
               <div>
                 <button className="p-2 border-2 border-white text-white text-xl my-4">
@@ -257,13 +261,9 @@ export default function Main() {
             </div>
             </div> */}
 
-         
-
           <div className="">
             <h3 className="my-4 flex justify-center text-[36px] font-bold">
-              <span className="p-2 text-black rounded-xl">
-                Our Partners
-              </span>
+              <span className="p-2 text-black rounded-xl">Our Partners</span>
             </h3>
 
             <div>
