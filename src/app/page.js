@@ -89,12 +89,12 @@ export default function Main() {
         </div>
         <div className="bg-[#faf8f8bd] p-[40px]">
           <h3 className="my-4 flex justify-center text-lg font-bold">
-            <span className="text-[36px] p-2 text-[#016EF8] rounded-xl">
+            <span className="text-2xl lg:text-[36px] p-2 text-[#016EF8] rounded-xl">
               Our Solutions
             </span>
           </h3>
           <div className="text-center">
-          <p className="text-xl text-[#656565] w-[70%] mx-auto my-3">
+          <p className="text-xl text-[#656565] w-full md:w-[70%] md:mx-auto my-3">
             We offer a bespoke broad spectrum of consulting practice within a
             four-product line of service for all businesses across sectors.
             Either as a startup, SME or as a large enterprise{" "}
@@ -145,8 +145,8 @@ export default function Main() {
           </div>
         </div>
         <div className="p-[40px]">
-          <h3 className="my-4 flex justify-center text-[36px] font-bold">
-            <span className="p-2 text-[#016EF8] rounded-xl">Featured insights</span>
+          <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="p-2 text-2xl lg:text-[36px] text-[#016EF8] rounded-xl">Featured insights</span>
           </h3>
           <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
             {banner.map((item, index) => (
@@ -273,12 +273,12 @@ export default function Main() {
             </div> */}
 
           <div className="">
-            <h3 className="my-4 flex justify-center text-[36px] font-bold">
-              <span className="p-2 text-[#016EF8] rounded-xl">Our Partners</span>
+            <h3 className="my-4 flex justify-center text-lg font-bold">
+              <span className="text-2xl lg:text-[36px] p-2 text-[#016EF8] rounded-xl">Our Partners</span>
             </h3>
 
             <div>
-              <div className="w-full flex flex-wrap gap-8 items-center mx-8">
+              <div className="w-[70%] md:w-full flex flex-wrap gap-8 items-center mx-auto md:mx-8">
               <div className="w-[200px]">
                 <Image src={Microsoft} alt="microsoft" className="w-full h-full object-fit" />
               </div>

@@ -284,6 +284,7 @@ const Header = () => {
                     <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
                   </svg>
                 </button>
+                <Link href="/">
 
                 <div className="w-[80px] h-15">
                   <Image
@@ -292,6 +293,7 @@ const Header = () => {
                     className="w-full h-full object-fit"
                   />
                 </div>
+                </Link>
               </>
             ) : (
               <>
@@ -307,6 +309,7 @@ const Header = () => {
                   </svg>
                 </button>
 
+                <Link href="/">
                 <div className="w-[100px] h-[90px]">
                   {" "}
                   <Image
@@ -315,6 +318,7 @@ const Header = () => {
                     className="w-full h-full object-fit"
                   />{" "}
                 </div>
+                </Link>
               </>
             )}
           </div>
@@ -368,7 +372,7 @@ const Header = () => {
                         </div>
                       }
                     >
-                      <div className="bg-[#EFEFEF]">
+                      <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/solutions/research-analytics">Research and Analytics</Link>
                       </p>
@@ -408,7 +412,7 @@ const Header = () => {
                         </div>
                       }
                     >
-                      <div className="bg-[#EFEFEF]">
+                      <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="">Consumer and Retailer</Link>
                       </p>
@@ -453,7 +457,7 @@ const Header = () => {
                         </div>
                       }
                     >
-                      <div className="bg-[#EFEFEF]">
+                      <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="">Consumer and Retailer</Link>
                       </p>
@@ -485,7 +489,7 @@ const Header = () => {
                         </div>
                       }
                     >
-                      <div className="bg-[#EFEFEF]">
+                      <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="">Consumer and Retailer</Link>
                       </p>
@@ -519,7 +523,7 @@ const Header = () => {
                         </div>
                       }
                     >
-                      <div className="bg-[#EFEFEF]">
+                      <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="">Consumer and Retailer</Link>
                       </p>
@@ -553,7 +557,7 @@ const Header = () => {
                         </div>
                       }
                     >
-                      <div className="bg-[#EFEFEF]">
+                      <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="">Consumer and Retailer</Link>
                       </p>
