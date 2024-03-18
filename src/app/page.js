@@ -12,10 +12,11 @@ import Marketer from "../../public/assets/ifeoma.jpg";
 import Appetizer from "../../public/assets/appetiza.jpg";
 import Careerfun from "../../public/assets/careerfun.jpg";
 
-import Apex from "../../public/assets/apex-img.png";
-import Microsoft from "../../public/assets/microsoft-img.png";
-import Qualitrics from "../../public/assets/qualtrics-img.png";
-import Netline from "../../public/assets/netline-img.png";
+import Microsoft from "../../public/assets/microsoft-banner.png";
+import Qualitrics from "../../public/assets/qualitrics-banner.png";
+import Netline from "../../public/assets/netline-banner.png";
+import IBM from "../../public/assets/ibm-banner.png";
+import Apex from "../../public/assets/apexgroup-banner.png";
 
 import Logo from "./bfg-logo.png";
 import Animation from "../../public/office_banner.jpg";
@@ -88,21 +89,23 @@ export default function Main() {
         </div>
         <div className="bg-[#faf8f8bd] p-[40px]">
           <h3 className="my-4 flex justify-center text-lg font-bold">
-            <span className="text-[36px] p-2 text-black rounded-xl">
+            <span className="text-[36px] p-2 text-[#016EF8] rounded-xl">
               Our Solutions
             </span>
           </h3>
-          <p className="text-xl text-[#656565] text-center my-3">
+          <div className="text-center">
+          <p className="text-xl text-[#656565] w-[70%] mx-auto my-3">
             We offer a bespoke broad spectrum of consulting practice within a
             four-product line of service for all businesses across sectors.
             Either as a startup, SME or as a large enterprise{" "}
           </p>
+          </div>
           <div>
-            <div className="w-full flex flex-wrap gap-[80px] justify-center">
+            <div className="w-full flex flex-wrap gap-[20px] justify-center">
               {card_links.map((card) => (
                 <div
                   key={card.id}
-                  className="w-[100%] md:w-[60%] lg:w-[30%] h-full shadow-lg rounded-md  p-[20px] cursor-pointer text-center hover:border hover:border-black transition-all duration-300 ease-in-out"
+                  className="w-[100%] md:w-[70%] lg:w-[35%] h-full shadow-lg rounded-md  p-[20px] cursor-pointer text-center hover:border hover:border-black transition-all duration-300 ease-in-out"
                 >
                   <div className="w-full h-[250px]">
                     {" "}
@@ -143,9 +146,9 @@ export default function Main() {
         </div>
         <div className="p-[40px]">
           <h3 className="my-4 flex justify-center text-[36px] font-bold">
-            <span className="p-2 text-black rounded-xl">Featured insights</span>
+            <span className="p-2 text-[#016EF8] rounded-xl">Featured insights</span>
           </h3>
-          <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px]">
+          <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
             {banner.map((item, index) => (
               <div
                 className="relative w-[100%] md:w-[50%] lg:w-[30%] h-[500px] bg-cover bg-center"
@@ -176,10 +179,12 @@ export default function Main() {
               <p className="text-lg font-bold flex justify-center items-center">Read More</p>
             </div> */}
           </div>
+          <div>
+          {/* <p className="text-center text-[32px] text-black font-bold my-2">Insightful Metrics</p> */}
 
-          <Statistics y={differenceInYears} e={104} l={2} t={70000} />
-
-          <div className="relative py-8 bg-[#f8f5f5] my-8">
+          <Statistics y={differenceInYears} e={104} l={2} t={2000} />
+          </div>
+          <div className="relative py-12 bg-[#f8f5f5] my-8">
             <div className="w-full flex flex-wrap gap-4">
               <div className="w-[100%] md:w-[100%] lg:w-[30%] h-full p-6">
                 <h3 className="my-4 text-lg font-bold">
@@ -198,22 +203,28 @@ export default function Main() {
                 </button>
               </div>
 
-              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6">
+              <div className="w-[80%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
                 <Image
                   src={HeadGrowth}
                   alt=""
                   className="w-full h-full object-fit"
                 />
+                <p className="font-bold">
+                  Sunday Moses
+                </p>
                 <p className="text-[#656565] font-semibold">
                   Senior Associate, Information and Technology
                 </p>
               </div>
-              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6">
+              <div className="w-[80%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
                 <Image
                   src={Marketer}
                   alt=""
                   className="w-full h-full object-fit"
                 />
+                <p className="font-bold">
+                  Ifeoma Ezeamama
+                </p>
                 <p className="text-[#656565] font-semibold">
                   Senior Associate, Business Strategy and Operations
                 </p>
@@ -263,10 +274,28 @@ export default function Main() {
 
           <div className="">
             <h3 className="my-4 flex justify-center text-[36px] font-bold">
-              <span className="p-2 text-black rounded-xl">Our Partners</span>
+              <span className="p-2 text-[#016EF8] rounded-xl">Our Partners</span>
             </h3>
 
             <div>
+              <div className="w-full flex flex-wrap gap-8 items-center mx-8">
+              <div className="w-[200px]">
+                <Image src={Microsoft} alt="microsoft" className="w-full h-full object-fit" />
+              </div>
+            
+              <div className="w-[200px]">
+                <Image src={Qualitrics} alt="qualitrics" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[200px]">
+                <Image src={Netline} alt="netline" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[200px]">
+                <Image src={IBM} alt="ibm" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[200px]">
+                <Image src={Apex} alt="Apex" className="w-full h-full object-fit" />
+              </div>
+              </div>
               {/* <div className="w-full h-[100px] flex gap-8">
               <div className="w-[300px]">
                 <Image src={Microsoft} alt="microsoft" className="w-full h-full object-fit" />

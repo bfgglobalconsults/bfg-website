@@ -84,7 +84,7 @@ const Statistics = ({ y, e, l, t }) => {
   });
 
   return (
-    <div ref={targetRef} className="bg-[#F5F5F5] py-28 my-14">
+    <div ref={targetRef} className="bg-[#F5F5F5] py-28">
       <div className="w-full flex flex-wrap gap-8 justify-center">
         <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
@@ -115,13 +115,13 @@ const Statistics = ({ y, e, l, t }) => {
         </div>
         <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
-            <span>$</span>
+            <span></span>
           <animated.h3 className="">
             {animatedTransactions.value.to((n) => n.toFixed(0))}
           </animated.h3>
           <span>+</span>
           </div>
-          <p className="my-2">Total transactions up from 2018 - 2023</p>
+          <p className="my-2">Total Projects up from 2018 - 2023</p>
         </div>
       </div>
     </div>

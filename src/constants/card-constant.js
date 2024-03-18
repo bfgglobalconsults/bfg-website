@@ -26,7 +26,7 @@ export const card_links = [
         logo: Training,
         link: "/solutions/training-development",
         content:
-          "Improve job performance through employee training. Win the process of enhancing the skills, knowledge and abilities of employees to perform their jobs more  effectively. Through this solution, we help startups and SMEs improve their overall performance by investing in the development of their employees. ",
+          "Improve job performance through employee training. Win the process of enhancing the skills, knowledge and abilities of employees to perform their jobs more  effectively. Through this solution, we help startups and SMEs improve their overall performance. ",
       },
       {
         id: 4,
