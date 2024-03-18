@@ -70,7 +70,7 @@ export default function Main() {
         <div className="w-full lg:flex items-center my-4">
           <div className="w-full lg:w-[45%]">
             <div className="p-[40px]">
-              <h3 className="font-bold text-3xl lg:text-4xl text-[#E45F11]">
+              <h3 className="font-bold text-3xl lg:text-[42px] text-[#E45F11]">
                 Your Partner in Research, Strategy, Training and Technology
               </h3>
               <p className="text-xl text-[#656565] my-2">
@@ -91,7 +91,7 @@ export default function Main() {
         </div>
         <div className="bg-[#faf8f8bd] p-[40px]">
           <h3 className="my-4 flex justify-center text-lg font-bold">
-            <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
+            <span className="text-[36px] p-2 text-black rounded-xl">
               Our Solutions
             </span>
           </h3>
@@ -145,8 +145,8 @@ export default function Main() {
           </div>
         </div>
         <div className="p-[40px]">
-          <h3 className="my-4 flex justify-center text-lg font-bold">
-            <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
+          <h3 className="my-4 flex justify-center text-[36px] font-bold">
+            <span className="p-2 text-black rounded-xl">
               Featured insights
             </span>
           </h3>
@@ -241,13 +241,13 @@ export default function Main() {
             </div>
           </div>
 
-          <div className="py-28">
+          <div className="py-4">
             <h3 className="my-4 flex justify-center text-lg font-bold">
               <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
                 Our Products
               </span>
             </h3>
-            <div className="w-full flex flex-wrap gap-8">
+            <div className="w-full flex flex-wrap justify-center gap-8">
               <div className="w-[300px]">
                 <Image src={Appetizer} alt="appetizer" href="" className="w-full h-full object-fit" />
               </div>
@@ -259,7 +259,7 @@ export default function Main() {
 
          
 
-          <div className="py-28">
+          <div className="">
             <h3 className="my-4 flex justify-center text-lg font-bold">
               <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
                 Our Partners

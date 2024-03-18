@@ -87,7 +87,7 @@ export const navigation_links = [
   },
   {
     id: 5,
-    label: "About",
+    label: "About us",
     link: "about",
     component: <AboutComponent />,
     dropdown: true,
@@ -104,10 +104,10 @@ export const navigation_links = [
       },
     ],
   },
-  {
-    id: 6,
-    label: "Contact",
-    link: "contact",
-    dropdown: false,
-  },
+  // {
+  //   id: 6,
+  //   label: "Contact",
+  //   link: "contact",
+  //   dropdown: false,
+  // },
 ];
