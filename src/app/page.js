@@ -203,11 +203,14 @@ export default function Main() {
                 </button>
               </div>
              
-              <div className="w-[100%] md:w-[50%] lg:w-[30%] h-[300px] p-6">
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6">
                 <Image src={HeadGrowth} alt="" className="w-full h-full object-fit" />
+                <p className="text-[#656565] font-semibold">Senior Associate, Information and Technology</p>
               </div>
-              <div className="w-[100%] md:w-[50%] lg:w-[30%] h-[300px] p-6">
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6">
                 <Image src={Marketer} alt="" className="w-full h-full object-fit" />
+                <p className="text-[#656565] font-semibold">Senior Associate, Business Strategy and Operations</p>
+
               </div>
             </div>
           </div>

@@ -24,8 +24,8 @@ const page = () => {
           </p>
           <div>
             <div className="my-4 p-3">
-              <div className="w-full  flex flex-wrap items-center gap-8 my-2">
-                <div className="w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
+              <div className="w-full flex flex-wrap items-center gap-8 my-2 md:justify-center">
+                <div className="w-[100%] md:w-[50%]  lg:w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
                 <Image
                     src={Project1}
                     alt="first-project"
@@ -44,7 +44,7 @@ const page = () => {
                   </p>
                 </div>
 
-                <div className="w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
+                <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
                 <Image
                     src={Project2}
                     alt="second-project"
@@ -64,7 +64,7 @@ const page = () => {
                   </p>
                 </div>
 
-                <div className="w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
+                <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
                 <Image
                     src={Project3}
                     alt="third-project"
@@ -82,7 +82,7 @@ const page = () => {
                   </p>
                 </div>
 
-                <div className="w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
+                <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
                 <Image
                     src={Project4}
                     alt="fourth-project"
@@ -102,7 +102,7 @@ const page = () => {
                   </p>
                 </div>
 
-                <div className="w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
+                <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
                 <Image
                     src={Project5}
                     alt="first-project"
@@ -123,7 +123,7 @@ const page = () => {
                   </p>
                 </div>
 
-                <div className="w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
+                <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
                 <Image
                     src={Project6}
                     alt="six-project"
