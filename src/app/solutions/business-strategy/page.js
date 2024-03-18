@@ -14,8 +14,8 @@ const page = () => {
               Business Strategy and Operations
             </span>
           </h3>
-          <div className="w-full flex items-center gap-2">
-            <div className="w-[50%]">
+          <div className="w-full flex flex-wrap items-center gap-2">
+            <div className="w-[100%] lg:w-[50%]">
               <p className="text-lg text-[#656565] my-3">
                 Business strategy and operations consulting is a unit of our
                 practice, which involves helping organisations improve their
@@ -30,7 +30,7 @@ const page = () => {
                 their respective industries.
               </p>
             </div>
-            <div className="w-[50%]">
+            <div className="w-[100%] lg:w-[50%]">
               <div className="w-full h-[400px] my-3">
                 <Image
                   src={Banner}
@@ -49,7 +49,7 @@ const page = () => {
           </h3>
             
             <div className="">
-              <div className="relative w-[80%] h-[100%] bg-white border-b-2 border-[#016EF8] shadow-lg p-8 mx-auto ">
+              <div className="relative w-[100%] lg:w-[80%] h-[100%] bg-white border-b-2 border-[#016EF8] shadow-lg p-8 mx-auto ">
                   <div className="text-black">
                     <ul className="list-disc">
                       <li className="my-2">

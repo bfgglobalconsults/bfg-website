@@ -9,6 +9,8 @@ import ImageBanner2 from "../../public/assets/banner-image2.jpg";
 import MidBanner from "../../public/assets/midbanner.jpg";
 import HeadGrowth from "../../public/assets/moses-sunday.jpg";
 import Marketer from "../../public/assets/ifeoma.jpg";
+import Appetizer from "../../public/assets/appetiza.jpg";
+import Careerfun from "../../public/assets/careerfun.jpg"
 
 import Apex from "../../public/assets/apex-img.png";
 import Microsoft from "../../public/assets/microsoft-img.png";
@@ -201,10 +203,10 @@ export default function Main() {
                 </button>
               </div>
              
-              <div className="w-[70%] md:w-[50%] lg:w-[30%] h-[300px] p-6">
+              <div className="w-[100%] md:w-[50%] lg:w-[30%] h-[300px] p-6">
                 <Image src={HeadGrowth} alt="" className="w-full h-full object-fit" />
               </div>
-              <div className="w-[70%] md:w-[50%] lg:w-[30%] h-[300px] p-6">
+              <div className="w-[100%] md:w-[50%] lg:w-[30%] h-[300px] p-6">
                 <Image src={Marketer} alt="" className="w-full h-full object-fit" />
               </div>
             </div>
@@ -219,10 +221,10 @@ export default function Main() {
             <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
             {/* Transparent overlay */}
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-              <h3 className="text-white font-bold text-4xl">
+              <h3 className="text-white font-bold text-2xl md:text-3xl lg:text-4xl">
                 Your partner in Research, Strategy, Training, and Technology
               </h3>
-              <p className="text-[#ffffff9a] my-2 text-xl">
+              <p className="text-[#ffffff9a] my-2 text-lg lg:text-xl">
                 With expertise in research and analytics, business strategy and
                 operations, training and development, and information
                 technology, we empower companies to thrive in todays dynamic
@@ -236,29 +238,23 @@ export default function Main() {
             </div>
           </div>
 
-          
-
-          {/* <div className="bg-[#F5F5F5] py-28 my-14">
-            <div className="w-full flex gap-8 justify-center">
-              <div className="w-[20%] text-center">
-                 <h3 className="font-bold text-6xl">6</h3>
-                 <p className="my-2">Years in Business</p>
+          <div className="py-28">
+            <h3 className="my-4 flex justify-center text-lg font-bold">
+              <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
+                Our Products
+              </span>
+            </h3>
+            <div className="w-full flex flex-wrap gap-8">
+              <div className="w-[300px]">
+                <Image src={Appetizer} alt="appetizer" href="" className="w-full h-full object-fit" />
               </div>
-              <div className="w-[20%] text-center">
-              <h3 className="font-bold text-6xl">104+</h3>
-                 <p className="my-2">Served enterprises from tech start-up to growing brands</p>
-              </div>
-              <div className="w-[20%] text-center">
-              <h3 className="font-bold text-6xl">2</h3>
-                 <p className="my-2">Country Locations</p>
-              </div>
-              <div className="w-[20%] text-center">
-              <h3 className="font-bold text-6xl">$70K+</h3>
-                 <p className="my-2">Total transactions up from 2018 - 2023</p>
+              <div className="w-[300px]">
+                <Image src={Careerfun} alt="careerfun" href="" className="w-full h-full object-fit" />
               </div>
             </div>
+            </div>
 
-          </div> */}
+         
 
           <div className="py-28">
             <h3 className="my-4 flex justify-center text-lg font-bold">

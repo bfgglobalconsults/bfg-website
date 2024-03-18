@@ -13,8 +13,8 @@ const page = () => {
               Research and Analytics
             </span>
           </h3>
-          <div className="w-full flex items-center gap-2">
-            <div className="w-[50%]">
+          <div className="w-full flex flex-wrap items-center gap-2">
+            <div className="w-[100%] lg:w-[50%]">
               <p className="text-lg text-[#656565] my-3">
                 Advanced data analytics and product research are provided by the
                 BFG Business Research and Intelligence team with a workflow that
@@ -30,7 +30,7 @@ const page = () => {
                 research, and impact assessment.
               </p>
             </div>
-            <div className="w-[50%]">
+            <div className="w-[100%] lg:w-[50%]">
               <div className="w-full h-[400px] my-3">
                 <Image
                   src={Banner}
@@ -48,7 +48,7 @@ const page = () => {
             </span>
           </h3>
             <div className="">
-              <div className="relative w-[80%] h-[100%] bg-white shadow-lg border-b-2 border-[#016EF8] p-8 mx-auto ">
+              <div className="relative w-[100%] lg:w-[80%] h-[100%] bg-white shadow-lg border-b-2 border-[#016EF8] p-8 mx-auto ">
                 <div className="text-black">
                 <ul className="list-disc">
 

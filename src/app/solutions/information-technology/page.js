@@ -14,8 +14,8 @@ const page = () => {
             </span>
           </h3>
           
-          <div className="w-full flex items-center gap-2">
-            <div className="w-[50%]">
+          <div className="w-full flex md:flex-wrap items-center gap-2">
+            <div className="w-[100%] md:w-[50%] lg:w-[50%]">
             
               <h3 className="text-[#E45F11] font-bold text-xl">
                 Innovative solutions, secure technology, and unparalleled
@@ -35,7 +35,7 @@ const page = () => {
                 latest technology.
               </p>
             </div>
-            <div className="w-[50%]">
+            <div className="w-[100%] lg:w-[50%]">
               <div className="w-full h-[400px] my-3">
                 <Image
                   src={Banner}
@@ -54,7 +54,7 @@ const page = () => {
           </h3>
            
             <div className="">
-              <div className="relative w-[80%] h-[100%] bg-white border-b-2 border-[#E45F11] shadow-lg p-8 mx-auto ">
+              <div className="relative w-[100%] lg:w-[80%] h-[100%] bg-white border-b-2 border-[#E45F11] shadow-lg p-8 mx-auto ">
                 <div className="text-black">
                   <ul className="list-disc">
                     <li className="my-2">
