@@ -14,32 +14,30 @@ const page = () => {
               Business Strategy and Operations
             </span>
           </h3>
-          <div className="w-full flex flex-wrap items-center gap-2">
-            <div className="w-[100%] lg:w-[50%]">
-              <p className="text-lg text-[#656565] my-3">
-                Business strategy and operations consulting is a unit of our
-                practice, which involves helping organisations improve their
-                overall performance by identifying and implementing effective
-                business strategies and streamlining operational processes.
-                Using the latest deep industry insights, our combined team of
-                business strategists, growth hackers, project managers, and
-                quality control managers helps businesses of every size prosper
-                by creating impactful solutions tailored to their unique needs
-                today and in the future. The goal of this service is to help
-                businesses become more efficient, profitable, and competitive in
-                their respective industries.
-              </p>
-            </div>
-            <div className="w-[100%] lg:w-[50%]">
-              <div className="w-full h-[400px] my-3">
-                <Image
-                  src={Banner}
-                  alt="business-banner"
-                  className="w-full h-full object-fit"
-                />
-              </div>
-            </div>
-          </div>
+          <div className="w-full flex flex-col lg:flex-row items-center gap-2">
+  <div className="w-full lg:w-[50%]">
+    <p className="text-lg text-[#656565] my-3">
+      Business strategy and operations consulting is a unit of our
+      practice, which involves helping organisations improve their
+      overall performance by identifying and implementing effective
+      business strategies and streamlining operational processes.
+      Using the latest deep industry insights, our combined team of
+      business strategists, growth hackers, project managers, and
+      quality control managers helps businesses of every size prosper
+      by creating impactful solutions tailored to their unique needs
+      today and in the future. The goal of this service is to help
+      businesses become more efficient, profitable, and competitive in
+      their respective industries.
+    </p>
+  </div>
+  <div className="w-full lg:w-[50%] h-[400px] my-3 lg:my-0">
+    <Image
+      src={Banner}
+      alt="business-banner"
+      className="w-full h-full object-fit"
+    />
+  </div>
+</div>
 
           <div>
           <h3 className="my-4 flex justify-center text-lg font-bold">

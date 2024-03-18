@@ -14,14 +14,14 @@ const page = () => {
             </span>
           </h3>
           
-          <div className="w-full flex md:flex-wrap items-center gap-2">
-            <div className="w-[100%] md:w-[50%] lg:w-[50%]">
+          <div className="w-full flex flex-col lg:flex-row items-center gap-2">
+  <div className="w-full lg:w-[50%]">
             
               <h3 className="text-[#E45F11] font-bold text-xl">
                 Innovative solutions, secure technology, and unparalleled
                 support for your business
               </h3>
-              <p className="text-lg text-[#656565] my-3">
+              <p className="w-full text-lg text-[#656565] my-3">
                 BFG Technology solutions is a specialised service deployed to
                 help organisations optimize their use of technology to achieve
                 their business objectives. Through this service, we provide a
@@ -35,15 +35,14 @@ const page = () => {
                 latest technology.
               </p>
             </div>
-            <div className="w-[100%] lg:w-[50%]">
-              <div className="w-full h-[400px] my-3">
+            <div className="w-full lg:w-[50%] h-[400px] my-3 lg:my-0">
+
                 <Image
                   src={Banner}
                   alt="business-banner"
                   className="w-full h-full object-fit"
                 />
               </div>
-            </div>
           </div>
 
           <div>

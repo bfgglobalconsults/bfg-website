@@ -14,8 +14,8 @@ const page = () => {
             </span>
           </h3>
           
-          <div className="w-full flex items-center gap-2">
-            <div className="w-[50%]">
+          <div className="w-full flex flex-col lg:flex-row items-center gap-2">
+  <div className="w-full lg:w-[50%]">
               <h3 className="text-xl text-[#E45F11] font-bold">
                 Empowering your workforce,
               </h3>
@@ -35,14 +35,13 @@ const page = () => {
                 training for your organisation.
               </p>
             </div>
-            <div className="w-[50%]">
-              <div className="w-full h-[400px] my-3">
+            <div className="w-full lg:w-[50%] h-[400px] my-3 lg:my-0">
+
                 <Image
                   src={Banner}
                   alt="business-banner"
                   className="w-full h-full object-fit"
                 />
-              </div>
             </div>
           </div>
 

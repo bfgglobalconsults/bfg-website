@@ -232,7 +232,7 @@ export default function Main() {
               </p>
               <div>
                 <button className="p-2 border-2 border-white text-white text-xl my-4">
-                  Contact Us
+                  <Link href="/contact">Contact Us</Link>
                 </button>
               </div>
             </div>
