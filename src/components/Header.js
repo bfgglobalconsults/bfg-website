@@ -3,6 +3,7 @@ import { Menu, Transition } from "@headlessui/react";
 import React, { Fragment, useState, useEffect, useRef } from "react";
 import { animated, useTransition } from "@react-spring/web";
 import Collapsible from "react-collapsible";
+import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -16,6 +17,8 @@ const Header = () => {
   const [active, setActive] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+
 
   const [showMenu, setShowMenu] = useState(false);
   const [activeTab, setActiveTab] = useState(null);
@@ -59,24 +62,42 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        modalRef.current &&
-        !modalRef.current.contains(event.target)
-      ) {
-        setActiveTab(null); // Close the modal when clicked outside
-      }
-    };
+//   useEffect(() => {
+//     const handleClickOutside = (event) => {
+//       if (
+//         modalRef.current &&
+//         !modalRef.current.contains(event.target) 
+//       ) {
+//         setActiveTab(null); // Close the modal when clicked outside
+//         setModalOpen(false); // Update modal state
+//       }
+//     };
 
-    // Add event listener when component mounts
-    document.addEventListener('mousedown', handleClickOutside);
+//     // Add event listener when component mounts
+//     document.addEventListener('mousedown', handleClickOutside);
 
-    // Remove event listener when component unmounts
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
+//     // Remove event listener when component unmounts
+//     return () => {
+//       document.removeEventListener('mousedown', handleClickOutside);
+//     };
+// }, [modalOpen]);
+
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (
+  //       modalRef.current &&
+  //       !modalRef.current.contains(event.target)
+  //     ) {
+  //       setActiveTab(null); 
+  //     }
+  //   };
+
+  //   document.addEventListener('mousedown', handleClickOutside);
+
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //   };
+  // }, []);
 
   const handleTabClick = (id) => {
     setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
@@ -86,15 +107,20 @@ const Header = () => {
     setActiveTab(null);
   };
 
-  const ModalContentWrapper = ({ component, color }) => {
-    const handleClick = (e) => {
-      if (activeTab !== null) {
-        e.stopPropagation(); // Prevent event propagation only if modal is open
+  const ModalContentWrapper = ({ component, closeModal, color }) => {
+    const router = useRouter(); // Import and initialize useRouter
+    
+    const handleClick = (e, href) => {
+      e.stopPropagation(); // Prevent event propagation
+      closeModal(); // Close modal
+      if (href) {
+        router.push(href); // Navigate to the specified href using Next.js router
       }
     };
   
-    return component && React.cloneElement(component, { closeModal, onClick: handleClick, hoverText: color});
+    return component && React.cloneElement(component, { closeModal, onClick: handleClick, hoverText: color });
   };
+  
 
   return (
     <div>
@@ -248,7 +274,7 @@ const Header = () => {
                               </svg>
                             </span>
                           </div>
-                          <ModalContentWrapper component={component} onClick={activeTab !== null ? handleClick : null} color="#6B7280" />
+                          <ModalContentWrapper component={component} closeModal={closeModal} color="#016EF8" />
                        
                       </div>
                     </div>

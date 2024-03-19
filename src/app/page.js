@@ -6,6 +6,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import Banner from "../../public/assets/header-banner.png";
 import ImageBanner from "../../public/assets/banner-image1.jpg";
 import ImageBanner2 from "../../public/assets/banner-image2.jpg";
+import ImageBanner3 from "../../public/assets/case-study-banner.jpg";
 import MidBanner from "../../public/assets/midbanner.jpg";
 import HeadGrowth from "../../public/assets/moses-sunday.jpg";
 import Marketer from "../../public/assets/ifeoma.jpg";
@@ -52,6 +53,13 @@ export default function Main() {
       title: "BFG Consults bags UK Award for Research",
       link: "https://guardian.ng/news/bfg-consults-bags-uk-award-for-research-others/",
     },
+    {
+      id: 3,
+      image: ImageBanner3,
+      img_name: "banner3",
+      title: "Case Studies",
+      link: "",
+    }
   ];
 
   const currentDate = new Date();
@@ -146,7 +154,7 @@ export default function Main() {
         </div>
         <div className="p-[40px]">
           <h3 className="my-4 flex justify-center text-lg font-bold">
-            <span className="p-2 text-2xl lg:text-[36px] text-[#016EF8] rounded-xl">Featured insights</span>
+            <span className="p-2 text-2xl lg:text-[36px] text-[#016EF8] rounded-xl">Featured Insights</span>
           </h3>
           <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
             {banner.map((item, index) => (
@@ -203,7 +211,7 @@ export default function Main() {
                 </button>
               </div>
 
-              <div className="w-[80%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
                 <Image
                   src={HeadGrowth}
                   alt=""
@@ -216,7 +224,7 @@ export default function Main() {
                   Senior Associate, Information and Technology
                 </p>
               </div>
-              <div className="w-[80%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
                 <Image
                   src={Marketer}
                   alt=""
