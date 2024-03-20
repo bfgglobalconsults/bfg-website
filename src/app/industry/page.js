@@ -9,9 +9,9 @@ const page = () => {
         <div className="p-[40px]">
           <h2 className="text-3xl text-[#E45F11] font-bold">BFG Global Consulting, LLC</h2>
           <h3 className="text-2xl font-semibold">Your Growth Partner in a Changing Business Landscape</h3>
-          <div className="flex gap-8 w-full">
-            <div className="w-[60%]">
-              <p className="text-lg my-2 text-[#656565]">
+          <div className="flex flex-wrap gap-8 w-full">
+            <div className="w-[100%] lg:w-[60%]">
+              <p className="w-full text-lg my-2 text-[#656565]">
                 I am delighted to address you today as the <span className="font-bold">Managing Partner</span> and 
                  <span className="font-bold"> CEO</span> of <span className="font-bold">BFG Global Consulting Limited</span> and introduce our firm.
                 With great passion and commitment, our team at BFG Global
@@ -45,7 +45,7 @@ const page = () => {
               sustainable growth and success.
             </p>
             </div>
-            <div className="w-[30%] h-[400px] bg-white shadow-xl p-3">
+            <div className="w-[100%]  lg:w-[30%] h-[400px] bg-white shadow-xl p-3">
               <div className="w-[200px] h-[200px] mx-auto">
             <Image
                   src={Picture}
