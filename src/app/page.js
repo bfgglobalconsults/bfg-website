@@ -208,7 +208,7 @@ export default function Main() {
                   our target market and audience.
                 </p>
                 <button className="p-2 rounded-md bg-[#016EF8] hover:bg-black text-white text-md font-semibold">
-                  View All
+                 <Link href="/team">View All</Link> 
                 </button>
               </div>
 

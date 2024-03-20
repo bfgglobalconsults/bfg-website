@@ -1,6 +1,6 @@
 import { about_links } from "@/constants/aboutcomponent-constant";
 import Link from "next/link";
-import { useRouter } from "next/navigation"; // Import useRouter from Next.js
+import { useRouter } from "next/navigation"; 
 import React from "react";
 
 export const AboutComponent = ({ closeModal, color }) => {

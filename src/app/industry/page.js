@@ -12,8 +12,8 @@ const page = () => {
           <div className="flex flex-wrap gap-8 w-full">
             <div className="w-[100%] lg:w-[60%]">
               <p className="w-full text-lg my-2 text-[#656565]">
-                I am delighted to address you today as the <span className="font-bold">Managing Partner</span> and 
-                 <span className="font-bold"> CEO</span> of <span className="font-bold">BFG Global Consulting Limited</span> and introduce our firm.
+                I am delighted to address you today as the Managing Partner and 
+                  CEO of BFG Global Consulting Limited and introduce our firm.
                 With great passion and commitment, our team at BFG Global
                 Consulting is dedicated to assisting organizations from diverse
                 industries in their pursuit of business growth. We aim to be
