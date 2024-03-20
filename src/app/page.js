@@ -59,6 +59,7 @@ export default function Main() {
       img_name: "banner3",
       title: "Case Studies",
       link: "",
+
     }
   ];
 
