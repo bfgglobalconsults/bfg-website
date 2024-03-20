@@ -8,6 +8,7 @@ import MeasureBusiness from "../../../../public/assets/measure-business.jpg";
 import ProductionStats from "../../../../public/assets/production-stats.jpg";
 import ManagingDirector from "../../../../public/assets/festus-bello-md.jpg";
 import HeadGrowth from "../../../../public/assets/moses-sunday.jpg";
+import ResearchHead from "../../../../public/assets/kenneth.jpg";
 
 import Accordion from "@/components/Accordion";
 
@@ -52,11 +53,10 @@ const page = () => {
 
           <div>
             <div className="bg-[#f8f5f5] p-8">
-              <h3 className="text-[#016EF8] text-4xl text-center my-4">
-                Analytics Tools and Solutions
-              </h3>
-              <div className="w-full flex gap-8">
-                <div className="w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
+            <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
+              Focus areas of our Research and Analytics Consulting Services              </h3>
+              <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-8">
+              <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const page = () => {
                     insights, and drive recommendations to improve performance.
                   </p>
                 </div>
-                <div className="w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
+                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const page = () => {
                     and the right AI and ML techniques.
                   </p>
                 </div>
-                <div className="w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
+                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -125,8 +125,8 @@ const page = () => {
             </h3>
             <div>
               <div>
-                <div className="w-full flex flex-wrap gap-6">
-                  <div className="w-[30%] bg-white shadow-xl rounded-md">
+              <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-6">
+                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
                     <div className="p-4">
                       <div className="relative">
                         <Image
@@ -152,7 +152,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className="w-[30%] bg-white shadow-xl rounded-md">
+                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
                     <div className="p-4">
                       <div className="relative">
                         <Image
@@ -178,7 +178,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className="w-[30%] bg-white shadow-xl rounded-md">
+                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
                     <div className="p-4">
                       <div className="relative">
                         <Image
@@ -204,7 +204,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className="w-[30%] bg-white shadow-xl rounded-md">
+                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
                     <div className="p-4">
                       <div className="relative">
                         <Image
@@ -228,7 +228,7 @@ const page = () => {
                     </div>
                   </div>
 
-                  <div className="w-[30%] bg-white shadow-xl rounded-md">
+                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
                     <div className="p-4">
                       <div className="relative">
                         <Image
@@ -259,9 +259,11 @@ const page = () => {
           </div>
 
           <div className="py-8">
-            <h3 className="text-[#016EF8] text-4xl text-center my-4">Connect With Us</h3>
-            <div className="w-full flex gap-4 flex-wrap">
-              <div className="w-[30%] border-2 rounded-md border-gray-400 p-4">
+            <h3 className="text-[#016EF8] text-4xl my-4 text-center">Connect With Us: Uncover Insights, Drive Decisions</h3>
+            <p className="text-xl font-semibold my-2 text-center">Explore Our Research and Analytics Expertise</p>
+
+            <div className="w-full flex gap-4 flex-wrap justify-center">
+              {/* <div className="w-[30%] border-2 rounded-md border-gray-400 p-4">
                 <div className="w-[150px] h-[150px] mx-auto">
                 <Image
                 src={ManagingDirector}
@@ -274,9 +276,9 @@ const page = () => {
                 <p className="text-xl text-gray-500">Managing Director / CEO</p>
                 <div className="flex gap-2 justify-center my-2"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(107,114,128,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg></span><span className="text-gray-500">festus.bello@bfgconsults.com</span></div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="w-[30%] border-2 rounded-md border-gray-400 p-4">
+              <div className="border-2 rounded-md border-gray-400 p-4">
                 <div className="w-[150px] h-[150px] mx-auto">
                 <Image
                 src={HeadGrowth}
@@ -286,7 +288,22 @@ const page = () => {
                 </div>
                 <div className="text-center">
                 <h3 className="text-xl font-semibold my-2">Sunday Moses</h3>
-                <p className="text-xl text-gray-500">Senior Associate, Innovation and Technology</p>
+                <p className="text-xl text-gray-500">Head of Growth and Development</p>
+                <div className="flex gap-2 justify-center my-2"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(107,114,128,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg></span><span className="text-gray-500">sunday.moses@bfgconsults.com</span></div>
+                </div>
+              </div>
+
+              <div className="border-2 rounded-md border-gray-400 p-4">
+                <div className="w-[150px] h-[150px] mx-auto">
+                <Image
+                src={ResearchHead}
+                alt="research-head"
+                className="w-full h-full object-fit rounded-full"
+                />
+                </div>
+                <div className="text-center">
+                <h3 className="text-xl font-semibold my-2">Kenneth Idanwekhai</h3>
+                <p className="text-xl text-gray-500">Associate, Research, Data and Analytics</p>
                 <div className="flex gap-2 justify-center my-2"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(107,114,128,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg></span><span className="text-gray-500">sunday.moses@bfgconsults.com</span></div>
                 </div>
               </div>

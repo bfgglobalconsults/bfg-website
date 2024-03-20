@@ -85,7 +85,8 @@ const Statistics = ({ y, e, l, t }) => {
 
   return (
     <div ref={targetRef} className="bg-[#F5F5F5] py-28">
-      <div className="w-full flex flex-wrap gap-8 justify-center">
+      <p className="text-center text-4xl font-semibold">Insightful Metrics</p>
+      <div className="w-full flex flex-wrap gap-8 justify-center py-8">
         <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
           <animated.h3 className="">
@@ -121,7 +122,7 @@ const Statistics = ({ y, e, l, t }) => {
           </animated.h3>
           <span>+</span>
           </div>
-          <p className="my-2">Total Projects up from 2018 - 2023</p>
+          <p className="my-2">Total Projects Executed up from 2018 - 2023</p>
         </div>
       </div>
     </div>

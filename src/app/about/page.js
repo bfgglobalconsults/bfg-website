@@ -6,11 +6,10 @@ const page = () => {
       <div className="py-[30px]">
         <div className="p-[40px]">
           <div>
-            <h3 className="my-4 flex justify-center text-lg font-bold">
-              <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
-                Our Company
-              </span>
-            </h3>{" "}
+          <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
+          Our Company
+              </h3>
+            
             <p className="text-[#656565] text-lg">
               Founded in 2018, BFG Global Consulting is a Management consulting
               firm that specialises in research and analytics, business strategy
@@ -35,11 +34,10 @@ const page = () => {
             </p>
           </div>
           <div className="my-[40px] py-[20px] bg-[#e6e2e246]">
-            <h3 className="my-4 flex justify-center text-lg font-bold">
-              <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
-                What We Stand For
-              </span>
-            </h3>{" "}
+          <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
+          What We Stand For
+              </h3>
+            
             <div className="flex flex-wrap gap-[50px] w-full justify-center">
               <div className="w-[35%] shadow-lg border-b-4 border-[#016EF8] p-4">
                 <span className="flex justify-center">

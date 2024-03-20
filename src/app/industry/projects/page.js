@@ -12,16 +12,19 @@ const page = () => {
     <>
       <div className="py-[30px]">
         <div className="p-[40px]">
-        <h3 className="my-4 flex justify-center text-lg font-bold">
-            <span className="bg-[#f89d68] p-2 text-white rounded-xl">
-              Project Executed
-            </span>
-          </h3>          <p className="text-[#656565]">
-            Our solutions help clients gain resilience and manage industry
+       
+          <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
+          Project Executed
+              </h3>
+              <div className="text-center">
+          <p className="text-xl text-[#656565] w-full md:w-[70%] md:mx-auto my-3">
+          Our solutions help clients gain resilience and manage industry
             challenges toward maximising greater opportunities. See a brief
             description of some of our most recent projects executed across
             sectors.
           </p>
+          </div>
+         
           <div>
             <div className="my-4 p-3">
               <div className="w-full flex flex-wrap items-center gap-8 my-2 md:justify-center">

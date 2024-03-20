@@ -280,27 +280,27 @@ export default function Main() {
             </div>
             </div> */}
 
-          <div className="">
+          <div className="py-10">
             <h3 className="my-4 flex justify-center text-lg font-bold">
-              <span className="text-2xl lg:text-[36px] p-2 text-[#016EF8] rounded-xl">Our Partners</span>
+              <span className="text-3xl lg:text-[36px] p-2 text-[#016EF8] rounded-xl">Our Partners</span>
             </h3>
 
             <div>
-              <div className="w-[70%] md:w-full flex flex-wrap gap-8 items-center mx-auto md:mx-8">
-              <div className="w-[200px]">
+              <div className="w-[70%] md:w-full flex flex-wrap justify-center gap-8 items-center mx-auto md:mx-8">
+              <div className="w-[150px] lg:w-[200px]">
                 <Image src={Microsoft} alt="microsoft" className="w-full h-full object-fit" />
               </div>
             
-              <div className="w-[200px]">
+              <div className="w-[150px] lg:w-[200px]">
                 <Image src={Qualitrics} alt="qualitrics" className="w-full h-full object-fit" />
               </div>
-              <div className="w-[200px]">
+              <div className="w-[150px] lg:w-[200px]">
                 <Image src={Netline} alt="netline" className="w-full h-full object-fit" />
               </div>
-              <div className="w-[200px]">
+              <div className="w-[150px] lg:w-[200px]">
                 <Image src={IBM} alt="ibm" className="w-full h-full object-fit" />
               </div>
-              <div className="w-[200px]">
+              <div className="w-[150px] lg:w-[200px]">
                 <Image src={Apex} alt="Apex" className="w-full h-full object-fit" />
               </div>
               </div>
