@@ -1,3 +1,4 @@
+import Accordion from '@/components/Accordion'
 import React from 'react'
 
 const page = () => {
@@ -103,6 +104,62 @@ const page = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="container mx-auto py-12">
+            <h1 className="text-2xl text-[#016EF8] mb-4">Frequently Asked Questions (FAQs)</h1>
+            <Accordion title="Market Feasibility and Planning">
+              <p>
+                For business plan drafting, get real-time information about your
+                market. This service offers you the ability to recognise new
+                data architecture and market entry strategies. It makes it
+                easier for your organisation to obtain data for market service
+                while guaranteeing customer-valued goods. This service enables
+                you Product Concept Testing: to understand the properties,
+                characteristics, and performance of products before, during, and
+                after launch by capturing real-real time feedback on your
+                product. This makes it possible for a producer to use a UI/UX
+                process to evaluate a products functionality, safety, quality,
+                and adherence to specified standards.
+              </p>
+            </Accordion>
+            <Accordion title="Measure production agility">
+              <p>
+                With unmatched scalability and resilience, this service provides
+                you with insights into your production process and quality level
+                with your production managers. You can improve cost performance
+                and productivity through end- to-end real-time data collection
+                and analytical management.
+              </p>
+            </Accordion>
+            <Accordion title="Measure Customer Needs and Satisfaction (CNSAT)">
+              <p>
+                Have real-time knowledge about your customers needs and
+                understand if you are meeting them. Our research and analytics
+                service are used to forecast, manage, and get insight into
+                customer needs and satisfaction levels. This will help you
+                manage your future service process.
+              </p>
+            </Accordion>
+            <Accordion title="Measure experience with customers">
+              <p>
+                Collect real-time data about customer satisfaction with your
+                product. This service can improve client connections across any
+                channel by providing clearer, more accurate responses to
+                questions in any language.
+              </p>
+            </Accordion>
+            <Accordion title="Employee Satisfaction and Performance Appraisal">
+              <p>
+                {" "}
+                Engage your employees in decision- making through a quality
+                feedback mechanism. By periodically evaluating an employees work
+                performance and the manager-employee relationship in light of
+                your organisations competence requirements, you may strengthen
+                the operational connection of your organisation.
+              </p>
+            </Accordion>
+          </div> 
+
         </div>
     </>
   )
