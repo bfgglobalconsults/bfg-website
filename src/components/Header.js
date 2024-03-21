@@ -485,10 +485,10 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Consumer and Retailer</Link>
+                        <Link href="/product/appetizer">Appetizer</Link>
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Financial Services</Link>
+                        <Link href="/product/career-fun">Career Fun</Link>
                       </p>
                      
                       </div>

@@ -1,8 +1,17 @@
 import { product_links } from '@/constants/productcomponent-constant'
 import Link from 'next/link'
+import { useRouter } from "next/navigation"; 
 import React from 'react'
 
 const ProductComponent = ({ closeModal, color }) => {
+  const router = useRouter(); 
+
+  const handleLinkClick = (href) => {
+    console.log('Navigating to:', href); 
+    closeModal(); 
+    router.push(href); 
+  };
+
   return (
     <>
     <div>
@@ -19,11 +28,10 @@ const ProductComponent = ({ closeModal, color }) => {
           <div className="w-[40%]">
           {product_links.map(({id, label, link}) =>(
               <>
-              <Link key={id} href={link}>
-              <p className={`mx-4 py-4 border-t border-b border-white text-lg font-semibold ${color ? `hover:bg-white hover:text-${color}` : ''}`}>
+              <p className="mx-4 py-4 border-t border-b border-white text-lg font-semibold cursor-pointer hover:text-black"
+              onClick={() => handleLinkClick(link)}>
                 {label}
                 </p>
-                </Link>
                 </>
             ))}
           </div>

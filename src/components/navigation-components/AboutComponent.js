@@ -32,7 +32,7 @@ export const AboutComponent = ({ closeModal, color }) => {
           {about_links.map(({ id, label, link }) => (
             <p
               key={id}
-              className={`mx-4 py-4 border-t border-b border-white text-lg font-semibold cursor-pointer hover:text-black ${color ? `hover:bg-white hover:text-${color}` : ''}`}
+              className="mx-4 py-4 border-t border-b border-white text-lg font-semibold cursor-pointer hover:text-black"
               onClick={() => handleLinkClick(link)}
             >
               {label}
