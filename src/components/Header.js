@@ -172,12 +172,12 @@ const Header = () => {
                     <div
                       key={id}
                       ref={modalRef}
-                      className={`modal fixed z-5 inset-0 overflow-y-auto ${
+                      className={`modal relative z-5 inset-0 overflow-y-auto ${
                         activeTab === id ? "block" : "hidden"
                       }`}
                     >
                       <div
-                        className={`fixed flex w-full justify-center mt-[90px] min-h-[80vh]  ${
+                        className={`fixed top-0 left-0 flex w-full justify-center mt-[90px] min-h-[80vh]  ${
                           activeTab === id
                             ? "animate-slide-in"
                             : "animate-slide-out"
@@ -227,8 +227,8 @@ const Header = () => {
                           ref={modalRef}
                           className={`${
                             activeTab === id
-                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E45F11] border-b-2 border-[#E45F11] duration-200 link-underline"
-                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E45F11] duration-200 link-underline"
+                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 z-10 hover:text-[#E45F11] border-b-2 border-[#E45F11] duration-200 link-underline"
+                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 z-10 hover:text-[#E45F11] duration-200 link-underline"
                           } rounded-tl-md z-10 ${
                             id === navigation_links.length - 1
                               ? "rounded-tr-md"
@@ -246,12 +246,12 @@ const Header = () => {
                   {navigation_links.map(({ id, label, component }) => (
                     <div
                       key={id}
-                      className={`modal fixed z-5 inset-0 overflow-y-auto ${
+                      className={`modal relative z-5 inset-0 overflow-y-auto ${
                         activeTab === id ? "block" : "hidden"
                       }`}
                     >
                       <div
-                        className={`fixed flex w-full justify-center mt-[90px] min-h-[80vh]  ${
+                        className={`fixed top-0 left-0 flex w-full justify-center mt-[90px] min-h-[80vh]  ${
                           activeTab === id
                             ? "animate-slide-in"
                             : "animate-slide-out"

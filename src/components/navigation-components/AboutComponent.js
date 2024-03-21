@@ -4,12 +4,12 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 export const AboutComponent = ({ closeModal, color }) => {
-  const router = useRouter(); // Use useRouter within the component
+  const router = useRouter(); 
 
   const handleLinkClick = (href) => {
-    console.log('Navigating to:', href); // Log the destination URL
-    closeModal(); // Close modal when a link is clicked
-    router.push(href); // Navigate to the specified href using Next.js router
+    console.log('Navigating to:', href); 
+    closeModal(); 
+    router.push(href); 
   };
 
   return (

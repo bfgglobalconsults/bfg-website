@@ -37,13 +37,13 @@
     transform: scale(1);
   }
   25% {
-    transform: scale(1.01); /* Adjust the scale value as needed */
+    transform: scale(1.01); 
   }
   50% {
     transform: scale(1);
   }
   75% {
-    transform: scale(1.01); /* Adjust the scale value as needed */
+    transform: scale(1.01); 
   }
   100% {
     transform: scale(1);
@@ -51,13 +51,13 @@
 }
 
 .animate-heartbeat {
-  animation: heartbeat 9s infinite; /* Adjust the duration of the animation */
+  animation: heartbeat 9s infinite; 
   overflow: hidden;
   z-index: 1;
 }
 
 .modal {
-  z-index: 1000; /* Adjust the value as needed */
+  z-index: 1000; 
 }
 
 /* Front of the card */

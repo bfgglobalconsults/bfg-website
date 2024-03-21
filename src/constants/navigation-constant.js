@@ -9,6 +9,7 @@ export const navigation_links = [
     label: "Solutions",
     link: "solutions",
     component: <SolutionsComponent />,
+    componentName:"solutions",
     dropdown: true,
     dropdown_item: [
       {
@@ -39,6 +40,7 @@ export const navigation_links = [
     label: "Industry",
     link: "industry",
     component: <IndustryComponent />,
+    componentName:"industry",
     dropdown: true,
     dropdown_item: [
       {
@@ -53,6 +55,7 @@ export const navigation_links = [
     label: "Product",
     link: "product",
     component: <ProductComponent />,
+    componentName:"product ",
     dropdown: true,
     dropdown_item: [
       {
@@ -71,6 +74,7 @@ export const navigation_links = [
     id: 4,
     label: "Program",
     link: "program",
+    componentName:"program",
     dropdown: true,
     dropdown_item: [
       {
@@ -90,6 +94,7 @@ export const navigation_links = [
     label: "About us",
     link: "about",
     component: <AboutComponent />,
+    componentName:"about",
     dropdown: true,
     dropdown_item: [
       {
