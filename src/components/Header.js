@@ -365,9 +365,9 @@ const Header = () => {
                   style={styles}
                   className="fixed p-3 bg-white top-0 left-0 w-3/5 z-50 h-full shadow "
                 >
-                  {/* <div className="w-[100px] h-[100px]">
+                  <div className="w-[100px] h-[100px] mx-auto">
                     <Image src={Logo} className="w-full h-full object-fit" alt="logo" />
-                  </div> */}
+                  </div>
                   <div className="py-[40px] font-bold text-center text-[16px] text-gray-800">
                     {/* {navigation_links.map(({ id, link, label }) => (
                       <div key={id} className="pl-[32px] py-[20px]">

@@ -1,6 +1,8 @@
 import  { AboutComponent }  from "@/components/navigation-components/AboutComponent";
 import IndustryComponent from "@/components/navigation-components/IndustryComponent";
+import { InsightComponent } from "@/components/navigation-components/InsightComponent";
 import ProductComponent from "@/components/navigation-components/ProductComponent";
+import { ProgramComponent } from "@/components/navigation-components/ProgramComponent";
 import SolutionsComponent from "@/components/navigation-components/SolutionsComponent";
 
 export const navigation_links = [
@@ -74,6 +76,7 @@ export const navigation_links = [
     id: 4,
     label: "Program",
     link: "program",
+    component: <ProgramComponent />,
     componentName:"program",
     dropdown: true,
     dropdown_item: [
@@ -91,6 +94,26 @@ export const navigation_links = [
   },
   {
     id: 5,
+    label: "Insight",
+    link: "insight",
+    component: <InsightComponent />,
+    componentName:"insight",
+    dropdown: true,
+    dropdown_item: [
+      {
+        id: 1,
+        label: "Product Item",
+        link: "product/product-item",
+      },
+      {
+        id: 2,
+        label: "Product bfg",
+        link: "product/product-bfg",
+      },
+    ],
+  },
+  {
+    id: 6,
     label: "About us",
     link: "about",
     component: <AboutComponent />,

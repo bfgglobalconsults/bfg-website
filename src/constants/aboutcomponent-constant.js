@@ -11,11 +11,21 @@ export const about_links = [
       },
       {
         id: 3,
-        label: "Awards & Recognition",
+        label: "Our Team",
         link: "",
       },
       {
         id: 4,
+        label: "Our History",
+        link: "",
+      },
+      {
+        id: 5,
+        label: "Awards & Recognition",
+        link: "",
+      },
+      {
+        id: 6,
         label: "Governance & Culture",
         link: "",
       },
