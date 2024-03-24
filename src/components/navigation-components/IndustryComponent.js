@@ -1,6 +1,16 @@
+import { industry_links } from "@/constants/industrycomponent-constant";
+import Link from "next/link";
+import { useRouter } from "next/navigation"; 
 import React from "react";
 
-const IndustryComponent = () => {
+const IndustryComponent = ({ closeModal }) => {
+  const router = useRouter(); 
+
+  const handleLinkClick = (href) => {
+    console.log('Navigating to:', href); 
+    closeModal(); 
+    router.push(href); 
+  };
   return (
     <>
       <div>
@@ -19,24 +29,15 @@ const IndustryComponent = () => {
             </button>
           </div>
           <div className="w-[40%]">
-            <p className="text-lg py-4 mx-4 border-t border-b border-white font-semibold">
-              Consumer and Retail Market
+          {industry_links.map(({ id, label, link }) => (
+            <p
+              key={id}
+              className="mx-4 py-4 border-t border-b border-white text-lg font-semibold cursor-pointer hover:text-black"
+              onClick={() => handleLinkClick(link)}
+            >
+              {label}
             </p>
-            <p className="text-lg py-4 mx-4  font-semibold">
-              Financial Services
-            </p>
-            <p className="text-lg py-4 mx-4 border-t  border-white font-semibold">
-              Hospitality and Tourism
-            </p>
-            <p className="text-lg py-4 mx-4 border-t border-b border-white font-semibold">
-              Real Estate
-            </p>
-            <p className="text-lg py-4 mx-4  border-b border-white font-semibold">
-              Technology and Finance
-            </p>
-            <p className="text-lg py-4 mx-4  border-b border-white font-semibold">
-              Government and Non-for-Profit
-            </p>
+          ))}
           </div>
           <div className="w-[40%]">
             <h3 className="text-2xl text-white font-semibold my-3">
