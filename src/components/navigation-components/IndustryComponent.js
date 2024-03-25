@@ -40,9 +40,9 @@ const IndustryComponent = ({ closeModal }) => {
           ))}
           </div>
           <div className="w-[40%]">
-            <h3 className="text-2xl text-white font-semibold my-3">
+            {/* <h3 className="text-2xl text-white font-semibold my-3">
               Case Studies
-            </h3>
+            </h3> */}
           </div>
         </div>
       </div>

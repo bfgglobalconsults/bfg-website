@@ -11,8 +11,13 @@ export const insight_links = [
       },
       {
         id: 3,
-        label: "Careers",
+        label: "Case Studies",
         link: "",
+      },
+      {
+        id: 3,
+        label: "Careers",
+        link: "careers",
       },
      
     ]

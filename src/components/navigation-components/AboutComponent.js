@@ -22,11 +22,11 @@ export const AboutComponent = ({ closeModal, color }) => {
             to growth. We are at the intersection of research, strategy,
             workforce training, and information technology.
           </p>
-          <Link href="/about">
+          {/* <Link href="/about">
             <button onClick={closeModal} className="my-8 px-6 py-4 border-2 border-white text-lg font-semibold">
               Explore
             </button>
-          </Link>
+          </Link> */}
         </div>
         <div className="w-[40%]">
           {about_links.map(({ id, label, link }) => (

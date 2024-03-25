@@ -26,12 +26,12 @@ const SolutionsComponent = ({ closeModal, color }) => {
               we empower companies to thrive in todays dynamic business
               landscape.
             </p>
-            <button
+            {/* <button
               onClick={closeModal}
               className="my-8 px-6 py-4 border-2 border-white text-lg font-semibold hover:text-black hover:border-black"
             >
               Explore
-            </button>
+            </button> */}
           </div>
           <div className="w-[40%]">
           {solution_links.map(({ id, label, link }) => (
