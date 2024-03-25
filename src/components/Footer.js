@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -31,19 +32,19 @@ const Footer = () => {
               </div>
                 <div className="text-white">
                   <h3 className="font-semibold">Company</h3>
-                  <p className="my-2">Who we are</p>
+                  <p className="my-2"><Link href="/industry">Who we are</Link></p>
                   <p className="my-2">Board of Advisors</p>
-                  <p className="my-2">Growth Team</p>
-                  <p className="my-2">Project Executed</p>
+                  <p className="my-2"><Link href="/team">Growth Team</Link></p>
+                  <p className="my-2"><Link href="/industry/projects">Project Executed</Link></p>
 
                 </div>
 
                 <div className="text-white">
                   <h3 className="font-semibold">Solutions</h3>
-                  <p className="my-2">Research & Analytics</p>
-                  <p className="my-2">Business Strategy & Operations</p>
-                  <p className="my-2">Training & Development</p>
-                  <p className="my-2">Information Technology</p>
+                  <p className="my-2"><Link href="/solutions/research-analytics">Research & Analytics</Link></p>
+                  <p className="my-2"><Link href="/solutions/business-strategy">Business Strategy & Operations</Link></p>
+                  <p className="my-2"><Link href="/solutions/training-development">Training & Development</Link></p>
+                  <p className="my-2"><Link href="/solutions/information-technology">Information Technology</Link></p>
 
                 </div>
 

@@ -17,16 +17,16 @@ const IndustryComponent = ({ closeModal }) => {
         <div className="w-full flex gap-8">
           <div className="w-[20%]">
             <h3 className="text-2xl text-white font-semibold my-3">
-              Portfolio
+              Industry
             </h3>
             <p className="text-white text-lg">
               We combine industry expertise with analytical insights to help
               clients achieve growth, drive innovation, and navigate complex
               business landscapes.
             </p>
-            <button className="my-8 px-6 py-4 border-2 border-white text-lg font-semibold">
+            {/* <button className="my-8 px-6 py-4 border-2 border-white text-lg font-semibold">
               Explore
-            </button>
+            </button> */}
           </div>
           <div className="w-[40%]">
           {industry_links.map(({ id, label, link }) => (

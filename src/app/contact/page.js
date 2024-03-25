@@ -212,7 +212,7 @@ const page = () => {
             Our team consists of highly experienced professionals with extensive backgrounds in various industries. Each consultant brings a wealth of expertise and a proven track record of success to every project they undertake.
             </p>
           </Accordion>
-          <Accordion title="How do you ensure confidentiality and security of client information?">
+          <Accordion title="How do you ensure confidentiality and security?">
             <p>
             Confidentiality and security are paramount to us. We adhere to strict protocols and industry best practices to safeguard all client information. Our consultants are bound by confidentiality agreements, and we utilize secure systems and technologies to protect data at all times.
             </p>
