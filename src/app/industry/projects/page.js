@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import TopBanner from "../../../../public/assets/project-executed.jpg";
 import Project1 from "../../../../public/assets/project-1.jpg";
 import Project2 from "../../../../public/assets/project-2.jpg";
 import Project3 from "../../../../public/assets/project-3.jpg";
@@ -10,30 +11,46 @@ import Project6 from "../../../../public/assets/project-6.jpg";
 const page = () => {
   return (
     <>
+      <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+        <Image
+          src={TopBanner}
+          alt="top-banner"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+        {/* Transparent overlay */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+          <h3 className="text-white font-bold text-4xl md:text-3xl lg:text-4xl">
+            Project Executed
+          </h3>
+          <p className="text-[#ffffff9a] my-2 text-lg lg:text-2xl">
+            Experience our expertise in action through successfully executed
+            projects.
+          </p>
+        </div>
+      </div>
       <div className="py-[30px]">
         <div className="p-[40px]">
-       
-          <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
-          Project Executed
-              </h3>
-              <div className="text-center">
-          <p className="text-xl text-[#656565] w-full md:w-[70%] md:mx-auto my-3">
-          Our solutions help clients gain resilience and manage industry
-            challenges toward maximising greater opportunities. See a brief
-            description of some of our most recent projects executed across
-            sectors.
-          </p>
+          <div className="text-center">
+            <p className="text-xl text-[#656565] w-full md:w-[70%] md:mx-auto my-3">
+              Our solutions help clients gain resilience and manage industry
+              challenges toward maximising greater opportunities. See a brief
+              description of some of our most recent projects executed across
+              sectors.
+            </p>
           </div>
-         
+
           <div>
             <div className="my-4 p-3">
-              <div className="w-full flex flex-wrap items-center gap-8 my-2 md:justify-center">
-                <div className="w-[100%] md:w-[50%]  lg:w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
-                <Image
-                    src={Project1}
-                    alt="first-project"
-                    className="w-full h-full object-fit"
-                  />
+              <div className="w-full  flex flex-wrap gap-4 my-2 justify-center">
+                <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
+                  <div className="w-full h-[200px]">
+                    <Image
+                      src={Project1}
+                      alt="first-project"
+                      className="w-full h-full object-fit"
+                    />
+                  </div>
                   <p className="text-[#E45F11] font-bold my-2">
                     ICT Training for Federal Ministry of Humanitarian Affairs,
                     Disaster Management and Social Development
@@ -48,11 +65,13 @@ const page = () => {
                 </div>
 
                 <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
-                <Image
-                    src={Project2}
-                    alt="second-project"
-                    className="w-full h-full object-fit"
-                  />
+                  <div className="w-full h-[200px]">
+                    <Image
+                      src={Project2}
+                      alt="second-project"
+                      className="w-full h-full object-fit"
+                    />
+                  </div>
                   <p className="text-[#016EF8] font-bold my-2">
                     Business Transformation and Productivity Project for
                     GIGStravel.co.uk
@@ -68,11 +87,13 @@ const page = () => {
                 </div>
 
                 <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
-                <Image
-                    src={Project3}
-                    alt="third-project"
-                    className="w-full h-full object-fit"
-                  />
+                  <div className="w-full h-[200px]">
+                    <Image
+                      src={Project3}
+                      alt="third-project"
+                      className="w-full h-full object-fit"
+                    />
+                  </div>
                   <p className="text-[#E45F11] font-bold my-2">
                     Property Technology System for Mindfire Limited
                   </p>
@@ -86,11 +107,14 @@ const page = () => {
                 </div>
 
                 <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
-                <Image
+                                    <div className="w-full h-[200px]">
+
+                  <Image
                     src={Project4}
                     alt="fourth-project"
                     className="w-full h-full object-fit"
-                  />
+                    />
+                    </div>
                   <p className="text-[#016EF8] font-bold my-2">
                     Implementation of #TechforNonprofits model for Travaille
                     Ensemble
@@ -106,38 +130,41 @@ const page = () => {
                 </div>
 
                 <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#E45F11] p-2">
-                <Image
+                  <div className="w-full h-[200px]">
+                  <Image
                     src={Project5}
                     alt="first-project"
                     className="w-full h-full object-fit"
-                  />
+                    />
+                    </div>
                   <p className="text-[#E45F11] font-bold my-2">
-                  Digital Transformation and Product Profiling for Sensang
+                    Digital Transformation and Product Profiling for Sensang
                     Construction Limited
                   </p>
                   <p className="text-[#656565]">
-                  Sensang is now among the architectural and civil engineering
+                    Sensang is now among the architectural and civil engineering
                     businesses in Nigerias capital with the quickest growth. We
                     led the companys initiative to transition digitally, acting
                     as its most dependable partner. We provided Sensang with
                     more than simply digital operations; we also created the
                     companys product profile and market features, which account
-                    for more than 80% of its current lead worth. 
+                    for more than 80% of its current lead worth.
                   </p>
                 </div>
 
                 <div className="w-[100%] md:w-[50%] lg:w-[30%] shadow-lg border-b-4 border-[#016EF8] p-2">
-                <Image
+                 <div className="w-full h-[200px]">
+                  <Image
                     src={Project6}
                     alt="six-project"
                     className="w-full h-full object-fit"
-                  />
+                    />
+                    </div>
                   <p className="text-[#016EF8] font-bold my-2">
-                  Projected Business Plan and Advisory service for WorkaHQ.
-
+                    Projected Business Plan and Advisory service for WorkaHQ.
                   </p>
                   <p className="text-[#656565]">
-                  WorkaHQ, a tech-based provider of household services,
+                    WorkaHQ, a tech-based provider of household services,
                     specialises in laundry, kitchen maintenance, and support
                     services. This initiative was launched to attract investors
                     and grow. A market insight strategy was created by our
@@ -145,11 +172,8 @@ const page = () => {
                     initiative to draw in over $20,000 in funding
                   </p>
                 </div>
-              
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
