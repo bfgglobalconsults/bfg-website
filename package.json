@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@headlessui/react": "^1.7.18",
     "@react-spring/web": "^9.7.3",
     "next": "14.1.0",

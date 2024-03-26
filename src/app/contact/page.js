@@ -1,7 +1,35 @@
+"use client";
 import Accordion from "@/components/Accordion";
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import Link from "next/link";
+import { useRouter } from 'next/router';
 
-const page = () => {
+
+const Page = () => {
+  const [state, handleSubmit] = useForm("xwkgrkre");
+
+  
+  if (state.succeeded) {
+    return (
+      <div className="p-8 flex justify-center mx-8 my-8 rounded-md bg-[#1c416d]">
+        <div>
+          <p className="text-white text-2xl font-bold">
+            Thanks for Contacting Us!
+          </p>
+          <Link href="/">
+            <div className="flex gap-4 justify-center my-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(255,255,255,1)"><path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path></svg>
+              </span>
+              <span className="text-white text-xl font-semibold">Go Home</span>
+          </div>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="my-6">
@@ -100,7 +128,7 @@ const page = () => {
               </ul>
               <ul className="flex mt-12 space-x-4">
                 <li className="bg-[#487dc2] hover:bg-[#223c5e] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="javascript:void(0)">
+                  <a href="https://facebook.com/BFGConsults" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18px"
@@ -116,7 +144,7 @@ const page = () => {
                   </a>
                 </li>
                 <li className="bg-[#487dc2] hover:bg-[#223c5e] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="">
+                  <a href="https://www.linkedin.com/company/bfgconsults/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18px"
@@ -132,7 +160,7 @@ const page = () => {
                   </a>
                 </li>
                 <li className="bg-[#487dc2] hover:bg-[#223c5e] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="">
+                  <a href="https://www.instagram.com/bfgconsults/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18px"
@@ -147,16 +175,23 @@ const page = () => {
               </ul>
             </div>
             <div className="bg-gray-300 p-6 rounded-lg">
-              <form class="mt-8 space-y-4">
+              <form onSubmit={handleSubmit} className="mt-8 space-y-4">
                 <input
                   type="text"
                   placeholder="Name"
                   className="w-full rounded-md py-3 px-4 text-sm outline-[#487dc2]"
                 />
                 <input
+                  id="email"
                   type="email"
+                  name="email"
                   placeholder="Email"
                   className="w-full rounded-md py-3 px-4 text-sm outline-[#487dc2]"
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
                 <input
                   type="text"
@@ -165,11 +200,19 @@ const page = () => {
                 />
                 <textarea
                   placeholder="Message"
+                  id="message"
+                  name="message"
                   rows="6"
                   className="w-full rounded-md px-4 text-sm pt-3 outline-[#487dc2]"
                 ></textarea>
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
                 <button
-                  type="button"
+                  type="submit"
+                  disabled={state.submitting}
                   className="text-white bg-[#487dc2] hover:bg-[#314e75] font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
                 >
                   <svg
@@ -202,19 +245,27 @@ const page = () => {
             <p>
               Our consulting firm specializes in a wide range of services
               tailored to meet the diverse needs of our clients. These services
-              include but are not limited to strategic business planning, business
-              development, market research, training & development, financial analysis, project
-              management, Technology Solutions and organizational development.
+              include but are not limited to strategic business planning,
+              business development, market research, training & development,
+              financial analysis, project management, Technology Solutions and
+              organizational development.
             </p>
           </Accordion>
           <Accordion title="How experienced are your consultants?">
             <p>
-            Our team consists of highly experienced professionals with extensive backgrounds in various industries. Each consultant brings a wealth of expertise and a proven track record of success to every project they undertake.
+              Our team consists of highly experienced professionals with
+              extensive backgrounds in various industries. Each consultant
+              brings a wealth of expertise and a proven track record of success
+              to every project they undertake.
             </p>
           </Accordion>
           <Accordion title="How do you ensure confidentiality and security?">
             <p>
-            Confidentiality and security are paramount to us. We adhere to strict protocols and industry best practices to safeguard all client information. Our consultants are bound by confidentiality agreements, and we utilize secure systems and technologies to protect data at all times.
+              Confidentiality and security are paramount to us. We adhere to
+              strict protocols and industry best practices to safeguard all
+              client information. Our consultants are bound by confidentiality
+              agreements, and we utilize secure systems and technologies to
+              protect data at all times.
             </p>
           </Accordion>
           <Accordion title="Measure experience with customers">
@@ -225,11 +276,10 @@ const page = () => {
               in any language.
             </p>
           </Accordion>
-          
         </div>
       </div>
     </>
   );
 };
 
-export default page;
+export default Page;
