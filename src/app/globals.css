@@ -31,3 +31,85 @@
     text-wrap: balance;
   }
 }
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.01); 
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.01); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 9s infinite; 
+  overflow: hidden;
+  z-index: 1;
+}
+
+.modal {
+  z-index: 1000; 
+}
+
+/* Front of the card */
+
+.front {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Back of the card */
+.back {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  transform: rotateY(-180deg);
+}
+
+/* Applied when the card is flipped */
+.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.flipped .back {
+  transform: rotateY(0deg);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+

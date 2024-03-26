@@ -1,132 +1,362 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import Banner from "../../public/assets/header-banner.png";
+import ImageBanner from "../../public/assets/banner-image1.jpg";
+import ImageBanner2 from "../../public/assets/banner-image2.jpg";
+import ImageBanner3 from "../../public/assets/case-study-banner.jpg";
+import MidBanner from "../../public/assets/midbanner.jpg";
+import HeadGrowth from "../../public/assets/moses-sunday.jpg";
+import Marketer from "../../public/assets/ifeoma.jpg";
+import Appetizer from "../../public/assets/appetiza.jpg";
+import Careerfun from "../../public/assets/careerfun.jpg";
+
+import Microsoft from "../../public/assets/microsoft-banner.png";
+import Qualitrics from "../../public/assets/qualitrics-banner.png";
+import Netline from "../../public/assets/netline-banner.png";
+import IBM from "../../public/assets/ibm-banner.png";
+import Apex from "../../public/assets/apexgroup-banner.png";
+
 import Logo from "./bfg-logo.png";
 import Animation from "../../public/office_banner.jpg";
 
-export default function Home() {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+import "swiper/css";
+import "swiper/css/navigation";
+import { partners_links } from "@/constants/partners-constants";
+import Link from "next/link";
+import Statistics from "@/components/Statistics";
+import { card_links } from "@/constants/card-constant";
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+export default function Main() {
+  const [selectedCard, setSelectedCard] = useState(null);
+  const [toggle, setToggle] = useState(false);
 
-    return () => clearInterval(timer);
-  }, []);
+  const handleClick = (id) => {
+    setSelectedCard(id === selectedCard ? null : id);
+    setToggle(!toggle);
+  };
 
-  function calculateTimeLeft() {
-    const difference = +new Date("2024-03-26") - +new Date();
-    let timeLeft = {};
+  const banner = [
+    {
+      id: 1,
+      image: ImageBanner,
+      img_name: "banner",
+      title: "The BFG Story",
+      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
+    },
+    {
+      id: 2,
+      image: ImageBanner2,
+      img_name: "banner2",
+      title: "BFG Consults bags UK Award for Research",
+      link: "https://guardian.ng/news/bfg-consults-bags-uk-award-for-research-others/",
+    },
+    {
+      id: 3,
+      image: ImageBanner3,
+      img_name: "banner3",
+      title: "Case Studies",
+      link: "",
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
+
     }
+  ];
 
-    return timeLeft;
-  }
+  const currentDate = new Date();
+
+  const fixedDate = new Date("2018-03-26");
+
+  const differenceInMillis = currentDate - fixedDate;
+
+  const differenceInYears = differenceInMillis / (1000 * 60 * 60 * 24 * 365);
 
   return (
     <>
-      <div className="w-screen h-screen">
-        <header className="w-full bg-white p-2 border-b-2 text-black">
-          <div className="w-[100px] h-[calc(100vh - 500px)]">
-            <Image src={Logo} alt="Logo" width="100%" height="100%" />
+      <div className="py-[30px]">
+        <div className="w-full lg:flex items-center my-4">
+          <div className="w-full lg:w-[45%]">
+            <div className="p-[40px]">
+              <h3 className="font-bold text-3xl lg:text-5xl text-[#E45F11]">
+                Your Partner in Research, Strategy, Training and Technology
+              </h3>
+              <p className="text-xl text-[#656565] my-2">
+                With expertise in research and analytics, business strategy and
+                operations, training and development, and information
+                technology, we empower companies to thrive in todays dynamic
+                business landscape.{" "}
+              </p>
+            </div>
           </div>
-        </header>
-        {/* <main className="flex min-h-screen flex-col items-center justify-between">
+          <div className="w-full lg:w-[50%] animate-heartbeat overflow-hidden">
+            <Image
+              src={Banner}
+              alt="banner"
+              className="w-full h-full object-fit"
+            />
+          </div>
+        </div>
+        <div className="bg-[#faf8f8bd] p-[40px]">
+          <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="text-2xl lg:text-[36px] p-2 text-[#016EF8] rounded-xl">
+              Our Solutions
+            </span>
+          </h3>
+          <div className="text-center">
+          <p className="text-xl text-[#656565] w-full md:w-[70%] md:mx-auto my-3">
+            We offer a bespoke broad spectrum of consulting practice within a
+            four-product line of service for all businesses across sectors.
+            Either as a startup, SME or as a large enterprise{" "}
+          </p>
+          </div>
+          <div>
+            <div className="w-full flex flex-wrap gap-[20px] justify-center">
+              {card_links.map((card) => (
+                <div
+                  key={card.id}
+                  className="w-[100%] md:w-[70%] lg:w-[35%] h-full shadow-lg rounded-md  p-[20px] cursor-pointer text-center hover:border hover:border-black transition-all duration-300 ease-in-out"
+                >
+                  <div className="w-full h-[250px]">
+                    {" "}
+                    <Image
+                      src={card.logo}
+                      alt="card.title"
+                      className="w-full h-full object-fit rounded-md"
+                    />
+                  </div>
 
-    </main> */}
-        <div className="bg-[#037bd1] text-white p-2 lg:p-3">
-          <h1 className="sm:text-3xl  lg:text-4xl text-white font-bold text-center my-6">
-            <span className="text-white font-inter">
-              Planned Maintenance in Progress
-            </span>
-          </h1>
-          <p className="text-center md:px-[50px] lg:px-[70px]">
-            <span className="text-white text-2xl font-inter">
-              Welcome to the Business Site of{" "}
-              <b className="text-[#df350a]">BFG Global Consulting Limited</b>
-            </span>
-          </p>
-          <p className="text-center sm:p-5 text-xl font-inter">
-            Our site is currently scheduled for maintenance and service update.
-            While we are working to complete our maintenance
-          </p>
-          <div className="text-2xl text-center font-mono">in</div>
-          <div className="text-5xl lg:text-6xl text-center flex w-full items-center justify-center my-8">
-            <div className="w-18 lg:w-24 mx-1 p-2 bg-white text-[#037bd1] rounded-lg">
-              <div className="font-mono leading-none">
-                {timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}
-              </div>
-              <div className=" uppercase text-sm leading-none">Days</div>
-            </div>
-            <div className="w-18 lg:w-24 mx-1 p-2 bg-white text-[#037bd1] rounded-lg">
-              <div className="font-mono leading-none">
-                {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
-              </div>
-              <div className=" uppercase text-sm leading-none">Hours</div>
-            </div>
-            <div className="w-18 lg:w-24 mx-1 p-2 bg-white text-[#037bd1] rounded-lg">
-              <div className="font-mono leading-none">
-                {timeLeft.minutes < 10
-                  ? `0${timeLeft.minutes}`
-                  : timeLeft.minutes}
-              </div>
-              <div className=" uppercase text-sm leading-none">Minutes</div>
-            </div>
-            <div className="text-2xl mx-1 font-mono">and</div>
-            <div className="w-18 lg:w-24 mx-1 p-2 bg-white text-[#037bd1] rounded-lg">
-              <div className="font-mono leading-none">
-                {timeLeft.seconds < 10
-                  ? `0${timeLeft.seconds}`
-                  : timeLeft.seconds}
-              </div>
-              <div className=" uppercase text-sm leading-none">Seconds</div>
+                  <h2 className="text-xl font-bold my-2 text-[#016EF8]">
+                    {card.title}
+                  </h2>
+                  <p className="text-[14px] p-2">{card.content}</p>
+                  <Link
+                    className="flex gap-2 items-center justify-center "
+                    href={card.link}
+                  >
+                    <p className="text-sm text-[#016EF8] hover:text-black font-semibold">
+                      READ MORE{" "}
+                    </p>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(1,110,248,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
-          <p className="text-center text-lg lg:text-2xl font-inter">
-            For immediate enquiry on our services
-          </p>
-          <div className="font-inter flex justify-center gap-3">
-            <p className="font-inter flex  gap-1 lg:gap-3">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  fill="rgba(255,255,255,1)"
-                >
-                  <path d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"></path>
-                </svg>
-              </span>{" "}
-              <span>+2348184165533</span>
-            </p>
-            <p className=" font-inter flex  gap-1 lg:gap-3">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  fill="rgba(255,255,255,1)"
-                >
-                  <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path>
-                </svg>
-              </span>{" "}
-              <span>info@bfgconsults.com</span>
-            </p>
+        </div>
+        <div className="p-[40px]">
+          <h3 className="my-4 flex justify-center text-lg font-bold">
+            <span className="p-2 text-2xl lg:text-[36px] text-[#016EF8] rounded-xl">Featured Insights</span>
+          </h3>
+          <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
+            {banner.map((item, index) => (
+              <div
+                className="relative w-[100%] md:w-[50%] lg:w-[30%] h-[500px] bg-cover bg-center"
+                key={index}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-[100%] object-fit"
+                />
+                <div>
+                  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>{" "}
+                  {/* Transparent overlay */}
+                  <div className="absolute bottom-14 left-10">
+                    <p className="text-white text-xl my-4">{item.title}</p>
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      className="p-2 font-semibold my-4 rounded-md border-2 border-white hover:border-none hover:bg-[#016EF8] text-white text-lg"
+                    >
+                      Read more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {/* <div>
+              <p className="text-lg font-bold flex justify-center items-center">Read More</p>
+            </div> */}
+          </div>
+          <div>
+          {/* <p className="text-center text-[32px] text-black font-bold my-2">Insightful Metrics</p> */}
+
+          <Statistics y={differenceInYears} e={104} l={2} t={2000} />
+          </div>
+          <div className="relative py-12 bg-[#f8f5f5] my-8">
+            <div className="w-full flex flex-wrap gap-4">
+              <div className="w-[100%] md:w-[100%] lg:w-[30%] h-full p-6">
+                <h3 className="my-4 text-lg font-bold">
+                  <span className="bg-[#abcaf1] p-2 text-[#016EF8] rounded-xl">
+                    Meet With Our
+                  </span>
+                </h3>{" "}
+                <h3 className="text-2xl font-bold">Management Team</h3>
+                <p className="text-[#656565] my-3">
+                  Meet the dedicated team of people who make our business what
+                  it is today. They represent our primary point of contact with
+                  our target market and audience.
+                </p>
+                <button className="p-2 rounded-md bg-[#016EF8] hover:bg-black text-white text-md font-semibold">
+                 <Link href="/team">View All</Link> 
+                </button>
+              </div>
+
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
+                <Image
+                  src={HeadGrowth}
+                  alt=""
+                  className="w-full h-full object-fit"
+                />
+                <p className="font-bold">
+                  Sunday Moses
+                </p>
+                <p className="text-[#656565] font-semibold">
+                  Head of Growth and Development
+                </p>
+              </div>
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
+                <Image
+                  src={Marketer}
+                  alt=""
+                  className="w-full h-full object-fit"
+                />
+                <p className="font-bold">
+                  Ifeoma Ezeamama
+                </p>
+                <p className="text-[#656565] font-semibold">
+                  Senior Associate, Business Strategy and Operations
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative w-full h-[500px] bg-cover bg-center flex justify-center items-center">
+            <Image
+              src={MidBanner}
+              alt="mid-banner"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+            {/* Transparent overlay */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+              <h3 className="text-white font-bold text-2xl md:text-3xl lg:text-4xl">
+                Securing Industry Relevance for Individuals and Businesses
+              </h3>
+              <p className="text-[#ffffff9a] my-2 text-lg lg:text-xl">
+                Our growth services are designed to help you either as an
+                individual, startup, or SME secure industry relevance.
+              </p>
+              <div>
+                <button className="p-2 border-2 border-white text-white text-xl my-4">
+                  <Link href="/contact">Contact Us</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="py-4">
+            <h3 className="my-4 flex justify-center text-lg font-bold">
+              <span className="bg-[#5d9df0] p-2 text-white rounded-xl">
+                Our Products
+              </span>
+            </h3>
+            <div className="w-full flex flex-wrap justify-center gap-8">
+              <div className="w-[300px]">
+                <Image src={Appetizer} alt="appetizer" href="" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[300px]">
+                <Image src={Careerfun} alt="careerfun" href="" className="w-full h-full object-fit" />
+              </div>
+            </div>
+            </div> */}
+
+          <div className="py-10">
+            <h3 className="my-4 flex justify-center text-lg font-bold">
+              <span className="text-3xl lg:text-[36px] p-2 text-[#016EF8] rounded-xl">Our Partners</span>
+            </h3>
+
+            <div>
+              <div className="w-[70%] md:w-full flex flex-wrap justify-center gap-8 items-center mx-auto md:mx-8">
+              <div className="w-[150px] lg:w-[200px]">
+                <Image src={Microsoft} alt="microsoft" className="w-full h-full object-fit" />
+              </div>
+            
+              <div className="w-[150px] lg:w-[200px]">
+                <Image src={Qualitrics} alt="qualitrics" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[150px] lg:w-[200px]">
+                <Image src={Netline} alt="netline" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[150px] lg:w-[200px]">
+                <Image src={IBM} alt="ibm" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[150px] lg:w-[200px]">
+                <Image src={Apex} alt="Apex" className="w-full h-full object-fit" />
+              </div>
+              </div>
+              {/* <div className="w-full h-[100px] flex gap-8">
+              <div className="w-[300px]">
+                <Image src={Microsoft} alt="microsoft" className="w-full h-full object-fit" />
+              </div>
+            
+              <div className="w-[300px]">
+                <Image src={Qualitrics} alt="qualitrics" className="w-full h-full object-fit" />
+              </div>
+              <div className="w-[300px]">
+                <Image src={Netline} alt="netline" className="w-full h-full object-fit" />
+              </div>
+              </div> */}
+            </div>
+            {/* <Swiper
+              style={{ "--swiper-navigation-size": "20px" }}
+              slidesPerView={2}
+              breakpoints={{
+                0: {
+                  slidesPerView: 2,
+                },
+                300: {
+                  slidesPerView: 3,
+                },
+                600: {
+                  slidesPerView: 6,
+                },
+              }}
+              autoplay={{ delay: 5000, disableOnInteraction: false }}
+              spaceBetween={1}
+              navigation={true}
+              modules={[Navigation, Autoplay]}
+              className="w-full flex justify-center items-center"
+            >
+              {partners_links.map(({ image, name }, index) => {
+                return (
+                  <SwiperSlide className="flex justify-center" key={index}>
+                    <div className="w-[400px] h-[200px] text-center">
+                      <div className="p-4">
+                        <div className="w-[190px] h-[50px]">
+                          <Image
+                            src={image}
+                            alt={name}
+                            className="w-full h-full object-fit"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper> */}
           </div>
         </div>
       </div>
