@@ -595,9 +595,12 @@ const Header = () => {
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/industry">Who we are</Link>
+                        </p>
+                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/team">Our Team</Link>
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/projects">Our Team</Link>
+                        <Link href="/industry/projects">Our Clients</Link>
                       </p>
 
                        
