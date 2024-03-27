@@ -15,7 +15,7 @@ const Messenger = () => {
       <div>
         {isSchedulerVisible && (
           <div className="fixed bottom-[60px] right-8 z-[1200] p-8 rounded-md">
-            <div className="w-[300px] md:w-[400px] h-[300px] bg-white shadow-xl z-[1200] rounded-md border">
+            <div className="w-[300px] md:w-[400px] h-[350px] bg-white shadow-xl z-[1200] rounded-md border">
               <div className="w-full rounded-md">
                 <div className="w-full flex items-center gap-4 bg-[#016EF8] p-4 rounded-md">
                   <div>
