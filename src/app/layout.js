@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Messenger from "@/components/Messenger";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter"});
 // const poppins = Poppins({ subsets: ["latin"], variable: "--poppins"});
@@ -12,6 +13,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  	
+  
   return (
     <html lang="en">
       <body className={inter.variable}>
@@ -19,6 +22,7 @@ export default function RootLayout({ children }) {
         <div>
         {children}
         </div>
+        <Messenger />
         <Footer />
         </body>
     </html>
