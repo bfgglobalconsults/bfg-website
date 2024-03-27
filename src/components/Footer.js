@@ -70,10 +70,10 @@ const Footer = () => {
 
                 <div className="text-white">
                   <h3 className="font-semibold">Policy</h3>
-                  <p className="my-2">Privacy Policy</p>
-                  <p className="my-2">Terms of Service</p>
+                  <Link href="/privacy"><p className="my-2">Privacy Policy</p></Link>
+                  <Link href="/terms"><p className="my-2">Terms of Service</p></Link>
                   <p className="my-2">Copyright Policy</p>
-                  <p className="my-2">Legal Policy</p>
+                  <Link href="/legal"><p className="my-2">Legal Policy</p></Link>
 
                 </div>
 
