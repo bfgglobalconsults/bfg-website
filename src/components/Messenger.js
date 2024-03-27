@@ -71,7 +71,7 @@ const Messenger = () => {
                     </div>
                   </div>
                 </a>
-                <a href="" target="_blank">
+                <a href="https://wa.me/447551107100" target="_blank">
                   <div className="flex justify-between items-center px-6 border-l-2 border-[#016EF8] hover:bg-gray-100 my-3">
                     <div className="flex gap-3 items-center">
                       <div className="w-[50px] h-[50px]">
