@@ -192,7 +192,7 @@ export default function Main() {
           <div>
           {/* <p className="text-center text-[32px] text-black font-bold my-2">Insightful Metrics</p> */}
 
-          <Statistics y={differenceInYears} e={104} l={2} t={2000} />
+          <Statistics y={differenceInYears} e={104} l={2} t={1549} />
           </div>
           <div className="relative py-12 bg-[#f8f5f5] my-8">
             <div className="w-full flex flex-wrap gap-4">
@@ -226,7 +226,7 @@ export default function Main() {
                   Head of Growth and Development
                 </p>
               </div>
-              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[20%] h-[300px] p-6 my-3">
                 <Image
                   src={Marketer}
                   alt=""

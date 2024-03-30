@@ -517,10 +517,16 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Consumer and Retailer</Link>
+                        <Link href="">Dialetics</Link>
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Financial Services</Link>
+                        <Link href="">Emerging Marketplace Leader</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Women in Tech</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">SME Klinic</Link>
                       </p>
                      
 
