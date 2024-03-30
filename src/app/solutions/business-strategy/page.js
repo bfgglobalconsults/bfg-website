@@ -358,9 +358,9 @@ const page = () => {
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl font-semibold my-2">Sunday Moses</h3>
+                  <h3 className="text-xl font-semibold my-2">Moses S. Ijeo</h3>
                   <p className="text-xl text-gray-500">
-                    Head of Growth and Development
+                    Head of Growth and Consulting
                   </p>
                   <div className="flex gap-2 justify-center my-2">
                     <a
@@ -414,7 +414,7 @@ const page = () => {
                   </h3>
                   <p className="text-xl text-gray-500">
                     Associate, Business Strategy and <br />
-                    Operations
+                    Operation Transformation
                   </p>
                   <div className="flex gap-2 justify-center my-2">
                     <a
