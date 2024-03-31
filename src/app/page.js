@@ -223,7 +223,7 @@ export default function Main() {
                   Sunday Moses
                 </p>
                 <p className="text-[#656565] font-semibold">
-                  Head of Growth and Development
+                  Head of Growth and Consulting
                 </p>
               </div>
               <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[20%] h-[300px] p-6 my-3">
@@ -236,7 +236,7 @@ export default function Main() {
                   Ifeoma Ezeamama
                 </p>
                 <p className="text-[#656565] font-semibold">
-                  Senior Associate, Business Strategy and Operations
+                  Associate, Business Strategy and Operation Transformation
                 </p>
               </div>
             </div>
