@@ -30,7 +30,7 @@ const page = () => {
         <div>
             <div className="bg-[#f8f5f5] p-8">
               <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
-                Our Products{" "}
+                Areas where we make a difference in the Retail Market{" "}
               </h3>
               <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-8">
                 <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">

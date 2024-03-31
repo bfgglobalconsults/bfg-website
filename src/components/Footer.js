@@ -48,7 +48,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="text-white">
+                {/* <div className="text-white">
                   <h3 className="font-semibold">Resources</h3>
                   <p className="my-2">News</p>
                   <p className="my-2">Blog</p>
@@ -56,15 +56,14 @@ const Footer = () => {
                   <p className="my-2">Events</p>
                   <p className="my-2">CSR</p>
 
-                </div>
+                </div> */}
 
                 <div className="text-white">
                   <h3 className="font-semibold">Programs</h3>
-                  <p className="my-2">News</p>
-                  <p className="my-2">Blog</p>
-                  <p className="my-2">Research</p>
-                  <p className="my-2">Events</p>
-                  <p className="my-2">CSR</p>
+                  <p className="my-2">Dialetics</p>
+                  <p className="my-2">SME Klinic</p>
+                  <p className="my-2">Women in Tech</p>
+                
 
                 </div>
 
