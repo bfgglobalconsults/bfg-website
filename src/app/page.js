@@ -213,7 +213,7 @@ export default function Main() {
                 </button>
               </div>
 
-              <div className="w-[100%] md:w-[50%] lg:w-[25%] h-[300px] p-6 my-3">
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[23%] h-[300px] p-6 my-3">
                 <Image
                   src={HeadGrowth}
                   alt=""
@@ -226,7 +226,7 @@ export default function Main() {
                   Head of Growth and Consulting
                 </p>
               </div>
-              <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[20%] h-[300px] p-6 my-3">
+              <div className="w-[100%] md:w-[50%] lg:w-[25%] xl:w-[23%] h-[300px] p-6 my-3">
                 <Image
                   src={Marketer}
                   alt=""
