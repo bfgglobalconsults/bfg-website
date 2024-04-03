@@ -596,17 +596,26 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                      {/* <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/about">About Us</Link>
-                      </p>
+                      </p> */}
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry">Who we are</Link>
+                        <Link href="/about">Who we are</Link>
                         </p>
+                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/industry/projects">Our Clients</Link>
+                      </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/team">Our Team</Link>
                       </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/projects">Our Clients</Link>
+                     <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/industry/projects">Project Executed</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Award & Recognition</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="">Governance & Culture</Link>
                       </p>
 
                        
