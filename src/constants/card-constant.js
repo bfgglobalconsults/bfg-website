@@ -1,7 +1,7 @@
-import Technology from "../../public/assets/technology.jpg";
-import Research from "../../public/assets/research.jpg";
+import Technology from "../../public/assets/innovation-technology.jpg";
+import Research from "../../public/assets/research-data-analyst.jpg";
 import Business from "../../public/assets/business.jpg";
-import Training from "../../public/assets/training.jpg";
+import Training from "../../public/assets/training-development-afr.jpg";
 
 export const card_links = [
     {

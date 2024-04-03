@@ -84,8 +84,8 @@ const Statistics = ({ y, e, l, t }) => {
   });
 
   return (
-    <div ref={targetRef} className="bg-[#F5F5F5] py-28">
-      <p className="text-center text-4xl font-semibold">Insightful Metrics</p>
+    <div ref={targetRef} className="py-28">
+      <p className="text-center text-4xl text-[#016EF8] font-bold">Insightful Metrics</p>
       <div className="w-full flex flex-wrap gap-8 justify-center py-8">
         <div className="w-[70%] md:w-[40%] lg:w-[20%] text-center">
           <div className="flex justify-center font-bold text-6xl">
