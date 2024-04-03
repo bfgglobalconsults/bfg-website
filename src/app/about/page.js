@@ -16,7 +16,7 @@ const page = () => {
         {/* Transparent overlay */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h3 className="text-white font-bold text-4xl md:text-3xl lg:text-4xl">
-            About Us
+            Our Company
           </h3>
           <p className="text-[#ffffff9a] my-2 text-lg lg:text-2xl">
             Elevate Your Understanding: Discover Our Purpose.
@@ -26,9 +26,9 @@ const page = () => {
       <div className="py-[30px]">
         <div className="p-[40px]">
           <div>
-          <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
+          {/* <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
           Our Company
-              </h3>
+              </h3> */}
             
             <p className="text-[#656565] text-lg text-justify">
               Founded in 2018, BFG Global Consulting is a Management consulting
