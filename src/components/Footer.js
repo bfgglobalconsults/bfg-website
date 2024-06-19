@@ -1,12 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import WhiteLogo from "../app/bfg-whitelogo.png";
 
 const Footer = () => {
   return (
     <>
       <div className="w-full bg-[#016EF8]">
         <div className="py-[40px] px-[40px]">
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-8">
              
             {/* <div className="flex flex-col gap-2">
               <div className="flex gap-2">
@@ -153,9 +155,20 @@ const Footer = () => {
                 <p className="my-2">Legal Policy</p>
               </Link>
             </div>
-
-            <div>
-              <h3 className="font-semibold text-white">Connect on Socials</h3>
+            
+                <div>
+              
+                 <h3 className="font-semibold text-white my-2">Contact Us</h3>
+                 <div className="">
+                <Link href="/contact">
+                  <button className="py-2 px-6 border-white border-2 text-white font-bold hover:border-black hover:text-black">
+                      Get in Touch With Us!
+                  </button>
+                </Link>
+              </div>
+              
+              <div className="my-4">
+              <h3 className="font-semibold text-white my-2">Connect on Socials</h3>
               <div className="flex gap-3">
                 <Link href="https://facebook.com/BFGConsults" target="_blank">
                   <button>
@@ -226,16 +239,21 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div>
-                 <h3 className="font-semibold text-white">Contact Us</h3>
-                 <div className="">
-                <Link href="/contact">
-                  <button className="py-2 px-6 border-white border-2 text-white font-bold hover:border-black hover:text-black">
-                      Get in Touch With Us!
-                  </button>
-                </Link>
-                 </div>
             </div>
+            <div className="flex items-center">
+              <Link href="/">
+
+                <div className="w-[80px] h-15">
+                  <Image
+                    src={WhiteLogo}
+                    alt="logo"
+                    className="w-full h-full object-fit"
+                  />
+                </div>
+                </Link>
+            </div>
+            
+        
           </div>
           <div></div>
         </div>
