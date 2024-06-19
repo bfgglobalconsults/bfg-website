@@ -20,7 +20,7 @@ const page = () => {
           <p className="text-2xl font-semibold text-center my-2">
             Celebrating Diversity, Driving Excellence: Meet Our Team
           </p>
-          <p className="text-xl text-[#656565] text-justify mx-8">
+          <p className="text-xl text-[#656565] mx-8">
             {" "}
             Our strength lies in our diverse and dynamic team. From seasoned
             industry veterans to fresh perspectives, we unite under a shared
@@ -384,7 +384,7 @@ const page = () => {
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-semibold my-2">
-                  Elizabeth N. Okeke
+                  Elizabeth-Mary N. Okeke
                 </h3>
                 <p className="text-xl text-gray-500">
 Executive Assistant - Office Administration and Client Relations 
