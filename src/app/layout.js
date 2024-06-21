@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Messenger from "@/components/Messenger";
+import { montserrat, mont_alt } from "./fonts";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter"});
 // const poppins = Poppins({ subsets: ["latin"], variable: "--poppins"});
@@ -16,8 +17,8 @@ export default function RootLayout({ children }) {
   	
   
   return (
-    <html lang="en">
-      <body className={inter.variable}>
+    <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
+      <body>
         <Header />
         <div>
         {children}
