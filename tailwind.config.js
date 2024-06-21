@@ -20,7 +20,8 @@ module.exports = {
     },
     extend: {
       fontFamily:{
-        inter:['var(--inter)']
+        inter: ['var(--inter)'],
+        mont: ['var(--font-mont)'],
         // poppins: ['var(--poppins)']
       }
     },
