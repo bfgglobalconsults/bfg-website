@@ -4,7 +4,7 @@ import HeadGrowth from "../../../public/assets/moses.png";
 import HeadBusiness from "../../../public/assets/ifeoma.png";
 import HeadResearch from "../../../public/assets/kenneth.png";
 import CompanySecretary from "../../../public/assets/secretary.png";
-import Avatar from "../../../public/assets/avatar.png";
+import Avatar from "../../../public/assets/new-avatar.png";
 import Banner from ".././../../public/assets/team-banner1.jpg";
 import Image from "next/image";
 
