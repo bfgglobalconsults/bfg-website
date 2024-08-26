@@ -1,6 +1,6 @@
 "use client";
 import Accordion from "@/components/Accordion";
-import React from "react";
+import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
 import ContactBanner from "../../../public/assets/contact-image.png";
@@ -9,6 +9,34 @@ import Image from "next/image";
 
 const Page = () => {
   const [state, handleSubmit] = useForm("xwkgrkre");
+  const [showItems, setShowItems] = useState([false, false, false]);
+
+  const toggleShowItem = (index) => {
+    setShowItems((prev) => prev.map((item, i) => (i === index ? !item : item)));
+  };
+
+  const questions = [
+    {
+      title: "What services does your firm offer?",
+      content:
+        "Our consulting firm specializes in a wide range of services tailored to meet the diverse needs of our clients. These services include but are not limited to strategic business planning, business development, market research, training & development, financial analysis, project management, Technology Solutions & organizational development.",
+    },
+    {
+      title: "How experienced are your consultants?",
+      content:
+        " Our consultants are seasoned professionals with extensive experience across various industries. Each consultant brings a wealth of knowledge, having worked on numerous projects and overcoming diverse challenges. ",
+    },
+    {
+      title: "How do you ensure confidentiality & security?",
+      content:
+        "We prioritize confidentiality and security at every stage of our collaboration. Our team adheres to strict data protection protocols, ensuring that all sensitive information is handled with the utmost care. We use secure communication channels and robust encryption methods to protect your data from unauthorized access.",
+    },
+    {
+      title: "Measure experience with clients",
+      content:
+        "We measure our experience with clients through key metrics such as client satisfaction, project success rates, and client retention. We also track client referrals, demonstrating the trust and quality of our work. Our diverse industry experience and detailed case studies further highlight our expertise, ensuring continuous improvement in delivering exceptional consulting services.",
+    },
+  ];
 
   if (state.succeeded) {
     return (
@@ -131,145 +159,297 @@ const Page = () => {
             </div>
           </div>{" "}
         </div>
-{/* new contact banner */}
+        {/* new contact banner */}
         <div className="w-full flex border border-[#EEF3F6] rounded-3xl my-10">
           <div className="w-[40%] bg-[#FFFFFF] rounded-l-3xl">
             <div className="p-4">
               <div>
                 <h4 className="text-3xl text-[#222]">Connect with Us Today!</h4>
-                <p className="text-[#999] my-3">At Apex, we value your inquiries, feedback, & collaborations. Whether you are interested in our digital services, have questions about our projects</p>
+                <p className="text-[#999] my-3">
+                  At Apex, we value your inquiries, feedback, & collaborations.
+                  Whether you are interested in our digital services, have
+                  questions about our projects
+                </p>
               </div>
               <div className="my-5 bg-[#FCFDFD] border border-[#EEF3F6] rounded-2xl p-4">
-                <h5 className="my-2 text-lg font-semibold">Our Commitment to You</h5>
+                <h5 className="my-2 text-lg font-semibold">
+                  Our Commitment to You
+                </h5>
                 <div className="p-2">
                   <div className="bg-white rounded-3xl flex items-center gap-3 my-4">
                     <span className="p-1 rounded-full bg-[#E26015]">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                      </svg>
                     </span>
                     <span>
-                      <p className="text-[#4C4C4D] text-md">Swift responses, dedicated support</p>
+                      <p className="text-[#4C4C4D] text-md">
+                        Swift responses, dedicated support
+                      </p>
                     </span>
                   </div>
                   <div className="bg-white rounded-3xl flex items-center gap-3 my-4">
                     <span className="p-1 rounded-full bg-[#E26015]">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                      </svg>
                     </span>
                     <span>
-                      <p className="text-[#4C4C4D] text-md">Efficient & always here for you</p>
+                      <p className="text-[#4C4C4D] text-md">
+                        Efficient & always here for you
+                      </p>
                     </span>
                   </div>
                   <div className="bg-white rounded-3xl flex items-center gap-3 my-4">
                     <span className="p-1 rounded-full bg-[#E26015]">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+                      </svg>
                     </span>
                     <span>
-                      <p className="text-[#4C4C4D] text-md">We listen, understand, & act promptly</p>
+                      <p className="text-[#4C4C4D] text-md">
+                        We listen, understand, & act promptly
+                      </p>
                     </span>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
           <div className="w-[60%] bg-[#EEF3F6] rounded-r-3xl p-10">
             <form onSubmit={handleSubmit} className="w-full">
-  <div className="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-        First Name
-      </label>
-      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" name="first-name" type="text" placeholder="Enter your Firstname" required />
-      
-    </div>
-    <div className="w-full md:w-1/2 px-3">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-        Last Name
-      </label>
-      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="last-name" type="text" placeholder="Enter Your Lastname" required/>
-    </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-first-name"
+                    name="first-name"
+                    type="text"
+                    placeholder="Enter your Firstname"
+                    required
+                  />
+                </div>
+                <div className="w-full md:w-1/2 px-3">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-last-name"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-last-name"
+                    name="last-name"
+                    type="text"
+                    placeholder="Enter Your Lastname"
+                    required
+                  />
+                </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-6">
-    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
-        Email
-      </label>
-      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" name="email" type="email" placeholder="Enter Email" required/>
-      
-    </div>
-    <div className="w-full md:w-1/2 px-3">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-phone">
-        Phone Number
-      </label>
-      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-phone" name="phone" type="text" placeholder="Enter Phone Number" required/>
-    </div>
-  </div>
-  <div className="flex flex-wrap -mx-3 mb-6">
-    <div className="w-full px-3">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-subject">
-        Subject
-      </label>
-      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-subject" name="subject" type="text" placeholder="Enter Subject" required />
-    </div>
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter Email"
+                    required
+                  />
+                </div>
+                <div className="w-full md:w-1/2 px-3">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-phone"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-phone"
+                    name="phone"
+                    type="text"
+                    placeholder="Enter Phone Number"
+                    required
+                  />
+                </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
-                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
-        Message
-      </label>
-                <textarea
-                  placeholder="Enter Your Message"
-                  id="message"
-                  name="message"
-                  rows="6"
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-subject"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-subject"
+                    name="subject"
+                    type="text"
+                    placeholder="Enter Subject"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                  <label
+                    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="message"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    placeholder="Enter Your Message"
+                    id="message"
+                    name="message"
+                    rows="6"
                     className="w-full rounded-md px-4 text-sm pt-3 shadow-sm outline-gray-500"
                     required
-                ></textarea>
-              </div>
+                  ></textarea>
+                </div>
               </div>
               <div className="flex justify-center">
-                <button type="submit"
-                  disabled={state.submitting} className="py-2 px-4 text-white flex items-center gap-2 bg-[#E26015] hover:bg-[#333] rounded-3xl">
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="py-2 px-4 text-white flex items-center gap-2 bg-[#E26015] hover:bg-[#333] rounded-3xl"
+                >
                   <span className="font-semibold">Send Your Message</span>
-                  <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M1.94619 9.31543C1.42365 9.14125 1.41953 8.86022 1.95694 8.68108L21.0431 2.31901C21.5716 2.14285 21.8747 2.43866 21.7266 2.95694L16.2734 22.0432C16.1224 22.5716 15.8178 22.59 15.5945 22.0876L12 14L18 6.00005L10 12L1.94619 9.31543Z"></path></svg></span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M1.94619 9.31543C1.42365 9.14125 1.41953 8.86022 1.95694 8.68108L21.0431 2.31901C21.5716 2.14285 21.8747 2.43866 21.7266 2.95694L16.2734 22.0432C16.1224 22.5716 15.8178 22.59 15.5945 22.0876L12 14L18 6.00005L10 12L1.94619 9.31543Z"></path>
+                    </svg>
+                  </span>
                 </button>
               </div>
-  
-</form>
-
+            </form>
           </div>
         </div>
 
         {/* accordion */}
         <div>
-          <div className="w-full flex gap-3">
+          <div className="w-full flex gap-10">
             <div className="w-[40%]">
-              <h3 className="text-4xl font-semibold text-[#1A1A1A]">Common Queries, Clear Answers</h3>
-              <p className="text-[#999]">We believe in transparency & aim to provide you with all the information you need to make informed decisions about our services.</p>
-              
+              <h3 className="text-4xl font-semibold text-[#1A1A1A]">
+                Common Queries, Clear Answers
+              </h3>
+              <p className="text-[#999]">
+                We believe in transparency & aim to provide you with all the
+                information you need to make informed decisions about our
+                services.
+              </p>
+
               <div className="bg-[#EEF3F6]  rounded-3xl p-10 my-8">
                 <div>
                   <div className="flex justify-center">
                     <span className="">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(226,96,21,1)"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11 15V17H13V15H11ZM13 13.3551C14.4457 12.9248 15.5 11.5855 15.5 10C15.5 8.067 13.933 6.5 12 6.5C10.302 6.5 8.88637 7.70919 8.56731 9.31346L10.5288 9.70577C10.6656 9.01823 11.2723 8.5 12 8.5C12.8284 8.5 13.5 9.17157 13.5 10C13.5 10.8284 12.8284 11.5 12 11.5C11.4477 11.5 11 11.9477 11 12.5V14H13V13.3551Z"></path></svg>       </span>             </div>
-                  <h4 className="text-xl text-center font-semibold">Still have questions ?</h4>
-                  <p className="text-[#999]">If the question is not available on our FAQ section, Feel free to contact us personally.</p>
-                  <div className="flex justify-center my-3">
-                  <button className="border border-[#E26015] font-semibold p-2 rounded-2xl">Ask a Question</button>
-                </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="36"
+                        height="36"
+                        fill="rgba(226,96,21,1)"
+                      >
+                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11 15V17H13V15H11ZM13 13.3551C14.4457 12.9248 15.5 11.5855 15.5 10C15.5 8.067 13.933 6.5 12 6.5C10.302 6.5 8.88637 7.70919 8.56731 9.31346L10.5288 9.70577C10.6656 9.01823 11.2723 8.5 12 8.5C12.8284 8.5 13.5 9.17157 13.5 10C13.5 10.8284 12.8284 11.5 12 11.5C11.4477 11.5 11 11.9477 11 12.5V14H13V13.3551Z"></path>
+                      </svg>{" "}
+                    </span>{" "}
                   </div>
+                  <h4 className="text-xl text-center font-semibold">
+                    Still have questions ?
+                  </h4>
+                  <p className="text-[#999]">
+                    If the question is not available on our FAQ section, Feel
+                    free to contact us personally.
+                  </p>
+                  <div className="flex justify-center my-3">
+                    <button className="border border-[#E26015] hover:bg-[#E26015] hover:text-white font-semibold p-2 rounded-2xl">
+                      Ask a Question
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-[60%]">
-              <div>
-                <div></div>
-                <div>
-                  <span></span>
+              {questions.map((question, index) => (
+                <div key={index} className="w-full flex gap-2 mb-4">
+                  <div className="w-[80%] py-4 px-4 rounded-3xl border border-[#F0F6FF]">
+                    <div>
+                      <p className="text-lg font-semibold">{question.title}</p>
+                      {showItems[index] && (
+                        <>
+                          <hr className="my-2" />
+                          <p className="text-[#999]">{question.content}</p>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                  <div className="w-[20%] my-4">
+                    <button onClick={() => toggleShowItem(index)}>
+                      {showItems[index] ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="36"
+                          height="36"
+                          fill="rgba(226,96,21,1)"
+                        >
+                          <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 10.5858L9.17157 7.75736L7.75736 9.17157L10.5858 12L7.75736 14.8284L9.17157 16.2426L12 13.4142L14.8284 16.2426L16.2426 14.8284L13.4142 12L16.2426 9.17157L14.8284 7.75736L12 10.5858Z"></path>
+                        </svg>
+                      ) : (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="36"
+                          height="36"
+                          fill="rgba(226,96,21,1)"
+                        >
+                          <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11 11H7V13H11V17H13V13H17V11H13V7H11V11Z"></path>
+                        </svg>
+                      )}
+                    </button>
+                  </div>
                 </div>
-              </div>
-
+              ))}
             </div>
           </div>
-
         </div>
 
         {/* contact banner */}
@@ -500,8 +680,7 @@ const Page = () => {
           </div>
         </div> */}
 
-
-        <div className="container mx-auto py-12">
+        {/* <div className="container mx-auto py-12">
           <h1 className="text-2xl text-[#016EF8] mb-4">
             Frequently Asked Questions (FAQs)
           </h1>
@@ -540,7 +719,7 @@ const Page = () => {
               in any language.
             </p>
           </Accordion>
-        </div>
+        </div> */}
       </div>
     </>
   );
