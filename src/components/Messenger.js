@@ -17,7 +17,7 @@ const Messenger = () => {
           <div className="fixed bottom-[60px] right-8 z-[1200] p-8 rounded-md">
             <div className="w-[300px] md:w-[400px] h-[350px] bg-white shadow-xl z-[1200] rounded-md border">
               <div className="w-full rounded-md">
-                <div className="w-full flex items-center gap-4 bg-[#016EF8] p-4 rounded-md">
+                <div className="w-full flex items-center gap-4 bg-[#32b648] p-4 rounded-md">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ const Messenger = () => {
         )}
 
         <button
-          className="fixed bottom-5 right-8 p-3 bg-[#016EF8] hover:bg-black text-white text-sm font-semibold rounded-full shadow-xl z-[1200]"
+          className="fixed bottom-5 right-8 p-3 bg-[#32b648] hover:bg-black text-white text-sm font-semibold rounded-full shadow-xl z-[1200]"
           onClick={toggleScheduler}
         >
           <span>

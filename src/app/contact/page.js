@@ -3,27 +3,35 @@ import Accordion from "@/components/Accordion";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
-import { useRouter } from 'next/router';
-
+import ContactBanner from "../../../public/assets/contact-image.png";
+import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Page = () => {
   const [state, handleSubmit] = useForm("xwkgrkre");
 
-  
   if (state.succeeded) {
     return (
       <div className="p-8 flex justify-center mx-8 my-8 rounded-md bg-[#1c416d]">
         <div>
-          <p className="text-white text-2xl font-bold">
+          <p className="text-black text-2xl font-bold">
             Thanks for Contacting Us!
           </p>
           <Link href="/">
             <div className="flex gap-4 justify-center my-4">
               <span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(255,255,255,1)"><path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="36"
+                  height="36"
+                  fill="rgba(255,255,255,1)"
+                >
+                  <path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path>
+                </svg>
               </span>
               <span className="text-white text-xl font-semibold">Go Home</span>
-          </div>
+            </div>
           </Link>
         </div>
       </div>
@@ -32,8 +40,240 @@ const Page = () => {
 
   return (
     <>
-      <div className="my-6">
-        <div className="max-w-6xl mx-auto bg-[#1c416d] rounded-lg">
+      <div className="mt-[150px] p-12">
+        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Contact Us
+        </span>
+        <div className="flex w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            Contact Us
+          </h3>
+          <p className="w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+            We love to hear from you! Whether you have a question about our
+            services, want to discuss a potential collaboration, or just want to
+            say hello, our team is ready to connect with you.
+          </p>
+        </div>
+
+        <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+          <Image
+            src={ContactBanner}
+            alt="contact-banner"
+            className="w-full h-full object-cover rounded-3xl"
+          />
+        </div>
+
+        <div className="flex gap-10 my-6">
+          <div className="flex items-center gap-3 p-10 shadow-lg bg-[#FCFDFD] border border-[#EEF3F6] rounded-xl">
+            <div>
+              <span className="text-[#999] text-md my-2">
+                You can email us here
+              </span>
+              <p className="text-[#333] text-lg font-semibold">
+                info@bfgconsults.com
+              </p>
+            </div>
+            <div className="p-2 bg-[#E26015] rounded-full border-4 border-[linear-gradient(180deg, rgba(255, 102, 51, 0) 73.52%, #FF6633 100%)]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="rgba(255,255,255,1)"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </div>
+          </div>
+          {/* second item */}
+          <div className="flex items-center gap-3 p-10 shadow-lg bg-[#FCFDFD] border border-[#EEF3F6] rounded-xl">
+            <div>
+              <span className="text-[#999] text-md my-2">
+                Give us a call on
+              </span>
+              <p className="text-[#333] text-lg font-semibold">
+                Nigeria: (+234) 818 416 5533,
+              </p>
+              <p className="text-[#333] text-lg font-semibold">
+                UK: (+44) 7551 107100
+              </p>
+            </div>
+            <div className="p-2 bg-[#E26015] rounded-full border-4 border-[linear-gradient(180deg, rgba(255, 102, 51, 0) 73.52%, #FF6633 100%)]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="rgba(255,255,255,1)"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </div>
+          </div>
+          {/* third item */}
+          <div className="flex items-center gap-3 p-10 shadow-lg bg-[#FCFDFD] border border-[#EEF3F6] rounded-xl">
+            <div>
+              <span className="text-[#999] text-md my-2">Office Hours</span>
+              <p className="text-[#333] text-lg font-semibold">
+                9:00 am - 6:00 pm
+              </p>
+            </div>
+            <div className="p-2 bg-[#E26015] rounded-full border-4 border-[linear-gradient(180deg, rgba(255, 102, 51, 0) 73.52%, #FF6633 100%)]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="rgba(255,255,255,1)"
+              >
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </div>
+          </div>{" "}
+        </div>
+{/* new contact banner */}
+        <div className="w-full flex border border-[#EEF3F6] rounded-3xl my-10">
+          <div className="w-[40%] bg-[#FFFFFF] rounded-l-3xl">
+            <div className="p-4">
+              <div>
+                <h4 className="text-3xl text-[#222]">Connect with Us Today!</h4>
+                <p className="text-[#999] my-3">At Apex, we value your inquiries, feedback, & collaborations. Whether you are interested in our digital services, have questions about our projects</p>
+              </div>
+              <div className="my-5 bg-[#FCFDFD] border border-[#EEF3F6] rounded-2xl p-4">
+                <h5 className="my-2 text-lg font-semibold">Our Commitment to You</h5>
+                <div className="p-2">
+                  <div className="bg-white rounded-3xl flex items-center gap-3 my-4">
+                    <span className="p-1 rounded-full bg-[#E26015]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                    </span>
+                    <span>
+                      <p className="text-[#4C4C4D] text-md">Swift responses, dedicated support</p>
+                    </span>
+                  </div>
+                  <div className="bg-white rounded-3xl flex items-center gap-3 my-4">
+                    <span className="p-1 rounded-full bg-[#E26015]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                    </span>
+                    <span>
+                      <p className="text-[#4C4C4D] text-md">Efficient & always here for you</p>
+                    </span>
+                  </div>
+                  <div className="bg-white rounded-3xl flex items-center gap-3 my-4">
+                    <span className="p-1 rounded-full bg-[#E26015]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg>
+                    </span>
+                    <span>
+                      <p className="text-[#4C4C4D] text-md">We listen, understand, & act promptly</p>
+                    </span>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div className="w-[60%] bg-[#EEF3F6] rounded-r-3xl p-10">
+            <form onSubmit={handleSubmit} className="w-full">
+  <div className="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        First Name
+      </label>
+      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" name="first-name" type="text" placeholder="Enter your Firstname" required />
+      
+    </div>
+    <div className="w-full md:w-1/2 px-3">
+      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+        Last Name
+      </label>
+      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="last-name" type="text" placeholder="Enter Your Lastname" required/>
+    </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+        Email
+      </label>
+      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" name="email" type="email" placeholder="Enter Email" required/>
+      
+    </div>
+    <div className="w-full md:w-1/2 px-3">
+      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-phone">
+        Phone Number
+      </label>
+      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-phone" name="phone" type="text" placeholder="Enter Phone Number" required/>
+    </div>
+  </div>
+  <div className="flex flex-wrap -mx-3 mb-6">
+    <div className="w-full px-3">
+      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-subject">
+        Subject
+      </label>
+      <input className="appearance-none block w-full bg-white text-gray-700 border border-[#EEF3F6] shadow-sm rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-subject" name="subject" type="text" placeholder="Enter Subject" required />
+    </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+        Message
+      </label>
+                <textarea
+                  placeholder="Enter Your Message"
+                  id="message"
+                  name="message"
+                  rows="6"
+                    className="w-full rounded-md px-4 text-sm pt-3 shadow-sm outline-gray-500"
+                    required
+                ></textarea>
+              </div>
+              </div>
+              <div className="flex justify-center">
+                <button type="submit"
+                  disabled={state.submitting} className="py-2 px-4 text-white flex items-center gap-2 bg-[#E26015] hover:bg-[#333] rounded-3xl">
+                  <span className="font-semibold">Send Your Message</span>
+                  <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M1.94619 9.31543C1.42365 9.14125 1.41953 8.86022 1.95694 8.68108L21.0431 2.31901C21.5716 2.14285 21.8747 2.43866 21.7266 2.95694L16.2734 22.0432C16.1224 22.5716 15.8178 22.59 15.5945 22.0876L12 14L18 6.00005L10 12L1.94619 9.31543Z"></path></svg></span>
+                </button>
+              </div>
+  
+</form>
+
+          </div>
+        </div>
+
+        {/* accordion */}
+        <div>
+          <div className="w-full flex gap-3">
+            <div className="w-[40%]">
+              <h3 className="text-4xl font-semibold text-[#1A1A1A]">Common Queries, Clear Answers</h3>
+              <p className="text-[#999]">We believe in transparency & aim to provide you with all the information you need to make informed decisions about our services.</p>
+              
+              <div className="bg-[#EEF3F6]  rounded-3xl p-10 my-8">
+                <div>
+                  <div className="flex justify-center">
+                    <span className="">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(226,96,21,1)"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11 15V17H13V15H11ZM13 13.3551C14.4457 12.9248 15.5 11.5855 15.5 10C15.5 8.067 13.933 6.5 12 6.5C10.302 6.5 8.88637 7.70919 8.56731 9.31346L10.5288 9.70577C10.6656 9.01823 11.2723 8.5 12 8.5C12.8284 8.5 13.5 9.17157 13.5 10C13.5 10.8284 12.8284 11.5 12 11.5C11.4477 11.5 11 11.9477 11 12.5V14H13V13.3551Z"></path></svg>       </span>             </div>
+                  <h4 className="text-xl text-center font-semibold">Still have questions ?</h4>
+                  <p className="text-[#999]">If the question is not available on our FAQ section, Feel free to contact us personally.</p>
+                  <div className="flex justify-center my-3">
+                  <button className="border border-[#E26015] font-semibold p-2 rounded-2xl">Ask a Question</button>
+                </div>
+                  </div>
+              </div>
+            </div>
+            <div className="w-[60%]">
+              <div>
+                <div></div>
+                <div>
+                  <span></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        {/* contact banner */}
+        {/* <div className="max-w-6xl mt-[50px] mx-auto bg-[#1c416d] rounded-lg">
           <div className="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4">
             <div>
               <h1 className="text-4xl font-extrabold text-white">
@@ -92,7 +332,7 @@ const Page = () => {
                     ></path>
                   </svg>
                   <p className="text-white text-sm ml-3">
-                    <strong>UK:  (+44) 7551 107100</strong>
+                    <strong>UK: (+44) 7551 107100</strong>
                   </p>
                 </li>
                 <li className="flex items-center">
@@ -161,7 +401,10 @@ const Page = () => {
                   </a>
                 </li>
                 <li className="bg-[#487dc2] hover:bg-[#223c5e] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="https://www.linkedin.com/company/bfgconsults/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/company/bfgconsults/"
+                    target="_blank"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18px"
@@ -177,7 +420,10 @@ const Page = () => {
                   </a>
                 </li>
                 <li className="bg-[#487dc2] hover:bg-[#223c5e] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                  <a href="https://www.instagram.com/bfgconsults/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/bfgconsults/"
+                    target="_blank"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18px"
@@ -252,7 +498,8 @@ const Page = () => {
               </form>
             </div>
           </div>
-        </div>
+        </div> */}
+
 
         <div className="container mx-auto py-12">
           <h1 className="text-2xl text-[#016EF8] mb-4">

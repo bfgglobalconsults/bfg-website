@@ -4,11 +4,13 @@ import React from "react";
 import WhiteLogo from "../app/bfg-whitelogo.png";
 
 const Footer = () => {
+  const date = new Date();
+    const year = date.getFullYear();
   return (
     <>
-      <div className="w-full bg-[#016EF8]">
+      <div className="w-full bg-gradient-to-b from-[#127DC0] to-[#083B5A] ">
         <div className="py-[40px] px-[40px]">
-          <div className="flex flex-wrap gap-8">
+          <div className="flex flex-wrap gap-[40px]">
              
             {/* <div className="flex flex-col gap-2">
               <div className="flex gap-2">
@@ -87,38 +89,52 @@ const Footer = () => {
                 <span className="text-white">(+44) 7551 107100</span>
               </div>
             </div> */}
+
+             <div className="flex items-center">
+              <Link href="/">
+
+                <div className="w-[100px] h-[90px]">
+                  <Image
+                    src={WhiteLogo}
+                    alt="logo"
+                    className="w-full h-full object-fit"
+                  />
+                </div>
+                </Link>
+            </div>
+
             <div className="text-white">
               <h3 className="font-semibold">Company</h3>
-              <p className="my-2">
+              <p className="my-2 p-2">
                 <Link href="/industry">Who we are</Link>
               </p>
-              <p className="my-2">Board of Advisors</p>
-              <p className="my-2">
+              <p className="my-2 p-2">Board of Advisors</p>
+              <p className="my-2 p-2">
                 <Link href="/team">Growth Team</Link>
               </p>
-              <p className="my-2">
+              <p className="my-2 p-2">
                 <Link href="/industry/projects">Project Executed</Link>
               </p>
             </div>
 
             <div className="text-white">
               <h3 className="font-semibold">Solutions</h3>
-              <p className="my-2">
+              <p className="my-2 p-2">
                 <Link href="/solutions/research-analytics">
                   Research & Analytics
                 </Link>
               </p>
-              <p className="my-2">
+              <p className="my-2 p-2">
                 <Link href="/solutions/business-strategy">
                   Business Strategy & Operations
                 </Link>
               </p>
-              <p className="my-2">
+              <p className="my-2 p-2">
                 <Link href="/solutions/training-development">
                   Training & Development
                 </Link>
               </p>
-              <p className="my-2">
+              <p className="my-2 p-2">
                 <Link href="/solutions/information-technology">
                   Information Technology
                 </Link>
@@ -137,22 +153,22 @@ const Footer = () => {
 
             <div className="text-white">
               <h3 className="font-semibold">Programs</h3>
-              <p className="my-2">The Dialetics</p>
-              <p className="my-2">SME Klinic</p>
-              <p className="my-2">Women in Tech</p>
+              <p className="my-2 p-2">The Dialetics</p>
+              <p className="my-2 p-2">SME Klinic</p>
+              <p className="my-2 p-2">Women in Tech</p>
             </div>
 
             <div className="text-white">
               <h3 className="font-semibold">Policy</h3>
               <Link href="/privacy">
-                <p className="my-2">Privacy Policy</p>
+                <p className="my-2 p-2">Privacy Policy</p>
               </Link>
               <Link href="/terms">
-                <p className="my-2">Terms of Service</p>
+                <p className="my-2 p-2">Terms of Service</p>
               </Link>
-              <p className="my-2">Copyright Policy</p>
+              <p className="my-2 p-2">Copyright Policy</p>
               <Link href="/legal">
-                <p className="my-2">Legal Policy</p>
+                <p className="my-2 p-2">Legal Policy</p>
               </Link>
             </div>
             
@@ -240,22 +256,15 @@ const Footer = () => {
               </div>
             </div>
             </div>
-            <div className="flex items-center">
-              <Link href="/">
-
-                <div className="w-[80px] h-15">
-                  <Image
-                    src={WhiteLogo}
-                    alt="logo"
-                    className="w-full h-full object-fit"
-                  />
-                </div>
-                </Link>
-            </div>
+           
             
         
           </div>
-          <div></div>
+        <hr className="my-2"/>
+          <div className="flex justify-center">
+                  <span className="text-white  dark:text-gray-400">© {year} <a href="https://bfgconsults.com/" class="hover:underline">BFG Global Consults™</a>. All Rights Reserved.</span>
+
+          </div>
         </div>
       </div>
     </>

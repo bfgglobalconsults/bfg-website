@@ -4,6 +4,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Messenger from "@/components/Messenger";
 import { montserrat, mont_alt } from "./fonts";
+import FixedHeader from "@/components/FixedHeader";
+import HeaderWrapper from "@/components/HeadWrapper";
+import ClientBanner from "@/components/ClientBanner";
+import ContactBanner from "@/components/ContactBanner";
+
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter"});
 // const poppins = Poppins({ subsets: ["latin"], variable: "--poppins"});
@@ -14,16 +19,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  	
+  
   
   return (
     <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
       <body>
-        <Header />
+       <HeaderWrapper /> 
         <div>
         {children}
         </div>
         <Messenger />
+        <ClientBanner />
+        <ContactBanner />
         <Footer />
         </body>
     </html>

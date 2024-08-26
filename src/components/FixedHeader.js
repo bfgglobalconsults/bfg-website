@@ -13,7 +13,7 @@ import WhiteLogo from "@/app/bfg-whitelogo.png";
 import MediaQuery from "./media-query";
 import { navigation_links } from "@/constants/navigation-constant";
 
-const Header = () => {
+const FixedHeader = () => {
   const [active, setActive] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -30,9 +30,7 @@ const Header = () => {
     }
   };
 
-  // const handleTabClick = (id) => {
-  //   setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
-  // };
+
 
   const maskTransitions = useTransition(showMenu, {
     from: { position: "absolute", opacity: 0 },
@@ -62,42 +60,7 @@ const Header = () => {
     };
   }, []);
 
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (
-//         modalRef.current &&
-//         !modalRef.current.contains(event.target) 
-//       ) {
-//         setActiveTab(null); // Close the modal when clicked outside
-//         setModalOpen(false); // Update modal state
-//       }
-//     };
 
-//     // Add event listener when component mounts
-//     document.addEventListener('mousedown', handleClickOutside);
-
-//     // Remove event listener when component unmounts
-//     return () => {
-//       document.removeEventListener('mousedown', handleClickOutside);
-//     };
-// }, [modalOpen]);
-
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (
-  //       modalRef.current &&
-  //       !modalRef.current.contains(event.target)
-  //     ) {
-  //       setActiveTab(null); 
-  //     }
-  //   };
-
-  //   document.addEventListener('mousedown', handleClickOutside);
-
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   };
-  // }, []);
 
   const handleTabClick = (id) => {
     setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
@@ -108,13 +71,13 @@ const Header = () => {
   };
 
   const ModalContentWrapper = ({ component, closeModal, color }) => {
-    const router = useRouter(); 
+    const router = useRouter(); // Import and initialize useRouter
     
     const handleClick = (e, href) => {
-      e.stopPropagation();
-      closeModal();
+      e.stopPropagation(); // Prevent event propagation
+      closeModal(); // Close modal
       if (href) {
-        router.push(href); 
+        router.push(href); // Navigate to the specified href using Next.js router
       }
     };
   
@@ -129,8 +92,8 @@ const Header = () => {
           className={`${
             active === true
               ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10 border-b"
-              : "w-full p-[10px] px-[40px] bg-[#E26015] fixed top-0 left-0 z-10"
-          } px-[40px] text-white`}
+              : "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10 border-b"
+          } px-[40px] text-gray-400`}
         >
           <div className="flex justify-between items-center">
             {active ? (
@@ -210,9 +173,9 @@ const Header = () => {
             ) : (
               <>
                 <Link href="/">
-                  <div className="w-[80px] h-15">
+                  <div className="w-[100px] h-[90px]">
                     <Image
-                      src={WhiteLogo}
+                      src={Logo}
                       alt="logo"
                       className="w-full h-full object-fit"
                     />
@@ -227,8 +190,8 @@ const Header = () => {
                           ref={modalRef}
                           className={`${
                             activeTab === id
-                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-black border-b-2 border-black duration-200 link-underline"
-                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-black duration-200 link-underline"
+                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 z-10 hover:text-[#E26015] border-b-2 border-[#E26015] duration-200 link-underline"
+                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 z-10 hover:text-[#E26015] duration-200 link-underline"
                           } rounded-tl-md z-10 ${
                             id === navigation_links.length - 1
                               ? "rounded-tr-md"
@@ -257,7 +220,7 @@ const Header = () => {
                             : "animate-slide-out"
                         }`}
                       >
-                        <div className="relative z-10 modal-content bg-[white] border-4 border-[#E45F11]  rounded-b-xl rounded-l-xl rounded-r-xl w-full p-8">
+                        <div className="relative z-10 modal-content mt-[21px] bg-white  border-[#E45F11] border-r-4 border-l-4 border-b-4 rounded-b-xl rounded-l-xl rounded-r-xl rounded-tr-none rounded-tl-none w-full p-8">
                           <div className="flex flex-col items-center justify-center">
                             <span
                               className="absolute bottom-5 justify-center p-2 cursor-pointer"
@@ -312,9 +275,9 @@ const Header = () => {
                 </button>
                 <Link href="/">
 
-                <div className="w-[80px] h-15">
+                <div className="w-[100px] h-[90px]">
                   <Image
-                    src={WhiteLogo}
+                    src={Logo}
                     alt="logo"
                     className="w-full h-full object-fit"
                   />
@@ -637,4 +600,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default FixedHeader;

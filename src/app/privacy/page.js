@@ -3,7 +3,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="py-[30px]">
+      <div className="py-[100px]">
         <div className="p-[40px]">
           <div>
             <h3 className="text-6xl font-bold my-2">Privacy Policy</h3>
