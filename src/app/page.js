@@ -164,10 +164,10 @@ export default function Main() {
         <div className="bg-[#E45F11] w-full lg:flex items-center my-0 lg:my-0 xl:my-4 py-10">
           <div className="w-full lg:w-[60%]">
             <div className="p-[40px]">
-              <h3 className="font-bold text-3xl lg:text-5xl text-white">
+              <h3 className="font-bold text-3xl lg:text-6xl text-white">
                 Your Partner in Research, Strategy, Training and Technology
               </h3>
-              <p className="text-xl text-white my-2">
+              <p className="text-2xl text-white my-2">
                 Unlock your business potential with our expert <br /> guidance
                 and innovative solutions.{" "}
               </p>
@@ -293,6 +293,7 @@ export default function Main() {
           </div>
           <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')]">
             <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
+              <Link href="/solutions/research-analytics">
               <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
@@ -325,8 +326,10 @@ export default function Main() {
                     </p>
                   </div>
                 </div>
-              </div>
+                </div>
+                </Link>
               {/* second item */}
+              <Link href="/solutions/business-strategy">
               <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
@@ -359,8 +362,10 @@ export default function Main() {
                     </p>
                   </div>
                 </div>
-              </div>
+                </div>
+                </Link>
               {/* third item */}
+              <Link href="/solutions/training-development">
               <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
@@ -392,8 +397,10 @@ export default function Main() {
                     </p>{" "}
                   </div>
                 </div>
-              </div>
+                </div>
+                </Link>
               {/* fourth item */}
+              <Link href="/solutions/information-technology">
               <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
@@ -425,7 +432,8 @@ export default function Main() {
                     </p>
                   </div>
                 </div>
-              </div>
+                </div>
+                </Link>
             </div>
           </div>
         </div>

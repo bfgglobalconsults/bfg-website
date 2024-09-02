@@ -376,7 +376,7 @@ const Header = () => {
               item && (
                 <animated.div
                   style={styles}
-                  className="fixed p-3 bg-white top-0 left-0 w-[100%] z-50 h-full shadow "
+                  className="fixed p-3 bg-white top-0 left-0 w-[70%] z-50 h-full shadow "
                 >
                   <div className="flex justify-between items-center">
                     <div className="w-[100px] h-[100px] p-1">
