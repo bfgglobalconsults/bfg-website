@@ -5,21 +5,22 @@ import HeadBusiness from "../../../public/assets/ifeoma.png";
 import HeadResearch from "../../../public/assets/kenneth.png";
 import CompanySecretary from "../../../public/assets/secretary.png";
 import Avatar from "../../../public/assets/new-avatar.png";
-import Banner from ".././../../public/assets/team-banner1.jpg";
+import Banner from ".././../../public/assets/team-image.jpg";
 import Image from "next/image";
+import OurStand from "@/components/OurStand";
 
 const page = () => {
   return (
     <>
-      <div className="mt-[150px] p-12">
+      <div className="lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
           Our Team
         </span>
-        <div className="flex w-full gap-4 items-center justify-between my-4">
-          <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Meet the brains.
           </h3>
-          <p className="w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
             Meet the dedicated team of people who make our business what it is
             today. They represent our primary point of contact with our target
             market & audience.
@@ -120,17 +121,64 @@ const page = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[100%] md:w-[70%] lg:w-[25%]  rounded-md p-4">
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
                 <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
                   <Image
                     src={Avatar}
                     alt="default"
                     className="w-full h-full object-fit"
                   />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg"> Elizabeth-Mary N. Okeke</h3>
+                    <p className="text-[#E45F11] font-semibold">Executive Assistant</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="default"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg"> David U. Bradford</h3>
+                    <p className="text-[#E45F11] font-semibold">Associate, Innovation and Technology</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="default"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Happiness C. Adama </h3>
+                    <p className="text-[#E45F11] font-semibold">Associate, Training and Development</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="default"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Jeremiah Jesunifemi </h3>
+                    <p className="text-[#E45F11] font-semibold">Product Designer / Developer</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <hr/>
+          <div className="my-10">
+            <OurStand />
+            </div>
         </div>
       </div>
       {/* old view */}

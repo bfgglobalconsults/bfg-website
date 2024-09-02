@@ -11,7 +11,7 @@ const OurStand = () => {
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               What we Stand For
             </span>
-            <div className="w-[50%]">
+            <div className="w-[100%] lg:w-[50%]">
               <h3 className="text-[#333] text-3xl my-8 font-semibold">
                 What We Stand For
               </h3>
@@ -19,15 +19,15 @@ const OurStand = () => {
                Transforming businesses & communities through innovation, excellence, & empowerment. Discover how our values-driven approach delivers success, from vision to reality.
               </p>
             </div>
-            <div className="w-full flex gap-10">
-              <div className="w-[30%] h-[280px]">
+            <div className="w-full flex flex-col lg:flex-row gap-10">
+              <div className="w-[100%] lg:w-[30%] h-[280px]">
                 <Image
                   src={ServiceImage1}
                   alt="service-image1"
                   className="w-full h-full"
                 />
               </div>
-              <div className="w-[70%] h-[280px]">
+              <div className="w-[0px] h-[0px] lg:w-[70%] lg:h-[280px]">
                 <Image
                   src={ServiceImage2}
                   alt="service-image2"
@@ -35,14 +35,14 @@ const OurStand = () => {
                 />
               </div>
             </div>
-            <div className="w-full flex flex-wrap gap-10 my-6">
-              <div className="w-[45%] flex items-center gap-7 p-10 border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
+            <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-5 lg:p-10 border rounded-2xl shadow-lg">
+                <div className="w-[100%] lg:w-[20%]">
                   <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(208,229,242,1)"><path d="M5 3V19H21V21H3V3H5ZM19.9393 5.93934L22.0607 8.06066L16 14.1213L13 11.121L9.06066 15.0607L6.93934 12.9393L13 6.87868L16 9.879L19.9393 5.93934Z"></path></svg>
                   </div>
                 </div>
-                <div className="w-[80%]">
+                <div className="w-[100%] lg:w-[80%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Growth
                   </h4>
@@ -52,13 +52,13 @@ const OurStand = () => {
                 </div>
               </div>
               {/* second item */}
-              <div className="w-[45%] flex items-center gap-7 p-10 border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-5 lg:p-10 border rounded-2xl shadow-lg">
+                <div className="w-[100%] lg:w-[20%]">
                   <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(208,229,242,1)"><path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM12 11.5C13.3807 11.5 14.5 10.3807 14.5 9C14.5 7.61929 13.3807 6.5 12 6.5C10.6193 6.5 9.5 7.61929 9.5 9C9.5 10.3807 10.6193 11.5 12 11.5ZM7.52746 17H16.4725C16.2238 14.75 14.3163 13 12 13C9.68372 13 7.77619 14.75 7.52746 17Z"></path></svg>
                   </div>
                 </div>
-                <div className="w-[80%]">
+                <div className="w-[100%] lg:w-[80%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Value Driven
                   </h4>
@@ -68,8 +68,8 @@ const OurStand = () => {
                 </div>
               </div>
               {/* third item */}
-              <div className="w-[45%] flex items-center gap-7 p-10 border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-5 lg:p-10 border rounded-2xl shadow-lg">
+                <div className="w-[100%] lg:w-[20%]">
                   <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const OurStand = () => {
                     </svg>{" "}
                   </div>
                 </div>
-                <div className="w-[80%]">
+                <div className="w-[100%] lg:w-[80%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Innovation
                   </h4>
@@ -92,8 +92,8 @@ const OurStand = () => {
                 </div>
               </div>
               {/* fourth item */}
-              <div className="w-[45%] flex items-center gap-7 p-10 border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-5 lg:p-10 border rounded-2xl shadow-lg">
+                <div className="w-[100%] lg:w-[20%]">
                   <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ const OurStand = () => {
                     </svg>{" "}
                   </div>
                 </div>
-                <div className="w-[80%]">
+                <div className="w-[100%] lg:w-[80%]">
                   <h4 className="text-xl text-[#333] font-semibold">
 Client Success                  </h4>
                   <p className="text-[#999]">

@@ -1,24 +1,70 @@
 import React from "react";
 import Image from "next/image";
-import TopBanner from "../../../../public/assets/project-executed.jpg";
+import Banner from "../../../../public/assets/project-image.jpg";
 import Project1 from "../../../../public/assets/project-1.jpg";
 import Project2 from "../../../../public/assets/project-2.jpg";
 import Project3 from "../../../../public/assets/project-3.jpg";
 import Project4 from "../../../../public/assets/project-4.jpg";
 import Project5 from "../../../../public/assets/project-5.jpg";
 import Project6 from "../../../../public/assets/project-6.jpg";
+import OurStand from "@/components/OurStand";
 
 const page = () => {
   return (
     <>
-      <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+      <div className="lg:mt-[150px] p-12">
+        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Our Team
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+           Project Executed
+          </h3>
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+            Experience our expertise in action through successfully executed projects.
+          </p>
+        </div>
+
+        <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+          <Image
+            src={Banner}
+            alt="about-banner"
+            className="w-full h-full object-cover rounded-3xl"
+          />
+        </div>
+        <div className="py-[30px]">
+          <div className="">
+            <div className="w-full my-4">
+              <p className="text-lg text-[#656565] my-3">
+                Our solutions help clients gain resilience & manage industry challenges toward maximising greater opportunities. See a brief description of some of our most recent projects executed across sectors.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* another section */}
+         <div>
+          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+            Our Project
+          </span>
+          <div className="w-full gap-4 items-center justify-between my-4">
+            <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+              Amazing Projects Executed
+            </h3>
+          </div>
+        </div>
+        {/* another section end */}
+        <div>
+          <OurStand/>
+        </div>
+        </div>
+      
+      {/* <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
         <Image
           src={TopBanner}
           alt="top-banner"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
-        {/* Transparent overlay */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h3 className="text-white font-bold text-4xl md:text-3xl lg:text-4xl">
             Project Executed
@@ -176,7 +222,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

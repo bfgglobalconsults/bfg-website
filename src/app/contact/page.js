@@ -68,22 +68,22 @@ const Page = () => {
 
   return (
     <>
-      <div className="mt-[150px] p-12">
+      <div className="lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
           Contact Us
         </span>
-        <div className="flex w-full gap-4 items-center justify-between my-4">
-          <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Contact Us
           </h3>
-          <p className="w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
             We love to hear from you! Whether you have a question about our
             services, want to discuss a potential collaboration, or just want to
             say hello, our team is ready to connect with you.
           </p>
         </div>
 
-        <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={ContactBanner}
             alt="contact-banner"
@@ -91,7 +91,7 @@ const Page = () => {
           />
         </div>
 
-        <div className="flex gap-10 my-6">
+        <div className="flex flex-wrap gap-10 my-6">
           <div className="flex items-center gap-3 p-10 shadow-lg bg-[#FCFDFD] border border-[#EEF3F6] rounded-xl">
             <div>
               <span className="text-[#999] text-md my-2">
@@ -160,13 +160,13 @@ const Page = () => {
           </div>{" "}
         </div>
         {/* new contact banner */}
-        <div className="w-full flex border border-[#EEF3F6] rounded-3xl my-10">
-          <div className="w-[40%] bg-[#FFFFFF] rounded-l-3xl">
+        <div className="w-full flex flex-col lg:flex-row border border-[#EEF3F6] rounded-3xl my-10">
+          <div className="w-[100%] lg:w-[40%] bg-[#FFFFFF] rounded-l-3xl">
             <div className="p-4">
               <div>
                 <h4 className="text-3xl text-[#222]">Connect with Us Today!</h4>
                 <p className="text-[#999] my-3">
-                  At Apex, we value your inquiries, feedback, & collaborations.
+                  We value your inquiries, feedback, & collaborations.
                   Whether you are interested in our digital services, have
                   questions about our projects
                 </p>
@@ -234,7 +234,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="w-[60%] bg-[#EEF3F6] rounded-r-3xl p-10">
+          <div className="w-[100%] lg:w-[60%] bg-[#EEF3F6] rounded-r-3xl p-10">
             <form onSubmit={handleSubmit} className="w-full">
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -366,8 +366,8 @@ const Page = () => {
 
         {/* accordion */}
         <div>
-          <div className="w-full flex gap-10">
-            <div className="w-[40%]">
+          <div className="w-full flex flex-col lg:flex-row gap-10">
+            <div className="w-[100%] lg:w-[40%]">
               <h3 className="text-4xl font-semibold text-[#1A1A1A]">
                 Common Queries, Clear Answers
               </h3>
@@ -407,7 +407,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[60%]">
+            <div className="w-[100%] lg:w-[60%]">
               {questions.map((question, index) => (
                 <div key={index} className="w-full flex gap-2 mb-4">
                   <div className="w-[80%] py-4 px-4 rounded-3xl border border-[#F0F6FF]">

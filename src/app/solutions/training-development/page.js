@@ -3,644 +3,305 @@ import Image from "next/image";
 import Banner from "../../../../public/assets/training-development.jpg";
 import Accordion from "@/components/Accordion";
 import TopBanner from "../../../../public/assets/training-development-banner.jpg";
-import EmployeePerformance from "../../../../public/assets/employee-perfomance.jpg";
-import Adaptability from "../../../../public/assets/curriculum-development.jpg";
-import LeadershipTraining from "../../../../public/assets/training-delivery.jpg";
-import EmployeeRetention from "../../../../public/assets/leadership-training.jpg";
-import Talent from "../../../../public/assets/talent.jpg";
-import Scalability from "../../../../public/assets/greater-scalability.png";
-import HeadGrowth from "../../../../public/assets/moses-sunday.jpg";
-import Avatar from "../../../../public/assets/avatar.png";
+
+import TrainingImage from "../../../../public/assets/training-image.png";
+
+import ServiceImage1 from "../../../../public/assets/service-image1.png";
+import ServiceImage2 from "../../../../public/assets/service-image2.png";
 
 const page = () => {
   return (
     <>
-      {/* start section */}
-      <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
-        <Image
-          src={TopBanner}
-          alt="top-banner"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
-        {/* Transparent overlay */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <h3 className="text-white font-bold text-4xl md:text-3xl lg:text-4xl">
-            Training and Development
+      <div className="mt-[0px] lg:mt-[150px] p-12">
+        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Training
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            Training & Development
           </h3>
-          <p className="text-[#ffffff9a] my-2 text-lg lg:text-2xl">
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
             Empowering your workforce, Enhancing your business
           </p>
         </div>
       </div>
-      <div className="py-[30px]">
+      <div className="px-12">
+        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
+          <Image
+            src={TopBanner}
+            alt="top-banner"
+            className="w-full h-full object-cover rounded-3xl"
+          />
+        </div>
+      </div>
+      <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              The BFG Training and Development Solution sits within our talent
+              The BFG Training & Development Solution sits within our talent
               management consulting practices. This service is provided to
-              unlock potential, develop leaders, and create high-performing
-              teams. We help organisations improve their performance by
-              providing employees with the knowledge, skills, and abilities they
-              need to succeed in their roles. We provide a wide range of
-              training options, including classroom instruction, online
-              learning, and onthe- job training. It also includes assessments,
-              evaluations, and feedback to measure the effectiveness of the
-              training for your organisation.
+              unlock potential, develop leaders, & create high-performing teams.
+              We help organisations improve their performance by providing
+              employees with the knowledge, skills, & abilities they need to
+              succeed in their roles. We provide a wide range of training
+              options, including classroom instruction, online learning, & on
+              the- job training. It also includes assessments, evaluations, &
+              feedback to measure the effectiveness of the training for your
+              organisation.{" "}
             </p>
           </div>
 
-          <div>
-            <div className="bg-[#f8f5f5] p-8">
-              <h3 className="text-[#016EF8] text-3xl  lg:text-4xl text-center my-4">
-                Focus areas of our Training and Development Services{" "}
+          <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
+            <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+              <div className="my-4">
+                <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
+                  Focus Area
+                </span>
+              </div>
+              <h3 className="text-white text-3xl font-semibold">
+                Focus areas of our Training & Development Consulting Services
               </h3>
-              <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-8">
-                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="48"
-                      height="48"
-                      fill="rgba(1,110,248,1)"
-                    >
-                      <path d="M2 13H8V21H2V13ZM9 3H15V21H9V3ZM16 8H22V21H16V8Z"></path>
-                    </svg>
-                  </span>
-                  <h4 className="text-2xl my-2">Curriculum development</h4>
-                  <p className="text-[#656565]">
-                    {" "}
-                    Designing and developing training programs and materials
-                    that align with our client organisations goals and
-                    objectives.
-                  </p>
-                </div>
-                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="48"
-                      height="48"
-                      fill="rgba(1,110,248,1)"
-                    >
-                      <path d="M17 8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8ZM17 10V13H21V12.715L18.9917 10H17Z"></path>
-                    </svg>
-                  </span>
-                  <h4 className="text-2xl my-2">Delivery</h4>
-                  <p className="text-[#656565]">
-                    Facilitating training sessions, workshops, and seminars for
-                    employees at all levels of your organisation.
-                  </p>
-                </div>
-                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="48"
-                      height="48"
-                      fill="rgba(1,110,248,1)"
-                    >
-                      <path d="M5.63611 12.7071L7.46454 14.5355L8.87875 13.1213L7.05033 11.2929L8.46454 9.87869L10.293 11.7071L11.7072 10.2929L9.87875 8.46448L11.293 7.05026L13.1214 8.87869L14.5356 7.46448L12.7072 5.63605L15.5356 2.80762C15.9261 2.4171 16.5593 2.4171 16.9498 2.80762L21.1925 7.05026C21.583 7.44079 21.583 8.07395 21.1925 8.46448L8.46454 21.1924C8.07401 21.5829 7.44085 21.5829 7.05033 21.1924L2.80768 16.9498C2.41716 16.5592 2.41716 15.9261 2.80768 15.5355L5.63611 12.7071ZM14.1214 18.3635L18.364 14.1208L20.9997 16.7565V20.9999H16.7578L14.1214 18.3635ZM5.63597 9.87806L2.80754 7.04963C2.41702 6.65911 2.41702 6.02594 2.80754 5.63542L5.63597 2.80699C6.02649 2.41647 6.65966 2.41647 7.05018 2.80699L9.87861 5.63542L5.63597 9.87806Z"></path>
-                    </svg>
-                  </span>
-                  <h4 className="text-2xl my-2">Evaluation and follow-up</h4>
-                  <p className="text-[#656565]">
-                    Measuring the effectiveness of training programs and
-                    providing follow-up support to ensure that employees can
-                    apply new skills and knowledge on the job.
-                  </p>
-                </div>
-
-                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="48"
-                      height="48"
-                      fill="rgba(1,110,248,1)"
-                    >
-                      <path d="M8 4C8 2.34315 9.34315 1 11 1C12.6569 1 14 2.34315 14 4C14 4.35064 13.9398 4.68722 13.8293 5H18C18.5523 5 19 5.44772 19 6V10.1707C19.3128 10.0602 19.6494 10 20 10C21.6569 10 23 11.3431 23 13C23 14.6569 21.6569 16 20 16C19.6494 16 19.3128 15.9398 19 15.8293V20C19 20.5523 18.5523 21 18 21H4C3.44772 21 3 20.5523 3 20V6C3 5.44772 3.44772 5 4 5H8.17071C8.06015 4.68722 8 4.35064 8 4Z"></path>
-                    </svg>
-                  </span>
-                  <h4 className="text-2xl my-2">Customised training</h4>
-                  <p className="text-[#656565]">
-                    Offering customised training solutions that are tailored to
-                    meet the specific needs of your organisation and employees.
-                  </p>
-                </div>
-
-                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="48"
-                      height="48"
-                      fill="rgba(1,110,248,1)"
-                    >
-                      <path d="M8.58579 17H3V15H21V17H15.4142L18.6569 20.2426L17.2426 21.6569L13 17.4142V20H11V17.4142L6.75736 21.6569L5.34315 20.2426L8.58579 17ZM5 3H19C19.5523 3 20 3.44772 20 4V14H4V4C4 3.44772 4.44772 3 5 3Z"></path>
-                    </svg>
-                  </span>
-                  <h4 className="text-2xl my-2">
-                    E-Learning and Virtual training
-                  </h4>
-                  <p className="text-[#656565]">
-                    Offering online training programs and virtual instructor-led
-                    training to employees who are located in different regions
-                    or working remotely.
-                  </p>
-                </div>
-
-                <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-lg border-b-2 border-[#016EF8]">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="48"
-                      height="48"
-                      fill="rgba(1,110,248,1)"
-                    >
-                      <path d="M21 9V20.9925C21 21.5511 20.5552 22 20.0066 22H3.9934C3.44495 22 3 21.556 3 21.0082V2.9918C3 2.45531 3.44694 2 3.99826 2H14V8C14 8.55228 14.4477 9 15 9H21ZM21 7H16V2.00318L21 7ZM8 7V9H11V7H8ZM8 11V13H16V11H8ZM8 15V17H16V15H8Z"></path>
-                    </svg>{" "}
-                  </span>
-                  <h4 className="text-2xl my-2">Coaching and mentoring</h4>
-                  <p className="text-[#656565]">
-                    Providing one-on-one coaching and mentoring to help
-                    employees develop their skills and advance in their careers.
-                  </p>
-                </div>
+              <p className="text-white my-2">
+                Unlock your teams potential with our structured approach to
+                training & development, delivering tailored learning solutions
+                that drive performance, productivity, & lasting impact from
+                start to success.{" "}
+              </p>
+              <div className="w-full">
+                <Image
+                  src={TrainingImage}
+                  alt="training-image"
+                  className="w-full"
+                />
               </div>
+            </div>
+            <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
+              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
+                <h4 className="font-semibold text-xl text-[#333333]">
+                  Customized Training for Employee Development
+                </h4>
+                <p className="my-2 text-[#999]">
+                  Offering customised training solutions that are tailored to
+                  meet the specific needs of your organisation & employees.{" "}
+                </p>
+              </div>
+              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
+                <h4 className="font-semibold text-xl text-[#333333]">
+                  Training Delivery & Facilitation{" "}
+                </h4>
+                <p className="my-2 text-[#999]">
+                  Facilitating training sessions, workshops, & seminars for
+                  employees at all levels of your organisation.{" "}
+                </p>
+              </div>{" "}
+              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
+                <h4 className="font-semibold text-xl text-[#333333]">
+                  Training Evaluation & Monitoring{" "}
+                </h4>
+                <p className="my-2 text-[#999]">
+                  Measuring the effectiveness of training programs & providing
+                  follow-up support to ensure that employees can apply new
+                  skills & knowledge on the job.{" "}
+                </p>
+              </div>{" "}
             </div>
           </div>
 
-          <div>
-            <h3 className="text-[#016EF8] text-4xl text-center my-4">
-              Service Benefits
-            </h3>
+          <hr />
+
+          <div className="my-8">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+              Benefits
+            </span>
             <div>
-              <div>
-                <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-6">
-                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
-                    <div className="p-4">
-                      <div className="relative">
-                        <Image
-                          src={EmployeePerformance}
-                          alt="banner"
-                          className="w-full h-[200px] object-fit"
-                        />
-                      </div>
-                      <div className="py-4">
-                        <h3 className="text-2xl font-semibold text-center my-2 text-[#016EF8]">
-                          Improved employee performance
-                        </h3>
-                        <p className="text-center text-[#656565]">
-                          {" "}
-                          By providing employees with the knowledge, skills, and
-                          abilities they need to succeed in their roles, this
-                          solution helps organisations improve employee
-                          performance and productivity.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
-                    <div className="p-4">
-                      <div className="relative">
-                        <Image
-                          src={EmployeeRetention}
-                          alt="production-stats"
-                          className="w-full h-[200px] object-fit"
-                        />
-                      </div>
-                      <div className="py-4">
-                        <h3 className="text-2xl font-semibold text-center my-2 text-[#016EF8]">
-                          Better retention of employees{" "}
-                        </h3>
-                        <p className="text-center text-[#656565]">
-                          {" "}
-                          Investing in employee training and development helps
-                          organisations retain their best employees, and reduces
-                          the costs associated with turnover.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
-                    <div className="p-4">
-                      <div className="relative">
-                        <Image
-                          src={Adaptability}
-                          alt="marketing-stats"
-                          className="w-full h-[200px] object-fit"
-                        />
-                      </div>
-                      <div className="py-4">
-                        <h3 className="text-2xl font-semibold text-center my-2 text-[#016EF8]">
-                          Greater adaptability and flexibility
-                        </h3>
-                        <p className="text-center text-[#656565]">
-                          {" "}
-                          By providing your employees with training and
-                          development that keeps them up-to-date with new
-                          technologies and changing industry trends, your
-                          organisation will be more adaptable and flexible in
-                          response to changing business conditions.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
-                    <div className="p-4">
-                      <div className="relative">
-                        <Image
-                          src={LeadershipTraining}
-                          alt="measure-business"
-                          className="w-full h-[200px] object-fit"
-                        />
-                      </div>
-                      <div className="py-4">
-                        <h3 className="text-2xl font-semibold text-center my-2 text-[#016EF8]">
-                          Improved decision-making
-                        </h3>
-                        <p className="text-center text-[#656565]">
-                          {" "}
-                          Access to accurate, up-to-date information and expert
-                          analysis helps our clients make more informed and
-                          effective decisions for their businesses.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
-                    <div className="p-4">
-                      <div className="relative">
-                        <Image
-                          src={Talent}
-                          alt="employee-satisfy"
-                          className="w-full h-[200px] object-fit"
-                        />
-                      </div>
-                      <div className="py-4">
-                        <h3 className="text-2xl font-semibold text-center my-2 text-[#016EF8]">
-                          Enhanced ability to attract top talent{" "}
-                        </h3>{" "}
-                        <p className="text-center text-[#656565]">
-                          {" "}
-                          Organisations that invest in this service are more
-                          likely to attract top talent, as potential employees
-                          view such investment as a sign of a committed and
-                          forward-thinking organisation.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-[100%] md:w-[60%] lg:w-[30%] p-3 bg-white shadow-xl rounded-md">
-                    <div className="p-4">
-                      <div className="relative">
-                        <Image
-                          src={Scalability}
-                          alt="employee-satisfy"
-                          className="w-full h-[200px] object-fit"
-                        />
-                      </div>
-                      <div className="py-4">
-                        <h3 className="text-2xl font-semibold text-center my-2 text-[#016EF8]">
-                          Greater scalability{" "}
-                        </h3>{" "}
-                        <p className="text-center text-[#656565]">
-                          {" "}
-                          Developing scalable systems and processes, also helps
-                          leaders and managers of organisations prepare for and
-                          manage growth in their business.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                Service Benefits
+              </h3>
+              <p className="text-[#999] text-xl my-2">
+                Realize the full potential of your organization with our expert
+                services, delivering actionable insights, improved efficiency, &
+                sustained results that drive lasting impact & success.{" "}
+              </p>
+            </div>
+            <div className="w-full flex flex-col lg:flex-row gap-10">
+              <div className="w-[100%] lg:w-[30%] h-[280px]">
+                <Image
+                  src={ServiceImage1}
+                  alt="service-image1"
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="w-[0%] h-[0%] lg:w-[70%] lg:h-[280px]">
+                <Image
+                  src={ServiceImage2}
+                  alt="service-image2"
+                  className="w-full h-full"
+                />
               </div>
             </div>
-          </div>
-
-          <div className="py-8">
-            <h3 class="text-[#016EF8] text-4xl my-4 text-center">
-              Connect With Us: Unlock Potential
-            </h3>
-            <p class="text-xl font-semibold my-2 text-center">
-              Cultivate Growth, Ignite Excellence.
-            </p>
-            <p class="text-xl font-semibold my-2 text-center">
-              Explore Our Expertise
-            </p>
-            <p className="text-2xl text-[#016EF8] text-center my-2 font-semibold">
-              Get in touch
-            </p>
-
-            <div className="w-full flex gap-4 flex-wrap justify-center">
-              {/* <div className="w-[30%] border-2 rounded-md border-gray-400 p-4">
-                <div className="w-[150px] h-[150px] mx-auto">
-                <Image
-                src={ManagingDirector}
-                alt="managing-director"
-                className="w-full h-full object-fit rounded-full"
-                />
-                </div>
-                <div className="text-center">
-                <h3 className="text-xl font-semibold my-2">Festus Bello</h3>
-                <p className="text-xl text-gray-500">Managing Director / CEO</p>
-                <div className="flex gap-2 justify-center my-2"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(107,114,128,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg></span><span className="text-gray-500">festus.bello@bfgconsults.com</span></div>
-                </div>
-              </div> */}
-
-              <div className="border-2 rounded-md border-gray-400 p-4">
-                <div className="w-[150px] h-[150px] mx-auto">
-                  <Image
-                    src={HeadGrowth}
-                    alt="head-growth"
-                    className="w-full h-full object-fit rounded-full"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold my-2">Moses S. Ijeo</h3>
-                  <p className="text-xl text-gray-500">
-                    Head of Growth and Consulting
-                  </p>
-                  <div className="flex gap-2 justify-center my-2">
-                    {" "}
-                    <a
-                      href="mailto:sunday.moses@bfgconsults.com"
-                      title="sunday.moses@bfgconsults.com"
+            <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="w-[20%]">
+                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="36"
+                      height="36"
+                      fill="rgba(255,255,255,1)"
                     >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                          fill="rgba(107,114,128,1)"
-                        >
-                          <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path>
-                        </svg>
-                      </span>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/sunday-moses-10b49314a/"
-                      target="_blank"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                          fill="rgba(107,114,128,1)"
-                        >
-                          <path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path>
-                        </svg>{" "}
-                      </span>{" "}
-                    </a>
+                      <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path>
+                    </svg>
                   </div>
                 </div>
-              </div>
-
-
-              <div className="border-2 rounded-md border-gray-400 p-4">
-                <div className="w-[150px] h-[150px] mx-auto">
-                  <Image
-                    src={Avatar}
-                    alt="training-development"
-                    className="w-full h-full object-fit rounded-full"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold my-2">Happiness C. Adama</h3>
-                  <p className="text-xl text-gray-500">
-                  Associate, Training and Development
+                <div className="w-[100%] lg:w-[80%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Improved Employee Performance
+                  </h4>
+                  <p className="text-[#999]">
+                    By providing employees with the knowledge, skills, &
+                    abilities they need to succeed in their roles, this solution
+                    helps organisations improve employee performance &
+                    productivity.{" "}
                   </p>
-                  <div className="flex gap-2 justify-center my-2">
-                    {" "}
-                    <a
-                      href="mailto:adama.chegbe@bfgconsults.com"
-                      title="adama.chegbe@bfgconsults.com"
+                </div>
+              </div>
+              {/* second item */}
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="w-[20%]">
+                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="36"
+                      height="36"
+                      fill="rgba(255,255,255,1)"
                     >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                          fill="rgba(107,114,128,1)"
-                        >
-                          <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path>
-                        </svg>
-                      </span>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/happy-chegbe-adama-9bb0601b2/"
-                      target="_blank"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                          fill="rgba(107,114,128,1)"
-                        >
-                          <path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path>
-                        </svg>{" "}
-                      </span>{" "}
-                    </a>
+                      <path d="M17.0047 16.0027H19.0047V4.00275H9.00468V6.00275H17.0047V16.0027ZM17.0047 18.0027V21.0019C17.0047 21.5546 16.5547 22.0027 15.9978 22.0027H4.01154C3.45548 22.0027 3.00488 21.5581 3.00488 21.0019L3.00748 7.00362C3.00759 6.45085 3.45752 6.00275 4.0143 6.00275H7.00468V3.00275C7.00468 2.45046 7.4524 2.00275 8.00468 2.00275H20.0047C20.557 2.00275 21.0047 2.45046 21.0047 3.00275V17.0027C21.0047 17.555 20.557 18.0027 20.0047 18.0027H17.0047ZM7.00468 16.0027V18.0027H9.00468V19.0027H11.0047V18.0027H11.5047C12.8854 18.0027 14.0047 16.8835 14.0047 15.5027C14.0047 14.122 12.8854 13.0027 11.5047 13.0027H8.50468C8.22854 13.0027 8.00468 12.7789 8.00468 12.5027C8.00468 12.2266 8.22854 12.0027 8.50468 12.0027H13.0047V10.0027H11.0047V9.00275H9.00468V10.0027H8.50468C7.12397 10.0027 6.00468 11.122 6.00468 12.5027C6.00468 13.8835 7.12397 15.0027 8.50468 15.0027H11.5047C11.7808 15.0027 12.0047 15.2266 12.0047 15.5027C12.0047 15.7789 11.7808 16.0027 11.5047 16.0027H7.00468Z"></path>
+                    </svg>
                   </div>
                 </div>
+                <div className="w-[100%] lg:w-[80%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Better Retention of Employees
+                  </h4>
+                  <p className="text-[#999]">
+                    Investing in employee training & development helps
+                    organisations retain their best employees, & reduces the
+                    costs associated with turnover.{" "}
+                  </p>
+                </div>
               </div>
-
-              {/* <div className="w-[30%] border-2 rounded-md border-gray-400 p-4">
-                <div className="w-[150px] h-[150px] mx-auto">
-                <Image
-                src={ResearchHead}
-                alt="research-head"
-                className="w-full h-full object-fit rounded-full"
-                />
+              {/* third item */}
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="w-[20%]">
+                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="36"
+                      height="36"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M8.5 2C6.567 2 5 3.567 5 5.5C5 5.68016 5.01364 5.85714 5.03993 6.02997C3.32436 6.25523 2 7.72295 2 9.5C2 10.4793 2.40223 11.3647 3.05051 12C2.40223 12.6353 2 13.5207 2 14.5C2 15.9018 2.82359 17.1104 4.01353 17.6693C4.00457 17.7785 4 17.8888 4 18C4 20.2091 5.79086 22 8 22C9.19469 22 10.2671 21.4762 11 20.6458V3.05051C10.3647 2.40223 9.47934 2 8.5 2ZM13 3.05051V20.6458C13.7329 21.4762 14.8053 22 16 22C18.2091 22 20 20.2091 20 18C20 17.8888 19.9954 17.7785 19.9865 17.6693C21.1764 17.1104 22 15.9018 22 14.5C22 13.5207 21.5978 12.6353 20.9495 12C21.5978 11.3647 22 10.4793 22 9.5C22 7.72295 20.6756 6.25523 18.9601 6.02997C18.9864 5.85714 19 5.68016 19 5.5C19 3.567 17.433 2 15.5 2C14.5207 2 13.6353 2.40223 13 3.05051Z"></path>
+                    </svg>
+                  </div>
                 </div>
-                <div className="text-center">
-                <h3 className="text-xl font-semibold my-2">Kenneth Idanwekhai</h3>
-                <p className="text-xl text-gray-500">Associate, Research, Data and Analytics</p>
-                <div className="flex gap-2 justify-center my-2"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(107,114,128,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg></span><span className="text-gray-500">sunday.moses@bfgconsults.com</span></div>
+                <div className="w-[100%] lg:w-[80%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Greater Adaptability & Flexibility
+                  </h4>
+                  <p className="text-[#999]">
+                    By providing your employees with training & development that
+                    keeps them up-to-date with new technologies & changing
+                    industry trends, your organisation will be more adaptable &
+                    flexible in response to changing business conditions.{" "}
+                  </p>
                 </div>
-              </div> */}
+              </div>
+              {/* fourth item */}
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="w-[20%]">
+                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="36"
+                      height="36"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M14 14.252V22H4C4 17.5817 7.58172 14 12 14C12.6906 14 13.3608 14.0875 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM18 17V14H20V17H23V19H20V22H18V19H15V17H18Z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-[100%] lg:w-[80%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Improved Decision-Making
+                  </h4>
+                  <p className="text-[#999]">
+                    Access to accurate, up-to-date information & expert analysis
+                    helps our clients make more informed & effective decisions
+                    for their businesses.{" "}
+                  </p>{" "}
+                </div>
+              </div>
+              {/* fifth item */}
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="w-[20%]">
+                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="36"
+                      height="36"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M7.94101 18C7.64391 16.7274 6.30412 15.6857 5.75395 14.9992C4.65645 13.6297 4 11.8915 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 11.8925 19.3428 13.6315 18.2443 15.0014C17.6944 15.687 16.3558 16.7276 16.059 18H7.94101ZM16 20V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V20H16ZM13 10.0048V6L8.5 12.0048H11V16.0048L15.5 10.0048H13Z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-[100%] lg:w-[80%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Enhanced Ability to Attract top Talent
+                  </h4>
+                  <p className="text-[#999]">
+                    Organisations that invest in this service are more likely to
+                    attract top talent, as potential employees view such
+                    investment as a sign of a committed & forward-thinking
+                    organisation.{" "}
+                  </p>{" "}
+                </div>
+              </div>
+              {/* sixth item */}
+              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="w-[20%]">
+                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="36"
+                      height="36"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M7.94101 18C7.64391 16.7274 6.30412 15.6857 5.75395 14.9992C4.65645 13.6297 4 11.8915 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 11.8925 19.3428 13.6315 18.2443 15.0014C17.6944 15.687 16.3558 16.7276 16.059 18H7.94101ZM16 20V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V20H16ZM13 10.0048V6L8.5 12.0048H11V16.0048L15.5 10.0048H13Z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-[100%] lg:w-[80%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Greater Scalability{" "}
+                  </h4>
+                  <p className="text-[#999]">
+                    Developing scalable systems & processes, also helps leaders
+                    & managers of organisations prepare for & manage growth in
+                    their business.
+                  </p>{" "}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* end section */}
-
-      {/* <div className="py-[30px]">
-        <div className="p-[40px]">
-        <h3 className="my-4 flex justify-center text-lg font-bold">
-            <span className="bg-[#f89d68] p-2 text-white rounded-xl">
-            Training and Development
-            </span>
-          </h3>
-          
-          <div className="w-full flex flex-col lg:flex-row items-center gap-2">
-  <div className="w-full lg:w-[50%]">
-              <h3 className="text-xl text-[#E45F11] font-bold">
-                Empowering your workforce,
-              </h3>
-              <h4 className="text-xl text-[#E45F11] font-bold">
-                Enhancing your business
-              </h4>
-              <p className="text-lg text-[#656565] my-3">
-                The BFG Training and Development Solution sits within our talent
-                management consulting practices. This service is provided to
-                unlock potential, develop leaders, and create high-performing
-                teams. We help organisations improve their performance by
-                providing employees with the knowledge, skills, and abilities
-                they need to succeed in their roles. We provide a wide range of
-                training options, including classroom instruction, online
-                learning, and onthe- job training. It also includes assessments,
-                evaluations, and feedback to measure the effectiveness of the
-                training for your organisation.
-              </p>
-            </div>
-            <div className="w-full lg:w-[50%] h-[400px] my-3 lg:my-0">
-
-                <Image
-                  src={Banner}
-                  alt="business-banner"
-                  className="w-full h-full object-fit"
-                />
-            </div>
-          </div>
-
-          <div>
-            <h3 className="my-3 text-[#E45F11] text-center font-bold text-lg">
-              While our training and development solution cuts across hard
-              (technical) and soft (nontechnical) skill development, the
-              solution includes a wide range of services such as:
-            </h3>
-            <div className="">
-              <div className="relative w-[80%] h-[100%] bg-white border-b-2 border-[#E45F11] shadow-lg p-8 mx-auto ">
-                <div className="text-black">
-                  <ul className="list-disc">
-                    <li className="my-2">
-                      <span className="font-bold">Needs analysis:</span>{" "}
-                      Assessing the specific training needs of the organization
-                      and its employees.
-                    </li>
-                    <li className="my-2">
-                      <span className="font-bold">Curriculum development:</span>{" "}
-                      Designing and developing training programs and materials
-                      that align with our client organisations goals and
-                      objectives.
-                    </li>
-
-                    <li className="my-2">
-                      <span className="font-bold">Delivery:</span> Facilitating
-                      training sessions, workshops, and seminars for employees
-                      at all levels of your organisation.
-                    </li>
-
-                    <li className="my-2">
-                      <span className="font-bold">
-                        Evaluation and follow-up:
-                      </span>{" "}
-                      Measuring the effectiveness of training programs and
-                      providing follow-up support to ensure that employees can
-                      apply new skills and knowledge on the job.
-                    </li>
-
-                    <li className="my-2">
-                      <span className="font-bold">Customised training:</span>{" "}
-                      Offering customised training solutions that are tailored
-                      to meet the specific needs of your organisation and
-                      employees.
-                    </li>
-
-                    <li className="my-2">
-                      <span className="font-bold">
-                        E-Learning and Virtual training:
-                      </span>{" "}
-                      Offering online training programs and virtual
-                      instructor-led training to employees who are located in
-                      different regions or working remotely.
-                    </li>
-
-                    <li className="my-2">
-                      <span className="font-bold">Coaching and mentoring:</span>{" "}
-                      Providing one-on-one coaching and mentoring to help
-                      employees develop their skills and advance in their
-                      careers.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container mx-auto py-8">
-            <h1 className="text-xl font-bold mb-4">Service Benefits</h1>
-            <Accordion title="Improved employee performance">
-              <p>
-                By providing employees with the knowledge, skills, and abilities
-                they need to succeed in their roles, this solution helps
-                organisations improve employee performance and
-                productivity.Increased employee satisfaction and engagement:
-                When employees feel that they are receiving the training and
-                development they need to do their jobs effectively, they are
-                more likely to be satisfied with their jobs and more engaged in
-                their work.
-              </p>
-            </Accordion>
-            <Accordion title="Better retention of employees">
-              <p>
-                Investing in employee training and development helps
-                organisations retain their best employees, and reduces the costs
-                associated with turnover.
-              </p>
-            </Accordion>
-            <Accordion title="Greater adaptability and flexibility">
-              <p>
-                By providing your employees with training and development that
-                keeps them up-to-date with new technologies and changing
-                industry trends, your organisation will be more adaptable and
-                flexible in response to changing business conditions.
-              </p>
-            </Accordion>
-            <Accordion title="Improved decision-making">
-              <p>
-                Access to accurate, up-to-date information and expert analysis
-                helps our clients make more informed and effective decisions for
-                their businesses.
-              </p>
-            </Accordion>
-            <Accordion title="Enhanced ability to attract top talent">
-              <p>
-                Organisations that invest in this service are more likely to
-                attract top talent, as potential employees view such investment
-                as a sign of a committed and forward-thinking organisation.
-              </p>
-            </Accordion>
-            <Accordion title="Greater scalability">
-              <p>
-                Developing scalable systems and processes, also helps leaders
-                and managers of organisations prepare for and manage growth in
-                their business.
-              </p>
-            </Accordion>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };

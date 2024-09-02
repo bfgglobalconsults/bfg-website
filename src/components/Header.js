@@ -19,7 +19,6 @@ const Header = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
 
-
   const [showMenu, setShowMenu] = useState(false);
   const [activeTab, setActiveTab] = useState(null);
   const modalRef = useRef(null);
@@ -41,9 +40,9 @@ const Header = () => {
   });
 
   const menuTransitions = useTransition(showMenu, {
-    from: { opacity: 0, transform: "translateX(-100%)" },
-    enter: { opacity: 1, transform: "translateX(0%)" },
-    leave: { opacity: 0, transform: "translateX(-100%)" },
+    from: { opacity: 0, transform: "translateY(-100%)" },
+    enter: { opacity: 1, transform: "translateY(0%)" },
+    leave: { opacity: 0, transform: "translateY(-100%)" },
   });
 
   useEffect(() => {
@@ -62,25 +61,25 @@ const Header = () => {
     };
   }, []);
 
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (
-//         modalRef.current &&
-//         !modalRef.current.contains(event.target) 
-//       ) {
-//         setActiveTab(null); // Close the modal when clicked outside
-//         setModalOpen(false); // Update modal state
-//       }
-//     };
+  //   useEffect(() => {
+  //     const handleClickOutside = (event) => {
+  //       if (
+  //         modalRef.current &&
+  //         !modalRef.current.contains(event.target)
+  //       ) {
+  //         setActiveTab(null); // Close the modal when clicked outside
+  //         setModalOpen(false); // Update modal state
+  //       }
+  //     };
 
-//     // Add event listener when component mounts
-//     document.addEventListener('mousedown', handleClickOutside);
+  //     // Add event listener when component mounts
+  //     document.addEventListener('mousedown', handleClickOutside);
 
-//     // Remove event listener when component unmounts
-//     return () => {
-//       document.removeEventListener('mousedown', handleClickOutside);
-//     };
-// }, [modalOpen]);
+  //     // Remove event listener when component unmounts
+  //     return () => {
+  //       document.removeEventListener('mousedown', handleClickOutside);
+  //     };
+  // }, [modalOpen]);
 
   // useEffect(() => {
   //   const handleClickOutside = (event) => {
@@ -88,7 +87,7 @@ const Header = () => {
   //       modalRef.current &&
   //       !modalRef.current.contains(event.target)
   //     ) {
-  //       setActiveTab(null); 
+  //       setActiveTab(null);
   //     }
   //   };
 
@@ -108,19 +107,25 @@ const Header = () => {
   };
 
   const ModalContentWrapper = ({ component, closeModal, color }) => {
-    const router = useRouter(); 
-    
+    const router = useRouter();
+
     const handleClick = (e, href) => {
       e.stopPropagation();
       closeModal();
       if (href) {
-        router.push(href); 
+        router.push(href);
       }
     };
-  
-    return component && React.cloneElement(component, { closeModal, onClick: handleClick, hoverText: color });
+
+    return (
+      component &&
+      React.cloneElement(component, {
+        closeModal,
+        onClick: handleClick,
+        hoverText: color,
+      })
+    );
   };
-  
 
   return (
     <div>
@@ -159,9 +164,10 @@ const Header = () => {
                               ? "rounded-tr-md"
                               : ""
                           }`}
-                         
                         >
-                          <button  onClick={() => handleTabClick(id)}>{label}</button>
+                          <button onClick={() => handleTabClick(id)}>
+                            {label}
+                          </button>
                         </li>
                       )
                     )}
@@ -200,7 +206,11 @@ const Header = () => {
                               </svg>
                             </span>
                           </div>
-                          <ModalContentWrapper component={component} closeModal={closeModal} color="#016EF8" />
+                          <ModalContentWrapper
+                            component={component}
+                            closeModal={closeModal}
+                            color="#016EF8"
+                          />
                         </div>
                       </div>
                     </div>
@@ -236,7 +246,9 @@ const Header = () => {
                           }`}
                         >
                           {/* <Link href={link}>{label}</Link> */}
-                          <button  onClick={() => handleTabClick(id)}>{label}</button>
+                          <button onClick={() => handleTabClick(id)}>
+                            {label}
+                          </button>
                         </li>
                       )
                     )}
@@ -274,10 +286,13 @@ const Header = () => {
                               </svg>
                             </span>
                           </div>
-                          <ModalContentWrapper component={component} closeModal={closeModal} color="#016EF8" />
-                       
+                          <ModalContentWrapper
+                            component={component}
+                            closeModal={closeModal}
+                            color="#016EF8"
+                          />
+                        </div>
                       </div>
-                    </div>
                     </div>
                   ))}
                 </div>
@@ -292,37 +307,22 @@ const Header = () => {
         <div
           className={`${
             active === true
-              ? "w-full p-[10px] px-[40px] bg-[#016EF8] fixed top-0 left-0 z-10"
-              : null
+              ? "w-full p-[10px] px-[40px] bg-white  fixed top-0 left-0 z-10"
+              : "bg-[#E26015] p-3"
           } px-[40px] text-white border-b border-[#e4e4eb]`}
         >
           <div className="flex justify-between items-center gap-2">
             {active ? (
               <>
-                <button className="" onClick={() => setShowMenu(!showMenu)}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="36"
-                    height="36"
-                    fill="rgba(255,255,255,1)"
-                  >
-                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
-                  </svg>
-                </button>
                 <Link href="/">
-
-                <div className="w-[80px] h-15">
-                  <Image
-                    src={WhiteLogo}
-                    alt="logo"
-                    className="w-full h-full object-fit"
-                  />
-                </div>
+                  <div className="w-[100px] h-[90px]">
+                    <Image
+                      src={Logo}
+                      alt="logo"
+                      className="w-full h-full object-fit"
+                    />
+                  </div>
                 </Link>
-              </>
-            ) : (
-              <>
                 <button className="" onClick={() => setShowMenu(!showMenu)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -334,17 +334,30 @@ const Header = () => {
                     <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
                   </svg>
                 </button>
-
+              </>
+            ) : (
+              <>
                 <Link href="/">
-                <div className="w-[100px] h-[90px]">
-                  {" "}
-                  <Image
-                    src={Logo}
-                    alt="logo"
-                    className="w-full h-full object-fit"
-                  />{" "}
-                </div>
+                  <div className="w-[100px] h-[90px]">
+                    {" "}
+                    <Image
+                      src={WhiteLogo}
+                      alt="logo"
+                      className="w-full h-full object-fit"
+                    />{" "}
+                  </div>
                 </Link>
+                <button className="" onClick={() => setShowMenu(!showMenu)}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="rgba(255,255,255,1)"
+                  >
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                  </svg>
+                </button>
               </>
             )}
           </div>
@@ -363,23 +376,43 @@ const Header = () => {
               item && (
                 <animated.div
                   style={styles}
-                  className="fixed p-3 bg-white top-0 left-0 w-3/5 z-50 h-full shadow "
+                  className="fixed p-3 bg-white top-0 left-0 w-[100%] z-50 h-full shadow "
                 >
-                  <div className="w-[100px] h-[100px] mx-auto">
-                    <Image src={Logo} className="w-full h-full object-fit" alt="logo" />
+                  <div className="flex justify-between items-center">
+                    <div className="w-[100px] h-[100px] p-1">
+                      <Image
+                        src={Logo}
+                        className="w-full h-full object-fit"
+                        alt="logo"
+                      />
+                    </div>
+                    <button
+                      className="text-black"
+                      onClick={() => setShowMenu(false)}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="36"
+                        height="36"
+                      >
+                        <path
+                          d="M6 18L18 6M6 6l12 12"
+                          stroke="black"
+                          strokeWidth="2"
+                        />
+                      </svg>
+                    </button>
                   </div>
+                  <hr />
                   <div className="py-[40px] font-bold text-center text-[16px] text-gray-800">
-                    {/* {navigation_links.map(({ id, link, label }) => (
-                      <div key={id} className="pl-[32px] py-[20px]">
-                        <Link href={link} className="hover:text-[#E45F11]">
-                          {label}
-                        </Link>
-                      </div>
-                    ))} */}
                     <Collapsible
                       trigger={
-                        <div className="px-[32px]  flex items-center justify-between">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]"> Solutions</p>
+                        <div className="px-[32px]  flex items-center justify-center">
+                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
+                            {" "}
+                            Solutions
+                          </p>
                           <p>
                             {" "}
                             <svg
@@ -399,144 +432,35 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/solutions/research-analytics">Research and Analytics</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/solutions/business-strategy">Business Strategy and Operations</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/solutions/training-development">Training and development</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/solutions/information-technology">Innovation and Technology</Link>
-                      </p>
-
-                       
-                      </div>
-                    </Collapsible>
-
-                    <Collapsible
-                      trigger={
-                        <div className="px-[32px] flex items-center justify-between">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Industry</p>
-                          <p>
-                            {" "}
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              width="24"
-                              height="24"
-                            >
-                              <path fill="none" d="M0 0h24v24H0z" />
-                              <path
-                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
-                                fill="rgba(181,181,189,1)"
-                              />
-                            </svg>
-                          </p>{" "}
-                        </div>
-                      }
-                    >
-                      <div className="bg-[#EFEFEF] divide-y">
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/consumer">Consumer and Retailer</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/financial">Financial Services</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/hospitality">Hospitality and Tourism</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/real-estate">Real Estate</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/technology">Technology and Finance</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/government">Government and Non-for-Profit</Link>
-                      </p>
-
-                       
-                      </div>
-                    </Collapsible>
-                    <Collapsible
-                      trigger={
-                        <div className="px-[32px]  flex items-center justify-between">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Product</p>
-                          <p>
-                            {" "}
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              width="24"
-                              height="24"
-                            >
-                              <path fill="none" d="M0 0h24v24H0z" />
-                              <path
-                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
-                                fill="rgba(181,181,189,1)"
-                              />
-                            </svg>
-                          </p>{" "}
-                        </div>
-                      }
-                    >
-                      <div className="bg-[#EFEFEF] divide-y">
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/product/appetizer">Appetizer</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/product/career-fun">Career Fun</Link>
-                      </p>
-                     
-                      </div>
-                    </Collapsible>
-                    <Collapsible
-                      trigger={
-                        <div className="px-[32px] flex items-center justify-between">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Program</p>
-                          <p>
-                            {" "}
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              width="24"
-                              height="24"
-                            >
-                              <path fill="none" d="M0 0h24v24H0z" />
-                              <path
-                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
-                                fill="rgba(181,181,189,1)"
-                              />
-                            </svg>
-                          </p>{" "}
-                        </div>
-                      }
-                    >
-                      <div className="bg-[#EFEFEF] divide-y">
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Dialetics</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Emerging Marketplace Leader</Link>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/solutions/research-analytics">
+                            Research and Analytics
+                          </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Women in Tech</Link>
+                          <Link href="/solutions/business-strategy">
+                            Business Strategy and Operations
+                          </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">SME Klinic</Link>
-                      </p>
-                     
-
-                       
+                          <Link href="/solutions/training-development">
+                            Training and development
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/solutions/information-technology">
+                            Innovation and Technology
+                          </Link>
+                        </p>
                       </div>
                     </Collapsible>
-                     <Collapsible
+
+                    <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-between">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Insight</p>
+                        <div className="px-[32px] flex items-center justify-center">
+                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
+                            Industry
+                          </p>
                           <p>
                             {" "}
                             <svg
@@ -556,27 +480,44 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">News</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Blogs</Link>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/consumer">
+                            Consumer and Retailer
+                          </Link>
                         </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Case Studies</Link>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/financial">
+                            Financial Services
+                          </Link>
                         </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/careers">Careers</Link>
-                      </p>
-                     
-
-                       
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/hospitality">
+                            Hospitality and Tourism
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/real-estate">
+                            Real Estate
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/technology">
+                            Technology and Finance
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/government">
+                            Government and Non-for-Profit
+                          </Link>
+                        </p>
                       </div>
                     </Collapsible>
                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-between">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">About Us</p>
+                        <div className="px-[32px]  flex items-center justify-center">
+                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
+                            Product
+                          </p>
                           <p>
                             {" "}
                             <svg
@@ -596,37 +537,150 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                      {/* <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/product/appetizer">Appetizer</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/product/career-fun">Career Fun</Link>
+                        </p>
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px] flex items-center justify-center">
+                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
+                            Program
+                          </p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF] divide-y">
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">Dialetics</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">Emerging Marketplace Leader</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">Women in Tech</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">SME Klinic</Link>
+                        </p>
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px] flex items-center justify-center">
+                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
+                            Insight
+                          </p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF] divide-y">
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">News</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">Blogs</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">Case Studies</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/careers">Careers</Link>
+                        </p>
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger={
+                        <div className="px-[32px] flex items-center justify-center">
+                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
+                            About Us
+                          </p>
+                          <p>
+                            {" "}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path
+                                d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"
+                                fill="rgba(181,181,189,1)"
+                              />
+                            </svg>
+                          </p>{" "}
+                        </div>
+                      }
+                    >
+                      <div className="bg-[#EFEFEF] divide-y">
+                        {/* <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/about">About Us</Link>
                       </p> */}
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/about">Who we are</Link>
-                        </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/projects">Our Clients</Link>
-                      </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/team">Our Team</Link>
-                      </p>
-                     <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/projects">Project Executed</Link>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/about">Who we are</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Award & Recognition</Link>
+                          <Link href="/industry/projects">Our Clients</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Governance & Culture</Link>
-                      </p>
-
-                       
+                          <Link href="/team">Our Team</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/projects">
+                            Project Executed
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">Award & Recognition</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="">Governance & Culture</Link>
+                        </p>
                       </div>
                     </Collapsible>
-                   
-                        <div className="px-[32px] flex items-center justify-between">
-                           <Link href="/contact"><p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Contact</p></Link>
-                    
-                        </div>
-                
+
+                    <div className="px-[32px] flex items-center justify-center">
+                      <Link href="/contact">
+                        <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
+                          Contact
+                        </p>
+                      </Link>
+                    </div>
                   </div>
                 </animated.div>
               )

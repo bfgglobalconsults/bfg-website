@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Banner from "../../../public/assets/about-banner.png";
+// import Banner from "../../../public/assets/about-banner.png";
+import Banner from "../../../public/assets/about-team.jpg";
+
 import Picture from "../../../public/assets/bello-frame.png";
 import Statistics from "@/components/Statistics";
 import OurStand from "@/components/OurStand";
@@ -8,15 +10,15 @@ import OurStand from "@/components/OurStand";
 const page = () => {
   return (
     <>
-      <div className="mt-[150px] p-12">
+      <div className="lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
           About Us
         </span>
-        <div className="flex w-full gap-4 items-center justify-between my-4">
-          <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Our Company
           </h3>
-          <p className="w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
             Discover BFG Consults, where passion meets expertise in business
             consulting. We are more than consultants; we are architects of
             growth, innovators of strategy, & your dedicated partners in
@@ -24,7 +26,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="relative h-[400px] bg-cover bg-center flex justify-center items-center">
+        <div className="relative h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={Banner}
             alt="about-banner"
@@ -53,9 +55,9 @@ const page = () => {
                 CEO Message
               </span>
             </div>
-            <div className="w-full flex gap-2 my-4">
-              <div className="w-[60%]">
-                <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
+              <div className="w-[100%] lg:w-[60%]">
+                <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-5xl">
                   Your Growth Partner in a Changing Business Landscape
                 </h3>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
@@ -100,7 +102,7 @@ const page = () => {
                   of sustainable growth and success.
                 </p>
                 <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
-                  <div className="flex justify-center gap-10">
+                  <div className="flex flex-col lg:flex-row justify-center gap-10">
                     <div>
                       <h3 className="text-4xl text-white font-bold">10K+</h3>
                       <p className="text-white">Complete project</p>
@@ -120,7 +122,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[450px] h-[600px]">
+              <div className="w-[350px] h-[450px] lg:w-[450px] lg:h-[600px]">
                 <Image
                   src={Picture}
                   alt="festus-bello"

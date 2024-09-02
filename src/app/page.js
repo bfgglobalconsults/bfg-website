@@ -160,8 +160,8 @@ export default function Main() {
 
   return (
     <>
-      <div className="py-[30px]">
-        <div className="bg-[#E45F11] w-full lg:flex items-center my-4 py-10">
+      <div className="py-[0px] lg:py-[0px] xl:py-[30px]">
+        <div className="bg-[#E45F11] w-full lg:flex items-center my-0 lg:my-0 xl:my-4 py-10">
           <div className="w-full lg:w-[60%]">
             <div className="p-[40px]">
               <h3 className="font-bold text-3xl lg:text-5xl text-white">
@@ -203,7 +203,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-[35%] animate-heartbeat overflow-hidden">
+          <div className="w-full lg:w-[35%] animate-heartbeat overflow-hidden py-10">
             <Image
               src={Banner}
               alt="banner"
@@ -212,13 +212,13 @@ export default function Main() {
           </div>
         </div>
         <div className="bg-[#faf8f8bd] p-[40px]">
-          <div className="w-full flex gap-1 items-center">
-            <div className="w-[30%]">
+          <div className="w-full flex flex-col lg:flex-row gap-1 items-center">
+            <div className="w-[100%] lg:w-[30%]">
               <h3 className="text-2xl font-semibold">
                 Trusted by Top Partners <br />& Clients
               </h3>
             </div>
-            <div className="w-[70%]">
+            <div className="w-[100%] lg:w-[70%]">
               <Swiper
                 style={{ "--swiper-navigation-size": "20px" }}
                 slidesPerView={2}
@@ -258,13 +258,13 @@ export default function Main() {
           </div>
         </div>
 
-        <div className="w-full h-[800px] flex items-center flex-wrap">
-          <div className="w-[40%] relative">
+        <div className="w-full h-full lg:h-[800px] flex flex-col lg:flex-row items-center flex-wrap">
+          <div className="w-[100%] h-full xl:w-[40%] relative">
             <div className="p-12">
               <span className="p-3 rounded-3xl border-2 border-[#E26015] font-semibold">
                 Our Solution
               </span>
-              <h3 className="my-6 text-[#333] text-4xl font-semibold">
+              <h3 className="my-6 text-[#333] text-2xl lg:text-4xl font-semibold">
                 Customized Services for Exceptional Results
               </h3>
               <p className="text-[#999] text-lg">
@@ -291,9 +291,9 @@ export default function Main() {
             </div>
             <div className="absolute bottom-30 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div>
           </div>
-          <div className="w-[60%] h-[800px] relative bg-[url('../../public/assets/middle-banner.png')]">
-            <div className="md:w-[400px] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
-              <div className="md:w-[300px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
+          <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')]">
+            <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
+              <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
                     <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
@@ -327,7 +327,7 @@ export default function Main() {
                 </div>
               </div>
               {/* second item */}
-              <div className="md:w-[300px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
+              <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
                     <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
@@ -361,7 +361,7 @@ export default function Main() {
                 </div>
               </div>
               {/* third item */}
-              <div className="md:w-[300px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
+              <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
                     <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
@@ -394,7 +394,7 @@ export default function Main() {
                 </div>
               </div>
               {/* fourth item */}
-              <div className="md:w-[300px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
+              <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                 <div className="p-5">
                   <div className="flex gap-2 items-center">
                     <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
@@ -430,16 +430,16 @@ export default function Main() {
           </div>
         </div>
 
-        <div className="bg-[#041926] p-12">
+        <div className="bg-[#041926] relative py-6 px-2 lg:p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Industries we cover
           </span>
-          <div className="w-[100%] relative flex items-center flex-wrap">
-            <div className="w-[50%]">
-              <h3 className="my-6 text-white text-4xl font-semibold">
+          <div className="w-[100%] relative flex flex-col lg:flex-row items-center flex-wrap">
+            <div className="w-[100%] lg:w-[50%]">
+              <h3 className="my-6 text-white text-3xl lg:text-4xl font-semibold">
                 Serving Diverse Industries
               </h3>
-              <p className="text-white text-lg w-[80%]">
+              <p className="text-white text-lg w-full lg:w-[80%]">
                 Discover success across tech, finance, healthcare,
                 manufacturing, retail, energy, professional services, &
                 hospitality with BFG Global Consult tailored
@@ -447,7 +447,7 @@ export default function Main() {
               </p>
             </div>
 
-            <div className="w-[50%] relative">
+            <div className="w-[100%] lg:w-[50%] relative">
               {/* <div className="absolute top-0 right-10 w-[400px] h-[250px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div> */}
 
               <div className="flex gap-2 justify-end">
@@ -489,26 +489,26 @@ export default function Main() {
             <div className="my-4 relative overflow-hidden">
               <div
                 className="flex gap-2 transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * 50}%)` }}
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
                 {slides.map((slide, index) => (
                   <>
                     <div
                       key={index}
-                      className="w-1/2 flex-shrink-0 flex flex-wrap"
+                      className="w-full lg:w-1/2 flex-shrink-0 flex flex-wrap"
                     >
-                      <div className="w-[95%]  p-5 bg-white rounded-2xl">
+                      <div className="w-[100%] lg:w-[95%]  p-5 bg-white rounded-2xl">
                         <Image
                           alt={slide.imageAlt}
-                          className="w-full h-[250px]"
+                          className="w-full h-[250px] object-fit"
                           src={slide.imageSrc}
                         />
 
                         <div>
-                          <h3 className="text-2xl my-2 font-semibold text-black">
+                          <h3 className="text-xl lg:text-2xl my-2 font-semibold text-black">
                             {slide.title}
                           </h3>
-                          <p className="text-lg text-[#999]">
+                          <p className="text-md text-lg text-[#999]">
                             {slide.description}
                           </p>
                         </div>
@@ -525,15 +525,15 @@ export default function Main() {
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Case Studies
           </span>
-          <div className="w-[100%] flex">
-            <div className="w-[50%]">
+          <div className="w-[100%] flex flex-col lg:flex-row">
+            <div className="w-[100%] lg:w-[50%]">
               <h3 className="my-6 text-black text-4xl font-semibold">
                 Featured Case Studies
               </h3>
             </div>
-            <div className="w-[50%]">
+            <div className="w-[100%] lg:w-[50%]">
               <div className="flex gap-2 justify-end">
-                <p className="text-[#999] text-lg w-[80%]">
+                <p className="text-[#999] text-lg lg:w-[80%]">
                   Unlock success secrets with our Featured Case Studies.
                   Real-world insights to inform, inspire, & drive your
                   business forward.
@@ -600,8 +600,8 @@ export default function Main() {
         </div>
         {/* banner section */}
         <div>
-          <div className="w-full h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-no-repeat flex items-center">
-            <div className="w-[50%] p-12 ">
+          <div className="w-full lg:h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-no-repeat flex  items-center">
+            <div className="w-[100%] lg:w-[50%] p-12 ">
               <p className="text-lg text-white font-semibold my-2 border-l-4 border-[#999] p-2">
                 Unlock your business potential with BFG, your partner in
                 success. Combine the wisdom of today, the innovation of
@@ -620,14 +620,14 @@ export default function Main() {
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Value
           </span>
-          <div className="w-full flex gap-2 my-4">
-            <div className="w-[50%]">
-              <h3 className="text-[#333] font-semibold text-[40px]">
+          <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
+            <div className="w-[100%] lg:w-[50%]">
+              <h3 className="text-[#333] font-semibold text-[25px] lg:text-[40px]">
                 How our values inform the value we provide
               </h3>
             </div>
-            <div className="w-[50%]">
-              <p className="text-xl text-[#999]">
+            <div className="w-[100%] lg:w-[50%]">
+              <p className="text-lg lg:text-xl text-[#999]">
                 Every project is shaped by our fundamental beliefs, which
                 guarantee outstanding quality, creativity, & clients pleasure at
                 every turn.
@@ -635,13 +635,13 @@ export default function Main() {
             </div>
           </div>
           {/* content */}
-          <div className="w-full flex gap-2 my-4">
-            <div className="w-[50%]">
+          <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
+            <div className="w-[100%]  xl:w-[50%]">
               <Image src={ContentBanner} alt="content-img" className="w-full" />
             </div>
-            <div className="w-[50%] p-2">
+            <div className="w-[100%]  xl:w-[50%] p-2">
               <div className="w-full flex flex-wrap gap-4">
-                <div className="w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
                   <h3 className="text-lg text-[#222] font-semibold my-2">
                     Exceptional Quality
                   </h3>
@@ -651,7 +651,7 @@ export default function Main() {
                     solutions that exceed our clients expectations.
                   </p>
                 </div>
-                <div className="w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
                   <h3 className="text-lg text-[#222] font-semibold my-2">
                     Embracing Innovation
                   </h3>
@@ -661,7 +661,7 @@ export default function Main() {
                     better ways to solve problems & deliver value to our clients{" "}
                   </p>
                 </div>
-                <div className="w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
                   <h3 className="text-lg text-[#222] font-semibold my-2">
                     Building Trust through Transparency
                   </h3>
@@ -671,7 +671,7 @@ export default function Main() {
                     our promises.{" "}
                   </p>
                 </div>
-                <div className="w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
                   <h3 className="text-lg text-[#222] font-semibold my-2">
                     Client-Centricity
                   </h3>
@@ -691,9 +691,9 @@ export default function Main() {
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Recent Post
           </span>
-          <h3 className="text-4xl font-bold text-[#333] my-4">Latest News</h3>
-          <div className="w-full flex gap-3">
-            <div className="p-4 border border-[#F7F7F8] rounded-lg w-[50%] shadow-lg">
+          <h3 className="text-3xl lg:text-4xl font-bold text-[#333] my-4">Latest News</h3>
+          <div className="w-full flex flex-col lg:flex-row gap-3">
+            <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
               <div className="p-4 relative">
                 <Image src={FirstNews} alt="first-news" className="w-full" />
                 <div className="absolute bottom-10 left-10">
@@ -737,7 +737,7 @@ export default function Main() {
                 </button>
               </div>
             </div>
-            <div className="p-4 border border-[#F7F7F8] rounded-lg w-[50%] shadow-lg">
+            <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
               <div className="p-4 relative">
                 <Image src={SecondNews} alt="first-news" className="w-full" />
                 <div className="absolute bottom-10 left-10">

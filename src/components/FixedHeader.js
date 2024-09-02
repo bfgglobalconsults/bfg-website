@@ -255,24 +255,14 @@ const FixedHeader = () => {
         <div
           className={`${
             active === true
-              ? "w-full p-[10px] px-[40px] bg-[#016EF8] fixed top-0 left-0 z-10"
+              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
               : null
           } px-[40px] text-white border-b border-[#e4e4eb]`}
         >
           <div className="flex justify-between items-center gap-2">
             {active ? (
               <>
-                <button className="" onClick={() => setShowMenu(!showMenu)}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="36"
-                    height="36"
-                    fill="rgba(255,255,255,1)"
-                  >
-                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
-                  </svg>
-                </button>
+                
                 <Link href="/">
 
                 <div className="w-[100px] h-[90px]">
@@ -283,20 +273,21 @@ const FixedHeader = () => {
                   />
                 </div>
                 </Link>
-              </>
-            ) : (
-              <>
                 <button className="" onClick={() => setShowMenu(!showMenu)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     width="36"
                     height="36"
-                    fill="rgba(0,0,0,1)"
+                    fill="rgba(1,1,1,1)"
                   >
                     <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
                   </svg>
                 </button>
+              </>
+            ) : (
+              <>
+                
 
                 <Link href="/">
                 <div className="w-[100px] h-[90px]">
@@ -307,7 +298,18 @@ const FixedHeader = () => {
                     className="w-full h-full object-fit"
                   />{" "}
                 </div>
-                </Link>
+                  </Link>
+                  <button className="" onClick={() => setShowMenu(!showMenu)}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="rgba(0,0,0,1)"
+                  >
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                  </svg>
+                </button>
               </>
             )}
           </div>
@@ -326,11 +328,24 @@ const FixedHeader = () => {
               item && (
                 <animated.div
                   style={styles}
-                  className="fixed p-3 bg-white top-0 left-0 w-3/5 z-50 h-full shadow "
+                  className="fixed p-3 bg-white top-0 left-0 w-full z-50 h-full shadow "
                 >
-                  <div className="w-[100px] h-[100px] mx-auto">
+                  <div className="flex justify-between items-center">
+                  <div className="w-[100px] h-[100px] p-1">
                     <Image src={Logo} className="w-full h-full object-fit" alt="logo" />
                   </div>
+                   <button className="text-black" onClick={() => setShowMenu(false)}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="36"
+                height="36"
+              >
+                <path d="M6 18L18 6M6 6l12 12" stroke="black" strokeWidth="2" />
+              </svg>
+                  </button>
+                  </div>
+                  <hr/>
                   <div className="py-[40px] font-bold text-center text-[16px] text-gray-800">
                     {/* {navigation_links.map(({ id, link, label }) => (
                       <div key={id} className="pl-[32px] py-[20px]">
@@ -341,7 +356,7 @@ const FixedHeader = () => {
                     ))} */}
                     <Collapsible
                       trigger={
-                        <div className="px-[32px]  flex items-center justify-between">
+                        <div className="px-[32px]  flex items-center justify-center">
                             <p className="pl-[32px] py-[20px] hover:text-[#E45F11]"> Solutions</p>
                           <p>
                             {" "}
@@ -381,7 +396,7 @@ const FixedHeader = () => {
 
                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-between">
+                        <div className="px-[32px] flex items-center justify-center">
                             <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Industry</p>
                           <p>
                             {" "}
@@ -426,7 +441,7 @@ const FixedHeader = () => {
                     </Collapsible>
                     <Collapsible
                       trigger={
-                        <div className="px-[32px]  flex items-center justify-between">
+                        <div className="px-[32px]  flex items-center justify-center">
                             <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Product</p>
                           <p>
                             {" "}
@@ -458,7 +473,7 @@ const FixedHeader = () => {
                     </Collapsible>
                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-between">
+                        <div className="px-[32px] flex items-center justify-center">
                             <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Program</p>
                           <p>
                             {" "}
@@ -498,7 +513,7 @@ const FixedHeader = () => {
                     </Collapsible>
                      <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-between">
+                        <div className="px-[32px] flex items-center justify-center">
                             <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Insight</p>
                           <p>
                             {" "}
@@ -538,7 +553,7 @@ const FixedHeader = () => {
                     </Collapsible>
                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-between">
+                        <div className="px-[32px] flex items-center justify-center">
                             <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">About Us</p>
                           <p>
                             {" "}
@@ -585,7 +600,7 @@ const FixedHeader = () => {
                       </div>
                     </Collapsible>
                    
-                        <div className="px-[32px] flex items-center justify-between">
+                        <div className="px-[32px] flex items-center justify-center">
                            <Link href="/contact"><p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Contact</p></Link>
                     
                         </div>
