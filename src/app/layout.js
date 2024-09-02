@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--inter"});
 
 export const metadata = {
   title: "BFG Global Consulting, LLC",
-  description: "Business Management and Consulting Firm",
+  description: "Management Consulting and Technology Firm",
 };
 
 export default function RootLayout({ children }) {
