@@ -7,7 +7,7 @@ export const product_links = [
       {
         id: 2,
         label: "Careerfun",
-        link: "",
+        link: "/product/career-fun",
       },
      
     ]

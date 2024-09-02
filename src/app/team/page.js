@@ -1,16 +1,188 @@
 import React from "react";
-import ManagingDirector from "../../../public/assets/festus-bello-md.jpg";
-import HeadGrowth from "../../../public/assets/moses-sunday.jpg";
-import HeadBusiness from "../../../public/assets/ifeoma.jpg";
-import HeadResearch from "../../../public/assets/kenneth.jpg";
-import CompanySecretary from "../../../public/assets/aina-oyefesobi.jpeg";
-import Avatar from "../../../public/assets/avatar.png";
+import ManagingDirector from "../../../public/assets/festus.png";
+import HeadGrowth from "../../../public/assets/moses.png";
+import HeadBusiness from "../../../public/assets/ifeoma.png";
+import HeadResearch from "../../../public/assets/kenneth.png";
+import CompanySecretary from "../../../public/assets/secretary.png";
+import Avatar from "../../../public/assets/new-avatar.png";
+import Banner from ".././../../public/assets/team-image.jpg";
 import Image from "next/image";
+import OurStand from "@/components/OurStand";
 
 const page = () => {
   return (
     <>
-      <div>
+      <div className="lg:mt-[150px] p-12">
+        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Our Team
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            Meet the brains.
+          </h3>
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+            Meet the dedicated team of people who make our business what it is
+            today. They represent our primary point of contact with our target
+            market & audience.
+          </p>
+        </div>
+
+        <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+          <Image
+            src={Banner}
+            alt="about-banner"
+            className="w-full h-full object-cover rounded-3xl"
+          />
+        </div>
+        <div className="py-[30px]">
+          <div className="">
+            <div className="w-full my-4">
+              <p className="text-lg text-[#656565] my-3">
+                Our strength lies in our diverse & dynamic team. From seasoned
+                industry veterans to fresh perspectives, we unite under a shared
+                commitment to excellence. With a passion for innovation & a
+                dedication to client success, each member brings a unique set of
+                skills & experiences to the table.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+            Team Members
+          </span>
+          <div className="w-full gap-4 items-center justify-between my-4">
+            <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+              Our Team
+            </h3>
+            <div className="w-full flex flex-wrap my-4">
+              <div className="w-[100%] md:w-[70%] lg:w-[25%]  relative rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={ManagingDirector}
+                    alt="md"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
+                    <p className="text-[#E45F11] font-semibold">Managing Director / CEO</p>
+                  </div>
+                </div>
+              </div>
+               <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={CompanySecretary}
+                    alt="secretary"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Aina A. Oyefesobi</h3>
+                    <p className="text-[#E45F11] font-semibold">Executive Board Member</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={HeadGrowth}
+                    alt="head-growth"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Moses S. Ijeo</h3>
+                    <p className="text-[#E45F11] font-semibold">Head of Growth & Development</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative research  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={HeadBusiness}
+                    alt="head-business"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg"> Ifeoma Ezeamama</h3>
+                    <p className="text-[#E45F11] font-semibold">Associate, Business Strategy and Operation</p>
+                  </div>
+                </div>
+              </div>
+               <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={HeadResearch}
+                    alt="head-research"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg"> Kenneth Idanwekhai</h3>
+                    <p className="text-[#E45F11] font-semibold">Associate, Research, Data and Analytics</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="default"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg"> Elizabeth-Mary N. Okeke</h3>
+                    <p className="text-[#E45F11] font-semibold">Executive Assistant</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="default"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg"> David U. Bradford</h3>
+                    <p className="text-[#E45F11] font-semibold">Associate, Innovation and Technology</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="default"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Happiness C. Adama </h3>
+                    <p className="text-[#E45F11] font-semibold">Associate, Training and Development</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[100%] md:w-[70%] lg:w-[25%] relative  rounded-md p-4">
+                <div className="w-[250px] h-[250px] bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="default"
+                    className="w-full h-full object-fit"
+                  />
+                   <div className="w-[60%] absolute bottom-0 left-5 bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Jeremiah Jesunifemi </h3>
+                    <p className="text-[#E45F11] font-semibold">Product Designer / Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+          <div className="my-10">
+            <OurStand />
+            </div>
+        </div>
+      </div>
+      {/* old view */}
+      {/* <div>
         <div className="py-[40px] px-[40px]">
           <h3 className="my-4 flex justify-center text-lg font-bold">
             <span className="p-2 text-2xl lg:text-[36px] text-[#016EF8] rounded-xl">
@@ -428,7 +600,7 @@ Executive Assistant - Office Administration and Client Relations
             <div></div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -16,14 +16,14 @@ export const AboutComponent = ({ closeModal, color }) => {
     <div>
       <div className="w-full flex gap-8 modal" onClick={(e) => e.stopPropagation()}>
         <div className="w-[20%]">
-          <h3 className="text-2xl text-white font-semibold my-3">About us</h3>
-          <p className="text-white text-lg">
+          <h3 className="text-2xl text-black font-semibold my-3">About us</h3>
+          <p className="text-[#999] text-lg">
             BFG Global Consulting, LLC. ediﬁes your business and organisation
             to growth. We are at the intersection of research, strategy,
             workforce training, and information technology.
           </p>
           <Link href="/about">
-            <button onClick={closeModal} className="my-8 px-6 py-4 border-2 border-white text-lg font-semibold">
+            <button onClick={closeModal} className="my-8 px-6 py-4 border-2 text-black border-[#E45F11] text-lg font-semibold">
               Explore
             </button>
           </Link>
@@ -32,7 +32,7 @@ export const AboutComponent = ({ closeModal, color }) => {
           {about_links.map(({ id, label, link }) => (
             <p
               key={id}
-              className="mx-4 py-4 border-t border-b border-white text-lg font-semibold cursor-pointer hover:text-black"
+              className="mx-4 py-4  border-b text-black border-[#E45F11] text-lg font-semibold cursor-pointer hover:text-[#E45F11]"
               onClick={() => handleLinkClick(link)}
             >
               {label}

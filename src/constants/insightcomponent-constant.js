@@ -2,7 +2,7 @@ export const insight_links = [
     {
         id: 1,
         label: "News",
-        link: "",
+        link: "/insight/news",
       },
       {
         id: 2,
@@ -12,7 +12,7 @@ export const insight_links = [
       {
         id: 3,
         label: "Case Studies",
-        link: "",
+        link: "/insight/case-study",
       },
       {
         id: 3,

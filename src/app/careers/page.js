@@ -2,18 +2,55 @@ import Image from "next/image";
 import React from "react";
 import TopBanner from "../../../public/assets/career-img.jpg";
 import Link from "next/link";
+import Slides from "@/components/Slides";
+import Banner from "../../../public/assets/career-banner.png";
 
 const page = () => {
   return (
     <>
-      <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+      <div className="lg:mt-[150px] p-12">
+        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Join our Team
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+           Careers
+          </h3>
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+Discover a world of possibilities. Elevate your career with us a place where passion meets purpose.          </p>
+        </div>
+
+        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
+          <Image
+            src={Banner}
+            alt="about-banner"
+            className="w-full h-full object-fit rounded-3xl"
+          />
+              </div>
+              <hr className="my-3" />
+              <div>
+                  <Slides />
+        </div>
+        <div className="my-8">
+          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+            Our Jobs
+          </span>
+          <div className="w-full flex gap-10 items-center justify-between my-4">
+            <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+              Open Jobs
+                      </h3>
+                      <p className="w-[50%] text-[#999]">
+No Jobs Available                      </p>
+          </div>
+        </div>
+        </div>
+      {/* <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
         <Image
           src={TopBanner}
           alt="top-banner"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
-        {/* Transparent overlay */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h3 className="text-white font-bold text-4xl md:text-3xl lg:text-4xl">
             Find your dream jobs at BFG Global Consulting
@@ -73,7 +110,7 @@ const page = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
