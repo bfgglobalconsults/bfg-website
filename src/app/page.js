@@ -541,7 +541,7 @@ export default function Main() {
               </div>
               <div className="flex justify-center my-2">
                 <button className="bg-[#041926] hover:bg-[#E26015] p-3 rounded-3xl flex gap-1 items-center">
-                  <span className="text-white font-semibold">See More</span>
+                 <Link href="/insight/case-study"><span className="text-white font-semibold">See More</span></Link> 
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -608,9 +608,11 @@ export default function Main() {
                 tomorrow, & our expert guidance to achieve exceptional results.
                 At BFG, success is not just a goal - its our st&ard.
               </p>
+              <Link href="/contact">
               <button className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl">
                 <span className="text-white font-bold">Contact Us</span>
-              </button>
+                </button>
+                </Link>
             </div>
           </div>
         </div>

@@ -8,19 +8,19 @@ import Banner from "../../../public/assets/career-banner.png";
 const page = () => {
   return (
     <>
-      <div className="mt-[150px] p-12">
+      <div className="lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
           Join our Team
         </span>
-        <div className="flex w-full gap-4 items-center justify-between my-4">
-          <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
            Careers
           </h3>
-          <p className="w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
 Discover a world of possibilities. Elevate your career with us a place where passion meets purpose.          </p>
         </div>
 
-        <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
+        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={Banner}
             alt="about-banner"
