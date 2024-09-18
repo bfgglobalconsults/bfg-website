@@ -1,12 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/project-image.jpg";
-import Project1 from "../../../../public/assets/project-1.jpg";
-import Project2 from "../../../../public/assets/project-2.jpg";
-import Project3 from "../../../../public/assets/project-3.jpg";
-import Project4 from "../../../../public/assets/project-4.jpg";
-import Project5 from "../../../../public/assets/project-5.jpg";
-import Project6 from "../../../../public/assets/project-6.jpg";
+import Project1 from "../../../../public/assets/project1.png";
+import Project2 from "../../../../public/assets/project2.png";
+
 import OurStand from "@/components/OurStand";
 
 const page = () => {
@@ -50,6 +47,76 @@ const page = () => {
             <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
               Amazing Projects Executed
             </h3>
+            <div className="py-[30px]">
+          <div className="">
+            <div className="w-full flex flex-col lg:flex-row gap-10 my-4">
+              <div className="w-[100%] lg:w-[50%]  p-10 border border-[#F7F7F8] rounded-3xl">
+                <div className="h-[200px] lg:h-[350px]">
+                  <Image
+                    src={Project1}
+                    alt="news1"
+                    className="w-full h-full object-cover rounded-3xl"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    ICT Training for Federal Ministry of Humanitarian Affairs, Disaster Management & Social Development
+                  </h3>
+                  <p className="text-[#999]">
+                   Executed project management training for 40 staff members of the Ministry of Humanitarian Affairs, Disaster Management, & Social Development in partnership with Netline Limited on the use of office project management software. The basic tools covered were Microsoft Word, Excel, & PowerPoint.
+
+                  </p>
+                  <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                    <span className="text-white ml-2 font-semibold">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="32"
+                        height="32"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              {/* second image */}
+              <div className="w-[100%] lg:w-[50%] p-10 border border-[#F7F7F8] rounded-3xl">
+                <div className="h-[200px] lg:h-[350px]">
+                  <Image
+                    src={Project2}
+                    alt="news1"
+                    className="w-full h-full object-cover rounded-3xl"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                   Business Transformation & Productivity Project for GIGStravel.co.uk
+                  </h3>
+                  <p className="text-[#999]">
+                    This project is a full end-to-end business strategy & operations service. From researching & designing a bespoke business model for GIGS to recruiting new talents & training the staff & managers of the organisation on successful market practices to improve ROI & product units.
+                  </p>
+                  <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                    <span className="text-white ml-2 font-semibold">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="32"
+                        height="32"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           </div>
         </div>
         {/* another section end */}
