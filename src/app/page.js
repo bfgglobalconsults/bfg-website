@@ -30,6 +30,7 @@ import SliderImage1 from "../../public/assets/sliderimage1.png";
 import SliderImage2 from "../../public/assets/sliderimage2.png";
 import SliderImage3 from "../../public/assets/sliderimage3.png";
 import SliderImage4 from "../../public/assets/sliderimage4.png";
+import SliderImage5 from "../../public/assets/consumer-img.png";
 
 import CaseImage1 from "../../public/assets/caseimage1.png";
 import CaseImage2 from "../../public/assets/caseimage2.png";
@@ -55,15 +56,15 @@ export default function Main() {
   const [toggle, setToggle] = useState(false);
 
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
+    if (currentIndex > 0) {
+    setCurrentIndex((prevIndex) => prevIndex - 1);
+  }
   };
 
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex >= slides.length - 1 ? 0 : prevIndex + 1
-    );
+     if (currentIndex < slides.length - 1) {
+    setCurrentIndex((prevIndex) => prevIndex + 1);
+  }
   };
 
   const handleClick = (id) => {
@@ -73,6 +74,7 @@ export default function Main() {
 
   const slides = [
     {
+      id: 1,
       title: "Technology & Software Development",
       description:
         "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
@@ -80,6 +82,7 @@ export default function Main() {
       imageSrc: SliderImage1,
     },
     {
+      id: 2,
       title: "Construction",
       description:
         "Building success, BFG guides construction companies to navigate complex projects, enhance efficiency, & drive innovation.",
@@ -87,6 +90,7 @@ export default function Main() {
       imageSrc: SliderImage2,
     },
     {
+      id: 3,
       title: "Traveling (Tourism)",
       description:
         "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
@@ -94,11 +98,20 @@ export default function Main() {
       imageSrc: SliderImage3,
     },
     {
+      id: 4,
       title: "NGO (Non-Governmental Organization)",
       description:
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider4-img",
       imageSrc: SliderImage4,
+    },
+    {
+      id: 5,
+      title: "Consumer & Retail Market",
+      description:
+        "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
+      imageAlt: "slider5-img",
+      imageSrc: SliderImage5,
     },
   ];
 
@@ -259,38 +272,36 @@ export default function Main() {
         </div>
 
         <div className="w-full h-full lg:h-[800px] flex flex-col lg:flex-row items-center flex-wrap">
-          <div className="w-[100%] h-full xl:w-[40%] relative">
-            <div className="p-12">
-              <span className="p-3 rounded-3xl border-2 border-[#E26015] font-semibold">
-                Our Solution
-              </span>
-              <h3 className="my-6 text-[#333] text-2xl lg:text-4xl font-semibold">
-                Customized Services for Exceptional Results
-              </h3>
-              <p className="text-[#999] text-lg">
-                Every project we execute is shaped by our fundamental beliefs,
-                which guarantee outst&ing quality, creativity, & clients
-                pleasure at every turn.
-              </p>
-              <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
-                <span className="text-white font-semibold">
-                  View All Services
-                </span>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                    fill="rgba(255,255,255,1)"
-                  >
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                  </svg>
-                </span>
-              </button>
-            </div>
-            <div className="absolute bottom-30 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div>
-          </div>
+  <div className="w-[100%] h-full xl:w-[40%] relative lg:flex lg:items-center lg:justify-center">
+    <div className="p-12">
+      <span className="p-3 rounded-3xl border-2 border-[#E26015] font-semibold">
+        Our Solution
+      </span>
+      <h3 className="my-6 text-[#333] text-2xl lg:text-4xl font-semibold">
+        Customized Services for Exceptional Results
+      </h3>
+      <p className="text-[#999] text-lg">
+        Every project we execute is shaped by our fundamental beliefs, which guarantee outstanding quality, creativity, and client pleasure at every turn.
+      </p>
+      <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
+        <span className="text-white font-semibold">
+          View All Services
+        </span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="rgba(255,255,255,1)"
+          >
+            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div className="absolute bottom-10 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div>
+  </div>
           <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')]">
             <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
               <Link href="/solutions/research-analytics">
@@ -461,6 +472,7 @@ export default function Main() {
               <div className="flex gap-2 justify-end">
                 <button
                   onClick={handlePrevClick}
+                  disabled={currentIndex === 0}
                   className="p-2 bg-[#FEFCFB] rounded-full"
                 >
                   <svg
@@ -476,6 +488,7 @@ export default function Main() {
                 </button>
                 <button
                   onClick={handleNextClick}
+                   disabled={currentIndex === slides.length}
                   className="p-2 bg-[#FEFCFB] rounded-full"
                 >
                   <svg

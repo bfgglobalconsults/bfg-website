@@ -4,13 +4,14 @@ import Image from 'next/image';
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 
 const Slides = () => {
   return (
       <>
-      <div className="bg-[#faf8f8bd] p-[20px] lg:p-[40px]">
+     <div className="bg-[#faf8f8bd] p-[40px]">
           <div className="w-full flex flex-col lg:flex-row gap-1 items-center">
             <div className="w-[100%] lg:w-[30%]">
               <h3 className="text-2xl font-semibold">
