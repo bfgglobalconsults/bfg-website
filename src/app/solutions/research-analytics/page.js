@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/research-analytic.jpg";
 import TopBanner from "../../../../public/assets/Research-and-analytics.png";
+import { motion } from "framer-motion";
 
 import ResearchImage from "../../../../public/assets/research-img.png";
 
@@ -82,12 +84,18 @@ const page = () => {
                 <h4 className="font-semibold text-xl text-[#333333]">
                   Case Study Analysis
                 </h4>
-                <p className="my-2 text-[#999]">
-                  Bridging the gap between theory & practice, our research &
-                  analytics service offers insights that combine real-life
-                  scenarios, academic knowledge, & stimulation to deliver
-                  actionable insights.
-                </p>
+                <motion.div
+                  initial="offscreen"
+                  whileInView="onscreen"
+                  viewport={{ once: true, amount: 0.8 }}
+                >
+                  <p className="my-2 text-[#999]">
+                    Bridging the gap between theory & practice, our research &
+                    analytics service offers insights that combine real-life
+                    scenarios, academic knowledge, & stimulation to deliver
+                    actionable insights.
+                  </p>
+                </motion.div>
               </div>
               <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
                 <h4 className="font-semibold text-xl text-[#333333]">
@@ -115,8 +123,6 @@ const page = () => {
           </div>
 
           <hr />
-
-          
 
           <div className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
@@ -261,8 +267,6 @@ const page = () => {
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </>

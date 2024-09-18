@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 import Banner from "../../public/assets/new_banner.png";
 import ImageBanner from "../../public/assets/banner-image1.jpg";
 import ImageBanner2 from "../../public/assets/banner-image2.jpg";
@@ -177,7 +178,7 @@ export default function Main() {
         <div className="bg-[#E45F11] w-full lg:flex items-center my-0 lg:my-0 xl:my-4 py-10">
           <div className="w-full lg:w-[60%]">
             <div className="p-[40px]">
-              <h3 className="font-bold text-3xl lg:text-6xl text-white">
+              <h3 className="font-bold text-3xl lg:text-6xl  text-white">
                 Your Partner in Research, Strategy, Training and Technology
               </h3>
               <p className="text-2xl text-white my-2">
@@ -216,12 +217,18 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-[35%] animate-heartbeat overflow-hidden py-10">
+          <div className="w-full lg:w-[40%] overflow-hidden py-10">
+            <motion.div
+              animate={{ rotate: [0, 200, 400, 600, 800, 800, 600, 400, 200, 0] }}
+              transition={{ repeat: Infinity, duration: 50 }}
+            >
             <Image
               src={Banner}
               alt="banner"
               className="w-full h-full object-fit"
             />
+           </motion.div>
+
           </div>
         </div>
         <div className="bg-[#faf8f8bd] p-[40px]">
@@ -488,7 +495,7 @@ export default function Main() {
                 </button>
                 <button
                   onClick={handleNextClick}
-                   disabled={currentIndex === slides.length}
+                   disabled={currentIndex === 2}
                   className="p-2 bg-[#FEFCFB] rounded-full"
                 >
                   <svg
