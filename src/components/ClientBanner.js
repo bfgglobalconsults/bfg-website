@@ -38,14 +38,14 @@ const ClientBanner = () => {
                   <div className="w-full flex flex-col lg:flex-row gap-10 my-6">
                       <div className="w-[100%] lg:w-[30%] p-3 border border-white rounded-xl">
                           <p className="text-white">
-                            &quot; FG Global Consult has been a trusted partner to Sensang Constructions LLC, Nigeria, delivering expert consulting services that drive growth & excellence. Their exceptional support has been instrumental in our success.  &quot;
+                            &quot; BFG Global Consult has been a trusted partner to Sensang Constructions LLC, Nigeria, delivering expert consulting services that drive growth & excellence. Their exceptional support has been instrumental in our success.  &quot;
                           </p>
                           <div className="my-4 flex gap-2">
                               <div>
                                   <Image src={SensangImg} alt="sendsang-img" className="" />
                               </div>
                               <div>
-                                  <h4 className="text-white font-semibold">Adelanke Olasehinde Alade</h4>
+                                  <h4 className="text-white font-semibold">Arch Felix Elisha</h4>
                                   <p className="text-white">MD, Sensang Constructions LLC, 
 Nigeria </p>
                               </div>
@@ -76,7 +76,7 @@ We highly recommend them for top-notch consulting services. A trusted partner in
                                   <Image src={TwentyImg} alt="twenty-img" className="" />
                               </div>
                               <div>
-                                  <h4 className="text-white font-semibold">Adelanke Olasehinde Alade</h4>
+                                  <h4 className="text-white font-semibold">Prince Arinze Alozie</h4>
                                   <p className="text-white">MD, 12Twenty Limited, Nigeria</p>
                               </div>
                           </div>
