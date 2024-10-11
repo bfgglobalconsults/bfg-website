@@ -10,8 +10,7 @@ import ClientBanner from "@/components/ClientBanner";
 import ContactBanner from "@/components/ContactBanner";
 import Script from "next/script";
 
-
-const inter = Inter({ subsets: ["latin"], variable: "--inter"});
+const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 // const poppins = Poppins({ subsets: ["latin"], variable: "--poppins"});
 
 export const metadata = {
@@ -20,35 +19,31 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
-  
   return (
     <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
       <head>
-<Script async src="https://www.googletagmanager.com/gtag/js?id=G-C7W6VZF2T3"></Script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GNHJW9W4PK"
+        ></Script>
         <Script id="google-analytics">
-          {
-            `
-            window.dataLayer = window.dataLayer || [];
+          {`
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-C7W6VZF2T3');
-            `
-          }
-  
-</Script>
+          gtag('config', 'G-GNHJW9W4PK');
+`}
+        </Script>
       </head>
       <body>
-       <HeaderWrapper /> 
-        <div>
-        {children}
-        </div>
+        <HeaderWrapper />
+        <div>{children}</div>
         <Messenger />
         <ClientBanner />
         <ContactBanner />
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
