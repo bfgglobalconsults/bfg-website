@@ -7,7 +7,7 @@ export const about_links = [
       {
         id: 2,
         label: "Our clients",
-        link: "",
+        link: "/clients",
       },
       {
         id: 3,
