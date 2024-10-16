@@ -50,10 +50,8 @@ const Page = () => {
                     Get high-quality, Ready-to-Buy Customers every day Following
                     these secrets!
                   </h3>
-                  <p className="text-2xl lg:text-3xl text-white font-semibold my-2 p-2">
-                    Shockingly, these Sales Secrets will make your customers beg
-                    you to collect their money! Some of your competitors already
-                    use these strategies and Don&apos;t Want You to Know About it!
+                  <p className="text-2xl lg:text-3xl text-white my-2 p-2">
+                  Discover the Sales Secrets that will have your customers eager to hand over their money! Your competitors are already using these strategies and don't want you to find out!
                   </p>
                   
                     <button onClick={open} className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl">
@@ -108,7 +106,7 @@ const Page = () => {
                 </Dialog>
               </Transition>
             {/* modal pop up end */}
-            <div className="mx-[30px] lg:mx-[200px] my-[50px]">
+            <div className="mx-[30px] lg:mx-[100px] my-[50px]">
               <div className="lg:flex gap-2 w-full">
                 <div className="w-full lg:w-[50%]">
                   <p className="text-lg lg:text-xl w-[100%] lg:w-[80%] leading-7 text-justify">
@@ -183,7 +181,7 @@ const Page = () => {
             </div>
 
             {/* second layer */}
-            <div className="mx-[30px] lg:mx-[200px] my-[50px]">
+            <div className="mx-[30px] lg:mx-[100px] my-[50px]">
               <div className="lg:flex gap-2 w-full">
                 <div className="w-[100%] lg:w-[50%]">
                   <p className="text-lg w-[100%] lg:w-[80%] leading-loose text-justify">
@@ -214,7 +212,7 @@ const Page = () => {
               </div>
             </div>
             {/* third layer */}
-            <div className="mx-[30px] lg:mx-[200px] my-[50px]">
+            <div className="mx-[30px] lg:mx-[100px] my-[50px]">
               <div className="lg:flex gap-3">
                 <div className="w-[100%] lg:w-[50%]">
                   <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
@@ -257,7 +255,7 @@ const Page = () => {
                     These secret selling strategies are tailored for you if:
                   </h4>
 
-                  <div className="p-2 rounded-md border border-[#E26015] border-dotted my-4">
+                  <div className="p-2 rounded-md border border-[#E26015] border-dashed my-4">
                     <div className="flex gap-4 lg:gap-2 items-center my-6">
                       <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
                         1
@@ -323,7 +321,7 @@ const Page = () => {
                 <div className="mx-[30px] lg:mx-[200px] my-[30px] lg:my-[100px]">
                   <div className="lg:flex gap-4">
                     <div className="w-[100%] lg:w-[50%]">
-                      <p className="text-xl lg:text-2xl font-semibold">
+                      <p className="text-xl lg:text-2xl font-semibold text-justify">
                         BFG Global Consults is committed to helping micro,
                         small, and medium enterprises through relevant training
                         initiatives to increase competitive advantage and drive
@@ -343,7 +341,7 @@ const Page = () => {
                   </div>
                 </div>
                 {/* <SalesTestimonial /> */}
-                <h3 className="text-2xl font-semibold text-center">Watch our Previous Webinar</h3>
+                <h3 className="text-3xl font-semibold italic text-center">Watch our Previous Webinar</h3>
                 <SalesVideoHighlight />
                 <section className="p-3 bg-[#127DC01A]">
                   <h3 className="mx-[30px] lg:mx-[250px] my-[100px] text-center text-2xl">
@@ -541,26 +539,12 @@ const Page = () => {
                 <Countdown />
                 {/* bottom banner section */}
                 <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
-                  <p className="text-xl my-6">Exclusive Offer for Attendees:</p>
+                  <p className="text-xl my-6 font-semibold">Exclusive Offer for Attendees:</p>
                   <p className="text-xl my-6">
                     Get a 25% discount on our upcoming Masterclass when you
                     register immediately after the webinar!
                   </p>
-                  <p className="text-xl my-6 text-justify">
-                    Exclusive Offer for Attendees:   Get a 25% discount on our
-                    upcoming Masterclass when you register immediately after the
-                    webinar!   We know some of you are interested and nurturing
-                    doubts in your mind, wondering if this is real. Do not
-                    worry, the first webinar is FREE. You can then decide to pay
-                    for the masterclass during or after the FREE webinar. No
-                    pressure at all, BFG Global Consults is here for you. We
-                    intentionally provided this webinar for free so you will
-                    have confidence to pay the small fee needed to enroll for
-                    the paid masterclass, only NGN 25,000. Trust me, this is the
-                    best thing you will spend money on this year. Your business
-                    and customers will thank you and pay you in many folds for
-                    enrolling.
-                  </p>
+                  
                   <div className="w-[350px] lg:w-[100%]">
                     <Image src={Speakers} alt="speakers-banner" className="w-full h-full object-cover" />
                   </div>
