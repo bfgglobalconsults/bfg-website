@@ -1,15 +1,20 @@
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Messenger from "@/components/Messenger";
-import { montserrat, mont_alt } from "./fonts";
 import FixedHeader from "@/components/FixedHeader";
 import HeaderWrapper from "@/components/HeadWrapper";
 import ClientBanner from "@/components/ClientBanner";
 import ContactBanner from "@/components/ContactBanner";
 import Script from "next/script";
+import MainPage from "./MainPage";
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100","200","300","400","500","600","700"],
+  variable: "--montserrat",
+});
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 // const poppins = Poppins({ subsets: ["latin"], variable: "--poppins"});
 
@@ -22,6 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
       <head>
+        
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-GNHJW9W4PK"
@@ -36,13 +42,8 @@ export default function RootLayout({ children }) {
 `}
         </Script>
       </head>
-      <body>
-        <HeaderWrapper />
-        <div>{children}</div>
-        <Messenger />
-        <ClientBanner />
-        <ContactBanner />
-        <Footer />
+      <body className={inter.className}>
+        <MainPage>{children}</MainPage>
       </body>
     </html>
   );

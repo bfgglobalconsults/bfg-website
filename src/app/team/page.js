@@ -9,7 +9,7 @@ import Banner from ".././../../public/assets/team-image.jpg";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <div className="lg:mt-[150px] p-12">
@@ -605,4 +605,4 @@ Executive Assistant - Office Administration and Client Relations
   );
 };
 
-export default page;
+export default Page;
