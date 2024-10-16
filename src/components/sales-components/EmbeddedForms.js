@@ -7,34 +7,9 @@ const EmbeddedForms = () => {
 
     return (
         <>
-            
-      <div id="serlzo-form-iframe">
-      <form action=''  class='Serlzo-form' id='670e62a954a1ca938c2c135d'>
-
-       
-        <fieldset>
-        <input class='input' type='text' name='fullName' id='serlzo-fullName' placeholder='Enter your Full Name' required />
-          </fieldset>
-        <fieldset>
-        <input class='input' type='email' name='email' id='serlzo-email' placeholder='Enter your Email Address' required />
-          </fieldset>
-        <fieldset>
-        <input class='input' type='text' name='mobileNumber' id='serlzo-mobileNumber' placeholder='Enter your Mobile Number' required />
-          </fieldset>
-        <fieldset>
-        <input class='input' type='text' name='location' id='serlzo-location' placeholder='Enter your Location' required />
-          </fieldset>
-        <fieldset>
-        <input class='input' type='text' name='reasonWhyYouChooseToAttend?' id='serlzo-reasonWhyYouChooseToAttend?' placeholder='Enter your Reason Why You Choose To Attend?' required />
-          </fieldset>   
-   <fieldset>
-    <div class='submit-btn-wrapper'>
-        <button type='submit' className='submit-btn text-black'>Proceed</button>
-    </div>
-  </fieldset>
-</form>
-  <Script src='https://cdn.serlzo.com/public/formv2/pixel.min.js'></Script>
-</div>
+            <div>
+                Sales form
+     </div>
         </>
 //    <div id="serlzo-form-iframe" className="w-full max-w-4xl mx-auto">
 //   <form action="" className="Serlzo-form" id="670e62a954a1ca938c2c135d">

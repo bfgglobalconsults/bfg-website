@@ -30,10 +30,6 @@ export default function RootLayout({ children }) {
         
         <Script
           async
-          src="https://cdn.serlzo.com/public/formv2/pixel.min.js"
-        ></Script>
-        <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-GNHJW9W4PK"
         ></Script>
         <Script id="google-analytics">
