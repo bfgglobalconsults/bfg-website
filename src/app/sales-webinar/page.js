@@ -19,7 +19,7 @@ import SalesMaster from "../../../public/assets/master-image.png";
 import PriceImage from "../../../public/assets/price-image.png";
 import Countdown from "@/components/Countdown";
 
-const page = () => {
+const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   function open() {
@@ -575,4 +575,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
