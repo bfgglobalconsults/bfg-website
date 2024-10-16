@@ -53,7 +53,7 @@ const Page = () => {
                   <p className="text-2xl lg:text-3xl text-white font-semibold my-2 p-2">
                     Shockingly, these Sales Secrets will make your customers beg
                     you to collect their money! Some of your competitors already
-                    use these strategies and Don`&apos;`t Want You to Know About it!
+                    use these strategies and Don&apos;t Want You to Know About it!
                   </p>
                   
                     <button onClick={open} className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl">
