@@ -111,7 +111,7 @@ const Page = () => {
             <div className="mx-[30px] lg:mx-[200px] my-[50px]">
               <div className="lg:flex gap-2 w-full">
                 <div className="w-full lg:w-[50%]">
-                  <p className="text-lg lg:text-xl w-[100%] lg:w-[80%] leading-7">
+                  <p className="text-lg lg:text-xl w-[100%] lg:w-[80%] leading-7 text-justify">
                     The truth is that some of your competitors are{" "}
                     <span className="text-[#E26015]">LOW KEY</span> already
                     using these powerful sales strategies to stay ahead of the
@@ -262,7 +262,7 @@ const Page = () => {
                       <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
                         1
                       </span>
-                      <span className="text-lg">
+                      <span className="text-">
                         You aspire to master the art of sealing big deals and
                         developing strong customer relationships.
                       </span>
@@ -291,7 +291,7 @@ const Page = () => {
               </div>
               {/* section */}
               <div className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
-                <p className="text-lg text-[#333]">
+                <p className="text-lg text-[#333] text-justify">
                   Low sales can be caused by various factors such as unclear
                   sales strategies, weak offers, and poor customer segmentation.
                   Inadequate training, strong competition, and failure to adapt
@@ -304,11 +304,11 @@ const Page = () => {
                   to revenue decline, damaged brand reputation, and missed
                   growth opportunities
                 </p>
-                <p className="my-4 text-xl">
+                <p className="my-4 text-xl text-justify">
                   To address these issues, thorough market research, customer
                   study, and investment in employee training are crucial.
                 </p>
-                <p className="my-4 text-xl">
+                <p className="my-4 text-xl text-justify">
                   According to Kippa, many Nigerian businesses have the capital
                   but lack the necessary skills and processes.
                 </p>
@@ -378,7 +378,7 @@ const Page = () => {
                   </div>
                   </div>
                   <div className="mx-[30px] lg:mx-[100px]">
-                    <p className="my-4 text-xl">
+                    <p className="my-4 text-xl text-justify">
                       At BFG Global Consults, we believe in providing great
                       value at a lower cost without compromising quality. We
                       understand the current economic challenges and the vital
@@ -386,12 +386,12 @@ const Page = () => {
                       committed to empowering businesses to thrive, create jobs,
                       and contribute to economic growth
                     </p>
-                    <p className="my-4 text-xl">
+                    <p className="my-4 text-xl text-justify">
                       Money is not everything; value is. We aim to build lasting
                       relationships that withstand challenges and create a
                       better future for the next generation.
                     </p>
-                    <p className="my-4 text-xl">
+                    <p className="my-4 text-xl text-justify">
                       Our masterclass is priced at only NGN 25,000 and includes
                       extensive support and business tools to ensure you
                       succeed. But that is not all – we are also offering a free
@@ -546,7 +546,7 @@ const Page = () => {
                     Get a 25% discount on our upcoming Masterclass when you
                     register immediately after the webinar!
                   </p>
-                  <p className="text-xl my-6">
+                  <p className="text-xl my-6 text-justify">
                     Exclusive Offer for Attendees:   Get a 25% discount on our
                     upcoming Masterclass when you register immediately after the
                     webinar!   We know some of you are interested and nurturing
