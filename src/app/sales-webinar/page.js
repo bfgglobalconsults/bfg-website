@@ -51,7 +51,7 @@ const Page = () => {
                     these secrets!
                   </h3>
                   <p className="text-2xl lg:text-3xl text-white my-2 p-2">
-                  Discover the Sales Secrets that will have your customers eager to hand over their money! Your competitors are already using these strategies and don't want you to find out!
+                  Discover the Sales Secrets that will have your customers eager to hand over their money! Your competitors are already using these strategies and don&apos;t want you to find out!
                   </p>
                   
                     <button onClick={open} className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl">
