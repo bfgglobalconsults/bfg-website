@@ -10,7 +10,7 @@ const HeaderWrapper = () => {
     const isIndexPage = pathname === "/";
     
      console.log(`Current Path: ${pathname}`); // Debugging log
-  console.log(`Rendering: ${isIndexPage ? "Header" : "FixedHeader"}`); //
+  console.log(`Rendering: ${isIndexPage ? "Header" : "FixedHeader"}`); 
 
   return isIndexPage ? <Header /> : <FixedHeader />;
 };

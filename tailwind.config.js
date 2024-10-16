@@ -21,9 +21,13 @@ module.exports = {
     extend: {
       fontFamily:{
         inter: ['var(--inter)'],
-        mont: ['var(--font-mont)'],
+        montserrat: ['var(--montserrat)'],
         // poppins: ['var(--poppins)']
-      }
+      },
+       colors: {
+        'theme-color': '#e73139', // example color
+        'white-1': '#ffffff', // white color used in your SCSS
+      },
     },
   },
   plugins: [],
