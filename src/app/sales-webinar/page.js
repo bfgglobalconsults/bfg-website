@@ -20,7 +20,7 @@ import PriceImage from "../../../public/assets/price-image.png";
 import Countdown from "@/components/Countdown";
 
 const page = () => {
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function open() {
     setIsOpen(true)
@@ -143,6 +143,7 @@ const page = () => {
                 <Image
                   src={SecondBanner}
                   quality={100}
+                  alt="second banner"
                   className="w-full h-full object-cover"
                 />
               </div>

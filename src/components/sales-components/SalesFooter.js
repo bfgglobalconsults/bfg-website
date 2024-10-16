@@ -28,7 +28,7 @@ const SalesFooter = () => {
               <div>
                 <p>
                   We take your personal data seriously. By registering for our
-                  webinar, you're not only signing up for valuable insights but
+                  webinar, you`&apos;`re not only signing up for valuable insights but
                   also trusting us to keep your information secure. Rest
                   assured, we follow the highest standards in data protection
                   and use your details only to enhance your experience
