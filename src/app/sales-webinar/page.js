@@ -444,7 +444,7 @@ const Page = () => {
                     <span className="text-[#E26015]">Learn how</span> to
                     outperform your competition, dominate your market, and
                     elevate your sales performance with practical tips and
-                    actionable advice. Don`&apos;`t let your competition outpace
+                    actionable advice. Don&apos;t let your competition outpace
                     you.
                   </p>
                   <p className="text-xl my-6">
@@ -455,7 +455,7 @@ const Page = () => {
                     <span className="text-[#E26015]">
                       Reveal the Top Secret to Boosting Your Sales!
                     </span>{" "}
-                    Be informed, that your top competitors don`&apos;`t want you
+                    Be informed, that your top competitors don&apos;t want you
                     to know this, but the key to enhancing your sales is now
                     within reach.
                   </p>
@@ -466,8 +466,8 @@ const Page = () => {
                   </p>
                   <p className="text-xl my-6">
                     We will also introduce you to our Masterclass, where
-                    you`&apos;`ll secure your long-term success by helping you
-                    to identify what`&apos;`s been holding you back and equip
+                    you&apos;ll secure your long-term success by helping you
+                    to identify what&apos;s been holding you back and equip
                     you with practical techniques to overcome it quickly in this
                     transformative, no-cost webinar.{" "}
                   </p>
