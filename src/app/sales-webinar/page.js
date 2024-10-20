@@ -17,6 +17,7 @@ import Salesman from "../../../public/assets/salesman.png";
 import EmbeddedForms from "@/components/sales-components/EmbeddedForms";
 import SalesMaster from "../../../public/assets/master-image.png";
 import PriceImage from "../../../public/assets/price-image.png";
+import Arrows from "../../../public/assets/arrow-red-3.webp";
 import Countdown from "@/components/Countdown";
 
 const Page = () => {
@@ -46,11 +47,11 @@ const Page = () => {
               </div>
               <div className="absolute inset-0 flex items-center justify-center text-center">
                 <div className="w-[100%] lg:w-[50%]">
-                  <h3 className="my-2 text-white text-lg">
+                  <h3 className="my-2 text-white text-3xl">
                     Get high-quality, Ready-to-Buy Customers every day Following
                     these secrets!
                   </h3>
-                  <p className="text-2xl lg:text-3xl text-white my-2 p-2">
+                  <p className="text-lg text-white my-2 p-2">
                   Discover the Sales Secrets that will have your customers eager to hand over their money! Your competitors are already using these strategies and don&apos;t want you to find out!
                   </p>
                   
@@ -93,7 +94,7 @@ const Page = () => {
                           </Dialog.Title>
                         <div>
                           
-     <EmbeddedForms />
+     <EmbeddedForms close={close}  />
                          </div>
                             
        
@@ -403,6 +404,9 @@ const Page = () => {
                 <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
                   <div>
                     <div>{/* enter arrow image */}</div>
+                    <div className="flex justify-center mx-auto w-[170px] h-[100px]">
+                      <Image src={Arrows} alt="arrow" className="w-full h-full object-cover"/>
+                    </div>
                     <h3 className="text-center text-2xl font-semibold">Free Webinar</h3>
                     <p className="my-4 text-lg text-center">
                       In this free webinar, you&apos;ll learn:
