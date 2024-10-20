@@ -9,10 +9,13 @@ import ClientBanner from "@/components/ClientBanner";
 import ContactBanner from "@/components/ContactBanner";
 import Script from "next/script";
 import MainPage from "./MainPage";
+import { Toaster } from "react-hot-toast";
+import { Suspense } from "react";
+import Loading from "@/components/loader/page";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100","200","300","400","500","600","700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
   variable: "--montserrat",
 });
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
@@ -27,7 +30,6 @@ export default function RootLayout({ children }) {
   return (
     <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
       <head>
-        
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-GNHJW9W4PK"
@@ -42,8 +44,13 @@ export default function RootLayout({ children }) {
 `}
         </Script>
       </head>
+
       <body className={inter.className}>
-        <MainPage>{children}</MainPage>
+        <Suspense fallback={<Loading />}>
+          <Toaster position="top-right" />
+
+          <MainPage>{children}</MainPage>
+        </Suspense>
       </body>
     </html>
   );
