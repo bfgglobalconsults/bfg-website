@@ -121,7 +121,7 @@ const Page = () => {
                     account while you prepare for next year’s success, we are
                     here to help you catch up with the sales game.
                   </p>
-                  <button className="bg-[#E26015] hover:bg-black text-lg text-white my-2 py-2 px-4 rounded-lg">
+                  <button onClick={open} className="bg-[#E26015] hover:bg-black text-lg text-white my-2 py-2 px-4 rounded-lg">
                     Click the Link To Register Now!
                   </button>
                 </div>
