@@ -20,8 +20,7 @@ export async function POST(req) {
       FNAME: firstName,
       LNAME: lastName,
       PHONE: phone,
-      LOCATION: location,
-      REASON: reason,
+     
     },
     });
 

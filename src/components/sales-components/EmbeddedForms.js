@@ -10,8 +10,6 @@ const EmbeddedForms = ({close}) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
-  const [location, setLocation] = useState("");
-  const [reason, setReason] = useState("");
   const [loading, setLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState(null);
 
@@ -26,8 +24,7 @@ const EmbeddedForms = ({close}) => {
       firstName,
       lastName,
       phone,
-      location,
-      reason,
+     
     });
 
     console.log("RESS:", response);
@@ -104,7 +101,7 @@ const EmbeddedForms = ({close}) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter Last Name"
+            placeholder="Enter Email"
             required
           />
         </div>
@@ -126,42 +123,8 @@ const EmbeddedForms = ({close}) => {
             required
           />
         </div>
-        <div>
-          <label
-            htmlFor="mce-COMPANY"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-          >
-            Location
-          </label>
-          <input
-            type="text"
-            id="mce-COMPANY"
-            name="COMPANY"
-            value={location}
-            onChange={(e) => setLocation(e.target.value)}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter Location"
-            required
-          />
-        </div>
-        <div>
-          <label
-            htmlFor="mce-MMERGE7"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-          >
-            Reason For Attending
-          </label>
-          <input
-            type="type"
-            id="mce-MMERGE7"
-            name="MMERGE7"
-            value={reason}
-            onChange={(e) => setReason(e.target.value)}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter Reason For Attending"
-            required
-          />
-        </div>
+      
+        
       </div>
 
       <div className="mt-4">
