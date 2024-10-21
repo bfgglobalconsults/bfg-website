@@ -21,7 +21,8 @@ export async function POST(req) {
       LNAME: lastName,
       PHONE: phone,
      
-    },
+      },
+       tags: [{ name: "bfg-sales" }],
     });
 
     return new Response(JSON.stringify(response), {
