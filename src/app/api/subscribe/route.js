@@ -22,7 +22,7 @@ export async function POST(req) {
       PHONE: phone,
      
       },
-       tags: [{ name: "Automated Email #1" }],
+      tags: [{ name: "bfg-sales" }]
     });
 
     return new Response(JSON.stringify(response), {
