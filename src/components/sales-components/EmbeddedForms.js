@@ -44,7 +44,7 @@ const discountRate = 0.25; // 25% discount rate
     setErrorMessage(null);
 
     try {
-      const response = await Axios.put("/api/subscribe", {
+      const response = await Axios.post("/api/subscribe", {
         email_address: email,
         firstName,
         lastName,
