@@ -4,16 +4,16 @@ import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Axios from "axios";
+// import { PaystackButton } from "react-paystack";
 const PaystackButton = dynamic(
   () => import("react-paystack").then((mod) => mod.PaystackButton),
   { ssr: false }
 );
 const EmbeddedForms = ({ close }) => {
   const router = useRouter();
-  const Paystack_Key = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
+  const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_KEY;
 
   // paystack
-  const publicKey = Paystack_Key;
   const initialAmount = 25000 * 100; // Base amount in kobo
 const discountRate = 0.25; // 25% discount rate
   const currency = "NGN";
@@ -44,7 +44,7 @@ const discountRate = 0.25; // 25% discount rate
     setErrorMessage(null);
 
     try {
-      const response = await Axios.put("/api/subscribe", {
+      const response = await Axios.post("/api/subscribe", {
         email_address: email,
         firstName,
         lastName,
