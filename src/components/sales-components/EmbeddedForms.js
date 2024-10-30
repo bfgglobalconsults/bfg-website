@@ -4,6 +4,7 @@ import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Axios from "axios";
 import { PaystackButton } from "react-paystack";
+import Loader from "./sales-loader/Loader";
 
 const EmbeddedForms = ({ close }) => {
   const router = useRouter();
@@ -23,6 +24,15 @@ const discountRate = 0.25; // 25% discount rate
   const [phone, setPhone] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <Loader/>;
+  }
 
     const applyCoupon = () => {
     if (couponCode === 'MASTER25') { 
