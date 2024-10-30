@@ -216,10 +216,12 @@ const discountRate = 0.25; // 25% discount rate
           Apply Coupon
         </button>
           </div>
-          <PaystackButton
-            {...componentProps}
-            className="w-full rounded-md border border-transparent bg-[#E45F11] px-4 py-2 my-2 text-sm font-medium text-white hover:bg-black focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-          />
+          {isClient && (
+            <PaystackButton
+              {...componentProps}
+              className="w-full rounded-md border border-transparent bg-[#E45F11] px-4 py-2 my-2 text-sm font-medium text-white hover:bg-black focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+            />
+          )}
         </div>
       )}
     </>
