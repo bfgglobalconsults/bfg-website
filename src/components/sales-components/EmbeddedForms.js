@@ -1,11 +1,13 @@
 "use client";
+import dynamic from "next/dynamic"; 
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Axios from "axios";
-import { PaystackButton } from "react-paystack";
-import Loader from "./sales-loader/Loader";
-
+const PaystackButton = dynamic(
+  () => import("react-paystack").then((mod) => mod.PaystackButton),
+  { ssr: false }
+);
 const EmbeddedForms = ({ close }) => {
   const router = useRouter();
   const Paystack_Key = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
@@ -24,15 +26,7 @@ const discountRate = 0.25; // 25% discount rate
   const [phone, setPhone] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    return <Loader/>;
-  }
+ 
 
     const applyCoupon = () => {
     if (couponCode === 'MASTER25') { 
@@ -216,12 +210,12 @@ const discountRate = 0.25; // 25% discount rate
           Apply Coupon
         </button>
           </div>
-          {isClient && (
+         
             <PaystackButton
               {...componentProps}
               className="w-full rounded-md border border-transparent bg-[#E45F11] px-4 py-2 my-2 text-sm font-medium text-white hover:bg-black focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
             />
-          )}
+         
         </div>
       )}
     </>
