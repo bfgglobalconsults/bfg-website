@@ -599,13 +599,8 @@ const Page = () => {
                 <Countdown />
                 {/* bottom banner section */}
                 <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
-                  <p className="text-xl my-6 font-semibold">
-                    Exclusive Offer for Attendees:
-                  </p>
-                  <p className="text-xl my-6">
-                    Get a 25% discount on our upcoming Masterclass when you
-                    register immediately after the webinar!
-                  </p>
+                 
+    
 
                   <div className="w-[350px] lg:w-[100%]">
                     <Image
