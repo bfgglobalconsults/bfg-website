@@ -12,7 +12,7 @@ import SalesFooter from '@/components/sales-components/SalesFooter';
 
 const MainPage = ({ children }) => {
     const pathname = usePathname();
-    const isSalesPage = pathname === "/sales-webinar";
+    const isSalesPage = pathname === "/sales-masterclass";
 
   return (
       <>

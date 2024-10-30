@@ -1,15 +1,22 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { Button, Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react'
+import {
+  Button,
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  Transition,
+  TransitionChild,
+} from "@headlessui/react";
 import Banner from "../../../public/assets/sales-newbanner.jpg";
 import SecondBanner from "../../../public/assets/second-banner.png";
 import SalesTestimonial from "@/components/sales-components/SalesTestimonial";
 import SalesVideoHighlight from "@/components/sales-components/SalesVideoHighlight";
 import Speaker1 from "../../../public/assets/speaker1.png";
 import Speaker2 from "../../../public/assets/speaker2.png";
-import Speakers from "../../../public/assets/speakers-banner.png";
+import Speakers from "../../../public/assets/masterclass-flyer.png";
 import Thinkingman from "../../../public/assets/thinking-man.png";
 import SalesChart from "../../../public/assets/sales-chart.png";
 import SalesEventCounter from "@/components/sales-components/SalesEventCounter";
@@ -24,11 +31,11 @@ const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   function open() {
-    setIsOpen(true)
+    setIsOpen(true);
   }
 
   function close() {
-    setIsOpen(false)
+    setIsOpen(false);
   }
   return (
     <>
@@ -52,60 +59,62 @@ const Page = () => {
                     these secrets!
                   </h3>
                   <p className="text-lg text-white my-2 p-2">
-                  Discover the Sales Secrets that will have your customers eager to hand over their money! Your competitors are already using these strategies and don&apos;t want you to find out!
+                    Discover the Sales Secrets that will have your customers
+                    eager to hand over their money! Your competitors are already
+                    using these strategies and don&apos;t want you to find out!
                   </p>
-                  
-                    <button onClick={open} className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl">
-                      <span className="text-white font-semibold">
-                        Yes, I’m Ready To Register Now!
-                      </span>
-                    </button>
-                 
+
+                  <button
+                    onClick={open}
+                    className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl"
+                  >
+                    <span className="text-white font-semibold">
+                      Yes, I’m Ready To Register Now!
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>
             {/* modal pop up */}
             <Transition appear show={isOpen}>
-                <Dialog as="div" className="relative z-10" onClose={close}>
-                  <Transition.Child
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0"
-                    enterTo="opacity-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100"
-                    leaveTo="opacity-0"
-                  >
-                    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm" />
-                  </Transition.Child>
+              <Dialog as="div" className="relative z-10" onClose={close}>
+                <Transition.Child
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0"
+                  enterTo="opacity-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100"
+                  leaveTo="opacity-0"
+                >
+                  <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm" />
+                </Transition.Child>
 
-                  <div className="fixed inset-0 z-10 overflow-y-auto">
-                    <div className="flex min-h-full items-center justify-center p-4 text-center">
-                      <Transition.Child
-                        enter="ease-out duration-300"
-                        enterFrom="opacity-0 scale-95"
-                        enterTo="opacity-100 scale-100"
-                        leave="ease-in duration-200"
-                        leaveFrom="opacity-100 scale-100"
-                        leaveTo="opacity-0 scale-95"
-                      >
-                        <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                          <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900 my-4">
-                            Secure Your Conference Spot
-                          </Dialog.Title>
+                <div className="fixed inset-0 z-10 overflow-y-auto">
+                  <div className="flex min-h-full items-center justify-center p-4 text-center">
+                    <Transition.Child
+                      enter="ease-out duration-300"
+                      enterFrom="opacity-0 scale-95"
+                      enterTo="opacity-100 scale-100"
+                      leave="ease-in duration-200"
+                      leaveFrom="opacity-100 scale-100"
+                      leaveTo="opacity-0 scale-95"
+                    >
+                      <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                        <Dialog.Title
+                          as="h3"
+                          className="text-lg leading-6 font-medium text-gray-900 my-4"
+                        >
+                          Secure Your masterclass Spot
+                        </Dialog.Title>
                         <div>
-                          
-     <EmbeddedForms close={close}  />
-                         </div>
-                            
-       
-
-                          
-                        </Dialog.Panel>
-                      </Transition.Child>
-                    </div>
+                          <EmbeddedForms close={close} />
+                        </div>
+                      </Dialog.Panel>
+                    </Transition.Child>
                   </div>
-                </Dialog>
-              </Transition>
+                </div>
+              </Dialog>
+            </Transition>
             {/* modal pop up end */}
             <div className="mx-[30px] lg:mx-[100px] my-[50px]">
               <div className="lg:flex gap-2 w-full">
@@ -121,7 +130,10 @@ const Page = () => {
                     account while you prepare for next year’s success, we are
                     here to help you catch up with the sales game.
                   </p>
-                  <button onClick={open} className="bg-[#E26015] hover:bg-black text-lg text-white my-2 py-2 px-4 rounded-lg">
+                  <button
+                    onClick={open}
+                    className="bg-[#E26015] hover:bg-black text-lg text-white my-2 py-2 px-4 rounded-lg"
+                  >
                     Click the Link To Register Now!
                   </button>
                 </div>
@@ -160,11 +172,11 @@ const Page = () => {
                         <path d="M4.58341 17.3211C3.55316 16.2274 3 15 3 13.0103C3 9.51086 5.45651 6.37366 9.03059 4.82318L9.92328 6.20079C6.58804 8.00539 5.93618 10.346 5.67564 11.822C6.21263 11.5443 6.91558 11.4466 7.60471 11.5105C9.40908 11.6778 10.8312 13.159 10.8312 15C10.8312 16.933 9.26416 18.5 7.33116 18.5C6.2581 18.5 5.23196 18.0095 4.58341 17.3211ZM14.5834 17.3211C13.5532 16.2274 13 15 13 13.0103C13 9.51086 15.4565 6.37366 19.0306 4.82318L19.9233 6.20079C16.588 8.00539 15.9362 10.346 15.6756 11.822C16.2126 11.5443 16.9156 11.4466 17.6047 11.5105C19.4091 11.6778 20.8312 13.159 20.8312 15C20.8312 16.933 19.2642 18.5 17.3312 18.5C16.2581 18.5 15.232 18.0095 14.5834 17.3211Z"></path>
                       </svg>
                     </span>
-                    This webinar is not for you if you already have a perfect
-                    sales strategy that works and you steadily smile to the
-                    bank. We are only here for those who are still struggling to
-                    keep their business afloat, you can stop reading now and
-                    exit this page
+                    Thank you for taking the time to explore what we have
+                    planned for you. As a special gift, we’re offering a
+                    powerful sales plan that has boosted our revenue and that of
+                    clients worldwide by 300x, generating hundreds of millions
+                    in returns
                     <span className="inline-block align-middle">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -186,28 +198,36 @@ const Page = () => {
               <div className="lg:flex gap-2 w-full">
                 <div className="w-[100%] lg:w-[50%]">
                   <p className="text-lg w-[100%] lg:w-[80%] leading-loose text-justify">
-                    But if you are still facing sales issues and they are
-                    starting to affect your mental well-being, keep reading as
-                    we have a very effective solution that has been proven to
-                    work for people in your current situation. We want to see
-                    you happy and help you make the positive impact that the
-                    success of your business can add to the current Nigerian
-                    situation  
+                    It’s simple, effective, and profitable: it’s yours to learn
+                    and apply to transform your business. But before you gain
+                    access to this proven sales plan, you need to understand
+                    that following the principles laid out for you will need
+                    expert guidance that you can only get from investing money,
+                    time, and energy in our MASTERCLASS
                   </p>
                   <p className="text-lg w-[100%] lg:w-[80%] leading-loose my-3 text-justify">
                     {" "}
-                    Businesses in Nigeria, irrespective of their size, encounter
-                    various challenges that result in frustration and struggles.
-                    Generating sales, managing the customer journey, setting up
-                    effective sales teams, and limited market awareness are
-                    among the common obstacles they face. Additionally, time
-                    management, lack of industry knowledge, and fierce
-                    competition pose significant hurdles for business owners.
+                    If you attended the{" "}
+                    <span className="font-bold">FREE Webinar</span>, you can
+                    enjoy a <span className="font-bold">25% discount</span> on
+                    the{" "}
+                    <span className="font-semibold text-[#E26015]">
+                      MASTERCLASS
+                    </span>
+                    , which costs{" "}
+                    <span className="font-bold">25,000 Naira</span>. You will
+                    also receive your gift upon registration! We hope you saved
+                    the discount code sent to you during the Webinar, as you
+                    will need it to access the discount.
                   </p>
                 </div>
                 <div className="w-[100%] lg:w-[50%]">
                   <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
-                    <Image src={SalesChart} alt="" className="w-full h-full object-cover" />
+                    <Image
+                      src={SalesChart}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -217,20 +237,21 @@ const Page = () => {
               <div className="lg:flex gap-3">
                 <div className="w-[100%] lg:w-[50%]">
                   <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
-                    <Image src={Salesman} alt="" className="w-full h-full object-cover" />
+                    <Image
+                      src={Salesman}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
                 <div className="w-[100%] lg:w-[50%]">
                   <p className="text-lg w-[100%] lg:w-[80%] my-3 lg:my-0 leading-relaxed text-justify">
-                    Despite these challenges, they aspire to improve sales,
-                    increase market awareness, adopt technology, and build a
-                    strong, skilled team to drive their businesses forward.
-                    Failing to address these challenges could lead to reduced
-                    revenue and profit, damage to brand reputation, decreased
-                    customer loyalty, and ultimately, business closure. However,
-                    overcoming these obstacles can lead to a better life, more
-                    job opportunities, and the ability to pass down successful
-                    businesses to the next generation.   At{" "}
+                    Now, back to the MASTERCLASS. This strategic sales training
+                    covers creating a scalable sales roadmap, building
+                    sustainable frameworks for consistent performance, enhancing
+                    customer service workflows with case studies, optimizing CRM
+                    for email marketing, and implementing persuasive copywriting
+                    strategies to drive engagement and conversions.   At{" "}
                     <span className="text-[#E26015] font-semibold">
                       BFG Global Consulting{" "}
                     </span>
@@ -261,7 +282,7 @@ const Page = () => {
                       <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
                         1
                       </span>
-                      <span className="text-">
+                      <span className="text-lg">
                         You aspire to master the art of sealing big deals and
                         developing strong customer relationships.
                       </span>
@@ -342,39 +363,45 @@ const Page = () => {
                   </div>
                 </div>
                 {/* <SalesTestimonial /> */}
-                <h3 className="text-3xl font-semibold italic text-center">Watch our Previous Webinar</h3>
+                <h3 className="text-3xl font-semibold italic text-center">
+                  Watch our Previous Webinar
+                </h3>
                 <SalesVideoHighlight />
                 <section className="p-3 bg-[#127DC01A]">
                   <h3 className="mx-[30px] lg:mx-[250px] my-[100px] text-center text-2xl">
-                    We have a paid{" "}
-                    <span className="text-[#E26015]">Masterclass Webinar</span>{" "}
-                    coming up soon! This masterclass is a complete package and
-                    will provide adequate hands-on training that guarantees
-                    success in your business.
+                   Our MASTERCLASS will only cost you 25,000 Naira and comes with the added advantage of a free Sales Plan!
                   </h3>
                   <div className="mx-[30px] lg:mx-[100px]">
                     <div className="lg:flex gap-8 w-full">
                       <div className="w-[100%] lg:w-[50%]">
-                    <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
-                      <Image src={SalesMaster} alt="sales-master" className="w-full h-full object-cover" />
+                        <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
+                          <Image
+                            src={SalesMaster}
+                            alt="sales-master"
+                            className="w-full h-full object-cover"
+                          />
                         </div>
-                        </div>
-                    <div className="w-[100%] lg:w-[50%]">
-                      <p className="text-xl text-center text-[#333] my-2 lg:my-0">
-                        We&apos;ve noticed many companies charging no less
-                        than NGN 450,000 for similar classes, with an ongoing
-                        broadcast priced at the same amount and no discounts
-                        offered.
-                      </p>
-                      <p className="text-2xl text-center my-6">
-                        Our MASTERCLASS will only cost you 25,000 Naira and
-                        comes with the added advantage of a free trial class!
+                      </div>
+                      <div className="w-[100%] lg:w-[50%]">
+                        <p className="text-xl text-center text-[#333] my-2 lg:my-0">
+                          We&apos;ve noticed many companies charging no less
+                          than NGN 450,000 for similar classes, with an ongoing
+                          broadcast priced at the same amount and no discounts
+                          offered.
+                        </p>
+                        <p className="text-2xl text-center my-6">
+                          Our MASTERCLASS will only cost you 25,000 Naira and
+                          comes with the added advantage of a free trial class!
                         </p>
                         <div className="w-[250px] h-[250px] mt-6 flex justify-center">
-                      <Image src={PriceImage} alt="price-image" className="w-full h-full object-cover" />
-                   </div>
+                          <Image
+                            src={PriceImage}
+                            alt="price-image"
+                            className="w-full h-full object-cover"
+                          />
                         </div>
-                  </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="mx-[30px] lg:mx-[100px]">
                     <p className="my-4 text-xl text-justify">
@@ -393,10 +420,12 @@ const Page = () => {
                     <p className="my-4 text-xl text-justify">
                       Our masterclass is priced at only NGN 25,000 and includes
                       extensive support and business tools to ensure you
-                      succeed. But that is not all – we are also offering a free
-                      webinar, <span className="font-semibold">&quot; Sales Strategy for Navigating
-                      Competitive Markets, &quot;</span> to introduce you to what our
-                      masterclass offers.
+                      succeed. 
+                      {/* <span className="font-semibold">
+                        &quot; Sales Strategy for Navigating Competitive
+                        Markets, &quot;
+                      </span>{" "}
+                      to introduce you to what our masterclass offers. */}
                     </p>
                   </div>
                 </section>
@@ -405,35 +434,50 @@ const Page = () => {
                   <div>
                     <div>{/* enter arrow image */}</div>
                     <div className="flex justify-center mx-auto w-[170px] h-[100px]">
-                      <Image src={Arrows} alt="arrow" className="w-full h-full object-cover"/>
+                      <Image
+                        src={Arrows}
+                        alt="arrow"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <h3 className="text-center text-2xl font-semibold">Free Webinar</h3>
+                    <h3 className="text-center text-2xl font-semibold">
+                      Masterclass
+                    </h3>
                     <p className="my-4 text-lg text-center">
-                      In this free webinar, you&apos;ll learn:
+                      In this masterclass, you&apos;ll:
                     </p>
                   </div>
                   <div className="d-block w-[80%] lg:w-[60%] mx-auto">
                     <div className="flex gap-4 lg:gap-2 items-center my-6">
-                       <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
+                      <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
                         1
                       </span>
                       <span className="text-lg">
-                        How to create a strategic sales roadmap for sustainable
-                        growth.
+                        Develop a strategic sales roadmap
                       </span>
                     </div>
                     <div className="flex gap-2 items-center my-6">
-                      <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">2</span>
+                      <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
+                        2
+                      </span>
                       <span className="text-lg">
-                        How to enhance customer satisfaction and loyalty through
-                        service arrangements.
+                        Build effective customer service structures.
                       </span>
                     </div>
                     <div className="flex gap-2 items-center my-6">
-                      <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">3</span>
+                      <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
+                        3
+                      </span>
                       <span className="text-lg">
-                        How to maximize efficiency using customer relationship
-                        management (CRM).
+                        Optimize CRM systems for personalized email marketing.
+                      </span>
+                    </div>
+                    <div className="flex gap-2 items-center my-6">
+                      <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
+                        4
+                      </span>
+                      <span className="text-lg">
+                        Automate customer retention strategies.
                       </span>
                     </div>
                   </div>
@@ -461,20 +505,23 @@ const Page = () => {
                     to know this, but the key to enhancing your sales is now
                     within reach.
                   </p>
-                  <p className="text-xl my-6">
+                  {/* <p className="text-xl my-6">
                     Join our <span className="text-[#E26015]">FREE</span>{" "}
                     exclusive webinar to discover actionable strategies that
                     guarantee revenue boost and performance
-                  </p>
+                  </p> */}
                   <p className="text-xl my-6">
-                    We will also introduce you to our Masterclass, where
-                    you&apos;ll secure your long-term success by helping you
-                    to identify what&apos;s been holding you back and equip
-                    you with practical techniques to overcome it quickly in this
+                    We with our Masterclass, 
+                    we&apos;ll secure your long-term success by helping you to
+                    identify what&apos;s been holding you back and equip you
+                    with practical techniques to overcome it quickly in this
                     transformative, no-cost webinar.{" "}
                   </p>
                   <div className="flex justify-center">
-                    <button onClick={open} className="bg-[#E26015] hover:bg-black rounded-lg p-3 text-white text-lg">
+                    <button
+                      onClick={open}
+                      className="bg-[#E26015] hover:bg-black rounded-lg p-3 text-white text-lg"
+                    >
                       Click the Link To Register Now!
                     </button>
                   </div>
@@ -482,14 +529,21 @@ const Page = () => {
                 {/* venue  */}
                 <div className="mx-[30px] lg:mx-[100px]">
                   <h2 className="text-2xl font-semibold text-center">
-                    Join Our{" "}
-                    <span className="text-[#E26015]">FREE Webinar</span>
+                    Join Our <span className="text-[#E26015]">Masterclass</span>
                   </h2>
                   <div className="my-6 border border-[#E26015] p-4 rounded-lg d-block w-[90%] lg:w-[60%] mx-auto">
-                    <p className="text-lg font-semibold my-6">Sales Strategy for Navigating Competitive Markets!</p>
-                    <p className="text-lg font-semibold my-6">Date: October 25th, 2024</p>
-                    <p className="text-lg font-semibold my-6">Time: 3:00 PM</p>
-                    <p className="text-lg font-semibold my-6">Location: Online Zoom Interactive Section</p>
+                    <p className="text-lg font-semibold my-6">
+                      Sales Strategy for Navigating Competitive Markets!
+                    </p>
+                    <p className="text-lg font-semibold my-6">
+                      Date: November 8-9, 2024
+                    </p>
+                    <p className="text-lg font-semibold my-6">
+                      Time: 10:00 AM - 3:00 PM
+                    </p>
+                    <p className="text-lg font-semibold my-6">
+                      Location: Online
+                    </p>
                     <p className="text-lg font-semibold my-6">
                       Our expert-led session will equip you with strategies to:
                     </p>
@@ -502,12 +556,11 @@ const Page = () => {
                 </div>
                 {/* venue end */}
                 {/* speakers */}
-                <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
+                {/* <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
                   <h3 className="text-2xl font-semibold text-center my-6">
                     Meet Your <span className="text-[#E26015]">Speakers</span>
                   </h3>
                   <div className="lg:flex gap-[50px] justify-center">
-                    
                     <div className="w-[350px] h-[350px] my-8 lg:my-0 lg:w-[400px] lg:[400px]">
                       <Image
                         src={Speaker2}
@@ -534,26 +587,39 @@ const Page = () => {
                     your place:
                   </p>
                   <div className="flex justify-center my-6">
-                    <button onClick={open} className="bg-[#E26015] hover:bg-black rounded-lg p-3 text-white text-lg">
+                    <button
+                      onClick={open}
+                      className="bg-[#E26015] hover:bg-black rounded-lg p-3 text-white text-lg"
+                    >
                       Click the Link To Register Now!
                     </button>
                   </div>
-                </section>
+                </section> */}
                 {/* speakers end */}
                 <Countdown />
                 {/* bottom banner section */}
                 <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
-                  <p className="text-xl my-6 font-semibold">Exclusive Offer for Attendees:</p>
+                  <p className="text-xl my-6 font-semibold">
+                    Exclusive Offer for Attendees:
+                  </p>
                   <p className="text-xl my-6">
                     Get a 25% discount on our upcoming Masterclass when you
                     register immediately after the webinar!
                   </p>
-                  
+
                   <div className="w-[350px] lg:w-[100%]">
-                    <Image src={Speakers} alt="speakers-banner" className="w-full h-full object-cover" />
+                    <Image
+                      src={Speakers}
+                      alt="speakers-banner"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </section>
                 {/* bottom banner section end */}
+
+                {/* account details */}
+                <div className="flex justify-center shadow-md"></div>
+                {/* account details end */}
               </div>
             </div>
           </div>

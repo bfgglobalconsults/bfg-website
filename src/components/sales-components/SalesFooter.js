@@ -23,12 +23,12 @@ const SalesFooter = () => {
             <div className="flex flex-col gap-8 text-white text-lg">
               <div className="flex gap-4 divide-x divide-white">
                 <p>All Right Reserved 2024 </p>
-                <p className="pl-2">Contact Us</p>
+                <Link href="/contact"><p className="pl-2">Contact Us</p></Link>
               </div>
               <div>
                 <p>
                   We take your personal data seriously. By registering for our
-                  webinar, you`&apos;`re not only signing up for valuable insights but
+                  webinar, you&apos;re not only signing up for valuable insights but
                   also trusting us to keep your information secure. Rest
                   assured, we follow the highest standards in data protection
                   and use your details only to enhance your experience

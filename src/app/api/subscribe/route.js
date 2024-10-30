@@ -11,7 +11,7 @@ client.setConfig({
 
 export async function POST(req) {
   try {
-    const { email_address, firstName, lastName, phone, location, reason } = await req.json(); 
+    const { email_address, firstName, lastName, phone } = await req.json(); 
 
     const response = await client.lists.addListMember(AUDIENCE_ID, {
       email_address,
