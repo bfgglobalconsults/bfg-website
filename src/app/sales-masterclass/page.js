@@ -536,10 +536,10 @@ const Page = () => {
                       Sales Strategy for Navigating Competitive Markets!
                     </p>
                     <p className="text-lg font-semibold my-6">
-                      Date: November 8-9, 2024
+                      Date: November 15-16, 2024
                     </p>
                     <p className="text-lg font-semibold my-6">
-                      Time: 10:00 AM - 3:00 PM
+                      Time: 10:00 AM - 3:00 PM (West Africa Time)
                     </p>
                     <p className="text-lg font-semibold my-6">
                       Location: Online
