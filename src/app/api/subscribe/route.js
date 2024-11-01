@@ -1,5 +1,3 @@
-// const client = require("@mailchimp/mailchimp_marketing");
-
 // const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID;
 // const SERVER = process.env.MAILCHIMP_API_SERVER;
 // const API_KEY = process.env.MAILCHIMP_API_KEY;

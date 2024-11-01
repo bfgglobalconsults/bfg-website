@@ -23,6 +23,9 @@ import SalesEventCounter from "@/components/sales-components/SalesEventCounter";
 import Salesman from "../../../public/assets/salesman.png";
 import EmbeddedForms from "@/components/sales-components/EmbeddedForms";
 import SalesMaster from "../../../public/assets/master-image.png";
+import ClientImage from "../../../public/assets/client-struggle.png";
+import BFGImage from "../../../public/assets/BFG-5.png";
+import OutSell from "../../../public/assets/outsell.png";
 import PriceImage from "../../../public/assets/price-image.png";
 import Arrows from "../../../public/assets/arrow-red-3.webp";
 import Countdown from "@/components/Countdown";
@@ -69,7 +72,7 @@ const Page = () => {
                     className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl"
                   >
                     <span className="text-white font-semibold">
-                      Yes, I’m Ready To Register Now!
+                      Claim Offer now!
                     </span>
                   </button>
                 </div>
@@ -134,7 +137,7 @@ const Page = () => {
                     onClick={open}
                     className="bg-[#E26015] hover:bg-black text-lg text-white my-2 py-2 px-4 rounded-lg"
                   >
-                    Click the Link To Register Now!
+                    Click the Link To Enroll Now!
                   </button>
                 </div>
                 <div className="w-full lg:w-[50%] my-4 lg:my-0">
@@ -233,7 +236,7 @@ const Page = () => {
               </div>
             </div>
             {/* third layer */}
-            <div className="mx-[30px] lg:mx-[100px] my-[50px]">
+            {/* <div className="mx-[30px] lg:mx-[100px] my-[50px]">
               <div className="lg:flex gap-3">
                 <div className="w-[100%] lg:w-[50%]">
                   <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
@@ -262,16 +265,16 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* fourth layer */}
             <div>
-              <h3 className="text-center text-2xl font-semibold w-[100%] lg:w-[50%]  lg:mx-auto">
+              {/* <h3 className="text-center text-2xl font-semibold w-[100%] lg:w-[50%]  lg:mx-auto">
                 We will show you the{" "}
                 <span className="text-[#E26015]">SECRET STRATEGIES</span> your
                 competitors use to sell more so you can stop stressing and start
                 seeing progress immediately.
-              </h3>
-              <div className="bg-[#127DC01A] py-3 my-4">
+              </h3> */}
+              {/* <div className="bg-[#127DC01A] py-3 my-4">
                 <div className="mx-[30px] lg:mx-[100px]">
                   <h4 className="text-xl">
                     These secret selling strategies are tailored for you if:
@@ -308,9 +311,9 @@ const Page = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* section */}
-              <div className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
+              {/* <div className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
                 <p className="text-lg text-[#333] text-justify">
                   Low sales can be caused by various factors such as unclear
                   sales strategies, weak offers, and poor customer segmentation.
@@ -332,15 +335,33 @@ const Page = () => {
                   According to Kippa, many Nigerian businesses have the capital
                   but lack the necessary skills and processes.
                 </p>
-              </div>
+              </div> */}
               {/* fifth layer */}
               <div>
                 <div className="flex justify-center">
-                  <h3 className="inline-block w-[100%] lg:w-[50%] mx-[30px] lg:mx-auto border-2 border-[#E26015] rounded-lg py-2 px-4 text-center text-xl">
-                    We are offering you a golden opportunity to change that!
+                  <h3 className="inline-block w-[100%] lg:w-[70%] mx-[30px] lg:mx-auto border-2 border-[#E26015] border-dashed rounded-lg py-2 px-4 text-center text-xl">
+                    For 25,000 NAIRA Only, you can enroll for the Masterclass
+                    and access the gift as promised.
                   </h3>
                 </div>
-                <div className="mx-[30px] lg:mx-[200px] my-[30px] lg:my-[100px]">
+                <div className="flex justify-center mx-auto w-[170px] h-[100px]">
+                  <Image
+                    src={Arrows}
+                    alt="arrow"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex justify-center">
+                  <button
+                    onClick={open}
+                    className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl"
+                  >
+                    <span className="text-white font-semibold">
+                      Get Your Gift Now!
+                    </span>
+                  </button>
+                </div>
+                {/* <div className="mx-[30px] lg:mx-[200px] my-[30px] lg:my-[100px]">
                   <div className="lg:flex gap-4">
                     <div className="w-[100%] lg:w-[50%]">
                       <p className="text-xl lg:text-2xl font-semibold text-justify">
@@ -361,20 +382,248 @@ const Page = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* <SalesTestimonial /> */}
-                <h3 className="text-3xl font-semibold italic text-center">
+                <h3 className="text-3xl my-3 font-semibold italic text-center">
                   Watch our Previous Webinar
                 </h3>
                 <SalesVideoHighlight />
-                <section className="p-3 bg-[#127DC01A]">
-                  <h3 className="mx-[30px] lg:mx-[250px] my-[100px] text-center text-2xl">
-                   Our MASTERCLASS will only cost you 25,000 Naira and comes with the added advantage of a free Sales Plan!
+                {/* trigger */}
+                <section className="p-3 bg-[#127DC01A] my-4">
+                  <h3 className="mx-[30px] lg:mx-[250px] my-[50px] text-center text-2xl">
+                    If you attended the FREE Webinar, you can enjoy a 25%
+                    discount on the MASTERCLASS, which costs 25,000 Naira. You
+                    will also receive your gift upon registration! We hope you
+                    saved the discount code sent to you during the Webinar, as
+                    you will need it to access the discount.{" "}
                   </h3>
+                  <div className="flex justify-center">
+                    <button
+                      onClick={open}
+                      className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl"
+                    >
+                      <span className="text-white font-semibold">
+                        Access This Offer Now!
+                      </span>
+                    </button>
+                  </div>
+                </section>
+                {/* trigger end */}
+                {/* Notes */}
+                <section className="p-3">
+                  <div className="mx-[30px] lg:mx-[100px]">
+                    <div>
+                      <p className="text-lg my-3">
+                        Now, back to the MASTERCLASS. This strategic sales
+                        training covers creating a scalable sales roadmap,
+                        building sustainable frameworks for consistent
+                        performance, enhancing customer service workflows with
+                        case studies, optimizing CRM for email marketing, and
+                        implementing persuasive copywriting strategies to drive
+                        engagement and conversions.
+                      </p>
+                      <p className="text-lg my-3">
+                        This webinar is not for you if you already have a
+                        perfect sales strategy that works and you steadily smile
+                        to the bank. We are only here for those who are still
+                        struggling to keep their business afloat, you can stop
+                        reading now and exit this page.
+                      </p>
+                      <p className="text-xl font-semibold my-4">
+                        If you&apos;re still struggling with sales and it&apos;s
+                        affecting your well-being, keep reading; we have a
+                        proven solution to help you succeed.
+                      </p>
+                    </div>
+                    <div className="flex justify-center mx-auto w-[170px] h-[100px]">
+                      <Image
+                        src={Arrows}
+                        alt="arrow"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex justify-center">
+                      <button
+                        onClick={open}
+                        className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl"
+                      >
+                        <span className="text-white font-semibold">
+                          Claim This Offer!
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </section>
+                {/* Notes end */}
+                {/* clients struggle */}
+                <div className="mx-[30px] lg:mx-[100px] my-[50px]">
+                  <div className="lg:flex gap-2 w-full">
+                    <div className="w-full lg:w-[50%]">
+                      <p className="text-lg lg:text-xl w-[100%] lg:w-[80%] leading-7 text-justify">
+                        In Nigeria, businesses of all sizes face common
+                        challenges, including generating sales, managing the
+                        customer journey, building effective sales teams, and
+                        low market visibility. Additionally, business owners
+                        often struggle with time management, limited industry
+                        knowledge, and intense competition.
+                      </p>
+                    </div>
+                    <div className="w-full lg:w-[50%] my-4 lg:my-0">
+                      <div className="w-[350px] h-[350px] lg:w-[500px] lg:h-[300px]">
+                        <Image
+                          src={ClientImage}
+                          alt="client-image"
+                          className="w-full h-full rounded-md object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* clients struggle end */}
+                {/* statement */}
+                <section className="p-3 my-3">
+                  <div className="mx-[30px] lg:mx-[100px]">
+                    <div>
+                      <p className="text-2xl text-center font-semibold">
+                        These challenges hinder growth, but overcoming them can
+                        lead to improved revenue, stronger brand reputation,
+                        increased customer loyalty, and a positive legacy for
+                        future generations. Addressing these issues can improve
+                        quality of life, create jobs, and establish lasting
+                        businesses
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                {/* statement end */}
+                {/* BFG */}
+                <section className="p-3 bg-[#127DC01A]">
+                  <div className="mx-[30px] lg:mx-[100px] my-[50px]">
+                    <div className="lg:flex items-center justify-around gap-2 w-full">
+                      <div className="w-full lg:w-[50%]">
+                        <p className="text-lg lg:text-2xl w-[100%] lg:w-[80%]">
+                          At BFG Global Consulting, we are committed to working
+                          with business owners, marketing teams, sales
+                          leaders/representatives, entrepreneurs, startups, and
+                          freelancers to provide the necessary support in
+                          overcoming these challenges.
+                        </p>
+                      </div>
+                      <div className="w-full lg:w-[50%] my-4 lg:my-0">
+                        <div className="w-[260px] h-[260px] lg:w-[260px] lg:h-[260px]">
+                          <Image
+                            src={BFGImage}
+                            alt="bfg-image"
+                            className="w-full h-full rounded-md object-cover"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                {/* BFG end */}
+                <div className="my-8">
+                  <h3 className="text-center text-xl  w-[100%] lg:w-[50%]  lg:mx-auto">
+                    We will show you the{" "}
+                    <span className="text-[#E26015]">SECRET STRATEGIES</span>{" "}
+                    your competitors use to sell more so you can stop stressing
+                    and start seeing progress immediately.
+                  </h3>
+                </div>
+                <section className="p-3 my-3">
+                  <div className="mx-[30px] lg:mx-[100px]">
+                    <div>
+                      <p className="text-xl text-center font-semibold">
+                        These exclusive selling strategies are designed for you
+                        if you aim to master the science of closing high-value
+                        deals and building lasting customer relationships. Also,
+                        if you&apos;re tired of constantly trying to keep up
+                        with competitors, and if you&apos;re ready to uncover
+                        the proven methods and frameworks your competitors use
+                        to lead the market.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section className="p-3 bg-[#127DC01A]">
+                  <div className="mx-[30px] lg:mx-[100px] my-[50px]">
+                    <div className="lg:flex items-center justify-around gap-2 w-full">
+                      <div className="w-full lg:w-[50%]">
+                        <p className="text-lg lg:text-2xl w-[100%] lg:w-[80%]">
+                          Low sales can be caused by various factors such as
+                          unclear sales strategies, weak offers, and poor
+                          customer segmentation. Inadequate training, strong
+                          competition, and failure to adapt to changing trends
+                          can also impact sales. Without proper metrics and
+                          customer feedback, it's hard to identify and fix these
+                          issues. Neglecting customer needs can damage your
+                          company's reputation and success. If your company
+                          lacks a customer-focused approach, employee training,
+                          and proper data analysis, progress will be limited.
+                          These challenges can lead to revenue decline, damaged
+                          brand reputation, and missed growth opportunities.
+                        </p>
+                      </div>
+                      <div className="w-full lg:w-[50%] my-4 lg:my-0">
+                        <div className="w-[300px] h-[350px] lg:w-[500px] lg:h-[500px]">
+                          <Image
+                            src={OutSell}
+                            alt="outsell-image"
+                            className="w-full h-full rounded-md object-cover"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                {/* lower banner */}
+                <section className="p-3">
+                  <div className="mx-[30px] lg:mx-[200px] my-[30px] lg:my-[100px]">
+                    <div>
+                      <p className="text-2xl text-center font-semibold">
+                        To address these issues, thorough market research,
+                        customer study, and investment in employee training are
+                        crucial. According to Kippa, many Nigerian businesses
+                        have the capital but lack the necessary skills and
+                        processes.
+                      </p>
+                    </div>
+                    <div className="flex justify-center my-10">
+                      <h3 className="inline-block w-[100%] lg:w-[70%] mx-[30px] lg:mx-auto border-2 border-[#E26015] border-dashed rounded-lg py-2 px-4 text-center text-xl">
+                        We're offering you a golden opportunity to change that!
+                      </h3>
+                    </div>
+                    <div className="lg:flex gap-8">
+                      <div className="w-[100%] lg:w-[50%]">
+                        <p className="text-xl lg:text-2xl font-semibold text-justify">
+                          BFG Global Consults is committed to helping micro,
+                          small, and medium enterprises through relevant
+                          training initiatives to increase competitive advantage
+                          and drive economic growth.
+                        </p>
+                      </div>
+                      <div className="w-[100%] lg:w-[50%] my-2 lg:my-0">
+                        <p className="text-[#999] text-lg">
+                          We focus on helping MSMEs contribute to the Nigerian
+                          economy by empowering them with adequate training,
+                          thereby supporting the creation of jobs at relatively
+                          low capital cost, especially in the growing service
+                          sector, and providing a vehicle for future industrial
+                          expansion
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                {/* lower banner end */}
+
+                <section className="p-3 bg-[#127DC01A]">
                   <div className="mx-[30px] lg:mx-[100px]">
                     <div className="lg:flex gap-8 w-full">
                       <div className="w-[100%] lg:w-[50%]">
-                        <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
+                        <div className="w-[300px] h-[350px] lg:w-[400px] lg:h-[400px]">
                           <Image
                             src={SalesMaster}
                             alt="sales-master"
@@ -403,6 +652,16 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="flex justify-center">
+                    <button
+                      onClick={open}
+                      className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl"
+                    >
+                      <span className="text-white font-semibold">
+                        Claim This Offer!
+                      </span>
+                    </button>
+                  </div>
                   <div className="mx-[30px] lg:mx-[100px]">
                     <p className="my-4 text-xl text-justify">
                       At BFG Global Consults, we believe in providing great
@@ -420,7 +679,7 @@ const Page = () => {
                     <p className="my-4 text-xl text-justify">
                       Our masterclass is priced at only NGN 25,000 and includes
                       extensive support and business tools to ensure you
-                      succeed. 
+                      succeed.
                       {/* <span className="font-semibold">
                         &quot; Sales Strategy for Navigating Competitive
                         Markets, &quot;
@@ -432,7 +691,15 @@ const Page = () => {
                 {/* free webinar */}
                 <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
                   <div>
-                    <div>{/* enter arrow image */}</div>
+                    <div className="flex justify-center my-10">
+                      <h3 className="inline-block w-[100%] lg:w-[80%] mx-[30px] lg:mx-auto border-2 border-[#E26015] border-dashed rounded-lg py-2 px-4 text-center text-xl font-semibold">
+                        Join Our{" "}
+                        <span className="text-[#E26015] italic">
+                          Business Masterclass: Sales Strategy for Navigating
+                          Competitive Markets
+                        </span>
+                      </h3>
+                    </div>
                     <div className="flex justify-center mx-auto w-[170px] h-[100px]">
                       <Image
                         src={Arrows}
@@ -440,14 +707,58 @@ const Page = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-center text-2xl font-semibold">
-                      Masterclass
-                    </h3>
-                    <p className="my-4 text-lg text-center">
-                      In this masterclass, you&apos;ll:
+                    <div className="flex justify-center">
+                      <button
+                        onClick={open}
+                        className="bg-[#E26015] text-white hover:bg-black py-3 px-6 rounded-xl"
+                      >
+                        <span className="text-white font-semibold">
+                          Enroll Now!
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="my-8">
+                    <h3 className="text-lg font-semibold">Details:</h3>
+                    <p className="text-lg font-semibold">
+                      Duration: 2-Day Online Masterclass, November 15 - 16,
+                      2024, 10:00 AM - 3:00 PM
+                    </p>
+                    <p className="text-lg font-semibold">
+                      Features: Expert-led sessions, in-depth training
+                      materials, practical exercises, assessments,
+                      certification, and access to a 3-month Mastermind
+                      Community with consultants
                     </p>
                   </div>
-                  <div className="d-block w-[80%] lg:w-[60%] mx-auto">
+
+                  <div className="">
+                    <h3 className="text-lg font-semibold">Course Topics:</h3>
+                    <p className="text-lg font-semibold">
+                      Strategic Sales Roadmap and Frameworks
+                    </p>
+                    <p className="text-lg font-semibold">
+                      Digital Marketing and CRM Applications
+                    </p>
+                    <p className="text-lg font-semibold">
+                      Simplified Sales Copywriting
+                    </p>
+                  </div>
+
+                  <div className="my-8">
+                    <h3 className="text-lg font-semibold">Aim:</h3>
+                    <p className="text-lg font-semibold">
+                      This masterclass is tailored for MSMEs to excel in
+                      competitive markets by mastering CRM optimization,
+                      effective email marketing, and sustainable sales
+                      frameworks.
+                    </p>
+                  </div>
+                  <div className="">
+                    <h3 className="text-xl font-semibold underline">
+                      Expected Outcomes
+                    </h3>
                     <div className="flex gap-4 lg:gap-2 items-center my-6">
                       <span className="w-6 h-6 px-2 lg:px-0 text-center text-white bg-[#127DC0] rounded-lg">
                         1
@@ -483,7 +794,8 @@ const Page = () => {
                   </div>
                 </section>
                 {/* webinar insights */}
-                <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
+
+                {/* <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
                   <p className="text-xl my-6">
                     Gain deep insights into top sales techniques that drive
                     outstanding results.{" "}
@@ -505,17 +817,12 @@ const Page = () => {
                     to know this, but the key to enhancing your sales is now
                     within reach.
                   </p>
-                  {/* <p className="text-xl my-6">
-                    Join our <span className="text-[#E26015]">FREE</span>{" "}
-                    exclusive webinar to discover actionable strategies that
-                    guarantee revenue boost and performance
-                  </p> */}
+                 
                   <p className="text-xl my-6">
-                    We with our Masterclass, 
-                    we&apos;ll secure your long-term success by helping you to
-                    identify what&apos;s been holding you back and equip you
-                    with practical techniques to overcome it quickly in this
-                    transformative, no-cost webinar.{" "}
+                    We with our Masterclass, we&apos;ll secure your long-term
+                    success by helping you to identify what&apos;s been holding
+                    you back and equip you with practical techniques to overcome
+                    it quickly in this transformative, no-cost webinar.{" "}
                   </p>
                   <div className="flex justify-center">
                     <button
@@ -526,7 +833,8 @@ const Page = () => {
                     </button>
                   </div>
                 </section>
-                {/* venue  */}
+                
+
                 <div className="mx-[30px] lg:mx-[100px]">
                   <h2 className="text-2xl font-semibold text-center">
                     Join Our <span className="text-[#E26015]">Masterclass</span>
@@ -553,7 +861,21 @@ const Page = () => {
                       <li>Optimize your CRM for sustainable business growth</li>
                     </ul>
                   </div>
+                </div> */}
+
+                {/* call to action */}
+                <div className="flex justify-center my-10">
+                  <h3 className="inline-block w-[100%] lg:w-[80%] mx-[30px] lg:mx-auto  py-2 px-4 text-center text-2xl lg:text-3xl font-semibold">
+                    Act Now!{" "}
+                    <span className="text-[#E26015]">Limited Spots </span> are
+                    Available. Don’t miss this opportunity to boost sales,
+                    enhance customer loyalty, and optimize your sales
+                    strategies.
+                    <span className="text-[#E26015]">Register Today </span> to
+                    secure your place
+                  </h3>
                 </div>
+                {/* call to action end */}
                 {/* venue end */}
                 {/* speakers */}
                 {/* <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
@@ -599,9 +921,6 @@ const Page = () => {
                 <Countdown />
                 {/* bottom banner section */}
                 <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
-                 
-    
-
                   <div className="w-[350px] lg:w-[100%]">
                     <Image
                       src={Speakers}
