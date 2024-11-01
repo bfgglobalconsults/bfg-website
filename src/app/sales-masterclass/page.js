@@ -556,9 +556,9 @@ const Page = () => {
                           customer segmentation. Inadequate training, strong
                           competition, and failure to adapt to changing trends
                           can also impact sales. Without proper metrics and
-                          customer feedback, it's hard to identify and fix these
+                          customer feedback, it&apos;s hard to identify and fix these
                           issues. Neglecting customer needs can damage your
-                          company's reputation and success. If your company
+                          company&apos;s reputation and success. If your company
                           lacks a customer-focused approach, employee training,
                           and proper data analysis, progress will be limited.
                           These challenges can lead to revenue decline, damaged
@@ -592,7 +592,7 @@ const Page = () => {
                     </div>
                     <div className="flex justify-center my-10">
                       <h3 className="inline-block w-[100%] lg:w-[70%] mx-[30px] lg:mx-auto border-2 border-[#E26015] border-dashed rounded-lg py-2 px-4 text-center text-xl">
-                        We're offering you a golden opportunity to change that!
+                        We&apos;re offering you a golden opportunity to change that!
                       </h3>
                     </div>
                     <div className="lg:flex gap-8">
