@@ -437,7 +437,7 @@ export default function Main() {
                       </span>
                     </span>
                     <span className="text-black group-hover:text-white text-lg font-semibold">
-                      Innovation & Technology
+                      Technology & Software
                     </span>
                   </div>
                   <div>
