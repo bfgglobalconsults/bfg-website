@@ -16,7 +16,7 @@ export const solution_links = [
       },
       {
         id: 4,
-        label: "Information Technology",
+        label: "Technology and Software",
         link: "/solutions/information-technology",
       },
     ]

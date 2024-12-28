@@ -342,7 +342,10 @@ export default function Main() {
                       process of gathering, analyzing & interpreting data in
                       order to make informed decisions
                     </p>
-                  </div>
+                    </div>
+                    <div className="flex justify-center">
+                      <button className="flex gap-3 items-center text-sm"><span>See More</span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"   className="text-[#333] group-hover:text-white"><path d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z"></path></svg></span></button>
+                    </div>
                 </div>
                 </div>
                 </Link>
@@ -374,11 +377,12 @@ export default function Main() {
                       Earn your business the ability to achieve desired goals
                       through the development & implementation of plans &
                       processes aimed at improving competitiveness. Through this
-                      service, we help startups & SMEs align their operations
-                      with their overall business objectives, streamline
-                      processes & optimise resources.{" "}
+                      service, we help startups & SMEs align their operations.{" "}
                     </p>
-                  </div>
+                    </div>
+                     <div className="flex justify-center">
+                      <button className="flex gap-3 items-center text-sm"><span>See More</span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"   className="text-[#333] group-hover:text-white"><path d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z"></path></svg></span></button>
+                    </div>
                 </div>
                 </div>
                 </Link>
@@ -413,7 +417,10 @@ export default function Main() {
                       this solution, we help startups & SMEs improve their
                       overall performance.{" "}
                     </p>{" "}
-                  </div>
+                    </div>
+                     <div className="flex justify-center">
+                      <button className="flex gap-3 items-center text-sm"><span>See More</span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"   className="text-[#333] group-hover:text-white"><path d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z"></path></svg></span></button>
+                    </div>
                 </div>
                 </div>
                 </Link>
@@ -448,7 +455,10 @@ export default function Main() {
                       web development & artificial intelligence to machine
                       learning & block chain technology.{" "}
                     </p>
-                  </div>
+                    </div>
+                     <div className="flex justify-center">
+                      <button className="flex gap-3 items-center text-sm"><span>See More</span><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"   className="text-[#333] group-hover:text-white"><path d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z"></path></svg></span></button>
+                    </div>
                 </div>
                 </div>
                 </Link>

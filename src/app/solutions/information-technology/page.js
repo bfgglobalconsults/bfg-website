@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/information-technology.jpg";
@@ -8,6 +9,7 @@ import ItImage from "../../../../public/assets/it-image.png";
 
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
+import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
   return (
@@ -18,7 +20,7 @@ const page = () => {
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Innovation & Technology
+            Technology & Software
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
            Innovative solutions, secure technology, & unparalleled support for your business
@@ -62,6 +64,7 @@ Focus areas of our  Innovation & Technology Consulting Services              </h
                 />
               </div>
             </div>
+            {/* <AnimatedItems /> */}
             <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
               <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
                 <h4 className="font-semibold text-xl text-[#333333]">
@@ -87,6 +90,7 @@ Focus areas of our  Innovation & Technology Consulting Services              </h
                   This scope of service involves assisting employees & other users of an organisations IT systems. This can include troubleshooting & resolving technical issues, as well as providing advice & guidance on the use of specific software or hardware.
                 </p>
               </div>{" "}
+             
             </div>
           </div>
 

@@ -237,8 +237,8 @@ const Header = () => {
                           ref={modalRef}
                           className={`${
                             activeTab === id
-                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-black border-b-2 border-black duration-200 link-underline"
-                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-black duration-200 link-underline"
+                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-white border-b-2 border-white duration-200 link-underline"
+                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-white duration-200 link-underline"
                           } rounded-tl-md z-10 ${
                             id === navigation_links.length - 1
                               ? "rounded-tr-md"
@@ -376,7 +376,7 @@ const Header = () => {
               item && (
                 <animated.div
                   style={styles}
-                  className="fixed p-3 bg-white top-0 left-0 w-[70%] z-50 h-full shadow "
+                  className="fixed p-3 bg-white top-0 left-0 w-[70%] z-50 h-full shadow overflow-y-auto"
                 >
                   <div className="flex justify-between items-center">
                     <div className="w-[100px] h-[100px] p-1">
@@ -405,7 +405,7 @@ const Header = () => {
                     </button>
                   </div>
                   <hr />
-                  <div className="py-[40px] font-bold text-center text-[16px] text-gray-800">
+                  <div className="font-bold text-center text-[16px] text-gray-800">
                     <Collapsible
                       trigger={
                         <div className="px-[32px]  flex items-center justify-center">
@@ -449,7 +449,7 @@ const Header = () => {
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="/solutions/information-technology">
-                            Innovation and Technology
+                            Technology and Software
                           </Link>
                         </p>
                       </div>
@@ -692,3 +692,4 @@ const Header = () => {
 };
 
 export default Header;
+
