@@ -31,7 +31,7 @@ export const navigation_links = [
       },
       {
         id: 4,
-        label: "Information Technology",
+        label: "Technology & Software",
         link: "/solutions/information-technology",
       },
     ],
