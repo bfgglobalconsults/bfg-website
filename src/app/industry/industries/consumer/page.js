@@ -32,10 +32,10 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              In the ever-evolving l&scape of the consumer & retail market, BFG
+              In the ever-evolving landscape of the consumer & retail market, BFG
               Global Consulting offers tailored strategies & solutions to
               navigate complexities, capitalize on emerging trends, & drive
-              sustainable growth. With a keen underst&ing of consumer behavior,
+              sustainable growth. With a keen understanding of consumer behavior,
               market dynamics, & industry trends, we empower businesses to
               enhance clients experiences, optimize operations, & stay
               competitive in an increasingly competitive marketplace. Our

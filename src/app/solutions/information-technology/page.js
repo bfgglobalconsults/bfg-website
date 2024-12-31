@@ -12,6 +12,7 @@ import ServiceImage2 from "../../../../public/assets/service-image2.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
+  
   return (
     <>
        <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -44,28 +45,33 @@ const page = () => {
             </p>
           </div>
 
-          <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
-            <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
-              <div className="my-4">
-                <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
-                  Focus Area
-                </span>
-              </div>
-              <h3 className="text-white text-3xl font-semibold">
-Focus areas of our  Innovation & Technology Consulting Services              </h3>
-              <p className="text-white my-2">
-                Experience how our robust IT solutions & expert technical support deliver seamless technology integration, ensuring your systems reliability, security, & optimal performance from infrastructure to application.
-              </p>
-              <div className="w-full">
-                <Image
-                  src={ItImage}
-                  alt="it-image"
-                  className="w-full"
-                />
-              </div>
-            </div>
-            {/* <AnimatedItems /> */}
-            <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
+        <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
+ <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+        <div className="mb-4">
+          <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
+            Focus Area
+          </span>
+        </div>
+        <h3 className="text-white text-3xl font-semibold">
+          Focus areas of our Innovation & Technology Consulting Services
+        </h3>
+        <p className="text-white my-4">
+          Experience how our robust IT solutions & expert technical support
+          deliver seamless technology integration, ensuring your systems
+          reliability, security, & optimal performance from infrastructure to
+          application.
+        </p>
+        <div className="w-full">
+          <Image src={ItImage} alt="it-image" className="w-full rounded-lg" />
+        </div>
+      </div>
+
+  <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
+    <AnimatedItems />
+  </div>
+
+
+            {/* <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
               <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
                 <h4 className="font-semibold text-xl text-[#333333]">
                   Software Designing & Development
@@ -91,7 +97,7 @@ Focus areas of our  Innovation & Technology Consulting Services              </h
                 </p>
               </div>{" "}
              
-            </div>
+            </div> */}
           </div>
 
           <hr />
@@ -203,7 +209,7 @@ Focus areas of our  Innovation & Technology Consulting Services              </h
                     Increased Flexibility & Scalability
                   </h4>
                   <p className="text-[#999]">
-                    Organisations adapt to changing business conditions & grow their operations by providing scalable & flexible solutions that can be easily modified & exp&ed as needed.
+                    Organisations adapt to changing business conditions & grow their operations by providing scalable & flexible solutions that can be easily modified & expanded as needed.
                   </p>{" "}
                 </div>
               </div>
@@ -227,7 +233,7 @@ Focus areas of our  Innovation & Technology Consulting Services              </h
                     Access to Expertise & Resources
                   </h4>
                   <p className="text-[#999]">
-                   Our IT solutions provide organisations with access to experts & resources that they might not otherwise have, such as specialised software, & cybersecurity professionals.
+                   Our IT solutions provide organisations with access to experts & resources that they might not have, such as specialised software, & cybersecurity professionals.
                   </p>{" "}
                 </div>
               </div>

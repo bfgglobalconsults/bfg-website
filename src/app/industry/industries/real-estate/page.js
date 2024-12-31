@@ -35,8 +35,8 @@ const page = () => {
               In the dynamic realm of real estate, BFG Global Consulting serves
               as a strategic ally, empowering clients to navigate complexities,
               capitalize on opportunities, & achieve their investment
-              objectives. With a profound underst&ing of market dynamics,
-              regulatory l&scapes, & emerging trends, we offer tailored
+              objectives. With a profound understanding of market dynamics,
+              regulatory landscapes, & emerging trends, we offer tailored
               solutions that drive value across the real estate spectrum. From
               market analysis & asset valuation to development strategy &
               portfolio optimization, our multidisciplinary approach enables

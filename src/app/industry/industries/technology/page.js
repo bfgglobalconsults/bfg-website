@@ -12,11 +12,11 @@ const page = () => {
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Technology & Software 
-Development
+            Technology & Software Development
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-Innovating finance, shaping tomorrows solutions.          </p>
+            Innovating finance, shaping tomorrows solutions.{" "}
+          </p>
         </div>
       </div>
       <div className="px-12">
@@ -32,7 +32,21 @@ Innovating finance, shaping tomorrows solutions.          </p>
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              In the intersection of technology & finance, BFG Global Consulting pioneers innovative solutions that redefine the future of financial services. Leveraging cutting-edge technologies & deep industry expertise, we empower financial institutions, fintech startups, & technology firms to navigate digital transformation, enhance operational efficiency, & drive sustainable growth. From blockchain & AI to cybersecurity & digital banking, our comprehensive suite of services covers the full spectrum of technological advancements reshaping the finance l&scape. By blending strategic insights with technical acumen, we help our clients harness the power of technology to streamline processes, deliver superior clients experiences, & stay ahead in an increasingly competitive market. At BFG Global Consulting, we are committed to shaping the next era of finance through innovation, collaboration, & strategic foresight.
+              In the intersection of technology & finance, BFG Global Consulting
+              pioneers innovative solutions that redefine the future of
+              financial services. Leveraging cutting-edge technologies & deep
+              industry expertise, we empower financial institutions, fintech
+              startups, & technology firms to navigate digital transformation,
+              enhance operational efficiency, & drive sustainable growth. From
+              blockchain & AI to cybersecurity & digital banking, our
+              comprehensive suite of services covers the full spectrum of
+              technological advancements reshaping the finance landscape. By
+              blending strategic insights with technical acumen, we help our
+              clients harness the power of technology to streamline processes,
+              deliver superior clients experiences, & stay ahead in an
+              increasingly competitive market. At BFG Global Consulting, we are
+              committed to shaping the next era of finance through innovation,
+              collaboration, & strategic foresight.
             </p>
           </div>
 
@@ -44,9 +58,12 @@ Innovating finance, shaping tomorrows solutions.          </p>
                 </span>
               </div>
               <h3 className="text-white text-3xl font-semibold">
-Areas where we make a difference in the Financial Technology Sector              </h3>
+                Areas where we make a difference in the Financial Technology
+                Sector{" "}
+              </h3>
               <p className="text-white my-2">
-               Powering innovation in financial technology, our expert solutions drive impact in key areas
+                Powering innovation in financial technology, our expert
+                solutions drive impact in key areas
               </p>
               <div className="w-full">
                 <Image src={TechImage} alt="it-image" className="w-full" />
@@ -58,7 +75,10 @@ Areas where we make a difference in the Financial Technology Sector             
                   Cybersecurity Solutions
                 </h4>
                 <p className="my-2 text-[#999]">
-                  Cybersecurity solutions to protect financial institutions & their clientss from cyber threats, including data encryption, threat detection, & security monitoring services to safeguard sensitive information & prevent data breaches.
+                  Cybersecurity solutions to protect financial institutions &
+                  their clients from cyber threats, including data encryption,
+                  threat detection, & security monitoring services to safeguard
+                  sensitive information & prevent data breaches.
                 </p>
               </div>
               <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
@@ -66,7 +86,10 @@ Areas where we make a difference in the Financial Technology Sector             
                   Data Analytics & Business Intelligence
                 </h4>
                 <p className="my-2 text-[#999]">
-                 Data analytics & business intelligence solutions for financial institutions, offering insights into clients behavior, market trends, & operational performance to support data-driven decision-making & strategic planning.
+                  Data analytics & business intelligence solutions for financial
+                  institutions, offering insights into clients behavior, market
+                  trends, & operational performance to support data-driven
+                  decision-making & strategic planning.
                 </p>
               </div>{" "}
               <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
@@ -74,7 +97,10 @@ Areas where we make a difference in the Financial Technology Sector             
                   Digital Banking Solutions
                 </h4>
                 <p className="my-2 text-[#999]">
-                 Innovative digital banking solutions for financial institutions, including online banking platforms, mobile banking apps, & digital payment systems to enhance clients experiences & streamline banking operations.
+                  Innovative digital banking solutions for financial
+                  institutions, including online banking platforms, mobile
+                  banking apps, & digital payment systems to enhance clients
+                  experiences & streamline banking operations.
                 </p>
               </div>{" "}
             </div>

@@ -20,9 +20,7 @@ const page = () => {
             <p className="text-[#656565]">
               This policy also shows the types of information we may collect
               from you or that you may provide when you visit our website,
-              https://bfgconsults.com/, our www.bfgconsults.com and our
-              practices for collecting, using, maintaining, protecting, and
-              disclosing that information. Please read this policy carefully to
+              https://bfgconsults.com/,  Please read this policy carefully to
               understand our policies and practices regarding your information
               and how we will treat it. If you do not agree with our policies
               and practices, please contact our company for further

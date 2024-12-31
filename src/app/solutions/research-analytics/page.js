@@ -48,7 +48,7 @@ const page = () => {
               more accurate, and more intelligent when using data. Your business
               results may be influenced by our data insights, planning,
               budgeting, forecasting, and knowledgeable BI solutions, regardless
-              of your company area—finance, HR, supply chain, marketing, sales,
+              of your company area, finance, HR, supply chain, marketing, sales,
               or IT. This service combines the expertise of agile information
               professionals, market researchers, and insight managers to deliver
               high-quality standards and regulatory intelligence, market
