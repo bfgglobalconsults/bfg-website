@@ -77,7 +77,7 @@ const Page = () => {
             Contact Us
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-            We love to hear from you! Whether you have a question about our
+            We&apos;ll love to hear from you! Whether you have a question about our
             services, want to discuss a potential collaboration, or just want to
             say hello, our team is ready to connect with you.
           </p>

@@ -47,7 +47,7 @@ const OurStand = () => {
                     Growth
                   </h4>
                   <p className="text-[#999]">
-                   As much as we practice the principle of success, we ensure that transformational growth & development take dominance in every of our engagements.
+                   As much as we practice the principle of success, we ensure that transformational growth & development take dominance in every engagements.
                   </p>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const OurStand = () => {
                     Value Driven
                   </h4>
                   <p className="text-[#999]">
-                   We safe you from the risk of uncertainity in quality service, & offer you the value of a monarch that you deserve. We go the extra mile to consistenly ensure you get the best.
+                   We save you from the risk of uncertainity in quality service, & offer you the value of a monarch that you deserve. We go the extra mile to consistently ensure you get the best.
                   </p>
                 </div>
               </div>

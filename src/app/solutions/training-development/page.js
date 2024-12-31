@@ -45,7 +45,7 @@ const page = () => {
               employees with the knowledge, skills, & abilities they need to
               succeed in their roles. We provide a wide range of training
               options, including classroom instruction, online learning, & on
-              the- job training. It also includes assessments, evaluations, &
+              the job training. It also includes assessments, evaluations, &
               feedback to measure the effectiveness of the training for your
               organisation.{" "}
             </p>

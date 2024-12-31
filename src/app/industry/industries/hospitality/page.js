@@ -33,13 +33,13 @@ const page = () => {
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
               In the vibrant world of hospitality & tourism, BFG Global
-              Consulting st&s as a trusted partner, committed to driving
+              Consulting stands as a trusted partner, committed to driving
               innovation, enhancing guest experiences, & fostering sustainable
-              growth. With a deep underst&ing of market trends, consumer
+              growth. With a deep understanding of market trends, consumer
               preferences, & operational challenges, we deliver tailored
               solutions that empower hotels, resorts, travel agencies, &
               destination management organizations to thrive in todays dynamic
-              l&scape. From strategic planning & revenue optimization to digital
+              landscape. From strategic planning & revenue optimization to digital
               transformation & sustainability initiatives, our holistic approach
               enables clients to adapt to changing market dynamics, seize new
               opportunities, & create memorable experiences that inspire loyalty

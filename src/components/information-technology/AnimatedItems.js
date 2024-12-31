@@ -1,13 +1,10 @@
-"use client"
-import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+"use client";
+import { motion, useAnimation } from "framer-motion";
+import React, { useEffect, useState } from "react";
 
 const AnimatedItems = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
+  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   const cards = [
     {
@@ -25,31 +22,51 @@ const AnimatedItems = () => {
       content:
         "This scope of service involves assisting employees & other users of an organisations IT systems. This can include troubleshooting & resolving technical issues, as well as providing advice & guidance on the use of specific software or hardware.",
     },
+    {
+      title: "Cloud Services & Migration",
+      content:
+        "We assist organisations in migrating their IT infrastructure & applications to the cloud, ensuring scalability, security & cost-efficiency.",
+    },
   ];
 
-  // Create a single transform for all cards
-  const translateY = useTransform(scrollYProgress, [0, 1], ["0%", "-300%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0, 0]);
+  // Handle animation start/stop on hover
+  useEffect(() => {
+    if (isHovered) {
+      controls.stop(); // Stop the animation on hover
+    } else {
+      controls.start({
+        y: ["0%", "-100%"], // Move cards up
+        transition: {
+          duration: cards.length * 20, // Adjust speed (2 seconds per card)
+          repeat: Infinity, // Loop indefinitely
+          ease: "linear", // Smooth animation
+        },
+      });
+    }
+  }, [isHovered, controls, cards.length]);
 
   return (
-    <div ref={ref} className="relative w-full h-[300vh]">
-      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative w-[90%] max-w-[500px]">
-          {cards.map((card, index) => (
-            <motion.div
-              key={index}
-              className="absolute w-full shadow-lg bg-white rounded-xl p-7"
-              style={{
-                translateY,
-                opacity,
-              }}
-            >
-              <h4 className="font-semibold text-xl text-[#333333]">{card.title}</h4>
-              <p className="my-2 text-[#999]">{card.content}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+    <div className="relative w-full h-full overflow-hidden">
+      <motion.div
+        animate={controls}
+        className="flex flex-col gap-6"
+        style={{ height: `${cards.length * 100}%` }} // Ensure all cards stack vertically
+      >
+        {cards.map((card, i) => (
+          <motion.div
+            key={i}
+            className="shadow-lg bg-white rounded-xl p-5 flex flex-col justify-center"
+            onHoverStart={() => setIsHovered(true)} // Pause animation on hover
+            onHoverEnd={() => setIsHovered(false)} // Resume animation on hover end
+            style={{
+              transitionDelay: `${i * 2.5}s`, // Independent sliding effect for each card
+            }}
+          >
+            <h4 className="font-semibold text-xl text-[#333333]">{card.title}</h4>
+            <p className="text-[#999] my-2">{card.content}</p>
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 };

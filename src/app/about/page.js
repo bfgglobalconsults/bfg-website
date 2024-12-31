@@ -92,7 +92,7 @@ const page = () => {
                   small startup seeking guidance or a well-established
                   organization looking for fresh insights, BFG Global Consulting
                   is here to support you every step of the way. Our team of
-                  experts is ready to listen, understand your unique challenges,
+                  experts are ready to listen, understand your unique challenges,
                   and tailor solutions that align with your specific goals.
                 </p>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
