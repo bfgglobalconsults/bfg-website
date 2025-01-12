@@ -37,17 +37,8 @@ const page = () => {
           <div className="">
             <div className="w-full my-4">
               <p className="text-lg text-[#656565] my-3">
-                BFG Technology solutions is a specialised service deployed to
-                help organisations optimize their use of technology to achieve
-                their business objectives. Through this service, we provide a
-                wide range of IT solutions, including, business web presence,
-                cloud computing, software development, & cybersecurity. The
-                service is delivered by our innovation & technology team, who
-                are experts in their field & have the technical skills &
-                knowledge to provide effective solutions. The goal of this
-                service to clients is to improve their organisations efficiency,
-                information security, & competitiveness by leveraging the latest
-                technology.
+                BFG Global Consulting is a management consulting firm that specializes in research, strategy, training, and software development. With offices in Nigeria&apos;s capital city and the United Kingdom, we offer services globally as a solution partner to individuals, businesses, corporate organizations, and government agencies.
+                Our company takes pride in its cutting-edge consulting services, which are designed to deliver transformative value for a wide range of businesses and organisations including tech start-ups and emerging brands. We are managed by a small group of agile leaders who are experienced in implementing change and helping organisations improve. Our clients range from high-profile brands to small, local companies in Nigeria and the United Kingdom.
               </p>
             </div>
             <div className="my-10">
