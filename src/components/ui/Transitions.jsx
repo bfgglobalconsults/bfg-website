@@ -27,6 +27,30 @@ export const SlideIn = ({
   );
 };
 
+export const SlideLeft = ({
+  className,
+  initial,
+  whileInView,
+  transition,
+  viewport,
+  ...rest
+}) => {
+  const init = initial ? initial : { opacity: 0, x: "100%" };
+  const inView = whileInView ? whileInView : { opacity: 1, x: 0 };
+  const trans = transition ? transition : { duration: 0.5, delay: 0.3 };
+
+  return (
+    <motion.span
+      initial={init}
+      whileInView={inView}
+      transition={trans}
+      viewport={viewport ? viewport : { once: true }}
+      className={cn("inline-block overflow-hidden", className)}
+      {...rest}
+    />
+  );
+};
+
 export const Transition = ({
   initial,
   whileInView,
