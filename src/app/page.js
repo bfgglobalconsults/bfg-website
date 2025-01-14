@@ -228,7 +228,7 @@ export default function Main() {
               <h3 className="font-bold text-4xl lg:text-6xl  text-white">
                 Democratising management consulting and Technology Solutions
               </h3>
-              <p className="text-2xl text-white my-2">
+              <p className="text-xl lg:text-2xl text-white my-2">
                 We provide research, strategy, workforce training, and software development services for individuals, businesses and organizations.
               </p>
               <div>
@@ -268,7 +268,7 @@ export default function Main() {
               </div> */}
             </div>
           </div>
-           <div className="w-full lg:w-[40%] overflow-hidden py-10">
+           {/* <div className="w-full lg:w-[40%] overflow-hidden py-10">
            
             <Image
               src={NewBanner}
@@ -277,8 +277,8 @@ export default function Main() {
             />
           
 
-          </div>
-          {/* <div className="w-full lg:w-[40%] overflow-hidden py-10">
+          </div> */}
+          <div className="w-full lg:w-[40%] overflow-hidden py-10">
             <motion.div
               animate={{ rotate: [0, 200, 400, 600, 800, 800, 600, 400, 200, 0] }}
               transition={{ repeat: Infinity, duration: 50 }}
@@ -290,7 +290,7 @@ export default function Main() {
             />
            </motion.div>
 
-          </div> */}
+          </div>
         </div>
         <div className="bg-[#faf8f8bd] p-[40px]">
           <div className="w-full flex flex-col lg:flex-row gap-1 items-center">
