@@ -6,6 +6,7 @@ import Banner from "../../../public/assets/about-team.jpg";
 import Picture from "../../../public/assets/bello-frame.png";
 import Statistics from "@/components/Statistics";
 import OurStand from "@/components/OurStand";
+import CounterSection from "@/components/counter/CounterSection";
 
 const page = () => {
   return (
@@ -41,6 +42,27 @@ const page = () => {
                 Our company takes pride in its cutting-edge consulting services, which are designed to deliver transformative value for a wide range of businesses and organisations including tech start-ups and emerging brands. 
               </p>
             </div>
+            <CounterSection />
+              {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
+                  <div className="flex flex-col lg:flex-row justify-center gap-10">
+                    <div>
+                      <h3 className="text-4xl text-white font-bold">899+</h3>
+                      <p className="text-white">Complete project</p>
+                    </div>
+                    <div>
+                      <h3 className="text-4xl text-white font-bold">20+</h3>
+                      <p className="text-white">Team Member</p>
+                    </div>
+                    <div>
+                      <h3 className="text-4xl text-white font-bold">100+</h3>
+                      <p className="text-white">Winning Award</p>
+                    </div>
+                    <div>
+                      <h3 className="text-4xl text-white font-bold">99+</h3>
+                      <p className="text-white">Clients covered</p>
+                    </div>
+                  </div>
+                </div> */}
             <div className="my-10">
               <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
                 CEO Message
@@ -92,26 +114,7 @@ const page = () => {
                   Together, let us embrace the possibilities and create a future
                   of sustainable growth and success.
                 </p>
-                <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
-                  <div className="flex flex-col lg:flex-row justify-center gap-10">
-                    <div>
-                      <h3 className="text-4xl text-white font-bold">10K+</h3>
-                      <p className="text-white">Complete project</p>
-                    </div>
-                    <div>
-                      <h3 className="text-4xl text-white font-bold">20+</h3>
-                      <p className="text-white">Team Member</p>
-                    </div>
-                    <div>
-                      <h3 className="text-4xl text-white font-bold">5K+</h3>
-                      <p className="text-white">Winning Award</p>
-                    </div>
-                    <div>
-                      <h3 className="text-4xl text-white font-bold">100+</h3>
-                      <p className="text-white">Clients covered</p>
-                    </div>
-                  </div>
-                </div>
+              
               </div>
               <div className="w-[350px] h-[450px] lg:w-[450px] lg:h-[600px]">
                 <Image
