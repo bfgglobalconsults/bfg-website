@@ -39,6 +39,7 @@ import CaseImage1 from "../../public/assets/caseimage1.png";
 import CaseImage2 from "../../public/assets/caseimage2.png";
 import CaseImage3 from "../../public/assets/caseimage3.png";
 
+import STTravel from "../../public/assets/News-ST.jpg";
 import FirstNews from "../../public/assets/first-news.png";
 import SecondNews from "../../public/assets/second-news.png";
 
@@ -85,16 +86,24 @@ export default function Main() {
       imageAlt: "slider1-img",
       imageSrc: SliderImage1,
     },
-    {
+     {
       id: 2,
-      title: "Construction",
+      title: "Consumer & Retail Market",
+      description:
+        "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
+      imageAlt: "slider5-img",
+      imageSrc: SliderImage5,
+    },
+    {
+      id: 3,
+      title: "Real Estate",
       description:
         "Building success, BFG guides construction companies to navigate complex projects, enhance efficiency, & drive innovation.",
       imageAlt: "slider2-img",
       imageSrc: SliderImage2,
     },
     {
-      id: 3,
+      id: 4,
       title: "Traveling (Tourism)",
       description:
         "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
@@ -102,21 +111,14 @@ export default function Main() {
       imageSrc: SliderImage3,
     },
     {
-      id: 4,
+      id: 5,
       title: "NGO (Non-Governmental Organization)",
       description:
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider4-img",
       imageSrc: SliderImage4,
     },
-    {
-      id: 5,
-      title: "Consumer & Retail Market",
-      description:
-        "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
-      imageAlt: "slider5-img",
-      imageSrc: SliderImage5,
-    },
+   
   ];
 
   const cases = [
@@ -435,7 +437,7 @@ export default function Main() {
 
         <div className="bg-[#041926] relative py-6 px-2 lg:p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-            Industries we cover
+            Industries We Cover
           </span>
           <div className="w-[100%] relative flex flex-col lg:flex-row items-center flex-wrap">
             <div className="w-[100%] lg:w-[50%]">
@@ -706,7 +708,7 @@ export default function Main() {
           <div className="w-full flex flex-col lg:flex-row gap-3">
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
               <div className="p-4 relative">
-                <Image src={FirstNews} alt="first-news" className="w-full" />
+                <Image src={STTravel} alt="first-news" className="w-[540px] h-[336px] rounded-xl object-cover" />
                 <div className="absolute bottom-10 left-10">
                   <div className="flex gap-1 p-2 bg-white rounded-3xl">
                     <span>
@@ -720,18 +722,19 @@ export default function Main() {
                         <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
                       </svg>
                     </span>
-                    <span className="text-[#4C4C4D]">July 15, 2024</span>
+                    <span className="text-[#4C4C4D]">January 15, 2025</span>
                   </div>
                 </div>
               </div>
               <div className="p-4">
                 <h3 className="text-xl text-[#333] font-semibold my-2">
-                  A Blueprint for Business Brilliance
+                 Celebrating Success: ST Travels CEO Visits BFG Consults to Strengthen Partnership
                 </h3>
                 <p className="text-[#999] text-lg">
-                  Explore the intricacies of strategic planning & discover how
-                  it can transform your business landscape.{" "}
+                  
+The CEO and Founder of ST Travels, Mr. Stanley Chidozie Igboanugo, recently visited BFG Consult&apos;s office in Abuja to celebrate the success of their project together. 
                 </p>
+                <Link href="/insight/news/st-travels-partnership">
                 <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
                   <span className="text-white">Read More</span>
                   <span>
@@ -746,6 +749,7 @@ export default function Main() {
                     </svg>
                   </span>
                 </button>
+                </Link>
               </div>
             </div>
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">

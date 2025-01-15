@@ -8,8 +8,32 @@ import TrainingImage from "../../../../public/assets/training-image.png";
 
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
+import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
+  const trainingSlides = [
+      {
+        title: "Customized Training for Employee Development",
+        content:
+          "Offering customised training solutions that are tailored to meet the specific needs of your organisation & employees.",
+      },
+      {
+        title: "Training Delivery & Facilitation",
+        content:
+          "Facilitating training sessions, workshops, & seminars for employees at all levels of your organisation.",
+      },
+      {
+        title: "Training Evaluation & Monitoring",
+        content:
+          "Measuring the effectiveness of training programs & providing follow-up support to ensure that employees can apply new skills & knowledge on the job.",
+      },
+      {
+        title: "Coaching & mentoring",
+        content:
+          "Providing one-on-one coaching & mentoring to help employees develop their skills & advance in their careers.",
+     }
+    
+    ];
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -51,7 +75,7 @@ const page = () => {
             </p>
           </div>
 
-          <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
+          <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
             <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
               <div className="my-4">
                 <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
@@ -75,35 +99,8 @@ const page = () => {
                 />
               </div>
             </div>
-            <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Customized Training for Employee Development
-                </h4>
-                <p className="my-2 text-[#999]">
-                  Offering customised training solutions that are tailored to
-                  meet the specific needs of your organisation & employees.{" "}
-                </p>
-              </div>
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Training Delivery & Facilitation{" "}
-                </h4>
-                <p className="my-2 text-[#999]">
-                  Facilitating training sessions, workshops, & seminars for
-                  employees at all levels of your organisation.{" "}
-                </p>
-              </div>{" "}
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Training Evaluation & Monitoring{" "}
-                </h4>
-                <p className="my-2 text-[#999]">
-                  Measuring the effectiveness of training programs & providing
-                  follow-up support to ensure that employees can apply new
-                  skills & knowledge on the job.{" "}
-                </p>
-              </div>{" "}
+            <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
+              <AnimatedItems slides={trainingSlides} />
             </div>
           </div>
 

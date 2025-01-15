@@ -12,6 +12,33 @@ import ServiceImage2 from "../../../../public/assets/service-image2.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
+
+   const ItSlides = [
+      {
+        title: "Software Designing & Development",
+        content:
+          "We manage the design & development of customised IT solutions that are tailored to the specific needs of an organisation & or business.",
+      },
+      {
+        title: "IT Risk Assessment & Disaster Recovery",
+        content:
+          "This scope of service includes the development & implementation of plans & procedures that organisations can use to quickly & effectively recover from IT-related disruptions, such as natural disasters, power outages or cyber-attacks.",
+      },
+      {
+        title: "Technical Support",
+        content:
+          "This scope of service involves assisting employees & other users of an organisations IT systems. This can include troubleshooting & resolving technical issues, as well as providing advice & guidance on the use of specific software or hardware.",
+      },
+      {
+        title: "Cloud Services & Migration",
+        content:
+          "We assist organisations in migrating their IT infrastructure & applications to the cloud, ensuring scalability, security & cost-efficiency.",
+     },
+     {
+       title: "Cybersecurity",
+       content: "This scope of service includes the implementation of security measures to protect an organisations IT systems & data from unauthorized access & breaches. This can include tasks such as configuring firewalls, implementing intrusion detection systems, & performing security audits."
+      }
+    ];
   
   return (
     <>
@@ -45,7 +72,7 @@ const page = () => {
             </p>
           </div>
 
-        <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
+        <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
  <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
         <div className="mb-4">
           <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
@@ -53,7 +80,7 @@ const page = () => {
           </span>
         </div>
         <h3 className="text-white text-3xl font-semibold">
-          Focus areas of our Innovation & Technology Consulting Services
+          Focus areas of our Technology & Software Consulting Services
         </h3>
         <p className="text-white my-4">
           Experience how our robust IT solutions & expert technical support
@@ -66,13 +93,13 @@ const page = () => {
         </div>
       </div>
 
-  <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
-    <AnimatedItems />
-  </div>
+  <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
+    <AnimatedItems slides={ItSlides} />
+ </div>
 
 
-            {/* <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
+            {/* <div className="w-[100%] flex gap-2">
+              <div className="w-1/2 shadow-lg bg-[#f4f4f4] rounded-xl p-7">
                 <h4 className="font-semibold text-xl text-[#333333]">
                   Software Designing & Development
                 </h4>
@@ -80,7 +107,7 @@ const page = () => {
                  We manage the design & development of customised IT solutions that are tailored to the specific needs of an organisation & or business.
                 </p>
               </div>
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
+              <div className="w-1/2 shadow-lg bg-[#f4f4f4] rounded-xl p-7">
                 <h4 className="font-semibold text-xl text-[#333333]">
                   IT Risk Assessment & Disaster Recovery
                 </h4>
@@ -98,6 +125,7 @@ const page = () => {
               </div>{" "}
              
             </div> */}
+               
           </div>
 
           <hr />

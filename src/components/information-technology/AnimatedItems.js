@@ -2,72 +2,94 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-const AnimatedItems = () => {
-  const [isHovered, setIsHovered] = useState(false);
-  const controls = useAnimation();
 
-  const cards = [
-    {
-      title: "Software Designing & Development",
-      content:
-        "We manage the design & development of customised IT solutions that are tailored to the specific needs of an organisation & or business.",
-    },
-    {
-      title: "IT Risk Assessment & Disaster Recovery",
-      content:
-        "This scope of service includes the development & implementation of plans & procedures that organisations can use to quickly & effectively recover from IT-related disruptions, such as natural disasters, power outages or cyber-attacks.",
-    },
-    {
-      title: "Technical Support",
-      content:
-        "This scope of service involves assisting employees & other users of an organisations IT systems. This can include troubleshooting & resolving technical issues, as well as providing advice & guidance on the use of specific software or hardware.",
-    },
-    {
-      title: "Cloud Services & Migration",
-      content:
-        "We assist organisations in migrating their IT infrastructure & applications to the cloud, ensuring scalability, security & cost-efficiency.",
-    },
-  ];
 
-  // Handle animation start/stop on hover
+const ITEMS_PER_VIEW = 3
+const ITEM_HEIGHT = 200 // in pixels
+
+const AnimatedItems = ({slides}) => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [direction, setDirection] = useState(0)
+
+  const handlePrevClick = () => {
+    setDirection(-1)
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length)
+  }
+
+  const handleNextClick = () => {
+    setDirection(1)
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
+  }
+
   useEffect(() => {
-    if (isHovered) {
-      controls.stop(); // Stop the animation on hover
-    } else {
-      controls.start({
-        y: ["0%", "-100%"], // Move cards up
-        transition: {
-          duration: cards.length * 20, // Adjust speed (2 seconds per card)
-          repeat: Infinity, // Loop indefinitely
-          ease: "linear", // Smooth animation
-        },
-      });
-    }
-  }, [isHovered, controls, cards.length]);
+    const timer = setTimeout(() => {
+      setDirection(0)
+    }, 500)
+    return () => clearTimeout(timer)
+  }, [currentIndex])
 
+ 
   return (
-    <div className="relative w-full h-full overflow-hidden">
-      <motion.div
-        animate={controls}
-        className="flex flex-col gap-6"
-        style={{ height: `${cards.length * 100}%` }} // Ensure all cards stack vertically
-      >
-        {cards.map((card, i) => (
-          <motion.div
-            key={i}
-            className="shadow-lg bg-white rounded-xl p-5 flex flex-col justify-center"
-            onHoverStart={() => setIsHovered(true)} // Pause animation on hover
-            onHoverEnd={() => setIsHovered(false)} // Resume animation on hover end
-            style={{
-              transitionDelay: `${i * 2.5}s`, // Independent sliding effect for each card
+    <>
+      <div className="relative w-full max-w-3xl mx-auto">
+      <div className="flex gap-2 justify-end">
+                <button
+                  onClick={handlePrevClick}
+                  className="p-2 bg-[#FEFCFB] rounded-full"
+                >
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(173,184,194,1)"><path d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"></path></svg>
+                </button>
+                <button
+                  onClick={handleNextClick}
+                  className="p-2 bg-[#FEFCFB] rounded-full"
+                >
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(173,184,194,1)"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+                </button>
+              </div>
+     <div className="relative w-full overflow-hidden" style={{ height: `${ITEM_HEIGHT * ITEMS_PER_VIEW}px` }}>
+        <motion.div
+          className="flex flex-col"
+          animate={{
+            y: `${-currentIndex * ITEM_HEIGHT}px`,
+          }}
+          transition={{
+            y: { type: "spring", stiffness: 300, damping: 30 },
+          }}
+        >
+        {slides.map((slide, index) => (
+            <motion.div
+              key={index}
+              className="w-full flex-shrink-0"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="shadow-lg bg-white rounded-xl p-5 flex flex-col justify-center my-2" style={{ height: `${ITEM_HEIGHT - 16}px` }}>
+                <h4 className="font-semibold text-xl text-[#333333] mb-2">{slide.title}</h4>
+                <p className="text-[#999] text-sm overflow-hidden">{slide.content}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+      <div className="flex gap-2 items-center justify-center">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            className={`w-2 h-2 rounded-full ${
+              index === currentIndex ? 'bg-[#E26015]' : 'bg-gray-300'
+            }`}
+            onClick={() => {
+              setDirection(index > currentIndex ? 1 : -1)
+              setCurrentIndex(index)
             }}
-          >
-            <h4 className="font-semibold text-xl text-[#333333]">{card.title}</h4>
-            <p className="text-[#999] my-2">{card.content}</p>
-          </motion.div>
+            aria-label={`Go to slide ${index + 1}`}
+          />
         ))}
-      </motion.div>
+      </div>
     </div>
+      </>
   );
 };
 

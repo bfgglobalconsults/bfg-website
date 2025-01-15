@@ -17,7 +17,7 @@ const ClientBanner = () => {
           <div className="w-full flex flex-col lg:flex-row gap-7 justify-between my-4">
             <div className="w-[100%] lg:w-[30%]">
               <h3 className="text-white text-4xl">
-                Our clients success stories
+                Our Clients Success Stories
               </h3>
             </div>
             <div className="w-[100%] lg:w-[40%]">

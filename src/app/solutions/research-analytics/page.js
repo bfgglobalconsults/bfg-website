@@ -11,8 +11,42 @@ import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
 
 import Accordion from "@/components/Accordion";
+import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
+  const researchSlides = [
+      {
+        title: "Case Study Analysis",
+        content:
+          "Bridging the gap between theory & practice, our research & analytics service offers insights that combine real-life scenarios, academic knowledge, & stimulation to deliver actionable insights.",
+      },
+      {
+        title: "UX Research & Insights",
+        content:
+          "Unlock user-centric solutions with our UX research expertise. Get actionable insights to inform design decisions, enhance user engagement, and drive business growth.",
+      },
+      {
+        title: "Business Intelligence Research",
+        content:
+          "Unlock the power of data-driven insights with our business research expertise. We combine rigorous methodologies, industry expertise, & analytical capabilities to deliver actionable findings that inform strategic decisions & drive business success.",
+      },
+      {
+        title: "Market Feasibility & Analysis",
+        content:
+          "Get real-time data to fuel your business plan, uncover new market opportunities, & drive clients-valued solutions. Our research expertise helps you stay ahead of the competition & make informed decisions.",
+     },
+     {
+       title: "Monitoring & Evaluation",
+       content: "Ensure your projects deliver meaningful results with our monitoring & evaluation expertise. We help you set clear goals, track progress, & make data-driven decisions to maximize impact & achieve success."
+    }, {
+       title: "Product Testing",
+      content: "Put your products to the test with our rigorous testing services. We simulate real-world scenarios, identify areas for improvement, & ensure your products meet the highest st&ards of quality, reliability, & performance."
+    },
+    {
+      title: "Consumer Needs & Assessment",
+      content: "Stay ahead of the curve with real-time insights into clients needs & satisfaction. Our research & analytics services help you predict, manage, & delight - shaping your services for future success."
+     }
+    ];
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -56,7 +90,7 @@ const page = () => {
             </p>
           </div>
 
-          <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
+          <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
             <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
               <div className="my-4">
                 <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
@@ -79,46 +113,8 @@ const page = () => {
                 />
               </div>
             </div>
-            <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Case Study Analysis
-                </h4>
-                <motion.div
-                  initial="offscreen"
-                  whileInView="onscreen"
-                  viewport={{ once: true, amount: 0.8 }}
-                >
-                  <p className="my-2 text-[#999]">
-                    Bridging the gap between theory & practice, our research &
-                    analytics service offers insights that combine real-life
-                    scenarios, academic knowledge, & stimulation to deliver
-                    actionable insights.
-                  </p>
-                </motion.div>
-              </div>
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  UX Research & Insights
-                </h4>
-                <p className="my-2 text-[#999]">
-                  Unlock user-centric solutions with our UX research expertise.
-                  Get actionable insights to inform design decisions, enhance
-                  user engagement, and drive business growth.
-                </p>
-              </div>{" "}
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Business Intelligence Research{" "}
-                </h4>
-                <p className="my-2 text-[#999]">
-                  Unlock the power of data-driven insights with our business
-                  research expertise. We combine rigorous methodologies,
-                  industry expertise, & analytical capabilities to deliver
-                  actionable findings that inform strategic decisions & drive
-                  business success.
-                </p>
-              </div>{" "}
+            <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
+              <AnimatedItems slides={researchSlides} />
             </div>
           </div>
 

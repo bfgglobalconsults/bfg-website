@@ -8,8 +8,39 @@ import BusinessImage from "../../../../public/assets/business-image.png";
 
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
+import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
+   const BusinessSlides = [
+      {
+        title: "Business Formation",
+        content:
+          "We take the stress off our clients in the process of choosing a business structure & registering their business with the appropriate government agency. Common business structures often include sole proprietorships, partnerships, limited liability companies (LLCs), & corporations.",
+      },
+      {
+        title: "Business strategy development & implementation",
+        content:
+          "This includes market research & analysis, competitive analysis, & the development of a comprehensive business plan for your business.",
+      },
+      {
+        title: "Operations assessment & optimization",
+        content:
+          "This covers our single-mindedness in reviewing & analysing current operations to identify areas for improvement & implementing changes to increase efficiency & reduce costs for organisations.",
+      },
+      {
+        title: "Organisational design & restructuring",
+        content:
+          "This include reviewing your current organisational structure & making changes to improve alignment with business goals & objectives.",
+     },
+     {
+       title: "Performance management",
+       content: "We accelerate business decisions through the implementation of systems & processes for monitoring & measuring performance, as well as providing guidance & support for achieving performance goals in your business.",
+     },
+     {
+       title: "Change management",
+       content: "This includes planning & executing changes to systems, processes, & organisational structure in a way that minimise disruption & maximise benefits."
+     }
+    ];
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -43,7 +74,7 @@ Operations
             </p>
           </div>
 
-          <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
+          <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
             <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
               <div className="my-4">
                 <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
@@ -64,31 +95,8 @@ Operations
                 />
               </div>
             </div>
-            <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Business Formation
-                </h4>
-                <p className="my-2 text-[#999]">
-                  We take the stress off our clients in the process of choosing a business structure & registering their business with the appropriate government agency. Common business structures often include sole proprietorships, partnerships, limited liability companies (LLCs), & corporations.
-                </p>
-              </div>
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                 Business strategy development & implementation
-                </h4>
-                <p className="my-2 text-[#999]">
-                  This includes market research & analysis, competitive analysis, & the development of a comprehensive business plan for your business.
-                </p>
-              </div>{" "}
-              <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Operations assessment & optimization
-                </h4>
-                <p className="my-2 text-[#999]">
-                  This covers our single-mindedness in reviewing & analysing current operations to identify areas for improvement & implementing changes to increase efficiency & reduce costs for organisations.
-                </p>
-              </div>{" "}
+            <div className="w-[100%] bg-[#041926] p-4 lg:w-[50%] flex flex-col gap-10">
+            <AnimatedItems slides={BusinessSlides} />
             </div>
           </div>
 
