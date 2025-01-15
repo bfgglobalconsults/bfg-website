@@ -708,7 +708,7 @@ export default function Main() {
           <div className="w-full flex flex-col lg:flex-row gap-3">
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
               <div className="p-4 relative">
-                <Image src={STTravel} alt="first-news" className="w-[540px] h-[336px] rounded-xl object-cover" />
+                <Image src={STTravel} alt="first-news" className="w-full rounded-lg object-cover" />
                 <div className="absolute bottom-10 left-10">
                   <div className="flex gap-1 p-2 bg-white rounded-3xl">
                     <span>
@@ -732,7 +732,7 @@ export default function Main() {
                 </h3>
                 <p className="text-[#999] text-lg">
                   
-The CEO and Founder of ST Travels, Mr. Stanley Chidozie Igboanugo, recently visited BFG Consult&apos;s office in Abuja to celebrate the success of their project together. 
+The CEO and Founder of ST Travels, Mr. Stanley Chidozie Igboanugo, recently visited BFG Consult&apos;s office in Abuja to celebrate its partnership. 
                 </p>
                 <Link href="/insight/news/st-travels-partnership">
                 <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
@@ -754,7 +754,7 @@ The CEO and Founder of ST Travels, Mr. Stanley Chidozie Igboanugo, recently visi
             </div>
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
               <div className="p-4 relative">
-                <Image src={SecondNews} alt="first-news" className="w-full" />
+                <Image src={SecondNews} alt="first-news" className="w-full object-cover" />
                 <div className="absolute bottom-10 left-10">
                   <div className="flex gap-1 p-2 bg-white rounded-3xl">
                     <span>

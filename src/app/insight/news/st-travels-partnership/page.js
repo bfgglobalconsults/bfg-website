@@ -49,70 +49,28 @@ const page = () => {
           </h3> */}
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
-              <p className="text-lg font-semibold">
-                {" "}
-                ST Travels CEO Visits BFG Consults to Celebrate a Great
-                Partnership
-              </p>
+              
               <p className="text-lg text-[#9b8b8b]">
-                The CEO and Founder of ST Travels, Mr. Stanley Chidozie
-                Igboanugo, recently visited BFG’s office in Abuja to celebrate
-                the success of their project together. This visit showed how
-                strong the partnership between ST Travels and BFG has become and
-                was a way to thank the BFG team for their great work.
+                Earlier this week, BFG Consults had the honor of hosting the Managing Director/CEO of ST Travels and Consulting LLC, a renowned travel and tour company operating in Australia and Nigeria. This visit marked a significant step in fortifying the fruitful partnership between our organizations.
               </p>
               <br />
-              <p className="text-lg font-semibold">
-                A Warm Reception and Celebration
-              </p>
+             
               <p className="text-lg text-[#999]">
                 {" "}
-                The CEO of ST Travels was received by the Head of Service
-                Delivery and Projects, Mr. Peter Chukwuemeka, and the rest of
-                the team members. As part of the celebration, he was presented
-                with gifts to commemorate the continuous partnership between
-                both organizations.{" "}
+               The BFG product development team, led by our Head of Service Delivery and Projects, Peter Chukwuemeka, welcomed the esteemed guest to our offices. The meeting highlighted the successful collaboration between BFG Consults and ST Travels, particularly the development of their Web Application System Project in 2024 (See: <a href="https://www.sttravelsconsulting.com" target="_blank" rel="noopener noreferrer" className="text-black">www.sttravelsconsulting.com</a>). The project, completed within six months, delivered a seamless digital solution that has since been pivotal in transforming ST Travels operations and elevating its brand presence in both the Australian and Nigerian markets.
               </p>
               <br />
-              <p className="text-lg font-semibold">
-                A Strong and Trusted Partnership
-              </p>
+              
               <p className="text-lg text-[#999]">
-                ST Travels is a top travel agency in Australia. They help people
-                book flights, hotels, and tours easily. Their goal is to give
-                customers amazing travel experiences. ST Travels decided to work
-                with BFG Consults after being referred by David Presage
-                Attorneys, which shows how much trust people have in BFG’s
-                services.
+               “We deeply value the honest and insightful feedback provided by the ST Travels CEO during his visit,” said Peter Chukwuemeka. “It reaffirms our commitment to delivering cutting-edge solutions that align with the unique needs of our clients.” The ST Travels CEO expressed his satisfaction with the system’s performance, emphasizing how it has enhanced efficiency and customer engagement, ultimately repositioning the company as a leader in the travel and tours industry.
               </p>
               <br />
-              <p className="text-lg font-semibold">Highlights of the Project</p>
               <p className="text-lg text-[#999]">
-                {" "}
-                BFG Consults worked on a special project for ST Travels. The
-                goal was to build an easy-to-use website for travel bookings.
-                The project was finished in just four months and included these
-                features: Booking System: A simple tool to book flights, hotels,
-                and tours. Payment Gateway: A safe and smooth way to pay for
-                bookings. Responsive Design: A website that works perfectly on
-                both computers and phones. Even though there were small
-                technical challenges, the project was finished on time. This
-                success was made possible by two hardworking teams: The
-                Technology Team, who built the platform. The Business Team, who
-                helped with a business plan and financial advice to meet ST
-                Travels’ goals.
+                This visit underscores the ongoing collaboration and mutual commitment to innovation and excellence shared by BFG Consults and ST Travels. We look forward to building on this success and continuing to deliver impactful solutions for our clients across the globe.
               </p>
 
               <br />
-              <p className="text-lg font-semibold">Looking Ahead</p>
-              <p className="text-lg text-[#999]">
-                During the visit, the CEO of ST Travels thanked BFG Consults for
-                their professionalism and teamwork. This successful project has
-                opened the door for more exciting collaborations, including a
-                new app called Avica Care for care workers. BFG Consults is
-                proud to support ST Travels and looks forward to more amazing
-                projects in the future!
-              </p>
+             
             </div>
             <div className="hidden lg:block lg:w-[20%]">
               <div className="bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-3">
@@ -131,7 +89,7 @@ const page = () => {
                 </div>
                 <div className="flex justify-between">
                   <p className="text-[#999]">Author</p>
-                  <p className="text-[#999]">Ezekiel</p>
+                  <p className="text-[#999]">BFG Consults<br/> News</p>
                 </div>
               </div>
             </div>
