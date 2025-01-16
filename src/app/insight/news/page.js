@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Banner from "../../../../public/assets/news-banner.png";
-import News1 from "../../../../public/assets/news1.png";
+import News1 from "../../../../public/assets/News-ST.jpg";
 import News2 from "../../../../public/assets/news2.png";
 import Slides from "@/components/Slides";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -45,13 +46,15 @@ const page = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold">
-                    A Blueprint for Business Brilliance
+                  <h3 className="text-2xl font-semibold my-2">
+                   Celebrating Success: ST Travels CEO Visits BFG Consults to Strengthen Partnership
                   </h3>
                   <p className="text-[#999]">
-                    Explore the intricacies of strategic planning & discover how
-                    it can transform your business landscape.
+                    The CEO and Founder of ST Travels, Mr. Stanley Chidozie
+                  Igboanugo, recently visited BFG Consult&apos;s office in Abuja
+                  to celebrate its partnership.
                   </p>
+                  <Link href="/insight/news/st-travels-partnership">
                   <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                     <span className="text-white ml-2 font-semibold">Read More</span>
                     <span>
@@ -66,6 +69,7 @@ const page = () => {
                       </svg>
                     </span>
                   </button>
+                  </Link>
                 </div>
               </div>
               {/* second image */}
@@ -78,13 +82,14 @@ const page = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold">
-                    A Guide to Streamlining Your Business
+                  <h3 className="text-2xl font-semibold my-2">
+                    BFG consults bags UK award for research
+
                   </h3>
                   <p className="text-[#999]">
-                    Dive into the world of operational efficiency & learn
-                    strategies to boost productivity effortlessly.
+                    This prestigious honor showcases BFG Global Consults’ commitment to delivering exceptional research and analytical solutions globally while actively promoting Nigeria’s market intelligence on the global stage.
                   </p>
+                   <Link href="/insight/news/bfg-bags-award">
                   <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                     <span className="text-white ml-2 font-semibold">Read More</span>
                     <span>
@@ -98,7 +103,8 @@ const page = () => {
                         <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
                       </svg>
                     </span>
-                  </button>
+                    </button>
+                    </Link>
                 </div>
               </div>
             </div>

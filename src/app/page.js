@@ -62,14 +62,14 @@ export default function Main() {
 
   const handlePrevClick = () => {
     if (currentIndex > 0) {
-    setCurrentIndex((prevIndex) => prevIndex - 1);
-  }
+      setCurrentIndex((prevIndex) => prevIndex - 1);
+    }
   };
 
   const handleNextClick = () => {
-     if (currentIndex < slides.length - 1) {
-    setCurrentIndex((prevIndex) => prevIndex + 1);
-  }
+    if (currentIndex < slides.length - 1) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    }
   };
 
   const handleClick = (id) => {
@@ -86,7 +86,7 @@ export default function Main() {
       imageAlt: "slider1-img",
       imageSrc: SliderImage1,
     },
-     {
+    {
       id: 2,
       title: "Consumer & Retail Market",
       description:
@@ -118,7 +118,6 @@ export default function Main() {
       imageAlt: "slider4-img",
       imageSrc: SliderImage4,
     },
-   
   ];
 
   const cases = [
@@ -170,42 +169,42 @@ export default function Main() {
   ];
   const solutions = [
     {
-    id: 1,
-    href: "/solutions/research-analytics",
-    title: "Research & Analytics",
-    description:
-      "We provide startups, & SMEs with valuable insights & information that can inform business strategies, decision-making processes, & problem-solving efforts. We serve as an impartial partner for businesses in the process of gathering, analyzing & interpreting data in order to make informed decisions.",
-    svgPath:
-      "M6 4V8H18V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H6ZM9 17H7V19H9V17ZM9 14H7V16H9V14ZM9 11H7V13H9V11ZM16 2V6H8V2H16Z",
-  },
-    {
-    id: 2,
-    href: "/solutions/business-strategy",
-    title: "Business Strategy & Operations",
-    description:
-      "Earn your business the ability to achieve desired goals through the development & implementation of plans & processes aimed at improving competitiveness. Through this service, we help startups & SMEs align their operations.",
-    svgPath:
-      "M11 2.04938V13H21.9506C21.4489 18.0533 17.1853 22 12 22C6.47715 22 2 17.5229 2 12C2 6.81465 5.94668 2.5511 11 2.04938ZM13 2.04938C17.7244 2.51845 21.4816 6.27559 21.9506 11H13V2.04938Z",
-  },
-    {
-    id: 3,
-    href: "/solutions/training-development",
-    title: "Training & Development",
-    description:
-      "Improve job performance through employee training. Win the process of enhancing the skills, knowledge & abilities of employees to perform their jobs more effectively. Through this solution, we help startups & SMEs improve their overall performance.",
-    svgPath:
-      "M12 10C14.2091 10 16 8.20914 16 6 16 3.79086 14.2091 2 12 2 9.79086 2 8 3.79086 8 6 8 8.20914 9.79086 10 12 10ZM5.5 13C6.88071 13 8 11.8807 8 10.5 8 9.11929 6.88071 8 5.5 8 4.11929 8 3 9.11929 3 10.5 3 11.8807 4.11929 13 5.5 13ZM21 10.5C21 11.8807 19.8807 13 18.5 13 17.1193 13 16 11.8807 16 10.5 16 9.11929 17.1193 8 18.5 8 19.8807 8 21 9.11929 21 10.5ZM12 11C14.7614 11 17 13.2386 17 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5 15.9999C5 15.307 5.10067 14.6376 5.28818 14.0056L5.11864 14.0204C3.36503 14.2104 2 15.6958 2 17.4999V21.9999H5V15.9999ZM22 21.9999V17.4999C22 15.6378 20.5459 14.1153 18.7118 14.0056 18.8993 14.6376 19 15.307 19 15.9999V21.9999H22Z",
+      id: 1,
+      href: "/solutions/research-analytics",
+      title: "Research & Analytics",
+      description:
+        "We provide startups, & SMEs with valuable insights & information that can inform business strategies, decision-making processes, & problem-solving efforts. We serve as an impartial partner for businesses in the process of gathering, analyzing & interpreting data in order to make informed decisions.",
+      svgPath:
+        "M6 4V8H18V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H6ZM9 17H7V19H9V17ZM9 14H7V16H9V14ZM9 11H7V13H9V11ZM16 2V6H8V2H16Z",
     },
-     {
-    id: 4,
-    href: "/solutions/information-technology",
-    title: "Technology & Software",
-    description:
-      "Boost your business growth with digital tools. We take you through the process of designing & developing cutting-edge technology to enhance business effectiveness, ranging from web development & artificial intelligence to machine learning & block chain technology.",
-    svgPath:
-      "M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748ZM12.1779 7.17624C11.4834 7.48982 11 8.18846 11 9C11 10.1046 11.8954 11 13 11C13.8115 11 14.5102 10.5166 14.8238 9.82212C14.9383 10.1945 15 10.59 15 11C15 13.2091 13.2091 15 11 15C8.79086 15 7 13.2091 7 11C7 8.79086 8.79086 7 11 7C11.41 7 11.8055 7.06167 12.1779 7.17624Z",
-  },
-];
+    {
+      id: 2,
+      href: "/solutions/business-strategy",
+      title: "Business Strategy & Operations",
+      description:
+        "Earn your business the ability to achieve desired goals through the development & implementation of plans & processes aimed at improving competitiveness. Through this service, we help startups & SMEs align their operations.",
+      svgPath:
+        "M11 2.04938V13H21.9506C21.4489 18.0533 17.1853 22 12 22C6.47715 22 2 17.5229 2 12C2 6.81465 5.94668 2.5511 11 2.04938ZM13 2.04938C17.7244 2.51845 21.4816 6.27559 21.9506 11H13V2.04938Z",
+    },
+    {
+      id: 3,
+      href: "/solutions/training-development",
+      title: "Training & Development",
+      description:
+        "Improve job performance through employee training. Win the process of enhancing the skills, knowledge & abilities of employees to perform their jobs more effectively. Through this solution, we help startups & SMEs improve their overall performance.",
+      svgPath:
+        "M12 10C14.2091 10 16 8.20914 16 6 16 3.79086 14.2091 2 12 2 9.79086 2 8 3.79086 8 6 8 8.20914 9.79086 10 12 10ZM5.5 13C6.88071 13 8 11.8807 8 10.5 8 9.11929 6.88071 8 5.5 8 4.11929 8 3 9.11929 3 10.5 3 11.8807 4.11929 13 5.5 13ZM21 10.5C21 11.8807 19.8807 13 18.5 13 17.1193 13 16 11.8807 16 10.5 16 9.11929 17.1193 8 18.5 8 19.8807 8 21 9.11929 21 10.5ZM12 11C14.7614 11 17 13.2386 17 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5 15.9999C5 15.307 5.10067 14.6376 5.28818 14.0056L5.11864 14.0204C3.36503 14.2104 2 15.6958 2 17.4999V21.9999H5V15.9999ZM22 21.9999V17.4999C22 15.6378 20.5459 14.1153 18.7118 14.0056 18.8993 14.6376 19 15.307 19 15.9999V21.9999H22Z",
+    },
+    {
+      id: 4,
+      href: "/solutions/information-technology",
+      title: "Technology & Software",
+      description:
+        "Boost your business growth with digital tools. We take you through the process of designing & developing cutting-edge technology to enhance business effectiveness, ranging from web development & artificial intelligence to machine learning & block chain technology.",
+      svgPath:
+        "M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748ZM12.1779 7.17624C11.4834 7.48982 11 8.18846 11 9C11 10.1046 11.8954 11 13 11C13.8115 11 14.5102 10.5166 14.8238 9.82212C14.9383 10.1945 15 10.59 15 11C15 13.2091 13.2091 15 11 15C8.79086 15 7 13.2091 7 11C7 8.79086 8.79086 7 11 7C11.41 7 11.8055 7.06167 12.1779 7.17624Z",
+    },
+  ];
 
   const currentDate = new Date();
 
@@ -222,16 +221,31 @@ export default function Main() {
           <div className="w-full lg:w-[60%]">
             <div className="p-[40px]">
               <div className="border border-white inline-block rounded-md my-2">
-              <span className="flex items-center gap-2 p-2">
-                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)"><path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path></svg></span>
-                <span className="text-white">MEA Business Award: Best Start-Up & SME Consultancy Firm in West Africa, 2024</span>
+                <span className="flex items-center gap-2 p-2">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="32"
+                      height="32"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path>
+                    </svg>
+                  </span>
+                  <span className="text-white">
+                    MEA Business Award: Best Start-Up & SME Consultancy Firm in
+                    West Africa, 2024
+                  </span>
                 </span>
-                </div>
+              </div>
               <h3 className="font-bold text-4xl lg:text-6xl  text-white">
                 Democratising management consulting and Technology Solutions
               </h3>
               <p className="text-xl lg:text-2xl text-white my-2">
-                We provide research, strategy, workforce training, and software development services for individuals, businesses and organizations.
+                We provide research, strategy, workforce training, and software
+                development services for individuals, businesses and
+                organizations.
               </p>
               <div>
                 <button className="bg-white hover:bg-black hover:text-white text-[#E26015] font-semibold  py-2 px-4 rounded-lg">
@@ -270,7 +284,7 @@ export default function Main() {
               </div> */}
             </div>
           </div>
-           {/* <div className="w-full lg:w-[40%] overflow-hidden py-10">
+          {/* <div className="w-full lg:w-[40%] overflow-hidden py-10">
            
             <Image
               src={NewBanner}
@@ -282,16 +296,17 @@ export default function Main() {
           </div> */}
           <div className="w-full lg:w-[40%] overflow-hidden py-10">
             <motion.div
-              animate={{ rotate: [0, 200, 400, 600, 800, 800, 600, 400, 200, 0] }}
+              animate={{
+                rotate: [0, 200, 400, 600, 800, 800, 600, 400, 200, 0],
+              }}
               transition={{ repeat: Infinity, duration: 50 }}
             >
-            <Image
-              src={Banner}
-              alt="banner"
-              className="w-full h-full object-fit"
-            />
-           </motion.div>
-
+              <Image
+                src={Banner}
+                alt="banner"
+                className="w-full h-full object-fit"
+              />
+            </motion.div>
           </div>
         </div>
         <div className="bg-[#faf8f8bd] p-[40px]">
@@ -344,93 +359,94 @@ export default function Main() {
         <div className="w-full h-full lg:h-[800px] flex flex-col lg:flex-row items-center flex-wrap">
           <div className="w-[100%] h-full xl:w-[40%] relative lg:flex lg:items-center lg:justify-center">
             <SlideIn>
-    <div className="p-12">
-      <span className="p-3 rounded-3xl border-2 border-[#E26015] font-semibold">
-        Our Solution
-      </span>
-      <h3 className="my-6 text-[#333] text-2xl lg:text-4xl font-semibold">
-        Customized Services for Exceptional Results
-      </h3>
-      <p className="text-[#999] text-lg">
-        Every project we execute is shaped by our fundamental beliefs, which guarantee outstanding quality, creativity, and client pleasure at every turn.
-      </p>
-      <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
-        <span className="text-white font-semibold">
-          View All Services
-        </span>
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            fill="rgba(255,255,255,1)"
-          >
-            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-          </svg>
-        </span>
-      </button>
-            </div>
-            </SlideIn>
-    <div className="absolute bottom-10 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div>
-  </div>
-          <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')]">
-            <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
-              {solutions.map((solution, index) => (
-              <Transition
-              transition={{ delay: 1 + index * 0.4 }}
-              viewport={{ once: true }}
-              key={solution.id}
-              layoutId={solution.id}
-              
-            >
-        <Link href={solution.href} >
-          <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
-            <div className="p-5">
-              <div className="flex gap-2 items-center">
-                <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      className="text-white group-hover:text-[#E26015]"
-                    >
-                      <path d={solution.svgPath}></path>
-                    </svg>
+              <div className="p-12">
+                <span className="p-3 rounded-3xl border-2 border-[#E26015] font-semibold">
+                  Our Solution
+                </span>
+                <h3 className="my-6 text-[#333] text-2xl lg:text-4xl font-semibold">
+                  Customized Services for Exceptional Results
+                </h3>
+                <p className="text-[#999] text-lg">
+                  Every project we execute is shaped by our fundamental beliefs,
+                  which guarantee outstanding quality, creativity, and client
+                  pleasure at every turn.
+                </p>
+                <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
+                  <span className="text-white font-semibold">
+                    View All Services
                   </span>
-                </span>
-                <span className="text-black group-hover:text-white text-lg font-semibold">
-                  {solution.title}
-                </span>
-              </div>
-              <p className="text-[#999] group-hover:text-white text-sm my-4">
-                {solution.description}
-              </p>
-              <div className="flex justify-center">
-                <button className="flex gap-3 items-center text-sm">
-                  <span>See More</span>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
-                      fill="currentColor"
-                      className="text-[#333] group-hover:text-white"
+                      fill="rgba(255,255,255,1)"
                     >
-                      <path d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z"></path>
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                     </svg>
                   </span>
                 </button>
               </div>
-            </div>
+            </SlideIn>
+            <div className="absolute bottom-10 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div>
           </div>
+          <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')]">
+            <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
+              {solutions.map((solution, index) => (
+                <Transition
+                  transition={{ delay: 1 + index * 0.4 }}
+                  viewport={{ once: true }}
+                  key={solution.id}
+                  layoutId={solution.id}
+                >
+                  <Link href={solution.href}>
+                    <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
+                      <div className="p-5">
+                        <div className="flex gap-2 items-center">
+                          <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                className="text-white group-hover:text-[#E26015]"
+                              >
+                                <path d={solution.svgPath}></path>
+                              </svg>
+                            </span>
+                          </span>
+                          <span className="text-black group-hover:text-white text-lg font-semibold">
+                            {solution.title}
+                          </span>
+                        </div>
+                        <p className="text-[#999] group-hover:text-white text-sm my-4">
+                          {solution.description}
+                        </p>
+                        <div className="flex justify-center">
+                          <button className="flex gap-3 items-center text-sm">
+                            <span>See More</span>
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                className="text-[#333] group-hover:text-white"
+                              >
+                                <path d="M1.99974 12.9999L1.9996 11L15.5858 11V5.58582L22 12L15.5858 18.4142V13L1.99974 12.9999Z"></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </Link>
-                  </Transition>
-      ))}
+                </Transition>
+              ))}
             </div>
           </div>
         </div>
@@ -474,7 +490,7 @@ export default function Main() {
                 </button>
                 <button
                   onClick={handleNextClick}
-                   disabled={currentIndex === 2}
+                  disabled={currentIndex === 2}
                   className="p-2 bg-[#FEFCFB] rounded-full"
                 >
                   <svg
@@ -548,7 +564,9 @@ export default function Main() {
               </div>
               <div className="flex justify-center my-2">
                 <button className="bg-[#041926] hover:bg-[#E26015] p-3 rounded-3xl flex gap-1 items-center">
-                 <Link href="/insight/case-study"><span className="text-white font-semibold">See More</span></Link> 
+                  <Link href="/insight/case-study">
+                    <span className="text-white font-semibold">See More</span>
+                  </Link>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -616,10 +634,10 @@ export default function Main() {
                 At BFG, success is not just a goal - its our standard.
               </p>
               <Link href="/contact">
-              <button className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl">
-                <span className="text-white font-bold">Contact Us</span>
+                <button className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl">
+                  <span className="text-white font-bold">Contact Us</span>
                 </button>
-                </Link>
+              </Link>
             </div>
           </div>
         </div>
@@ -644,56 +662,57 @@ export default function Main() {
             </div>
           </div>
           {/* content */}
-         
+
           <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
-            
             <div className="w-[100%]  xl:w-[50%]">
               <Image src={ContentBanner} alt="content-img" className="w-full" />
             </div>
             <div className="w-[100%]  xl:w-[50%] p-2 overflow-hidden">
-               <SlideLeft>
-              <div className="w-full flex flex-wrap gap-4">
-                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
-                  <h3 className="text-lg text-[#222] font-semibold my-2">
-                    Exceptional Quality
-                  </h3>
-                  <p className="text-[#999]">
-                    We strive for excellence in every project we undertake. Our
-                    team of experts is dedicated to delivering high-quality
-                    solutions that exceed our clients expectations.
-                  </p>
+              <SlideLeft>
+                <div className="w-full flex flex-wrap gap-4">
+                  <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                    <h3 className="text-lg text-[#222] font-semibold my-2">
+                      Exceptional Quality
+                    </h3>
+                    <p className="text-[#999]">
+                      We strive for excellence in every project we undertake.
+                      Our team of experts is dedicated to delivering
+                      high-quality solutions that exceed our clients
+                      expectations.
+                    </p>
+                  </div>
+                  <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                    <h3 className="text-lg text-[#222] font-semibold my-2">
+                      Embracing Innovation
+                    </h3>
+                    <p className="text-[#999]">
+                      Innovation is key to staying ahead in todays fast-paced
+                      business environment. Our team is always looking for new &
+                      better ways to solve problems & deliver value to our
+                      client.{" "}
+                    </p>
+                  </div>
+                  <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                    <h3 className="text-lg text-[#222] font-semibold my-2">
+                      Building Trust through Transparency
+                    </h3>
+                    <p className="text-[#999]">
+                      We operate with the highest level of integrity,
+                      transparency, & honesty. Our clients trust us to deliver
+                      on our promises.{" "}
+                    </p>
+                  </div>
+                  <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
+                    <h3 className="text-lg text-[#222] font-semibold my-2">
+                      Client-Centricity
+                    </h3>
+                    <p className="text-[#999]">
+                      Our clients are at the center of everything we do. We
+                      listen to their needs, understand their challenges, &
+                      deliver solutions that meet their goals & objectives.{" "}
+                    </p>
+                  </div>
                 </div>
-                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
-                  <h3 className="text-lg text-[#222] font-semibold my-2">
-                    Embracing Innovation
-                  </h3>
-                  <p className="text-[#999]">
-                    Innovation is key to staying ahead in todays fast-paced
-                    business environment. Our team is always looking for new &
-                    better ways to solve problems & deliver value to our client.{" "}
-                  </p>
-                </div>
-                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
-                  <h3 className="text-lg text-[#222] font-semibold my-2">
-                    Building Trust through Transparency
-                  </h3>
-                  <p className="text-[#999]">
-                    We operate with the highest level of integrity,
-                    transparency, & honesty. Our clients trust us to deliver on
-                    our promises.{" "}
-                  </p>
-                </div>
-                <div className="w-[100%] lg:w-[45%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
-                  <h3 className="text-lg text-[#222] font-semibold my-2">
-                    Client-Centricity
-                  </h3>
-                  <p className="text-[#999]">
-                    Our clients are at the center of everything we do. We listen
-                    to their needs, understand their challenges, & deliver
-                    solutions that meet their goals & objectives.{" "}
-                  </p>
-                </div>
-              </div>
               </SlideLeft>
             </div>
           </div>
@@ -704,11 +723,17 @@ export default function Main() {
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Recent Post
           </span>
-          <h3 className="text-3xl lg:text-4xl font-bold text-[#333] my-4">Latest News</h3>
+          <h3 className="text-3xl lg:text-4xl font-bold text-[#333] my-4">
+            Latest News
+          </h3>
           <div className="w-full flex flex-col lg:flex-row gap-3">
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
-              <div className="p-4 relative">
-                <Image src={STTravel} alt="first-news" className="w-full rounded-lg object-cover" />
+              <div className="p-4 relative h-[300px]">
+                <Image
+                  src={STTravel}
+                  alt="first-news"
+                  className="w-full h-full rounded-lg object-cover"
+                />
                 <div className="absolute bottom-10 left-10">
                   <div className="flex gap-1 p-2 bg-white rounded-3xl">
                     <span>
@@ -728,13 +753,65 @@ export default function Main() {
               </div>
               <div className="p-4">
                 <h3 className="text-xl text-[#333] font-semibold my-2">
-                 Celebrating Success: ST Travels CEO Visits BFG Consults to Strengthen Partnership
+                  Celebrating Success: ST Travels CEO Visits BFG Consults to
+                  Strengthen Partnership
                 </h3>
                 <p className="text-[#999] text-lg">
-                  
-The CEO and Founder of ST Travels, Mr. Stanley Chidozie Igboanugo, recently visited BFG Consult&apos;s office in Abuja to celebrate its partnership. 
+                  The CEO and Founder of ST Travels, Mr. Stanley Chidozie
+                  Igboanugo, recently visited BFG Consult&apos;s office in Abuja
+                  to celebrate its partnership.
                 </p>
                 <Link href="/insight/news/st-travels-partnership">
+                  <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
+                    <span className="text-white">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
+              <div className="p-4 relative h-[300px]">
+                <Image
+                  src={SecondNews}
+                  alt="first-news"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-10 left-10">
+                  <div className="flex gap-1 p-2 bg-white rounded-3xl">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(76,76,77,1)"
+                      >
+                        <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
+                      </svg>
+                    </span>
+                    <span className="text-[#4C4C4D]">December 17, 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl text-[#333] font-semibold my-2">
+                  BFG Consults bags UK Award for Research
+                </h3>
+                <p className="text-[#999] text-lg">
+                  Dive into the world of operational efficiency & learn
+                  strategies to boost productivity effortlessly.
+                </p>
+                 <Link href="/insight/news/bfg-bags-award">
                 <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
                   <span className="text-white">Read More</span>
                   <span>
@@ -750,50 +827,6 @@ The CEO and Founder of ST Travels, Mr. Stanley Chidozie Igboanugo, recently visi
                   </span>
                 </button>
                 </Link>
-              </div>
-            </div>
-            <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
-              <div className="p-4 relative">
-                <Image src={SecondNews} alt="first-news" className="w-full object-cover" />
-                <div className="absolute bottom-10 left-10">
-                  <div className="flex gap-1 p-2 bg-white rounded-3xl">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="rgba(76,76,77,1)"
-                      >
-                        <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
-                      </svg>
-                    </span>
-                    <span className="text-[#4C4C4D]">July 28, 2024</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl text-[#333] font-semibold my-2">
-                  BFG Consults bags UK Award for Research
-                </h3>
-                <p className="text-[#999] text-lg">
-                  Dive into the world of operational efficiency & learn
-                  strategies to boost productivity effortlessly.
-                </p>
-                <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
-                  <span className="text-white">Read More</span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
-                </button>
               </div>
             </div>
           </div>
