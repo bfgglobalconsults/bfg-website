@@ -391,7 +391,7 @@ export default function Main() {
             </SlideIn>
             <div className="absolute bottom-10 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div>
           </div>
-          <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')]">
+          <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')] bg-no-repeat">
             <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
               {solutions.map((solution, index) => (
                 <Transition
