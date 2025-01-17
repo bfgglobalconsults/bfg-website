@@ -328,7 +328,7 @@ const FixedHeader = () => {
               item && (
                 <animated.div
                   style={styles}
-                  className="fixed p-3 bg-white top-0 left-0 w-[70%] z-50 h-full shadow "
+                  className="fixed p-3 bg-white top-0 left-0 w-[70%] z-50 h-full shadow overflow-y-auto"
                 >
                   <div className="flex justify-between items-center">
                   <div className="w-[100px] h-[100px] p-1">
@@ -387,7 +387,7 @@ const FixedHeader = () => {
                         <Link href="/solutions/training-development">Training and development</Link>
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/solutions/information-technology">Innovation and Technology</Link>
+                        <Link href="/solutions/information-technology">Technology and Software</Link>
                       </p>
 
                        
