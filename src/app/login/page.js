@@ -1,13 +1,41 @@
+"use client";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { login } from "@/redux/auth/authSlice";
 import Image from "next/image";
 import React from "react";
 import Logo from "../../../public/assets/BFG-5.png";
 
 const Login = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+  const dispatch = useDispatch();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await dispatch(login(formData)).unwrap();
+      // Handle successful login (e.g., redirect)
+    } catch (error) {
+      // Handle login error
+      console.error('Login failed:', error);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   return (
     <>
       <div className="bg-[#E26015]">
         <div className="h-screen flex justify-center items-center py-[40px]">
-          <div className="w-[50%] bg-white border rounded-lg border-red-500">
+          <div className="w-[100%] lg:w-[50%] bg-white border rounded-lg border-red-500">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm mt-[50px]">
               <div className="w-[100px] h-[90px] mx-auto">
                 <Image
@@ -22,7 +50,7 @@ const Login = () => {
             </div>
 
             <div className="bg-[#127DC014] rounded-md p-[20px] mt-10 mb-10 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form action="#" method="POST" className="space-y-6">
+              <form action="#" method="POST" className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="email"
@@ -50,6 +78,7 @@ const Login = () => {
                       required
                       autoComplete="email"
                       className="block w-full rounded-md border-0 py-1.5 ps-10 p-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm/6"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -83,6 +112,7 @@ const Login = () => {
                       placeholder="Password"
                       autoComplete="current-password"
                       className="block w-full rounded-md border-0 py-1.5 ps-10 p-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm/6"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
