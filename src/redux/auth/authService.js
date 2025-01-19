@@ -1,26 +1,33 @@
 import axios from 'axios'
 
-const API_URL = '';
+const API_URL = 'https://bfg-website-api.onrender.com';
 
 // SignUp user
 const register = async (userData) => {
-    const response = await axios.post(API_URL, userData)
-
-    if (response.data) {
-        localStorage.setItem('user', JSON.stringify(response.data))
+    try {
+        const response = await axios.post(`${API_URL}/api/users/register`, userData)
+        if (response.data) {
+            localStorage.setItem('user', JSON.stringify(response.data))
+        }
+        return response.data
+    } catch (error) {
+        throw error.response?.data?.message || error.message || 'An error occurred during registration'
     }
-
-    return response.data
 }
 
 // Login user
 const login = async (userData) => { 
-    const response = await axios.post(API_URL, userData)
-    if (response.data) {
-        localStorage.setItem('user', JSON.stringify(response.data))
+    try {
+        const response = await axios.post(`${API_URL}/api/users/login`, userData)
+        if (response.data) {
+            localStorage.setItem('user', JSON.stringify(response.data))
+        }
+        return response.data
+    } catch (error) {
+        throw error.response?.data?.message || error.message || 'An error occurred during login'
     }
-    return response.data
 }
+
 
 // Logout user
 const logout = () => { 

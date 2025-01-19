@@ -1,5 +1,6 @@
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import "./slider.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Messenger from "@/components/Messenger";

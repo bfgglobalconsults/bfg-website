@@ -53,6 +53,7 @@ import Statistics from "@/components/Statistics";
 import { card_links } from "@/constants/card-constant";
 import { data } from "./data";
 import { SlideIn, SlideLeft, Transition } from "@/components/ui/Transitions";
+import SliderHeroPage from "@/components/SliderHeroPage";
 
 export default function Main() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -217,98 +218,9 @@ export default function Main() {
   return (
     <>
       <div className="py-[0px] lg:py-[0px] xl:py-[40px]">
-        <div className="bg-[#E45F11] w-full lg:flex items-center my-0 lg:my-0 xl:my-4 py-10">
-          <div className="w-full lg:w-[60%]">
-            <div className="p-[40px]">
-              <div className="border border-white inline-block rounded-md my-2">
-                <span className="flex items-center gap-2 p-2">
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="32"
-                      height="32"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path>
-                    </svg>
-                  </span>
-                  <span className="text-white">
-                    MEA Business Award: Best Start-Up & SME Consultancy Firm in
-                    West Africa, 2024
-                  </span>
-                </span>
-              </div>
-              <h3 className="font-bold text-4xl lg:text-6xl  text-white">
-                Democratising management consulting and Technology Solutions
-              </h3>
-              <p className="text-xl lg:text-2xl text-white my-2">
-                We provide research, strategy, workforce training, and software
-                development services for individuals, businesses and
-                organizations.
-              </p>
-              <div>
-                <button className="bg-white hover:bg-black hover:text-white text-[#E26015] font-semibold  py-2 px-4 rounded-lg">
-                  <Link href="/contact">Request your Custom Solution</Link>
-                </button>
-              </div>
-              {/* <div className="flex gap-3 items-center my-10">
-                <div className="flex -space-x-4 rtl:space-x-reverse p-2 border border-white rounded-full">
-                  <Image
-                    width={40}
-                    height={40}
-                    className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                    src={Picture1}
-                    alt="picture-1"
-                  />
-                  <Image
-                    width={40}
-                    height={40}
-                    className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                    src={Picture2}
-                    alt="picture-2"
-                  />
-                  <Image
-                    width={40}
-                    height={40}
-                    className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                    src={Picture3}
-                    alt="picture-3"
-                  />
-                </div>
-                <div>
-                  <p className="text-white text-lg font-semibold">
-                    430+ Happy Clients
-                  </p>
-                </div> 
-              </div> */}
-            </div>
-          </div>
-          {/* <div className="w-full lg:w-[40%] overflow-hidden py-10">
-           
-            <Image
-              src={NewBanner}
-              alt="banner"
-              className="w-full h-full object-fit"
-            />
-          
-
-          </div> */}
-          <div className="w-full lg:w-[40%] overflow-hidden py-10">
-            <motion.div
-              animate={{
-                rotate: [0, 200, 400, 600, 800, 800, 600, 400, 200, 0],
-              }}
-              transition={{ repeat: Infinity, duration: 50 }}
-            >
-              <Image
-                src={Banner}
-                alt="banner"
-                className="w-full h-full object-fit"
-              />
-            </motion.div>
-          </div>
-        </div>
+        {/* slider hero */}
+        <SliderHeroPage />
+        {/* slider hero end */}
         <div className="bg-[#faf8f8bd] p-[40px]">
           <div className="w-full flex flex-col lg:flex-row gap-1 items-center">
             <div className="w-[100%] lg:w-[30%]">
