@@ -13,6 +13,7 @@ import MainPage from "./MainPage";
 import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import Loading from "@/components/loader/page";
+import { ReduxProvider } from "@/redux/provider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -48,9 +49,11 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
         <Suspense fallback={<Loading />}>
+          <ReduxProvider>
           <Toaster position="top-right" />
 
-          <MainPage>{children}</MainPage>
+            <MainPage>{children}</MainPage>
+            </ReduxProvider>
         </Suspense>
       </body>
     </html>
