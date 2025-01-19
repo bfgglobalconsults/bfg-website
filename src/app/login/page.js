@@ -35,7 +35,7 @@ const Login = () => {
     <>
       <div className="bg-[#E26015]">
         <div className="h-screen flex justify-center items-center py-[40px]">
-          <div className="w-[50%] bg-white border rounded-lg border-red-500">
+          <div className="w-[100%] lg:w-[50%] bg-white border rounded-lg border-red-500">
             <div className="sm:mx-auto sm:w-full sm:max-w-sm mt-[50px]">
               <div className="w-[100px] h-[90px] mx-auto">
                 <Image

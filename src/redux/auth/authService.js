@@ -1,43 +1,49 @@
 import axios from 'axios'
 
-const API_URL = 'https://bfg-website-api.onrender.com';
+const API_URL = '/api/users/'
 
-// SignUp user
+// Register user
 const register = async (userData) => {
-    try {
-        const response = await axios.post(`${API_URL}/api/users/register`, userData)
-        if (response.data) {
-            localStorage.setItem('user', JSON.stringify(response.data))
-        }
-        return response.data
-    } catch (error) {
-        throw error.response?.data?.message || error.message || 'An error occurred during registration'
-    }
+    const response = await axios.post(API_URL + 'register', userData)
+    
+    // Response should contain both user data and token
+    // Example response.data = { user: {...}, token: "jwt_token_here" }
+    return response.data
 }
 
 // Login user
-const login = async (userData) => { 
+const login = async (userData) => {
+    const response = await axios.post(API_URL + 'login', userData)
+    
+    // Response should contain both user data and token
+    // Example response.data = { user: {...}, token: "jwt_token_here" }
+    return response.data
+}
+
+// Logout user
+const logout = async () => {
+    // If you need to notify the backend about logout
     try {
-        const response = await axios.post(`${API_URL}/api/users/login`, userData)
-        if (response.data) {
-            localStorage.setItem('user', JSON.stringify(response.data))
-        }
-        return response.data
+        await axios.post(API_URL + 'logout')
     } catch (error) {
-        throw error.response?.data?.message || error.message || 'An error occurred during login'
+        console.error('Logout error:', error)
     }
 }
 
-
-// Logout user
-const logout = () => { 
-    localStorage.removeItem('user')
+// Helper function to set auth token in axios headers
+const setAuthToken = (token) => {
+    if (token) {
+        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+    } else {
+        delete axios.defaults.headers.common['Authorization']
+    }
 }
 
 const authService = {
     register,
+    login,
     logout,
-    login
+    setAuthToken
 }
 
-export default authService;
+export default authService
