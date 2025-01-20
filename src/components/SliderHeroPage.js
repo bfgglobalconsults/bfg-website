@@ -19,7 +19,7 @@ const SliderHeroPage = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-      autoplaySpeed: 7000,
+      autoplaySpeed: 15000,
       pauseOnHover: false,
         cssEase: "linear"
     }
@@ -28,10 +28,10 @@ const SliderHeroPage = () => {
     <div className="overflow-hidden max-w-[100vw]">
       <Slider {...settings}>
           <div>
-              <HeroSection1 />
+              <HeroSection2 />
           </div>
           <div>
-               <HeroSection2 />
+               <HeroSection1 />
           </div>
       </Slider>
       </div>

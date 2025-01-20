@@ -130,6 +130,11 @@ const FixedHeader = () => {
                     )}
                   </ul>
                 </div>
+                 <div>
+                <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
+                  <Link href="/contact">Discuss Your Project</Link>
+                </button>
+              </div>
                 <div>
                   {navigation_links.map(({ id, label, component }) => (
                     <div
@@ -204,7 +209,12 @@ const FixedHeader = () => {
                       )
                     )}
                   </ul>
-                </div>
+                  </div>
+                   <div>
+                <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
+                  <Link href="/contact">Discuss Your Project</Link>
+                </button>
+              </div>
                 <div>
                   {navigation_links.map(({ id, label, component }) => (
                     <div
