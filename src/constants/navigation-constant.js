@@ -54,7 +54,7 @@ export const navigation_links = [
   },
   {
     id: 3,
-    label: "Saas Products",
+    label: "SaaS Products",
     link: "product",
     component: <ProductComponent />,
     componentName:"product ",

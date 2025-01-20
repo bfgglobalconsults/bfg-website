@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 
 const ITEMS_PER_VIEW = 3
-const ITEM_HEIGHT = 200 // in pixels
+const ITEM_HEIGHT = 250 // in pixels
 
 const AnimatedItems = ({slides}) => {
   const [currentIndex, setCurrentIndex] = useState(0)
