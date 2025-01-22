@@ -40,6 +40,7 @@ import CaseImage2 from "../../public/assets/caseimage2.png";
 import CaseImage3 from "../../public/assets/caseimage3.png";
 
 import STTravel from "../../public/assets/News-ST.jpg";
+import AwardNews from "../../public/assets/bfg-award.jpg";
 import FirstNews from "../../public/assets/first-news.png";
 import SecondNews from "../../public/assets/second-news.png";
 
@@ -694,9 +695,9 @@ export default function Main() {
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[50%] shadow-lg">
               <div className="p-4 relative h-[300px]">
                 <Image
-                  src={SecondNews}
+                  src={AwardNews}
                   alt="first-news"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full rounded-lg object-cover"
                 />
                 <div className="absolute bottom-10 left-10">
                   <div className="flex gap-1 p-2 bg-white rounded-3xl">

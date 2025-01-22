@@ -49,9 +49,8 @@ const page = () => {
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Clients
                   </span>
-                  <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">Collaborating with Forward-Thinking Clients</h3>
+                  <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl my-4">Collaborating with Forward-Thinking Clients</h3>
           
-          <hr/>
           <div className="my-10">
             <OurStand />
             </div>

@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "../../../../public/assets/news-banner.png";
 import News1 from "../../../../public/assets/News-ST.jpg";
 import News2 from "../../../../public/assets/news2.png";
+import AwardNews from "../../../../public/assets/bfg-award.jpg";
 import Slides from "@/components/Slides";
 import Link from "next/link";
 
@@ -76,7 +77,7 @@ const page = () => {
               <div className="w-[100%] lg:w-[50%] p-10 border border-[#F7F7F8] rounded-3xl">
                 <div className="h-[200px] lg:h-[350px]">
                   <Image
-                    src={News2}
+                    src={AwardNews}
                     alt="news1"
                     className="w-full h-full object-cover rounded-3xl"
                   />

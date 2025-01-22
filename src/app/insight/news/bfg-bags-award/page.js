@@ -2,8 +2,8 @@ import Slides from "@/components/Slides";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FirstNews from "../../../../../public/assets/bfg-award.jpg";
-
+import FirstNews from "../../../../../public/assets/bfg-awards.jpg";
+import AwardCert from "../../../../../public/assets/award-cert.jpg";
 const page = () => {
   return (
     <>
@@ -31,7 +31,7 @@ const page = () => {
             BFG consults bags UK award for research
           </h3>
         </div>
-        <div className="relative w-full h-[200px] lg:h-[500px] bg-cover bg-center flex justify-center items-center">
+        <div className="relative w-full h-[300px] lg:h-[500px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={FirstNews}
             alt="about-banner"
@@ -114,6 +114,9 @@ const page = () => {
                 through a diverse spectrum of consulting practices.
               </p>
               <br />
+              <div className="flex justify-center items-center my-4 ">
+                <Image src={AwardCert} alt="award-cert" className="w-full h-full object-cover" />
+              </div>
               <p className="text-lg text-[#999]">
                 The award underscores the company’s commitment to advancing
                 marketplace impact across human networks and business sectors.
