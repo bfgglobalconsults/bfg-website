@@ -1,10 +1,11 @@
 import axios from 'axios'
 
-const API_URL = '/api/users/'
+const API_URL = '/api/v1/users/'
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
 // Register user
 const register = async (userData) => {
-    const response = await axios.post(API_URL + 'register', userData)
+    const response = await axios.post(BASE_URL+API_URL + 'register', userData)
     
     // Response should contain both user data and token
     // Example response.data = { user: {...}, token: "jwt_token_here" }
@@ -13,7 +14,7 @@ const register = async (userData) => {
 
 // Login user
 const login = async (userData) => {
-    const response = await axios.post(API_URL + 'login', userData)
+    const response = await axios.post(BASE_URL + API_URL + 'loginUser', userData)
     
     // Response should contain both user data and token
     // Example response.data = { user: {...}, token: "jwt_token_here" }

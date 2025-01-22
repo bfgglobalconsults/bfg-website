@@ -44,6 +44,8 @@ const updateLocalAccessToken = (token) => {
     try {
         const accessTokenDecoded = jwtDecode(token.accessToken)
         const refreshTokenDecoded = jwtDecode(token.refreshToken)
+        const accessTokenExpiry = new Date(accessTokenDecoded.exp * 1000)
+        const refreshTokenExpiry = new Date(refreshTokenDecoded.exp * 1000)
 
         const accessTokenCookieOptions = {
             httpOnly: false,
@@ -52,10 +54,21 @@ const updateLocalAccessToken = (token) => {
             secure: process.env.NEXT_PUBLIC_NODE_ENV == "production",
         }
 
-        Cookie.set("accessToken", token.accessToken, { expires: new Date(accessTokenDecoded.exp * 1000) });
-        Cookie.set("refreshToken", token.refreshToken, { expires: new Date(refreshTokenDecoded.exp * 1000) });
-    } catch (error) {
-        console.log(error);
+        const refreshTokenCookieOptions = {
+            httpOnly: false,
+            //   expires: refreshTokenExpiry,
+            path: "/",
+            sameSite: "strict",
+            secure: process.env.NEXT_PUBLIC_NODE_ENV === "production",
+        };
+
+        Cookie.set("accessToken", token.accessToken, accessTokenCokieOptions);
+        Cookie.set("refreshToken", token.refreshToken, refreshTokenCokieOptions);
+
+       
+    }
+    catch (error) { 
+        return false;
     }
 }
 
