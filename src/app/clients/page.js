@@ -8,6 +8,40 @@ import Avatar from "../../../public/assets/new-avatar.png";
 import Banner from ".././../../public/assets/teams-banner.png";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
+import DMJTravel from "../../../public/assets/dmj.png";
+import STTravels from "../../../public/assets/st-travel.jpg";
+import DavidPresage from "../../../public/assets/david-presage.png";
+import Ampersand from "../../../public/assets/ampersand.png";
+import Sensang from "../../../public/assets/sensang.png";
+
+
+const ClientData = [
+  {
+    id: 1,
+    image: DMJTravel,
+    content: "",
+  },
+  {
+    id: 2,
+    image: STTravels,
+    content: "",
+  },
+  {
+    id: 3,
+    image: DavidPresage,
+    content: "",
+  },
+  {
+    id: 4,
+    image: Ampersand,
+    content: "",
+  },
+  {
+    id: 5,
+    image: Sensang,
+    content: "",
+  }
+]
 
 const page = () => {
   return (
@@ -21,7 +55,8 @@ const page = () => {
             Meet Our Clients.
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-            Delivering tailored solutions to empower organizations, drive growth, and fuel innovation across diverse industries.
+            Delivering tailored solutions to empower organizations, drive
+            growth, and fuel innovation across diverse industries.
           </p>
         </div>
 
@@ -48,12 +83,30 @@ const page = () => {
         <div>
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Clients
-                  </span>
-                  <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl my-4">Collaborating with Forward-Thinking Clients</h3>
-          
+          </span>
+          <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl my-4">
+            Collaborating with Forward-Thinking Clients
+          </h3>
+          <div className="w-full flex gap-4">
+            <div className="w-[25%] border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md p-4">
+              <div className="w-[120px] h-[120px] flex justify-center items-center mx-auto">
+                <Image
+                  src={DMJTravel}
+                  alt=""
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <p className="text-[#999]">
+                Ampersand collaborates with BFG to streamline their consulting
+                services and deliver impactful solutions. Through our
+                partnership, BFG has enabled Ampersand to refine their service
+                offerings and enhance their business strategies
+              </p>
+            </div>
+          </div>
           <div className="my-10">
             <OurStand />
-            </div>
+          </div>
         </div>
       </div>
       {/* old view */}

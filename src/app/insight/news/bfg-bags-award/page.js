@@ -67,9 +67,9 @@ const page = () => {
               <p className="text-lg text-[#999]">
                 Festus Bello, the Founder and Managing Partner at BFG Consults,
                 expressed gratitude for this esteemed recognition: “Last week,
-                we were honoured to receive the Management Consulting Award for
-                Best International Business Research & Analytics Specialists
-                2023–UK from Wealth and Finance International, a distinguished
+                we were honoured to receive the Management Consulting Award for 
+                <Link className="text-black font-semibold" href="https://wealthandfinance.digital/winners/bfg-global-consulting-services/" target="_blank" > Best International Business Research & Analytics Specialists
+                2023–UK from Wealth and Finance International</Link>, a distinguished
                 name in international finance and public relations in the UK.{" "}
               </p>
               <br />
