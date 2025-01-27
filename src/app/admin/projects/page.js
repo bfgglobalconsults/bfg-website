@@ -113,10 +113,7 @@ const page = () => {
             <div>
               <h3 className="text-lg text-black font-semibold">Projects</h3>
               </div>
-            
-            {/* <label for="table-search" className="sr-only">
-              Search
-            </label> */}
+         
             <div className="relative">
               <div className="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg

@@ -99,6 +99,7 @@ const DailyProject = () => {
                               className="accent-[#E26015]"
                               checked={project.checked}
                               disabled={!project.checked}
+                              readOnly
                             />
                           </p>
                           <p className="text-sm">{project.name}</p>
@@ -135,6 +136,7 @@ const DailyProject = () => {
                               className="accent-[#E26015]"
                               checked={project.checked}
                               disabled={!project.checked}
+                              readOnly
                             />
                           </p>
                           <p className="text-sm">{project.name}</p>
@@ -171,6 +173,7 @@ const DailyProject = () => {
                               className="accent-[#E26015]"
                               checked={project.checked}
                               disabled={!project.checked}
+                              readOnly
                             />
                           </p>
                           <p className="text-sm">{project.name}</p>

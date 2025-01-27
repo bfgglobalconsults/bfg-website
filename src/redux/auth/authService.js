@@ -1,50 +1,41 @@
-import axios from 'axios'
+"use client"
+
+import { fetchBaseQuery } from "@reduxjs/toolkit/query";
+import { apiSlice } from "../api";
 
 const API_URL = '/api/v1/users/'
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
-// Register user
-const register = async (userData) => {
-    const response = await axios.post(BASE_URL+API_URL + 'register', userData)
-    
-    // Response should contain both user data and token
-    // Example response.data = { user: {...}, token: "jwt_token_here" }
-    return response.data
-}
+export const authApiSlice = apiSlice.injectEndpoints({
+    baseEndPoint: fetchBaseQuery({ baseUrl: BASE_URL, credentials: 'include' }),
+    endpoints: builder => ({
+        login: builder.mutation({
+            query: credentials => ({
+                url: API_URL + 'loginUser',
+                method: 'POST',
+                body: {...credentials}
+            })
+        })
+    })
+})
 
-// Login user
-const login = async (userData) => {
-    const response = await axios.post(BASE_URL + API_URL + 'loginUser', userData)
-    
-    // Response should contain both user data and token
-    // Example response.data = { user: {...}, token: "jwt_token_here" }
-    return response.data
-}
+export const userCreateApiSlice = apiSlice.injectEndpoints({
+    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
+    endpoints: builder => ({
+        createUser: builder.mutation({
+            query: credentials => ({
+                url: API_URL,
+                method: 'POST',
+                body: {...credentials}
+            })
+        }),
+    })
+})
 
-// Logout user
-const logout = async () => {
-    // If you need to notify the backend about logout
-    try {
-        await axios.post(API_URL + 'logout')
-    } catch (error) {
-        console.error('Logout error:', error)
-    }
-}
+export const {
+    useCreateUserMutation
+} = userCreateApiSlice
 
-// Helper function to set auth token in axios headers
-const setAuthToken = (token) => {
-    if (token) {
-        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
-    } else {
-        delete axios.defaults.headers.common['Authorization']
-    }
-}
-
-const authService = {
-    register,
-    login,
-    logout,
-    setAuthToken
-}
-
-export default authService
+export const {
+    useLoginMutation
+} = authApiSlice

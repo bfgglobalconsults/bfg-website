@@ -9,37 +9,54 @@ import Banner from ".././../../public/assets/teams-banner.png";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
 import DMJTravel from "../../../public/assets/dmj.png";
-import STTravels from "../../../public/assets/st-travel.jpg";
-import DavidPresage from "../../../public/assets/david-presage.png";
+import STTravels from "../../../public/assets/ST-TRAVELS.png";
+import DavidPrestige from "../../../public/assets/david-presage.png";
 import Ampersand from "../../../public/assets/ampersand.png";
 import Sensang from "../../../public/assets/sensang.png";
+import Gigs from "../../../public/assets/gigs-ltd.png";
+import Alubarika from "../../../public/assets/alubarika.png";
+import Twenty from "../../../public/assets/12twenty.jpg";
 
 
 const ClientData = [
   {
     id: 1,
     image: DMJTravel,
-    content: "",
+    content: "DMJ Travels and Tours is a premier travel and tourism company dedicated to delivering exceptional travel experiences to clients around the globe. ",
   },
   {
     id: 2,
     image: STTravels,
-    content: "",
+    content: "ST Travels and Consulting is a trusted name in the travel and tourism industry, dedicated to helping individuals and businesses navigate the world with ease and confidence.",
   },
   {
     id: 3,
-    image: DavidPresage,
-    content: "",
+    image: DavidPrestige,
+    content: "David Prestige is a forward-thinking law firm dedicated to delivering exceptional legal representation rooted in professionalism, ethics, and an unwavering commitment to client success.",
   },
   {
     id: 4,
     image: Ampersand,
-    content: "",
+    content: "Ampersand is one of Nigeria’s fast-rising Entrepreneurship Development Service Provider Organizations (EDSPO), dedicated to empowering businesses and individuals to thrive in today’s competitive marketplace.",
   },
   {
     id: 5,
     image: Sensang,
-    content: "",
+    content: "Sensang Construction  mission is to provide cutting-edge solutions that meet the evolving needs of urbanization. The firm’s expertise spans a wide range of services, including architectural design, civil engineering, and comprehensive construction management.",
+  },{
+    id: 6,
+    image: Gigs,
+    content: "Gladwill Integrated Global Services Ltd is a premier international outsource management consulting firm with core expertise in international education travels, legal relocation advisory, and consultation services.",
+  },
+  {
+    id: 7,
+    image: Alubarika,
+    content: "Alubarika Construction serves as a trusted main contractor for small to medium-sized projects, delivering exceptional results across industrial and commercial sectors."
+  },
+  {
+    id: 8,
+    image: Twenty,
+    content: "12twenty is passionate about redefining the real estate experience by offering unparalleled service and tailored opportunities for clients searching for the perfect residential property, exploring commercial investments, or securing premium land.",
   }
 ]
 
@@ -87,22 +104,19 @@ const page = () => {
           <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl my-4">
             Collaborating with Forward-Thinking Clients
           </h3>
-          <div className="w-full flex gap-4">
-            <div className="w-[25%] border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md p-4">
-              <div className="w-[120px] h-[120px] flex justify-center items-center mx-auto">
-                <Image
-                  src={DMJTravel}
-                  alt=""
-                  className="object-cover w-full h-full"
-                />
+          <div className="w-full flex justify-center flex-wrap gap-10">
+            {ClientData.map((client) => (
+              <div key={client.id} className="w-[100%] md:w-[50%] lg:w-[25%] border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md p-4">
+                <div className="w-[150px] h-[120px] flex justify-center items-center mx-auto">
+                  <Image
+                    src={client.image}
+                    alt=""
+                    className="object-fit w-full h-full"
+                  />
+                </div>
+                <p className="text-[#999] p-3 mx-auto">{client.content}</p>
               </div>
-              <p className="text-[#999]">
-                Ampersand collaborates with BFG to streamline their consulting
-                services and deliver impactful solutions. Through our
-                partnership, BFG has enabled Ampersand to refine their service
-                offerings and enhance their business strategies
-              </p>
-            </div>
+            ))}
           </div>
           <div className="my-10">
             <OurStand />
