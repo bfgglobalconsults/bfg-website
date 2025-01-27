@@ -1,34 +1,47 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "@/redux/auth/authSlice";
+import { login, setCredentials } from "@/redux/auth/authSlice";
 import Image from "next/image";
 import React from "react";
 import Logo from "../../../public/assets/BFG-5.png";
+import { useRouter } from "next/navigation";
+import { useLoginMutation } from "@/redux/auth/authService";
+import toast from "react-hot-toast";
+import Spinner from "@/components/Spinner";
 
 const Login = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
+  const { push } = useRouter();
+  const [login, { isLoading, error, success, isError }] = useLoginMutation({
+    credentials: "include",
   });
   const dispatch = useDispatch();
+  const emailRef = useRef();
+  const passwordRef = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const email = emailRef?.current?.value;
+    const password = passwordRef?.current?.value;
+
     try {
-      await dispatch(login(formData)).unwrap();
-      // Handle successful login (e.g., redirect)
+      const response = await login({ email, password }).unwrap();
+
+      if (response?.data?.accessToken) {
+        dispatch(setCredentials({ response }));
+        console.log("Login successful:", response);
+        toast.success("Successfully logged in");
+        push("/admin");
+      } else {
+        console.error("Login failed:", response?.message);
+              toast.error(`${error.message}`);
+
+      }
     } catch (error) {
       // Handle login error
-      console.error('Login failed:', error);
+      console.log("Login failed:", error);
     }
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
   };
 
   return (
@@ -50,7 +63,7 @@ const Login = () => {
             </div>
 
             <div className="bg-[#127DC014] rounded-md p-[20px] mt-10 mb-10 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form action="#" method="POST" className="space-y-6" onSubmit={handleSubmit}>
+              <form className="space-y-6">
                 <div>
                   <label
                     htmlFor="email"
@@ -78,7 +91,7 @@ const Login = () => {
                       required
                       autoComplete="email"
                       className="block w-full rounded-md border-0 py-1.5 ps-10 p-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm/6"
-                      onChange={handleChange}
+                      ref={emailRef}
                     />
                   </div>
                 </div>
@@ -112,11 +125,11 @@ const Login = () => {
                       placeholder="Password"
                       autoComplete="current-password"
                       className="block w-full rounded-md border-0 py-1.5 ps-10 p-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm/6"
-                      onChange={handleChange}
+                      ref={passwordRef}
                     />
                   </div>
                 </div>
-                <div class="flex items-start mb-5">
+                <div className="flex items-start mb-5">
                   <div className="flex items-center h-5">
                     <input
                       id="terms"
@@ -124,10 +137,11 @@ const Login = () => {
                       value=""
                       className="w-4 h-4 accent-[#E26015] border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                       required
+
                     />
                   </div>
                   <label
-                    for="terms"
+                    htmlFor="terms"
                     className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Remember me
@@ -136,10 +150,14 @@ const Login = () => {
 
                 <div>
                   <button
-                    type="submit"
+                    type="button"
+                    disabled={isLoading}
+                    onClick={(e) => handleSubmit(e)}
                     className="flex w-full justify-center rounded-md border bg-[#E26015] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26015]"
                   >
-                    Log in
+                    {isLoading ?  (
+                     <Spinner />
+                    ):("Log in")}
                   </button>
                 </div>
               </form>
