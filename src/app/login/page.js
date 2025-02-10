@@ -35,12 +35,13 @@ const Login = () => {
         push("/admin");
       } else {
         console.error("Login failed:", response?.message);
-              toast.error(`${error.message}`);
 
       }
     } catch (error) {
       // Handle login error
-      console.log("Login failed:", error);
+      console.log("Logined failed:", error);
+                    toast.error(`${error.data?.message}`);
+
     }
   };
 

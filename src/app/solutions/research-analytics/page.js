@@ -11,42 +11,55 @@ import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
 
 import Accordion from "@/components/Accordion";
+import ResearchPortfolio from "../../../../public/assets/research-portfolio.jpg";
+import Kenneth from "../../../../public/assets/kenneth.png";
+import Avatar from "../../../../public/assets/avatar.png";
+import Optimize from "../../../../public/assets/optimize-image.png";
+import MeasureImg from "../../../../public/assets/measure-image.png";
+import ExperienceImg from "../../../../public/assets/experience-image.png";
+import PredictiveImg from "../../../../public/assets/predective-image.png";
+import ImpactImg from "../../../../public/assets/impact-image.png";
+import AppraisalImg from "../../../../public/assets/appraisal-image.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
   const researchSlides = [
-      {
-        title: "Case Study Analysis",
-        content:
-          "Bridging the gap between theory & practice, our research & analytics service offers insights that combine real-life scenarios, academic knowledge, & stimulation to deliver actionable insights.",
-      },
-      {
-        title: "UX Research & Insights",
-        content:
-          "Unlock user-centric solutions with our UX research expertise. Get actionable insights to inform design decisions, enhance user engagement, and drive business growth.",
-      },
-      {
-        title: "Business Intelligence Research",
-        content:
-          "Unlock the power of data-driven insights with our business research expertise. We combine rigorous methodologies, industry expertise, & analytical capabilities to deliver actionable findings that inform strategic decisions & drive business success.",
-      },
-      {
-        title: "Market Feasibility & Analysis",
-        content:
-          "Get real-time data to fuel your business plan, uncover new market opportunities, & drive clients-valued solutions. Our research expertise helps you stay ahead of the competition & make informed decisions.",
-     },
-     {
-       title: "Monitoring & Evaluation",
-       content: "Ensure your projects deliver meaningful results with our monitoring & evaluation expertise. We help you set clear goals, track progress, & make data-driven decisions to maximize impact & achieve success."
-    }, {
-       title: "Product Testing",
-      content: "Put your products to the test with our rigorous testing services. We simulate real-world scenarios, identify areas for improvement, & ensure your products meet the highest st&ards of quality, reliability, & performance."
+    {
+      title: "Case Study Analysis",
+      content:
+        "Bridging the gap between theory & practice, our research & analytics service offers insights that combine real-life scenarios, academic knowledge, & stimulation to deliver actionable insights.",
+    },
+    {
+      title: "UX Research & Insights",
+      content:
+        "Unlock user-centric solutions with our UX research expertise. Get actionable insights to inform design decisions, enhance user engagement, and drive business growth.",
+    },
+    {
+      title: "Business Intelligence Research",
+      content:
+        "Unlock the power of data-driven insights with our business research expertise. We combine rigorous methodologies, industry expertise, & analytical capabilities to deliver actionable findings that inform strategic decisions & drive business success.",
+    },
+    {
+      title: "Market Feasibility & Analysis",
+      content:
+        "Get real-time data to fuel your business plan, uncover new market opportunities, & drive clients-valued solutions. Our research expertise helps you stay ahead of the competition & make informed decisions.",
+    },
+    {
+      title: "Monitoring & Evaluation",
+      content:
+        "Ensure your projects deliver meaningful results with our monitoring & evaluation expertise. We help you set clear goals, track progress, & make data-driven decisions to maximize impact & achieve success.",
+    },
+    {
+      title: "Product Testing",
+      content:
+        "Put your products to the test with our rigorous testing services. We simulate real-world scenarios, identify areas for improvement, & ensure your products meet the highest st&ards of quality, reliability, & performance.",
     },
     {
       title: "Consumer Needs & Assessment",
-      content: "Stay ahead of the curve with real-time insights into clients needs & satisfaction. Our research & analytics services help you predict, manage, & delight - shaping your services for future success."
-     }
-    ];
+      content:
+        "Stay ahead of the curve with real-time insights into clients needs & satisfaction. Our research & analytics services help you predict, manage, & delight - shaping your services for future success.",
+    },
+  ];
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -134,7 +147,7 @@ const page = () => {
                 value.
               </p>
             </div>
-            <div className="w-full flex flex-col lg:flex-row gap-10">
+            {/* <div className="w-full flex flex-col lg:flex-row gap-10">
               <div className="w-[100%] lg:w-[30%] h-[280px]">
                 <Image
                   src={ServiceImage1}
@@ -149,23 +162,17 @@ const page = () => {
                   className="w-full h-full"
                 />
               </div>
-            </div>
-            <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="rgba(217,217,217,1)"
-                    >
-                      <path d="M5 3V19H21V21H3V3H5ZM19.9393 5.93934L22.0607 8.06066L16 14.1213L13 11.121L9.06066 15.0607L6.93934 12.9393L13 6.87868L16 9.879L19.9393 5.93934Z"></path>
-                    </svg>{" "}
-                  </div>
+            </div> */}
+            <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-6">
+              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                    src={Optimize}
+                    alt="optimize-img"
+                    className="w-full h-full object-fit"
+                  />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%] ">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Optimize Performance with Data-Driven Strategies
                   </h4>
@@ -179,21 +186,15 @@ const page = () => {
                 </div>
               </div>
               {/* second item */}
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="rgba(208,229,242,1)"
-                    >
-                      <path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM11 7V17H13V7H11ZM15 11V17H17V11H15ZM7 13V17H9V13H7Z"></path>
-                    </svg>
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                    src={MeasureImg}
+                    alt="measure-img"
+                    className="w-full h-full object-fit"
+                  />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Measure Production Agility{" "}
                   </h4>
@@ -207,21 +208,15 @@ const page = () => {
                 </div>
               </div>
               {/* third item */}
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="rgba(217,217,217,1)"
-                    >
-                      <path d="M2.5 7C2.5 9.20914 4.29086 11 6.5 11C8.70914 11 10.5 9.20914 10.5 7C10.5 4.79086 8.70914 3 6.5 3C4.29086 3 2.5 4.79086 2.5 7ZM2 21V16.5C2 14.0147 4.01472 12 6.5 12C8.98528 12 11 14.0147 11 16.5V21H2ZM17.5 11C15.2909 11 13.5 9.20914 13.5 7C13.5 4.79086 15.2909 3 17.5 3C19.7091 3 21.5 4.79086 21.5 7C21.5 9.20914 19.7091 11 17.5 11ZM13 21V16.5C13 14.0147 15.0147 12 17.5 12C19.9853 12 22 14.0147 22 16.5V21H13Z"></path>
-                    </svg>{" "}
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                    src={ExperienceImg}
+                    alt="exp-img"
+                    className="w-full h-full object-fit"
+                  />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Measure experience with Clients{" "}
                   </h4>
@@ -234,21 +229,15 @@ const page = () => {
                 </div>
               </div>
               {/* fourth item */}
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="rgba(217,217,217,1)"
-                    >
-                      <path d="M17 15.2454V22.1169C17 22.393 16.7761 22.617 16.5 22.617C16.4094 22.617 16.3205 22.5923 16.2428 22.5457L12 20L7.75725 22.5457C7.52046 22.6877 7.21333 22.6109 7.07125 22.3742C7.02463 22.2964 7 22.2075 7 22.1169V15.2454C5.17107 13.7793 4 11.5264 4 9C4 4.58172 7.58172 1 12 1C16.4183 1 20 4.58172 20 9C20 11.5264 18.8289 13.7793 17 15.2454ZM12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15ZM12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9C16 11.2091 14.2091 13 12 13Z"></path>
-                    </svg>{" "}
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                    src={AppraisalImg}
+                    alt="appraisal-img"
+                    className="w-full h-full object-fit"
+                  />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Employee Satisfaction & Performance Appraisal
                   </h4>
@@ -260,6 +249,138 @@ const page = () => {
                     strengthen the operational connection of your organisation.{" "}
                   </p>{" "}
                 </div>
+              </div>
+              {/* fifth item */}
+              <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                    src={PredictiveImg}
+                    alt="predective-img"
+                    className="w-full h-full object-fit"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Unlock Growth with Predictive Analytics
+                  </h4>
+                  <p className="text-[#999]">
+                    Leverage advanced predictive models to forecast trends,
+                    customer behavior, and market opportunities, enabling
+                    proactive business strategies.{" "}
+                  </p>{" "}
+                </div>
+              </div>
+              {/* sixth item */}
+              <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                    src={ImpactImg}
+                    alt="impact-img"
+                    className="w-full h-full object-fit"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Drive Business Impact Through Competitive Intelligence
+                  </h4>
+                  <p className="text-[#999]">
+                    Gain a strategic edge with in-depth competitor analysis,
+                    market positioning insights, and benchmarking to refine
+                    business goals and strategies.
+                  </p>{" "}
+                </div>
+              </div>
+            </div>
+            {/* service team */}
+            <div className="my-8">
+              <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+                Service Team
+              </span>
+              <div>
+                <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                  Meet Our Research & Analytics Team{" "}
+                </h3>
+                <p className="text-[#999] text-xl my-2">
+                  Discover the experts behind our solutions. Our dedicated team
+                  brings a wealth of experience and a passion for driving
+                  success, ensuring we meet our clients’ unique challenges with
+                  precision and insight.
+                </p>
+              </div>
+              {/* team pictures */}
+              <div className="w-full flex my-4">
+                <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
+                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                    <Image
+                      src={Kenneth}
+                      alt="md"
+                      className="w-full h-full object-fit"
+                    />
+                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                      <h3 className="font-semibold text-lg">
+                        Kenneth Idanwekhai
+                      </h3>
+                      <p className="text-[#E45F11] font-semibold">
+                        Lead, Research & Analytics
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                    <Image
+                      src={Avatar}
+                      alt="md"
+                      className="w-full h-full object-fit"
+                    />
+                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                      <h3 className="font-semibold text-lg">Simon Aba</h3>
+                      <p className="text-[#E45F11] font-semibold">
+                        Associate, Research & Analytics
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* portfolio */}
+          <div className="py-[100px]">
+            <div className="flex flex-col items-center lg:flex-row gap-8">
+              <div className="w-[100%] lg:w-[40%]">
+                <Image
+                  src={ResearchPortfolio}
+                  alt="research"
+                  className="w-full h-full object-fit"
+                />
+              </div>
+              <div className="w-[100%] lg:w-[60%]">
+                <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+                  Portfolio
+                </span>
+                <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                  Empowering Progress Through Impactful Solutions
+                </h3>
+                <p className="text-[#999] text-xl my-2">
+                  Discover how BFG Global Consult transforms strategies into
+                  impactful outcomes across diverse industries. We showcase
+                  unique projects that reflect our commitment to excellence,
+                  innovation, and results-driven solutions.
+                </p>
+                <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
+                  <span className="text-white text-md font-semibold">
+                    View Our Portfolio
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                  </span>
+                </button>
               </div>
             </div>
           </div>

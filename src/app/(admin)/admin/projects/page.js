@@ -3,7 +3,7 @@ import TotalEmployeeCard from "@/components/admin-component/employee-cards/Total
 import Dropdown from "@/components/admin-component/filter-dropdown";
 import Image from "next/image";
 import React from "react";
-import Avatar from "../../../../public/assets/avatar.png";
+import Avatar from "../../../../../public/assets/avatar.png";
 import TextTrimming from "@/components/admin-component/TextTrimmer";
 import DepartmentTable from "@/components/admin-component/employee-components/DepartmentTable";
 import ClientCard from "@/components/admin-component/dashboard-cards/ClientCard";

@@ -62,8 +62,8 @@ const updateLocalAccessToken = (token) => {
             secure: process.env.NEXT_PUBLIC_NODE_ENV === "production",
         };
 
-        Cookie.set("accessToken", token.accessToken, accessTokenCokieOptions);
-        Cookie.set("refreshToken", token.refreshToken, refreshTokenCokieOptions);
+        Cookie.set("accessToken", token.accessToken, accessTokenCookieOptions);
+        Cookie.set("refreshToken", token.refreshToken, refreshTokenCookieOptions);
 
        
     }

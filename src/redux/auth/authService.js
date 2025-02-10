@@ -20,11 +20,11 @@ export const authApiSlice = apiSlice.injectEndpoints({
 })
 
 export const userCreateApiSlice = apiSlice.injectEndpoints({
-    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
+    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL, credentials: 'include' }),
     endpoints: builder => ({
         createUser: builder.mutation({
             query: credentials => ({
-                url: API_URL,
+                url: API_URL + 'register',
                 method: 'POST',
                 body: {...credentials}
             })

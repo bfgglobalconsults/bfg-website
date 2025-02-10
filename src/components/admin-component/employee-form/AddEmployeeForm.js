@@ -3,9 +3,109 @@ import PersonalInfoForm from "./forms/PersonalInfoForm";
 import JobInfoForm from "./forms/JobInfoForm";
 import EducationalBackgroundForm from "./forms/EducationalBackgroundForm";
 import DocumentsForm from "./forms/DocumentsForm";
+import { useCreateEmployeeMutation } from "@/redux/employee/employeeService";
+import toast from "react-hot-toast";
+import { useCreateUserMutation } from "@/redux/auth/authService";
+import { useDispatch } from "react-redux";
+import { setCredentials } from "@/redux/auth/authSlice";
 
 const AddEmployeeForm = ({ close }) => {
-  const [tab, settab] = useState("Step1");
+  const Dispatch = useDispatch();
+  const [tab, setTab] = useState("Step1");
+  const [formData, setFormData] = useState({
+    // Personal Info
+    fullName: "",
+    email: "",
+    password: "",
+    phoneNumber: "",
+    dateOfBirth: "",
+    gender: "",
+    maritalStatus: "",
+    nationality: "",
+    stateOfOrigin: "",
+    localGovernmentArea: "",
+    residentialAddress: "",
+    nextOfKinName: "",
+    emergencyContact: "",
+    // Job Info
+    employeeId: "",
+    jobTitle: "",
+    employmentStatus: "",
+    typeOfEmployment: "",
+    dateOfEmployment: "",
+    payScale: "",
+    department: "",
+
+    // Educational Background
+    highestQualification: "",
+    institutionsAttended: [],
+    yearOfGraduation: "",
+    relevantTrainings: [],
+
+    // Documents
+    certifications: [],
+    passportPhoto: "",
+  });
+
+  const handleFormDataChange = (stepData) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      ...stepData,
+    }));
+  };
+
+  const [createUser, { isLoading }] = useCreateUserMutation({
+    credentials: "include",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const employeeFormData = new FormData();
+
+      Object.keys(formData).forEach((key) => {
+        if (key === "passportPhoto") {
+          employeeFormData.append("passportPhoto", formData.passportPhoto);
+        } else {
+          employeeFormData.append(key, formData[key]);
+        }
+      });
+
+      const response = await createUser(employeeFormData).unwrap();
+       Dispatch(setCredentials({ response }));
+      console.log("Server response:", response);
+      toast.success("Employee added successfully");
+      close();
+    } catch (error) {
+      console.log(error);
+      toast.error(error?.data?.message || "Failed to add employee");
+    }
+  };
+
+  const steps = [
+    "Personal Information",
+    "Job Information",
+    "Educational Background",
+    "Documents",
+  ];
+
+  const getCurrentStepIndex = () => parseInt(tab.replace("Step", "")) - 1;
+
+  const handleNext = (e) => {
+    e.preventDefault();
+    const currentIndex = getCurrentStepIndex();
+    if (currentIndex < steps.length - 1) {
+      setTab(`Step${currentIndex + 2}`);
+    }
+  };
+
+  const handlePrevious = (e) => {
+    e.preventDefault();
+    const currentIndex = getCurrentStepIndex();
+    if (currentIndex > 0) {
+      setTab(`Step${currentIndex}`);
+    }
+  };
 
   return (
     <>
@@ -34,12 +134,7 @@ const AddEmployeeForm = ({ close }) => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex gap-x-6 my-4  w-full">
-            {[
-              "Personal Information",
-              "Job Information",
-              "Educational Background",
-              "Documents",
-            ].map((step, index, arr) => (
+            {steps?.map((step, index, arr) => (
               <div key={index} className="flex items-center">
                 <div
                   className={`flex gap-2 items-center cursor-pointer ${
@@ -47,7 +142,7 @@ const AddEmployeeForm = ({ close }) => {
                       ? "bg-[#E2601533] p-2 rounded-2xl"
                       : ""
                   }`}
-                  onClick={() => settab(`Step${index + 1}`)}
+                  onClick={() => setTab(`Step${index + 1}`)}
                 >
                   <p
                     className={`text-sm ${
@@ -84,18 +179,63 @@ const AddEmployeeForm = ({ close }) => {
                 {index < arr.length - 1 && (
                   <div className="w-10 h-[1px] bg-[#D9D9D9] mx-2"></div>
                 )}
-               
               </div>
             ))}
           </div>
         </div>
         <div>
-          {tab === "Step1" && <PersonalInfoForm />}
-          {tab === "Step2" && <JobInfoForm />}
-          {tab === "Step3" && <EducationalBackgroundForm />}
-          {tab === "Step4" && <DocumentsForm />}
-          
-            </div>
+          {tab === "Step1" && (
+            <PersonalInfoForm
+              formData={formData}
+              onChange={handleFormDataChange}
+            />
+          )}
+          {tab === "Step2" && (
+            <JobInfoForm formData={formData} onChange={handleFormDataChange} />
+          )}
+          {tab === "Step3" && (
+            <EducationalBackgroundForm
+              formData={formData}
+              onChange={handleFormDataChange}
+            />
+          )}
+          {tab === "Step4" && (
+            <DocumentsForm
+              formData={formData}
+              onChange={handleFormDataChange}
+            />
+          )}
+        </div>
+        <div className="flex justify-between mt-6">
+          <button
+            onClick={handlePrevious}
+            disabled={getCurrentStepIndex() === 0}
+            className={`px-4 py-2 rounded-md ${
+              getCurrentStepIndex() === 0
+                ? "bg-gray-300 cursor-not-allowed"
+                : "bg-[#E26015] text-white hover:bg-[#E26015]/90"
+            }`}
+          >
+            Prev
+          </button>
+
+          {getCurrentStepIndex() === steps.length - 1 ? (
+            <button
+              onClick={handleSubmit}
+              disabled={isLoading}
+              className="px-4 py-2 rounded-md bg-[#E26015] text-white hover:bg-[#E26015]/90"
+            >
+              {isLoading ? "Submitting..." : "Submit"}
+            </button>
+          ) : (
+            <button
+              onClick={handleNext}
+              className="px-4 py-2 rounded-md bg-[#E26015] text-white hover:bg-[#E26015]/90"
+            >
+              Next
+            </button>
+          )}
+        </div>
       </div>
     </>
   );
