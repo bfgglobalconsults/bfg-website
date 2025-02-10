@@ -16,24 +16,24 @@ export const navigation_links = [
     dropdown_item: [
       {
         id: 1,
+        label: "Technology & Software",
+        link: "/solutions/information-technology",
+      },
+      {
+        id: 2,
         label: "Research & Analytics",
         link: "/solutions/research-analytics",
       },
       {
-        id: 2,
+        id: 3,
         label: "Business Strategy & Operations",
         link: "/solutions/business-strategy",
       },
       {
-        id: 3,
+        id: 4,
         label: "Training & Development",
         link: "/solutions/training-development",
-      },
-      {
-        id: 4,
-        label: "Technology & Software",
-        link: "/solutions/information-technology",
-      },
+      }
     ],
   },
 
