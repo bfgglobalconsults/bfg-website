@@ -133,7 +133,7 @@ const page = () => {
 
           <hr />
 
-          <div className="my-8">
+          <div className="my-[80px]">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Benefits
             </span>
@@ -292,7 +292,7 @@ const page = () => {
               </div>
             </div>
             {/* service team */}
-            <div className="my-8">
+            <div className="my-[80px]">
               <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
                 Service Team
               </span>
