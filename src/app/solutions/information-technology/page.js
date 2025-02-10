@@ -6,9 +6,18 @@ import Accordion from "@/components/Accordion";
 import TopBanner from "../../../../public/assets/it-banner.jpeg";
 
 import ItImage from "../../../../public/assets/it-image.png";
+import Avatar from "../../../../public/assets/avatar.png";
 
+import TechnologyPortfolio from "../../../../public/assets/technology-portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
+import Employee from "../../../../public/assets/improve-employee.png";
+import DataSecurity from "../../../../public/assets/data-security.png";
+import DataMgt from "../../../../public/assets/data-mgt.png";
+import Flexibility from "../../../../public/assets/flexibility-scalibility.png";
+import Expertise from "../../../../public/assets/expertise-resources.png";
+import Innovation from "../../../../public/assets/innovation-development.png";
+
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 
 const page = () => {
@@ -142,7 +151,7 @@ const page = () => {
                 Unlock the full potential of your technology with our expert IT services, delivering seamless operations, enhanced performance, & sustainable solutions that drive lasting value & success.
               </p>
             </div>
-            <div className="w-full flex flex-col lg:flex-row gap-10">
+            {/* <div className="w-full flex flex-col lg:flex-row gap-10">
               <div className="w-[100%] lg:w-[30%] h-[280px]">
                 <Image
                   src={ServiceImage1}
@@ -157,23 +166,17 @@ const page = () => {
                   className="w-full h-full"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path>
-                    </svg>
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                   <Image
+                                      src={Employee}
+                                      alt="employee-img"
+                                      className="w-full h-full object-fit"
+                                    />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Improved Employee Performance
                   </h4>
@@ -186,11 +189,13 @@ const page = () => {
                 </div>
               </div>
               {/* second item */}
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(255,255,255,1)"><path d="M12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598L12 1ZM12 7C10.8954 7 10 7.89543 10 9C10 9.74025 10.4022 10.3866 10.9999 10.7324L11 15H13L13.0011 10.7318C13.5983 10.3858 14 9.73984 14 9C14 7.89543 13.1046 7 12 7Z"></path></svg>
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                                      src={DataSecurity}
+                                      alt="data-img"
+                                      className="w-full h-full object-fit"
+                                    />
                 </div>
                 <div className="w-[100%] lg:w-[80%]">
                   <h4 className="text-xl text-[#333] font-semibold">
@@ -202,13 +207,15 @@ const page = () => {
                 </div>
               </div>
               {/* third item */}
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(255,255,255,1)"><path d="M21 9.5V12.5C21 14.9853 16.9706 17 12 17C7.02944 17 3 14.9853 3 12.5V9.5C3 11.9853 7.02944 14 12 14C16.9706 14 21 11.9853 21 9.5ZM3 14.5C3 16.9853 7.02944 19 12 19C16.9706 19 21 16.9853 21 14.5V17.5C21 19.9853 16.9706 22 12 22C7.02944 22 3 19.9853 3 17.5V14.5ZM12 12C7.02944 12 3 9.98528 3 7.5C3 5.01472 7.02944 3 12 3C16.9706 3 21 5.01472 21 7.5C21 9.98528 16.9706 12 12 12Z"></path></svg>
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                   <Image
+                                      src={DataMgt}
+                                      alt="datamgt-img"
+                                      className="w-full h-full object-fit"
+                                    />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Better Data Management
                   </h4>
@@ -218,21 +225,15 @@ const page = () => {
                 </div>
               </div>
               {/* fourth item */}
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M14 14.252V22H4C4 17.5817 7.58172 14 12 14C12.6906 14 13.3608 14.0875 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM18 17V14H20V17H23V19H20V22H18V19H15V17H18Z"></path>
-                    </svg>
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                   <Image
+                                      src={Flexibility}
+                                      alt="flex-img"
+                                      className="w-full h-full object-fit"
+                                    />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Increased Flexibility & Scalability
                   </h4>
@@ -242,21 +243,15 @@ const page = () => {
                 </div>
               </div>
               {/* fifth item */}
-              <div className="w-[100%] lg:w-[45%] flex flex-col lg:flex-row items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="w-[20%]">
-                  <div className="p-8 bg-[#127DC0] rounded-2xl inline-block text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M7.94101 18C7.64391 16.7274 6.30412 15.6857 5.75395 14.9992C4.65645 13.6297 4 11.8915 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 11.8925 19.3428 13.6315 18.2443 15.0014C17.6944 15.687 16.3558 16.7276 16.059 18H7.94101ZM16 20V21C16 22.1046 15.1046 23 14 23H10C8.89543 23 8 22.1046 8 21V20H16ZM13 10.0048V6L8.5 12.0048H11V16.0048L15.5 10.0048H13Z"></path>
-                    </svg>
-                  </div>
+              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                   <Image
+                                      src={Expertise}
+                                      alt="expertise-img"
+                                      className="w-full h-full object-fit"
+                                    />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Access to Expertise & Resources
                   </h4>
@@ -266,9 +261,110 @@ const page = () => {
                 </div>
               </div>
               {/* sixth item */}
+              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                   <Image
+                                      src={Innovation}
+                                      alt="innovation-img"
+                                      className="w-full h-full object-fit"
+                                    />
+                </div>
+                <div className="w-[100%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Accelerated Innovation and Development
+                  </h4>
+                  <p className="text-[#999]">
+                    Drive rapid technological advancements through agile development practices, fostering continuous improvement and faster time-to-market for new solutions.
+                  </p>{" "}
+                </div>
+              </div>
               
             </div>
+             {/* service team */}
+                        <div className="my-8">
+                          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+                            Service Team
+                          </span>
+                          <div>
+                            <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                  Meet Our Technology & Development Team
+                </h3>
+                            <p className="text-[#999] text-xl my-2">
+                            Discover the experts behind our solutions. Our dedicated team brings a wealth of experience and a passion for driving success, ensuring we meet our clients’ unique challenges with precision and insight.
+                            </p>
+                          </div>
+                          {/* team pictures */}
+                          <div className="w-full flex my-4">
+                            <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
+                               <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                                <Image
+                                  src={Avatar}
+                                  alt="md"
+                                  className="w-full h-full object-fit"
+                                />
+                                <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                                  <h3 className="font-semibold text-lg">David U. Bradford</h3>
+                                  <p className="text-[#E45F11] font-semibold">
+                                    Lead, Technology & Software Development
+                                  </p>
+                                </div>
+                              </div>
+                              <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                                <Image
+                                  src={Avatar}
+                                  alt="md"
+                                  className="w-full h-full object-fit"
+                                />
+                                <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                                  <h3 className="font-semibold text-lg">Jesunifemi Jeremiah Oluwafemi</h3>
+                                  <p className="text-[#E45F11] font-semibold">
+                                     Product Designer / Developer
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
           </div>
+          {/* portfolio */}
+                    <div className="py-[100px]">
+                      <div className="flex flex-col items-center lg:flex-row gap-8">
+                        <div className="w-[100%] lg:w-[40%]">
+                          <Image
+                            src={TechnologyPortfolio}
+                            alt="research"
+                            className="w-full h-full object-fit"
+                          />
+                        </div>
+                        <div className="w-[100%] lg:w-[60%]">
+                          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+                            Portfolio
+                          </span>
+                          <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                  Empowering Businesses with Digital Transformation
+                </h3>
+                          <p className="text-[#999] text-xl my-2">
+                           Discover how BFG Global Consult transforms strategies into impactful outcomes across diverse industries. We showcase unique projects that reflect our commitment to excellence, innovation, and results-driven solutions.
+                          </p>
+                          <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
+                            <span className="text-white text-md font-semibold">
+                              View Our Portfolio
+                            </span>
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                fill="rgba(255,255,255,1)"
+                              >
+                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
         </div>
       </div>
     </>
