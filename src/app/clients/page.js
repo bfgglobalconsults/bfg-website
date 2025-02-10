@@ -1,10 +1,5 @@
 import React from "react";
-import ManagingDirector from "../../../public/assets/festus.png";
-import HeadGrowth from "../../../public/assets/moses.png";
-import HeadBusiness from "../../../public/assets/ifeoma.png";
-import HeadResearch from "../../../public/assets/kenneth.png";
-import CompanySecretary from "../../../public/assets/secretary.png";
-import Avatar from "../../../public/assets/new-avatar.png";
+
 import Banner from "../../../public/assets/teams-banner.png";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
