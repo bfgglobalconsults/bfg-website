@@ -332,7 +332,22 @@ const page = () => {
                       className="w-full h-full object-fit"
                     />
                     <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">Simon Aba</h3>
+                      <h3 className="font-semibold text-lg">Simon Adeh</h3>
+                      <p className="text-[#E45F11] font-semibold">
+                        Data Analyst
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                    <Image
+                      src={Avatar}
+                      alt="md"
+                      className="w-full h-full object-fit"
+                    />
+                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                      <h3 className="font-semibold text-lg">
+                        Emmanuel Akinbade
+                      </h3>
                       <p className="text-[#E45F11] font-semibold">
                         Associate, Research & Analytics
                       </p>

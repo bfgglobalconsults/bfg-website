@@ -5,6 +5,7 @@ import Image from "next/image";
 import TopBanner from "../../../../public/assets/business-strategy-banner.jpg";
 
 import BusinessImage from "../../../../public/assets/business-image.png";
+import Avatar from "../../../../public/assets/avatar.png";
 import Ifeoma from "../../../../public/assets/ifeoma.png";
 import Efficiency from "../../../../public/assets/efficiency.png";
 import Cost from "../../../../public/assets/cost.png";
@@ -58,7 +59,7 @@ const page = () => {
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Business Strategy & Operations
+            Strategy & Operations Transformation
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
             Streamline your operations, optimize your strategy, & achieve your
@@ -307,6 +308,34 @@ const page = () => {
                       </p>
                     </div>
                   </div>
+                  {/* second person */}
+                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                    <Image
+                      src={Avatar}
+                      alt="md"
+                      className="w-full h-full object-fit"
+                    />
+                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                      <h3 className="font-semibold text-lg">Kate Abengowe</h3>
+                      <p className="text-[#E45F11] font-semibold">
+                        Associate, Strategy and Operations Transformation
+                      </p>
+                    </div>
+                  </div>
+                  {/* third part */}
+                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                    <Image
+                      src={Avatar}
+                      alt="md"
+                      className="w-full h-full object-fit"
+                    />
+                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                      <h3 className="font-semibold text-lg">John Ogbe</h3>
+                      <p className="text-[#E45F11] font-semibold">
+                        Business Analyst
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -329,10 +358,11 @@ const page = () => {
                   Driving Efficiency, Scalability, and Growth
                 </h3>
                 <p className="text-[#999] text-xl my-2">
-                  Discover how BFG Global Consult transforms strategies into
-                  impactful outcomes across diverse industries. We showcase
-                  unique projects that reflect our commitment to excellence,
-                  innovation, and results-driven solutions.
+                  Explore how BFG Global Consult empowers organizations to turn
+                  strategic visions into measurable success stories. We
+                  highlight innovative projects that exemplify our dedication to
+                  excellence, adaptability, and transformative solutions across
+                  various sectors.
                 </p>
                 <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">
