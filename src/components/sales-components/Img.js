@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useRef, FC } from "react";
 
 
@@ -30,7 +31,7 @@ const Img = (props) => {
     }
   }, [props.src]);
 
-  return <img ref={bgImg} {...props} alt="" />;
+  return <Image ref={bgImg} {...props} alt="" />;
 };
 
 export default Img;

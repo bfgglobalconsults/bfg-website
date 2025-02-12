@@ -337,7 +337,7 @@ const page = () => {
                 <p className="text-[#999] text-xl my-2">
                   BFG Global Consult empowers organizations with comprehensive
                   training and development initiatives, fostering a pipeline of
-                  skilled talent ready to tackle tomorrow's challenges.
+                  skilled talent ready to tackle tomorrow&apos; challenges.
                 </p>
                 <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">
