@@ -35,9 +35,11 @@ import SliderImage3 from "../../public/assets/sliderimage3.png";
 import SliderImage4 from "../../public/assets/sliderimage4.png";
 import SliderImage5 from "../../public/assets/consumer-img.png";
 
-import CaseImage1 from "../../public/assets/caseimage1.png";
-import CaseImage2 from "../../public/assets/caseimage2.png";
-import CaseImage3 from "../../public/assets/caseimage3.png";
+import CaseImage1 from "../../public/assets/technology-case.png";
+import CaseImage2 from "../../public/assets/research-case.png";
+import CaseImage3 from "../../public/assets/business-case.png";
+import CaseImage4 from "../../public/assets/training-case.png";
+
 
 import STTravel from "../../public/assets/News-ST.jpg";
 import AwardNews from "../../public/assets/bfg-award.jpg";
@@ -127,21 +129,28 @@ export default function Main() {
       id: 1,
       image: CaseImage1,
       img_name: "banner",
-      title: "Case Studies A",
+      title: "Technology & Software Development",
       link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
     },
     {
       id: 2,
       image: CaseImage2,
       img_name: "banner",
-      title: "Case Studies B",
+      title: "Research & Analytics",
       link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
     },
     {
       id: 3,
       image: CaseImage3,
       img_name: "banner",
-      title: "Case Studies C",
+      title: "Business Strategy &  Operations",
+      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
+    },
+     {
+      id: 3,
+      image: CaseImage4,
+      img_name: "banner",
+      title: "Training & Development",
       link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
     },
   ];
@@ -191,7 +200,7 @@ export default function Main() {
     {
       id: 3,
       href: "/solutions/business-strategy",
-      title: "Business Strategy & Operations",
+      title: "Strategy & Operations Transformation",
       description:
         "Earn your business the ability to achieve desired goals through the development & implementation of plans & processes aimed at improving competitiveness. Through this service, we help startups & SMEs align their operations.",
       svgPath:
@@ -364,8 +373,8 @@ export default function Main() {
           </div>
         </div>
 
-        <div className="bg-[#041926] relative py-6 px-2 lg:p-12">
-          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+        <div className="bg-[#041926] relative py-10 px-2 lg:p-12">
+          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-8">
             Industries We Cover
           </span>
           <div className="w-[100%] relative flex flex-col lg:flex-row items-center flex-wrap">
@@ -500,7 +509,7 @@ export default function Main() {
           <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
             {cases.map((item, index) => (
               <div
-                className="relative w-[100%] md:w-[50%] lg:w-[30%] h-[500px] bg-cover bg-center"
+                className="relative w-[100%] md:w-[50%] lg:w-[22%] h-[500px] bg-cover bg-center"
                 key={index}
               >
                 <Image
@@ -511,12 +520,12 @@ export default function Main() {
                 <div>
                   <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-2xl"></div>{" "}
                   {/* Transparent overlay */}
-                  <div className="absolute bottom-14 left-10 w-[80%] flex gap-2 items-center justify-between">
-                    <p className="text-white text-xl my-4">{item.title}</p>
+                  <div className="absolute bottom-14 left-7 w-[80%] flex gap-2 items-center justify-between">
+                    <p className="text-white text-lg my-4">{item.title}</p>
                     <a
                       href={item.link}
                       target="_blank"
-                      className="p-4 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
+                      className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
                     >
                       <span>
                         <svg

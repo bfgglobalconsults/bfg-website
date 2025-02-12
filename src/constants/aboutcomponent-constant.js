@@ -1,12 +1,12 @@
 export const about_links = [
     {
         id: 1,
-        label: "Who we are",
+        label: "Who We Are",
         link: "/about",
       },
       {
         id: 2,
-        label: "Our clients",
+        label: "Our Clients",
         link: "/clients",
       },
       {

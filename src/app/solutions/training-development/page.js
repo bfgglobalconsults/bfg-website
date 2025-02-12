@@ -300,6 +300,19 @@ const page = () => {
                       </p>
                     </div>
                   </div>
+                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                    <Image
+                      src={Avatar}
+                      alt="md"
+                      className="w-full h-full object-fit"
+                    />
+                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                      <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
+                      <p className="text-[#E45F11] font-semibold">
+                        Associate, Training & Development
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -322,10 +335,9 @@ const page = () => {
                   Building Capacity for Future-Ready Talent{" "}
                 </h3>
                 <p className="text-[#999] text-xl my-2">
-                  Discover how BFG Global Consult transforms strategies into
-                  impactful outcomes across diverse industries. We showcase
-                  unique projects that reflect our commitment to excellence,
-                  innovation, and results-driven solutions.
+                  BFG Global Consult empowers organizations with comprehensive
+                  training and development initiatives, fostering a pipeline of
+                  skilled talent ready to tackle tomorrow&apos; challenges.
                 </p>
                 <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">

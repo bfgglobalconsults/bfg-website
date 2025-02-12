@@ -38,12 +38,49 @@ const page = () => {
           <div className="">
             <div className="w-full my-4">
               <p className="text-lg text-[#656565] my-3">
-                BFG Global Consulting is a management consulting firm that specializes in research, strategy, training, and software development. With offices in Nigeria&apos;s capital city and the United Kingdom, we offer services globally as a solution partner to individuals, businesses, corporate organizations, and government agencies.
-                Our company takes pride in its cutting-edge consulting services, which are designed to deliver transformative value for a wide range of businesses and organisations including tech start-ups and emerging brands. 
+                BFG Global Consulting LLC (also trading as BFG Consults) offers custom solutions in software development, market research, strategy development, and workforce training. With offices in Nigeria and the United Kingdom, we offer our services globally as a solution partner to individuals, businesses, corporate organizations, and government agencies. Our business model is built on innovation, combining Consulting-as-a-Service (CaaS) and Software-as-a-Service (SaaS) offerings to individuals and businesses in navigating complex challenges, optimizing performance, and achieving sustainable growth across various industries
               </p>
+              <p className="text-lg text-[#656565] my-3">
+                We are managed by a group of agile product leaders who are experienced in delivering cutting-edge solutions designed to meet the evolving needs of modern enterprises of any size. Our clients range from large-profile brands to medium, small, and start-up companies in Nigeria, India, Australia, Canada, the United Kingdom, and the United States. 
+                </p>
             </div>
-            <CounterSection />
-              {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
+            <div className="flex flex-col lg:flex-row gap-6">
+              <div className="w-[100%] lg:w-[50%]">
+                <div className="my-10">
+                  <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
+                    Business Stats
+                  </span>
+                </div>
+                 <div className="">
+                <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
+                 Our services have consistently demonstrated success in enhancing business performance.
+                </h3>
+                <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                  We help you unleash the power within your business, transforming potential into performance through tailored strategies and innovative solutions that fuel growth and success.
+                  </p>
+                  <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
+                  <span className="text-white text-md font-semibold">
+                    View Our Profile
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                  </span>
+                </button>
+                  </div>
+              </div>
+              <div className="w-[100%] lg:w-[50%]">
+                <CounterSection />
+              </div>
+            </div>
+            {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
                   <div className="flex flex-col lg:flex-row justify-center gap-10">
                     <div>
                       <h3 className="text-4xl text-white font-bold">899+</h3>
@@ -70,7 +107,7 @@ const page = () => {
             </div>
             <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
               <div className="w-[100%] lg:w-[60%]">
-                <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-5xl">
+                <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
                   Your Growth Partner in a Changing Business Landscape
                 </h3>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
@@ -105,8 +142,9 @@ const page = () => {
                   small startup seeking guidance or a well-established
                   organization looking for fresh insights, BFG Global Consulting
                   is here to support you every step of the way. Our team of
-                  experts are ready to listen, understand your unique challenges,
-                  and tailor solutions that align with your specific goals.
+                  experts are ready to listen, understand your unique
+                  challenges, and tailor solutions that align with your specific
+                  goals.
                 </p>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
                   While you explore our business profile, we thank you for your
@@ -114,7 +152,6 @@ const page = () => {
                   Together, let us embrace the possibilities and create a future
                   of sustainable growth and success.
                 </p>
-              
               </div>
               <div className="w-[350px] h-[450px] lg:w-[450px] lg:h-[600px]">
                 <Image
@@ -127,13 +164,11 @@ const page = () => {
             <hr className="my-2" />
             <div className="my-4">
               <OurStand />
-              </div>
+            </div>
           </div>
         </div>
       </div>
       {/* old view */}
-      
-      
     </>
   );
 };
