@@ -323,7 +323,7 @@ export default function Main() {
                   layoutId={solution.id}
                 >
                   <Link href={solution.href}>
-                    <div className="w-[300px] md:w-[500px] lg:w-[350px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
+                    <div className="w-[300px] md:w-[500px] lg:w-[350px] h-[300px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                       <div className="p-5">
                         <div className="flex gap-2 items-center">
                           <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
@@ -547,7 +547,7 @@ export default function Main() {
         </div>
         {/* banner section */}
         <div>
-          <div className="w-full lg:h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-no-repeat flex  items-center">
+          <div className="w-full lg:h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-cover bg-no-repeat flex  items-center">
             <div className="w-[100%] lg:w-[50%] p-12 ">
               <p className="text-lg text-white font-semibold my-2 border-l-4 border-[#999] p-2">
                 Unlock your business potential with BFG, your partner in
