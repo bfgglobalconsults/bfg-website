@@ -26,22 +26,22 @@ const Footer = () => {
               <div className="">
                 <div>
                 <Link href="/contact">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                  Discuss Your Project
                   </p>
                 </Link>
                 <Link href="/about">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                 Learn about BFG Consults
                   </p>
                 </Link>
                 <Link href="/careers">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                 Explore Careers
                   </p>
                 </Link>
                  <Link href="/team">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                 View our Agile Leaders
                   </p>
                 </Link>
@@ -269,7 +269,7 @@ const Footer = () => {
           <hr className="my-8" />
           <div>
              <p className="text-white text-sm my-4">
-                The BFG Global Consulting LLC (also trading as BFG Consults) is incorporated under the Corporate Affairs Commission in Nigeria (RC - 1779419) and the Companies House for England and Wales (Registered Number -14906851) as a Private Limited Liability Company. We offer custom solutions in software development, market research, strategy development, and workforce training to clients globally.
+               The BFG Global Consulting LLC (also trading as BFG Consults) is incorporated under the Corporate Affairs Commission in Nigeria (RC - 1779419) and the Companies House for England and Wales (Registered Number -14906851) as a Private Limited Liability Company. We offer custom solutions in software development, market research, strategy development, and workforce training to clients globally. Our business model is built on innovation, combining Consulting-as-a-Service (CaaS) and Software-as-a-Service (SaaS) offerings to individuals and businesses in navigating complex challenges, optimizing performance, and achieving sustainable growth across various industries.
                   </p>
           </div>
           <div className="">
