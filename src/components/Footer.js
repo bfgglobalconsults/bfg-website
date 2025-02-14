@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <>
       <div className="w-full bg-gradient-to-b from-[#127DC0] to-[#083B5A] ">
-        <div className="py-[50px] px-[10px] lg:px-[40px]">
+        <div className="py-[50px] px-[20px] lg:px-[40px]">
           <div className="w-full flex flex-col lg:flex-row gap-[30px]">
             <div className="w-[100%] lg:w-[17%]">
-              <div className="flex w-[100%] lg:w-[100px] justify-center lg:justify-normal">
+              <div className="flex w-[100%] lg:w-[100px] justify-normal">
                 <Link href="/">
                   <div className="w-[100px] h-[90px]">
                     <Image
@@ -23,17 +23,34 @@ const Footer = () => {
                   </div>
                 </Link>
               </div>
-              <div>
-                <p className="text-white text-sm my-4">
-                  The BFG Global Consulting LLC (also trading as BFG Consults)
-                  is incorporated under the Corporate Affairs Commission in
-                  Nigeria (RC - 1779419) and the Companies House for England and
-                  Wales (Registered Number -14906851) as a Private Limited
-                  Liability Company. We offer custom solutions in software
-                  development, market research, strategy development, and
-                  workforce training to clients globally.
-                </p>
+              <div className="">
+                <div>
+                <Link href="/contact">
+                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                 Discuss Your Project
+                  </p>
+                </Link>
+                <Link href="/about">
+                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                Learn about BFG Consults
+                  </p>
+                </Link>
+                <Link href="/careers">
+                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                Explore Careers
+                  </p>
+                </Link>
+                 <Link href="/team">
+                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                View our Agile Leaders
+                  </p>
+                </Link>
+                </div>
               </div>
+              <div>
+                 <p className="text-white text-sm mt-10 ">
+                Let’s Connect | Follow Us
+                  </p>
               <div className="flex gap-4 my-4">
                 <div>
                   <Link
@@ -144,10 +161,11 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-[10px] w-[100%] lg:w-[80%]">
-              <div className="text-white w-[40%] lg:w-[23%]">
+              <div className="text-white w-[40%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">About Us</h3>
                 <p
                   className="my-2 text-sm hover:text-[#E26015]"
@@ -169,7 +187,7 @@ const Footer = () => {
                 </p>
               </div>
 
-              <div className="text-white w-[50%] lg:w-[23%]">
+              <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Solutions</h3>
                 <p className="my-2 text-sm hover:text-[#E26015]">
                   <Link href="/solutions/research-analytics">
@@ -193,7 +211,7 @@ const Footer = () => {
                 </p>
               </div>
 
-              <div className="text-white w-[40%] lg:w-[23%]">
+              <div className="text-white w-[40%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Industry</h3>
                 <p className="my-2 text-sm hover:text-[#E26015]">Consumer & Retail Market</p>
                 <p className="my-2 text-sm hover:text-[#E26015]">Hospitality & Tourism</p>
@@ -203,7 +221,7 @@ const Footer = () => {
                 <p className="my-2 text-sm hover:text-[#E26015]">Government & Non- for - Profit</p>
               </div>
 
-              <div className="text-white w-[50%] lg:w-[23%]">
+              <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Programs</h3>
                 <p className="my-2 text-sm hover:text-[#E26015]">SME Webinar Series</p>
                 <p className="my-2 text-sm hover:text-[#E26015]">The AI Advantage</p>
@@ -218,7 +236,7 @@ const Footer = () => {
                 <p className="my-2 text-sm hover:text-[#E26015]">Tech Achievers Graduate Scheme</p>
               </div>
 
-              <div className="text-white w-[40%] lg:w-[23%]">
+              <div className="text-white w-[40%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Resources</h3>
                 <p className="my-2 text-sm hover:text-[#E26015]">News</p>
                 <p className="my-2 text-sm hover:text-[#E26015]">Blogs</p>
@@ -226,13 +244,13 @@ const Footer = () => {
                 <p className="my-2 text-sm hover:text-[#E26015]">Careers</p>
               </div>
 
-              <div className="text-white w-[50%] lg:w-[23%]">
+              <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">SaaS Products</h3>
                 <p className="my-2 text-sm hover:text-[#E26015]">Appetiza</p>
                 <p className="my-2 text-sm hover:text-[#E26015]">Careerfun</p>
               </div>
 
-              <div className="text-white w-[50%] lg:w-[23%]">
+              <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Policies</h3>
                 <Link href="/privacy">
                   <p className="my-2 text-sm hover:text-[#E26015]">Privacy Policy</p>
@@ -248,8 +266,13 @@ const Footer = () => {
             </div>
           </div>
           <hr className="my-8" />
-          <div className="flex justify-center">
-            <span className="text-white  dark:text-gray-400">
+          <div>
+             <p className="text-white text-sm my-4">
+                The BFG Global Consulting LLC (also trading as BFG Consults) is incorporated under the Corporate Affairs Commission in Nigeria (RC - 1779419) and the Companies House for England and Wales (Registered Number -14906851) as a Private Limited Liability Company. We offer custom solutions in software development, market research, strategy development, and workforce training to clients globally.
+                  </p>
+          </div>
+          <div className="">
+            <span className="text-white text-sm  dark:text-gray-400">
               © 2018 - {year}{" "}
               <a href="https://bfgconsults.com/" class="hover:underline">
                 BFG Global Consults™

@@ -30,8 +30,10 @@ const Slides = () => {
                     slidesPerView: 4,
                   },
                 }}
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
-                spaceBetween={5}
+                autoplay={{ delay: 0, disableOnInteraction: false }}
+              speed={3000}  
+              loop={true}
+              spaceBetween={5}
                 navigation={false}
                 modules={[Autoplay]}
                 className="w-full flex justify-center"
