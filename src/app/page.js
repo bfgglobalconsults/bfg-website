@@ -84,7 +84,7 @@ export default function Main() {
   const slides = [
     {
       id: 1,
-      title: "Information & Communication Technology",
+      title: "Technology and Finance",
       description:
         "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
       imageAlt: "slider1-img",
@@ -92,7 +92,7 @@ export default function Main() {
     },
     {
       id: 2,
-      title: "Consumer & Retail Market",
+      title: "Consumer and Retail Market",
       description:
         "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
       imageAlt: "slider5-img",
@@ -108,7 +108,7 @@ export default function Main() {
     },
     {
       id: 4,
-      title: "Traveling (Tourism)",
+      title: "Hospitality and Tourism",
       description:
         "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
       imageAlt: "slider3-img",
@@ -116,7 +116,7 @@ export default function Main() {
     },
     {
       id: 5,
-      title: "NGO (Non-Governmental Organization)",
+      title: "Government and Non-for-Profit",
       description:
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider4-img",

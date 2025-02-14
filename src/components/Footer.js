@@ -223,16 +223,17 @@ const Footer = () => {
 
               <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Programs</h3>
-                <p className="my-2 text-sm hover:text-[#E26015]">SME Webinar Series</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">The AI Advantage</p>
+                <Link href="/program/sme-webinar"><p className="my-2 text-sm hover:text-[#E26015]">SME Webinar Series</p></Link>
+                 <Link href="/program/ai-advantage"><p className="my-2 text-sm hover:text-[#E26015]">The AI Advantage</p></Link>
 
-                <p className="my-2 text-sm hover:text-[#E26015]">The Dialetics</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">
+                <Link href="/program/dialectics"><p className="my-2 text-sm hover:text-[#E26015]">The Dialetics</p></Link>
+                 <Link href="/program/leadership-summit"><p className="my-2 text-sm hover:text-[#E26015]">
                   Emerging Marketplace Leadership Summit
                 </p>
+                  </Link>
                 <p className="my-2 text-sm hover:text-[#E26015]">Women in Tech</p>
 
-                <p className="my-2 text-sm hover:text-[#E26015]">SME Klinic</p>
+                <Link href="/program/sme-klinic"><p className="my-2 text-sm hover:text-[#E26015]">SME Klinic</p></Link>
                 <p className="my-2 text-sm hover:text-[#E26015]">Tech Achievers Graduate Scheme</p>
               </div>
 

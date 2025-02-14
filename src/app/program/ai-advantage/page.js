@@ -121,7 +121,7 @@ const page = () => {
               Advantage program offers the resources and knowledge needed to
               succeed.
             </p>
-            <p className="text-[#999] my-4">
+            <p className="font-semibold my-4">
               Apply and embrace the future of work with AI as a key driver of
               innovation and growth in your business
             </p>
