@@ -26,22 +26,22 @@ const Footer = () => {
               <div className="">
                 <div>
                 <Link href="/contact">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                  Discuss Your Project
                   </p>
                 </Link>
                 <Link href="/about">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                 Learn about BFG Consults
                   </p>
                 </Link>
                 <Link href="/careers">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                 Explore Careers
                   </p>
                 </Link>
                  <Link href="/team">
-                <p className="text-white text-sm my-4 hover:text-[#E26015]">
+                <p className="text-white text-sm my-2 hover:text-[#E26015]">
                 View our Agile Leaders
                   </p>
                 </Link>
