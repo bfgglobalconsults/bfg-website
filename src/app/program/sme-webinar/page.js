@@ -125,7 +125,7 @@ const page = () => {
               program offers the insights and connections you need to succeed in
               the competitive Nigerian marketplace.
             </p>
-             <p className="text-[#999] my-4">
+             <p className="font-semibold my-4">
               Apply for our next session and be part of the conversation that shapes the future of business in Nigeria.
             </p>
             <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">

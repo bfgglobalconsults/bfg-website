@@ -100,7 +100,7 @@ Moreover, the AI Advantage program aims to correct the narrative around AI, fost
             <p className="text-[#999] my-4">
               Whether you are looking to improve your organization’s AI capabilities or seeking to elevate your career prospects, the AI Advantage program offers the resources and knowledge needed to succeed.
             </p>
-             <p className="text-[#999] my-4">
+             <p className="font-semibold my-4">
              Apply and embrace the future of work with AI as a key driver of innovation and growth in your business
             </p>
             <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">

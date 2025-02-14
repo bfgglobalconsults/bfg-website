@@ -2,21 +2,26 @@ export const program_links = [
     {
         id: 1,
         label: "Dialectics",
-        link: "",
+        link: "/program/dialectics",
       },
       {
         id: 2,
         label: "Emerging Marketplace Leader",
-        link: "",
+        link: "/program/leadership-summit",
       },
       {
         id: 3,
         label: "Women in Tech",
-        link: "",
+        link: "/program/women-tech",
       },
       {
         id: 4,
         label: "SME Klinic",
-        link: "",
-      },
+        link: "/program/sme-klinic",
+  },
+      {
+        id: 5,
+        label: "AI Advantage",
+        link: "/program/ai-advantage",
+      }
     ]

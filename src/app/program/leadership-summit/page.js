@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../../public/assets/dialectics.png";
-import DialetGroup from "../../../../public/assets/dialet-card.png";
+import TopBanner from "../../../../public/assets/leadership-summit.png";
+import LeaderGroup from "../../../../public/assets/leadership-card.png";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 
@@ -11,14 +11,14 @@ const page = () => {
       <div className="mt-[0px] lg:mt-[150px] p-12">
         <div className="">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-            The Dialectics
+            Leadership Summit
           </span>
           <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
             <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-              The Dialectics
+              Emerging Marketplace Leadership Summit
             </h3>
             <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-             Conversations That Shape the Future
+             Shaping the Future of Nigeria’s Business Ecosystem
             </p>
           </div>
         </div>
@@ -41,22 +41,21 @@ const page = () => {
           <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
             <div className="w-[100%] lg:w-[60%]">
               <p className="text-[#999] my-4">
-                In today’s digital age, the integration of Artificial Intelligence (AI) into the workplace is no longer optional—it is essential for maintaining a competitive edge.
-              </p>
+                              The Emerging Marketplace Leadership Summit, an annual event organized by BFG Consults, serves as a vital platform for dialogue among key stakeholders in Nigeria’s marketplace. This summit brings together government officials, innovation leaders from the private sector, and representatives from civil society organizations to discuss pressing issues affecting various sectors and to propose actionable solutions.
+                          </p>
               <p className="text-[#999] my-4">
                 
- The AI Advantage training, developed by BFG Consults Training and Development Consulting Unit, is a specialized training initiative aimed at reducing the gap in the effective use of AI systems across various sectors. Our mission is to empower organizations and individuals to harness the full potential of AI while dispelling common misconceptions surrounding its use.
-              </p>
+                              In a rapidly changing economic landscape, collaboration is essential. The summit provides an opportunity for participants to share their insights, challenges, and success stories, fostering an environment of collective problem-solving. Each year, we curate a diverse agenda that addresses the most pertinent issues facing the Nigerian marketplace, including economic growth, regulatory frameworks, technological innovation, and sustainable development.
+                          </p>
               <p className="text-[#999] my-4">
-               Over the course of this program, participants will explore the fundamentals of AI, its practical applications, and the transformative impact it can have on productivity and efficiency. This program exercise is designed to cater to business at all levels of expertise, ensuring that everyone—from tech novices to seasoned professionals—can benefit from the training.
-We address critical topics such as machine learning, natural language processing, and data analytics, providing hands-on training that emphasizes real-world applications. 
+               Our speakers include thought leaders and experts who are at the forefront of their fields, ensuring that discussions are informed by the latest research and real-world experiences. Participants will engage in panel discussions, workshops, and networking sessions designed to facilitate collaboration and inspire innovative thinking. 
               </p>
              
             </div>
             <div className="w-[100%] lg:w-[40%] relative">
                <Image
-                    src={DialetGroup}
-                    alt="dialet-image"
+                    src={LeaderGroup}
+                    alt="leader-image"
                     className="w-full h-full object-fit rounded-r-md"
                   />
               {/* <div className="w-full h-[400px] shadow-lg rounded-xl relative">
@@ -94,14 +93,13 @@ We address critical topics such as machine learning, natural language processing
           </div>
           <div className="">
             <p className="text-[#999] my-4">
-              This program also participants to learn how to implement AI tools effectively, analyze data to drive decision-making, and automate processes to enhance operational efficiency.
-Moreover, the AI Advantage program aims to correct the narrative around AI, fostering a deeper understanding of its capabilities and limitations. We challenge myths that paint AI as a job-stealing technology, instead showcasing its potential as a collaborative tool that augments human intelligence and creativity.
+              The Emerging Marketplace Leadership Summit is more than just a conference; it is a catalyst for change. By bringing together a wide array of stakeholders, we aim to create a shared vision for the future of Nigeria’s marketplace.
             </p>
             <p className="text-[#999] my-4">
               Whether you are looking to improve your organization’s AI capabilities or seeking to elevate your career prospects, the AI Advantage program offers the resources and knowledge needed to succeed.
             </p>
-             <p className="text-[#999] my-4">
-             Apply and embrace the future of work with AI as a key driver of innovation and growth in your business
+             <p className="font-semibold my-4">
+           Join us at the next Emerging Marketplace Leadership Summit and be part of a movement dedicated to transforming Nigeria’s marketplace for the better. Together, we can shape a future that is innovative, inclusive, and sustainable.
             </p>
             <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
               <span className="text-white">Apply for our next session</span>
