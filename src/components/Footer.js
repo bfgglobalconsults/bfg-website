@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full bg-gradient-to-b from-[#127DC0] to-[#083B5A] ">
-        <div className="py-[50px] px-[20px] lg:px-[40px]">
+        <div className="py-[50px] px-[30px] lg:px-[40px]">
           <div className="w-full flex flex-col lg:flex-row gap-[30px]">
             <div className="w-[100%] lg:w-[17%]">
               <div className="flex w-[100%] lg:w-[100px] justify-normal">
