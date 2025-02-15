@@ -17,6 +17,7 @@ import BusinessPortfolio from "../../../../public/assets/business-portfolio.jpg"
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
+import Link from "next/link";
 
 const page = () => {
   const BusinessSlides = [
@@ -276,7 +277,52 @@ const page = () => {
                 </div>
               </div>
             </div>
-            {/* service team */}
+           
+          </div>
+          {/* portfolio */}
+          <div className="py-[100px]">
+            <div className="flex flex-col items-center lg:flex-row gap-8">
+              <div className="w-[100%] lg:w-[40%]">
+                <Image
+                  src={BusinessPortfolio}
+                  alt="research"
+                  className="w-full h-full object-fit"
+                />
+              </div>
+              <div className="w-[100%] lg:w-[60%]">
+                <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+                  Portfolio
+                </span>
+                <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                  Driving Efficiency, Scalability, and Growth
+                </h3>
+                <p className="text-[#999] text-xl my-2">
+                  Explore how BFG Global Consult empowers organizations to turn
+                  strategic visions into measurable success stories. We
+                  highlight innovative projects that exemplify our dedication to
+                  excellence, adaptability, and transformative solutions across
+                  various sectors.
+                </p>
+                <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
+                  <span className="text-white text-md font-semibold">
+                    View Our Portfolio
+                  </span>
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="rgba(255,255,255,1)"
+                    >
+                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+           {/* service team */}
             <div className="my-14">
               <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
                 Service Team
@@ -337,52 +383,21 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
+            {/* contact */}
+           
           </div>
-          {/* portfolio */}
-          <div className="py-[100px]">
-            <div className="flex flex-col items-center lg:flex-row gap-8">
-              <div className="w-[100%] lg:w-[40%]">
-                <Image
-                  src={BusinessPortfolio}
-                  alt="research"
-                  className="w-full h-full object-fit"
-                />
-              </div>
-              <div className="w-[100%] lg:w-[60%]">
-                <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-                  Portfolio
-                </span>
-                <h3 className="text-[#333] text-3xl my-8 font-semibold">
-                  Driving Efficiency, Scalability, and Growth
-                </h3>
-                <p className="text-[#999] text-xl my-2">
-                  Explore how BFG Global Consult empowers organizations to turn
-                  strategic visions into measurable success stories. We
-                  highlight innovative projects that exemplify our dedication to
-                  excellence, adaptability, and transformative solutions across
-                  various sectors.
-                </p>
-                <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
-                  <span className="text-white text-md font-semibold">
-                    View Our Portfolio
-                  </span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
+           <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
+              <div>
+                <p className="text-center text-2xl">Connect, collaborate, and drive innovation from anywhere as you transform your business with our Strategy & Operations Transformation Solutions.</p>
+              <div className="flex justify-center">
+              <Link href="/contact"><button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
+                  Request a Custom Solution
                 </button>
-              </div>
+                  </Link>
+                </div>  
+</div>
             </div>
-          </div>
         </div>
       </div>
     </>

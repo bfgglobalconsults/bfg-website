@@ -19,6 +19,7 @@ import Expertise from "../../../../public/assets/expertise-resources.png";
 import Innovation from "../../../../public/assets/innovation-development.png";
 
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
+import Link from "next/link";
 
 const page = () => {
   const ItSlides = [
@@ -304,71 +305,6 @@ const page = () => {
                 </div>
               </div>
             </div>
-            {/* service team */}
-            <div className="my-14">
-              <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-                Service Team
-              </span>
-              <div>
-                <h3 className="text-[#333] text-3xl my-8 font-semibold">
-                  Meet Our Technology & Development Team
-                </h3>
-                <p className="text-[#999] text-xl my-2">
-                  Discover the experts behind our solutions. Our dedicated team
-                  brings a wealth of experience and a passion for driving
-                  success, ensuring we meet our clients’ unique challenges with
-                  precision and insight.
-                </p>
-              </div>
-              {/* team pictures */}
-              <div className="w-full flex my-4">
-                <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Avatar}
-                      alt="md"
-                      className="w-full h-full object-fit"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">
-                        David U. Bradford
-                      </h3>
-                      <p className="text-[#E45F11] font-semibold">
-                        Lead, Technology & Software Development
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Avatar}
-                      alt="md"
-                      className="w-full h-full object-fit"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">
-                        Jesunifemi Jeremiah Oluwafemi
-                      </h3>
-                      <p className="text-[#E45F11] font-semibold">
-                        Product Designer / Developer
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Avatar}
-                      alt="md"
-                      className="w-full h-full object-fit"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">Godfrey Samuel</h3>
-                      <p className="text-[#E45F11] font-semibold">
-                        Software Developer
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           {/* portfolio */}
           <div className="py-[100px]">
@@ -410,6 +346,85 @@ const page = () => {
                     </svg>
                   </span>
                 </button>
+              </div>
+            </div>
+          </div>
+          {/* service team */}
+          <div className="my-14">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+              Service Team
+            </span>
+            <div>
+              <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                Meet Our Technology & Development Team
+              </h3>
+              <p className="text-[#999] text-xl my-2">
+                Discover the experts behind our solutions. Our dedicated team
+                brings a wealth of experience and a passion for driving success,
+                ensuring we meet our clients’ unique challenges with precision
+                and insight.
+              </p>
+            </div>
+            {/* team pictures */}
+            <div className="w-full flex my-4">
+              <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="md"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">David U. Bradford</h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Lead, Technology & Software Development
+                    </p>
+                  </div>
+                </div>
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="md"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">
+                      Jesunifemi Jeremiah Oluwafemi
+                    </h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Product Designer / Developer
+                    </p>
+                  </div>
+                </div>
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="md"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Godfrey Samuel</h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Software Developer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
+            <div>
+              <p className="text-center text-2xl">
+                Connect, collaborate, and innovate from anywhere as you drive
+                digital transformation with our Technology & Software
+                Development Solutions.
+              </p>
+              <div className="flex justify-center">
+                <Link href="/contact">
+                  <button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
+                    Request a Custom Solution
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

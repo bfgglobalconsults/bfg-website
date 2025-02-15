@@ -21,6 +21,7 @@ import PredictiveImg from "../../../../public/assets/predective-image.png";
 import ImpactImg from "../../../../public/assets/impact-image.png";
 import AppraisalImg from "../../../../public/assets/appraisal-image.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
+import Link from "next/link";
 
 const page = () => {
   const researchSlides = [
@@ -291,71 +292,6 @@ const page = () => {
                 </div>
               </div>
             </div>
-            {/* service team */}
-            <div className="my-[80px]">
-              <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-                Service Team
-              </span>
-              <div>
-                <h3 className="text-[#333] text-3xl my-8 font-semibold">
-                  Meet Our Research & Analytics Team{" "}
-                </h3>
-                <p className="text-[#999] text-xl my-2">
-                  Discover the experts behind our solutions. Our dedicated team
-                  brings a wealth of experience and a passion for driving
-                  success, ensuring we meet our clients’ unique challenges with
-                  precision and insight.
-                </p>
-              </div>
-              {/* team pictures */}
-              <div className="w-full flex my-4">
-                <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Kenneth}
-                      alt="md"
-                      className="w-full h-full object-fit"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">
-                        Kenneth Idanwekhai
-                      </h3>
-                      <p className="text-[#E45F11] font-semibold">
-                        Lead, Research & Analytics
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Avatar}
-                      alt="md"
-                      className="w-full h-full object-fit"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">Simon Adeh</h3>
-                      <p className="text-[#E45F11] font-semibold">
-                        Data Analyst
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Avatar}
-                      alt="md"
-                      className="w-full h-full object-fit"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">
-                        Emmanuel Akinbade
-                      </h3>
-                      <p className="text-[#E45F11] font-semibold">
-                        Associate, Research & Analytics
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           {/* portfolio */}
           <div className="py-[100px]">
@@ -396,6 +332,83 @@ const page = () => {
                     </svg>
                   </span>
                 </button>
+              </div>
+            </div>
+          </div>
+          {/* service team */}
+          <div className="my-[80px]">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+              Service Team
+            </span>
+            <div>
+              <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                Meet Our Research & Analytics Team{" "}
+              </h3>
+              <p className="text-[#999] text-xl my-2">
+                Discover the experts behind our solutions. Our dedicated team
+                brings a wealth of experience and a passion for driving success,
+                ensuring we meet our clients’ unique challenges with precision
+                and insight.
+              </p>
+            </div>
+            {/* team pictures */}
+            <div className="w-full flex my-4">
+              <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Kenneth}
+                    alt="md"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">
+                      Kenneth Idanwekhai
+                    </h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Lead, Research & Analytics
+                    </p>
+                  </div>
+                </div>
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="md"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Simon Adeh</h3>
+                    <p className="text-[#E45F11] font-semibold">Data Analyst</p>
+                  </div>
+                </div>
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="md"
+                    className="w-full h-full object-fit"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Emmanuel Akinbade</h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Associate, Research & Analytics
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
+            <div>
+              <p className="text-center text-2xl">
+                Connect, collaborate, and drive innovation on your data insights
+                project—anytime, anywhere—with our Research & Analytics
+                Solutions.
+              </p>
+              <div className="flex justify-center">
+                <Link href="/contact">
+                  <button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
+                    Request a Custom Solution
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
