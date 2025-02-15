@@ -3,7 +3,7 @@ import React from "react";
 // import Banner from "../../../public/assets/about-banner.png";
 import Banner from "../../../public/assets/about-team.jpg";
 
-import Picture from "../../../public/assets/bello-frame.png";
+import Picture from "../../../public/assets/festus-potrait.png";
 import Statistics from "@/components/Statistics";
 import OurStand from "@/components/OurStand";
 import CounterSection from "@/components/counter/CounterSection";

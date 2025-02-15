@@ -22,7 +22,7 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="px-1 lg:px-12 py-12">
+        <div className="px-1 py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -66,6 +66,13 @@ const page = () => {
                 as digital transformation, workforce development, and
                 sustainable business practices.
               </p>
+               <p className="text-[#999] my-4">
+              The SME Klinic is not only about discussion; it is also a platform
+              for actionable insights. At BFG Consults, we believe that the
+              future of work is collaborative, and the SME Klinic embodies this
+              belief. By fostering connections among SME leaders, we aim to
+              create a community that supports innovation and shared learning.
+            </p>
             </div>
             <div className="w-[100%] lg:w-[40%] relative">
               <Image
@@ -107,13 +114,7 @@ const page = () => {
             </div>
           </div>
           <div className="">
-            <p className="text-[#999] my-4">
-              The SME Klinic is not only about discussion; it is also a platform
-              for actionable insights. At BFG Consults, we believe that the
-              future of work is collaborative, and the SME Klinic embodies this
-              belief. By fostering connections among SME leaders, we aim to
-              create a community that supports innovation and shared learning.
-            </p>
+           
 
             <p className="font-semibold my-4">Register for the next sessions</p>
             <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
