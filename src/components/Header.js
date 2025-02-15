@@ -317,7 +317,7 @@ const Header = () => {
           className={`${
             active === true
               ? "w-full p-[10px] px-[40px] bg-white  fixed top-0 left-0 z-10"
-              : "bg-[#E26015] p-3"
+              : "bg-white p-3"
           } px-[40px] text-white border-b border-[#e4e4eb]`}
         >
           <div className="flex justify-between items-center gap-2">
@@ -348,12 +348,11 @@ const Header = () => {
               <>
                 <Link href="/">
                   <div className="w-[100px] h-[90px]">
-                    {" "}
                     <Image
-                      src={WhiteLogo}
+                      src={Logo}
                       alt="logo"
                       className="w-full h-full object-fit"
-                    />{" "}
+                    />
                   </div>
                 </Link>
                 <button className="" onClick={() => setShowMenu(!showMenu)}>
@@ -362,7 +361,7 @@ const Header = () => {
                     viewBox="0 0 24 24"
                     width="36"
                     height="36"
-                    fill="rgba(255,255,255,1)"
+                    fill="rgba(0,0,0,1)"
                   >
                     <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
                   </svg>

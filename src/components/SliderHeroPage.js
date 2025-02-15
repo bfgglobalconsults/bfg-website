@@ -44,7 +44,7 @@ const HeroSection1 = () => (
     <div className="w-full lg:w-[60%]">
       <div className="p-[40px]">
         {/* Award Badge */}
-        <div className="inline-flex items-center rounded-full border border-[#E45F11]  px-4 py-2 backdrop-blur-sm">
+        <div className="inline-flex items-center rounded-2xl lg:rounded-full border border-[#E45F11]  px-4 py-2 backdrop-blur-sm mb-3 lg:mb-0">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const HeroSection1 = () => (
         </div>
         <div className="max-w-4xl space-y-6">
           <h1 className="font-sans text-4xl font-bold tracking-tight text-[#333] sm:text-5xl md:text-6xl">
-            <span className="block text-6xl font-light mb-2">
+            <span className="block text-4xl md:text-6xl font-light mb-2">
               Democratizing{" "}
             </span>
             Management Consulting
@@ -106,7 +106,7 @@ const HeroSection2 = () => (
     <div className="w-full lg:w-[55%]">
       <div className="p-[40px]">
         {/* Award Badge */}
-        <div className="inline-flex items-center rounded-full border border-[#E45F11]  px-4 py-2 backdrop-blur-sm">
+        <div className="inline-flex items-center rounded-2xl lg:rounded-full border border-[#E45F11]  px-4 py-2 backdrop-blur-sm mb-3 lg:mb-0">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ const HeroSection2 = () => (
         </div>
         <div className="max-w-4xl space-y-6">
           <h1 className="font-sans text-4xl font-bold tracking-tight text-[#333] sm:text-5xl md:text-6xl">
-            <span className="block text-6xl font-light mb-2">
+            <span className="block text-4xl lg:text-6xl font-light mb-2">
               Tailored expertise in{" "}
             </span>
             Software Development,
