@@ -102,7 +102,7 @@ const HeroSection1 = () => (
 );
 
 const HeroSection2 = () => (
-  <div className="w-full lg:flex items-center my-0 lg:my-0 xl:my-4 py-10">
+  <div className="w-full lg:flex items-center my-0 lg:my-0 xl:my-4 py-5">
     <div className="w-full lg:w-[55%]">
       <div className="p-[40px]">
         {/* Award Badge */}
