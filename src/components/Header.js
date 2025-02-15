@@ -134,7 +134,7 @@ const Header = () => {
           className={`${
             active === true
               ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10 border-b"
-              : "w-full p-[10px] px-[40px] bg-[#E26015] fixed top-0 left-0 z-10"
+              : "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10 border-b"
           } px-[40px] text-white`}
         >
           <div className="flex justify-between items-center">
@@ -225,9 +225,9 @@ const Header = () => {
             ) : (
               <>
                 <Link href="/">
-                  <div className="w-[80px] h-15">
+                  <div className="w-[100px] h-[90px]">
                     <Image
-                      src={WhiteLogo}
+                      src={Logo}
                       alt="logo"
                       className="w-full h-full object-fit"
                     />
@@ -239,18 +239,16 @@ const Header = () => {
                       ({ id, link, label, dropdown, dropdown_item }) => (
                         <li
                           key={id}
-                          ref={modalRef}
                           className={`${
                             activeTab === id
-                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-white border-b-2 border-white duration-200 link-underline"
-                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 z-10 hover:text-white duration-200 link-underline"
+                              ? "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 border-b-2 border-[#E26015] hover:scale-105 hover:text-[#E26015] duration-200 link-underline"
+                              : "nav-links flex gap-2 px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-[#E26015] duration-200 link-underline"
                           } rounded-tl-md z-10 ${
                             id === navigation_links.length - 1
                               ? "rounded-tr-md"
                               : ""
                           }`}
                         >
-                          {/* <Link href={link}>{label}</Link> */}
                           <button onClick={() => handleTabClick(id)}>
                             {label}
                           </button>
@@ -258,15 +256,17 @@ const Header = () => {
                       )
                     )}
                   </ul>
-                  </div>
-                  <div>                <button className="bg-white hover:bg-black hover:text-white text-[#E26015] font-semibold  py-2 px-4 rounded-lg">
+                </div>
+                 <div>
+                <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
                   <Link href="/contact">Discuss Your Project</Link>
-                  </button>
-                    </div>
+                </button>
+              </div>
                 <div>
                   {navigation_links.map(({ id, label, component }) => (
                     <div
                       key={id}
+                      ref={modalRef}
                       className={`modal relative z-5 inset-0 overflow-y-auto ${
                         activeTab === id ? "block" : "hidden"
                       }`}
@@ -278,7 +278,7 @@ const Header = () => {
                             : "animate-slide-out"
                         }`}
                       >
-                        <div className="relative z-10 modal-content bg-[white] border-4 border-[#E45F11]  rounded-b-xl rounded-l-xl rounded-r-xl w-full p-8">
+                        <div className="relative z-10 modal-content mt-[21px] bg-white  border-[#E45F11] border-r-4 border-l-4 border-b-4 rounded-b-xl rounded-l-xl rounded-r-xl rounded-tr-none rounded-tl-none w-full p-8">
                           <div className="flex flex-col items-center justify-center">
                             <span
                               className="absolute bottom-5 justify-center p-2 cursor-pointer"
