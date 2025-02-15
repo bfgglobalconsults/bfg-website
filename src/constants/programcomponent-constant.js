@@ -1,12 +1,12 @@
 export const program_links = [
     {
         id: 1,
-        label: "Dialectics",
+        label: "The Dialectics",
         link: "/program/dialectics",
       },
       {
         id: 2,
-        label: "Emerging Marketplace Leader",
+        label: "Emerging Marketplace Leadership Summit",
         link: "/program/leadership-summit",
       },
       {
@@ -23,5 +23,10 @@ export const program_links = [
         id: 5,
         label: "AI Advantage",
         link: "/program/ai-advantage",
-      }
+  },
+      {
+        id: 6,
+        label: "SME Webinar Series",
+        link: "/program/sme-webinar",
+      },
     ]

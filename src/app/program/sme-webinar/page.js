@@ -22,7 +22,7 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="px-1 lg:px-12 py-12">
+        <div className="px-1 py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -72,6 +72,13 @@ const page = () => {
                 business strategies and adapt to the rapidly changing
                 environment.
               </p>
+               <p className="text-[#999] my-4">
+              The SME Webinar Series also serves as a vital networking
+              opportunity, connecting participants with like-minded individuals
+              who share a passion for entrepreneurship and growth. By fostering
+              connections among SMEs, we aim to create a supportive ecosystem
+              that drives collaboration and innovation.
+            </p>
             </div>
             <div className="w-[100%] lg:w-[40%] relative">
                <Image
@@ -113,13 +120,7 @@ const page = () => {
             </div>
           </div>
           <div className="">
-            <p className="text-[#999] my-4">
-              The SME Webinar Series also serves as a vital networking
-              opportunity, connecting participants with like-minded individuals
-              who share a passion for entrepreneurship and growth. By fostering
-              connections among SMEs, we aim to create a supportive ecosystem
-              that drives collaboration and innovation.
-            </p>
+           
             <p className="text-[#999] my-4">
               Whether you are a seasoned entrepreneur or just starting, this
               program offers the insights and connections you need to succeed in

@@ -22,7 +22,7 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="px-1 lg:px-12 py-12">
+        <div className="px-1 py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -50,7 +50,9 @@ const page = () => {
               <p className="text-[#999] my-4">
                Our speakers include thought leaders and experts who are at the forefront of their fields, ensuring that discussions are informed by the latest research and real-world experiences. Participants will engage in panel discussions, workshops, and networking sessions designed to facilitate collaboration and inspire innovative thinking. 
               </p>
-             
+              <p className="text-[#999] my-4">
+              The Emerging Marketplace Leadership Summit is more than just a conference; it is a catalyst for change. By bringing together a wide array of stakeholders, we aim to create a shared vision for the future of Nigeria’s marketplace.
+            </p>
             </div>
             <div className="w-[100%] lg:w-[40%] relative">
                <Image
@@ -92,9 +94,7 @@ const page = () => {
             </div>
           </div>
           <div className="">
-            <p className="text-[#999] my-4">
-              The Emerging Marketplace Leadership Summit is more than just a conference; it is a catalyst for change. By bringing together a wide array of stakeholders, we aim to create a shared vision for the future of Nigeria’s marketplace.
-            </p>
+           
             <p className="text-[#999] my-4">
               Whether you are looking to improve your organization’s AI capabilities or seeking to elevate your career prospects, the AI Advantage program offers the resources and knowledge needed to succeed.
             </p>

@@ -22,7 +22,7 @@ const page = () => {
                       </p>
           </div>
         </div>
-        <div className="px-1 lg:px-12 py-12">
+        <div className="px-1  py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -49,6 +49,9 @@ const page = () => {
               <p className="text-[#999] my-4">
                BFG Global Consults, we are committed to delivering high-quality training that not only enhances participants’ technical skills but also fosters leadership and professional growth. Our expert facilitators bring a wealth of experience and knowledge, creating a supportive and empowering learning environment.
               </p>
+               <p className="text-[#999] my-4">
+             In addition to skill development, the Women in Tech program emphasizes the importance of community and mentorship. Participants have the opportunity to connect with industry leaders and fellow trainees, fostering relationships that can lead to career advancement and collaboration.
+                      </p>
             </div>
             <div className="w-[100%] lg:w-[40%] relative">
               <Image
@@ -90,9 +93,7 @@ const page = () => {
             </div>
           </div>
           <div className="">
-            <p className="text-[#999] my-4">
-             In addition to skill development, the Women in Tech program emphasizes the importance of community and mentorship. Participants have the opportunity to connect with industry leaders and fellow trainees, fostering relationships that can lead to career advancement and collaboration.
-                      </p>
+           
                        <p className="text-[#999] my-4">
             By the end of the program, participants emerge with a certification that validates their skills, equipping them to pursue opportunities in the tech sector with confidence. This is aimed at creating a pipeline of skilled women who can contribute meaningfully to the technology landscape in Nigeria.
             </p>

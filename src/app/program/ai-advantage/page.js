@@ -22,7 +22,7 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="px-1 lg:px-12 py-12">
+        <div className="px-1  py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -64,6 +64,16 @@ const page = () => {
                 natural language processing, and data analytics, providing
                 hands-on training that emphasizes real-world applications.
               </p>
+               <p className="text-[#999] my-4">
+              This program also participants to learn how to implement AI tools
+              effectively, analyze data to drive decision-making, and automate
+              processes to enhance operational efficiency. Moreover, the AI
+              Advantage program aims to correct the narrative around AI,
+              fostering a deeper understanding of its capabilities and
+              limitations. We challenge myths that paint AI as a job-stealing
+              technology, instead showcasing its potential as a collaborative
+              tool that augments human intelligence and creativity.
+            </p>
             </div>
             <div className="w-[100%] lg:w-[40%] relative">
               <Image
@@ -105,16 +115,7 @@ const page = () => {
             </div>
           </div>
           <div className="">
-            <p className="text-[#999] my-4">
-              This program also participants to learn how to implement AI tools
-              effectively, analyze data to drive decision-making, and automate
-              processes to enhance operational efficiency. Moreover, the AI
-              Advantage program aims to correct the narrative around AI,
-              fostering a deeper understanding of its capabilities and
-              limitations. We challenge myths that paint AI as a job-stealing
-              technology, instead showcasing its potential as a collaborative
-              tool that augments human intelligence and creativity.
-            </p>
+           
             <p className="text-[#999] my-4">
               Whether you are looking to improve your organization’s AI
               capabilities or seeking to elevate your career prospects, the AI
