@@ -183,7 +183,7 @@ const Footer = () => {
                   <Link href="">Awards & Recognition</Link>
                 </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
-                  <Link href="">Governance & Culture</Link>
+                  <Link href="/governance-culture">Governance & Culture</Link>
                 </p>
               </div>
 

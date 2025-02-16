@@ -27,6 +27,6 @@ export const about_links = [
       {
         id: 6,
         label: "Governance & Culture",
-        link: "",
+        link: "/governance-culture",
       },
     ]

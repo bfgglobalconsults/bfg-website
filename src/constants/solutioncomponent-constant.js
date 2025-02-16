@@ -11,7 +11,7 @@ export const solution_links = [
       },
       {
         id: 3,
-        label: "Business Strategy and Operations",
+        label: "Strategy and Operations Transformation",
         link: "/solutions/business-strategy",
       },
       {
