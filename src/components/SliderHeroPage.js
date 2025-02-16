@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-import Banner from "../../public/assets/spinner-banner.png";
+import Banner from "../../public/assets/masked-img.png";
 import WaveImage from "../../public/assets/mask-img.png";
 
 // Import the CSS for react-slick
