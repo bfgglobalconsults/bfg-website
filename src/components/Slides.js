@@ -10,8 +10,9 @@ import "swiper/css/navigation";
 
 const Slides = () => {
   return (
-      <>
-     <div className="bg-[#faf8f8bd] p-[40px]">
+    <>
+      <hr className="my-8"/>
+     <div className="p-[40px]">
           <div className="w-full flex flex-col lg:flex-row gap-1 items-center">
             <div className="w-[100%] lg:w-[30%]">
               <h3 className="text-2xl font-semibold">
@@ -58,7 +59,8 @@ const Slides = () => {
               </Swiper>
             </div>
           </div>
-        </div>
+      </div>
+      <hr className="my-4"/>
       </>
   )
 }
