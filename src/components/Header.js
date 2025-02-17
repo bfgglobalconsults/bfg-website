@@ -447,7 +447,8 @@ const Header = () => {
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="/solutions/business-strategy">
-                            Business Strategy and Operations
+                            Strategy and Operations Transformation
+
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
@@ -457,7 +458,7 @@ const Header = () => {
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="/solutions/information-technology">
-                            Technology and Software
+                            Technology and Software Development
                           </Link>
                         </p>
                       </div>
@@ -490,7 +491,7 @@ const Header = () => {
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="/industry/industries/consumer">
-                            Consumer and Retailer
+                            Consumer and Retail Market
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
@@ -524,7 +525,7 @@ const Header = () => {
                       trigger={
                         <div className="px-[32px]  flex items-center justify-center">
                           <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            Product
+                            SaaS Products
                           </p>
                           <p>
                             {" "}
@@ -546,7 +547,7 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/appetizer">Appetizer</Link>
+                          <Link href="/product/appetizer">Appetiza</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="/product/career-fun">Career Fun</Link>
@@ -557,7 +558,7 @@ const Header = () => {
                       trigger={
                         <div className="px-[32px] flex items-center justify-center">
                           <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            Program
+                            Programs
                           </p>
                           <p>
                             {" "}
@@ -579,16 +580,22 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">Dialetics</Link>
+                          <Link href="/program/dialectics">The Dialetics</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">Emerging Marketplace Leader</Link>
+                          <Link href="/program/leadership-summit">Emerging Marketplace Leader</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">Women in Tech</Link>
+                          <Link href="/program/women-tech">Women in Tech</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">SME Klinic</Link>
+                          <Link href="/program/sme-klinic">SME Klinic</Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/program/ai-advantage">AI Advantage</Link>
+                        </p>
+                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/program/sme-webinar">SME Webinar Series</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -596,7 +603,7 @@ const Header = () => {
                       trigger={
                         <div className="px-[32px] flex items-center justify-center">
                           <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            Insight
+                            Resources
                           </p>
                           <p>
                             {" "}
@@ -618,13 +625,13 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">News</Link>
+                          <Link href="/insight/news">News</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="">Blogs</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">Case Studies</Link>
+                          <Link href="/insight/case-study">Case Studies</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="/careers">Careers</Link>
@@ -660,10 +667,10 @@ const Header = () => {
                         <Link href="/about">About Us</Link>
                       </p> */}
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/about">Who we are</Link>
+                          <Link href="/about">Who We Are</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/projects">Our Clients</Link>
+                          <Link href="/clients">Our Clients</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link href="/team">Our Team</Link>
@@ -674,10 +681,10 @@ const Header = () => {
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">Award & Recognition</Link>
+                          <Link href="/award-recognition">Award & Recognition</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="">Governance & Culture</Link>
+                          <Link href="/governance-culture">Governance & Culture</Link>
                         </p>
                       </div>
                     </Collapsible>

@@ -11,6 +11,7 @@ import WaveImage from "../../public/assets/mask-img.png";
 // Import the CSS for react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MediaQuery from "./media-query";
 
 const SliderHeroPage = () => {
   const settings = {
@@ -90,7 +91,7 @@ const HeroSection1 = () => (
         </div>
       </div>
     </div>
-
+   <MediaQuery min="lg">
     <div className="w-full lg:w-[40%] overflow-hidden py-10">
       <Image
         src={WaveImage}
@@ -98,6 +99,20 @@ const HeroSection1 = () => (
         className="w-full h-full object-fit"
       />
     </div>
+    </MediaQuery>
+    {/* small screen */}
+    <MediaQuery max="lg">
+       <div className="w-full lg:w-[40%] overflow-hidden py-10 z-10">
+      <motion.div
+        animate={{
+          rotate: [0, 200, 400, 600, 800, 800, 600, 400, 200, 0],
+        }}
+        transition={{ repeat: Infinity, duration: 50 }}
+      >
+        <Image src={Banner} alt="banner" className="w-full h-full object-fit" />
+      </motion.div>
+    </div>
+    </MediaQuery>
   </div>
 );
 

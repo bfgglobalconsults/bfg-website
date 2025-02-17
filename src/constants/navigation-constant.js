@@ -74,7 +74,7 @@ export const navigation_links = [
   },
   {
     id: 4,
-    label: "Program",
+    label: "Programs",
     link: "program",
     component: <ProgramComponent />,
     componentName:"program",
