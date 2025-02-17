@@ -16,13 +16,13 @@ export const about_links = [
       },
       {
         id: 4,
-        label: "Project Executed",
+        label: "Projects Executed",
         link: "/industry/projects",
       },
       {
         id: 5,
         label: "Awards & Recognition",
-        link: "",
+        link: "/award-recognition",
       },
       {
         id: 6,

@@ -180,7 +180,7 @@ const Footer = () => {
                   <Link href="/industry/projects">Project Executed</Link>
                 </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
-                  <Link href="">Awards & Recognition</Link>
+                  <Link href="/award-recognition">Awards & Recognition</Link>
                 </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
                   <Link href="/governance-culture">Governance & Culture</Link>
@@ -239,9 +239,9 @@ const Footer = () => {
 
               <div className="text-white w-[40%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Resources</h3>
-                <p className="my-2 text-sm hover:text-[#E26015]">News</p>
+                <Link href="/insight/news"><p className="my-2 text-sm hover:text-[#E26015]">News</p></Link>
                 <p className="my-2 text-sm hover:text-[#E26015]">Blogs</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Case Studies</p>
+                <Link href="/insight/case-study"><p className="my-2 text-sm hover:text-[#E26015]">Case Studies</p></Link>
                 <p className="my-2 text-sm hover:text-[#E26015]">Careers</p>
               </div>
 
