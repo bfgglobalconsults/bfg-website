@@ -51,7 +51,7 @@ const ClientData = [
   },
   {
     id: 3,
-    image: Client3,
+    image: DMJTravel,
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const ClientData = [
   },
   {
     id: 5,
-    image:  Client5,
+    image:  Gigs,
   },{
     id: 6,
     image:  Client6,
@@ -151,27 +151,31 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="my-8">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Clients
           </span>
           <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-3xl my-4">
             Collaborating with Forward-Thinking Clients
           </h3>
-          <div className="w-full flex flex-wrap gap-14 my-14">
+          <div className="w-full flex flex-wrap gap-2 my-14">
             {ClientData.map((client) => (
-              <div key={client.id} className="w-[100%] md:w-[50%] lg:w-[15%] border-[#F7F7F8] rounded-lg shadow-md p-4">
-                <div className="w-[120px] h-[120px]  flex justify-center items-center mx-auto">
+              <div key={client.id} className="w-[40%] md:w-[50%] lg:w-[13%] border-[#F7F7F8] rounded-lg p-4">
+                <div className="w-[100px] h-[100px]  flex justify-center items-center mx-auto">
                   <Image
-                    src={client.image}
-                    alt=""
-                    className="object-fit w-full h-full"
-                  />
+          src={client.image}
+          alt={`${client.name} logo`}
+          width={100}
+          height={100}
+          quality={100}
+          className="object-contain w-full h-full"
+          priority
+        />
                 </div>
               </div>
             ))}
           </div>
-          <div className="my-10">
+          <div className="my-14 py-8">
             <OurStand />
           </div>
         </div>
