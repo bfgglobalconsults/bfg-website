@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-import Banner from "../../public/assets/masked-img.png";
+import Banner from "../../public/assets/bfg1.jpg";
 import WaveImage from "../../public/assets/mask-img.png";
 
 // Import the CSS for react-slick
@@ -109,7 +109,12 @@ const HeroSection1 = () => (
         }}
         transition={{ repeat: Infinity, duration: 50 }}
       >
-        <Image src={Banner} alt="banner" className="w-full h-full object-fit" />
+       <Image 
+      src={Banner} 
+      alt="banner" 
+      className="w-full h-full object-contain scale-125"
+      priority 
+    />
       </motion.div>
     </div>
     </MediaQuery>
@@ -168,14 +173,19 @@ const HeroSection2 = () => (
       </div>
     </div>
 
-    <div className="w-full lg:w-[40%] overflow-hidden py-10 z-10">
+     <div className="w-full lg:w-[40%] overflow-hidden py-10 z-10">
       <motion.div
         animate={{
           rotate: [0, 200, 400, 600, 800, 800, 600, 400, 200, 0],
         }}
         transition={{ repeat: Infinity, duration: 50 }}
       >
-        <Image src={Banner} alt="banner" className="w-full h-full object-fit" />
+       <Image 
+      src={Banner} 
+      alt="banner" 
+      className="w-full h-full object-contain scale-125"
+      priority 
+    />
       </motion.div>
     </div>
   </div>
