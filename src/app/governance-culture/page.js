@@ -63,9 +63,9 @@ const page = () => {
                 across all levels. Our leadership is guided by
               </p>
             </div>
-            <div className="w-full flex-col lg:flex-row gap-10">
+            <div className="w-full flex flex-col lg:flex-row gap-10">
               <div className="w-[100%] lg:w-[40%]">
-                <div className="w-full h-[520px]">
+                <div className="w-full h-full">
                   <Image
                     src={GovernanceImg}
                     alt=""
@@ -74,7 +74,7 @@ const page = () => {
                 </div>
               </div>
               <div className="w-[100%] lg:w-[60%]">
-                <div className="w-[100%] p-2 overflow-hidden">
+                <div className="p-2 overflow-hidden">
                   <SlideLeft>
                     <div className="w-full flex flex-wrap gap-8">
                       <div className="w-[100%] lg:w-[40%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">

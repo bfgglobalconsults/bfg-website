@@ -40,7 +40,6 @@ import CaseImage2 from "../../public/assets/research-case.png";
 import CaseImage3 from "../../public/assets/business-case.png";
 import CaseImage4 from "../../public/assets/training-case.png";
 
-
 import STTravel from "../../public/assets/News-ST.jpg";
 import AwardNews from "../../public/assets/bfg-award.jpg";
 import FirstNews from "../../public/assets/first-news.png";
@@ -57,6 +56,7 @@ import { card_links } from "@/constants/card-constant";
 import { data } from "./data";
 import { SlideIn, SlideLeft, Transition } from "@/components/ui/Transitions";
 import SliderHeroPage from "@/components/SliderHeroPage";
+import Slides from "@/components/Slides";
 
 export default function Main() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -146,7 +146,7 @@ export default function Main() {
       title: "Business Strategy &  Operations",
       link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
     },
-     {
+    {
       id: 3,
       image: CaseImage4,
       img_name: "banner",
@@ -179,7 +179,7 @@ export default function Main() {
     },
   ];
   const solutions = [
-   {
+    {
       id: 1,
       href: "/solutions/information-technology",
       title: "Technology & Software",
@@ -214,7 +214,7 @@ export default function Main() {
         "Improve job performance through employee training. Win the process of enhancing the skills, knowledge & abilities of employees to perform their jobs more effectively. Through this solution, we help startups & SMEs improve their overall performance.",
       svgPath:
         "M12 10C14.2091 10 16 8.20914 16 6 16 3.79086 14.2091 2 12 2 9.79086 2 8 3.79086 8 6 8 8.20914 9.79086 10 12 10ZM5.5 13C6.88071 13 8 11.8807 8 10.5 8 9.11929 6.88071 8 5.5 8 4.11929 8 3 9.11929 3 10.5 3 11.8807 4.11929 13 5.5 13ZM21 10.5C21 11.8807 19.8807 13 18.5 13 17.1193 13 16 11.8807 16 10.5 16 9.11929 17.1193 8 18.5 8 19.8807 8 21 9.11929 21 10.5ZM12 11C14.7614 11 17 13.2386 17 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5 15.9999C5 15.307 5.10067 14.6376 5.28818 14.0056L5.11864 14.0204C3.36503 14.2104 2 15.6958 2 17.4999V21.9999H5V15.9999ZM22 21.9999V17.4999C22 15.6378 20.5459 14.1153 18.7118 14.0056 18.8993 14.6376 19 15.307 19 15.9999V21.9999H22Z",
-    }
+    },
   ];
 
   const currentDate = new Date();
@@ -231,52 +231,9 @@ export default function Main() {
         {/* slider hero */}
         <SliderHeroPage />
         {/* slider hero end */}
-        <div className="bg-[#faf8f8bd] p-[40px]">
-          <div className="w-full flex flex-col lg:flex-row gap-1 items-center">
-            <div className="w-[100%] lg:w-[30%]">
-              <h3 className="text-2xl font-semibold">
-                Trusted by Top Partners <br />& Clients
-              </h3>
-            </div>
-            <div className="w-[100%] lg:w-[70%]">
-              <Swiper
-                style={{ "--swiper-navigation-size": "20px" }}
-                slidesPerView={2}
-                breakpoints={{
-                  0: {
-                    slidesPerView: 2,
-                  },
-                  600: {
-                    slidesPerView: 4,
-                  },
-                }}
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
-                spaceBetween={5}
-                navigation={false}
-                modules={[Autoplay]}
-                className="w-full flex justify-center"
-              >
-                {data.map(({ id, image, name }, index) => {
-                  return (
-                    <SwiperSlide className="flex justify-center" key={index}>
-                      <div className="text-center">
-                        <div className="p-4">
-                          <div className="inline-block text-center">
-                            <Image
-                              src={image}
-                              alt={name}
-                              className="h-[70px] object-fit"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  );
-                })}
-              </Swiper>
-            </div>
-          </div>
-        </div>
+        {/* advert slider */}
+        <Slides />
+        {/* advert slider end */}
 
         <div className="w-full h-full lg:h-[800px] flex flex-col lg:flex-row items-center flex-wrap">
           <div className="w-[100%] h-full xl:w-[40%] relative lg:flex lg:items-center lg:justify-center">
@@ -733,21 +690,21 @@ export default function Main() {
                   Dive into the world of operational efficiency & learn
                   strategies to boost productivity effortlessly.
                 </p>
-                 <Link href="/insight/news/bfg-bags-award">
-                <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
-                  <span className="text-white">Read More</span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
-                </button>
+                <Link href="/insight/news/bfg-bags-award">
+                  <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
+                    <span className="text-white">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
                 </Link>
               </div>
             </div>
