@@ -11,47 +11,106 @@ import Sensang from "../../../public/assets/sensang.png";
 import Gigs from "../../../public/assets/gigs-ltd.png";
 import Alubarika from "../../../public/assets/alubarika.png";
 import Twenty from "../../../public/assets/12twenty.jpg";
+import Client1 from "../../../public/assets/client1.png";
+import Client2 from "../../../public/assets/client2.png";
+import Client3 from "../../../public/assets/client3.png";
+import Client4 from "../../../public/assets/client4.png";
+import Client5 from "../../../public/assets/client5.png";
+import Client6 from "../../../public/assets/client6.png";
+import Client7 from "../../../public/assets/client7.png";
+import Client8 from "../../../public/assets/client8.png";
+import Client9 from "../../../public/assets/client9.png";
+import Client10 from "../../../public/assets/client10.png";
+import Client11 from "../../../public/assets/client11.png";
+import Client12 from "../../../public/assets/client12.png";
+import Client13 from "../../../public/assets/client13.png";
+import Client14 from "../../../public/assets/client14.png";
+import Client15 from "../../../public/assets/client15.png";
+import Client16 from "../../../public/assets/client16.png";
+import Client17 from "../../../public/assets/client17.png";
+import Client18 from "../../../public/assets/client18.png";
+
+
+
+
+
+
+
+
+
 
 
 const ClientData = [
   {
     id: 1,
-    image: DMJTravel,
-    content: "DMJ Travels and Tours is a premier travel and tourism company dedicated to delivering exceptional travel experiences to clients around the globe. ",
+    image: Client1,
   },
   {
     id: 2,
-    image: STTravels,
-    content: "ST Travels and Consulting is a trusted name in the travel and tourism industry, dedicated to helping individuals and businesses navigate the world with ease and confidence.",
+    image: Client2,
   },
   {
     id: 3,
-    image: DavidPrestige,
-    content: "David Prestige is a forward-thinking law firm dedicated to delivering exceptional legal representation rooted in professionalism, ethics, and an unwavering commitment to client success.",
+    image: Client3,
   },
   {
     id: 4,
-    image: Ampersand,
-    content: "Ampersand is one of Nigeria’s fast-rising Entrepreneurship Development Service Provider Organizations (EDSPO), dedicated to empowering businesses and individuals to thrive in today’s competitive marketplace.",
+    image:  Client4,
   },
   {
     id: 5,
-    image: Sensang,
-    content: "Sensang Construction  mission is to provide cutting-edge solutions that meet the evolving needs of urbanization. The firm’s expertise spans a wide range of services, including architectural design, civil engineering, and comprehensive construction management.",
+    image:  Client5,
   },{
     id: 6,
-    image: Gigs,
-    content: "Gladwill Integrated Global Services Ltd is a premier international outsource management consulting firm with core expertise in international education travels, legal relocation advisory, and consultation services.",
+    image:  Client6,
   },
   {
     id: 7,
-    image: Alubarika,
-    content: "Alubarika Construction serves as a trusted main contractor for small to medium-sized projects, delivering exceptional results across industrial and commercial sectors."
+    image:  Client7,
   },
   {
     id: 8,
-    image: Twenty,
-    content: "12twenty is passionate about redefining the real estate experience by offering unparalleled service and tailored opportunities for clients searching for the perfect residential property, exploring commercial investments, or securing premium land.",
+    image:  Client8,
+  },
+    {
+    id: 9,
+    image:  Client9,
+  },
+      {
+    id: 10,
+    image:  Client10,
+  },
+        {
+    id: 11,
+    image:  Client11,
+  },
+          {
+    id: 12,
+    image:  Client12,
+  },
+            {
+    id: 13,
+    image:  Client13,
+  },
+              {
+    id: 14,
+    image:  Client14,
+  },
+                {
+    id: 15,
+    image:  Client15,
+  },
+                  {
+    id: 16,
+    image:  Client16,
+  },
+                    {
+    id: 17,
+    image:  Client17,
+  },
+                      {
+    id: 18,
+    image:  Client18,
   }
 ]
 
@@ -96,20 +155,19 @@ const page = () => {
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Clients
           </span>
-          <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl my-4">
+          <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-3xl my-4">
             Collaborating with Forward-Thinking Clients
           </h3>
-          <div className="w-full flex justify-center flex-wrap gap-10">
+          <div className="w-full flex flex-wrap gap-14 my-14">
             {ClientData.map((client) => (
-              <div key={client.id} className="w-[100%] md:w-[50%] lg:w-[25%] border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md p-4">
-                <div className="w-[150px] h-[120px] flex justify-center items-center mx-auto">
+              <div key={client.id} className="w-[100%] md:w-[50%] lg:w-[15%] border-[#F7F7F8] rounded-lg shadow-md p-4">
+                <div className="w-[120px] h-[120px]  flex justify-center items-center mx-auto">
                   <Image
                     src={client.image}
                     alt=""
                     className="object-fit w-full h-full"
                   />
                 </div>
-                <p className="text-[#999] p-3 mx-auto">{client.content}</p>
               </div>
             ))}
           </div>
