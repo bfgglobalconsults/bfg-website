@@ -7,6 +7,7 @@ import Picture from "../../../public/assets/festus-potrait.png";
 import Statistics from "@/components/Statistics";
 import OurStand from "@/components/OurStand";
 import CounterSection from "@/components/counter/CounterSection";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -58,6 +59,7 @@ const page = () => {
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
                   We help you unleash the power within your business, transforming potential into performance through tailored strategies and innovative solutions that fuel growth and success.
                   </p>
+                  <a href="/about-us.pdf" target="_blank" download="BFG_Company_Profile.pdf" rel="noopener noreferrer" className="">
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">
                     View Our Profile
@@ -73,7 +75,8 @@ const page = () => {
                       <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                     </svg>
                   </span>
-                </button>
+                    </button>
+                    </a>
                   </div>
               </div>
               <div className="w-[100%] lg:w-[50%]">

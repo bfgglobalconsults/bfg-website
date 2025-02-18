@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../public/assets/business-strategy-banner.jpg"
+import TopBanner from "../../../public/assets/policy-banner.png"
 import Slides from "@/components/Slides";
 
 const page = () => {

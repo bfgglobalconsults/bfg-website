@@ -24,7 +24,7 @@ const ClientBanner = () => {
             <div className="w-[100%] lg:w-[40%]">
               <p className="text-white text-xl">
                 Discover how businesses like yours transformed with our software
-                Real stories of growtn innovation & success.
+                Real stories of growth innovation & success.
               </p>
             </div>
             <div className="w-[100%] lg:w-[30%]">
