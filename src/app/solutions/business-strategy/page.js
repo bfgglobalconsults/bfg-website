@@ -392,7 +392,7 @@ const page = () => {
                 <p className="text-center text-2xl">Connect, collaborate, and drive innovation from anywhere as you transform your business with our Strategy & Operations Transformation Solutions.</p>
               <div className="flex justify-center">
               <Link href="/contact"><button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
-                  Request a Custom Solution
+                  Contact our Product Team
                 </button>
                   </Link>
                 </div>  

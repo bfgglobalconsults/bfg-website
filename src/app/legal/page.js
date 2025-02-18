@@ -1,21 +1,44 @@
+import Image from "next/image";
 import React from "react";
+import TopBanner from "../../../public/assets/business-strategy-banner.jpg"
+import Slides from "@/components/Slides";
 
 const page = () => {
   return (
     <>
-      <div className="py-[100px]">
-        <div className="p-[40px]">
+       <div className="py-5 lg:py-[100px]">
+        <div className="p-12">
           <div>
-            <h3 className="text-6xl font-bold my-2">Legal Policy</h3>
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Policy
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            Legal Policy
+          </h3>
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+                The legal policy outlined is designed to protect our Company & its clients from legal risks & disputes.
+              </p>
+            </div>
+              <div className="">
+                                <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
+                                  <Image
+                                    src={TopBanner}
+                                    alt="top-banner"
+                                    className="w-full h-full object-cover rounded-3xl"
+                                  />
+                                </div>
+            </div>
+            
+            <div className="my-4">
+              <Slides />
+            </div>
+           
 
-            <p className="my-2 text-[#656565]">
-              The legal policy outlined is designed to protect our Company and
-              its clients from legal risks and disputes.
-            </p>
-
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Non-Disclosure Agreement (NDA){" "}
+            <div className="my-2 px-2 lg:px-10 bg-[#FCFDFD] border border-[#EEF3F6]">
+              <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Non-Disclosure Agreement (NDA):{" "}
               </p>
               <p className="text-[#656565] my-2">
                 As a Company, we recognize the importance of protecting our
@@ -27,8 +50,8 @@ const page = () => {
                 required by law.
               </p>
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">Use of Information</p>
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">Use of Information:</p>
               <p className="text-[#656565] my-2">
                 We use the information we collect for various purposes,
                 including to provide our services to you, to communicate with
@@ -36,9 +59,9 @@ const page = () => {
                 obligations, and to evaluate job applications.{" "}
               </p>
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Data Protection and Privacy{" "}
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Data Protection and Privacy:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 We shall comply with all applicable data protection and privacy
@@ -50,8 +73,8 @@ const page = () => {
                 breaches.
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
                 Conflict of Interest Policy{" "}
               </p>
               <p className="text-[#656565] my-2">
@@ -62,9 +85,9 @@ const page = () => {
                 interest to avoid any negative impact on clients.
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Intellectual Property Policy{" "}
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Intellectual Property Policy:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 Our Company shall ensure that any intellectual property (IP)
@@ -73,9 +96,9 @@ const page = () => {
                 engagement and how it will be protected.
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Contractual Agreements{" "}
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Contractual Agreements:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 We provide and require all clients to sign our standard
@@ -85,9 +108,9 @@ const page = () => {
                 client and can protect both parties in case of any disputes.
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Professional Liability Insurance
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Professional Liability Insurance:
               </p>
               <p className="text-[#656565] my-2">
                 The BFG shall obtain professional liability insurance, also
@@ -96,8 +119,8 @@ const page = () => {
                 omissions made during consulting engagements.
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
                 Compliance with the countrys Laws and Regulations{" "}
               </p>
               <p className="text-[#656565] my-2">
@@ -108,7 +131,8 @@ const page = () => {
                 providers are aware of and comply with these laws and
                 regulations.{" "}
               </p>{" "}
-            </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>

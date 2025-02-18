@@ -1,14 +1,37 @@
+import Image from "next/image";
 import React from "react";
+import TopBanner from "../../../public/assets/business-strategy-banner.jpg";
+import Link from "next/link";
+import Slides from "@/components/Slides";
 
 const page = () => {
   return (
     <>
-      <div className="py-[100px]">
-        <div className="p-[40px]">
+      <div className="py-5 lg:py-[100px]">
+        <div className="p-12">
           <div>
-            <h3 className="text-6xl font-bold my-2">Privacy Policy</h3>
+             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Policy
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            Privacy Policy
+          </h3>
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+             This discloses all of the ways we gathers, use, disclose, and manage our  client&apos;s data. 
+          </p>
+            </div>
+             <div className="">
+                    <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
+                      <Image
+                        src={TopBanner}
+                        alt="top-banner"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                  </div>
 
-            <p className="my-2 text-[#656565]">
+            <p className="my-4 text-[#656565]">
               BFG Global Consulting Inc., is committed to protecting the privacy
               and confidentiality of our clients and website visitors
               information. This Privacy Policy describes how we protect the
@@ -19,17 +42,22 @@ const page = () => {
             </p>
             <p className="text-[#656565]">
               This policy also shows the types of information we may collect
-              from you or that you may provide when you visit our website,
-              https://bfgconsults.com/,  Please read this policy carefully to
+              from you or that you may provide when you visit our website:
+              <Link href="/">https://www.bfgconsults.com/</Link>,  Please read this policy carefully to
               understand our policies and practices regarding your information
               and how we will treat it. If you do not agree with our policies
               and practices, please contact our company for further
               clarifications.
             </p>
+            <div className="my-4">
+              <Slides />
+            </div>
 
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Information We Collect{" "}
+                        <div className="my-2 px-2 lg:px-10 bg-[#FCFDFD] border border-[#EEF3F6]">
+
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Information We Collect:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 We collect personal information from our clients, website
@@ -40,8 +68,8 @@ const page = () => {
                 pages you visit.
               </p>
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">Use of Information</p>
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">Use of Information:</p>
               <p className="text-[#656565] my-2">
                 We use the information we collect for various purposes,
                 including to provide our services to you, to communicate with
@@ -49,9 +77,9 @@ const page = () => {
                 obligations, and to evaluate job applications.{" "}
               </p>
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Disclosure of Information{" "}
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Disclosure of Information:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 We do not disclose your personal information to third parties
@@ -60,9 +88,9 @@ const page = () => {
                 respond to your requests.{" "}
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Security of Information
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Security of Information:
               </p>
               <p className="text-[#656565] my-2">
                 We take appropriate technical and organizational measures to
@@ -72,9 +100,9 @@ const page = () => {
                 remain effective to continuously protect your data.
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Cookies and Similar Technologies{" "}
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Cookies and Similar Technologies:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 We use cookies and similar technologies to collect information
@@ -83,9 +111,9 @@ const page = () => {
                 cookies, but this may limit your use of our website.{" "}
               </p>{" "}
             </div>
-            <div className="my-2">
-              <p className="font-bold text-black my-2">
-                Updates to Privacy Policy{" "}
+            <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+                Updates to Privacy Policy:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 By accessing or using this Website, you agree to this Privacy
@@ -95,12 +123,13 @@ const page = () => {
                 informed about how we are protecting your information.
               </p>{" "}
                       </div>
-                       <div className="my-2">
-              <p className="font-bold text-black my-2">
-Contact Us              </p>
-              <p className="text-[#656565] my-2">
+                       <div className="my-6">
+              <p className="font-bold text-xl text-black my-2">
+Contact Us:              </p>
+              <p className="text-[#656565]  my-2">
                If you have any questions or concerns about our Privacy Policy, please contact us via the contact details displayed at the foot of this webpage or the contacts on our “Contact” page, or simply fill the form on the “Contact” page. 
               </p>{" "}
+            </div>
             </div>
           </div>
         </div>
