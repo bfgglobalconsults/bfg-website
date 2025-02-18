@@ -143,7 +143,7 @@ export default function Main() {
       id: 3,
       image: CaseImage3,
       img_name: "banner",
-      title: "Business Strategy &  Operations",
+      title: "Strategy & Operations Transformation",
       link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
     },
     {
@@ -710,6 +710,7 @@ export default function Main() {
             </div>
           </div>
           <div className="my-4 flex justify-center">
+            <Link href="/insight/news">
             <button className="py-3 px-4 border border-[#E26015] rounded-3xl flex gap-2 hover:bg-[#E26015] group">
               <span className="text-[#E26015] font-semibold group-hover:text-white">
                 See More
@@ -726,7 +727,8 @@ export default function Main() {
                   <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                 </svg>
               </span>
-            </button>
+              </button>
+              </Link>
           </div>
         </div>
 

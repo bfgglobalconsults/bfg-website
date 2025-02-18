@@ -12,23 +12,51 @@ import Gigs from "../../../public/assets/gigs-ltd.png";
 import Alubarika from "../../../public/assets/alubarika.png";
 import Twenty from "../../../public/assets/12twenty.jpg";
 import Client1 from "../../../public/assets/client1.png";
-import Client2 from "../../../public/assets/client2.png";
-import Client3 from "../../../public/assets/client3.png";
+import Client2 from "../../../public/assets/client2.jpg";
+import Client3 from "../../../public/assets/client3.jpg";
 import Client4 from "../../../public/assets/client4.png";
 import Client5 from "../../../public/assets/client5.png";
 import Client6 from "../../../public/assets/client6.png";
 import Client7 from "../../../public/assets/client7.png";
-import Client8 from "../../../public/assets/client8.png";
+import Client8 from "../../../public/assets/client8.jpg";
 import Client9 from "../../../public/assets/client9.png";
 import Client10 from "../../../public/assets/client10.png";
 import Client11 from "../../../public/assets/client11.png";
 import Client12 from "../../../public/assets/client12.png";
 import Client13 from "../../../public/assets/client13.png";
-import Client14 from "../../../public/assets/client14.png";
+import Client14 from "../../../public/assets/client14.jpg";
 import Client15 from "../../../public/assets/client15.png";
 import Client16 from "../../../public/assets/client16.png";
 import Client17 from "../../../public/assets/client17.png";
 import Client18 from "../../../public/assets/client18.png";
+import Client19 from "../../../public/assets/client19.jpg";
+import Client20 from "../../../public/assets/client20.PNG";
+import Client21 from "../../../public/assets/client21.png";
+import Client22 from "../../../public/assets/client22.png";
+import Client23 from "../../../public/assets/client23.png";
+import Client24 from "../../../public/assets/client24.png";
+import Client25 from "../../../public/assets/client25.jpg";
+import Client26 from "../../../public/assets/client26.png";
+import Client27 from "../../../public/assets/client27.jpeg";
+import Client28 from "../../../public/assets/client28.jpg";
+import Client29 from "../../../public/assets/client29.png";
+import Client30 from "../../../public/assets/client30.jpg";
+import Client31 from "../../../public/assets/client31.png";
+import Client32 from "../../../public/assets/client32.jpg";
+import Client33 from "../../../public/assets/client33.png";
+import Client34 from "../../../public/assets/client34.png";
+import Client35 from "../../../public/assets/client35.png";
+import Client36 from "../../../public/assets/client36.png";
+import Client37 from "../../../public/assets/client37.png";
+import Client38 from "../../../public/assets/client38.png";
+import Client39 from "../../../public/assets/client39.png";
+import Client40 from "../../../public/assets/client40.png";
+import Client41 from "../../../public/assets/client41.png";
+import Client42 from "../../../public/assets/client42.png";
+import Client43 from "../../../public/assets/client43.png";
+import Client44 from "../../../public/assets/client44.png";
+import Client45 from "../../../public/assets/client45.jpg";
+import Client46 from "../../../public/assets/client46.jpeg";
 
 
 
@@ -51,7 +79,7 @@ const ClientData = [
   },
   {
     id: 3,
-    image: DMJTravel,
+    image: Client3,
   },
   {
     id: 4,
@@ -59,7 +87,7 @@ const ClientData = [
   },
   {
     id: 5,
-    image:  Gigs,
+    image:  Client5,
   },{
     id: 6,
     image:  Client6,
@@ -111,7 +139,119 @@ const ClientData = [
                       {
     id: 18,
     image:  Client18,
-  }
+  },
+  {
+    id: 19, 
+    image: Client19,
+  },
+  {
+    id: 20,
+    image: Client20,
+    },
+    {
+    id: 21,
+    image: Client21,
+    },
+    {
+    id: 22,
+    image: Client22,
+    },
+    {
+    id: 23,
+    image: Client23,
+    },
+    {
+    id: 24,
+    image: Client24,
+    },
+    {
+    id: 25,
+    image: Client25,
+    },
+    {
+    id: 26,
+    image: Client26,
+    },
+    {
+    id: 27,
+    image: Client27,
+    },
+    {
+    id: 28,
+    image: Client28,
+    },
+    {
+    id: 29,
+    image: Client29,
+    },
+    {
+    id: 30,
+    image: Client30,
+    },
+    {
+    id: 31,
+    image: Client31,
+    },
+    {
+    id: 32,
+    image: Client32,
+    },
+    {
+    id: 33,
+    image: Client33,
+    },
+    {
+    id: 34,
+    image: Client34,
+    },
+    {
+    id: 35,
+    image: Client35,
+    },
+    {
+    id: 36,
+    image: Client36,
+    },
+    {
+    id: 37,
+    image: Client37,
+    },
+    {
+    id: 38,
+    image: Client38,
+    },
+    {
+    id: 39,
+    image: Client39,
+    },
+    {
+    id: 40,
+    image: Client40,
+    },
+    {
+    id: 41,
+    image: Client41,
+    },
+    {
+    id: 42,
+    image: Client42,
+    },
+    {
+    id: 43,
+    image: Client43,
+    },
+    {
+    id: 44,
+    image: Client44,
+    },
+    {
+    id: 45,
+    image: Client45,
+    },
+    {
+    id: 46,
+    image: Client46,
+    }
 ]
 
 const page = () => {

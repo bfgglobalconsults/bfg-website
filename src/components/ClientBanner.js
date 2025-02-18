@@ -4,6 +4,7 @@ import VideoImg from "../../public/assets/video-img.png";
 import SensangImg from "../../public/assets/sensang-img.png";
 import GigsImg from "../../public/assets/gigs-img.png";
 import TwentyImg from "../../public/assets/12twenty-img.png";
+import Link from "next/link";
 
 
 const ClientBanner = () => {
@@ -27,9 +28,11 @@ const ClientBanner = () => {
               </p>
             </div>
             <div className="w-[100%] lg:w-[30%]">
+              <Link href="/clients">
               <button className="py-2 px-4 rounded-3xl bg-white hover:bg-[#222] text-[#E26015] hover:text-white font-semibold">
                 See More
-              </button>
+                </button>
+                </Link>
             </div>
                   </div>
                   <div className="w-full">
