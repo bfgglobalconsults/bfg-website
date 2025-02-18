@@ -259,8 +259,10 @@ const Footer = () => {
                 <Link href="/terms">
                   <p className="my-2 text-sm">Terms of Service</p>
                 </Link>
+                 <Link href="/copyright">
                 <p className="my-2 text-sm">Copyright Policy</p>
-                <Link href="/legal">
+                </Link>
+                  <Link href="/legal">
                   <p className="my-2 text-sm">Legal Policy</p>
                 </Link>
               </div>

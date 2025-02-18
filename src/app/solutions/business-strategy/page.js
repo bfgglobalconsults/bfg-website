@@ -303,7 +303,8 @@ const page = () => {
                   excellence, adaptability, and transformative solutions across
                   various sectors.
                 </p>
-                <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
+                 <a href="/bfg-portfolio.pdf" target="_blank" download="BFG_Company_Portfolio.pdf" rel="noopener noreferrer" className="">
+                  <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">
                     View Our Portfolio
                   </span>
@@ -318,7 +319,8 @@ const page = () => {
                       <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                     </svg>
                   </span>
-                </button>
+                    </button>
+                    </a>
               </div>
             </div>
           </div>
