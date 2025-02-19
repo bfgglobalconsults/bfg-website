@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TopBanner from "../../../../public/assets/ai-advantage.png";
-import AiGroup from "../../../../public/assets/ai-card.png";
+import AiGroup from "../../../../public/assets/ai-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 

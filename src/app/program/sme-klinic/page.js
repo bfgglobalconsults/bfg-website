@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TopBanner from "../../../../public/assets/sme-klinic.png";
-import KlinicGroup from "../../../../public/assets/klinic-card.png";
+import KlinicGroup from "../../../../public/assets/klinic-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 

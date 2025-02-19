@@ -91,8 +91,8 @@ const FixedHeader = () => {
         <div
           className={`${
             active === true
-              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10 border-b"
-              : "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10 border-b"
+              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
+              : "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
           } px-[40px] text-gray-400`}
         >
           <div className="flex justify-between items-center">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TopBanner from "../../../../public/assets/sme-webinar.png";
-import SmeGroup from "../../../../public/assets/sme-card.png";
+import SmeGroup from "../../../../public/assets/sme-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 
