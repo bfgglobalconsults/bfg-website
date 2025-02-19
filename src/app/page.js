@@ -251,7 +251,7 @@ export default function Main() {
                   which guarantee outstanding quality, creativity, and client
                   pleasure at every turn.
                 </p>
-                                <a href="/bfg-services.pdf" target="_blank"  rel="noopener noreferrer" className="">
+                                <a href="/about-us.pdf" target="_blank"  rel="noopener noreferrer" className="">
 
                 <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
                   <span className="text-white font-semibold">

@@ -1,8 +1,15 @@
 import React from "react";
-import ManagingDirector from "../../../public/assets/festus.png";
+import ManagingDirector from "../../../public/assets/festus-md.png";
+import HeadService from "../../../public/assets/mr-peter.png";
 import HeadGrowth from "../../../public/assets/moses.png";
 import HeadBusiness from "../../../public/assets/ifeoma.png";
 import HeadResearch from "../../../public/assets/kenneth.png";
+import Elizabeth from "../../../public/assets/elizabeth-mary.png";
+import DavidBradford from "../../../public/assets/david-bradford.png";
+import Happy from "../../../public/assets/happiness_adama.png";
+import Jeremiah from "../../../public/assets/jesunifemi.png";
+import Simon from "../../../public/assets/simon-adeh.png";
+import Abubakar from "../../../public/assets/abubakar-sadiq.png";
 import CompanySecretary from "../../../public/assets/secretary.png";
 import Avatar from "../../../public/assets/new-avatar.png";
 import Banner from ".././../../public/assets/team-image.jpg";
@@ -74,7 +81,7 @@ const Page = () => {
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
                   <p className="text-[#E45F11] font-semibold">
-                    Managing Director / CEO
+                    Managing Partner / CEO
                   </p>
                 </div>
               </div>
@@ -90,7 +97,7 @@ const Page = () => {
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Aina A. Oyefesobi</h3>
                   <p className="text-[#E45F11] font-semibold">
-                    Executive Board Member
+                    Deputy Managing Partner/COO
                   </p>
                 </div>
               </div>
@@ -98,7 +105,7 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={HeadService}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
@@ -209,7 +216,7 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={DavidBradford}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
@@ -226,7 +233,7 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Happy}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
@@ -241,7 +248,7 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Elizabeth}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
@@ -258,7 +265,7 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Jeremiah}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
@@ -275,7 +282,7 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Simon}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
@@ -356,19 +363,7 @@ const Page = () => {
                 </div>
               </div>
                {/* seventh team */}
-               <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Avatar}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Emmanuel Akinbade</h3>
-                  <p className="text-[#E45F11] font-semibold">Associate, Research & Analytics</p>
-                </div>
-              </div>
+               
               
             </div>
           </div>
@@ -485,7 +480,7 @@ const Page = () => {
           
           <div className="w-full gap-4 items-center justify-between my-4">
             <h3 className="my-4 text-[#333] font-bold text-4xl md:text-3xl lg:text-4xl mb-8">
-              Administration Team
+              Administrative Team
             </h3>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Team member card */}
@@ -493,7 +488,7 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Abubakar}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
@@ -501,7 +496,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Abubakar Sultan Faisal</h3>
                   <p className="text-[#E45F11] font-semibold">
-                    System Administrator
+                    Systems Administrator
                   </p>
                 </div>
               </div>
