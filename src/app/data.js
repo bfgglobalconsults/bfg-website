@@ -1,14 +1,14 @@
-import Image1 from "../../public/assets/slider-img1.png";
-import Image2 from "../../public/assets/slider-img2.png";
-import Image3 from "../../public/assets/slider-img3.png";
-import Image4 from "../../public/assets/slider-img4.png";
-import Image5 from "../../public/assets/slider-img5.png";
-import Image6 from "../../public/assets/slider-img6.png";
-import Image7 from "../../public/assets/slider-img7.png";
-import Image8 from "../../public/assets/slider-img8.png";
-import Image9 from "../../public/assets/slider-img9.png";
-import Image10 from "../../public/assets/slider-img10.png";
-import Image11 from "../../public/assets/slider-img11.png";
+import Image1 from "../../public/assets/slide1.png";
+import Image2 from "../../public/assets/slide2.png";
+import Image3 from "../../public/assets/slide3.png";
+import Image4 from "../../public/assets/slide4.png";
+import Image5 from "../../public/assets/slide5.png";
+import Image6 from "../../public/assets/slide6.png";
+import Image7 from "../../public/assets/slide7.png";
+import Image8 from "../../public/assets/slide8.png";
+import Image9 from "../../public/assets/slide9.png";
+import Image10 from "../../public/assets/slide10.png";
+import Image11 from "../../public/assets/slide11.png";
 
 
 export const data = [
