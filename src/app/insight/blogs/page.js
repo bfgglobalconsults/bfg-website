@@ -52,7 +52,7 @@ const page = () => {
                  Unlocking Human Potential in the Age of AI and the 5th Industrial Revolution 
                   </h3>
                   <p className="text-[#999]">
-                           In today's rapidly evolving world, one of the most remarkable demonstrations of human potential is Artificial Intelligence (AI). AI, along with other pillars of the 5th Industrial Revolution, is not just a product of human intellect—it is proof of its boundless capabilities.
+                           In today&apos;s rapidly evolving world, one of the most remarkable demonstrations of human potential is Artificial Intelligence (AI). AI, along with other pillars of the 5th Industrial Revolution, is not just a product of human intellect—it is proof of its boundless capabilities.
 
                   </p>
                   <Link href="">
