@@ -114,7 +114,7 @@ export const navigation_links = [
   },
   {
     id: 6,
-    label: "About us",
+    label: "About Us",
     link: "about",
     component: <AboutComponent />,
     componentName:"about",

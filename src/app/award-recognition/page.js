@@ -47,7 +47,7 @@ const page = () => {
           </div>
           <div className="my-14">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-              Achievements
+              Recognition
             </span>
             <div>
               <h3 className="text-[#333] text-3xl my-8 font-semibold">

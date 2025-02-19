@@ -257,13 +257,13 @@ const Footer = () => {
                   <p className="my-2 text-sm hover:text-[#E26015]">Privacy Policy</p>
                 </Link>
                 <Link href="/terms">
-                  <p className="my-2 text-sm">Terms of Service</p>
+                  <p className="my-2 text-sm hover:text-[#E26015]">Terms of Service</p>
                 </Link>
                  <Link href="/copyright">
-                <p className="my-2 text-sm">Copyright Policy</p>
+                <p className="my-2 text-sm hover:text-[#E26015]">Copyright Policy</p>
                 </Link>
                   <Link href="/legal">
-                  <p className="my-2 text-sm">Legal Policy</p>
+                  <p className="my-2 text-sm hover:text-[#E26015]">Legal Policy</p>
                 </Link>
               </div>
             </div>

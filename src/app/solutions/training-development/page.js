@@ -11,7 +11,7 @@ import GreaterFlexibility from "../../../../public/assets/greater-flexibility.pn
 import DecisionMaking from "../../../../public/assets/decision-making.png";
 import TopTalent from "../../../../public/assets/top-talent.png";
 import Operations from "../../../../public/assets/operations.png";
-import Avatar from "../../../../public/assets/avatar.png";
+import Avatar from "../../../../public/assets/new-avatar.png";
 import TrainingPortfolio from "../../../../public/assets/Training-Portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
@@ -291,7 +291,7 @@ const page = () => {
                   training and development initiatives, fostering a pipeline of
                   skilled talent ready to tackle tomorrow&apos; challenges.
                 </p>
-               <a href="/bfg-portfolio.pdf" target="_blank" download="BFG_Company_Portfolio.pdf" rel="noopener noreferrer" className="">
+               <a href="/bfg-portfolio.pdf" target="_blank"  rel="noopener noreferrer" className="">
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">
                     View Our Portfolio
@@ -367,7 +367,7 @@ const page = () => {
                 <p className="text-center text-2xl">Connect, collaborate, and innovate from anywhere as you transform your workforce with our Training and Development Solutions.</p>
               <div className="flex justify-center">
               <Link href="/contact"><button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
-                  Contact our Product Team
+                  Contact our Service Team
                 </button>
                   </Link>
                 </div>  

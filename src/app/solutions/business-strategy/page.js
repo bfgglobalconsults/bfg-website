@@ -5,7 +5,7 @@ import Image from "next/image";
 import TopBanner from "../../../../public/assets/business-strategy-banner.jpg";
 
 import BusinessImage from "../../../../public/assets/business-image.png";
-import Avatar from "../../../../public/assets/avatar.png";
+import Avatar from "../../../../public/assets/new-avatar.png";
 import Ifeoma from "../../../../public/assets/ifeoma.png";
 import Efficiency from "../../../../public/assets/efficiency.png";
 import Cost from "../../../../public/assets/cost.png";
@@ -303,7 +303,7 @@ const page = () => {
                   excellence, adaptability, and transformative solutions across
                   various sectors.
                 </p>
-                 <a href="/bfg-portfolio.pdf" target="_blank" download="BFG_Company_Portfolio.pdf" rel="noopener noreferrer" className="">
+                 <a href="/bfg-portfolio.pdf" target="_blank"  rel="noopener noreferrer" className="">
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">
                     View Our Portfolio
@@ -394,7 +394,7 @@ const page = () => {
                 <p className="text-center text-2xl">Connect, collaborate, and drive innovation from anywhere as you transform your business with our Strategy & Operations Transformation Solutions.</p>
               <div className="flex justify-center">
               <Link href="/contact"><button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
-                  Contact our Product Team
+                  Contact our Service Team
                 </button>
                   </Link>
                 </div>  

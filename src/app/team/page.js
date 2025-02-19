@@ -182,7 +182,7 @@ const Page = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="bg-white p-4 shadow-md rounded-lg">
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Kenneth Idanwekhai</h3>
                   <p className="text-[#E45F11] font-semibold">
                    Lead, Research, Data and Analytics
@@ -412,7 +412,7 @@ const Page = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="bg-white p-4 shadow-md rounded-lg">
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Alex James Odeh</h3>
                   <p className="text-[#E45F11] font-semibold">
                    Digital Marketer
@@ -463,7 +463,7 @@ const Page = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="bg-white p-4 shadow-md rounded-lg">
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Gloria Ebube</h3>
                   <p className="text-[#E45F11] font-semibold">
                    Auditor
@@ -514,7 +514,7 @@ const Page = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="bg-white p-4 shadow-md rounded-lg">
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Josephine Isai</h3>
                   <p className="text-[#E45F11] font-semibold">
                    Office Administrator

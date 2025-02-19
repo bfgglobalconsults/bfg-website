@@ -6,7 +6,7 @@ import Accordion from "@/components/Accordion";
 import TopBanner from "../../../../public/assets/it-banner.jpeg";
 
 import ItImage from "../../../../public/assets/it-image.png";
-import Avatar from "../../../../public/assets/avatar.png";
+import Avatar from "../../../../public/assets/new-avatar.png";
 
 import TechnologyPortfolio from "../../../../public/assets/technology-portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
@@ -330,7 +330,7 @@ const page = () => {
                   reflect our commitment to excellence, agility, and sustainable
                   growth.
                 </p>
-                <a href="/bfg-portfolio.pdf" target="_blank" download="BFG_Company_Portfolio.pdf" rel="noopener noreferrer" className="">
+                <a href="/bfg-portfolio.pdf" target="_blank"  rel="noopener noreferrer" className="">
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                   <span className="text-white text-md font-semibold">
                     View Our Portfolio
@@ -358,7 +358,7 @@ const page = () => {
             </span>
             <div>
               <h3 className="text-[#333] text-3xl my-8 font-semibold">
-                Meet Our Technology & Development Team
+                Meet Our Technology & Software Development Team
               </h3>
               <p className="text-[#999] text-xl my-2">
                 Discover the experts behind our solutions. Our dedicated team
@@ -424,7 +424,7 @@ const page = () => {
               <div className="flex justify-center">
                 <Link href="/contact">
                   <button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
-                    Contact our Product Team
+                    Contact our Service Team
                   </button>
                 </Link>
               </div>
