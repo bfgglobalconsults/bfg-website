@@ -496,7 +496,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Abubakar Sultan Faisal</h3>
                   <p className="text-[#E45F11] font-semibold">
-                    System Administrator
+                    Systems Administrator
                   </p>
                 </div>
               </div>
