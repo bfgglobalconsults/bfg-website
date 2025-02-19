@@ -42,13 +42,13 @@ const page = () => {
           <Slides />
         </div>
         <div className="p-1 lg:p-12">
-          {/* <h3 className="text-2xl text-black font-semibold my-3">
+          {/* <h3 className="text-2xl text-</p>black font-semibold my-3">
             Laying the Foundation: Vision & Strategy
           </h3> */}
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-                One of the biggest hurdles for startups in Africa’s challenging economic landscape is access to venture capital funding. According to the <span className="text-black font-semibold">Big Deal Data Report</span>, African tech startups raised only <span className="text-black font-semibold">$780 million in H1 2024</span>, reflecting a <span className="text-black font-semibold">31% decline</span> from the previous half and a <span className="text-black font-semibold"> staggering 57% drop</span> from H1 2023. This marks the lowest funding level since H2 2020, signalling a significant downturn in investment within Africa’s startup ecosystem.
+                One of the biggest hurdles for startups in Africa&apos;s challenging economic landscape is access to venture capital funding. According to the <span className="text-black font-semibold">Big Deal Data Report</span>, African tech startups raised only <span className="text-black font-semibold">$780 million in H1 2024</span>, reflecting a <span className="text-black font-semibold">31% decline</span> from the previous half and a <span className="text-black font-semibold"> staggering 57% drop</span> from H1 2023. This marks the lowest funding level since H2 2020, signalling a significant downturn in investment within Africa&apos;s startup ecosystem.
               </p>
               <br />
 
@@ -58,7 +58,7 @@ const page = () => {
               <br />
 
               <p className="text-lg text-[#999]">
-               In an exclusive interview aired on <span className="text-black font-semibold">DSTV Channel 258</span>, the discussion explored key strategies that entrepreneurs must adopt to secure investment in today's competitive market. The session highlighted the critical <span className="text-black font-semibold">"Must Do," "Should Not Do," and "Could Do"</span> approaches that can help startups stay afloat, enhance their product-market fit, and drive long-term sustainability and profitability.
+               In an exclusive interview aired on <span className="text-black font-semibold">DSTV Channel 258</span>, the discussion explored key strategies that entrepreneurs must adopt to secure investment in today&apos;s competitive market. The session highlighted the critical <span className="text-black font-semibold">&quot;Must Do,&quot; &quot;Should Not Do,&quot; and &quot;Could Do &quot;</span> approaches that can help startups stay afloat, enhance their product-market fit, and drive long-term sustainability and profitability.
               </p>
               <br />
               <p className="text-lg text-[#999]">
