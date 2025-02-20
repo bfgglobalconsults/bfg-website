@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TopBanner from "../../../../public/assets/women-tech.png";
-import WomenGroup from "../../../../public/assets/woman-card.png";
+import WomenGroup from "../../../../public/assets/women-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 
