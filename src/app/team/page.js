@@ -10,7 +10,7 @@ import Happy from "../../../public/assets/happiness_adama.png";
 import Jeremiah from "../../../public/assets/jesunifemi.png";
 import Simon from "../../../public/assets/simon-adeh.png";
 import Abubakar from "../../../public/assets/abubakar-sadiq.png";
-import CompanySecretary from "../../../public/assets/secretary.png";
+import CompanySecretary from "../../../public/assets/secretary-md.png";
 import Avatar from "../../../public/assets/new-avatar.png";
 import Banner from ".././../../public/assets/team-image.jpg";
 import Image from "next/image";

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TopBanner from "../../../../public/assets/leadership-summit.png";
-import LeaderGroup from "../../../../public/assets/leadership-card.png";
+import LeaderGroup from "../../../../public/assets/leadership-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 
