@@ -6,7 +6,7 @@ import Image5 from "../../public/assets/slide5.png";
 import Image6 from "../../public/assets/slide6.png";
 import Image7 from "../../public/assets/slide7.png";
 import Image8 from "../../public/assets/slide8.png";
-import Image9 from "../../public/assets/slide9.png";
+import Image9 from "../../public/assets/netline-banner.png";
 import Image10 from "../../public/assets/slide10.png";
 import Image11 from "../../public/assets/slide11.png";
 

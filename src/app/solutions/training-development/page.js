@@ -3,7 +3,7 @@ import Image from "next/image";
 import Banner from "../../../../public/assets/training-development.jpg";
 import Accordion from "@/components/Accordion";
 import TopBanner from "../../../../public/assets/training-development-banner.jpg";
-
+import Happy from "../../../../public/assets/happiness_adama.png"
 import TrainingImage from "../../../../public/assets/training-image.png";
 import EmployeePerformance from "../../../../public/assets/employee-perfomance.jpg";
 import Retention from "../../../../public/assets/retention.png";
@@ -337,7 +337,7 @@ const page = () => {
               <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
                   <Image
-                    src={Avatar}
+                    src={Happy}
                     alt="md"
                     className="w-full h-full object-fit"
                   />

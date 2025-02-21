@@ -77,6 +77,11 @@ const page = () => {
               
 
             </div>
+            <div>
+              <p className="text-[#656565] text-center my-6">
+                This Policy was last updated on February 18, 2025.
+              </p>
+            </div>
           </div>
         </div>
       </div>
