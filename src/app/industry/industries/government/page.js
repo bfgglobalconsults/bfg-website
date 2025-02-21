@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import NonGovtImg from "../../../../../public/assets/non-profit-vendor-scaled.jpg";
 import NgoImage from "../../../../../public/assets/ngo-img.png";
+import Slides from "@/components/Slides";
 
 const page = () => {
   return (
@@ -48,9 +49,13 @@ const page = () => {
               through purpose-driven collaboration & sustainable solutions{" "}
             </p>
           </div>
+          
+          <div className="my-6">
+            <Slides />
+          </div>
 
-          <div className="w-full flex flex-col lg:flex-row gap-4 my-8">
-            <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+          <div className="w-full flex flex-col lg:flex-row gap-4 bg-[#041926] rounded-xl p-10 my-8">
+            <div className="w-[100%] lg:w-[50%]  rounded-lg">
               <div className="my-4">
                 <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
                   Areas

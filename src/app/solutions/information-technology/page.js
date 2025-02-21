@@ -7,6 +7,8 @@ import TopBanner from "../../../../public/assets/it-banner.jpeg";
 
 import ItImage from "../../../../public/assets/it-image.png";
 import Avatar from "../../../../public/assets/new-avatar.png";
+import Bradford from "../../../../public/assets/david-bradford.png";
+import Jeremiah from "../../../../public/assets/jesunifemi.png";
 
 import TechnologyPortfolio from "../../../../public/assets/technology-portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
@@ -372,7 +374,7 @@ const page = () => {
               <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
                   <Image
-                    src={Avatar}
+                    src={Bradford}
                     alt="md"
                     className="w-full h-full object-fit"
                   />
@@ -385,7 +387,7 @@ const page = () => {
                 </div>
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
                   <Image
-                    src={Avatar}
+                    src={Jeremiah}
                     alt="md"
                     className="w-full h-full object-fit"
                   />

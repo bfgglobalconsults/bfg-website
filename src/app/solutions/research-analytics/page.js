@@ -6,7 +6,7 @@ import TopBanner from "../../../../public/assets/Research-and-analytics.png";
 import { motion } from "framer-motion";
 
 import ResearchImage from "../../../../public/assets/research-img.png";
-
+import Simon from "../../../../public/assets/simon-adeh.png";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
 
@@ -373,7 +373,7 @@ const page = () => {
                 </div>
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
                   <Image
-                    src={Avatar}
+                    src={Simon}
                     alt="md"
                     className="w-full h-full object-fit"
                   />

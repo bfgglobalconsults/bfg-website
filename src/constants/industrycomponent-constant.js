@@ -29,4 +29,33 @@ export const industry_links = [
         label: "Government and Non-for-Profit",
         link: "/industry/industries/government ",
       },
+]
+    
+export const second_industry_links = [
+    {
+        id: 1,
+        label: "Oil and Gas",
+        link: "/industry/industries/oil-gas",
+      },
+      {
+        id: 2,
+        label: "Industrial Manufacturing",
+        link: "/industry/industries/industrial-manufacturing",
+      },
+      {
+        id: 3,
+        label: "Telecommunication and Media",
+        link: "/industry/industries/telecom-media",
+      },
+      {
+        id: 4,
+        label: "Entertainment and Creative Industry",
+        link: "/industry/industries/entertainment",
+      },
+      {
+        id: 5,
+        label: "Health and Social Care",
+        link: "/industry/industries/health-social-care",
+      },
+      
     ]
