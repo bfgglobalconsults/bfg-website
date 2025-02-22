@@ -7,7 +7,7 @@ export const insight_links = [
       {
         id: 2,
         label: "Blogs",
-        link: "",
+        link: "/insight/blogs",
       },
       {
         id: 3,

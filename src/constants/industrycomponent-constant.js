@@ -11,7 +11,7 @@ export const industry_links = [
       },
       {
         id: 3,
-        label: "Financial Services",
+        label: "Banking & Financial Services",
         link: "/industry/industries/financial",
       },
       {
@@ -21,7 +21,7 @@ export const industry_links = [
       },
       {
         id: 5,
-        label: "Technology and Finance",
+        label: "Financial Technology",
         link: "/industry/industries/technology",
       },
       {

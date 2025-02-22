@@ -34,6 +34,11 @@ import SliderImage2 from "../../public/assets/sliderimage2.png";
 import SliderImage3 from "../../public/assets/sliderimage3.png";
 import SliderImage4 from "../../public/assets/sliderimage4.png";
 import SliderImage5 from "../../public/assets/consumer-img.png";
+import SliderImage6 from "../../public/assets/oilgas-banner.png";
+import SliderImage7 from "../../public/assets/industrial-manufacture-banner.png";
+import SliderImage8 from "../../public/assets/telecom-banner.png";
+import SliderImage9 from "../../public/assets/entertainment-banner.png";
+import SliderImage10 from "../../public/assets/health-banner.png";
 
 import CaseImage1 from "../../public/assets/technology-case.png";
 import CaseImage2 from "../../public/assets/research-case.png";
@@ -122,6 +127,46 @@ export default function Main() {
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider4-img",
       imageSrc: SliderImage4,
+    },
+    {
+      id: 6,
+      title: "Oil and Gas",
+      description:
+        "BFG empowers oil and gas companies to optimize operations, enhance safety protocols, and implement sustainable practices while navigating industry regulations and market dynamics.",
+      imageAlt: "slider6-img",
+      imageSrc: SliderImage6,
+    },
+    {
+      id: 7,
+      title: "Industrial Manufacturing",
+      description:
+        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+      imageAlt: "slider7-img",
+      imageSrc: SliderImage7,
+    },
+     {
+      id: 8,
+      title: "Telecommunication and Media",
+      description:
+        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+      imageAlt: "slider8-img",
+      imageSrc: SliderImage8,
+    },
+     {
+      id: 9,
+      title: "Entertainment and Creative Industry",
+      description:
+        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+      imageAlt: "slider9-img",
+      imageSrc: SliderImage9,
+    },
+      {
+      id: 10,
+      title: "Health and Social Care",
+      description:
+        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+      imageAlt: "slider10-img",
+      imageSrc: SliderImage10,
     },
   ];
 
@@ -373,7 +418,7 @@ export default function Main() {
                 </button>
                 <button
                   onClick={handleNextClick}
-                  disabled={currentIndex === 2}
+                    disabled={currentIndex === 4}
                   className="p-2 bg-[#FEFCFB] rounded-full"
                 >
                   <svg

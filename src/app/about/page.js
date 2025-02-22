@@ -3,7 +3,7 @@ import React from "react";
 // import Banner from "../../../public/assets/about-banner.png";
 import Banner from "../../../public/assets/about-team.jpg";
 
-import Picture from "../../../public/assets/festus-potrait.png";
+import Picture from "../../../public/assets/festus-bello-image.png";
 import Statistics from "@/components/Statistics";
 import OurStand from "@/components/OurStand";
 import CounterSection from "@/components/counter/CounterSection";
@@ -156,6 +156,7 @@ const page = () => {
                   of sustainable growth and success.
                 </p>
               </div>
+                            <div className="flex flex-col">
               <div className="w-[350px] h-[450px] lg:w-[450px] lg:h-[600px]">
                 <Image
                   src={Picture}
@@ -163,6 +164,13 @@ const page = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
+              <div className="bg-white w-[350px] lg:w-[450px] p-4 shadow-md rounded-lg">
+                 <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
+                  <p className="text-[#E45F11] font-semibold">
+                    Managing Partner / CEO
+                  </p>
+                </div>
+                </div>
             </div>
             <hr className="my-2" />
             <div className="my-4">

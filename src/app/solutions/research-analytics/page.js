@@ -360,7 +360,7 @@ const page = () => {
                   <Image
                     src={Kenneth}
                     alt="md"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">
@@ -375,7 +375,7 @@ const page = () => {
                   <Image
                     src={Simon}
                     alt="md"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Simon Adeh</h3>
@@ -386,7 +386,7 @@ const page = () => {
                   <Image
                     src={Avatar}
                     alt="md"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Emmanuel Akinbade</h3>

@@ -55,7 +55,7 @@ const page = () => {
                            In today&apos;s rapidly evolving world, one of the most remarkable demonstrations of human potential is Artificial Intelligence (AI). AI, along with other pillars of the 5th Industrial Revolution, is not just a product of human intellect—it is proof of its boundless capabilities.
 
                   </p>
-                  <Link href="">
+                  <Link href="/insight/blogs/unlocking-human-potential">
                   <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                     <span className="text-white ml-2 font-semibold">Read More</span>
                     <span>

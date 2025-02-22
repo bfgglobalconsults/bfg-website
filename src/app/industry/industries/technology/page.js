@@ -13,7 +13,7 @@ const page = () => {
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Technology & Finance
+            Financial Technology 
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
             Innovating finance, shaping tomorrows solutions.{" "}
