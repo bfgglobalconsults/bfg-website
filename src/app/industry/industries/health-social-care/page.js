@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import HealthImg from "../../../../../public/assets/health-banner.png";
-import HealthImage from "../../../../../public/assets/health-card.png";
+import HealthImg from "../../../../../public/assets/health-banner.jpg";
+import HealthImage from "../../../../../public/assets/health-card.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -52,13 +52,13 @@ const page = () => {
                               Our Expertise in Health & Social Care
                           </h3>
               <p className="text-white my-2">
-                              We provide a comprehensive suite of services tailored to the unique challenges of the Entertainment & Creative Industry
+                             We provide a comprehensive suite of services tailored to the unique challenges of the Entertainment & Creative Industry
                           </p>
               <div className="w-full">
                 <Image
                   src={HealthImage}
                   alt="telecom-image"
-                  className="w-full"
+                  className="w-full rounded-xl"
                 />
               </div>
             </div>

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/project-image.jpg";
@@ -5,8 +6,10 @@ import Project1 from "../../../../public/assets/project1.png";
 import Project2 from "../../../../public/assets/project2.png";
 
 import OurStand from "@/components/OurStand";
+import ProjectTabs from "@/components/project-tabs/ProjectTabs";
 
 const page = () => {
+  
   return (
     <>
       <div className="lg:mt-[150px] p-12">
@@ -47,6 +50,7 @@ const page = () => {
             <h3 className="text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
               Amazing Projects Executed
             </h3>
+           <ProjectTabs/>
             <div className="py-[30px]">
           <div className="">
             <div className="w-full flex flex-col lg:flex-row gap-10 my-4">

@@ -347,7 +347,7 @@ const page = () => {
                     <Image
                       src={Ifeoma}
                       alt="md"
-                      className="w-full h-full object-fit"
+                      className="w-full h-full object-cover"
                     />
                     <div className="bg-white p-2 shadow-md rounded-tr-xl">
                       <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
@@ -361,7 +361,7 @@ const page = () => {
                     <Image
                       src={Avatar}
                       alt="md"
-                      className="w-full h-full object-fit"
+                      className="w-full h-full object-cover"
                     />
                     <div className="bg-white p-2 shadow-md rounded-tr-xl">
                       <h3 className="font-semibold text-lg">Kate Abengowe</h3>
@@ -375,7 +375,7 @@ const page = () => {
                     <Image
                       src={Avatar}
                       alt="md"
-                      className="w-full h-full object-fit"
+                      className="w-full h-full object-cover"
                     />
                     <div className="bg-white p-2 shadow-md rounded-tr-xl">
                       <h3 className="font-semibold text-lg">John Ogbe</h3>
