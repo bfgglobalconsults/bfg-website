@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/project-image.jpg";
 import Project1 from "../../../../public/assets/project1.png";
@@ -9,7 +9,6 @@ import OurStand from "@/components/OurStand";
 import ProjectTabs from "@/components/project-tabs/ProjectTabs";
 
 const page = () => {
-    const [tab, settab] = useState("All");
   
   return (
     <>
