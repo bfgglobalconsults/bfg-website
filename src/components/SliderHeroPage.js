@@ -6,7 +6,7 @@ import Link from "next/link";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import Banner from "../../public/assets/bfg1.jpg";
-import WaveImage from "../../public/assets/white-logo.png";
+import WaveImage from "../app/bfg-whitelogo.png";
 
 // Import the CSS for react-slick
 import "slick-carousel/slick/slick.css";
