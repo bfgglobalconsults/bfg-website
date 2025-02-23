@@ -190,7 +190,7 @@ const page = () => {
                   <Image
                     src={Employee}
                     alt="employee-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -211,10 +211,10 @@ const page = () => {
                   <Image
                     src={DataSecurity}
                     alt="data-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="w-[100%] lg:w-[80%]">
+                <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
                     Enhanced Data Security
                   </h4>
@@ -232,7 +232,7 @@ const page = () => {
                   <Image
                     src={DataMgt}
                     alt="datamgt-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -252,7 +252,7 @@ const page = () => {
                   <Image
                     src={Flexibility}
                     alt="flex-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -272,7 +272,7 @@ const page = () => {
                   <Image
                     src={Expertise}
                     alt="expertise-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -292,7 +292,7 @@ const page = () => {
                   <Image
                     src={Innovation}
                     alt="innovation-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -315,7 +315,7 @@ const page = () => {
                 <Image
                   src={TechnologyPortfolio}
                   alt="research"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%] lg:w-[60%]">
@@ -381,7 +381,7 @@ const page = () => {
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">David U. Bradford</h3>
                     <p className="text-[#E45F11] font-semibold">
-                      Lead, Technology & Software Development
+                      Senior Software Developer/Technology Analyst
                     </p>
                   </div>
                 </div>

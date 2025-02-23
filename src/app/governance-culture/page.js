@@ -153,7 +153,7 @@ const page = () => {
                     <Image
                       src={ClientCentric}
                       alt="client"
-                      className="w-full h-full object-fit"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -172,7 +172,7 @@ const page = () => {
                     <Image
                       src={Innovative}
                       alt="innovate"
-                      className="w-full h-full object-fit"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -192,7 +192,7 @@ const page = () => {
                     <Image
                       src={Inclusivity}
                       alt="inclusive"
-                      className="w-full h-full object-fit"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -212,7 +212,7 @@ const page = () => {
                     <Image
                       src={Sustain}
                       alt="sustain"
-                      className="w-full h-full object-fit"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="w-[100%]">

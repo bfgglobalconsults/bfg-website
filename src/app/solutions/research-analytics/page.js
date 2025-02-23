@@ -170,7 +170,7 @@ const page = () => {
                   <Image
                     src={Optimize}
                     alt="optimize-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%] ">
@@ -192,7 +192,7 @@ const page = () => {
                   <Image
                     src={MeasureImg}
                     alt="measure-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -214,7 +214,7 @@ const page = () => {
                   <Image
                     src={ExperienceImg}
                     alt="exp-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -235,7 +235,7 @@ const page = () => {
                   <Image
                     src={AppraisalImg}
                     alt="appraisal-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -257,7 +257,7 @@ const page = () => {
                   <Image
                     src={PredictiveImg}
                     alt="predective-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -277,7 +277,7 @@ const page = () => {
                   <Image
                     src={ImpactImg}
                     alt="impact-img"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -300,7 +300,7 @@ const page = () => {
                 <Image
                   src={ResearchPortfolio}
                   alt="research"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%] lg:w-[60%]">
@@ -367,7 +367,7 @@ const page = () => {
                       Kenneth Idanwekhai
                     </h3>
                     <p className="text-[#E45F11] font-semibold">
-                      Lead, Research & Analytics
+                      Senior Research and Data Analyst
                     </p>
                   </div>
                 </div>
@@ -379,7 +379,7 @@ const page = () => {
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Simon Adeh</h3>
-                    <p className="text-[#E45F11] font-semibold">Data Analyst</p>
+                    <p className="text-[#E45F11] font-semibold">Junior Research and Data Analyst</p>
                   </div>
                 </div>
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">

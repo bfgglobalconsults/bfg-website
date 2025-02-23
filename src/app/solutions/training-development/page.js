@@ -149,7 +149,7 @@ const page = () => {
                   <Image
                     src={EmployeePerformance}
                     alt="employee"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -170,7 +170,7 @@ const page = () => {
                   <Image
                     src={Retention}
                     alt="retention"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -190,7 +190,7 @@ const page = () => {
                   <Image
                     src={GreaterFlexibility}
                     alt="flexibility"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -211,7 +211,7 @@ const page = () => {
                   <Image
                     src={DecisionMaking}
                     alt="decision"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -231,7 +231,7 @@ const page = () => {
                   <Image
                     src={TopTalent}
                     alt="talent"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -252,7 +252,7 @@ const page = () => {
                   <Image
                     src={Operations}
                     alt="operations"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -275,7 +275,7 @@ const page = () => {
                 <Image
                   src={TrainingPortfolio}
                   alt="training"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%] lg:w-[60%]">
@@ -339,14 +339,14 @@ const page = () => {
                   <Image
                     src={Happy}
                     alt="md"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">
                       Happiness C. Adama
                     </h3>
                     <p className="text-[#E45F11] font-semibold">
-                      Lead, Training & Development
+                      Senior Training and Development Analyst
                     </p>
                   </div>
                 </div>
@@ -354,12 +354,12 @@ const page = () => {
                   <Image
                     src={Avatar}
                     alt="md"
-                    className="w-full h-full object-fit"
+                    className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
                     <p className="text-[#E45F11] font-semibold">
-                      Associate, Training & Development
+                      Training and Development Analyst
                     </p>
                   </div>
                 </div>
