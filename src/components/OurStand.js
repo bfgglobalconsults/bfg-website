@@ -35,7 +35,7 @@ const OurStand = () => {
                 <Image
                   src={Growth}
                   alt="growth"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%]">
@@ -54,7 +54,7 @@ const OurStand = () => {
                 <Image
                   src={Value}
                   alt="growth"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%]">
@@ -74,7 +74,7 @@ const OurStand = () => {
                 <Image
                   src={Innovation}
                   alt="innovation"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%]">
@@ -94,7 +94,7 @@ const OurStand = () => {
                 <Image
                   src={Client}
                   alt="client"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%]">
@@ -114,7 +114,7 @@ const OurStand = () => {
                 <Image
                   src={Tailored}
                   alt="tailored"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%]">
@@ -133,7 +133,7 @@ const OurStand = () => {
                 <Image
                   src={Pan}
                   alt="pan"
-                  className="w-full h-full object-fit"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[100%]">

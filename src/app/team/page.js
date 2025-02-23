@@ -192,7 +192,7 @@ const Page = () => {
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Kenneth Idanwekhai</h3>
                   <p className="text-[#E45F11] font-semibold">
-                   Lead, Research, Data and Analytics
+                   Senior Research and Data Analyst
                   </p>
                 </div>
               </div>
@@ -208,7 +208,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
                   <p className="text-[#E45F11] font-semibold">
-                    Lead, Strategy & Operations Transformation
+                    Senior Business Analyst - Strategy and Operations Transformation 
                   </p>
                 </div>
               </div>
@@ -224,7 +224,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">David Uko Bradford</h3>
                   <p className="text-[#E45F11] font-semibold">
-                    Lead, Technology & Software Development
+                   Senior Software Developer/Technology Analyst
                   </p>
                 </div>
               </div>
@@ -241,7 +241,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Happiness C. Adama</h3>
                   <p className="text-[#E45F11] font-semibold">
-                    Lead, Training & Development
+                    Senior Training and Development Analyst 
                   </p>
                 </div>
               </div>
@@ -289,7 +289,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Simon Adeh Abah</h3>
-                  <p className="text-[#E45F11] font-semibold">Data Analyst</p>
+                  <p className="text-[#E45F11] font-semibold">Junior Research and Data Analyst</p>
                 </div>
               </div>
                {/* seventh team */}
@@ -317,7 +317,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
-                  <p className="text-[#E45F11] font-semibold">Associate, Training & Development</p>
+                  <p className="text-[#E45F11] font-semibold">Training and Development Analyst</p>
                 </div>
               </div>
                 {/* seventh team */}
@@ -331,7 +331,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Kate Abengowe</h3>
-                  <p className="text-[#E45F11] font-semibold">Associate, Strategy and Operations Transformation</p>
+                  <p className="text-[#E45F11] font-semibold">Business Analyst – Systems and Digital Intelligence</p>
                 </div>
               </div>
                 {/* seventh team */}
