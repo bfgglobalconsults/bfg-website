@@ -12,7 +12,7 @@ import Simon from "../../../public/assets/simon-adeh.png";
 import Abubakar from "../../../public/assets/abubakar-sadiq.png";
 import CompanySecretary from "../../../public/assets/secretary-md.png";
 import Avatar from "../../../public/assets/new-avatar.png";
-import Banner from ".././../../public/assets/team-image.jpg";
+import Banner from "../../../public/assets/team-image.jpg";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
 

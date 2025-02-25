@@ -446,7 +446,7 @@ const Header = () => {
                           </Link>
                         </div>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/business-strategy" onClick={() => setShowMenu(false)}>
+                          <Link href="/solutions/business-strategy">
                             Strategy and Operations Transformation
 
                           </Link>
@@ -457,7 +457,7 @@ const Header = () => {
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/information-technology" onClick={() => setShowMenu(false)}>
+                          <Link href="/solutions/information-technology">
                             Technology and Software Development
                           </Link>
                         </p>
@@ -490,42 +490,42 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/consumer" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/consumer">
                             Consumer and Retail Market
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/financial" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/financial">
                             Financial Services
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/hospitality" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/hospitality" >
                             Hospitality and Tourism
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/real-estate" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/real-estate" >
                             Real Estate
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/technology" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/technology">
                             Technology and Finance
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/government" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/government">
                             Government and Non-for-Profit
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/oil-gas" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/oil-gas">
                             Oil and Gas
                           </Link>
                         </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/industrial-manufacturing" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/industrial-manufacturing">
                             Industrial Manufacturing
                           </Link>
                         </p>
@@ -535,13 +535,13 @@ const Header = () => {
                           </Link>
                         </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/Entertainment and Creative Industry" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/Entertainment and Creative Industry">
 Entertainment and Creative Industry
 
                           </Link>
                         </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/health-social-care" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/industries/health-social-care">
 Health and Social Care
 
 
@@ -576,10 +576,10 @@ Health and Social Care
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/appetiza" onClick={() => setShowMenu(false)}>Appetiza</Link>
+                          <Link href="/product/appetiza">Appetiza</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/career-fun" onClick={() => setShowMenu(false)}>Career Fun</Link>
+                          <Link href="/product/career-fun">Career Fun</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -609,22 +609,22 @@ Health and Social Care
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/dialectics" onClick={() => setShowMenu(false)}>The Dialetics</Link>
+                          <Link href="/program/dialectics" >The Dialetics</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/leadership-summit" onClick={() => setShowMenu(false)}>Emerging Marketplace Leader</Link>
+                          <Link href="/program/leadership-summit">Emerging Marketplace Leader</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/women-tech" onClick={() => setShowMenu(false)}>Women in Tech</Link>
+                          <Link href="/program/women-tech">Women in Tech</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-klinic" onClick={() => setShowMenu(false)}>SME Klinic</Link>
+                          <Link href="/program/sme-klinic">SME Klinic</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/ai-advantage" onClick={() => setShowMenu(false)}>AI Advantage</Link>
+                          <Link href="/program/ai-advantage">AI Advantage</Link>
                         </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-webinar" onClick={() => setShowMenu(false)}>SME Webinar Series</Link>
+                          <Link href="/program/sme-webinar">SME Webinar Series</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -654,16 +654,16 @@ Health and Social Care
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/news" onClick={() => setShowMenu(false)}>News</Link>
+                          <Link href="/insight/news">News</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insights/blogs" onClick={() => setShowMenu(false)}>Blogs</Link>
+                          <Link href="/insights/blogs">Blogs</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/case-study" onClick={() => setShowMenu(false)}>Case Studies</Link>
+                          <Link href="/insight/case-study">Case Studies</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/careers" onClick={() => setShowMenu(false)}>Careers</Link>
+                          <Link href="/careers">Careers</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -699,27 +699,27 @@ Health and Social Care
                           <Link href="/about">Who We Are</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/clients" onClick={() => setShowMenu(false)}>Our Clients</Link>
+                          <Link href="/clients">Our Clients</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/team" onClick={() => setShowMenu(false)}>Our Team</Link>
+                          <Link href="/team">Our Team</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/projects" onClick={() => setShowMenu(false)}>
+                          <Link href="/industry/projects">
                             Project Executed
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/award-recognition" onClick={() => setShowMenu(false)}>Award & Recognition</Link>
+                          <Link href="/award-recognition">Award & Recognition</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/governance-culture" onClick={() => setShowMenu(false)}>Governance & Culture</Link>
+                          <Link href="/governance-culture">Governance & Culture</Link>
                         </p>
                       </div>
                     </Collapsible>
 
                     <div className="px-[32px] flex items-center justify-center">
-                      <Link href="/contact" onClick={() => setShowMenu(false)}>
+                      <Link href="/contact">
                         <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
                           Contact
                         </p>
