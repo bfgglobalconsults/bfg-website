@@ -126,7 +126,7 @@ const HeroSection1 = () => (
 
          <button
           title="Training and Development"
-          className=" absolute top-[53px] right-6 rounded-full p-10 lg:p-16 text-white bg-[#041926] transition-transform hover:scale-110"
+          className=" absolute top-[44px] right-6 rounded-full p-10 lg:p-16 text-white bg-[#041926] transition-transform hover:scale-110"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" fill="rgba(255,255,255,1)"><path d="M12 10C14.2091 10 16 8.20914 16 6 16 3.79086 14.2091 2 12 2 9.79086 2 8 3.79086 8 6 8 8.20914 9.79086 10 12 10ZM5.5 13C6.88071 13 8 11.8807 8 10.5 8 9.11929 6.88071 8 5.5 8 4.11929 8 3 9.11929 3 10.5 3 11.8807 4.11929 13 5.5 13ZM21 10.5C21 11.8807 19.8807 13 18.5 13 17.1193 13 16 11.8807 16 10.5 16 9.11929 17.1193 8 18.5 8 19.8807 8 21 9.11929 21 10.5ZM12 11C14.7614 11 17 13.2386 17 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5 15.9999C5 15.307 5.10067 14.6376 5.28818 14.0056L5.11864 14.0204C3.36503 14.2104 2 15.6958 2 17.4999V21.9999H5V15.9999ZM22 21.9999V17.4999C22 15.6378 20.5459 14.1153 18.7118 14.0056 18.8993 14.6376 19 15.307 19 15.9999V21.9999H22Z"></path></svg>
             </button>
@@ -134,7 +134,7 @@ const HeroSection1 = () => (
           <Link href="/solutions/business-strategy">
         <button
           title="Strategy and Operations Transformation"
-          className=" absolute bottom-14 left-9 rounded-full p-9 lg:p-14 text-white bg-[#127DC0] transition-transform hover:scale-110"
+          className=" absolute bottom-12 left-9 rounded-full p-9 lg:p-14 text-white bg-[#127DC0] transition-transform hover:scale-110"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="rgba(255,255,255,1)"><path d="M11 2.04938V13H21.9506C21.4489 18.0533 17.1853 22 12 22C6.47715 22 2 17.5229 2 12C2 6.81465 5.94668 2.5511 11 2.04938ZM13 2.04938C17.7244 2.51845 21.4816 6.27559 21.9506 11H13V2.04938Z"></path></svg>
             </button>
