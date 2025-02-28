@@ -71,15 +71,13 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Festus</h4>
               <p className="text-[#999] text-lg">
-                Festus BELLO is the Founder, CEO, and Managing Partner of BFG
-                Global Consulting, LLC, where he leads a distinguished team of
-                software developers, market researchers, business analysts, and
-                corporate trainers. Holding a Master of Business Administration
-                from Kent Business School, University of Kent, Festus leverages
-                his exceptional academic background and practical leadership
-                expertise to propel innovation and deliver outstanding market
-                outcomes for BFG and its clients.
+                Festus BELLO is the Founder, CEO, and Managing Partner of BFG Global Consulting, LLC, where he leads a distinguished team of software developers, market researchers, business analysts, and corporate trainers. Holding a Master of Business Administration from Kent Business School, University of Kent, Festus leverages his exceptional academic background and practical leadership expertise to propel innovation and deliver outstanding market outcomes for BFG and its clients.
               </p>
+              <br />
+                  <p className="text-[#999] text-lg">
+                As a founding partner at BFG Consults, he has committed 90% of his practice to research methodologies, digital transformation, business analytics, project management, change management, agile operations management, and product management. His primary activities involve improving business processes for commercial clients on innovation-based projects using digital transformation tools, business process modelling (BPM) techniques, and strategic management consulting frameworks such as SAFe, SIX SIGMA, COSO ERM, PDCA, and Critical Path Methods (CPM) to deliver value across core business functions in multiple sectors.
+               </p>
+
               <br />
               <p className="text-[#999] text-lg">
                 Festus holds certifications as a Business Analysis Professional
@@ -96,8 +94,7 @@ const page = () => {
                 corporate objective.
               </p>
               <br />
-
-              <br />
+          
             </div>
           </div>
         </div>

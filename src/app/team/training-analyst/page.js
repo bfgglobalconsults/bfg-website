@@ -30,7 +30,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">Juliet Dunkwu</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -43,11 +43,9 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                      
-                    Head, Administration
-
+                    Training and Development Analyst
                   </p>
                 </div>
               </div>
@@ -71,18 +69,23 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Juliet</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
+                Juliet is an enthusiastic Junior Training and Development
+                Analyst with a passion for fostering learning and professional
+                growth within organizations. Skilled in supporting the design,
+                implementation, and evaluation of training programs that enhance
+                employee skills and performance.
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
-                          </p>
-              <br />
- <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
-                          </p>
+                Proficient in assisting with needs assessments, coordinating
+                training sessions, and leveraging learning technologies to
+                deliver engaging and impactful learning experiences. He is adept
+                at gathering feedback, analyzing training outcomes, and
+                contributing to the continuous improvement of development
+                initiatives.
+              </p>
               <br />
             </div>
           </div>

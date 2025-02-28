@@ -354,6 +354,7 @@ const page = () => {
                       <p className="text-[#E45F11] font-semibold">
                       Senior Business Analyst - Strategy and Operations Transformation
                     </p>
+                   
                     </div>
                   </div>
                   {/* second person */}
@@ -368,6 +369,7 @@ const page = () => {
                       <p className="text-[#E45F11] font-semibold">
                       Business Analyst – Systems and Digital Intelligence
                     </p>
+                    
                     </div>
                   </div>
                   {/* third part */}

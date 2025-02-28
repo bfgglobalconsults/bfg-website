@@ -30,7 +30,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">Shehu Abdullahi</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -43,16 +43,14 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">Shehu Abdullahi</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                      
-                    Head, Administration
-
+                    Head, Finance
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:admin@bfgconsults.com">
+                <a href="mailto:finance@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -71,19 +69,18 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Shehu</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
-              </p>
-              <br />
-              <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
+                              Shehu is a seasoned Head of Finance with a proven track record of driving financial strategy and ensuring fiscal responsibility within organizations. With expertise in financial planning, budgeting, and risk management, he oversees all aspects of financial operations to support sustainable growth and profitability.
                           </p>
               <br />
- <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
+                  <p className="text-[#999] text-lg">
+                              Known for his analytical acumen and strategic vision, he provides insightful guidance to executive leadership, ensuring alignment with organizational goals. His dedication to optimizing financial performance and maintaining compliance with regulatory standards makes his an indispensable leader in the management team.
                           </p>
+
               <br />
+            
+          
             </div>
           </div>
         </div>

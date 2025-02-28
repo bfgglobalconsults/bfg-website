@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Avatar from "../../../../public/assets/new-avatar.png";
+import Simon from "../../../../public/assets/simon-adeh.png";
 import Link from "next/link";
 
 const page = () => {
@@ -30,29 +30,27 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">Simon Adeh Aba</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Simon}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">Simon Adeh Aba</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                      
-                    Head, Administration
-
+                     Junior Research and Data Analyst
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:admin@bfgconsults.com">
+                <a href="mailto:simon.adeh@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -71,19 +69,18 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Simon</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
-              </p>
-              <br />
-              <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
+                              Simon Adeh Aba is a Junior Research and Data Analyst at BFG Global Consulting LLC, where he supports the research and analytics team by conducting detailed data analysis and contributing to data-driven insights.
                           </p>
               <br />
- <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
+                  <p className="text-[#999] text-lg">
+                              With a foundational understanding of research methodologies and data analysis techniques, Simon plays a key role in gathering, processing, and interpreting data to support the firm&apos;s strategic initiatives and client projects.
                           </p>
+
               <br />
+             
+          
             </div>
           </div>
         </div>

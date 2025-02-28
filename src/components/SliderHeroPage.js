@@ -48,7 +48,7 @@ const HeroSection1 = () => (
     <div className="w-full lg:w-[60%]">
       <div className="p-[40px]">
         {/* Award Badge */}
-        <div className="inline-flex items-center rounded-2xl lg:rounded-full border border-[#E45F11]  px-4 py-2 backdrop-blur-sm mb-3 lg:mb-0">
+        <div className="inline-flex items-center rounded-2xl  border border-[#E45F11]  px-4 py-2 backdrop-blur-sm mb-3 lg:mb-0">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const HeroSection1 = () => (
       
 
     <div className="w-full lg:w-[40%]  overflow-hidden py-10">
-      <div className="relative w-[370px] h-[550px] lg:h-[550px] lg:w-[500px] ml-0 lg:ml-8">
+      <div className="relative w-[370px] h-[550px] lg:h-[550px] lg:w-[500px] ml-0">
     {/* Center logo */}
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#E45F11] rounded-full w-52 h-52 flex items-center justify-center z-20">
       <div className="relative w-28 h-28">
@@ -164,7 +164,7 @@ const HeroSection2 = () => (
     <div className="w-full lg:w-[55%]">
       <div className="p-[40px]">
         {/* Award Badge */}
-        <div className="inline-flex items-center rounded-2xl lg:rounded-full border border-[#E45F11]  px-4 py-2 backdrop-blur-sm mb-3 lg:mb-0">
+        <div className="inline-flex items-center rounded-2xl  border border-[#E45F11]  px-4 py-2 backdrop-blur-sm mb-3 lg:mb-0">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

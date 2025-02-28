@@ -30,7 +30,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">Solomon Aja</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -43,16 +43,14 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">Solomon Aja</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                      
-                    Head, Administration
-
+                    Accounting Manager
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:admin@bfgconsults.com">
+                <a href="mailto:finance@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -71,19 +69,15 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Solomon</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
-              </p>
-              <br />
-              <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
+                              Solomon is an accomplished Accounting Manager in the Finance Department, with a strong track record of overseeing financial operations and ensuring the accuracy of accounting records.  
                           </p>
+                          <br />
+                          <p className="text-[#999] text-lg">
+With expertise in financial reporting, budgeting, and compliance, he plays a key role in maintaining the organization&apos;s financial integrity. Known for his meticulous attention to detail and analytical skills, he effectively leads the accounting team, streamlining processes, managing financial audits, and ensuring adherence to regulatory standards. His strategic approach to financial management helps support informed decision-making and drives the organization&apos;s fiscal health.                          </p>
               <br />
- <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
-                          </p>
-              <br />
+             
             </div>
           </div>
         </div>

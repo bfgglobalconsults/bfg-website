@@ -30,7 +30,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">John Ogbe</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -43,11 +43,9 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">John Ogbe</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                      
-                    Head, Administration
-
+                    Business Analyst
                   </p>
                 </div>
               </div>
@@ -71,18 +69,24 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About John</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
+                A skilled Business Analyst specializing in enterprise systems
+                and digital intelligence, with a proven ability to bridge the
+                gap between business needs and technological solutions. Adept at
+                analyzing business processes, identifying improvement
+                opportunities, and designing innovative solutions to drive
+                organizational growth and efficiency.{" "}
+              </p>{" "}
+              <br />
+              <p className="text-[#999] text-lg">
+                John is experienced in collaborating with stakeholders across
+                departments to gather requirements, perform data-driven
+                analysis, and deliver actionable insights. He is proficient in
+                leveraging enterprise systems, business intelligence tools, and
+                emerging technologies to support strategic decision-making and
+                operational excellence for clients.
               </p>
-              <br />
-              <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
-                          </p>
-              <br />
- <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
-                          </p>
               <br />
             </div>
           </div>
