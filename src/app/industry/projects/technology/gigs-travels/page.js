@@ -100,7 +100,7 @@ GIGS Travels needed to enhance its brand awareness to attract potential clients 
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-                              To address GIGS Travels' visibility challenges, we conducted in-depth technical, consumer, and market research to gain valuable insights into its target audience. Using strategic customer segmentation techniques, we developed a tailored approach to effectively communicate GIGS' service offerings, drive traffic to its website, and enhance engagement across multiple contact channels
+                              To address GIGS Travels&apos; visibility challenges, we conducted in-depth technical, consumer, and market research to gain valuable insights into its target audience. Using strategic customer segmentation techniques, we developed a tailored approach to effectively communicate GIGS&apos; service offerings, drive traffic to its website, and enhance engagement across multiple contact channels
                           </p>
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
