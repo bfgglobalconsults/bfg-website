@@ -8,7 +8,7 @@ const page = () => {
     <>
       <div className="lg:mt-[150px] p-10">
         <div className="inline-block bg-white border-2 border-[#E26015] p-2 rounded-3xl">
-          <Link href="/">
+          <Link href="/industry/projects">
             <div className="flex items-center gap-2">
               <span>
                 <svg
@@ -158,6 +158,8 @@ const page = () => {
                 the comprehensive information they needed to make informed
                 travel decisions.
               </p>
+                          <br />
+                          <p className="text-lg text-[#9b8b8b]">Preview: <Link className="text-black" href="https://dmjtravelexpress.com/" target="_blank">https://dmjtravelexpress.com/</Link></p>
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>

@@ -2,13 +2,13 @@ import Slides from "@/components/Slides";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FirstNews from "../../../../../../public/assets/research-mecen.jpg";
+import FirstNews from "../../../../../../public/assets/business-meeting.jpg";
 const page = () => {
   return (
     <>
       <div className="lg:mt-[150px] p-10">
         <div className="inline-block bg-white border-2 border-[#E26015] p-2 rounded-3xl">
-          <Link href="/">
+          <Link href="/industry/projects">
             <div className="flex items-center gap-2">
               <span>
                 <svg

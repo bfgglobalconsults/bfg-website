@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import Project1 from "../../../public/assets/zenkleus-research.jpg";
-import Project2 from "../../../public/assets/research-mecen.jpg";
+import Project2 from "../../../public/assets/business-meeting.jpg";
 import Project3 from "../../../public/assets/tech-travel-img.jpg";
 import Project4 from "../../../public/assets/research-cover-img.jpg";
 import Project5 from "../../../public/assets/gigs-travel-research.jpg";
