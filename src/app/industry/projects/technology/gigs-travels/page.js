@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import FirstNews from "../../../../../../public/assets/gig-image.jpg";
-import AwardCert from "../../../../../public/assets/award-cert.jpg";
 const page = () => {
   return (
     <>
