@@ -8,7 +8,7 @@ const page = () => {
     <>
       <div className="lg:mt-[150px] p-10">
         <div className="inline-block bg-white border-2 border-[#E26015] p-2 rounded-3xl">
-          <Link href="/">
+          <Link href="/industry/projects">
             <div className="flex items-center gap-2">
               <span>
                 <svg
@@ -116,7 +116,11 @@ GIGS Travels needed to enhance its brand awareness to attract potential clients 
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-By creating a focused, optimized, and attention-grabbing landing page, BFG Global Consulting LLC addressed GIGS Travels&apos; challenges with prospect acquisition, online visibility, and revenue generation. The project encompassed a comprehensive digital marketing strategy, including advanced SEO techniques, email marketing integration, and tailored paid advertising campaigns—all specifically aligned with GIGS Travels&apos; objectives.                          </p>
+                              By creating a focused, optimized, and attention-grabbing landing page, BFG Global Consulting LLC addressed GIGS Travels&apos; challenges with prospect acquisition, online visibility, and revenue generation. The project encompassed a comprehensive digital marketing strategy, including advanced SEO techniques, email marketing integration, and tailored paid advertising campaigns—all specifically aligned with GIGS Travels&apos; objectives.
+                          </p>
+                           <br />
+                           
+                          <p className="text-lg text-[#9b8b8b]">Preview: <Link className="text-black" href="https://www.gigstravels.co.uk/" target="_blank">https://www.gigstravels.co.uk/</Link></p>
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>

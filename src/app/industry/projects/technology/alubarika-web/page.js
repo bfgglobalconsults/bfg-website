@@ -8,7 +8,7 @@ const page = () => {
     <>
       <div className="lg:mt-[150px] p-10">
         <div className="inline-block bg-white border-2 border-[#E26015] p-2 rounded-3xl">
-          <Link href="/">
+          <Link href="/industry/projects">
             <div className="flex items-center gap-2">
               <span>
                 <svg
@@ -115,7 +115,10 @@ To effectively showcase Alubarika Construction&apos;s projects and expertise in 
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-BFG designed and developed a dynamic website that effectively showcases Alubarika Construction&apos;s expertise. The platform features a comprehensive project portfolio with high-quality images and detailed descriptions, along with dedicated sections highlighting the firm&apos;s construction, real estate development, and other service offerings.              </p>
+                              BFG designed and developed a dynamic website that effectively showcases Alubarika Construction&apos;s expertise. The platform features a comprehensive project portfolio with high-quality images and detailed descriptions, along with dedicated sections highlighting the firm&apos;s construction, real estate development, and other service offerings.
+                          </p>
+                            <br />
+                          <p className="text-lg text-[#9b8b8b]">Preview: <Link className="text-black" href="https://alubarikaconstruction.com/" target="_blank">https://alubarikaconstruction.com/</Link></p>
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>

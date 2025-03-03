@@ -8,7 +8,7 @@ const page = () => {
     <>
       <div className="lg:mt-[150px] p-10">
         <div className="inline-block bg-white border-2 border-[#E26015] p-2 rounded-3xl">
-          <Link href="/">
+          <Link href="/industry/projects">
             <div className="flex items-center gap-2">
               <span>
                 <svg
@@ -126,7 +126,9 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
 BFG Global Consulting LLC enhanced ST Travels & Tours&apos; operations by developing a comprehensive web application. This solution featured an interactive travel package system, an efficient online booking and reservation platform, secure payment gateway integration, and seamless cross-device compatibility, ensuring a smooth and user-friendly experience for customers.              </p>
-              <br />
+                          <br />
+                           
+                          <p className="text-lg text-[#9b8b8b]">Preview: <Link className="text-black" href="https://www.sttravelsconsulting.com/" target="_blank">https://www.sttravelsconsulting.com/</Link></p>
             
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>

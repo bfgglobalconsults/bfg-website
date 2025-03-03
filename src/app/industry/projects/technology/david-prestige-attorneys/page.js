@@ -8,7 +8,7 @@ const page = () => {
     <>
       <div className="lg:mt-[150px] p-10">
         <div className="inline-block bg-white border-2 border-[#E26015] p-2 rounded-3xl">
-          <Link href="/">
+          <Link href="/industry/projects">
             <div className="flex items-center gap-2">
               <span>
                 <svg
@@ -118,7 +118,10 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
                Our technology and software development team designed a professional website that effectively showcases David Prestige Law&apos;s expertise and services. The platform includes detailed practice area descriptions, visually engaging attorney profiles and biographies, client testimonials and case studies (with strict confidentiality measures), comprehensive contact information with inquiry forms, and a dedicated blog/news section for sharing legal insights and updates.
-              </p>
+                          </p>
+                           <br />
+                           
+                          <p className="text-lg text-[#9b8b8b]">Preview: <Link className="text-black" href="https://davidprestigeattorneys.com/" target="_blank">https://davidprestigeattorneys.com/</Link></p>
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>
