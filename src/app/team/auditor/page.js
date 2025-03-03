@@ -30,7 +30,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">Gloria Ebube</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -43,16 +43,12 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
-                  <p className="text-[#E45F11] font-semibold">
-                                      
-                    Head, Administration
-
-                  </p>
+                  <h3 className="font-semibold text-lg">Gloria Ebube</h3>
+                  <p className="text-[#E45F11] font-semibold">Auditor</p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:admin@bfgconsults.com">
+                <a href="mailto:finance@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -71,18 +67,23 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Gloria</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
+                Gloria is a highly efficient Payroll Administrator in the
+                Finance Department, responsible for ensuring the accurate and
+                timely processing of employee payroll. With a strong focus on
+                compliance, she manages payroll records, calculates deductions,
+                and ensures adherence to tax laws and company policies{" "}
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
-                          </p>
-              <br />
- <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
-                          </p>
+                Known for her attention to detail and organizational skills, she
+                handles payroll inquiries, resolves discrepancies, and works
+                closely with HR and finance teams to maintain seamless payroll
+                operations. Her dedication to accuracy and confidentiality plays
+                a vital role in supporting the organization&apos;s financial and
+                employee satisfaction goals.{" "}
+              </p>
               <br />
             </div>
           </div>

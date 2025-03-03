@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Avatar from "../../../../public/assets/new-avatar.png";
+import Kenneth from "../../../../public/assets/kenneth.png";
 import Link from "next/link";
 
 const page = () => {
@@ -30,29 +30,27 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">Kenneth Idanwekhai</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Kenneth}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">Kenneth Idanwekhai</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                      
-                    Head, Administration
-
+                     Senior Research and Data Analyst
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:admin@bfgconsults.com">
+                <a href="mailto:kenneth.idanwekhai@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -71,19 +69,21 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Kenneth</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
+                              A Senior Research and Data Analyst with extensive experience in leveraging advanced analytical techniques and data-driven insights to support strategic decision-making. Proficient in identifying trends, patterns, and actionable insights to drive efficiency, innovation, and business growth.
+                          </p>
+              <br />
+                  <p className="text-[#999] text-lg">
+                              Expert in utilizing cutting-edge tools and methodologies for data collection, processing, and visualization. Demonstrates strong analytical rigour, problem-solving capabilities, and a deep understanding of technology&apos;s role in shaping business strategies. Skilled at collaborating with cross-functional teams to develop comprehensive reports and deliver actionable intelligence that aligns with organizational objectives.
+                          </p>
+
+              <br />
+              <p className="text-[#999] text-lg">
+               Kenneth leads BFG&apos;s Research and Data Analytics Unit. He is known for a commitment to excellence, a detail-oriented approach, and the ability to thrive in dynamic, fast-paced environments.
               </p>
               <br />
-              <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
-                          </p>
-              <br />
- <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
-                          </p>
-              <br />
+          
             </div>
           </div>
         </div>

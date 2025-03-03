@@ -15,6 +15,7 @@ import Avatar from "../../../public/assets/new-avatar.png";
 import Banner from "../../../public/assets/team-image.jpg";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -83,7 +84,11 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Managing Partner / CEO
                   </p>
+                  <Link href="/team/managing-partner">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
+               
               </div>
               {/* second team */}
               <div className="flex flex-col">
@@ -99,6 +104,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Deputy Managing Partner/COO
                   </p>
+                   <Link href="/team/deputy-managing-partner">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
               {/* Third team */}
@@ -115,6 +123,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Head, Projects & Service Delivery
                   </p>
+                   <Link href="/team/head-service-delivery">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
               {/* Fourth team */}
@@ -131,6 +142,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Head, Administration
                   </p>
+                   <Link href="/team/head-administration">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
 
@@ -148,6 +162,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Head, Marketing & Growth
                   </p>
+                   <Link href="/team/head-marketing">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
 
@@ -163,6 +180,9 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Shehu Abdullahi</h3>
                   <p className="text-[#E45F11] font-semibold">Head, Finance</p>
+                  <Link href="/team/head-finance">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
             </div>
@@ -194,6 +214,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                    Senior Research and Data Analyst
                   </p>
+                  <Link href="/team/senior-research">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
               {/* second team */}
@@ -210,6 +233,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Senior Business Analyst - Strategy and Operations Transformation 
                   </p>
+                  <Link href="/team/head-business">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
               {/* Third team */}
@@ -226,6 +252,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                    Senior Software Developer/Technology Analyst
                   </p>
+                  <Link href="/team/senior-software">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
 
@@ -243,6 +272,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Senior Training and Development Analyst 
                   </p>
+                  <Link href="/team/senior-training">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
               <div className="flex flex-col">
@@ -258,6 +290,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Assistant, Projects & Service Delivery
                   </p>
+                  <Link href="/team/executive-assistant">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
 
@@ -275,6 +310,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Product Designer / Developer
                   </p>
+                  <Link href="/team/product-designer">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
 
@@ -288,8 +326,11 @@ const Page = () => {
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Simon Adeh Abah</h3>
+                  <h3 className="font-semibold text-lg">Simon Adeh Aba</h3>
                   <p className="text-[#E45F11] font-semibold">Junior Research and Data Analyst</p>
+                  <Link href="/team/data-analyst">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
                {/* seventh team */}
@@ -304,6 +345,9 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Godfrey Samuel</h3>
                   <p className="text-[#E45F11] font-semibold">Software Developer</p>
+                  <Link href="/team/software-developer">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
               {/* seventh team */}
@@ -318,6 +362,9 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
                   <p className="text-[#E45F11] font-semibold">Training and Development Analyst</p>
+                <Link href="/team/training-analyst">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
                 {/* seventh team */}
@@ -332,6 +379,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Kate Abengowe</h3>
                   <p className="text-[#E45F11] font-semibold">Business Analyst – Systems and Digital Intelligence</p>
+               
                 </div>
               </div>
                 {/* seventh team */}
@@ -346,6 +394,9 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">John Ogbe</h3>
                   <p className="text-[#E45F11] font-semibold">Business Analyst</p>
+                 <Link href="/team/business-analyst">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
                {/* seventh team */}
@@ -396,6 +447,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Sales & Marketing Executive
                   </p>
+                   <Link href="/team/sales-marketing-executive">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
                {/* second team */}
@@ -412,6 +466,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                    Digital Marketer
                   </p>
+                   <Link href="/team/digital-marketer">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
              
@@ -447,6 +504,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Accounting Manager
                   </p>
+                   <Link href="/team/accounting-manager">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
                {/* second team */}
@@ -463,6 +523,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                    Auditor
                   </p>
+                   <Link href="/team/auditor">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
              
@@ -498,6 +561,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                     Systems Administrator
                   </p>
+                   <Link href="/team/system-administrator">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
                {/* second team */}
@@ -514,6 +580,9 @@ const Page = () => {
                   <p className="text-[#E45F11] font-semibold">
                    Office Administrator
                   </p>
+                   <Link href="/team/office-administrator">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                 </div>
               </div>
              

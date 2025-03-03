@@ -52,52 +52,14 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Ifeoma</h4>
               <p className="text-[#999] text-lg">
-                Ezeamama Ifeoma is a dedicated business analyst and customer
-                success specialist who brings two years of invaluable experience
-                to her role. Throughout her career, she has successfully
-                completed over 25 diverse projects and research initiatives
-                across various fields, showcasing her versatile expertise and
-                adaptability in a constantly evolving business landscape.
+              Ifeoma Ezeamama is a Senior Business Analyst - Business Strategy and Operations Transformation at BFG Global Consulting LLC. With extensive experience in strategic planning and operational excellence, Ifeoma is instrumental in driving organizational change and optimizing business processes. 
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                Her profound knowledge in business strategizing and optimization
-                of organizational operations is extensive and bold. Ifeoma’s
-                approach combines analytical rigor with innovative thinking,
-                allowing her to identify opportunities for improvement and drive
-                meaningful change within companies. Furthermore, her deep
-                understanding of emotions and human behavior allows her to
-                navigate complex interpersonal dynamics with ease, making her a
-                standout professional in her field.{" "}
+               As the lead of BFG&apos;s Business Strategy and Operations Transformation consulting service unit, Ifeoma is responsible for developing and implementing bespoke strategies that transform operations, enhance efficiency, and align business practices with long-term objectives. Ifeoma excels in leading cross-functional teams to deliver impactful solutions that drive business growth and operational success.
               </p>
               <br />
-              <p className="text-[#999] text-lg">
-                This unique blend of skills is further enriched by her academic
-                background in psychology, which provides her with critical
-                insights into consumer behavior and motivations. Supported by
-                her unwavering desire and faith in God, Ifeoma is adept at
-                leveraging these insights to create competitive environments
-                that empower her clients.
-              </p>
-              <br />
-              <p className="text-[#999] text-lg">
-                She is passionate about fostering an atmosphere where businesses
-                can thrive and achieve their corporate goals. Ifeoma envisions a
-                future in Nigeria and across Africa where the individual efforts
-                of entrepreneurs are not only recognized but also efficiently
-                harnessed. She believes that with careful planning and strategic
-                development, businesses can be critically built in a way that
-                optimizes their operations and maximizes their potential for
-                success.{" "}
-                          </p>
-                           <br />
-              <p className="text-[#999] text-lg">
-                Her ultimate goal is to enable products to create and capture significant value within their respective industries, ensuring that every enterprise can articulate and fulfill its corporate mission effectively.
-                          </p>
-                                    <br />
-              <p className="text-[#999] text-lg">
-                              Her commitment to empowering businesses and individuals alike stands as a testament to her vision of a prospering economic landscape where entrepreneurship is not just a means of survival but a pathway to impactful growth and innovation.
-                          </p>
+             
             </div>
           </div>
         </div>
