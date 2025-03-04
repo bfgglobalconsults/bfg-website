@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import Project1 from "../../../public/assets/zenkleus-research.jpg";
 import Project2 from "../../../public/assets/business-meeting.jpg";
-import Project3 from "../../../public/assets/tech-travel-img.jpg";
 import Project4 from "../../../public/assets/research-cover-img.jpg";
 import Project5 from "../../../public/assets/gigs-travel-research.jpg";
 import Project6 from "../../../public/assets/last-research.jpg";
@@ -438,47 +437,7 @@ const ProjectTabs = () => {
                   </div>
                 </div>
                 {/* third product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project3}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
-                      Business Transformation & Productivity Project for
-                      GIGStravel.co.uk
-                    </h3>
-                    <p className="text-[#999]">
-                      This project is a full end-to-end business strategy &
-                      operations service. From researching & designing a bespoke
-                      business model for GIGS to recruiting new talents &
-                      training the staff & managers of the organisation on
-                      successful market practices to improve ROI & product
-                      units.
-                    </p>
-                    <Link href="/industry/projects/research/gigs-travel-research">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
+
                 {/* fourth product */}
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
@@ -584,7 +543,7 @@ const ProjectTabs = () => {
                       user-friendly website and mobile application for their
                       platform.
                     </p>
-                    <Link href="/industry/research/pocket-fi-research">
+                    <Link href="/industry/projects/research/pocket-fi-research">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                         <span className="text-white ml-2 font-semibold">
                           Read More
@@ -790,7 +749,7 @@ const ProjectTabs = () => {
                     <p className="text-[#999]">
                       Yahweh Yasad sought to explore business opportunities
                       within an underserved market niche and needed a deeper
-                      understanding of its dynamics. 
+                      understanding of its dynamics.
                     </p>
                     <Link href="/industry/projects/business/yasad-business">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
@@ -812,7 +771,217 @@ const ProjectTabs = () => {
                     </Link>
                   </div>
                 </div>
-                
+              </div>
+            </div>
+          </div>
+        )}
+        {tab === "Training and Development" && (
+          <div>
+            <div className="">
+              <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-4">
+                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                  <div className="h-[200px] lg:h-[350px]">
+                    <Image
+                      src={Project13}
+                      alt="news1"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-semibold">
+                      Empowering NGOs with Artificial Intelligence for Enhanced
+                      Impact and Innovation
+                    </h3>
+                    <p className="text-[#999]">
+                      The objective of the Artificial Intelligence Training is
+                      to equip Non-Governmental Organizations (NGOs) with the
+                      knowledge and tools to enhance their efficiency, amplify
+                      their impact, and drive innovation by improving
+                      data-driven decision-making, streamlining operations,
+                      enhancing service delivery, strengthening fundraising and
+                      advocacy efforts, and fostering creative solutions to
+                      social challenges.
+                    </p>
+                    <Link href="/industry/projects/training/hope-behind-bars">
+                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                        <span className="text-white ml-2 font-semibold">
+                          Read More
+                        </span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="rgba(255,255,255,1)"
+                          >
+                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                {/* second image */}
+                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                  <div className="h-[200px] lg:h-[350px]">
+                    <Image
+                      src={Project14}
+                      alt="news1"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-semibold">
+                      Crafting a Persuasive Sales Brochure & Value Proposition
+                      for Skoolbod
+                    </h3>
+                    <p className="text-[#999]">
+                      Development of a compelling sales brochure and value
+                      proposition document for Skoolbod, an edutech management
+                      platform. The goal is to capture attention, educate
+                      potential customers, and drive engagement by clearly
+                      communicating Skoolbod&apos;s unique value.
+                    </p>
+                    <Link href="/industry/projects/business/skoolbod">
+                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                        <span className="text-white ml-2 font-semibold">
+                          Read More
+                        </span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="rgba(255,255,255,1)"
+                          >
+                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                {/* third product */}
+                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                  <div className="h-[200px] lg:h-[350px]">
+                    <Image
+                      src={Project15}
+                      alt="news1"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-semibold">
+                      Strategic Market Positioning and Business Expansion for
+                      Emerging Fintech and Underserved Markets
+                    </h3>
+                    <p className="text-[#999]">
+                      To-Doo presented a business idea to us with a focus on a
+                      particularly underserved market to create a business plan
+                      to expand and structure the idea to provide services to
+                      that market to gain a competitive edge in the business
+                      atmosphere.
+                    </p>
+                    <Link href="/industry/projects/business/to-doo-business">
+                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                        <span className="text-white ml-2 font-semibold">
+                          Read More
+                        </span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="rgba(255,255,255,1)"
+                          >
+                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                {/* fourth product */}
+                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                  <div className="h-[200px] lg:h-[350px]">
+                    <Image
+                      src={Project16}
+                      alt="news1"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-semibold">
+                      Strategic Expansion: Proposal and Pitch Deck for
+                      Educational Growth
+                    </h3>
+                    <p className="text-[#999]">
+                      A professionally crafted and well-structured proposal and
+                      pitch deck designed for a strategic loan application aimed
+                      at securing a larger space to accommodate more students.
+                    </p>
+                    <Link href="/industry/projects/business/tots-academy">
+                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                        <span className="text-white ml-2 font-semibold">
+                          Read More
+                        </span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="rgba(255,255,255,1)"
+                          >
+                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                {/* fifth product */}
+                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                  <div className="h-[200px] lg:h-[350px]">
+                    <Image
+                      src={Project17}
+                      alt="news1"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-semibold">
+                      Strategic Market Positioning and Business Expansion for
+                      Emerging Fintech and Underserved Markets
+                    </h3>
+                    <p className="text-[#999]">
+                      Yahweh Yasad sought to explore business opportunities
+                      within an underserved market niche and needed a deeper
+                      understanding of its dynamics.
+                    </p>
+                    <Link href="/industry/projects/business/yasad-business">
+                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                        <span className="text-white ml-2 font-semibold">
+                          Read More
+                        </span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="rgba(255,255,255,1)"
+                          >
+                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

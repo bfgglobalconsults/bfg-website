@@ -176,28 +176,28 @@ export default function Main() {
       image: CaseImage1,
       img_name: "banner",
       title: "Technology & Software Development",
-      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
+      link: "/insight/case-study/technology",
     },
     {
       id: 2,
       image: CaseImage2,
       img_name: "banner",
       title: "Research & Analytics",
-      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
+      link: "/insight/case-study/research",
     },
     {
       id: 3,
       image: CaseImage3,
       img_name: "banner",
       title: "Strategy & Operations Transformation",
-      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
+      link: "/insight/case-study/strategy",
     },
     {
       id: 3,
       image: CaseImage4,
       img_name: "banner",
       title: "Training & Development",
-      link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
+      link: "/insight/case-study/training",
     },
   ];
 
@@ -492,7 +492,7 @@ export default function Main() {
               </div>
               <div className="flex justify-center my-2">
                 <button className="bg-[#041926] hover:bg-[#E26015] p-3 rounded-3xl flex gap-1 items-center">
-                  <Link href="/insight/case-study">
+                  <Link href="/industry/projects">
                     <span className="text-white font-semibold">See More</span>
                   </Link>
                   <span>
@@ -530,8 +530,7 @@ export default function Main() {
                     <p className="text-white text-lg my-4">{item.title}</p>
                     <a
                       href={item.link}
-                      target="_blank"
-                      className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
+                     className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
                     >
                       <span>
                         <svg
