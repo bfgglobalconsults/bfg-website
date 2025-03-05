@@ -2,7 +2,7 @@ import Slides from "@/components/Slides";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FirstNews from "../../../../../../public/assets/training-ilead.jpg";
+import FirstNews from "../../../../../../public/assets/training-do-action.jpg";
 const page = () => {
   return (
     <>
@@ -27,8 +27,8 @@ const page = () => {
         </div>
         <div className="w-full my-4">
           <h3 className="w-[100%]  text-[#333] font-bold text-3xl md:text-3xl lg:text-5xl">
-            Empowering iLEAD Africa: Strategic Program Design and AI Prompt Engineering Training
-          </h3>
+                      Empowering NGOs with Artificial Intelligence for Enhanced Impact and Innovation (Do Take Action)
+                  </h3>
         </div>
         <div className="relative w-full h-[300px] lg:h-[500px] bg-cover bg-center flex justify-center items-center">
           <Image
@@ -47,8 +47,7 @@ const page = () => {
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-                A tailored two-day capacity-building training focused on strategic program design and AI prompt engineering, designed to equip the staff and volunteers of iLEAD Africa with practical skills to enhance their operations and impact.
-              </p>
+The objective of the Artificial Intelligence Training is to equip Non-Governmental Organizations (NGOs) with the skills and knowledge to enhance operational efficiency, strengthen decision-making, improve service delivery, drive innovative solutions, and maximize fundraising and advocacy efforts—ultimately increasing their overall impact and sustainability.                          </p>
               <br />
             </div>
             <div className="hidden lg:block lg:w-[20%]">
@@ -56,7 +55,7 @@ const page = () => {
                 <h3 className="font-semibold my-2 text-lg">Details</h3>
                 <div className="flex justify-between">
                   <p className="text-[#999]">Date</p>
-                  <p className="text-[#999]">Sep 17, 2024</p>
+                  <p className="text-[#999]">Oct 21, 2024</p>
                 </div>
                 <div className="flex justify-between">
                   <p className="text-[#999]">Category</p>
@@ -85,10 +84,12 @@ const page = () => {
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-                To effectively empower vulnerable communities across Africa, iLEAD Africa identified the need for ongoing upskilling, enhanced processes, and strategic improvements. This created the necessity for an advanced, comprehensive workforce training focused on strategy development, program design, and AI prompt engineering to strengthen their impact and operational efficiency.
-              </p>
+                              DO Take Action mobilizes a vast network of volunteers to drive positive change in their communities by equipping grassroots citizens with practical skills such as grant writing, social media management, and program facilitation. However, with the fast-paced evolution of global systems through artificial intelligence (AI), there arose a critical need to upskill these volunteers.
+                          </p>
                           <br />
-                        
+                          <p className="text-lg text-[#9b8b8b]">
+                           To maintain relevance and maximize impact, DO Take Action required comprehensive capacity building in AI for its staff and volunteers, ensuring they possess the advanced skill sets necessary to deliver meaningful, future-ready solutions in their communities.   
+                           </p>
              
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
@@ -104,11 +105,14 @@ const page = () => {
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-iLEAD Africa engaged BFG Global Consulting LLC to deliver this capacity-building initiative. We began with a thorough requirements assessment to evaluate the current capabilities of their workforce and identify the most effective implementation strategy tailored to the organization&apos;s unique needs.              </p>
+                              During the second phase of the Data2Deals Project, the Workforce Training and Development Unit of BFG Global Consulting LLC conducted extensive research and needs assessments to identify NGOs seeking to enhance their social impact in an increasingly digital world. Through this process, we engaged with DO Take Action and identified an opportunity to support their mission through specialized AI capacity building.
+                          </p>
                           
-              <br />{" "}
+                          <br />{" "}
                           <p className="text-lg text-[#9b8b8b]">
-Following this, we developed a comprehensive training curriculum designed to address these needs, ensuring a highly relevant and impactful learning experience that contributed significantly to the project&apos;s success.              </p>
+                              We designed a comprehensive, tailored training curriculum that aligned with the organization&apos;s specific goals, ensuring the delivery of practical, high-impact knowledge and skills that directly contributed to the success of the program.
+
+                           </p>
              
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
@@ -124,11 +128,8 @@ Following this, we developed a comprehensive training curriculum designed to add
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <p className="text-lg text-[#9b8b8b]">
-                The Workforce Training and Development Unit of BFG Global Consulting LLC empowered iLEAD Africa to enhance its impact in serving and uplifting vulnerable communities across Africa by delivering specialized training in strategy and program design, as well as AI prompt engineering. This knowledge equipped the organization to apply innovative solutions and optimized strategies directly to its programs and operations for greater efficiency and reach.
-              </p>
-                          <br />
-                          
-                          
+                              The Workforce Training and Development Unit of BFG Global Consulting LLC equipped DO Take Action with the knowledge and practical application of Artificial Intelligence to enhance their service delivery. By empowering their staff and volunteers with AI skills, the organization was able to amplify its impact, streamline its processes, and deliver greater value in empowering grassroots communities through innovative and efficient solutions.
+                          </p>
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>

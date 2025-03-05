@@ -1,21 +1,18 @@
 import React from "react";
 import Image from "next/image";
-// import Banner from "../../../../public/assets/business-strategy.jpg";
 
-import TopBanner from "../../../../../public/assets/business-strategy-banner.jpg";
-
-
-import Efficiency from "../../../../../public/assets/efficiency.png";
-import Cost from "../../../../../public/assets/cost.png";
-import Decision from "../../../../../public/assets/decision.png";
-import Advantage from "../../../../../public/assets/advantage.png";
-import Scalabity from "../../../../../public/assets/scalability.png";
+import TopBanner from "../../../../../public/assets/training-development-banner.jpg";
+import Project18 from "../../../../../public/assets/training-areai.jpg";
+import Project21 from "../../../../../public/assets/training-do-action.jpg";
+import Project20 from "../../../../../public/assets/training-hope-behind-bars.jpg"
+import Project19 from "../../../../../public/assets/training-ilead.jpg";
+import EmployeePerformance from "../../../../../public/assets/employee-perfomance.jpg";
+import Retention from "../../../../../public/assets/retention.png";
+import GreaterFlexibility from "../../../../../public/assets/greater-flexibility.png";
+import DecisionMaking from "../../../../../public/assets/decision-making.png";
+import TopTalent from "../../../../../public/assets/top-talent.png";
 import Operations from "../../../../../public/assets/operations.png";
-import Project13 from "../../../../../public/assets/business-meeting.jpg";
-import Project14 from "../../../../../public/assets/business-cover.jpg";
-import Project15 from "../../../../../public/assets/business-image.png";
-import Project16 from "../../../../../public/assets/measure-business.jpg";
-import Project17 from "../../../../../public/assets/case-banner.jpeg";
+
 import Link from "next/link";
 
 const page = () => {
@@ -28,11 +25,10 @@ const page = () => {
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Strategy & Operations Transformation
+            Training & Development
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-            Streamline your operations, optimize your strategy, & achieve your
-            goals
+            Empowering your workforce, Enhancing your business
           </p>
         </div>
       </div>
@@ -49,46 +45,47 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              Business strategy & operations consulting is a unit of our
-              practice, which involves helping organisations improve their
-              overall performance by identifying & implementing effective
-              business strategies & streamlining operational processes. Using
-              the latest deep industry insights, our combined team of business
-              strategists, growth hackers, project managers, & quality control
-              managers helps businesses of every size prosper by creating
-              impactful solutions tailored to their unique needs today & in the
-              future. The goal of this service is to help businesses become more
-              efficient, profitable, & competitive in their respective
-              industries.
+              The BFG Training & Development Solution sits within our talent
+              management consulting practices. This service is provided to
+              unlock potential, develop leaders, & create high-performing teams.
+              We help organisations improve their performance by providing
+              employees with the knowledge, skills, & abilities they need to
+              succeed in their roles. We provide a wide range of training
+              options, including classroom instruction, online learning, & on
+              the job training. It also includes assessments, evaluations, &
+              feedback to measure the effectiveness of the training for your
+              organisation.{" "}
             </p>
           </div>
 
-          <div className="w-full  my-8">
-            
-             <div>
+          <div className="w-full">
+           <div>
             <div className="">
               <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-4">
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project13}
+                      src={Project18}
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="text-xl lg:text-2xl font-semibold">
-                      Bridging the Funding Gap: Empowering Women Through Sheroes
-                      Rising 4 Development Initiative{" "}
+                      Empowering NGOs with Artificial Intelligence for Enhanced
+                      Impact and Innovation (Areai)
                     </h3>
                     <p className="text-[#999]">
-                      Sheroes Rising 4 Development Initiative, a social
-                      enterprise dedicated to empowering and enlightening women
-                      across all aspects of life and society, identified a
-                      critical gap in funding opportunities needed to sustain
-                      and expand its initiatives.
+                      The objective of the Artificial Intelligence Training is
+                      to equip Non-Governmental Organizations (NGOs) with the
+                      knowledge and tools to enhance their efficiency, amplify
+                      their impact, and drive innovation by improving
+                      data-driven decision-making, streamlining operations,
+                      enhancing service delivery, strengthening fundraising and
+                      advocacy efforts, and fostering creative solutions to
+                      social challenges.
                     </p>
-                    <Link href="/industry/projects/business/sheroes-business">
+                    <Link href="/industry/projects/training/areai">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                         <span className="text-white ml-2 font-semibold">
                           Read More
@@ -112,24 +109,24 @@ const page = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project14}
+                      src={Project19}
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="text-xl lg:text-2xl font-semibold">
-                      Crafting a Persuasive Sales Brochure & Value Proposition
-                      for Skoolbod
+                      Empowering iLEAD Africa: Strategic Program Design and AI
+                      Prompt Engineering Training
                     </h3>
                     <p className="text-[#999]">
-                      Development of a compelling sales brochure and value
-                      proposition document for Skoolbod, an edutech management
-                      platform. The goal is to capture attention, educate
-                      potential customers, and drive engagement by clearly
-                      communicating Skoolbod&apos;s unique value.
+                      A tailored two-day capacity-building training focused on
+                      strategic program design and AI prompt engineering,
+                      designed to equip the staff and volunteers of iLEAD Africa
+                      with practical skills to enhance their operations and
+                      impact.
                     </p>
-                    <Link href="/industry/projects/business/skoolbod">
+                    <Link href="/industry/projects/training/ilead-africa">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                         <span className="text-white ml-2 font-semibold">
                           Read More
@@ -153,24 +150,27 @@ const page = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project15}
+                      src={Project20}
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
-                      Emerging Fintech and Underserved Markets
+                      Empowering NGOs with Artificial Intelligence for Enhanced
+                      Impact and Innovation (Hope Behind Bars)
                     </h3>
                     <p className="text-[#999]">
-                      To-Doo presented a business idea to us with a focus on a
-                      particularly underserved market to create a business plan
-                      to expand and structure the idea to provide services to
-                      that market to gain a competitive edge in the business
-                      atmosphere.
+                      The objective of the Artificial Intelligence Training is
+                      to equip Non-Governmental Organizations (NGOs) with the
+                      knowledge and tools to enhance their efficiency, amplify
+                      their impact, and drive innovation by improving
+                      data-driven decision-making, streamlining operations,
+                      enhancing service delivery, strengthening fundraising and
+                      advocacy efforts, and fostering creative solutions to
+                      social challenges.
                     </p>
-                    <Link href="/industry/projects/business/to-doo-business">
+                    <Link href="/industry/projects/training/hope-behind-bars">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                         <span className="text-white ml-2 font-semibold">
                           Read More
@@ -194,61 +194,23 @@ const page = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project16}
+                      src={Project21}
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="text-xl lg:text-2xl font-semibold">
-                      Strategic Expansion: Proposal and Pitch Deck for
-                      Educational Growth
+                      Empowering NGOs with Artificial Intelligence for Enhanced
+                      Impact and Innovation (Do Take Action)
                     </h3>
                     <p className="text-[#999]">
-                      A professionally crafted and well-structured proposal and
-                      pitch deck designed for a strategic loan application aimed
-                      at securing a larger space to accommodate more students.
+                      The Workforce Training and Development Unit of BFG Global
+                      Consulting LLC equipped DO Take Action with the knowledge
+                      and practical application of Artificial Intelligence to
+                      enhance their service delivery.
                     </p>
-                    <Link href="/industry/projects/business/tots-academy">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* fifth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project17}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
-                      Emerging  Markets
-                    </h3>
-                    <p className="text-[#999]">
-                      Yahweh Yasad sought to explore business opportunities
-                      within an underserved market niche and needed a deeper
-                      understanding of its dynamics.
-                    </p>
-                    <Link href="/industry/projects/business/yasad-business">
+                    <Link href="/industry/projects/research/do-action">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                         <span className="text-white ml-2 font-semibold">
                           Read More
@@ -284,9 +246,9 @@ const page = () => {
                 Service Benefits
               </h3>
               <p className="text-[#999] text-xl my-2">
-                Experience how our tailored business strategies & operational
-                expertise deliver transformative outcomes, driving long-term
-                success & sustainable growth
+                Realize the full potential of your organization with our expert
+                services, delivering actionable insights, improved efficiency, &
+                sustained results that drive lasting impact & success.{" "}
               </p>
             </div>
             {/* <div className="w-full flex flex-col lg:flex-row gap-10">
@@ -309,20 +271,20 @@ const page = () => {
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={Efficiency}
-                    alt="efficiency"
+                    src={EmployeePerformance}
+                    alt="employee"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Increased Efficiency & Productivity
+                    Improved Employee Performance
                   </h4>
                   <p className="text-[#999]">
-                    By streamlining operations & identifying areas for
-                    improvement, our business strategy & operations service
-                    helps organisations to increase their overall efficiency &
-                    productivity.
+                    By providing employees with the knowledge, skills, &
+                    abilities they need to succeed in their roles, this solution
+                    helps organisations improve employee performance &
+                    productivity.{" "}
                   </p>
                 </div>
               </div>
@@ -330,19 +292,19 @@ const page = () => {
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={Cost}
-                    alt="cost"
+                    src={Retention}
+                    alt="retention"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Cost Savings
+                    Better Retention of Employees
                   </h4>
                   <p className="text-[#999]">
-                    Identifying & implementing cost-saving measures can help
-                    your organisation reduce expenses & increase its bottom
-                    line.
+                    Investing in employee training & development helps
+                    organisations retain their best employees, & reduces the
+                    costs associated with turnover.{" "}
                   </p>
                 </div>
               </div>
@@ -350,7 +312,28 @@ const page = () => {
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={Decision}
+                    src={GreaterFlexibility}
+                    alt="flexibility"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <h4 className="text-xl text-[#333] font-semibold">
+                    Greater Adaptability & Flexibility
+                  </h4>
+                  <p className="text-[#999]">
+                    By providing your employees with training & development that
+                    keeps them up-to-date with new technologies & changing
+                    industry trends, your organisation will be more adaptable &
+                    flexible in response to changing business conditions.{" "}
+                  </p>
+                </div>
+              </div>
+              {/* fourth item */}
+              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+                <div className="">
+                  <Image
+                    src={DecisionMaking}
                     alt="decision"
                     className="w-full h-full object-cover"
                   />
@@ -362,46 +345,28 @@ const page = () => {
                   <p className="text-[#999]">
                     Access to accurate, up-to-date information & expert analysis
                     helps our clients make more informed & effective decisions
-                    for their businesses.
-                  </p>
-                </div>
-              </div>
-              {/* fourth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
-                  <Image
-                    src={Advantage}
-                    alt="advantage"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="w-[100%]">
-                  <h4 className="text-xl text-[#333] font-semibold">
-                    Enhanced Competitive Advantage
-                  </h4>
-                  <p className="text-[#999]">
-                    Identifying & leveraging competitive advantages helps our
-                    clients gain an edge over their rivals in the marketplace.
+                    for their businesses.{" "}
                   </p>{" "}
                 </div>
               </div>
               {/* fifth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={Scalabity}
-                    alt="scalability"
+                    src={TopTalent}
+                    alt="talent"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Greater Scalability
+                    Enhanced Ability to Attract top Talent
                   </h4>
                   <p className="text-[#999]">
-                    Developing scalable systems & processes, also helps leaders
-                    & managers of organisations prepare for & manage growth in
-                    their business.{" "}
+                    Organisations that invest in this service are more likely to
+                    attract top talent, as potential employees view such
+                    investment as a sign of a committed & forward-thinking
+                    organisation.{" "}
                   </p>{" "}
                 </div>
               </div>
@@ -416,21 +381,20 @@ const page = () => {
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Streamlined Operational Processes
+                    Greater Scalability{" "}
                   </h4>
                   <p className="text-[#999]">
-                    Enhance workflow efficiency through process optimization,
-                    reducing redundancies, and fostering a more agile
-                    operational environment.{" "}
+                    Developing scalable systems & processes, also helps leaders
+                    & managers of organisations prepare for & manage growth in
+                    their business.
                   </p>{" "}
                 </div>
               </div>
             </div>
-           
           </div>
-         
-           
           
+          
+         
         </div>
       </div>
     </>

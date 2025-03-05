@@ -17,6 +17,11 @@ import Project15 from "../../../public/assets/business-image.png";
 import Project16 from "../../../public/assets/measure-business.jpg";
 import Project17 from "../../../public/assets/case-banner.jpeg";
 
+import Project18 from "../../../public/assets/training-areai.jpg";
+import Project21 from "../../../public/assets/training-do-action.jpg";
+import Project20 from "../../../public/assets/training-hope-behind-bars.jpg"
+import Project19 from "../../../public/assets/training-ilead.jpg";
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -744,7 +749,7 @@ const ProjectTabs = () => {
                   <div>
                     <h3 className="text-xl lg:text-2xl font-semibold">
                       Strategic Market Positioning and Business Expansion for
-                      Emerging Fintech and Underserved Markets
+                      Emerging Markets
                     </h3>
                     <p className="text-[#999]">
                       Yahweh Yasad sought to explore business opportunities
@@ -782,7 +787,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project13}
+                      src={Project18}
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -790,7 +795,92 @@ const ProjectTabs = () => {
                   <div>
                     <h3 className="text-xl lg:text-2xl font-semibold">
                       Empowering NGOs with Artificial Intelligence for Enhanced
-                      Impact and Innovation
+                      Impact and Innovation (Areai)
+                    </h3>
+                    <p className="text-[#999]">
+                      The objective of the Artificial Intelligence Training is
+                      to equip Non-Governmental Organizations (NGOs) with the
+                      knowledge and tools to enhance their efficiency, amplify
+                      their impact, and drive innovation by improving
+                      data-driven decision-making, streamlining operations,
+                      enhancing service delivery, strengthening fundraising and
+                      advocacy efforts, and fostering creative solutions to
+                      social challenges.
+                    </p>
+                    <Link href="/industry/projects/training/areai">
+                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                        <span className="text-white ml-2 font-semibold">
+                          Read More
+                        </span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="rgba(255,255,255,1)"
+                          >
+                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                {/* second image */}
+                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                  <div className="h-[200px] lg:h-[350px]">
+                    <Image
+                      src={Project19}
+                      alt="news1"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-semibold">
+                      Empowering iLEAD Africa: Strategic Program Design and AI
+                      Prompt Engineering Training
+                    </h3>
+                    <p className="text-[#999]">
+                      A tailored two-day capacity-building training focused on
+                      strategic program design and AI prompt engineering,
+                      designed to equip the staff and volunteers of iLEAD Africa
+                      with practical skills to enhance their operations and
+                      impact.
+                    </p>
+                    <Link href="/industry/projects/training/ilead-africa">
+                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                        <span className="text-white ml-2 font-semibold">
+                          Read More
+                        </span>
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="rgba(255,255,255,1)"
+                          >
+                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                {/* third product */}
+                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                  <div className="h-[200px] lg:h-[350px]">
+                    <Image
+                      src={Project20}
+                      alt="news1"
+                      className="w-full h-full object-cover rounded-3xl"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl lg:text-2xl font-semibold">
+                      Empowering NGOs with Artificial Intelligence for Enhanced
+                      Impact and Innovation (Hope Behind Bars)
                     </h3>
                     <p className="text-[#999]">
                       The objective of the Artificial Intelligence Training is
@@ -822,147 +912,27 @@ const ProjectTabs = () => {
                     </Link>
                   </div>
                 </div>
-                {/* second image */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project14}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
-                      Crafting a Persuasive Sales Brochure & Value Proposition
-                      for Skoolbod
-                    </h3>
-                    <p className="text-[#999]">
-                      Development of a compelling sales brochure and value
-                      proposition document for Skoolbod, an edutech management
-                      platform. The goal is to capture attention, educate
-                      potential customers, and drive engagement by clearly
-                      communicating Skoolbod&apos;s unique value.
-                    </p>
-                    <Link href="/industry/projects/business/skoolbod">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* third product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project15}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
-                      Emerging Fintech and Underserved Markets
-                    </h3>
-                    <p className="text-[#999]">
-                      To-Doo presented a business idea to us with a focus on a
-                      particularly underserved market to create a business plan
-                      to expand and structure the idea to provide services to
-                      that market to gain a competitive edge in the business
-                      atmosphere.
-                    </p>
-                    <Link href="/industry/projects/business/to-doo-business">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
                 {/* fourth product */}
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project16}
+                      src={Project21}
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="text-xl lg:text-2xl font-semibold">
-                      Strategic Expansion: Proposal and Pitch Deck for
-                      Educational Growth
+                      Empowering NGOs with Artificial Intelligence for Enhanced
+                      Impact and Innovation (Do Take Action)
                     </h3>
                     <p className="text-[#999]">
-                      A professionally crafted and well-structured proposal and
-                      pitch deck designed for a strategic loan application aimed
-                      at securing a larger space to accommodate more students.
+                      The Workforce Training and Development Unit of BFG Global
+                      Consulting LLC equipped DO Take Action with the knowledge
+                      and practical application of Artificial Intelligence to
+                      enhance their service delivery.
                     </p>
-                    <Link href="/industry/projects/business/tots-academy">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* fifth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project17}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
-                      Emerging Fintech and Underserved Markets
-                    </h3>
-                    <p className="text-[#999]">
-                      Yahweh Yasad sought to explore business opportunities
-                      within an underserved market niche and needed a deeper
-                      understanding of its dynamics.
-                    </p>
-                    <Link href="/industry/projects/business/yasad-business">
+                    <Link href="/industry/projects/research/do-action">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                         <span className="text-white ml-2 font-semibold">
                           Read More

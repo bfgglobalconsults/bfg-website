@@ -21,10 +21,7 @@ const SolutionsComponent = ({ closeModal, color }) => {
               Solutions
             </h3>
             <p className="text-[#999999] text-lg">
-              With expertise in research and analytics, business strategy and
-              operations, training and development, and information technology,
-              we empower companies to thrive in todays dynamic business
-              landscape.
+              We specialize in offering custom solutions in software development, market research, strategy development, and workforce training to a global clientele, including individuals, businesses, corporate organizations, and government agencies.
             </p>
             {/* <button
               onClick={closeModal}

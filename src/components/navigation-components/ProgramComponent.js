@@ -22,11 +22,7 @@ export const ProgramComponent = ({ closeModal, color }) => {
         <div className="w-[20%]">
           <h3 className="text-2xl text-black font-semibold my-3">Programs</h3>
           <p className="text-[#999] text-lg">
-            BFG Global Consulting, LLC. From optimizing operations to
-            fostering growth and navigating complex challenges, our tailored
-            programs are designed to elevate performance, drive sustainable
-            success, and unlock untapped potential in todays dynamic market
-            landscape.
+           From optimizing operations to fostering growth and navigating complex challenges, our tailored programs are designed to elevate performance, drive sustainable success, and unlock untapped potential in today&apos;s dynamic market landscape.
           </p>
         </div>
         <div className="w-[40%]">
