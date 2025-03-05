@@ -20,12 +20,9 @@ export const InsightComponent = ({ closeModal, color }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="w-[20%]">
-          <h3 className="text-2xl text-black font-semibold my-3">Insights</h3>
+          <h3 className="text-2xl text-black font-semibold my-3">Resources</h3>
           <p className="text-[#999] text-lg">
-            BFG Global Consulting, LLC. Through rigorous analysis, deep industry
-            expertise, and cutting-edge research, we uncover valuable insights
-            that illuminate opportunities, mitigate risks, and drive
-            transformative outcomes for our clients.
+           Our resources reflect our commitment to transparency and ethics, career opportunities, client engagement, and thought leadership in the consulting industry.
           </p>
           
         </div>

@@ -6,6 +6,7 @@ import Technology from "../../../../public/assets/technology-software.png";
 import Business from "../../../../public/assets/business-strategy.png";
 import Research from "../../../../public/assets/research-analytics.png";
 import Training from "../../../../public/assets/training-development.png";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -28,7 +29,7 @@ const page = () => {
           <Image
             src={Banner}
             alt="about-banner"
-            className="w-full h-full object-fit rounded-3xl"
+            className="w-full h-full object-cover rounded-3xl"
           />
         </div>
         <div>
@@ -56,13 +57,16 @@ const page = () => {
               <Image
                 src={Technology}
                 alt="client"
-                className="w-full h-full object-fit"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[100%]">
               <h4 className="text-xl text-[#333] font-semibold my-4">
                 Technology & Software Development
               </h4>
+              <Link href="/insight/case-study/technology">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">View All Cases</button>
+                     </Link>
             </div>
           </div>
           {/* second item */}
@@ -71,13 +75,16 @@ const page = () => {
               <Image
                 src={Business}
                 alt="innovate"
-                className="w-full h-full object-fit"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[100%]">
               <h4 className="text-xl text-[#333] font-semibold my-4">
-                Business Strategy & Operations
+                Strategy and Operations Transformation
               </h4>
+               <Link href="/insight/case-study/strategy">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">View All Cases</button>
+                     </Link>
             </div>
           </div>
           {/* third item */}
@@ -86,13 +93,16 @@ const page = () => {
               <Image
                 src={Research}
                 alt="inclusive"
-                className="w-full h-full object-fit"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[100%]">
               <h4 className="text-xl text-[#333] font-semibold my-4">
                 Research & Analytics
               </h4>
+               <Link href="/insight/case-study/research">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">View All Cases</button>
+                     </Link>
             </div>
           </div>
           {/* fourth item */}
@@ -101,13 +111,16 @@ const page = () => {
               <Image
                 src={Training}
                 alt="sustain"
-                className="w-full h-full object-fit"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="w-[100%]">
               <h4 className="text-xl text-[#333] font-semibold my-4">
                 Training & Development
               </h4>
+               <Link href="/insight/case-study/training">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">View All Cases</button>
+                     </Link>
             </div>
           </div>
         </div>

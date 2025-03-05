@@ -19,9 +19,7 @@ const ProductComponent = ({ closeModal, color }) => {
         <div className="w-[20%]">
             <h3 className="text-2xl text-black font-semibold my-3">Our Product</h3>
             <p className="text-[#999] text-lg">
-              BFG Global Consulting, LLC. ediﬁes your business and organisation
-              to growth. We are at the intersection of research, strategy,
-              workforce training, and information technology.
+Our SaaS offerings are designed to empower businesses by providing scalable and flexible solutions that can be easily modified and expanded as needed.
             </p>
             
           </div>
