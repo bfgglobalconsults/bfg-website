@@ -210,7 +210,7 @@ const page = () => {
                       and practical application of Artificial Intelligence to
                       enhance their service delivery.
                     </p>
-                    <Link href="/industry/projects/research/do-action">
+                    <Link href="/industry/projects/training/do-action">
                       <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
                         <span className="text-white ml-2 font-semibold">
                           Read More

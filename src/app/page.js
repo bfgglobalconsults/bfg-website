@@ -592,7 +592,7 @@ export default function Main() {
 
           <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
             <div className="w-[100%]  xl:w-[50%]">
-              <Image src={ContentBanner} alt="content-img" className="w-full" />
+              <Image src={ContentBanner} alt="content-img" className="w-full rounded-lg" />
             </div>
             <div className="w-[100%]  xl:w-[50%] p-2 overflow-hidden">
               <SlideLeft>
