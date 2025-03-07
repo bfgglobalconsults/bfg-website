@@ -11,7 +11,7 @@ const page = () => {
       <div className="lg:p-20 lg:mt-[150px]">
         <div className="border-4 border-[#E45F11] rounded-3xl">
           <div className="p-12">
-            <div className="w-[300px] h-[200px] lg:w-[400px] lg:h-[150px] mx-auto">
+            <div className="w-[300px] h-[250px] lg:w-[400px] lg:h-[150px] mx-auto">
               <Image
                 src={Appetizer}
                 alt="appetizer-product"
