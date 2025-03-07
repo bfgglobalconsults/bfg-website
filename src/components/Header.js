@@ -448,7 +448,7 @@ const Header = () => {
                         <div className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link
                             href="/solutions/research-analytics"
-                            onClick={handleLinkClick}
+                           
                           >
                             Research and Analytics
                           </Link>
@@ -456,18 +456,18 @@ const Header = () => {
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                           <Link 
                             href="/solutions/business-strategy"
-                            onClick={handleLinkClick}
+                           
                           >
                             Strategy and Operations Transformation
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/training-development" onClick={handleLinkClick}>
+                          <Link href="/solutions/training-development">
                             Training and development
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/information-technology" onClick={handleLinkClick}>
+                          <Link href="/solutions/information-technology" >
                             Technology and Software Development
                           </Link>
                         </p>
@@ -500,57 +500,57 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/consumer" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/consumer">
                             Consumer and Retail Market
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/financial" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/financial" >
                             Financial Services
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/hospitality" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/hospitality">
                             Hospitality and Tourism
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/real-estate" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/real-estate">
                             Real Estate
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/technology" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/technology">
                             Technology and Finance
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/government" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/government">
                             Government and Non-for-Profit
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/oil-gas" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/oil-gas">
                             Oil and Gas
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/industrial-manufacturing" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/industrial-manufacturing">
                             Industrial Manufacturing
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/telecom-media" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/telecom-media" >
                             Telecommunication and Media
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/Entertainment and Creative Industry" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/Entertainment and Creative Industry" >
                             Entertainment and Creative Industry
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/health-social-care" onClick={handleLinkClick}>
+                          <Link href="/industry/industries/health-social-care">
                             Health and Social Care
                           </Link>
                         </p>
@@ -582,10 +582,10 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/appetiza" onClick={handleLinkClick}>Appetiza</Link>
+                          <Link href="/product/appetiza">Appetiza</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/career-fun" onClick={handleLinkClick}>Career Fun</Link>
+                          <Link href="/product/career-fun">Career Fun</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -615,24 +615,24 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/dialectics" onClick={handleLinkClick}>The Dialetics</Link>
+                          <Link href="/program/dialectics" >The Dialetics</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/leadership-summit" onClick={handleLinkClick}>
+                          <Link href="/program/leadership-summit" >
                             Emerging Marketplace Leader
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/women-tech" onClick={handleLinkClick}>Women in Tech</Link>
+                          <Link href="/program/women-tech">Women in Tech</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-klinic" onClick={handleLinkClick}>SME Klinic</Link>
+                          <Link href="/program/sme-klinic">SME Klinic</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/ai-advantage" onClick={handleLinkClick}>AI Advantage</Link>
+                          <Link href="/program/ai-advantage">AI Advantage</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-webinar" onClick={handleLinkClick}>
+                          <Link href="/program/sme-webinar">
                             SME Webinar Series
                           </Link>
                         </p>
@@ -664,16 +664,16 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/news" onClick={handleLinkClick}>News</Link>
+                          <Link href="/insight/news">News</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insights/blogs" onClick={handleLinkClick}>Blogs</Link>
+                          <Link href="/insights/blogs">Blogs</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/case-study" onClick={handleLinkClick}>Case Studies</Link>
+                          <Link href="/insight/case-study">Case Studies</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/careers" onClick={handleLinkClick}>Careers</Link>
+                          <Link href="/careers">Careers</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -706,26 +706,26 @@ const Header = () => {
                         <Link href="/about">About Us</Link>
                       </p> */}
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/about" onClick={handleLinkClick}>Who We Are</Link>
+                          <Link href="/about">Who We Are</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/clients" onClick={handleLinkClick}>Our Clients</Link>
+                          <Link href="/clients">Our Clients</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/team" onClick={handleLinkClick}>Our Team</Link>
+                          <Link href="/team">Our Team</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/projects" onClick={handleLinkClick}>
+                          <Link href="/industry/projects">
                             Project Executed
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/award-recognition" onClick={handleLinkClick}>
+                          <Link href="/award-recognition">
                             Award & Recognition
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/governance-culture" onClick={handleLinkClick}>
+                          <Link href="/governance-culture">
                             Governance & Culture
                           </Link>
                         </p>
@@ -733,7 +733,7 @@ const Header = () => {
                     </Collapsible>
 
                     <div className="px-[32px] flex items-center justify-center">
-                      <Link href="/contact" onClick={handleLinkClick}>
+                      <Link href="/contact">
                         <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
                           Contact
                         </p>
