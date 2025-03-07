@@ -29,11 +29,11 @@ import Picture1 from "/public/assets/picture-1.png";
 import Picture2 from "/public/assets/picture-2.png";
 import Picture3 from "/public/assets/picture-3.png";
 
-import SliderImage1 from "../../public/assets/sliderimage1.png";
-import SliderImage2 from "../../public/assets/sliderimage2.png";
+import SliderImage1 from "../../public/assets/sliderimage1.jpg";
+import SliderImage2 from "../../public/assets/sliderimage2.jpg";
 import SliderImage3 from "../../public/assets/sliderimage3.png";
-import SliderImage4 from "../../public/assets/sliderimage4.png";
-import SliderImage5 from "../../public/assets/consumer-img.png";
+import SliderImage4 from "../../public/assets/sliderimage4.jpg";
+import SliderImage5 from "../../public/assets/consumer-img.jpg";
 import SliderImage6 from "../../public/assets/oilgas-banner.png";
 import SliderImage7 from "../../public/assets/industrial-manufacture-banner.png";
 import SliderImage8 from "../../public/assets/telecom-banner.png";
@@ -451,7 +451,7 @@ export default function Main() {
                       <div className="w-[100%] lg:w-[95%]  p-5 bg-white rounded-2xl">
                         <Image
                           alt={slide.imageAlt}
-                          className="w-full h-[250px] object-fit"
+                          className="w-full h-[250px] object-cover rounded-md"
                           src={slide.imageSrc}
                         />
 

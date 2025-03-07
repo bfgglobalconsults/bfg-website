@@ -29,6 +29,7 @@ const Header = () => {
     }
   };
 
+
   // const handleTabClick = (id) => {
   //   setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
   // };
@@ -127,6 +128,10 @@ const Header = () => {
     );
   };
 
+  const handleLinkClick = () => {
+    setShowMenu(false); // Close the menu when a link is clicked
+  };
+
   return (
     <div>
       <MediaQuery min="lg">
@@ -173,11 +178,11 @@ const Header = () => {
                     )}
                   </ul>
                 </div>
-                 <div>
-                <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
-                  <Link href="/contact">Discuss Your Project</Link>
-                </button>
-              </div>
+                <div>
+                  <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
+                    <Link href="/contact">Discuss Your Project</Link>
+                  </button>
+                </div>
                 <div>
                   {navigation_links.map(({ id, label, component }) => (
                     <div
@@ -257,11 +262,11 @@ const Header = () => {
                     )}
                   </ul>
                 </div>
-                 <div>
-                <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
-                  <Link href="/contact">Discuss Your Project</Link>
-                </button>
-              </div>
+                <div>
+                  <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
+                    <Link href="/contact">Discuss Your Project</Link>
+                  </button>
+                </div>
                 <div>
                   {navigation_links.map(({ id, label, component }) => (
                     <div
@@ -441,23 +446,28 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <div className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/research-analytics" onClick={() => setShowMenu(!showMenu)}>
+                          <Link
+                            href="/solutions/research-analytics"
+                            onClick={handleLinkClick}
+                          >
                             Research and Analytics
                           </Link>
                         </div>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/business-strategy">
+                          <Link 
+                            href="/solutions/business-strategy"
+                            onClick={handleLinkClick}
+                          >
                             Strategy and Operations Transformation
-
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/training-development">
+                          <Link href="/solutions/training-development" onClick={handleLinkClick}>
                             Training and development
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/information-technology">
+                          <Link href="/solutions/information-technology" onClick={handleLinkClick}>
                             Technology and Software Development
                           </Link>
                         </p>
@@ -490,62 +500,58 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/consumer">
+                          <Link href="/industry/industries/consumer" onClick={handleLinkClick}>
                             Consumer and Retail Market
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/financial">
+                          <Link href="/industry/industries/financial" onClick={handleLinkClick}>
                             Financial Services
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/hospitality" >
+                          <Link href="/industry/industries/hospitality" onClick={handleLinkClick}>
                             Hospitality and Tourism
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/real-estate" >
+                          <Link href="/industry/industries/real-estate" onClick={handleLinkClick}>
                             Real Estate
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/technology">
+                          <Link href="/industry/industries/technology" onClick={handleLinkClick}>
                             Technology and Finance
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/government">
+                          <Link href="/industry/industries/government" onClick={handleLinkClick}>
                             Government and Non-for-Profit
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/oil-gas">
+                          <Link href="/industry/industries/oil-gas" onClick={handleLinkClick}>
                             Oil and Gas
                           </Link>
                         </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/industrial-manufacturing">
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/industrial-manufacturing" onClick={handleLinkClick}>
                             Industrial Manufacturing
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/telecom-media">
+                          <Link href="/industry/industries/telecom-media" onClick={handleLinkClick}>
                             Telecommunication and Media
                           </Link>
                         </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/Entertainment and Creative Industry">
-Entertainment and Creative Industry
-
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/Entertainment and Creative Industry" onClick={handleLinkClick}>
+                            Entertainment and Creative Industry
                           </Link>
                         </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/health-social-care">
-Health and Social Care
-
-
-
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/health-social-care" onClick={handleLinkClick}>
+                            Health and Social Care
                           </Link>
                         </p>
                       </div>
@@ -576,10 +582,10 @@ Health and Social Care
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/appetiza">Appetiza</Link>
+                          <Link href="/product/appetiza" onClick={handleLinkClick}>Appetiza</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/career-fun">Career Fun</Link>
+                          <Link href="/product/career-fun" onClick={handleLinkClick}>Career Fun</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -609,22 +615,26 @@ Health and Social Care
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/dialectics" >The Dialetics</Link>
+                          <Link href="/program/dialectics" onClick={handleLinkClick}>The Dialetics</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/leadership-summit">Emerging Marketplace Leader</Link>
+                          <Link href="/program/leadership-summit" onClick={handleLinkClick}>
+                            Emerging Marketplace Leader
+                          </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/women-tech">Women in Tech</Link>
+                          <Link href="/program/women-tech" onClick={handleLinkClick}>Women in Tech</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-klinic">SME Klinic</Link>
+                          <Link href="/program/sme-klinic" onClick={handleLinkClick}>SME Klinic</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/ai-advantage">AI Advantage</Link>
+                          <Link href="/program/ai-advantage" onClick={handleLinkClick}>AI Advantage</Link>
                         </p>
-                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-webinar">SME Webinar Series</Link>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/program/sme-webinar" onClick={handleLinkClick}>
+                            SME Webinar Series
+                          </Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -654,16 +664,16 @@ Health and Social Care
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/news">News</Link>
+                          <Link href="/insight/news" onClick={handleLinkClick}>News</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insights/blogs">Blogs</Link>
+                          <Link href="/insights/blogs" onClick={handleLinkClick}>Blogs</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/case-study">Case Studies</Link>
+                          <Link href="/insight/case-study" onClick={handleLinkClick}>Case Studies</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/careers">Careers</Link>
+                          <Link href="/careers" onClick={handleLinkClick}>Careers</Link>
                         </p>
                       </div>
                     </Collapsible>
@@ -696,30 +706,34 @@ Health and Social Care
                         <Link href="/about">About Us</Link>
                       </p> */}
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/about">Who We Are</Link>
+                          <Link href="/about" onClick={handleLinkClick}>Who We Are</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/clients">Our Clients</Link>
+                          <Link href="/clients" onClick={handleLinkClick}>Our Clients</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/team">Our Team</Link>
+                          <Link href="/team" onClick={handleLinkClick}>Our Team</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/projects">
+                          <Link href="/industry/projects" onClick={handleLinkClick}>
                             Project Executed
                           </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/award-recognition">Award & Recognition</Link>
+                          <Link href="/award-recognition" onClick={handleLinkClick}>
+                            Award & Recognition
+                          </Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/governance-culture">Governance & Culture</Link>
+                          <Link href="/governance-culture" onClick={handleLinkClick}>
+                            Governance & Culture
+                          </Link>
                         </p>
                       </div>
                     </Collapsible>
 
                     <div className="px-[32px] flex items-center justify-center">
-                      <Link href="/contact">
+                      <Link href="/contact" onClick={handleLinkClick}>
                         <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
                           Contact
                         </p>
@@ -736,4 +750,3 @@ Health and Social Care
 };
 
 export default Header;
-
