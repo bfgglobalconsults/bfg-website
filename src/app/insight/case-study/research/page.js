@@ -109,7 +109,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       ZENKLEUS Nigeria: A UI/UX Research Journey into
                       User-Centered Design
                     </h3>
@@ -151,7 +151,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       MECEN&apos;s Sustainable Expansion: Establishing a PET
                       Recycling Facility in Nigeria
                     </h3>
@@ -196,7 +196,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Corporate Scholarship Funding: Analyzing CSR Investment in
                       Education Across Industries
                     </h3>
@@ -238,7 +238,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Market Exploration: Identifying Fintech
                       Opportunities for Ampersand
                     </h3>
@@ -280,7 +280,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       PocketFI: Market Research and Digital Platform Development
                       for Nigeria&apos;s P2P Cryptocurrency Ecosystem
                     </h3>

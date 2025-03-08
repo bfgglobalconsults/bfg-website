@@ -109,7 +109,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Digital Gateway: Enhancing Student Travel with DMJ Travels
                       & Tours Online Platform
                     </h3>
@@ -151,7 +151,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Digital Transformation: Comprehensive Web Solution for ST
                       Travels & Tours
                     </h3>
@@ -193,7 +193,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Comprehensive Software System Analysis for Skoolbod
                       Education Management Platform
                     </h3>
@@ -235,7 +235,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       {" "}
                       Professional Digital Presence: Engaging Website for David
                       Prestige Law, Abuja
@@ -277,7 +277,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Building a Strong Digital Presence: A Professional Website
                       for Alubarika Construction
                     </h3>
@@ -320,7 +320,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Elevating GIGS Travels: A High-Conversion Marketing
                       Campaign for Migration and Travel Services
                     </h3>
@@ -366,7 +366,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       ZENKLEUS Nigeria: A UI/UX Research Journey into
                       User-Centered Design
                     </h3>
@@ -408,7 +408,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       MECEN&apos;s Sustainable Expansion: Establishing a PET
                       Recycling Facility in Nigeria
                     </h3>
@@ -453,7 +453,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Corporate Scholarship Funding: Analyzing CSR Investment in
                       Education Across Industries
                     </h3>
@@ -495,7 +495,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Market Exploration: Identifying Fintech
                       Opportunities for Ampersand
                     </h3>
@@ -537,7 +537,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       PocketFI: Market Research and Digital Platform Development
                       for Nigeria&apos;s P2P Cryptocurrency Ecosystem
                     </h3>
@@ -585,7 +585,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Bridging the Funding Gap: Empowering Women Through Sheroes
                       Rising 4 Development Initiative{" "}
                     </h3>
@@ -626,7 +626,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Crafting a Persuasive Sales Brochure & Value Proposition
                       for Skoolbod
                     </h3>
@@ -667,7 +667,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Market Positioning and Business Expansion for
                       Emerging Fintech and Underserved Markets
                     </h3>
@@ -708,7 +708,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Expansion: Proposal and Pitch Deck for
                       Educational Growth
                     </h3>
@@ -747,7 +747,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Market Positioning and Business Expansion for
                       Emerging Markets
                     </h3>
@@ -793,7 +793,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering NGOs with Artificial Intelligence for Enhanced
                       Impact and Innovation (Areai)
                     </h3>
@@ -837,7 +837,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering iLEAD Africa: Strategic Program Design and AI
                       Prompt Engineering Training
                     </h3>
@@ -878,7 +878,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering NGOs with Artificial Intelligence for Enhanced
                       Impact and Innovation (Hope Behind Bars)
                     </h3>
@@ -922,7 +922,7 @@ const ProjectTabs = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering NGOs with Artificial Intelligence for Enhanced
                       Impact and Innovation (Do Take Action)
                     </h3>
