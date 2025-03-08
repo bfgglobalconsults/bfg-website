@@ -80,7 +80,7 @@ Technology & Software Development
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Digital Gateway: Enhancing Student Travel with DMJ Travels
                       & Tours Online Platform
                     </h3>
@@ -122,7 +122,7 @@ Technology & Software Development
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Digital Transformation: Comprehensive Web Solution for ST
                       Travels & Tours
                     </h3>
@@ -164,7 +164,7 @@ Technology & Software Development
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Comprehensive Software System Analysis for Skoolbod
                       Education Management Platform
                     </h3>
@@ -206,7 +206,7 @@ Technology & Software Development
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       {" "}
                       Professional Digital Presence: Engaging Website for David
                       Prestige Law, Abuja
@@ -248,7 +248,7 @@ Technology & Software Development
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Building a Strong Digital Presence: A Professional Website
                       for Alubarika Construction
                     </h3>
@@ -291,7 +291,7 @@ Technology & Software Development
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Elevating GIGS Travels: A High-Conversion Marketing
                       Campaign for Migration and Travel Services
                     </h3>

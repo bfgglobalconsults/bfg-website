@@ -29,4 +29,12 @@ export const program_links = [
         label: "SME Webinar Series",
         link: "/program/sme-webinar",
       },
-    ]
+]
+
+  export const second_program_links = [
+    {
+        id: 1,
+        label: "Tech Achievers Graduate Scheme",
+        link: "/program/tech-achievers",
+    },
+  ]

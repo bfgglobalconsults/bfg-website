@@ -71,7 +71,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering NGOs with Artificial Intelligence for Enhanced
                       Impact and Innovation (Areai)
                     </h3>
@@ -115,7 +115,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering iLEAD Africa: Strategic Program Design and AI
                       Prompt Engineering Training
                     </h3>
@@ -156,7 +156,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering NGOs with Artificial Intelligence for Enhanced
                       Impact and Innovation (Hope Behind Bars)
                     </h3>
@@ -200,7 +200,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Empowering NGOs with Artificial Intelligence for Enhanced
                       Impact and Innovation (Do Take Action)
                     </h3>

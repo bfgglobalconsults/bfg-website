@@ -11,14 +11,14 @@ const page = () => {
       <div className="lg:p-20 lg:mt-[150px]">
         <div className="border-4 border-[#E45F11] rounded-3xl">
           <div className="p-12">
-            <div className="w-[300px] h-[250px] lg:w-[400px] lg:h-[150px] mx-auto">
+            <div className="w-[250px] h-[200px] lg:w-[400px] lg:h-[250px] mx-auto">
               <Image
                 src={Appetizer}
                 alt="appetizer-product"
                 className="w-full h-full object-fit"
               />
             </div>
-            <p className="text-3xl lg:text-5xl font-bold text-center my-2">
+            <p className="font-sans text-3xl lg:text-5xl font-semibold text-center my-4">
               Elevate Your Business with the Power of Appetiza.ai
             </p>
             <p className="text-[#999] text-center my-2">

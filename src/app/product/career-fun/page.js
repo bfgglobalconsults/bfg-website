@@ -12,14 +12,14 @@ const page = () => {
    <div className="lg:p-20 lg:mt-[150px]">
         <div className="border-4 border-[#E45F11] rounded-3xl">
           <div className="p-12">
-            <div className="w-[300px] h-[100px] lg:w-[350px] lg:h-[200px] mx-auto">
+            <div className="w-[250px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto">
               <Image
                 src={CareerImg}
                 alt="career-product"
                 className="w-full h-full object-fit"
               />
             </div>
-            <p className="text-3xl lg:text-5xl font-bold text-center my-2">
+            <p className="font-sans text-3xl lg:text-5xl font-semibold text-center my-8">
              Power Up Your Skills! Learn, Play, & Grow with Careerfun
             </p>
             <p className="text-[#999] text-center my-2">

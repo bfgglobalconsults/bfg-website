@@ -77,7 +77,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Bridging the Funding Gap: Empowering Women Through Sheroes
                       Rising 4 Development Initiative{" "}
                     </h3>
@@ -118,7 +118,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Crafting a Persuasive Sales Brochure & Value Proposition
                       for Skoolbod
                     </h3>
@@ -159,7 +159,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Market Positioning and Business Expansion for
                       Emerging Fintech and Underserved Markets
                     </h3>
@@ -200,7 +200,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Expansion: Proposal and Pitch Deck for
                       Educational Growth
                     </h3>
@@ -239,7 +239,7 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl lg:text-2xl font-semibold">
+                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Market Positioning and Business Expansion for
                       Emerging  Markets
                     </h3>

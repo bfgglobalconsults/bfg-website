@@ -1,5 +1,5 @@
 import { about_links } from "@/constants/aboutcomponent-constant";
-import { program_links } from "@/constants/programcomponent-constant";
+import { program_links, second_program_links } from "@/constants/programcomponent-constant";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -39,7 +39,20 @@ export const ProgramComponent = ({ closeModal, color }) => {
             </p>
           ))}
         </div>
-        <div className="w-[40%]"></div>
+        <div className="w-[40%]">
+           {second_program_links.map(({ id, label, link }) => (
+            <p
+              key={id}
+              className="flex gap-2 items-center mx-4 py-4 text-black border-b border-[#E45F11] text-lg font-semibold cursor-pointer hover:text-[#E45F11]"
+              onClick={() => handleLinkClick(link)}
+            >
+              {label}
+              <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(228,95,17,1)"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+            </span>
+            </p>
+          ))}
+        </div>
       </div>
     </div>
   );
