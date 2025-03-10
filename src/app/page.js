@@ -438,8 +438,51 @@ export default function Main() {
 
           <div>
             <div className="my-4 relative overflow-hidden">
-              <div
-                className="flex gap-2 transition-transform duration-500 ease-in-out"
+            <Swiper
+              modules={[Navigation,  Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              breakpoints={{
+                1024: {
+                  slidesPerView: 2,
+                },
+              }}
+              navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              className="mySwiper"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="w-full flex-shrink-0 flex flex-wrap">
+                    <div className="w-[100%] lg:w-[95%] lg:h-[450px] p-5 bg-white rounded-2xl">
+                      <Image
+                        alt={slide.imageAlt}
+                        className="w-full h-[250px] object-cover rounded-md"
+                        src={slide.imageSrc}
+                      />
+                      <div>
+                        <h3 className="text-xl lg:text-2xl my-2 font-semibold text-black">
+                          {slide.title}
+                        </h3>
+                        <p className="text-md text-lg text-[#999]">
+                          {slide.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+              <div className="swiper-button-prev !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
+              <div className="swiper-button-next !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
+            </Swiper>
+              {/* <div
+                className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
                 {slides.map((slide, index) => (
@@ -467,7 +510,7 @@ export default function Main() {
                     </div>
                   </>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
