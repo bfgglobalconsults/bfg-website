@@ -452,8 +452,8 @@ export default function Main() {
                 prevEl: '.swiper-button-prev',
               }}
               autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
+                delay: 5000,
+                disableOnInteraction: true,
               }}
               className="mySwiper"
             >
