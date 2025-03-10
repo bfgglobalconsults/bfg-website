@@ -383,23 +383,24 @@ export default function Main() {
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-8">
             Industries We Cover
           </span>
-          <div className="w-[100%] relative flex flex-col lg:flex-row items-center flex-wrap">
+          <div className="w-[100%] relative flex flex-col lg:flex-row items-center flex-wrap my-4">
             <div className="w-[100%] lg:w-[50%]">
               <h3 className="my-6 text-white text-3xl lg:text-4xl font-semibold">
                 Serving Diverse Industries
               </h3>
-              <p className="text-white text-lg w-full lg:w-[80%]">
-                Discover success across tech, finance, healthcare,
-                manufacturing, retail, energy, professional services, &
-                hospitality with BFG Global Consults tailored
-                consulting expertise.{" "}
-              </p>
+            
             </div>
 
             <div className="w-[100%] lg:w-[50%] relative">
+                <p className="text-white text-lg w-full lg:w-[80%]">
+                Discover success across tech, finance, healthcare,
+                manufacturing, retail, energy, professional services, and
+                hospitality with BFG Global Consults tailored
+                consulting expertise.{" "}
+              </p>
               {/* <div className="absolute top-0 right-10 w-[400px] h-[250px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div> */}
 
-              <div className="flex gap-2 justify-end">
+              {/* <div className="flex gap-2 justify-end">
                 <button
                   onClick={handlePrevClick}
                   disabled={currentIndex === 0}
@@ -432,7 +433,7 @@ export default function Main() {
                     <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                   </svg>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
