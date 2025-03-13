@@ -46,13 +46,14 @@ const page = () => {
               dynamic consumer-driven economy.{" "}
             </p>
           </div>
-          
+           </div>
           <div className="my-6">
             <Slides />
           </div>
+         
 
-          <div className="w-full flex flex-col lg:flex-row bg-[#041926] p-10 rounded-xl gap-4 my-8">
-            <div className="w-[100%] lg:w-[50%]  rounded-lg">
+          <div className="w-full flex flex-col lg:flex-row bg-[#041926] lg:p-10 rounded-xl gap-4 my-8">
+            <div className="w-[100%] lg:w-[50%] p-[40px]  rounded-lg">
               <div className="my-4">
                 <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
                   Areas
@@ -69,7 +70,7 @@ const page = () => {
                 <Image src={ConsumerImage} alt="it-image" className="w-full" />
               </div>
             </div>
-            <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
+            <div className="w-[100%] lg:w-[50%] p-[40px] flex flex-col gap-10">
               <div className="w-full shadow-lg bg-[#f4f4f4] rounded-xl p-7">
                 <h4 className="font-semibold text-xl text-[#333333]">
                   E-commerce & Digital Transformation
@@ -110,7 +111,7 @@ const page = () => {
               </div>{" "}
             </div>
           </div>
-        </div>
+        
       </div>
     </>
   );

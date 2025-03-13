@@ -103,37 +103,37 @@ const page = () => {
               insights, industry research, and impact assessment.
             </p>
           </div>
-
-          <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
-            <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
-              <div className="my-4">
-                <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
-                  Focus Area
-                </span>
-              </div>
-              <h3 className="text-white text-3xl font-semibold">
-                Focus areas of our Research & Analytics Consulting Services
-              </h3>
-              <p className="text-white my-2">
-                Discover how our expert research & analytics process delivers
-                tailored insights, ensuring your projects success from data to
-                decision.
-              </p>
-              <div className="w-full">
-                <Image
-                  src={ResearchImage}
-                  alt="research-image"
-                  className="w-full"
-                />
-              </div>
+        </div>
+        <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
+          <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+            <div className="my-4">
+              <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
+                Focus Area
+              </span>
             </div>
-            <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
-              <AnimatedItems slides={researchSlides} />
+            <h3 className="text-white text-3xl font-semibold">
+              Focus areas of our Research & Analytics Consulting Services
+            </h3>
+            <p className="text-white my-2">
+              Discover how our expert research & analytics process delivers
+              tailored insights, ensuring your projects success from data to
+              decision.
+            </p>
+            <div className="w-full">
+              <Image
+                src={ResearchImage}
+                alt="research-image"
+                className="w-full"
+              />
             </div>
           </div>
+          <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
+            <AnimatedItems slides={researchSlides} />
+          </div>
+        </div>
 
-          <hr />
-
+        <hr />
+        <div className="p-[40px]">
           <div className="my-[80px]">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Benefits
@@ -316,24 +316,29 @@ const page = () => {
                   unique projects that reflect our commitment to excellence,
                   innovation, and results-driven solutions.
                 </p>
-                <a href="/bfg-services.pdf" target="_blank"  rel="noopener noreferrer" className="">
+                <a
+                  href="/bfg-services.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
-                  <span className="text-white text-md font-semibold">
-                    View Our Portfolio
-                  </span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
-                    </button>
-                    </a>
+                    <span className="text-white text-md font-semibold">
+                      View Our Portfolio
+                    </span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -379,7 +384,9 @@ const page = () => {
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Simon Adeh</h3>
-                    <p className="text-[#E45F11] font-semibold">Junior Research and Data Analyst</p>
+                    <p className="text-[#E45F11] font-semibold">
+                      Junior Research and Data Analyst
+                    </p>
                   </div>
                 </div>
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">

@@ -49,7 +49,7 @@ const page = () => {
               growth.{" "}
             </p>
           </div>
-          
+           </div>
           <div className="my-6">
             <Slides />
           </div>
@@ -108,7 +108,7 @@ const page = () => {
               </div>{" "}
             </div>
           </div>
-        </div>
+       
       </div>
     </div>
   );

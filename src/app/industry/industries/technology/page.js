@@ -50,10 +50,11 @@ const page = () => {
               collaboration, & strategic foresight.
             </p>
           </div>
-          
+           </div>
           <div className="my-6">
             <Slides />
           </div>
+          
 
           <div className="w-full flex flex-col lg:flex-row gap-4 bg-[#041926] p-10  rounded-xl my-8">
             <div className="w-[100%] lg:w-[50%] rounded-lg">
@@ -110,7 +111,7 @@ const page = () => {
               </div>{" "}
             </div>
           </div>
-        </div>
+       
       </div>
     </div>
   );

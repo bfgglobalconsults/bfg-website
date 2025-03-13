@@ -53,7 +53,7 @@ const page = () => {
         </div>
         <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-            <div className="w-[540px]">
+            <div className="">
               <Image
                 src={Technology}
                 alt="client"
@@ -71,7 +71,7 @@ const page = () => {
           </div>
           {/* second item */}
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-            <div className="w-[540px]">
+            <div className="">
               <Image
                 src={Business}
                 alt="innovate"
@@ -89,7 +89,7 @@ const page = () => {
           </div>
           {/* third item */}
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-            <div className="w-[540px]">
+            <div className="">
               <Image
                 src={Research}
                 alt="inclusive"
@@ -107,7 +107,7 @@ const page = () => {
           </div>
           {/* fourth item */}
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-            <div className="w-[540px]">
+            <div className="">
               <Image
                 src={Training}
                 alt="sustain"

@@ -36,7 +36,7 @@ const page = () => {
                           The Entertainment & Creative Industry is at the heart of cultural influence, storytelling, and innovation. BFG Global Consult provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.
                       </p>
           </div>
-
+ </div>
           <div className="my-6">
             <Slides />
           </div>
@@ -88,7 +88,7 @@ Developing revenue models for streaming, branding, and sponsorship opportunities
               </div>{" "}
             </div>
           </div>
-        </div>
+       
       </div>
     </div>
   );

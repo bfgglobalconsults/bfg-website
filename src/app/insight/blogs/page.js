@@ -34,6 +34,7 @@ const page = () => {
         <div className="my-4">
           <Slides />
         </div>
+        </div>
         <div className="py-[30px]">
           <div className="">
             <div className="w-full flex flex-col lg:flex-row gap-10 my-4">
@@ -79,7 +80,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 };

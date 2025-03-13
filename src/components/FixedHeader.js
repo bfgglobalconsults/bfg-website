@@ -428,23 +428,60 @@ const FixedHeader = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/consumer">Consumer and Retailer</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/financial">Financial Services</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/hospitality">Hospitality and Tourism</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/real-estate">Real Estate</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/technology">Technology and Finance</Link>
-                      </p>
-                      <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/industries/government">Government and Non-for-Profit</Link>
-                      </p>
+                          <Link href="/industry/industries/consumer">
+                            Consumer and Retail Market
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/financial">
+                            Financial Services
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/hospitality">
+                            Hospitality and Tourism
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/real-estate">
+                            Real Estate
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/technology">
+                            Technology and Finance
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/government">
+                            Government and Non-for-Profit
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/oil-gas" >
+                            Oil and Gas
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/industrial-manufacturing">
+                            Industrial Manufacturing
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/telecom-media">
+                            Telecommunication and Media
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/entertainment">
+                            Entertainment and Creative Industry
+                          </Link>
+                        </p>
+                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/health-social-care">
+                            Health and Social Care
+                          </Link>
+                        </p>
 
                        
                       </div>
@@ -452,7 +489,7 @@ const FixedHeader = () => {
                     <Collapsible
                       trigger={
                         <div className="px-[32px]  flex items-center justify-center">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Product</p>
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">SaaS Product</p>
                           <p>
                             {" "}
                             <svg
@@ -473,7 +510,7 @@ const FixedHeader = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/product/appetizer">Appetizer</Link>
+                        <Link href="/product/appetiza">Appetiza</Link>
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/product/career-fun">Career Fun</Link>
@@ -505,16 +542,25 @@ const FixedHeader = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Dialetics</Link>
+                        <Link href="/program/dialectics">Dialetics</Link>
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Emerging Marketplace Leader</Link>
+                        <Link href="/program/leadership-summit">Emerging Marketplace Leader</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Women in Tech</Link>
+                        <Link href="/program/women-tech">Women in Tech</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">SME Klinic</Link>
+                        <Link href="/program/sme-klinic">SME Klinic</Link>
+                        </p>
+                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/ai-advantage">The AI Advantage</Link>
+                        </p>
+                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/sme-webinar">SME Webinar Series</Link>
+                        </p>
+                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/tech-achievers">Tech Achievers Graduate Scheme</Link>
                       </p>
                      
 
@@ -524,7 +570,7 @@ const FixedHeader = () => {
                      <Collapsible
                       trigger={
                         <div className="px-[32px] flex items-center justify-center">
-                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Insight</p>
+                            <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">Resources</p>
                           <p>
                             {" "}
                             <svg
@@ -545,13 +591,13 @@ const FixedHeader = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">News</Link>
+                        <Link href="/insight/news">News</Link>
                       </p>
                       <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Blogs</Link>
+                        <Link href="/insight/blogs">Blogs</Link>
                         </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Case Studies</Link>
+                        <Link href="/insight/case-study">Case Studies</Link>
                         </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/careers">Careers</Link>
@@ -591,7 +637,7 @@ const FixedHeader = () => {
                         <Link href="/about">Who we are</Link>
                         </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="/industry/projects">Our Clients</Link>
+                        <Link href="/clients">Our Clients</Link>
                       </p>
                          <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/team">Our Team</Link>
@@ -600,10 +646,10 @@ const FixedHeader = () => {
                         <Link href="/industry/projects">Project Executed</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Award & Recognition</Link>
+                        <Link href="/award-recognition">Award & Recognition</Link>
                         </p>
                         <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                        <Link href="">Governance & Culture</Link>
+                        <Link href="/governance-culture">Governance & Culture</Link>
                       </p>
 
                        
