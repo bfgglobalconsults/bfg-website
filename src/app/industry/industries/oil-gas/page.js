@@ -16,8 +16,8 @@ const page = () => {
             Oil & Gas
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-                      Powering Progress, Transforming the Future of Oil & Gas
-                  </p>
+            Powering Progress, Transforming the Future of Oil & Gas
+          </p>
         </div>
       </div>
       <div className="px-12">
@@ -33,57 +33,67 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              At BFG Global Consulting, we understand the critical importance of the oil and gas sector in powering economies and driving global progress. Our dedicated team offers specialized consulting services to help organizations navigate the complexities of this dynamic industry, ensuring operational excellence, regulatory compliance, and sustainable growth.
+              At BFG Global Consulting, we understand the critical importance of
+              the oil and gas sector in powering economies and driving global
+              progress. Our dedicated team offers specialized consulting
+              services to help organizations navigate the complexities of this
+              dynamic industry, ensuring operational excellence, regulatory
+              compliance, and sustainable growth.
             </p>
-                  </div>
-                  
-                  <div className="my-6">
-                      <Slides />
-                  </div>
+          </div>
+        </div>
+        <div className="my-6">
+          <Slides />
+        </div>
 
-          <div className="w-full flex flex-col lg:flex-row gap-4 my-8 p-10 bg-[#041926] rounded-xl">
-            <div className="w-[100%] lg:w-[50%]  rounded-lg">
-              <div className="my-4">
-                <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
-                  Areas
-                </span>
-              </div>
-              <h3 className="text-white text-3xl font-semibold">
-                              Our Expertise in the Oil and Gas Sector
-                          </h3>
-              <p className="text-white my-2">
-               We provide a comprehensive suite of services tailored to the unique challenges of the oil and gas industry
+        <div className="w-full flex flex-col lg:flex-row gap-4 my-8 p-10 bg-[#041926] rounded-xl">
+          <div className="w-[100%] lg:w-[50%]  rounded-lg">
+            <div className="my-4">
+              <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
+                Areas
+              </span>
+            </div>
+            <h3 className="text-white text-3xl font-semibold">
+              Our Expertise in the Oil and Gas Sector
+            </h3>
+            <p className="text-white my-2">
+              We provide a comprehensive suite of services tailored to the
+              unique challenges of the oil and gas industry
+            </p>
+            <div className="w-full">
+              <Image src={OilGasImage} alt="oil-image" className="w-full" />
+            </div>
+          </div>
+          <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
+            <div className="w-full shadow-lg bg-white rounded-xl p-7">
+              <h4 className="font-semibold text-xl text-[#333333]">
+                Strategic Advisory Services
+              </h4>
+              <p className="my-2 text-[#999]">
+                Offering insights into market trends, investment opportunities,
+                and competitive positioning to inform decision-making and drive
+                growth.
               </p>
-              <div className="w-full">
-                <Image src={OilGasImage} alt="oil-image" className="w-full" />
-              </div>
             </div>
-            <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
-              <div className="w-full shadow-lg bg-white rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                  Strategic Advisory Services
-                </h4>
-                <p className="my-2 text-[#999]">
-                  Offering insights into market trends, investment opportunities, and competitive positioning to inform decision-making and drive growth.
-                </p>
-              </div>
-              <div className="w-full shadow-lg bg-white rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                 Risk Management Solutions
-                </h4>
-                <p className="my-2 text-[#999]">
-                 Developing robust frameworks to identify, assess, and mitigate risks associated with exploration, production, and distribution.
-                </p>
-              </div>{" "}
-              <div className="w-full shadow-lg bg-white rounded-xl p-7">
-                <h4 className="font-semibold text-xl text-[#333333]">
-                 Digital Transformation Consulting
-                </h4>
-                <p className="my-2 text-[#999]">
-                  Leveraging cutting-edge technologies such as IoT, AI, and data analytics to enhance operational efficiency and asset management.
-                </p>
-              </div>{" "}
-            </div>
+            <div className="w-full shadow-lg bg-white rounded-xl p-7">
+              <h4 className="font-semibold text-xl text-[#333333]">
+                Risk Management Solutions
+              </h4>
+              <p className="my-2 text-[#999]">
+                Developing robust frameworks to identify, assess, and mitigate
+                risks associated with exploration, production, and distribution.
+              </p>
+            </div>{" "}
+            <div className="w-full shadow-lg bg-white rounded-xl p-7">
+              <h4 className="font-semibold text-xl text-[#333333]">
+                Digital Transformation Consulting
+              </h4>
+              <p className="my-2 text-[#999]">
+                Leveraging cutting-edge technologies such as IoT, AI, and data
+                analytics to enhance operational efficiency and asset
+                management.
+              </p>
+            </div>{" "}
           </div>
         </div>
       </div>

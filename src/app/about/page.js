@@ -12,7 +12,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
-      <div className="lg:mt-[150px] p-12">
+      <div className="lg:mt-[150px] p-6 lg:p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
           About Us
         </span>
@@ -157,14 +157,14 @@ const page = () => {
                 </p>
               </div>
                             <div className="flex flex-col">
-              <div className="w-[350px] h-[450px] lg:w-[450px] lg:h-[600px]">
+              <div className="">
                 <Image
                   src={Picture}
                   alt="festus-bello"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-white w-[350px] lg:w-[450px] p-4 shadow-md rounded-lg">
+              <div className="bg-white  p-4 shadow-md rounded-lg">
                  <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Managing Partner / CEO

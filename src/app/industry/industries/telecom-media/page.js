@@ -9,15 +9,15 @@ const page = () => {
     <div>
       <div className="mt-[0px] lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-          Telecommunication & Media
+          Telecommunication
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-           Telecommunication & Media
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl text-justify">
+           Telecommunication<br/> & Media
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-                      Innovating Connectivity, Transforming Digital Experiences
-                  </p>
+               Innovating Connectivity, Transforming Digital Experiences
+          </p>
         </div>
       </div>
       <div className="px-12">
@@ -36,7 +36,7 @@ const page = () => {
              The Telecommunications & Media industry is evolving at an unprecedented pace, shaping how people connect, communicate, and consume content. BFG Global Consult helps businesses in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.
             </p>
           </div>
-
+</div>
           <div className="my-6">
             <Slides />
           </div>
@@ -49,7 +49,8 @@ const page = () => {
                 </span>
               </div>
               <h3 className="text-white text-3xl font-semibold">
-Our Expertise in Telecommunications & Media              </h3>
+              Our Expertise in Telecommunications and Media
+            </h3>
               <p className="text-white my-2">
                 We provide a comprehensive suite of services tailored to the unique challenges of the Telecommunications & Media industry
               </p>
@@ -88,7 +89,7 @@ Our Expertise in Telecommunications & Media              </h3>
               </div>{" "}
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
   );

@@ -94,38 +94,38 @@ const page = () => {
               industries.
             </p>
           </div>
-
-          <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
-            <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
-              <div className="my-4">
-                <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
-                  Focus Area
-                </span>
-              </div>
-              <h3 className="text-white text-3xl font-semibold">
-                Focus areas of our Business Strategy & Operations Consulting
-                Services
-              </h3>
-              <p className="text-white my-2">
-                Drive business success with our strategic expertise, leveraging
-                a systematic approach to optimize performance, efficiency, &
-                innovation across your organization, from strategy to execution.
-              </p>
-              <div className="w-full">
-                <Image
-                  src={BusinessImage}
-                  alt="business-image"
-                  className="w-full"
-                />
-              </div>
+        </div>
+        <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
+          <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+            <div className="my-4">
+              <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
+                Focus Area
+              </span>
             </div>
-            <div className="w-[100%] bg-[#041926] p-4 lg:w-[50%] flex flex-col gap-10">
-              <AnimatedItems slides={BusinessSlides} />
+            <h3 className="text-white text-3xl font-semibold">
+              Focus areas of our Business Strategy & Operations Consulting
+              Services
+            </h3>
+            <p className="text-white my-2">
+              Drive business success with our strategic expertise, leveraging a
+              systematic approach to optimize performance, efficiency, &
+              innovation across your organization, from strategy to execution.
+            </p>
+            <div className="w-full">
+              <Image
+                src={BusinessImage}
+                alt="business-image"
+                className="w-full"
+              />
             </div>
           </div>
+          <div className="w-[100%] bg-[#041926] p-4 lg:w-[50%] flex flex-col gap-10">
+            <AnimatedItems slides={BusinessSlides} />
+          </div>
+        </div>
 
-          <hr />
-
+        <hr />
+        <div className="p-[40px]">
           <div className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Benefits
@@ -277,7 +277,6 @@ const page = () => {
                 </div>
               </div>
             </div>
-           
           </div>
           {/* portfolio */}
           <div className="py-[100px]">
@@ -303,105 +302,113 @@ const page = () => {
                   excellence, adaptability, and transformative solutions across
                   various sectors.
                 </p>
-                 <a href="/bfg-services.pdf" target="_blank"  rel="noopener noreferrer" className="">
+                <a
+                  href="/bfg-services.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
-                  <span className="text-white text-md font-semibold">
-                    View Our Portfolio
-                  </span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
-                    </button>
-                    </a>
+                    <span className="text-white text-md font-semibold">
+                      View Our Portfolio
+                    </span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
-           {/* service team */}
-            <div className="my-14">
-              <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-                Service Team
-              </span>
-              <div>
-                <h3 className="text-[#333] text-3xl my-8 font-semibold">
-                  Meet Our Strategy and Operations Transformation Team
-                </h3>
-                <p className="text-[#999] text-xl my-2">
-                  Discover the experts behind our solutions. Our dedicated team
-                  brings a wealth of experience and a passion for driving
-                  success, ensuring we meet our clients’ unique challenges with
-                  precision and insight.
-                </p>
-              </div>
-              {/* team pictures */}
-              <div className="w-full flex my-4">
-                <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Ifeoma}
-                      alt="md"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
-                      <p className="text-[#E45F11] font-semibold">
-                      Senior Business Analyst - Strategy and Operations Transformation
+          {/* service team */}
+          <div className="my-14">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+              Service Team
+            </span>
+            <div>
+              <h3 className="text-[#333] text-3xl my-8 font-semibold">
+                Meet Our Strategy and Operations Transformation Team
+              </h3>
+              <p className="text-[#999] text-xl my-2">
+                Discover the experts behind our solutions. Our dedicated team
+                brings a wealth of experience and a passion for driving success,
+                ensuring we meet our clients’ unique challenges with precision
+                and insight.
+              </p>
+            </div>
+            {/* team pictures */}
+            <div className="w-full flex my-4">
+              <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Ifeoma}
+                    alt="md"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Senior Business Analyst - Strategy and Operations
+                      Transformation
                     </p>
-                   
-                    </div>
-                  </div>
-                  {/* second person */}
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Avatar}
-                      alt="md"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">Kate Abengowe</h3>
-                      <p className="text-[#E45F11] font-semibold">
-                      Business Analyst – Systems and Digital Intelligence
-                    </p>
-                    
-                    </div>
-                  </div>
-                  {/* third part */}
-                  <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                    <Image
-                      src={Avatar}
-                      alt="md"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                      <h3 className="font-semibold text-lg">John Ogbe</h3>
-                      <p className="text-[#E45F11] font-semibold">
-                        Business Analyst
-                      </p>
-                    </div>
                   </div>
                 </div>
+                {/* second person */}
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="md"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">Kate Abengowe</h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Business Analyst – Systems and Digital Intelligence
+                    </p>
+                  </div>
+                </div>
+                {/* third part */}
+                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                  <Image
+                    src={Avatar}
+                    alt="md"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                    <h3 className="font-semibold text-lg">John Ogbe</h3>
+                    <p className="text-[#E45F11] font-semibold">
+                      Business Analyst
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             {/* contact */}
-           
           </div>
-           <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
-              <div>
-                <p className="text-center text-2xl">Connect, collaborate, and drive innovation from anywhere as you transform your business with our Strategy & Operations Transformation Solutions.</p>
+          <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
+            <div>
+              <p className="text-center text-2xl">
+                Connect, collaborate, and drive innovation from anywhere as you
+                transform your business with our Strategy & Operations
+                Transformation Solutions.
+              </p>
               <div className="flex justify-center">
-              <Link href="/contact"><button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
-                  Contact our Service Team
-                </button>
-                  </Link>
-                </div>  
-</div>
+                <Link href="/contact">
+                  <button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
+                    Contact our Service Team
+                  </button>
+                </Link>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </>

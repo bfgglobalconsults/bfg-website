@@ -24,7 +24,7 @@ Discover a world of possibilities. Elevate your career with us a place where pas
           <Image
             src={Banner}
             alt="about-banner"
-            className="w-full h-full object-fit rounded-3xl"
+            className="w-full h-full object-cover rounded-3xl"
           />
               </div>
               <hr className="my-3" />

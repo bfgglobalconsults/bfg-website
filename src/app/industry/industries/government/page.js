@@ -49,11 +49,11 @@ const page = () => {
               through purpose-driven collaboration & sustainable solutions{" "}
             </p>
           </div>
-          
+          </div>
           <div className="my-6">
             <Slides />
           </div>
-
+ 
           <div className="w-full flex flex-col lg:flex-row gap-4 bg-[#041926] rounded-xl p-10 my-8">
             <div className="w-[100%] lg:w-[50%]  rounded-lg">
               <div className="my-4">
@@ -113,7 +113,7 @@ const page = () => {
               </div>{" "}
             </div>
           </div>
-        </div>
+       
       </div>
     </div>
   );

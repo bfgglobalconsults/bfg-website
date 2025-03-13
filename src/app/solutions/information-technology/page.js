@@ -93,7 +93,7 @@ const page = () => {
               competitiveness by leveraging the latest technology.
             </p>
           </div>
-
+</div>
           <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
             <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
               <div className="mb-4">
@@ -153,7 +153,7 @@ const page = () => {
           </div>
 
           <hr />
-
+ <div className="p-[40px]">
           <div className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Benefits

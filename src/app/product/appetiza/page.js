@@ -8,10 +8,10 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <div className="lg:p-20 lg:mt-[150px]">
+      <div className="mt-[100px] lg:p-20 lg:mt-[150px]">
         <div className="border-4 border-[#E45F11] rounded-3xl">
           <div className="p-12">
-            <div className="w-[250px] h-[200px] lg:w-[400px] lg:h-[250px] mx-auto">
+            <div className="w-[280px] h-[200px] lg:w-[400px] lg:h-[250px] lg:mx-auto">
               <Image
                 src={Appetizer}
                 alt="appetizer-product"
@@ -41,7 +41,7 @@ const page = () => {
               Tailored for African Enterprises
             </h3>
             <div className="flex gap-2 items-center my-4">
-              <span className="p-2 w-10 h-10 rounded-full bg-[#E26015] text-white text-lg font-semibold text-center">
+              <span className="p-2 w-10 h-10 rounded-full bg-[#E26015] text-white text-sm lg:text-lg font-semibold text-center">
                 1
               </span>
               <span className="text-[#999] text-lg">
@@ -50,7 +50,7 @@ const page = () => {
               </span>
             </div>
             <div className="flex gap-2 items-center my-4">
-              <span className="w-10 h-10 p-2 rounded-full bg-[#E26015] text-white text-lg font-semibold text-center">
+              <span className="w-10 h-10 p-2 rounded-full bg-[#E26015] text-white text-sm lg:text-lg font-semibold text-center">
                 2
               </span>
               <span className="text-[#999] text-lg">
