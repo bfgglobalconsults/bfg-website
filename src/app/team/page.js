@@ -67,7 +67,7 @@ const Page = () => {
           {/* Leadership section */}
           <div className="w-full gap-4 items-center justify-between my-4">
             <h3 className="my-4 text-[#333] font-bold text-4xl md:text-3xl lg:text-4xl mb-8">
-              Leadership Team
+              Management Team
             </h3>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Team member card */}
@@ -185,6 +185,26 @@ const Page = () => {
                      </Link>
                 </div>
               </div>
+
+              {/* seventh team */}
+               <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={Elizabeth}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Elizabeth-Mary N. Okeke</h3>
+                  <p className="text-[#E45F11] font-semibold">
+                    Executive Assistant - Communications, Projects & People Management
+                  </p>
+                  <Link href="/team/executive-assistant">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -277,24 +297,7 @@ const Page = () => {
                      </Link>
                 </div>
               </div>
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Elizabeth}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Elizabeth-Mary N. Okeke</h3>
-                  <p className="text-[#E45F11] font-semibold">
-                    Assistant, Projects & Service Delivery
-                  </p>
-                  <Link href="/team/executive-assistant">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                     </Link>
-                </div>
-              </div>
+             
 
               {/* Fifth team */}
               <div className="flex flex-col">
