@@ -90,7 +90,7 @@ export default function Main() {
   const slides = [
     {
       id: 1,
-      title: "Technology and Finance",
+      title: "Financial Technology",
       description:
         "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
       imageAlt: "slider1-img",

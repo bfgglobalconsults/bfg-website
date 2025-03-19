@@ -20,7 +20,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Ifeoma Ezeamama</h3>
+            <h3 className="text-3xl font-semibold my-8">Elizabeth-Mary N. Okeke</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -35,7 +35,7 @@ const page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Elizabeth-Mary N. Okeke</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                        Assistant, Projects & Service Delivery
+                                        Executive Assistant - Client Relations & People Management
 
                   </p>
                 </div>

@@ -43,7 +43,7 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
+                  <h3 className="font-semibold text-lg">Peter Chukwuemeka</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Head, Projects & Service Delivery
                   </p>
@@ -69,7 +69,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Peter</h4>
               <p className="text-[#999] text-lg">
                 Peter Chukwuemeka is experienced in process management, total quality control, and product engineering. As the Head of Service Delivery and Projects (PMO) at the Management Unit of BFG Global Consulting Limited, Peter plays a pivotal role in ensuring seamless project execution, driving market expansion initiatives, and aligning operational strategies with organizational goals.
               </p>
