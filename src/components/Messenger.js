@@ -1,14 +1,22 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../app/bfg-logo-trans.png";
 import Image from "next/image";
 
 const Messenger = () => {
   const [isSchedulerVisible, setIsSchedulerVisible] = useState(false);
 
+  useEffect(() => {
+    setIsSchedulerVisible(true);
+    const timer = setTimeout(() => {
+      setIsSchedulerVisible(false);
+    }, 8000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const toggleScheduler = () => {
     setIsSchedulerVisible(!isSchedulerVisible);
-    console.log("button is clicked");
   };
   return (
     <>
