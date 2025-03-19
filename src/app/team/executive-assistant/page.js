@@ -35,7 +35,7 @@ const page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Elizabeth-Mary N. Okeke</h3>
                   <p className="text-[#E45F11] font-semibold">
-                                        Assistant, Projects & Service Delivery
+                                        Executive Assistant - Client Relations & People Management
 
                   </p>
                 </div>
