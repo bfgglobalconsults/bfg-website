@@ -316,26 +316,28 @@ const Header = () => {
         </div>
       </MediaQuery>
 
-      {/* small screens */}
+     {/* small screens */}
       <MediaQuery max="lg">
         <div
           className={`${
             active === true
-              ? "w-full p-[10px] px-[40px] bg-white  fixed top-0 left-0 z-10"
-              : "bg-white p-3"
+              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
+              : null
           } px-[40px] text-white border-b border-[#e4e4eb]`}
         >
           <div className="flex justify-between items-center gap-2">
             {active ? (
               <>
+                
                 <Link href="/">
-                  <div className="w-[100px] h-[90px]">
-                    <Image
-                      src={Logo}
-                      alt="logo"
-                      className="w-full h-full object-fit"
-                    />
-                  </div>
+
+                <div className="w-[100px] h-[90px]">
+                  <Image
+                    src={Logo}
+                    alt="logo"
+                    className="w-full h-full object-fit"
+                  />
+                </div>
                 </Link>
                 <button className="" onClick={() => setShowMenu(!showMenu)}>
                   <svg
@@ -343,7 +345,7 @@ const Header = () => {
                     viewBox="0 0 24 24"
                     width="36"
                     height="36"
-                    fill="rgba(0,0,0,1)"
+                    fill="rgba(1,1,1,1)"
                   >
                     <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
                   </svg>
@@ -351,16 +353,19 @@ const Header = () => {
               </>
             ) : (
               <>
+                
+
                 <Link href="/">
-                  <div className="w-[100px] h-[90px]">
-                    <Image
-                      src={Logo}
-                      alt="logo"
-                      className="w-full h-full object-fit"
-                    />
-                  </div>
-                </Link>
-                <button className="" onClick={() => setShowMenu(!showMenu)}>
+                <div className="w-[100px] h-[90px]">
+                  {" "}
+                  <Image
+                    src={Logo}
+                    alt="logo"
+                    className="w-full h-full object-fit"
+                  />{" "}
+                </div>
+                  </Link>
+                  <button className="" onClick={() => setShowMenu(!showMenu)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -392,40 +397,36 @@ const Header = () => {
                   className="fixed p-3 bg-white top-0 left-0 w-[70%] z-50 h-full shadow overflow-y-auto"
                 >
                   <div className="flex justify-between items-center">
-                    <div className="w-[100px] h-[100px] p-1">
-                      <Image
-                        src={Logo}
-                        className="w-full h-full object-fit"
-                        alt="logo"
-                      />
-                    </div>
-                    <button
-                      className="text-black"
-                      onClick={() => setShowMenu(false)}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="36"
-                        height="36"
-                      >
-                        <path
-                          d="M6 18L18 6M6 6l12 12"
-                          stroke="black"
-                          strokeWidth="2"
-                        />
-                      </svg>
-                    </button>
+                  <div className="w-[100px] h-[100px] p-1">
+                    <Image src={Logo} className="w-full h-full object-fit" alt="logo" />
                   </div>
-                  <hr />
-                  <div className="font-bold text-center text-[16px] text-gray-800">
+                   <button className="text-black" onClick={() => setShowMenu(false)}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="36"
+                height="36"
+              >
+                <path d="M6 18L18 6M6 6l12 12" stroke="black" strokeWidth="2" />
+              </svg>
+                  </button>
+                  </div>
+                  <hr/>
+                  <div className="py-[40px] font-bold text-center text-[16px] text-gray-800">
+                    {/* {navigation_links.map(({ id, link, label }) => (
+                      <div key={id} className="pl-[32px] py-[20px]">
+                        <Link href={link} className="hover:text-[#E45F11]">
+                       </span>   {label}
+                        </Link>
+                      </div>
+                    ))} */}
                     <Collapsible
                       trigger={
-                        <div className="px-[32px]  flex items-center justify-center">
-                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            {" "}
-                            Solutions
-                          </p>
+                        <div className=" flex items-center gap-4 hover:text-[#E45F11]">
+                          <span>
+                            <svg className="group-hover:text-[#E45F11]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                          </span>
+                            <p className="py-[20px] hover:text-[#E45F11]"> Solutions</p>
                           <p>
                             {" "}
                             <svg
@@ -445,41 +446,32 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                        <div className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link
-                            href="/solutions/research-analytics"
-                            onClick={handleLinkClick}
-                          >
-                            Research and Analytics
-                          </Link>
-                        </div>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link 
-                            href="/solutions/business-strategy"
-                            onClick={handleLinkClick}
-                          >
-                            Strategy and Operations Transformation
-                          </Link>
+                         <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/information-technology">Technology and Software Development</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/training-development" onClick={handleLinkClick}>
-                            Training and development
-                          </Link>
-                        </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/information-technology" onClick={handleLinkClick}>
-                            Technology and Software Development
-                          </Link>
-                        </p>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/business-strategy">Strategy and Business Transformation</Link>
+                      </p>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/research-analytics">Research and Analytics</Link>
+                      </p>
+                      
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/solutions/training-development">Training and Development</Link>
+                      </p>
+                     
+
+                       
                       </div>
                     </Collapsible>
 
                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-center">
-                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            Industry
-                          </p>
+                        <div className="flex items-center gap-4 hover:text-[#E45F11]">
+                          <span>
+                            <svg className="group-hover:text-[#E45F11]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21 20H23V22H1V20H3V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V20ZM8 11V13H11V11H8ZM8 7V9H11V7H8ZM8 15V17H11V15H8ZM13 15V17H16V15H13ZM13 11V13H16V11H13ZM13 7V9H16V7H13Z"></path></svg>
+                          </span>
+                            <p className="py-[20px] hover:text-[#E45F11]">Industry</p>
                           <p>
                             {" "}
                             <svg
@@ -499,70 +491,72 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/consumer" onClick={handleLinkClick}>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/consumer">
                             Consumer and Retail Market
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/financial" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/financial">
                             Financial Services
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/hospitality" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/hospitality">
                             Hospitality and Tourism
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/real-estate" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/real-estate">
                             Real Estate
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/technology" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/technology">
                             Technology and Finance
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/government" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/government">
                             Government and Non-for-Profit
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/oil-gas" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/oil-gas" >
                             Oil and Gas
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/industrial-manufacturing" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/industrial-manufacturing">
                             Industrial Manufacturing
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/telecom-media" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/telecom-media">
                             Telecommunication and Media
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/Entertainment and Creative Industry" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/entertainment">
                             Entertainment and Creative Industry
                           </Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/health-social-care" onClick={handleLinkClick}>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                          <Link href="/industry/industries/health-social-care">
                             Health and Social Care
                           </Link>
                         </p>
-                        
+
+                       
                       </div>
                     </Collapsible>
                     <Collapsible
                       trigger={
-                        <div className="px-[32px]  flex items-center justify-center">
-                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            SaaS Products
-                          </p>
+                        <div className="hover:text-[#E45F11] flex items-center gap-4">
+                          <span>
+                            <svg className="group-hover:text-[#E45F11]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.0833 10.4999L21.2854 11.2212C21.5221 11.3633 21.5989 11.6704 21.4569 11.9072C21.4146 11.9776 21.3557 12.0365 21.2854 12.0787L11.9999 17.6499L2.71451 12.0787C2.47772 11.9366 2.40093 11.6295 2.54301 11.3927C2.58523 11.3223 2.64413 11.2634 2.71451 11.2212L3.9166 10.4999L11.9999 15.3499L20.0833 10.4999ZM20.0833 15.1999L21.2854 15.9212C21.5221 16.0633 21.5989 16.3704 21.4569 16.6072C21.4146 16.6776 21.3557 16.7365 21.2854 16.7787L12.5144 22.0412C12.1977 22.2313 11.8021 22.2313 11.4854 22.0412L2.71451 16.7787C2.47772 16.6366 2.40093 16.3295 2.54301 16.0927C2.58523 16.0223 2.64413 15.9634 2.71451 15.9212L3.9166 15.1999L11.9999 20.0499L20.0833 15.1999ZM12.5144 1.30864L21.2854 6.5712C21.5221 6.71327 21.5989 7.0204 21.4569 7.25719C21.4146 7.32757 21.3557 7.38647 21.2854 7.42869L11.9999 12.9999L2.71451 7.42869C2.47772 7.28662 2.40093 6.97949 2.54301 6.7427C2.58523 6.67232 2.64413 6.61343 2.71451 6.5712L11.4854 1.30864C11.8021 1.11864 12.1977 1.11864 12.5144 1.30864Z"></path></svg>
+                          </span>
+                            <p className="py-[20px] hover:text-[#E45F11]">SaaS Product</p>
                           <p>
                             {" "}
                             <svg
@@ -582,20 +576,22 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/appetiza" onClick={handleLinkClick}>Appetiza</Link>
-                        </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/career-fun" onClick={handleLinkClick}>Career Fun</Link>
-                        </p>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/product/appetiza">Appetiza</Link>
+                      </p>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/product/career-fun">Career Fun</Link>
+                      </p>
+                     
                       </div>
                     </Collapsible>
                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-center">
-                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            Programs
-                          </p>
+                        <div className="flex items-center gap-4 hover:text-[#E45F11]">
+                          <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21 10.063V4C21 3.44772 20.5523 3 20 3H19C17.0214 4.97864 13.3027 6.08728 11 6.61281V17.3872C13.3027 17.9127 17.0214 19.0214 19 21H20C20.5523 21 21 20.5523 21 20V13.937C21.8626 13.715 22.5 12.9319 22.5 12 22.5 11.0681 21.8626 10.285 21 10.063ZM5 7C3.89543 7 3 7.89543 3 9V15C3 16.1046 3.89543 17 5 17H6L7 22H9V7H5Z"></path></svg>
+                          </span>
+                            <p className="py-[20px] hover:text-[#E45F11]">Program</p>
                           <p>
                             {" "}
                             <svg
@@ -615,36 +611,39 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/dialectics" onClick={handleLinkClick}>The Dialetics</Link>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/dialectics">Dialetics</Link>
+                      </p>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/leadership-summit">Emerging Marketplace Leader</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/leadership-summit" onClick={handleLinkClick}>
-                            Emerging Marketplace Leader
-                          </Link>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/women-tech">Women in Tech</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/women-tech" onClick={handleLinkClick}>Women in Tech</Link>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/sme-klinic">SME Klinic</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-klinic" onClick={handleLinkClick}>SME Klinic</Link>
+                          <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/ai-advantage">The AI Advantage</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/ai-advantage" onClick={handleLinkClick}>AI Advantage</Link>
+                         <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/sme-webinar">SME Webinar Series</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/sme-webinar" onClick={handleLinkClick}>
-                            SME Webinar Series
-                          </Link>
-                        </p>
+                         <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/program/tech-achievers">Tech Achievers Graduate Scheme</Link>
+                      </p>
+                     
+
+                       
                       </div>
                     </Collapsible>
-                    <Collapsible
+                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-center">
-                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            Resources
-                          </p>
+                        <div className="flex items-center gap-4 hover:text-[#E45F11]">
+                          <span>
+                            <svg className="group-hover:text-[#E45F11]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M13 21V23.5L10 21.5L7 23.5V21H6.5C4.567 21 3 19.433 3 17.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V20C21 20.5523 20.5523 21 20 21H13ZM7 19V17H13V19H19V16H6.5C5.67157 16 5 16.6716 5 17.5C5 18.3284 5.67157 19 6.5 19H7ZM7 5V7H9V5H7ZM7 8V10H9V8H7ZM7 11V13H9V11H7Z"></path></svg>
+                          </span>
+                            <p className="py-[20px] hover:text-[#E45F11]">Resources</p>
                           <p>
                             {" "}
                             <svg
@@ -664,26 +663,31 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/news" onClick={handleLinkClick}>News</Link>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/insight/news">News</Link>
+                      </p>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/insight/blogs">Blogs</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insights/blogs" onClick={handleLinkClick}>Blogs</Link>
+                         <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/insight/case-study">Case Studies</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/case-study" onClick={handleLinkClick}>Case Studies</Link>
-                        </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/careers" onClick={handleLinkClick}>Careers</Link>
-                        </p>
+                         <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/careers">Careers</Link>
+                      </p>
+                     
+
+                       
                       </div>
                     </Collapsible>
                     <Collapsible
                       trigger={
-                        <div className="px-[32px] flex items-center justify-center">
-                          <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                            About Us
-                          </p>
+                        <div className="flex items-center gap-4 hover:text-[#E45F11]">
+
+                          <span>
+                            <svg className="group-hover:text-[#E45F11]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 9.5C12.8284 9.5 13.5 8.82843 13.5 8C13.5 7.17157 12.8284 6.5 12 6.5C11.1716 6.5 10.5 7.17157 10.5 8C10.5 8.82843 11.1716 9.5 12 9.5ZM14 15H13V10.5H10V12.5H11V15H10V17H14V15Z"></path></svg>
+                          </span>
+                            <p className="py-[20px] hover:text-[#E45F11]">About Us</p>
                           <p>
                             {" "}
                             <svg
@@ -703,43 +707,38 @@ const Header = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                        {/* <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
+                      {/* <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/about">About Us</Link>
                       </p> */}
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/about" onClick={handleLinkClick}>Who We Are</Link>
+                      <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/about">Who we are</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/clients" onClick={handleLinkClick}>Our Clients</Link>
+                         <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/clients">Our Clients</Link>
+                      </p>
+                         <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/team">Our Team</Link>
+                      </p>
+                     <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/industry/projects">Project Executed</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/team" onClick={handleLinkClick}>Our Team</Link>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/award-recognition">Award & Recognition</Link>
                         </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/projects" onClick={handleLinkClick}>
-                            Project Executed
-                          </Link>
-                        </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/award-recognition" onClick={handleLinkClick}>
-                            Award & Recognition
-                          </Link>
-                        </p>
-                        <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
-                          <Link href="/governance-culture" onClick={handleLinkClick}>
-                            Governance & Culture
-                          </Link>
-                        </p>
+                        <p className="text-sm py-[20px] hover:text-[#E45F11]">
+                        <Link href="/governance-culture">Governance & Culture</Link>
+                      </p>
+
+                       
                       </div>
                     </Collapsible>
-
-                    <div className="px-[32px] flex items-center justify-center">
-                      <Link href="/contact" onClick={handleLinkClick}>
-                        <p className="pl-[32px] py-[20px] hover:text-[#E45F11]">
-                          Contact
-                        </p>
-                      </Link>
-                    </div>
+                   
+                    <div className="hover:text-[#E45F11] flex items-center gap-4">
+                      <span><svg className="group-hover:text-[#E45F11]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M4 2C3.44772 2 3 2.44772 3 3V5H5V7H2V9H5V11H2V13H5V15H2V17H5V19H3V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V3C21 2.44772 20.5523 2 20 2H4ZM9 16C9 14.3431 10.3431 13 12 13C13.6569 13 15 14.3431 15 16H9ZM12 12C10.8954 12 10 11.1046 10 10C10 8.89543 10.8954 8 12 8C13.1046 8 14 8.89543 14 10C14 11.1046 13.1046 12 12 12Z"></path></svg></span>
+                           <Link href="/contact"><p className="py-[20px] hover:text-[#E45F11]">Contact</p></Link>
+                    
+                        </div>
+                
                   </div>
                 </animated.div>
               )
