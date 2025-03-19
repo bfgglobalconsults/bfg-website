@@ -196,7 +196,7 @@ const Footer = () => {
                 </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
                   <Link href="/solutions/business-strategy">
-                    Strategy & Operations Transformation
+                    Strategy & Operations <br/> Transformation
                   </Link>
                 </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
@@ -206,7 +206,7 @@ const Footer = () => {
                 </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
                   <Link href="/solutions/information-technology">
-                    Technology & Software Development
+                    Technology & Software <br/> Development 
                   </Link>
                 </p>
               </div>
