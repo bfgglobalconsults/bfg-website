@@ -95,6 +95,7 @@ export default function Main() {
         "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
       imageAlt: "slider1-img",
       imageSrc: SliderImage1,
+      readMore: "/industry/industries/technology",
     },
     {
       id: 2,
@@ -103,6 +104,7 @@ export default function Main() {
         "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
       imageAlt: "slider5-img",
       imageSrc: SliderImage5,
+      readMore: "/industry/industries/consumer",
     },
     {
       id: 3,
@@ -111,6 +113,7 @@ export default function Main() {
         "Building success, BFG guides construction companies to navigate complex projects, enhance efficiency, & drive innovation.",
       imageAlt: "slider2-img",
       imageSrc: SliderImage2,
+      readMore: "/industry/industries/real-estate",
     },
     {
       id: 4,
@@ -119,6 +122,7 @@ export default function Main() {
         "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
       imageAlt: "slider3-img",
       imageSrc: SliderImage3,
+      readMore: "/industry/industries/hospitality",
     },
     {
       id: 5,
@@ -127,6 +131,7 @@ export default function Main() {
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider4-img",
       imageSrc: SliderImage4,
+      readMore: "/industry/industries/government",
     },
     {
       id: 6,
@@ -135,6 +140,7 @@ export default function Main() {
         "BFG empowers oil and gas companies to optimize operations, enhance safety protocols, and implement sustainable practices while navigating industry regulations and market dynamics.",
       imageAlt: "slider6-img",
       imageSrc: SliderImage6,
+      readMore: "/industry/industries/oil-gas",
     },
     {
       id: 7,
@@ -143,6 +149,7 @@ export default function Main() {
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider7-img",
       imageSrc: SliderImage7,
+      readMore: "/industry/industries/industrial-manufacturing",
     },
      {
       id: 8,
@@ -150,7 +157,8 @@ export default function Main() {
       description:
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider8-img",
-      imageSrc: SliderImage8,
+       imageSrc: SliderImage8,
+      readMore: "/industry/industries/telecom-media",
     },
      {
       id: 9,
@@ -158,7 +166,8 @@ export default function Main() {
       description:
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider9-img",
-      imageSrc: SliderImage9,
+       imageSrc: SliderImage9,
+      readMore: "/industry/industries/entertainment"
     },
       {
       id: 10,
@@ -167,6 +176,7 @@ export default function Main() {
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider10-img",
       imageSrc: SliderImage10,
+      readMore: "/industry/industries/health-social-care",
     },
   ];
 
@@ -474,6 +484,11 @@ export default function Main() {
                         <p className="text-md text-lg text-[#999]">
                           {slide.description}
                         </p>
+                        <Link href={slide.readMore}>
+                          <button className="text-[#E26015] hover:text-[#041926] p-2  text-md font-semibold my-2">
+                            Read More
+                          </button>
+                          </Link>
                       </div>
                     </div>
                   </div>
