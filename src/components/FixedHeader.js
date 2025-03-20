@@ -394,7 +394,7 @@ const FixedHeader = () => {
                         <Link href="/solutions/information-technology">Technology and Software Development</Link>
                         </p>
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                        <Link href="/solutions/business-strategy">Strategy and Business Transformation</Link>
+                        <Link href="/solutions/business-strategy">Strategy and Operations Transformation</Link>
                       </p>
                       <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                         <Link href="/solutions/research-analytics">Research and Analytics</Link>

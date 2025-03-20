@@ -39,6 +39,7 @@ import SliderImage7 from "../../public/assets/industrial-manufacture-banner.png"
 import SliderImage8 from "../../public/assets/telecom-banner.png";
 import SliderImage9 from "../../public/assets/entertainment-banner.png";
 import SliderImage10 from "../../public/assets/health-banner.png";
+import SliderImage11 from "../../public/assets/financial-img.png";
 
 import CaseImage1 from "../../public/assets/technology-case.png";
 import CaseImage2 from "../../public/assets/research-case.png";
@@ -146,7 +147,7 @@ export default function Main() {
       id: 7,
       title: "Industrial Manufacturing",
       description:
-        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+        "BFG helps manufacturers streamline production processes, optimize supply chains, integrate smart technologies, and enhance operational efficiency.",
       imageAlt: "slider7-img",
       imageSrc: SliderImage7,
       readMore: "/industry/industries/industrial-manufacturing",
@@ -155,7 +156,7 @@ export default function Main() {
       id: 8,
       title: "Telecommunication and Media",
       description:
-        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+        "BFG helps businesses in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
       imageAlt: "slider8-img",
        imageSrc: SliderImage8,
       readMore: "/industry/industries/telecom-media",
@@ -164,7 +165,7 @@ export default function Main() {
       id: 9,
       title: "Entertainment and Creative Industry",
       description:
-        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+        "BFG provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.",
       imageAlt: "slider9-img",
        imageSrc: SliderImage9,
       readMore: "/industry/industries/entertainment"
@@ -173,10 +174,19 @@ export default function Main() {
       id: 10,
       title: "Health and Social Care",
       description:
-        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+        "BFG supports healthcare providers, social care organizations, and health-tech startups in adopting advanced healthcare strategies, improving service delivery, and ensuring regulatory compliance.",
       imageAlt: "slider10-img",
       imageSrc: SliderImage10,
       readMore: "/industry/industries/health-social-care",
+    },
+       {
+      id: 11,
+      title: "Financial and Banking Services",
+      description:
+        "We partner with financial institutions, fintech companies, & other stakeholders to navigate regulatory complexities, harness emerging technologies, & unlock new opportunities.",
+      imageAlt: "slider11-img",
+      imageSrc: SliderImage11,
+      readMore: "/industry/industries/financial",
     },
   ];
 
