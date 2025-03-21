@@ -44,7 +44,7 @@ const SliderHeroPage = () => {
 };
 
 const HeroSection1 = () => (
-  <div className="bg-white w-full lg:flex items-center my-0 lg:my-[10px] py-2">
+  <div className="bg-white w-full lg:flex items-center my-0 lg:my-[25px] py-2">
     <div className="w-full lg:w-[60%]">
       <div className="p-[40px]">
         {/* Award Badge */}
@@ -75,8 +75,7 @@ const HeroSection1 = () => (
             and Technology Solutions across Borders
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
-            We provide research, strategy, workforce training, and software
-            development services for individuals, businesses and organizations.
+          We are at the intersection of market research, strategy advisory, workforce training, and software development services
           </p>
           <div className="pt-4">
             <Link
