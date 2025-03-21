@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Growth from "../../public/assets/growth-image.png";
-import Innovation from "../../public/assets/innovation-image.png";
-import Value from "../../public/assets/value-driven.png";
-import Client from "../../public/assets/client-success.png";
-import Tailored from "../../public/assets/tailored-image.png";
-import Pan from "../../public/assets/pan-image.png";
+import Growth from "../../public/assets/growth-image.jpg";
+import Innovation from "../../public/assets/innovation-image.jpg";
+import Value from "../../public/assets/value-driven.jpg";
+import Client from "../../public/assets/client-success.jpg";
+import Tailored from "../../public/assets/tailored-image.jpg";
+import Pan from "../../public/assets/pan.png";
 import ServiceImage1 from "../../public/assets/service-image1.png";
 import ServiceImage2 from "../../public/assets/service-image2.png";
 
@@ -31,11 +31,11 @@ const OurStand = () => {
           <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
             {/* trial */}
             <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="">
+              <div className="w-[280px] lg:w-[320px] h-[190px]">
                 <Image
                   src={Growth}
                   alt="growth"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-md"
                 />
               </div>
               <div className="w-[100%]">
@@ -50,11 +50,11 @@ const OurStand = () => {
             {/* trial end */}
             {/* second item */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="">
+              <div className="w-[280px] lg:w-[320px] h-[190px]">
                 <Image
                   src={Value}
                   alt="growth"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-md"
                 />
               </div>
               <div className="w-[100%]">
@@ -70,11 +70,11 @@ const OurStand = () => {
             </div>
             {/* third item */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="">
+              <div className="w-[280px] lg:w-[320px] h-[190px]">
                 <Image
                   src={Innovation}
                   alt="innovation"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-md"
                 />
               </div>
               <div className="w-[100%]">
@@ -90,11 +90,11 @@ const OurStand = () => {
             </div>
             {/* fourth item */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="">
+              <div className="w-[280px] lg:w-[320px] h-[190px]">
                 <Image
                   src={Client}
                   alt="client"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-md"
                 />
               </div>
               <div className="w-[100%]">
@@ -110,11 +110,11 @@ const OurStand = () => {
             </div>
             {/* fifth */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="">
+              <div className="w-[280px] lg:w-[320px] h-[190px]">
                 <Image
                   src={Tailored}
                   alt="tailored"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-md"
                 />
               </div>
               <div className="w-[100%]">
@@ -129,11 +129,11 @@ const OurStand = () => {
             {/* fifth end */}
             {/* sixth */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="">
+              <div className="w-[280px] lg:w-[320px] h-[190px]">
                 <Image
                   src={Pan}
                   alt="pan"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-md"
                 />
               </div>
               <div className="w-[100%]">

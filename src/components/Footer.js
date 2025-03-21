@@ -172,7 +172,7 @@ const Footer = () => {
                 >
                   <Link href="/industry">Who We Are</Link>
                 </p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Our Clients</p>
+                <p className="my-2 text-sm hover:text-[#E26015]"><Link href="/clients">Our Clients</Link></p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
                   <Link href="/team">Our Team</Link>
                 </p>
@@ -213,12 +213,12 @@ const Footer = () => {
 
               <div className="text-white w-[40%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Industry</h3>
-                <p className="my-2 text-sm hover:text-[#E26015]">Consumer & Retail Market</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Hospitality & Tourism</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Financial Services</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Real Estate</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Information Technology</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Government & Non- for - Profit</p>
+                 <Link href="/industry/industries/consumer"><p className="my-2 text-sm hover:text-[#E26015]">Consumer & Retail Market</p></Link> 
+                 <Link href="/industry/industries/hospitality"><p className="my-2 text-sm hover:text-[#E26015]">Hospitality & Tourism</p></Link>
+                 <Link href="/industry/industries/financial"><p className="my-2 text-sm hover:text-[#E26015]">Financial Services</p></Link>
+                 <Link href="/industry/industries/real-estate"><p className="my-2 text-sm hover:text-[#E26015]">Real Estate</p></Link>
+                 <Link href="/industry/industries/technology"><p className="my-2 text-sm hover:text-[#E26015]">Financial Technology</p></Link>
+                 <Link href="/industry/industries/government"><p className="my-2 text-sm hover:text-[#E26015]">Government & Non- for - Profit</p></Link>
               </div>
 
               <div className="text-white w-[50%] lg:w-[23%] my-4">
@@ -231,24 +231,24 @@ const Footer = () => {
                   Emerging Marketplace Leadership Summit
                 </p>
                   </Link>
-                <p className="my-2 text-sm hover:text-[#E26015]">Women in Tech</p>
+                <Link href="/program/women-tech"><p className="my-2 text-sm hover:text-[#E26015]">Women in Tech</p></Link>
 
                 <Link href="/program/sme-klinic"><p className="my-2 text-sm hover:text-[#E26015]">SME Klinic</p></Link>
-                <p className="my-2 text-sm hover:text-[#E26015]">Tech Achievers Graduate Scheme</p>
+               <Link href="/program/tech-achievers"><p className="my-2 text-sm hover:text-[#E26015]">Tech Achievers Graduate Scheme</p></Link> 
               </div>
 
               <div className="text-white w-[40%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Resources</h3>
-                <Link href="/insight/news"><p className="my-2 text-sm hover:text-[#E26015]">News</p></Link>
-                <p className="my-2 text-sm hover:text-[#E26015]">Blogs</p>
+                <Link href="/insight/news"><p className="my-2 text-sm hover:text-[#E26015]">Newsroom</p></Link>
+                <Link href="/insight/blogs"><p className="my-2 text-sm hover:text-[#E26015]">Blogs</p></Link>
                 <Link href="/insight/case-study"><p className="my-2 text-sm hover:text-[#E26015]">Case Studies</p></Link>
-                <p className="my-2 text-sm hover:text-[#E26015]">Careers</p>
+                <Link href="/careers"><p className="my-2 text-sm hover:text-[#E26015]">Careers</p></Link>
               </div>
 
               <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">SaaS Products</h3>
-                <p className="my-2 text-sm hover:text-[#E26015]">Appetiza</p>
-                <p className="my-2 text-sm hover:text-[#E26015]">Careerfun</p>
+               <Link href="/product/appetiza"> <p className="my-2 text-sm hover:text-[#E26015]">Appetiza</p></Link>
+               <Link href="/product/career-fun"> <p className="my-2 text-sm hover:text-[#E26015]">Careerfun</p></Link>
               </div>
 
               <div className="text-white w-[50%] lg:w-[23%] my-4">

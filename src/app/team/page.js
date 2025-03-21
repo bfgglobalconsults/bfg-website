@@ -1,7 +1,13 @@
 import React from "react";
+import Auditor from "../../../public/assets/auditor.png";
+import OfficeAdmin from "../../../public/assets/office-admin.png";
 import ManagingDirector from "../../../public/assets/festus-md.png";
+import HeadAdmin from "../../../public/assets/admin-lead.png";
 import HeadService from "../../../public/assets/mr-peter.png";
 import HeadGrowth from "../../../public/assets/moses.png";
+import HeadFinance from "../../../public/assets/finance-lead.png";
+import TrainingAnalyst from "../../../public/assets/training-analyst.png";
+import AccountingManager from "../../../public/assets/accounting-manager.png";
 import HeadBusiness from "../../../public/assets/ifeoma.png";
 import HeadResearch from "../../../public/assets/kenneth.png";
 import Elizabeth from "../../../public/assets/elizabeth-mary.png";
@@ -132,13 +138,13 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={HeadAdmin}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">Adebayo Adeniyi</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Head, Administration
                   </p>
@@ -152,13 +158,13 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={HeadGrowth}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Kunle Afolabi</h3>
+                  <h3 className="font-semibold text-lg">Sunday Moses</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Head, Marketing & Growth
                   </p>
@@ -172,13 +178,13 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={HeadFinance}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Shehu Abdullahi</h3>
+                  <h3 className="font-semibold text-lg">Amoto Seriki</h3>
                   <p className="text-[#E45F11] font-semibold">Head, Finance</p>
                   <Link href="/team/head-finance">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
@@ -298,28 +304,7 @@ const Page = () => {
                 </div>
               </div>
              
-
-              {/* Fifth team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Jeremiah}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Jesunifemi Jeremiah Oluwafemi</h3>
-                  <p className="text-[#E45F11] font-semibold">
-                    Product Designer / Developer
-                  </p>
-                  <Link href="/team/product-designer">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                     </Link>
-                </div>
-              </div>
-
-              {/* sixth team */}
+{/* sixth team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -346,76 +331,53 @@ const Page = () => {
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Godfrey Samuel</h3>
-                  <p className="text-[#E45F11] font-semibold">Software Developer</p>
-                  <Link href="/team/software-developer">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                     </Link>
+                  <h3 className="font-semibold text-lg">Kate Abengowe</h3>
+                  <p className="text-[#E45F11] font-semibold">Business Analyst – Systems and Digital Intelligence</p>
+               
                 </div>
               </div>
-              {/* seventh team */}
-               <div className="flex flex-col">
+              {/* Fifth team */}
+              <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Jeremiah}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
+                  <h3 className="font-semibold text-lg">Jesunifemi Jeremiah Oluwafemi</h3>
+                  <p className="text-[#E45F11] font-semibold">
+                    Product Designer / Developer
+                  </p>
+                  <Link href="/team/product-designer">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
+                </div>
+              </div>
+
+              
+              
+              {/* seventh team */}
+               <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={TrainingAnalyst}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Justina Aderinluwo</h3>
                   <p className="text-[#E45F11] font-semibold">Training and Development Analyst</p>
                 <Link href="/team/training-analyst">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
                      </Link>
                 </div>
               </div>
-                {/* seventh team */}
-               <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Avatar}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Kate Abengowe</h3>
-                  <p className="text-[#E45F11] font-semibold">Business Analyst – Systems and Digital Intelligence</p>
                
-                </div>
-              </div>
-                {/* seventh team */}
-               <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Avatar}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">John Ogbe</h3>
-                  <p className="text-[#E45F11] font-semibold">Business Analyst</p>
-                 <Link href="/team/business-analyst">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                     </Link>
-                </div>
-              </div>
-               {/* seventh team */}
-               <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Avatar}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Emmanuel Akinbade</h3>
-                  <p className="text-[#E45F11] font-semibold">Associate, Research & Analytics</p>
-                </div>
-              </div>
+                
+              
                {/* seventh team */}
                
               
@@ -497,13 +459,13 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={AccountingManager}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Solomon Aja</h3>
+                  <h3 className="font-semibold text-lg">Olawale Adunbi</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Accounting Manager
                   </p>
@@ -516,13 +478,13 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Auditor}
                     alt="research"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Gloria Ebube</h3>
+                  <h3 className="font-semibold text-lg">Theophilus Fakiyesi</h3>
                   <p className="text-[#E45F11] font-semibold">
                    Auditor
                   </p>
@@ -573,13 +535,13 @@ const Page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={OfficeAdmin}
                     alt="research"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Josephine Isai</h3>
+                  <h3 className="font-semibold text-lg">Ayomide Oyabunmi</h3>
                   <p className="text-[#E45F11] font-semibold">
                    Office Administrator
                   </p>

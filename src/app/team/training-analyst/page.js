@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import TrainingAnalyst from "../../../../public/assets/training-analyst.png";
+
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
 
@@ -30,20 +32,21 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Juliet Dunkwu</h3>
+            <h3 className="text-3xl font-semibold my-8">Justina Aderinluwo</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={TrainingAnalyst}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
+                  <h3 className="font-semibold text-lg">Justina Aderinluwo
+</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Training and Development Analyst
                   </p>
@@ -69,9 +72,9 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Juliet</h4>
+              <h4 className="text-xl font-semibold mb-6">About Justina </h4>
               <p className="text-[#999] text-lg">
-                Juliet is an enthusiastic Junior Training and Development
+                Justina is an enthusiastic Junior Training and Development
                 Analyst with a passion for fostering learning and professional
                 growth within organizations. Skilled in supporting the design,
                 implementation, and evaluation of training programs that enhance

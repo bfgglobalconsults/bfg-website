@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import Auditor from "../../../../public/assets/auditor.png";
+
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
 
@@ -30,20 +32,20 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Gloria Ebube</h3>
+            <h3 className="text-3xl font-semibold my-8">Theophilus Fakiyesi</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={Auditor}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Gloria Ebube</h3>
+                  <h3 className="font-semibold text-lg">Theophilus Fakiyesi</h3>
                   <p className="text-[#E45F11] font-semibold">Auditor</p>
                 </div>
               </div>
@@ -67,20 +69,20 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Gloria</h4>
+              <h4 className="text-xl font-semibold mb-6">About Theophilus</h4>
               <p className="text-[#999] text-lg">
-                Gloria is a highly efficient Payroll Administrator in the
+                Theophilus is a highly efficient Payroll Administrator in the
                 Finance Department, responsible for ensuring the accurate and
                 timely processing of employee payroll. With a strong focus on
-                compliance, she manages payroll records, calculates deductions,
+                compliance, he manages payroll records, calculates deductions,
                 and ensures adherence to tax laws and company policies{" "}
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                Known for her attention to detail and organizational skills, she
+                Known for his attention to detail and organizational skills, he
                 handles payroll inquiries, resolves discrepancies, and works
                 closely with HR and finance teams to maintain seamless payroll
-                operations. Her dedication to accuracy and confidentiality plays
+                operations. His dedication to accuracy and confidentiality plays
                 a vital role in supporting the organization&apos;s financial and
                 employee satisfaction goals.{" "}
               </p>

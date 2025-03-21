@@ -52,13 +52,16 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Elizabeth-Mary</h4>
               <p className="text-[#999] text-lg">
-                Elizabeth Mary Okeke joined BFG Consults in 2024. With a background in healthcare, administrative excellence and project management, she excels at streamlining processes, managing projects, and ensuring seamless service delivery
+                Elizabeth Mary Okeke joined BFG Consults in 2024, bringing a strong background in healthcare, administrative excellence, project management, and client relations. She specializes in streamlining processes, managing projects, and ensuring seamless service delivery while fostering strong relationships with clients.
               </p>
               <br />
               <p className="text-[#999] text-lg">
-               Known for her exceptional communication skills and meticulous attention to detail, Elizabeth-Mary effectively supports executives and cross-functional teams, driving efficiency and aligning operations with organizational goals. Her proactive approach and commitment to excellence make her an invaluable asset in achieving strategic project outcomes for clients.
+                Known for her exceptional communication skills and meticulous attention to detail, Elizabeth Mary effectively supports executives and cross-functional teams, ensuring client needs are met with precision and efficiency. She plays a key role in client engagement, relationship management, and service optimization, ensuring that every interaction aligns with organizational goals and enhances client satisfaction.
               </p>
               <br />
+              <p className="text-[#999] text-lg">
+                Her proactive approach, problem-solving mindset, and commitment to excellence make her an invaluable asset in building and maintaining long-term client partnerships while driving strategic project outcomes.
+               </p>
             
             </div>
           </div>
