@@ -72,7 +72,7 @@ const HeroSection1 = () => (
             </span>
             Management Consulting
             <br />
-            and Technology Solutions Across Borders
+            and Technology Solutions across Borders
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
             We provide research, strategy, workforce training, and software
