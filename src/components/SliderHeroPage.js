@@ -44,7 +44,7 @@ const SliderHeroPage = () => {
 };
 
 const HeroSection1 = () => (
-  <div className="bg-white w-full lg:flex items-center my-0 lg:my-[25px] py-2">
+  <div className="bg-white w-full lg:flex items-center my-0 lg:my-[30px] py-2">
     <div className="w-full lg:w-[60%]">
       <div className="p-[40px]">
         {/* Award Badge */}
