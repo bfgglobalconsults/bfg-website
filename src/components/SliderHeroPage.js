@@ -188,7 +188,7 @@ const HeroSection2 = () => (
             </span>
             Software Development,
             <br />
-            Research, Strategy, & Training
+            Market Research, Strategy, & Training
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
             Driving transformative solutions that empower innovation, growth,
