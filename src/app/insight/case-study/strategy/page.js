@@ -49,17 +49,7 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              Business strategy & operations consulting is a unit of our
-              practice, which involves helping organisations improve their
-              overall performance by identifying & implementing effective
-              business strategies & streamlining operational processes. Using
-              the latest deep industry insights, our combined team of business
-              strategists, growth hackers, project managers, & quality control
-              managers helps businesses of every size prosper by creating
-              impactful solutions tailored to their unique needs today & in the
-              future. The goal of this service is to help businesses become more
-              efficient, profitable, & competitive in their respective
-              industries.
+             Achieving operational excellence requires a strategic approach. Our consulting services help organizations refine business models, optimize workflows, and enhance performance. Our case studies highlight successful projects where we've helped clients improve efficiency, reduce costs, and scale operations effectively.
             </p>
           </div>
 

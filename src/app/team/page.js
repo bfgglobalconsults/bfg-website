@@ -1,5 +1,5 @@
 import React from "react";
-import Auditor from "../../../public/assets/auditor.png";
+import Auditor from "../../../public/assets/internal-auditor.png";
 import OfficeAdmin from "../../../public/assets/office-admin.png";
 import ManagingDirector from "../../../public/assets/festus-md.png";
 import HeadAdmin from "../../../public/assets/admin-lead.png";
@@ -486,7 +486,7 @@ const Page = () => {
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Theophilus Fakiyesi</h3>
                   <p className="text-[#E45F11] font-semibold">
-                   Auditor
+                   Internal Audit and Risk Manager
                   </p>
                    <Link href="/team/auditor">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>

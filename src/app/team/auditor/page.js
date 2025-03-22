@@ -71,22 +71,16 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Theophilus</h4>
               <p className="text-[#999] text-lg">
-                Theophilus is a highly efficient Payroll Administrator in the
-                Finance Department, responsible for ensuring the accurate and
-                timely processing of employee payroll. With a strong focus on
-                compliance, he manages payroll records, calculates deductions,
-                and ensures adherence to tax laws and company policies{" "}
+                Theophilus Fakiyesi is a meticulous and results-driven Internal Audit and Risk Manager at BFG Consults, working within the Finance Department. With a strong background in financial analysis, risk management, compliance, and internal auditing, he plays a pivotal role in ensuring financial integrity, operational efficiency, and adherence to regulatory standards.
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                Known for his attention to detail and organizational skills, he
-                handles payroll inquiries, resolves discrepancies, and works
-                closely with HR and finance teams to maintain seamless payroll
-                operations. His dedication to accuracy and confidentiality plays
-                a vital role in supporting the organization&apos;s financial and
-                employee satisfaction goals.{" "}
+               His expertise spans internal controls, audit procedures, financial risk assessment, fraud detection, and corporate governance, making him a key asset in safeguarding the company&apos;s financial health. Theophilus is dedicated to enhancing transparency, mitigating risks, and ensuring accountability, contributing to strategic decision-making that aligns with BFG Consults mission of excellence and innovation.
               </p>
               <br />
+              <p className="text-[#999] text-lg">
+Driven by a passion for risk management and financial governance, Theophilus continues to strengthen audit frameworks, optimize risk control measures, and refine financial processes, ensuring sustained growth, resilience, and regulatory compliance within the organization. 
+              </p>
             </div>
           </div>
         </div>

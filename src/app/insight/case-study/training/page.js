@@ -45,16 +45,7 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              The BFG Training & Development Solution sits within our talent
-              management consulting practices. This service is provided to
-              unlock potential, develop leaders, & create high-performing teams.
-              We help organisations improve their performance by providing
-              employees with the knowledge, skills, & abilities they need to
-              succeed in their roles. We provide a wide range of training
-              options, including classroom instruction, online learning, & on
-              the job training. It also includes assessments, evaluations, &
-              feedback to measure the effectiveness of the training for your
-              organisation.{" "}
+              A skilled workforce is essential for business success. Our tailored training programs equip teams with the knowledge and skills needed to thrive in a dynamic business environment. From leadership development to technical training, our case studies demonstrate how we&apos;ve helped organizations upskill employees and foster a culture of continuous learning.
             </p>
           </div>
 
