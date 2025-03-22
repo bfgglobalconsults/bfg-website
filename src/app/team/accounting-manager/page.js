@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import AccountingManager from "../../../../public/assets/accounting-manager.png";
+
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
 
@@ -30,20 +32,20 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Solomon Aja</h3>
+            <h3 className="text-3xl font-semibold my-8">Olawale Adunbi</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={AccountingManager}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Solomon Aja</h3>
+                  <h3 className="font-semibold text-lg">Olawale Adunbi</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Accounting Manager
                   </p>
@@ -69,9 +71,9 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Solomon</h4>
+              <h4 className="text-xl font-semibold mb-6">About Olawale </h4>
               <p className="text-[#999] text-lg">
-                              Solomon is an accomplished Accounting Manager in the Finance Department, with a strong track record of overseeing financial operations and ensuring the accuracy of accounting records.  
+                              Olawale  is an accomplished Accounting Manager in the Finance Department, with a strong track record of overseeing financial operations and ensuring the accuracy of accounting records.  
                           </p>
                           <br />
                           <p className="text-[#999] text-lg">

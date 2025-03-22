@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import HeadFinance from "../../../../public/assets/finance-lead.png";
+
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
 
@@ -30,20 +32,21 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Shehu Abdullahi</h3>
+            <h3 className="text-3xl font-semibold my-8">Amoto Seriki</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={HeadFinance}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Shehu Abdullahi</h3>
+                  <h3 className="font-semibold text-lg">Amoto Seriki
+</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Head, Finance
                   </p>
@@ -69,9 +72,9 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Shehu</h4>
+              <h4 className="text-xl font-semibold mb-6">About Amoto</h4>
               <p className="text-[#999] text-lg">
-                              Shehu is a seasoned Head of Finance with a proven track record of driving financial strategy and ensuring fiscal responsibility within organizations. With expertise in financial planning, budgeting, and risk management, he oversees all aspects of financial operations to support sustainable growth and profitability.
+                              Amoto is a seasoned Head of Finance with a proven track record of driving financial strategy and ensuring fiscal responsibility within organizations. With expertise in financial planning, budgeting, and risk management, he oversees all aspects of financial operations to support sustainable growth and profitability.
                           </p>
               <br />
                   <p className="text-[#999] text-lg">

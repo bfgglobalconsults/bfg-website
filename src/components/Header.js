@@ -664,7 +664,7 @@ const Header = () => {
                     >
                       <div className="bg-[#EFEFEF] divide-y">
                       <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
-                        <Link href="/insight/news">News</Link>
+                        <Link href="/insight/news">Newsroom</Link>
                       </p>
                       <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                         <Link href="/insight/blogs">Blogs</Link>

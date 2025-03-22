@@ -1,7 +1,7 @@
 export const insight_links = [
     {
         id: 1,
-        label: "News",
+        label: "Newsroom",
         link: "/insight/news",
       },
       {

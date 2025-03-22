@@ -717,7 +717,7 @@ export default function Main() {
         {/* latest news */}
         <div className="my-4 p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-            Our Recent Post
+            Our Newsroom
           </span>
           <h3 className="text-3xl lg:text-4xl font-bold text-[#333] my-4">
             Latest News
@@ -905,7 +905,7 @@ export default function Main() {
         {/* latest blogs */}
         <div className="my-4 p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-            Our Recent Blog Post
+            Our Insights
           </span>
           <h3 className="text-3xl lg:text-4xl font-bold text-[#333] my-4">
             Latest Blogs

@@ -22,9 +22,9 @@ import Link from "next/link";
 const page = () => {
   const BusinessSlides = [
     {
-      title: "Business Formation",
+      title: "Business Process and Systems Engineering",
       content:
-        "We take the stress off our clients in the process of choosing a business structure & registering their business with the appropriate government agency. Common business structures often include sole proprietorships, partnerships, limited liability companies (LLCs), & corporations.",
+        "This involves optimizing and redesigning business processes and systems to improve efficiency, reduce costs, and enhance overall performance. By leveraging cutting-edge methodologies, we help businesses analyze their systems, processes, and data to identify opportunities for improvement and recommend technology-driven solutions.",
     },
     {
       title: "Business strategy development & implementation",

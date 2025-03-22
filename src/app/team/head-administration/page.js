@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import HeadAdmin from "../../../../public/assets/admin-lead.png";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
 
@@ -30,20 +31,20 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sarah James</h3>
+            <h3 className="text-3xl font-semibold my-8">Adebayo Adeniyi</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={HeadAdmin}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sarah James</h3>
+                  <h3 className="font-semibold text-lg">Adebayo Adeniyi</h3>
                   <p className="text-[#E45F11] font-semibold">
                                       
                     Head, Administration
@@ -71,17 +72,17 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Festus</h4>
+              <h4 className="text-xl font-semibold mb-6">About Adebayo</h4>
               <p className="text-[#999] text-lg">
-               Sarah James is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, she oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
+               Adebayo Adeniyi is an accomplished Head of Administration with extensive expertise in leading and managing administrative operations to support organizational success. With a strategic approach to management, he oversees office operations, resource allocation, and team performance to ensure efficiency and alignment with organizational objectives
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                              Known for her leadership skills, attention to detail, and ability to optimize processes, she fosters a productive work environment while driving operational excellence. Her commitment to organizational growth and effectiveness makes her an invaluable leader in the management team.
+                              Known for his leadership skills, attention to detail, and ability to optimize processes, he fosters a productive work environment while driving operational excellence. His commitment to organizational growth and effectiveness makes him an invaluable leader in the management team.
                           </p>
               <br />
  <p className="text-[#999] text-lg">
-                              A visionary leader with a passion for innovation and excellence, Peter is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
+                              A visionary leader with a passion for innovation and excellence, He is dedicated to fostering sustainable business growth and enhancing client satisfaction through tailored solutions and cutting-edge practices.
                           </p>
               <br />
             </div>
