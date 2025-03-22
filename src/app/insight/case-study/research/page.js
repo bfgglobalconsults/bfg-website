@@ -82,17 +82,7 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              Advanced data analytics and product research are provided by the
-              BFG Business Research and Intelligence team with a workflow that
-              is integrated to assist you in making decisions that are quicker,
-              more accurate, and more intelligent when using data. Your business
-              results may be influenced by our data insights, planning,
-              budgeting, forecasting, and knowledgeable BI solutions, regardless
-              of your company area, finance, HR, supply chain, marketing, sales,
-              or IT. This service combines the expertise of agile information
-              professionals, market researchers, and insight managers to deliver
-              high-quality standards and regulatory intelligence, market
-              insights, industry research, and impact assessment.
+             Data-driven insights empower businesses to make informed decisions. Through in-depth market research, consumer behavior analysis, and competitive intelligence, we provide actionable recommendations that drive growth. Explore our case studies to see how our research and analytics have helped businesses identify opportunities, mitigate risks, and stay ahead in competitive markets.
             </p>
           </div>
 

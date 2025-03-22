@@ -17,7 +17,7 @@ const page = () => {
                 Copyright Policy
               </h3>
               <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-                Our Policy are designed to protect both you & BFG.
+                This policy establishes how we take copyright violations seriously and how we promptly investigate any claims.
               </p>
             </div>
             <div className="">

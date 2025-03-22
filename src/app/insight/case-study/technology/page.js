@@ -54,16 +54,7 @@ Technology & Software Development
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              BFG Technology solutions is a specialised service deployed to help
-              organisations optimize their use of technology to achieve their
-              business objectives. Through this service, we provide a wide range
-              of IT solutions, including, business web presence, cloud
-              computing, software development, & cybersecurity. The service is
-              delivered by our innovation & technology team, who are experts in
-              their field & have the technical skills & knowledge to provide
-              effective solutions. The goal of this service to clients is to
-              improve their organisations efficiency, information security, &
-              competitiveness by leveraging the latest technology.
+              Innovation is at the core of our technology solutions. From custom software development to digital transformation strategies, we help businesses leverage cutting-edge technologies to streamline processes, enhance customer experiences, and boost efficiency. Our case studies showcase how we’ve built scalable, secure, and high-performing solutions tailored to unique business needs.
             </p>
           </div>
 

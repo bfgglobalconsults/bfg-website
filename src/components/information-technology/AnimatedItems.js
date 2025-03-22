@@ -2,7 +2,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Autoplay } from "swiper/modules"
+import { Navigation, Autoplay, Scrollbar } from "swiper/modules"
 
 // Import Swiper styles
 import "swiper/css"
@@ -37,62 +37,67 @@ const AnimatedItems = ({slides}) => {
  
   return (
     <>
-      <div className="container mx-auto px-4 py-8">
-
-      <div className="relative overflow-hidden h-[300px] md:h-[650px]  rounded-xl shadow-sm">
-        <Swiper
-          modules={[Navigation, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={3}
-          direction="vertical"
-          breakpoints={{
-            // When screen width is less than 768px
-            0: {
-              slidesPerView: 1,
-              direction: "horizontal",
-            },
-            // When screen width is >= 768px
-            768: {
-              slidesPerView: 2,
-              direction: "vertical",
-            },
-            // When screen width is >= 1024px
-            1024: {
-              slidesPerView: 3,
-              direction: "vertical",
-            },
-          }}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: true,
-          }}
-          className="mySwiper h-full"
-        >
-          {slides.map((slide, index) => (
-            <SwiperSlide key={index} className="h-[200px]">
-              <div className="w-full h-full flex-shrink-0">
-                <div className="w-[95%] mx-auto h-full p-4 bg-white rounded-lg border border-gray-100 shadow-sm">
-                  <div className="flex h-full gap-4">
-                    
-                    <div className="flex-1 overflow-hidden">
-                      <h3 className="text-lg font-semibold text-black truncate">{slide.title}</h3>
-                      <p className="text-md text-gray-600  mt-1">{slide.content}</p>
-                     
+       <div className="container mx-auto px-4 py-8">
+        <div className="relative h-[300px] md:h-[650px] rounded-xl shadow-sm">
+          <Swiper
+            modules={[Navigation, Autoplay, Scrollbar]}
+            spaceBetween={20}
+            slidesPerView={3}
+            direction="vertical"
+            scrollbar={{
+              draggable: true,
+              hide: false,
+              el: ".swiper-scrollbar",
+            }}
+            breakpoints={{
+              // When screen width is less than 768px
+              0: {
+                slidesPerView: 1,
+                direction: "horizontal",
+                scrollbar: false,
+              },
+              // When screen width is >= 768px
+              768: {
+                slidesPerView: 2,
+                direction: "vertical",
+              },
+              // When screen width is >= 1024px
+              1024: {
+                slidesPerView: 3,
+                direction: "vertical",
+                scrollbar: true,
+              },
+            }}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: true,
+            }}
+            className="mySwiper h-full"
+          >
+            {slides.map((slide, index) => (
+              <SwiperSlide key={index} className="h-[200px]">
+                <div className="w-full h-full flex-shrink-0">
+                  <div className="w-[95%] mx-auto h-full p-4 bg-white rounded-lg border border-gray-100 shadow-sm">
+                    <div className="flex h-full gap-4">
+                      <div className="flex-1 overflow-hidden">
+                        <h3 className="text-lg font-semibold text-black truncate">{slide.title}</h3>
+                        <p className="text-md text-gray-600 mt-1">{slide.content}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-          <div className="swiper-button-prev !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px] !left-1/2 !top-[20px] !transform !-translate-x-1/2 !z-10 md:block"></div>
-          <div className="swiper-button-next !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px] !left-1/2 !bottom-[20px] !top-auto !transform !-translate-x-1/2 !z-10 md:block"></div>
-        </Swiper>
+              </SwiperSlide>
+            ))}
+            <div className="swiper-button-prev !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px] !left-1/2 !top-[20px] !transform !-translate-x-1/2 !z-10 md:block"></div>
+            <div className="swiper-button-next !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px] !left-1/2 !bottom-[20px] !top-auto !transform !-translate-x-1/2 !z-10 md:block"></div>
+            <div className="swiper-scrollbar !right-1 !w-[8px] !bg-gray-200/50 md:!block hidden"></div>
+          </Swiper>
+        </div>
       </div>
-    </div>
       {/* <div className="relative w-full max-w-3xl mx-auto">
       <div className="flex gap-2 justify-end">
                 <button
