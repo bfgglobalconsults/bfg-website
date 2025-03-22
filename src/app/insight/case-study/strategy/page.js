@@ -49,7 +49,7 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-             Achieving operational excellence requires a strategic approach. Our consulting services help organizations refine business models, optimize workflows, and enhance performance. Our case studies highlight successful projects where we've helped clients improve efficiency, reduce costs, and scale operations effectively.
+             Achieving operational excellence requires a strategic approach. Our consulting services help organizations refine business models, optimize workflows, and enhance performance. Our case studies highlight successful projects where we&apos;ve helped clients improve efficiency, reduce costs, and scale operations effectively.
             </p>
           </div>
 
