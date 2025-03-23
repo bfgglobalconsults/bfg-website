@@ -49,7 +49,7 @@ const page = () => {
                   <h3 className="font-semibold text-lg">
                     Abubakar Sultan Faisal
                   </h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Systems Administrator
                   </p>
                 </div>

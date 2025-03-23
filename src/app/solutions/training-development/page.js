@@ -330,7 +330,7 @@ const page = () => {
               <p className="text-[#999] text-xl my-2">
                 Discover the experts behind our solutions. Our dedicated team
                 brings a wealth of experience and a passion for driving success,
-                ensuring we meet our clients’ unique challenges with precision
+                ensuring we meet our clients unique challenges with precision
                 and insight.
               </p>
             </div>
@@ -347,7 +347,7 @@ const page = () => {
                     <h3 className="font-semibold text-lg">
                       Happiness C. Adama
                     </h3>
-                    <p className="text-[#E45F11] font-semibold">
+                    <p className="text-[#E45F11]">
                       Senior Training and Development Analyst
                     </p>
                     <Link href="/team/senior-training">
@@ -363,7 +363,7 @@ const page = () => {
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Justina Aderinluwo</h3>
-                                     <p className="text-[#E45F11] font-semibold">Training and Development Analyst</p>
+                                     <p className="text-[#E45F11]">Training and Development Analyst</p>
                                    <Link href="/team/training-analyst">
                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
                                         </Link>

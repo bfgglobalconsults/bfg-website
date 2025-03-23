@@ -87,7 +87,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Managing Partner / CEO
                   </p>
                   <Link href="/team/managing-partner">
@@ -107,7 +107,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Aina A. Oyefesobi</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11">
                     Deputy Managing Partner/COO
                   </p>
                    <Link href="/team/deputy-managing-partner">
@@ -126,7 +126,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Peter Chukwuemeka</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Head, Projects & Service Delivery
                   </p>
                    <Link href="/team/head-service-delivery">
@@ -145,7 +145,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Adebayo Adeniyi</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Head, Administration
                   </p>
                    <Link href="/team/head-administration">
@@ -165,7 +165,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Sunday Moses</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Head, Marketing & Growth
                   </p>
                    <Link href="/team/head-marketing">
@@ -185,7 +185,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Amoto Seriki</h3>
-                  <p className="text-[#E45F11] font-semibold">Head, Finance</p>
+                  <p className="text-[#E45F11]">Head, Finance</p>
                   <Link href="/team/head-finance">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
                      </Link>
@@ -203,7 +203,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Elizabeth-Mary N. Okeke</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Executive Assistant - Client Relations & People Management
                   </p>
                   <Link href="/team/executive-assistant">
@@ -237,7 +237,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Kenneth Idanwekhai</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                    Senior Research and Data Analyst
                   </p>
                   <Link href="/team/senior-research">
@@ -256,7 +256,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Senior Business Analyst - Strategy and Operations Transformation 
                   </p>
                   <Link href="/team/head-business">
@@ -275,7 +275,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">David Uko Bradford</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                    Senior Software Developer/Technology Analyst
                   </p>
                   <Link href="/team/senior-software">
@@ -295,7 +295,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Happiness C. Adama</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Senior Training and Development Analyst 
                   </p>
                   <Link href="/team/senior-training">
@@ -315,7 +315,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Simon Adeh Aba</h3>
-                  <p className="text-[#E45F11] font-semibold">Junior Research and Data Analyst</p>
+                  <p className="text-[#E45F11]">Junior Research and Data Analyst</p>
                   <Link href="/team/data-analyst">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
                      </Link>
@@ -332,7 +332,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Kate Abengowe</h3>
-                  <p className="text-[#E45F11] font-semibold">Business Analyst – Systems and Digital Intelligence</p>
+                  <p className="text-[#E45F11]">Business Analyst – System Intelligence and Digital Transformation</p>
                
                 </div>
               </div>
@@ -347,7 +347,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Jesunifemi Jeremiah Oluwafemi</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Product Designer / Developer
                   </p>
                   <Link href="/team/product-designer">
@@ -369,7 +369,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Justina Aderinluwo</h3>
-                  <p className="text-[#E45F11] font-semibold">Training and Development Analyst</p>
+                  <p className="text-[#E45F11]">Training and Development Analyst</p>
                 <Link href="/team/training-analyst">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
                      </Link>
@@ -409,7 +409,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Chioma Henry</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Sales & Marketing Executive
                   </p>
                    <Link href="/team/sales-marketing-executive">
@@ -428,7 +428,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Alex James Odeh</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                    Digital Marketer
                   </p>
                    <Link href="/team/digital-marketer">
@@ -466,7 +466,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Olawale Adunbi</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Accounting Manager
                   </p>
                    <Link href="/team/accounting-manager">
@@ -485,7 +485,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Theophilus Fakiyesi</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                    Internal Audit and Risk Manager
                   </p>
                    <Link href="/team/auditor">
@@ -523,7 +523,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Abubakar Sultan Faisal</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                     Systems Administrator
                   </p>
                    <Link href="/team/system-administrator">
@@ -542,7 +542,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Ayomide Oyabunmi</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
                    Office Administrator
                   </p>
                    <Link href="/team/office-administrator">

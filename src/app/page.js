@@ -31,7 +31,7 @@ import Picture3 from "/public/assets/picture-3.png";
 
 import SliderImage1 from "../../public/assets/sliderimage1.jpg";
 import SliderImage2 from "../../public/assets/sliderimage2.jpg";
-import SliderImage3 from "../../public/assets/sliderimage3.png";
+import SliderImage3 from "../../public/assets/hospitality.jpg";
 import SliderImage4 from "../../public/assets/sliderimage4.jpg";
 import SliderImage5 from "../../public/assets/consumer-img.jpg";
 import SliderImage6 from "../../public/assets/oilgas-banner.png";
@@ -551,64 +551,96 @@ export default function Main() {
             </div>
           </div>
           {/* case images */}
-          <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
-            {cases.map((item, index) => (
-              <div
-                className="relative w-[100%] md:w-[50%] lg:w-[22%] h-[500px] bg-cover bg-center"
-                key={index}
-              >
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-[100%] object-fit"
-                />
-                <div>
-                  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-2xl"></div>{" "}
-                  {/* Transparent overlay */}
-                  <div className="absolute bottom-14 left-7 w-[80%] flex gap-2 items-center justify-between">
+                <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
+                {cases.map((item, index) => (
+                  <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  className="relative w-[100%] md:w-[50%] lg:w-[22%] h-[500px] bg-cover bg-center"
+                  key={index}
+                  >
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-[100%] object-fit"
+                  />
+                  <div>
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-2xl"></div>
+                    <motion.div 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 0.5 + index * 0.2 }}
+                    className="absolute bottom-14 left-7 w-[80%] flex gap-2 items-center justify-between"
+                    >
                     <p className="text-white text-lg my-4">{item.title}</p>
-                    <a
+                    <motion.a
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
                       href={item.link}
-                     className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
+                      className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
                     >
                       <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                          fill="rgba(255,255,255,1)"
-                        >
-                          <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                        </svg>{" "}
-                      </span>{" "}
-                    </a>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                      </span>
+                    </motion.a>
+                    </motion.div>
                   </div>
+                  </motion.div>
+                ))}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-        {/* banner section */}
-        <div>
-          <div className="w-full lg:h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-cover bg-no-repeat flex  items-center">
-            <div className="w-[100%] lg:w-[50%] p-12 ">
-              <p className="text-lg text-white font-semibold my-2 border-l-4 border-[#999] p-2">
-                Unlock your business potential with BFG, your partner in
-                success. Combine the wisdom of today, the innovation of
-                tomorrow, & our expert guidance to achieve exceptional results.
-                At BFG, success is not just a goal - its our standard.
-              </p>
-              <Link href="/contact">
-                <button className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl">
-                  <span className="text-white font-bold">Contact Us</span>
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
+              {/* banner section */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-full lg:h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-cover bg-no-repeat flex items-center">
+                  <div className="w-[100%] lg:w-[50%] p-12">
+                    <motion.p 
+                      initial={{ x: -100, opacity: 0 }}
+                      whileInView={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.6, delay: 0.3 }}
+                      viewport={{ once: true }}
+                      className="text-lg text-white font-semibold my-2 border-l-4 border-[#999] p-2"
+                    >
+                      Unlock your business potential with BFG, your partner in
+                      success. Combine the wisdom of today, the innovation of
+                      tomorrow, & our expert guidance to achieve exceptional results.
+                      At BFG, success is not just a goal - its our standard.
+                    </motion.p>
+                    <motion.div
+                      initial={{ y: 50, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.5, delay: 0.6 }}
+                      viewport={{ once: true }}
+                    >
+                      <Link href="/contact">
+                        <motion.button 
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl"
+                        >
+                          <span className="text-white font-bold">Contact Us</span>
+                        </motion.button>
+                      </Link>
+                    </motion.div>
+                  </div>
+                </div>
+              </motion.div>
 
-        {/* values */}
+              {/* values */}
         <div className="my-4 p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Value

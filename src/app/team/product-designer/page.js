@@ -44,7 +44,7 @@ const page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Jesunifemi Jeremiah Oluwafemi</h3>
-                  <p className="text-[#E45F11] font-semibold">
+                  <p className="text-[#E45F11]">
 Product Designer – UI/UX                  </p>
                 </div>
               </div>

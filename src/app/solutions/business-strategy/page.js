@@ -340,7 +340,7 @@ const page = () => {
               <p className="text-[#999] text-xl my-2">
                 Discover the experts behind our solutions. Our dedicated team
                 brings a wealth of experience and a passion for driving success,
-                ensuring we meet our clients’ unique challenges with precision
+                ensuring we meet our clients unique challenges with precision
                 and insight.
               </p>
             </div>
@@ -355,9 +355,8 @@ const page = () => {
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
-                    <p className="text-[#E45F11] font-semibold">
-                      Senior Business Analyst - Strategy and Operations
-                      Transformation
+                    <p className="text-[#E45F11]">
+                      Senior Business Analyst 
                     </p>
                     <Link href="/team/head-business">
                                         <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
@@ -373,8 +372,8 @@ const page = () => {
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Kate Abengowe</h3>
-                    <p className="text-[#E45F11] font-semibold">
-                      Business Analyst – Systems and Digital Intelligence
+                    <p className="text-[#E45F11]">
+                      Business Analyst – System Intelligence and Digital Transformation
                     </p>
                   </div>
                 </div>
