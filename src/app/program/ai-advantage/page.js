@@ -129,7 +129,7 @@ const page = () => {
               Apply and embrace the future of work with AI as a key driver of
               innovation and growth in your business
             </p>
-            <button onClick={open} className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
+            <button  className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
               <span className="text-white">Apply for our next session</span>
               <span>
                 <svg
