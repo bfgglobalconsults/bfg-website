@@ -380,7 +380,7 @@ const page = () => {
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">David U. Bradford</h3>
-                    <p className="text-[#E45F11] font-semibold">
+                    <p className="text-[#E45F11]">
                       Senior Software Developer/Technology Analyst
                     </p>
                      <Link href="/team/senior-software">
@@ -398,7 +398,7 @@ const page = () => {
                     <h3 className="font-semibold text-lg">
                       Jesunifemi Jeremiah Oluwafemi
                     </h3>
-                    <p className="text-[#E45F11] font-semibold">
+                    <p className="text-[#E45F11]">
                       Product Designer / Developer
                     </p>
                      <Link href="/team/product-designer">

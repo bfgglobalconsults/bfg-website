@@ -354,7 +354,7 @@ const page = () => {
               <p className="text-[#999] text-xl my-2">
                 Discover the experts behind our solutions. Our dedicated team
                 brings a wealth of experience and a passion for driving success,
-                ensuring we meet our clients’ unique challenges with precision
+                ensuring we meet our clients unique challenges with precision
                 and insight.
               </p>
             </div>
@@ -371,7 +371,7 @@ const page = () => {
                     <h3 className="font-semibold text-lg">
                       Kenneth Idanwekhai
                     </h3>
-                    <p className="text-[#E45F11] font-semibold">
+                    <p className="text-[#E45F11]">
                       Senior Research and Data Analyst
                     </p>
                      <Link href="/team/senior-research">
@@ -387,7 +387,7 @@ const page = () => {
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Simon Adeh</h3>
-                    <p className="text-[#E45F11] font-semibold">
+                    <p className="text-[#E45F11]">
                       Junior Research and Data Analyst
                     </p>
                      <Link href="/team/data-analyst">

@@ -44,7 +44,7 @@ const page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Godfrey Samuel</h3>
-                  <p className="text-[#E45F11] font-semibold">Software Developer</p>
+                  <p className="text-[#E45F11]">Software Developer</p>
                 </div>
               </div>
               <div className="my-8">
