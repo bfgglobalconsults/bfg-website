@@ -108,7 +108,7 @@ const page = () => {
                 CEO Message
               </span>
             </div>
-            <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
+            <div className="w-full flex flex-col lg:flex-row gap-6 my-4">
               <div className="w-[100%] lg:w-[60%]">
                 <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
                   Your Growth Partner in a Changing Business Landscape

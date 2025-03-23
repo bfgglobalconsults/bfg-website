@@ -15,11 +15,11 @@ import ResearchPortfolio from "../../../../public/assets/research-portfolio.jpg"
 import Kenneth from "../../../../public/assets/kenneth.png";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Optimize from "../../../../public/assets/optimize-image.png";
-import MeasureImg from "../../../../public/assets/measure-image.png";
-import ExperienceImg from "../../../../public/assets/experience-image.png";
-import PredictiveImg from "../../../../public/assets/predective-image.png";
-import ImpactImg from "../../../../public/assets/impact-image.png";
-import AppraisalImg from "../../../../public/assets/appraisal-image.png";
+import MeasureImg from "../../../../public/assets/measure-image.jpg";
+import ExperienceImg from "../../../../public/assets/experience-image.jpg";
+import PredictiveImg from "../../../../public/assets/predictive-image.jpg";
+import ImpactImg from "../../../../public/assets/impact-image.jpg";
+import AppraisalImg from "../../../../public/assets/appraisal-images.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
 
@@ -166,11 +166,11 @@ const page = () => {
             </div> */}
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Optimize}
                     alt="optimize-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%] ">
@@ -188,11 +188,11 @@ const page = () => {
               </div>
               {/* second item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={MeasureImg}
                     alt="measure-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -210,11 +210,11 @@ const page = () => {
               </div>
               {/* third item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={ExperienceImg}
                     alt="exp-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -231,11 +231,11 @@ const page = () => {
               </div>
               {/* fourth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={AppraisalImg}
                     alt="appraisal-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -253,11 +253,11 @@ const page = () => {
               </div>
               {/* fifth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={PredictiveImg}
                     alt="predective-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -273,11 +273,11 @@ const page = () => {
               </div>
               {/* sixth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={ImpactImg}
                     alt="impact-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -374,6 +374,9 @@ const page = () => {
                     <p className="text-[#E45F11] font-semibold">
                       Senior Research and Data Analyst
                     </p>
+                     <Link href="/team/senior-research">
+                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                                         </Link>
                   </div>
                 </div>
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
@@ -387,21 +390,12 @@ const page = () => {
                     <p className="text-[#E45F11] font-semibold">
                       Junior Research and Data Analyst
                     </p>
+                     <Link href="/team/data-analyst">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                   </div>
                 </div>
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                  <Image
-                    src={Avatar}
-                    alt="md"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                    <h3 className="font-semibold text-lg">Emmanuel Akinbade</h3>
-                    <p className="text-[#E45F11] font-semibold">
-                      Associate, Research & Analytics
-                    </p>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>

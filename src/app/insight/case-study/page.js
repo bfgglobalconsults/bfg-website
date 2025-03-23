@@ -64,7 +64,7 @@ const page = () => {
               <h4 className="text-xl text-black font-semibold my-4">
                 Technology & Software Development
               </h4>
-              <p className="text-lg text-[#333] my-4">
+              <p className="text-lg text-[#999] my-4">
                 Innovation is at the core of our technology solutions. From
                 custom software development to digital transformation
                 strategies, we help businesses leverage cutting-edge
@@ -93,7 +93,7 @@ const page = () => {
               <h4 className="text-xl text-black font-semibold my-4">
                 Strategy and Operations Transformation
               </h4>
-              <p className="text-lg text-[#333] my-4">
+              <p className="text-lg text-[#999] my-4">
                 Achieving operational excellence requires a strategic approach.
                 Our consulting services help organizations refine business
                 models, optimize workflows, and enhance performance. Our case
@@ -121,7 +121,7 @@ const page = () => {
               <h4 className="text-xl text-black font-semibold my-4">
                 Research & Analytics
               </h4>
-              <p className="text-lg text-[#333] my-4">
+              <p className="text-lg text-[#999] my-4">
                 Data-driven insights empower businesses to make informed
                 decisions. Through in-depth market research, consumer behavior
                 analysis, and competitive intelligence, we provide actionable
@@ -150,7 +150,7 @@ const page = () => {
               <h4 className="text-xl text-black font-semibold my-4">
                 Training & Development
               </h4>
-                <p className="text-lg text-[#333] my-4">
+                <p className="text-lg text-[#999] my-4">
                 A skilled workforce is essential for business success. Our tailored training programs equip teams with the knowledge and skills needed to thrive in a dynamic business environment. From leadership development to technical training, our case studies demonstrate how we&apos;ve helped organizations upskill employees and foster a culture of continuous learning.
               </p>
               <Link href="/insight/case-study/training">

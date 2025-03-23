@@ -186,11 +186,11 @@ const page = () => {
             </div> */}
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Employee}
                     alt="employee-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -207,11 +207,11 @@ const page = () => {
               </div>
               {/* second item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={DataSecurity}
                     alt="data-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -228,11 +228,11 @@ const page = () => {
               </div>
               {/* third item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={DataMgt}
                     alt="datamgt-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -248,11 +248,11 @@ const page = () => {
               </div>
               {/* fourth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Flexibility}
                     alt="flex-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -268,11 +268,11 @@ const page = () => {
               </div>
               {/* fifth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Expertise}
                     alt="expertise-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -288,11 +288,11 @@ const page = () => {
               </div>
               {/* sixth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Innovation}
                     alt="innovation-img"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -383,6 +383,9 @@ const page = () => {
                     <p className="text-[#E45F11] font-semibold">
                       Senior Software Developer/Technology Analyst
                     </p>
+                     <Link href="/team/senior-software">
+                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                                         </Link>
                   </div>
                 </div>
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
@@ -398,21 +401,12 @@ const page = () => {
                     <p className="text-[#E45F11] font-semibold">
                       Product Designer / Developer
                     </p>
+                     <Link href="/team/product-designer">
+                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                                         </Link>
                   </div>
                 </div>
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                  <Image
-                    src={Avatar}
-                    alt="md"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                    <h3 className="font-semibold text-lg">Godfrey Samuel</h3>
-                    <p className="text-[#E45F11] font-semibold">
-                      Software Developer
-                    </p>
-                  </div>
-                </div>
+              
               </div>
             </div>
           </div>

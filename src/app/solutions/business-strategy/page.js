@@ -9,10 +9,10 @@ import Avatar from "../../../../public/assets/new-avatar.png";
 import Ifeoma from "../../../../public/assets/ifeoma.png";
 import Efficiency from "../../../../public/assets/efficiency.png";
 import Cost from "../../../../public/assets/cost.png";
-import Decision from "../../../../public/assets/decision.png";
-import Advantage from "../../../../public/assets/advantage.png";
-import Scalabity from "../../../../public/assets/scalability.png";
-import Operations from "../../../../public/assets/operations.png";
+import Decision from "../../../../public/assets/decision.jpg";
+import Advantage from "../../../../public/assets/advantage.jpg";
+import Scalabity from "../../../../public/assets/scalability.jpg";
+import Operations from "../../../../public/assets/operations.jpg";
 import BusinessPortfolio from "../../../../public/assets/business-portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
@@ -158,11 +158,11 @@ const page = () => {
             </div> */}
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Efficiency}
                     alt="efficiency"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -179,11 +179,11 @@ const page = () => {
               </div>
               {/* second item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Cost}
                     alt="cost"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -199,11 +199,11 @@ const page = () => {
               </div>
               {/* third item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Decision}
                     alt="decision"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -219,11 +219,11 @@ const page = () => {
               </div>
               {/* fourth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Advantage}
                     alt="advantage"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -238,11 +238,11 @@ const page = () => {
               </div>
               {/* fifth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Scalabity}
                     alt="scalability"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -258,11 +258,11 @@ const page = () => {
               </div>
               {/* sixth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Operations}
                     alt="operations"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -359,6 +359,9 @@ const page = () => {
                       Senior Business Analyst - Strategy and Operations
                       Transformation
                     </p>
+                    <Link href="/team/head-business">
+                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                                         </Link>
                   </div>
                 </div>
                 {/* second person */}
@@ -376,19 +379,7 @@ const page = () => {
                   </div>
                 </div>
                 {/* third part */}
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
-                  <Image
-                    src={Avatar}
-                    alt="md"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                    <h3 className="font-semibold text-lg">John Ogbe</h3>
-                    <p className="text-[#E45F11] font-semibold">
-                      Business Analyst
-                    </p>
-                  </div>
-                </div>
+               
               </div>
             </div>
             {/* contact */}

@@ -31,7 +31,7 @@ const OurStand = () => {
           <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
             {/* trial */}
             <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="w-[280px] lg:w-[320px] h-[190px]">
+              <div className="w-full h-[190px]">
                 <Image
                   src={Growth}
                   alt="growth"
@@ -50,7 +50,7 @@ const OurStand = () => {
             {/* trial end */}
             {/* second item */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="w-[280px] lg:w-[320px] h-[190px]">
+              <div className="w-full h-[190px]">
                 <Image
                   src={Value}
                   alt="growth"
@@ -70,7 +70,7 @@ const OurStand = () => {
             </div>
             {/* third item */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="w-[280px] lg:w-[320px] h-[190px]">
+              <div className="w-full h-[190px]">
                 <Image
                   src={Innovation}
                   alt="innovation"
@@ -90,7 +90,7 @@ const OurStand = () => {
             </div>
             {/* fourth item */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="w-[280px] lg:w-[320px] h-[190px]">
+              <div className="w-full h-[190px]">
                 <Image
                   src={Client}
                   alt="client"
@@ -110,7 +110,7 @@ const OurStand = () => {
             </div>
             {/* fifth */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="w-[280px] lg:w-[320px] h-[190px]">
+              <div className="w-full h-[190px]">
                 <Image
                   src={Tailored}
                   alt="tailored"
@@ -129,7 +129,7 @@ const OurStand = () => {
             {/* fifth end */}
             {/* sixth */}
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-              <div className="w-[280px] lg:w-[320px] h-[190px]">
+              <div className="w-full h-[190px]">
                 <Image
                   src={Pan}
                   alt="pan"

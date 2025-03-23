@@ -3,14 +3,16 @@ import Image from "next/image";
 import Banner from "../../../../public/assets/training-development.jpg";
 import Accordion from "@/components/Accordion";
 import TopBanner from "../../../../public/assets/training-development-banner.jpg";
-import Happy from "../../../../public/assets/happiness_adama.png"
+import Happy from "../../../../public/assets/happiness_adama.png";
+import TrainingAnalyst from "../../../../public/assets/training-analyst.png";
+
 import TrainingImage from "../../../../public/assets/training-image.png";
 import EmployeePerformance from "../../../../public/assets/employee-perfomance.jpg";
-import Retention from "../../../../public/assets/retention.png";
-import GreaterFlexibility from "../../../../public/assets/greater-flexibility.png";
-import DecisionMaking from "../../../../public/assets/decision-making.png";
-import TopTalent from "../../../../public/assets/top-talent.png";
-import Operations from "../../../../public/assets/operations.png";
+import Retention from "../../../../public/assets/retention.jpg";
+import GreaterFlexibility from "../../../../public/assets/greater-flexibility.jpg";
+import DecisionMaking from "../../../../public/assets/decision-making.jpg";
+import TopTalent from "../../../../public/assets/top-talent.jpg";
+import Operations from "../../../../public/assets/operations.jpg";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import TrainingPortfolio from "../../../../public/assets/Training-Portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
@@ -145,11 +147,11 @@ const page = () => {
             </div> */}
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={EmployeePerformance}
                     alt="employee"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -166,11 +168,11 @@ const page = () => {
               </div>
               {/* second item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Retention}
                     alt="retention"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -186,11 +188,11 @@ const page = () => {
               </div>
               {/* third item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={GreaterFlexibility}
                     alt="flexibility"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -207,11 +209,11 @@ const page = () => {
               </div>
               {/* fourth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={DecisionMaking}
                     alt="decision"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -227,11 +229,11 @@ const page = () => {
               </div>
               {/* fifth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={TopTalent}
                     alt="talent"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -248,11 +250,11 @@ const page = () => {
               </div>
               {/* sixth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                <div className="">
+                <div className="w-full h-[200px]">
                   <Image
                     src={Operations}
                     alt="operations"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -348,19 +350,23 @@ const page = () => {
                     <p className="text-[#E45F11] font-semibold">
                       Senior Training and Development Analyst
                     </p>
+                    <Link href="/team/senior-training">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                   </div>
                 </div>
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
                   <Image
-                    src={Avatar}
+                    src={TrainingAnalyst}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                    <h3 className="font-semibold text-lg">Juliet Dunkwu</h3>
-                    <p className="text-[#E45F11] font-semibold">
-                      Training and Development Analyst
-                    </p>
+                    <h3 className="font-semibold text-lg">Justina Aderinluwo</h3>
+                                     <p className="text-[#E45F11] font-semibold">Training and Development Analyst</p>
+                                   <Link href="/team/training-analyst">
+                                       <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                                        </Link>
                   </div>
                 </div>
               </div>

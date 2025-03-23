@@ -1,11 +1,14 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import TopBanner from "../../../../public/assets/ai-advantage.png";
 import AiGroup from "../../../../public/assets/ai-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
+import ProgramModal from "@/components/ProgramModal";
 
 const page = () => {
+  
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -41,7 +44,7 @@ const page = () => {
           <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
             <div className="w-[100%] lg:w-[60%]">
               <p className="text-[#999] my-4">
-                In today’s digital age, the integration of Artificial
+                In today&apos;s digital age, the integration of Artificial
                 Intelligence (AI) into the workplace is no longer optional—it is
                 essential for maintaining a competitive edge.
               </p>
@@ -126,7 +129,7 @@ const page = () => {
               Apply and embrace the future of work with AI as a key driver of
               innovation and growth in your business
             </p>
-            <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
+            <button onClick={open} className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
               <span className="text-white">Apply for our next session</span>
               <span>
                 <svg
@@ -143,6 +146,7 @@ const page = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };

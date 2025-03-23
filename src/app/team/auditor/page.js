@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Auditor from "../../../../public/assets/auditor.png";
+import Auditor from "../../../../public/assets/internal-auditor.png";
 
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
@@ -46,7 +46,7 @@ const page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Theophilus Fakiyesi</h3>
-                  <p className="text-[#E45F11] font-semibold">Auditor</p>
+                  <p className="text-[#E45F11] font-semibold">Internal Audit and Risk Manager</p>
                 </div>
               </div>
               <div className="my-8">
