@@ -416,7 +416,7 @@ export default function Main() {
                 Discover success across tech, finance, healthcare,
                 manufacturing, retail, energy, professional services, and
                 hospitality with BFG Global Consults tailored
-                consulting expertise.{" "}
+                consulting expertise.{" "}
               </p>
               {/* <div className="absolute top-0 right-10 w-[400px] h-[250px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div> */}
 
@@ -495,10 +495,10 @@ export default function Main() {
                           {slide.description}
                         </p>
                         <Link href={slide.readMore}>
-                          <button className="text-[#E26015] hover:text-[#041926] p-2  text-md font-semibold my-2">
+                          <button className="text-[#E26015] hover:text-[#041926] p-2 text-md font-semibold my-2">
                             Read More
                           </button>
-                          </Link>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -507,36 +507,6 @@ export default function Main() {
               <div className="swiper-button-prev !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
               <div className="swiper-button-next !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
             </Swiper>
-              {/* <div
-                className="flex transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {slides.map((slide, index) => (
-                  <>
-                    <div
-                      key={index}
-                      className="w-full lg:w-1/2 flex-shrink-0 flex flex-wrap"
-                    >
-                      <div className="w-[100%] lg:w-[95%]  p-5 bg-white rounded-2xl">
-                        <Image
-                          alt={slide.imageAlt}
-                          className="w-full h-[250px] object-cover rounded-md"
-                          src={slide.imageSrc}
-                        />
-
-                        <div>
-                          <h3 className="text-xl lg:text-2xl my-2 font-semibold text-black">
-                            {slide.title}
-                          </h3>
-                          <p className="text-md text-lg text-[#999]">
-                            {slide.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                ))}
-              </div> */}
             </div>
           </div>
         </div>
@@ -556,7 +526,7 @@ export default function Main() {
                 <p className="text-[#999] text-lg lg:w-[80%]">
                   Unlock success secrets with our Featured Case Studies.
                   Real-world insights to inform, inspire, & drive your
-                  business forward.
+                  business forward.
                 </p>
               </div>
               <div className="flex justify-center my-2">
