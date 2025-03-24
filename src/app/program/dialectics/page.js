@@ -72,7 +72,6 @@ The Dialectics is an engaging podcast initiative created by the BFG Consults Tea
               </p>
              
             </div>
-             <Link href="https://www.youtube.com/@BFGConsults" target="_blank">
             <div  className="w-[100%] lg:w-[40%] relative">
                <Image
                     src={DialetGroup}
@@ -110,15 +109,14 @@ The Dialectics is an engaging podcast initiative created by the BFG Consults Tea
                   />
                 </div>
               </div> */}
-            </div>
-            </Link>
+              </div>
           </div>
           <div className="">
-          
+           <button >
             <p className="font-semibold my-4">
            Join us for our next episode and become part of the conversation that is shaping the future of business in Africa.
             </p>
-           
+            </button>
             
             <Link href="https://www.youtube.com/@BFGConsults" target="_blank">
             <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
