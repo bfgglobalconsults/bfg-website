@@ -1,11 +1,23 @@
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
-import React from "react";
 import TopBanner from "../../../../public/assets/tech-achiever.jpg";
 import SmeGroup from "../../../../public/assets/achiever-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
+import ProgramModal from "@/components/ProgramModal";
 
-const page = () => {
+const Page = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -57,7 +69,7 @@ Successful candidates will have the opportunity to work on impactful projects, c
             </p>
               
             </div>
-            <div className="w-[100%] lg:w-[40%] relative">
+            <div  onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
                <Image
                     src={SmeGroup}
                     alt="beauty-image"
@@ -128,15 +140,34 @@ Hands-On Experience: Gain practical experience by working directly within variou
 
              <p className="font-semibold my-4">
 Are you ready to jumpstart your career in technology and consulting? Don&apos;t miss this opportunity to develop your skills and gain invaluable experience. Apply now to be part of the Tech Achievers Graduate Scheme and take the first step towards a successful career!            </p>
-            <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
+            <button 
+              onClick={handleOpenModal}
+              className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl hover:bg-[#E26015] transition-colors duration-300"
+            >
               <span className="text-white">Apply for our next session</span>
-              <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="rgba(255,255,255,1)"
+                >
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
       </div>
+
+      <ProgramModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal}
+        program="Tech Achievers Graduate Scheme"
+      />
     </>
   );
 };
 
-export default page;
+export default Page;

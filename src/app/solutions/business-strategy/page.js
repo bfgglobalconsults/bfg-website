@@ -3,7 +3,7 @@ import Image from "next/image";
 // import Banner from "../../../../public/assets/business-strategy.jpg";
 
 import TopBanner from "../../../../public/assets/business-strategy-banner.jpg";
-
+import BusinessAnalyst from "../../../../public/assets/business-analyst-new.png";
 import BusinessImage from "../../../../public/assets/business-image.png";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Ifeoma from "../../../../public/assets/ifeoma.png";
@@ -356,7 +356,7 @@ const page = () => {
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
                     <p className="text-[#E45F11]">
-                      Senior Business Analyst 
+                       Senior Business Analyst - Strategy and Operations Transformation 
                     </p>
                     <Link href="/team/head-business">
                                         <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
@@ -366,15 +366,19 @@ const page = () => {
                 {/* second person */}
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
                   <Image
-                    src={Avatar}
+                    src={BusinessAnalyst}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                    <h3 className="font-semibold text-lg">Kate Abengowe</h3>
+                    <h3 className="font-semibold text-lg">Nkeiruka Vivian Mordi
+</h3>
                     <p className="text-[#E45F11]">
                       Business Analyst – System Intelligence and Digital Transformation
                     </p>
+                     <Link href="/team/business-analyst">
+                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                                         </Link>
                   </div>
                 </div>
                 {/* third part */}

@@ -1,11 +1,23 @@
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
-import React from "react";
 import TopBanner from "../../../../public/assets/sme-klinic.png";
 import KlinicGroup from "../../../../public/assets/klinic-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
+import ProgramModal from "@/components/ProgramModal";
 
-const page = () => {
+const Page = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -49,13 +61,13 @@ const page = () => {
                 future of work.
               </p>
               <p className="text-[#999] my-4">
-                In today’s fast-paced business environment, SMEs face numerous
+                In today&apos;s fast-paced business environment, SMEs face numerous
                 challenges, including navigating economic uncertainties,
                 adapting to technological advancements, and meeting changing
                 customer demands. The SME Klinic recognizes the importance of
                 collaboration and peer support in addressing these issues. By
                 bringing together a diverse group of leaders, we foster an
-                environment where participants can learn from one another’s
+                environment where participants can learn from one another&apos;s
                 experiences and insights.
               </p>
               <p className="text-[#999] my-4">
@@ -74,7 +86,7 @@ const page = () => {
               create a community that supports innovation and shared learning.
             </p>
             </div>
-            <div className="w-[100%] lg:w-[40%] relative">
+            <div  onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
               <Image
                 src={KlinicGroup}
                 alt="klinic-image"
@@ -117,7 +129,10 @@ const page = () => {
            
 
             <p className="font-semibold my-4">Register for the next sessions</p>
-            <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
+            <button 
+              onClick={handleOpenModal}
+              className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl hover:bg-[#E26015] transition-colors duration-300"
+            >
               <span className="text-white">Apply for our next session</span>
               <span>
                 <svg
@@ -134,8 +149,14 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <ProgramModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal}
+        program="SME Klinic"
+      />
     </>
   );
 };
 
-export default page;
+export default Page;

@@ -1,11 +1,22 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import TopBanner from "../../../../public/assets/sme-webinar.png";
 import SmeGroup from "../../../../public/assets/sme-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
+import ProgramModal from "@/components/ProgramModal";
 
-const page = () => {
+const Page = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -80,7 +91,7 @@ const page = () => {
               that drives collaboration and innovation.
             </p>
             </div>
-            <div className="w-[100%] lg:w-[40%] relative">
+            <div onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
                <Image
                     src={SmeGroup}
                     alt="beauty-image"
@@ -129,15 +140,20 @@ const page = () => {
              <p className="font-semibold my-4">
               Apply for our next session and be part of the conversation that shapes the future of business in Nigeria.
             </p>
-            <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
+            <button onClick={handleOpenModal} className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
               <span className="text-white">Apply for our next session</span>
               <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></span>
             </button>
           </div>
         </div>
       </div>
+       <ProgramModal 
+              isOpen={isModalOpen} 
+              onClose={handleCloseModal}
+              program="SME Webinar Series"
+            />
     </>
   );
 };
 
-export default page;
+export default Page;

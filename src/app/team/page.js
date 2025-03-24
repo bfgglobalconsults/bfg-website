@@ -3,6 +3,8 @@ import Auditor from "../../../public/assets/internal-auditor.png";
 import OfficeAdmin from "../../../public/assets/office-admin.png";
 import ManagingDirector from "../../../public/assets/festus-md.png";
 import HeadAdmin from "../../../public/assets/admin-lead.png";
+import BusinessAnalyst from "../../../public/assets/business-analyst-new.png";
+import DigitalMarketer from "../../../public/assets/digital-marketer.png";
 import HeadService from "../../../public/assets/mr-peter.png";
 import HeadGrowth from "../../../public/assets/moses.png";
 import HeadFinance from "../../../public/assets/finance-lead.png";
@@ -107,7 +109,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Aina A. Oyefesobi</h3>
-                  <p className="text-[#E45F11">
+                  <p className="text-[#E45F11]">
                     Deputy Managing Partner/COO
                   </p>
                    <Link href="/team/deputy-managing-partner">
@@ -325,14 +327,17 @@ const Page = () => {
                <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={BusinessAnalyst}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Kate Abengowe</h3>
+                  <h3 className="font-semibold text-lg">Nkeiruka Vivian Mordi</h3>
                   <p className="text-[#E45F11]">Business Analyst – System Intelligence and Digital Transformation</p>
+                  <Link href="/team/business-analyst">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
                
                 </div>
               </div>
@@ -399,6 +404,28 @@ const Page = () => {
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Team member card */}
               
+              
+               {/* first team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={DigitalMarketer}
+                    alt="marketer"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Perpetual Amanyi
+</h3>
+                  <p className="text-[#E45F11]">
+                   Digital Marketing Executive
+                  </p>
+                   <Link href="/team/digital-marketer">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
+                     </Link>
+                </div>
+              </div>
+              {/* second person */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -408,35 +435,17 @@ const Page = () => {
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Chioma Henry</h3>
+                  <h3 className="font-semibold text-lg">Oladipupo Taiwo
+</h3>
                   <p className="text-[#E45F11]">
-                    Sales & Marketing Executive
+                    Digital Media and Content Strategist
+
                   </p>
-                   <Link href="/team/sales-marketing-executive">
+                   <Link href="/team/content-creator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
                      </Link>
                 </div>
               </div>
-               {/* second team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Avatar}
-                    alt="research"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Alex James Odeh</h3>
-                  <p className="text-[#E45F11]">
-                   Digital Marketer
-                  </p>
-                   <Link href="/team/digital-marketer">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                     </Link>
-                </div>
-              </div>
-             
              
               
               

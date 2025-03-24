@@ -7,7 +7,16 @@ import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import ProgramModal from "@/components/ProgramModal";
 
-const page = () => {
+function Page() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   
   return (
     <>
@@ -78,7 +87,7 @@ const page = () => {
               tool that augments human intelligence and creativity.
             </p>
             </div>
-            <div className="w-[100%] lg:w-[40%] relative">
+            <div  onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
               <Image
                 src={AiGroup}
                 alt="ai-image"
@@ -120,7 +129,7 @@ const page = () => {
           <div className="">
            
             <p className="text-[#999] my-4">
-              Whether you are looking to improve your organization’s AI
+              Whether you are looking to improve your organization&apos;s AI
               capabilities or seeking to elevate your career prospects, the AI
               Advantage program offers the resources and knowledge needed to
               succeed.
@@ -129,7 +138,10 @@ const page = () => {
               Apply and embrace the future of work with AI as a key driver of
               innovation and growth in your business
             </p>
-            <button  className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
+            <button 
+              onClick={handleOpenModal}
+              className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl hover:bg-[#E26015] transition-colors duration-300"
+            >
               <span className="text-white">Apply for our next session</span>
               <span>
                 <svg
@@ -147,8 +159,13 @@ const page = () => {
         </div>
       </div>
 
+      <ProgramModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal}
+        program="AI Advantage"
+      />
     </>
   );
-};
+}
 
-export default page;
+export default Page;
