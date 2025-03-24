@@ -158,7 +158,7 @@ export default function Main() {
       description:
         "BFG helps businesses in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
       imageAlt: "slider8-img",
-       imageSrc: SliderImage8,
+      imageSrc: SliderImage8,
       readMore: "/industry/industries/telecom-media",
     },
      {
@@ -167,7 +167,7 @@ export default function Main() {
       description:
         "BFG provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.",
       imageAlt: "slider9-img",
-       imageSrc: SliderImage9,
+      imageSrc: SliderImage9,
       readMore: "/industry/industries/entertainment"
     },
       {
@@ -412,7 +412,7 @@ export default function Main() {
             </div>
 
             <div className="w-[100%] lg:w-[50%] relative">
-                <p className="text-white text-lg w-full lg:w-[80%]">
+              <p className="text-white text-lg w-full lg:w-[80%]">
                 Discover success across tech, finance, healthcare,
                 manufacturing, retail, energy, professional services, and
                 hospitality with BFG Global Consults tailored
@@ -477,33 +477,33 @@ export default function Main() {
                 disableOnInteraction: true,
               }}
               className="mySwiper"
-            >
-              {slides.map((slide, index) => (
+              >
+                {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="w-full flex-shrink-0 flex flex-wrap">
                     <div className="w-[100%] lg:w-[95%] lg:h-[450px] p-5 bg-white rounded-2xl">
-                      <Image
-                        alt={slide.imageAlt}
-                        className="w-full h-[250px] object-cover rounded-md"
-                        src={slide.imageSrc}
-                      />
-                      <div>
-                        <h3 className="text-xl lg:text-2xl my-2 font-semibold text-black">
-                          {slide.title}
-                        </h3>
-                        <p className="text-md text-lg text-[#999]">
-                          {slide.description}
-                        </p>
+                        <Image
+                          alt={slide.imageAlt}
+                          className="w-full h-[250px] object-cover rounded-md"
+                          src={slide.imageSrc}
+                        />
+                        <div>
+                          <h3 className="text-xl lg:text-2xl my-2 font-semibold text-black">
+                            {slide.title}
+                          </h3>
+                          <p className="text-md text-lg text-[#999]">
+                            {slide.description}
+                          </p>
                         <Link href={slide.readMore}>
                           <button className="text-[#E26015] hover:text-[#041926] p-2 text-md font-semibold my-2">
                             Read More
                           </button>
                         </Link>
+                        </div>
                       </div>
                     </div>
-                  </div>
                 </SwiperSlide>
-              ))}
+                ))}
               <div className="swiper-button-prev !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
               <div className="swiper-button-next !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
             </Swiper>
@@ -551,22 +551,22 @@ export default function Main() {
             </div>
           </div>
           {/* case images */}
-                <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
-                {cases.map((item, index) => (
+          <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
+            {cases.map((item, index) => (
                   <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="relative w-[100%] md:w-[50%] lg:w-[22%] h-[500px] bg-cover bg-center"
-                  key={index}
-                  >
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-[100%] object-fit"
-                  />
-                  <div>
+                className="relative w-[100%] md:w-[50%] lg:w-[22%] h-[500px] bg-cover bg-center"
+                key={index}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-[100%] object-fit"
+                />
+                <div>
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-2xl"></div>
                     <motion.div 
                     initial={{ opacity: 0 }}
@@ -579,27 +579,27 @@ export default function Main() {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       href={item.link}
-                      className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
+                     className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
                     >
                       <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="rgba(255,255,255,1)"
-                      >
-                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          height="24"
+                          fill="rgba(255,255,255,1)"
+                        >
+                          <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                       </svg>
                       </span>
                     </motion.a>
                     </motion.div>
                   </div>
                   </motion.div>
-                ))}
-                </div>
-              </div>
-              {/* banner section */}
+            ))}
+          </div>
+        </div>
+        {/* banner section */}
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -615,10 +615,10 @@ export default function Main() {
                       viewport={{ once: true }}
                       className="text-lg text-white font-semibold my-2 border-l-4 border-[#999] p-2"
                     >
-                      Unlock your business potential with BFG, your partner in
-                      success. Combine the wisdom of today, the innovation of
-                      tomorrow, & our expert guidance to achieve exceptional results.
-                      At BFG, success is not just a goal - its our standard.
+                Unlock your business potential with BFG, your partner in
+                success. Combine the wisdom of today, the innovation of
+                tomorrow, & our expert guidance to achieve exceptional results.
+                At BFG, success is not just a goal - its our standard.
                     </motion.p>
                     <motion.div
                       initial={{ y: 50, opacity: 0 }}
@@ -626,21 +626,21 @@ export default function Main() {
                       transition={{ duration: 0.5, delay: 0.6 }}
                       viewport={{ once: true }}
                     >
-                      <Link href="/contact">
+              <Link href="/contact">
                         <motion.button 
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl"
                         >
-                          <span className="text-white font-bold">Contact Us</span>
+                  <span className="text-white font-bold">Contact Us</span>
                         </motion.button>
-                      </Link>
+              </Link>
                     </motion.div>
-                  </div>
-                </div>
+            </div>
+          </div>
               </motion.div>
 
-              {/* values */}
+        {/* values */}
         <div className="my-4 p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Value

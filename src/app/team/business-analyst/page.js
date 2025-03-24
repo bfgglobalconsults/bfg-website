@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
+import BusinessAnalyst from "../../../../public/assets/business-analyst-new.png";
+
 
 const page = () => {
   return (
@@ -30,22 +32,22 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">John Ogbe</h3>
+            <h3 className="text-3xl font-semibold my-8">Nkeiruka Vivian Mordi</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={BusinessAnalyst}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">John Ogbe</h3>
+                  <h3 className="font-semibold text-lg">Nkeiruka Vivian Mordi</h3>
                   <p className="text-[#E45F11]">
-                    Business Analyst
+                    Business Analyst - System Intelligence & Digital Transformation
                   </p>
                 </div>
               </div>
@@ -69,23 +71,13 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About John</h4>
+              <h4 className="text-xl font-semibold mb-6">About Nkeiruka</h4>
               <p className="text-[#999] text-lg">
-                A skilled Business Analyst specializing in enterprise systems
-                and digital intelligence, with a proven ability to bridge the
-                gap between business needs and technological solutions. Adept at
-                analyzing business processes, identifying improvement
-                opportunities, and designing innovative solutions to drive
-                organizational growth and efficiency.{" "}
+                Nkeiruka Vivian Mordi is a dynamic Business Analyst specializing in System Intelligence and Digital Transformation within the Strategy and Operations Transformation unit of our Product team at BFG Global Consulting, LLC. With a keen eye for process optimization and data-driven decision-making, she plays a pivotal role in analyzing complex business challenges and identifying innovative digital solutions.
               </p>{" "}
               <br />
               <p className="text-[#999] text-lg">
-                John is experienced in collaborating with stakeholders across
-                departments to gather requirements, perform data-driven
-                analysis, and deliver actionable insights. He is proficient in
-                leveraging enterprise systems, business intelligence tools, and
-                emerging technologies to support strategic decision-making and
-                operational excellence for clients.
+                Nkeiruka excels in translating business needs into actionable strategies, ensuring seamless integration of technology to enhance efficiency and drive operational excellence. Her expertise in system intelligence enables her to assess trends, improve workflows, and support the organization&apos;s digital transformation initiatives. Passionate about innovation and continuous improvement, she is committed to delivering strategic insights that align with business goals and enhance overall product effectiveness.
               </p>
               <br />
             </div>

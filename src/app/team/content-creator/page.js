@@ -30,7 +30,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Chioma Henry</h3>
+            <h3 className="text-3xl font-semibold my-8">Oladipupo Taiwo</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -43,9 +43,11 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Chioma Henry</h3>
+                  <h3 className="font-semibold text-lg">Oladipupo Taiwo
+</h3>
                   <p className="text-[#E45F11]">
-                     Sales & Marketing Executive
+                     Digital Media and Content Strategist
+
                   </p>
                 </div>
               </div>
@@ -69,11 +71,14 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Chioma</h4>
+              <h4 className="text-xl font-semibold mb-6">About Oladipupo</h4>
               <p className="text-[#999] text-lg">
-               Chioma is the Sales & Marketing Executive at BFG Global Consulting LLC, where she is responsible for developing and executing digital marketing strategies that enhance the firm&apos;s online presence and drive engagement. With expertise in digital advertising, content creation, and data analysis, Chioma plays a key role in promoting our firm&apos;s services, increasing brand awareness, and generating leads through various digital channels.
+              Oladipupo Taiwo is a creative and results-driven Digital Media and Content Strategist in the Content and Media unit of our Marketing Department at BFG Global Consulting. With a deep understanding of digital trends and audience engagement, he develops compelling content strategies that enhance brand visibility and drive meaningful interactions.
               </p>
               <br />
+              <p className="text-[#999] text-lg">
+                Oladipupo excels at crafting high-impact media campaigns, optimizing content for multiple platforms, and leveraging data insights to refine marketing approaches. His expertise in storytelling, content creation, and digital marketing ensures that BFG Global Consulting delivers engaging and value-driven content to its target audience. Passionate about innovation and brand growth, he is dedicated to creating content experiences that resonate and inspire.
+               </p>
              
             </div>
           </div>

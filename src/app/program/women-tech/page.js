@@ -1,11 +1,23 @@
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
-import React from "react";
 import TopBanner from "../../../../public/assets/women-tech.png";
 import WomenGroup from "../../../../public/assets/women-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
+import ProgramModal from "@/components/ProgramModal";
 
-const page = () => {
+const Page = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -41,19 +53,19 @@ const page = () => {
           <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
             <div className="w-[100%] lg:w-[60%]">
               <p className="text-[#999] my-4">
-               The Women in Tech program, developed by BFG Consults, is a transformative workshop aimed at closing the gender gap in technology skills optimization in Nigeria. Recognizing the critical need for increased female representation in tech, this initiative offers a three-month intensive training course designed to equip women with both coding and non-coding skills essential for thriving in today’s digital economy.
+               The Women in Tech program, developed by BFG Consults, is a transformative workshop aimed at closing the gender gap in technology skills optimization in Nigeria. Recognizing the critical need for increased female representation in tech, this initiative offers a three-month intensive training course designed to equip women with both coding and non-coding skills essential for thriving in today&apos;s digital economy.
               </p>
               <p className="text-[#999] my-4">
                This program is a call to action for women across Nigeria, providing them with the tools, resources, and support they need to gain confidence and authority in their careers. Participants engage in hands-on workshops that cover a range of topics, from basic programming and web development to project management and digital marketing strategies. This diverse curriculum ensures that women of all backgrounds can find a path that resonates with their interests and career goals.
               </p>
               <p className="text-[#999] my-4">
-               BFG Global Consults, we are committed to delivering high-quality training that not only enhances participants’ technical skills but also fosters leadership and professional growth. Our expert facilitators bring a wealth of experience and knowledge, creating a supportive and empowering learning environment.
+               BFG Global Consults, we are committed to delivering high-quality training that not only enhances participants technical skills but also fosters leadership and professional growth. Our expert facilitators bring a wealth of experience and knowledge, creating a supportive and empowering learning environment.
               </p>
                <p className="text-[#999] my-4">
              In addition to skill development, the Women in Tech program emphasizes the importance of community and mentorship. Participants have the opportunity to connect with industry leaders and fellow trainees, fostering relationships that can lead to career advancement and collaboration.
                       </p>
             </div>
-            <div className="w-[100%] lg:w-[40%] relative">
+            <div  onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
               <Image
                 src={WomenGroup}
                 alt="klinic-image"
@@ -99,7 +111,10 @@ const page = () => {
             </p>
 
             <p className="font-semibold my-4">Join us in our mission to bridge the gender gap in technology and empower women to take their rightful place in this dynamic field. Together, we can inspire the next generation of female tech leaders and innovators.</p>
-            <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
+            <button 
+              onClick={handleOpenModal}
+              className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl hover:bg-[#E26015] transition-colors duration-300"
+            >
               <span className="text-white">Apply for our next session</span>
               <span>
                 <svg
@@ -116,8 +131,14 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <ProgramModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal}
+        program="Women in Tech"
+      />
     </>
   );
 };
 
-export default page;
+export default Page;

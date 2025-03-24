@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Avatar from "../../../../public/assets/new-avatar.png";
+import DigitalMarketer from "../../../../public/assets/digital-marketer.png";
+
 import Link from "next/link";
 
 const page = () => {
@@ -30,27 +32,29 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Alex Odeh</h3>
+            <h3 className="text-3xl font-semibold my-8">Perpetual Amanyi
+</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={DigitalMarketer}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Alex Odeh</h3>
+                  <h3 className="font-semibold text-lg">Perpetual Amanyi
+</h3>
                   <p className="text-[#E45F11]">
                     Digital Marketing Executive
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:alex.odeh@bfgconsults.com">
+                <a href="mailto:sales.dx@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -69,14 +73,12 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Alex</h4>
+              <h4 className="text-xl font-semibold mb-6">About Perpetual</h4>
               <p className="text-[#999] text-lg">
-                              Alex James Odeh is a skilled Digital Media Executive at BFG Global Consulting LLC with a strong foundation in brand identity, visual storytelling, and digital experience design. With expertise spanning graphic design, WordPress web development, and video editing, Alex crafts engaging digital experiences that resonate with our audiences and elevate our brand.
-                          </p>
+Perpetual Amanyi is a strategic and data-driven Digital Marketer in the Digital Marketing unit of the Marketing Department at BFG Global Consulting. She specializes in developing and executing innovative digital marketing campaigns that enhance brand visibility, drive engagement, and generate leads.                          </p>
                           <br />
                           <p className="text-[#999] text-lg">
-                              Known for creative problem-solving and an eye for detail, Alex specializes in visual communication that is both impactful and strategic, ensuring every one of our firm projects conveys a compelling narrative and achieves its intended impact.
-                          </p>
+With expertise in SEO, social media marketing, email campaigns, and performance analytics, Perpetual leverages data insights to optimize strategies and maximize ROI. Her passion for digital trends and audience behavior enables her to craft targeted campaigns that align with business objectives. Committed to delivering impactful results, she plays a key role in strengthening BFG Global Consulting&apos;s digital presence and market influence.                          </p>
               <br />
              
             </div>

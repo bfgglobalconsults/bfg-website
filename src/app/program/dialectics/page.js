@@ -1,12 +1,23 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import TopBanner from "../../../../public/assets/dialectics.png";
 import DialetGroup from "../../../../public/assets/dialet-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import Link from "next/link";
+import ProgramModal from "@/components/ProgramModal";
 
-const page = () => {
+const Page = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
@@ -61,7 +72,7 @@ The Dialectics is an engaging podcast initiative created by the BFG Consults Tea
               </p>
              
             </div>
-            <div className="w-[100%] lg:w-[40%] relative">
+            <div  onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
                <Image
                     src={DialetGroup}
                     alt="dialet-image"
@@ -101,10 +112,11 @@ The Dialectics is an engaging podcast initiative created by the BFG Consults Tea
             </div>
           </div>
           <div className="">
-           
+           <button  onClick={handleOpenModal}>
             <p className="font-semibold my-4">
            Join us for our next episode and become part of the conversation that is shaping the future of business in Africa.
             </p>
+            </button>
             
             <Link href="https://www.youtube.com/@BFGConsults" target="_blank">
             <button className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl">
@@ -115,8 +127,13 @@ The Dialectics is an engaging podcast initiative created by the BFG Consults Tea
           </div>
         </div>
       </div>
+      <ProgramModal 
+              isOpen={isModalOpen} 
+              onClose={handleCloseModal}
+              program="The Dialetics"
+            />
     </>
   );
 };
 
-export default page;
+export default Page;
