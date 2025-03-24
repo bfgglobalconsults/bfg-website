@@ -137,7 +137,7 @@ const Page = () => {
       <ProgramModal 
         isOpen={isModalOpen} 
         onClose={handleCloseModal}
-        program="Leadership Summit"
+        program="EML Summit"
       />
     </>
   );

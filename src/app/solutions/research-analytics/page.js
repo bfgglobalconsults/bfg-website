@@ -359,9 +359,9 @@ const page = () => {
               </p>
             </div>
             {/* team pictures */}
-            <div className="w-full flex my-4">
-              <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="flex flex-col mb-10">
+                <div className="w-[250px] h-[250px] my-8 aspect-square bg-[#B0D4EA]">
                   <Image
                     src={Kenneth}
                     alt="md"
@@ -374,12 +374,16 @@ const page = () => {
                     <p className="text-[#E45F11]">
                       Senior Research and Data Analyst
                     </p>
-                     <Link href="/team/senior-research">
-                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                                         </Link>
+                    <Link href="/team/senior-research">
+                      <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                        Read More
+                      </button>
+                    </Link>
                   </div>
                 </div>
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+              </div>
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square my-8 bg-[#B0D4EA]">
                   <Image
                     src={Simon}
                     alt="md"
@@ -390,12 +394,13 @@ const page = () => {
                     <p className="text-[#E45F11]">
                       Junior Research and Data Analyst
                     </p>
-                     <Link href="/team/data-analyst">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                     </Link>
+                    <Link href="/team/data-analyst">
+                      <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                        Read More
+                      </button>
+                    </Link>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>

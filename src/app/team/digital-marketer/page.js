@@ -75,10 +75,10 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Perpetual</h4>
               <p className="text-[#999] text-lg">
-Perpetual Amanyi is a strategic and data-driven Digital Marketer in the Digital Marketing unit of the Marketing Department at BFG Global Consulting. She specializes in developing and executing innovative digital marketing campaigns that enhance brand visibility, drive engagement, and generate leads.                          </p>
+Perpetual Amanyi is a strategic and data-driven Digital Marketer in the Digital Marketing unit of our Marketing and Sales Department at BFG Global Consulting. She specializes in developing and executing innovative digital marketing campaigns that enhance brand visibility, drive engagement, and generate leads.              </p>
                           <br />
                           <p className="text-[#999] text-lg">
-With expertise in SEO, social media marketing, email campaigns, and performance analytics, Perpetual leverages data insights to optimize strategies and maximize ROI. Her passion for digital trends and audience behavior enables her to craft targeted campaigns that align with business objectives. Committed to delivering impactful results, she plays a key role in strengthening BFG Global Consulting&apos;s digital presence and market influence.                          </p>
+With expertise in SEO, social media marketing, email campaigns, and performance analytics, Perpetual leverages data insights to optimize strategies and maximize ROI. Her passion for digital trends and audience behavior enables her to craft targeted campaigns that align with business objectives. Committed to delivering impactful results, she plays a key role in strengthening BFG Global Consulting&apos;s digital presence and market influence.              </p>
               <br />
              
             </div>

@@ -682,7 +682,7 @@ const FixedHeader = () => {
                       </p> */}
                         <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                           <Link href="/about" onClick={() => setShowMenu(false)}>
-                            Who we are
+                            Who We Are
                           </Link>
                         </p>
                         <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
