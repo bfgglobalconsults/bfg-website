@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TopBanner from "../../../public/assets/governance-banner.png";
-import GovernanceImg from "../../../public/assets/governance-image.png";
+import GovernanceImg from "../../../public/assets/governance-image.jpg";
 import Slides from "@/components/Slides";
 import { SlideLeft } from "@/components/ui/Transitions";
 import ClientCentric from "../../../public/assets/client-centric.png";
@@ -69,7 +69,7 @@ const page = () => {
                   <Image
                     src={GovernanceImg}
                     alt=""
-                    className="w-full h-full object-fit"
+                    className="w-full h-full rounded-md object-cover"
                   />
                 </div>
               </div>
@@ -149,7 +149,7 @@ const page = () => {
               </div>
               <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                  <div className="">
+                  <div className="w-full">
                     <Image
                       src={ClientCentric}
                       alt="client"
@@ -168,7 +168,7 @@ const page = () => {
                 </div>
                 {/* second item */}
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                  <div className="">
+                  <div className="w-full">
                     <Image
                       src={Innovative}
                       alt="innovate"
@@ -188,7 +188,7 @@ const page = () => {
                 </div>
                 {/* third item */}
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                  <div className="">
+                  <div className="w-full">
                     <Image
                       src={Inclusivity}
                       alt="inclusive"
@@ -208,7 +208,7 @@ const page = () => {
                 </div>
                 {/* fourth item */}
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
-                  <div className="">
+                  <div className="w-full">
                     <Image
                       src={Sustain}
                       alt="sustain"

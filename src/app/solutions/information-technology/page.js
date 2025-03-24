@@ -93,37 +93,37 @@ const page = () => {
               competitiveness by leveraging the latest technology.
             </p>
           </div>
-</div>
-          <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
-            <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
-              <div className="mb-4">
-                <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
-                  Focus Area
-                </span>
-              </div>
-              <h3 className="text-white text-3xl font-semibold">
-                Focus areas of our Technology & Software Consulting Services
-              </h3>
-              <p className="text-white my-4">
-                Experience how our robust IT solutions & expert technical
-                support deliver seamless technology integration, ensuring your
-                systems reliability, security, & optimal performance from
-                infrastructure to application.
-              </p>
-              <div className="w-full">
-                <Image
-                  src={ItImage}
-                  alt="it-image"
-                  className="w-full rounded-lg"
-                />
-              </div>
+        </div>
+        <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
+          <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+            <div className="mb-4">
+              <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
+                Focus Area
+              </span>
             </div>
-
-            <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
-              <AnimatedItems slides={ItSlides} />
+            <h3 className="text-white text-3xl font-semibold">
+              Focus areas of our Technology & Software Consulting Services
+            </h3>
+            <p className="text-white my-4">
+              Experience how our robust IT solutions & expert technical support
+              deliver seamless technology integration, ensuring your systems
+              reliability, security, & optimal performance from infrastructure
+              to application.
+            </p>
+            <div className="w-full">
+              <Image
+                src={ItImage}
+                alt="it-image"
+                className="w-full rounded-lg"
+              />
             </div>
+          </div>
 
-            {/* <div className="w-[100%] flex gap-2">
+          <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
+            <AnimatedItems slides={ItSlides} />
+          </div>
+
+          {/* <div className="w-[100%] flex gap-2">
               <div className="w-1/2 shadow-lg bg-[#f4f4f4] rounded-xl p-7">
                 <h4 className="font-semibold text-xl text-[#333333]">
                   Software Designing & Development
@@ -150,10 +150,10 @@ const page = () => {
               </div>{" "}
              
             </div> */}
-          </div>
+        </div>
 
-          <hr />
- <div className="p-[40px]">
+        <hr />
+        <div className="p-[40px]">
           <div className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Benefits
@@ -332,24 +332,29 @@ const page = () => {
                   reflect our commitment to excellence, agility, and sustainable
                   growth.
                 </p>
-                <a href="/bfg-services.pdf" target="_blank"  rel="noopener noreferrer" className="">
+                <a
+                  href="/bfg-services.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
-                  <span className="text-white text-md font-semibold">
-                    View Our Portfolio
-                  </span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
-                    </button>
-                    </a>
+                    <span className="text-white text-md font-semibold">
+                      View Our Portfolio
+                    </span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -370,43 +375,49 @@ const page = () => {
               </p>
             </div>
             {/* team pictures */}
-            <div className="w-full flex my-4">
-              <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="flex flex-col mb-12">
+                <div className="w-[250px] h-[250px] aspect-square my-8 bg-[#B0D4EA]">
                   <Image
                     src={Bradford}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
-                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                  <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                     <h3 className="font-semibold text-lg">David U. Bradford</h3>
                     <p className="text-[#E45F11]">
                       Senior Software Developer/Technology Analyst
                     </p>
-                     <Link href="/team/senior-software">
-                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                                         </Link>
+                    <Link href="/team/senior-software">
+                      <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                        Read More
+                      </button>
+                    </Link>
                   </div>
                 </div>
+              </div>
+              <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
                   <Image
                     src={Jeremiah}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
-                  <div className="bg-white p-2 shadow-md rounded-tr-xl">
+                  <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                     <h3 className="font-semibold text-lg">
                       Jesunifemi Jeremiah Oluwafemi
                     </h3>
                     <p className="text-[#E45F11]">
                       Product Designer / Developer
                     </p>
-                     <Link href="/team/product-designer">
-                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                                         </Link>
+                    <Link href="/team/product-designer">
+                      <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                        Read More
+                      </button>
+                    </Link>
                   </div>
                 </div>
-              
               </div>
             </div>
           </div>

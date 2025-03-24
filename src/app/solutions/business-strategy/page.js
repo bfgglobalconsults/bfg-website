@@ -345,9 +345,10 @@ const page = () => {
               </p>
             </div>
             {/* team pictures */}
-            <div className="w-full flex my-4">
-              <div className="w-full flex flex-wrap gap-8  relative rounded-md p-4">
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+           
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-10">
+                <div className="flex flex-col mb-10">
+                <div className="w-[250px] h-[250px] my-10 aspect-square bg-[#B0D4EA]">
                   <Image
                     src={Ifeoma}
                     alt="md"
@@ -363,8 +364,10 @@ const page = () => {
                                          </Link>
                   </div>
                 </div>
+                </div>
                 {/* second person */}
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] my-8 aspect-square bg-[#B0D4EA]">
                   <Image
                     src={BusinessAnalyst}
                     alt="md"
@@ -381,10 +384,11 @@ const page = () => {
                                          </Link>
                   </div>
                 </div>
+                </div>
                 {/* third part */}
                
               </div>
-            </div>
+           
             {/* contact */}
           </div>
           <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
