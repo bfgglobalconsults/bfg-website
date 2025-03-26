@@ -10,22 +10,23 @@ const page = () => {
   return (
     <>
    <div className="lg:p-20 lg:mt-[150px]">
-        <div className="border-4 border-[#E45F11] rounded-3xl">
+        <div className="lg:border-4 lg:border-[#E45F11] rounded-3xl">
           <div className="p-12">
-            <div className="w-[250px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto">
+            <div className="w-[300px] h-[250px] lg:w-[400px] lg:h-[300px] lg:mx-auto">
               <Image
                 src={CareerImg}
                 alt="career-product"
                 className="w-full h-full object-fit"
               />
             </div>
-            <p className="font-sans text-3xl lg:text-5xl font-semibold text-center my-8">
+              </div>
+            <p className="font-sans text-3xl lg:text-5xl font-semibold text-center lg:p-12 my-2">
              Power Up Your Skills! Learn, Play, & Grow with Careerfun
             </p>
-            <p className="text-[#999] text-center my-2">
+            <p className="text-[#999] text-lg text-center lg:p-12 my-2">
               Our platform combines learning with interactive play, making skill-building enjoyable and engaging. From hands-on exercises to fun challenges, you can grow at your own pace while gaining the knowledge you need to succeed.
             </p>
-          </div>
+        
         </div>
       </div>
 

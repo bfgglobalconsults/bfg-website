@@ -72,7 +72,7 @@ The Dialectics is an engaging podcast initiative created by the BFG Consults Tea
               </p>
              
             </div>
-            <div  className="w-[100%] lg:w-[40%] relative">
+            <div onClick={handleOpenModal}  className="w-[100%] lg:w-[40%] relative">
                <Image
                     src={DialetGroup}
                     alt="dialet-image"
