@@ -22,7 +22,7 @@ const page = () => {
             <p className="font-sans text-3xl lg:text-5xl font-semibold text-center p-2 lg:p-12  my-2">
               Elevate Your Business with the Power of Appetiza.ai
             </p>
-            <p className="text-[#999] text-lg text-center lg:p-12  my-2">
+            <p className="text-[#999] text-lg text-center lg:px-12  my-2 py-2">
               Intelligent AI-Driven Business Development Planning Software for
               African and Global Enterprises
             </p>
