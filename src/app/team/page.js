@@ -20,7 +20,7 @@ import Simon from "../../../public/assets/simon-adeh.png";
 import Abubakar from "../../../public/assets/abubakar-sadiq.png";
 import CompanySecretary from "../../../public/assets/secretary-md.png";
 import Avatar from "../../../public/assets/new-avatar.png";
-import Banner from "../../../public/assets/team-image.jpg";
+import Banner from "../../../public/assets/team-image-banner.jpg";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
 import Link from "next/link";
@@ -45,11 +45,11 @@ const Page = () => {
         </div>
 
         {/* Banner image section */}
-        <div className="relative w-full h-[400px] bg-cover bg-center">
+        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-top">
           <Image
             src={Banner}
             alt="about-banner"
-            className="w-full h-full object-cover rounded-3xl"
+            className="w-full h-full object-cover object-top rounded-3xl "
           />
         </div>
 
