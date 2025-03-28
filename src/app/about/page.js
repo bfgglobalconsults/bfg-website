@@ -39,11 +39,26 @@ const page = () => {
           <div className="">
             <div className="w-full my-4">
               <p className="text-lg text-[#656565] my-3">
-                BFG Global Consulting LLC (also trading as BFG Consults) offers custom solutions in software development, market research, strategy development, and workforce training. With offices in Nigeria and the United Kingdom, we offer our services globally as a solution partner to individuals, businesses, corporate organizations, and government agencies. Our business model is built on innovation, combining Consulting-as-a-Service (CaaS) and Software-as-a-Service (SaaS) offerings to individuals and businesses in navigating complex challenges, optimizing performance, and achieving sustainable growth across various industries
+                BFG Global Consulting LLC (also trading as BFG Consults) offers
+                custom solutions in software development, market research,
+                strategy development, and workforce training. With offices in
+                Nigeria and the United Kingdom, we offer our services globally
+                as a solution partner to individuals, businesses, corporate
+                organizations, and government agencies. Our business model is
+                built on innovation, combining Consulting-as-a-Service (CaaS)
+                and Software-as-a-Service (SaaS) offerings to individuals and
+                businesses in navigating complex challenges, optimizing
+                performance, and achieving sustainable growth across various
+                industries
               </p>
               <p className="text-lg text-[#656565] my-3">
-                We are managed by a group of agile product leaders who are experienced in delivering cutting-edge solutions designed to meet the evolving needs of modern enterprises of any size. Our clients range from large-profile brands to medium, small, and start-up companies in Nigeria, India, Australia, Canada, the United Kingdom, and the United States. 
-                </p>
+                We are managed by a group of agile product leaders who are
+                experienced in delivering cutting-edge solutions designed to
+                meet the evolving needs of modern enterprises of any size. Our
+                clients range from large-profile brands to medium, small, and
+                start-up companies in Nigeria, India, Australia, Canada, the
+                United Kingdom, and the United States.
+              </p>
             </div>
             <div className="flex flex-col lg:flex-row gap-6">
               <div className="w-[100%] lg:w-[50%]">
@@ -52,32 +67,41 @@ const page = () => {
                     Business Stats
                   </span>
                 </div>
-                 <div className="">
-                <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
-                 Our services have consistently demonstrated success in enhancing business performance.
-                </h3>
-                <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                  We help you unleash the power within your business, transforming potential into performance through tailored strategies and innovative solutions that fuel growth and success.
+                <div className="">
+                  <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
+                    Our services have consistently demonstrated success in
+                    enhancing business performance.
+                  </h3>
+                  <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                    We help you unleash the power within your business,
+                    transforming potential into performance through tailored
+                    strategies and innovative solutions that fuel growth and
+                    success.
                   </p>
-                  <a href="/bfg-about-us.pdf" target="_blank"  rel="noopener noreferrer" className="">
-                  <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
-                  <span className="text-white text-md font-semibold">
-                    View Our Profile
-                  </span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
+                  <a
+                    href="/bfg-about-us.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                  >
+                    <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
+                      <span className="text-white text-md font-semibold">
+                        View Our Profile
+                      </span>
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          height="24"
+                          fill="rgba(255,255,255,1)"
+                        >
+                          <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                      </span>
                     </button>
-                    </a>
-                  </div>
+                  </a>
+                </div>
               </div>
               <div className="w-[100%] lg:w-[50%]">
                 <CounterSection />
@@ -108,7 +132,7 @@ const page = () => {
                 CEO Message
               </span>
             </div>
-            <div className="w-full flex flex-col lg:flex-row lg:justify-between gap-6 my-4">
+            <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
               <div className="w-[100%] lg:w-[60%]">
                 <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
                   Your Growth Partner in a Changing Business Landscape
@@ -156,40 +180,39 @@ const page = () => {
                   of sustainable growth and success.
                 </p>
               </div>
-                            <div className="flex flex-col">
-              <div className="w-full h-full">
-                <Image
-                  src={Picture}
-                  alt="festus-bello"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="bg-white  p-4 shadow-md rounded-lg">
-                 <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
+              <div className="flex flex-col">
+                <div className="w-full h-full">
+                  <Image
+                    src={Picture}
+                    alt="festus-bello"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
                   <p className="text-[#E45F11] font-semibold">
                     Managing Partner / CEO
                   </p>
                 </div>
                 <div className="my-8">
-                <a href="mailto:festus.bello@bfgconsults.com">
-                  <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                      >
-                        <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                      </svg>
-                    </span>
-                    <span>Get in Touch</span>
-                  </button>
-                </a>
+                  <a href="mailto:festus.bello@bfgconsults.com">
+                    <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                        >
+                          <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
+                        </svg>
+                      </span>
+                      <span>Get in Touch</span>
+                    </button>
+                  </a>
+                </div>
               </div>
-              </div>
-              
             </div>
             <hr className="my-2" />
             <div className="my-4">

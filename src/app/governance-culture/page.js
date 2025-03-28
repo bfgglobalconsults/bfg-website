@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../public/assets/governance-banner.png";
+import TopBanner from "../../../public/assets/governance-images.png";
 import GovernanceImg from "../../../public/assets/governance-image.jpg";
 import Slides from "@/components/Slides";
 import { SlideLeft } from "@/components/ui/Transitions";

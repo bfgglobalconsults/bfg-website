@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Avatar from "../../../../public/assets/new-avatar.png";
+import SocialMedia from "../../../../public/assets/social-media.png";
 import Link from "next/link";
 
 const page = () => {
@@ -37,7 +38,7 @@ const page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Avatar}
+                    src={SocialMedia}
                     alt="md"
                     className="w-full h-full object-cover"
                   />

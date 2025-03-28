@@ -14,7 +14,7 @@ const CounterSection = () => {
 
         </div>
         <div className="flex justify-center items-center  w-[45%] lg:w-[40%] h-[200px] border border-3 border-[#F6CAB0] p-2 rounded-lg bg-[#E26015]">
-        <CounterItem end={10} label="Winning Awards" />
+        <CounterItem end={7} label="Operating Years" />
 
         </div>
         <div className="flex justify-center items-center  w-[45%] lg:w-[40%] h-[200px] border border-3 border-[#F6CAB0] p-2 rounded-lg bg-[#E26015]">

@@ -81,7 +81,7 @@ const page = () => {
         <div className="p-[40px]">
           <div className="w-full">
             <p className="text-lg text-[#656565] my-3">
-              Business strategy & operations consulting is a unit of our
+              Strategy & Operations Transformation consulting is a unit of our
               practice, which involves helping organisations improve their
               overall performance by identifying & implementing effective
               business strategies & streamlining operational processes. Using
@@ -103,7 +103,7 @@ const page = () => {
               </span>
             </div>
             <h3 className="text-white text-3xl font-semibold">
-              Focus areas of our Business Strategy & Operations Consulting
+              Focus areas of our Strategy & Operations Transformation Consulting
               Services
             </h3>
             <p className="text-white my-2">
@@ -115,7 +115,7 @@ const page = () => {
               <Image
                 src={BusinessImage}
                 alt="business-image"
-                className="w-full"
+                className="w-full rounded-lg"
               />
             </div>
           </div>
@@ -345,9 +345,9 @@ const page = () => {
               </p>
             </div>
             {/* team pictures */}
-           
+
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 gap-y-10">
-                <div className="flex flex-col mb-10">
+              <div className="flex flex-col mb-10">
                 <div className="w-[250px] h-[250px] my-10 aspect-square bg-[#B0D4EA]">
                   <Image
                     src={Ifeoma}
@@ -357,16 +357,19 @@ const page = () => {
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
                     <p className="text-[#E45F11]">
-                       Senior Business Analyst - Strategy and Operations Transformation 
+                      Senior Business Analyst - Strategy and Operations
+                      Transformation
                     </p>
                     <Link href="/team/head-business">
-                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                                         </Link>
+                      <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                        Read More
+                      </button>
+                    </Link>
                   </div>
                 </div>
-                </div>
-                {/* second person */}
-                <div className="flex flex-col">
+              </div>
+              {/* second person */}
+              <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] my-8 aspect-square bg-[#B0D4EA]">
                   <Image
                     src={BusinessAnalyst}
@@ -374,21 +377,24 @@ const page = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                    <h3 className="font-semibold text-lg">Nkeiruka Vivian Mordi
-</h3>
+                    <h3 className="font-semibold text-lg">
+                      Nkeiruka Vivian Mordi
+                    </h3>
                     <p className="text-[#E45F11]">
-                      Business Analyst – System Intelligence and Digital Transformation
+                      Business Analyst – System Intelligence and Digital
+                      Transformation
                     </p>
-                     <Link href="/team/business-analyst">
-                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>
-                                         </Link>
+                    <Link href="/team/business-analyst">
+                      <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                        Read More
+                      </button>
+                    </Link>
                   </div>
                 </div>
-                </div>
-                {/* third part */}
-               
               </div>
-           
+              {/* third part */}
+            </div>
+
             {/* contact */}
           </div>
           <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
