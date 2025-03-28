@@ -28,9 +28,10 @@ const AnimatedItems = ({slides}) => {
           freeMode={true}
           breakpoints={{
             0: {
-              slidesPerView: 1,
-              direction: "horizontal",
-              scrollbar: false,
+              slidesPerView: "auto",
+              direction: "vertical",
+               spaceBetween: 20,
+              scrollbar: true,
                 autoplay: false,
             },
             768: {
@@ -82,7 +83,7 @@ const AnimatedItems = ({slides}) => {
               </SwiperSlide>
             ))}
           </div>
-          <div className="swiper-scrollbar !right-0 !w-[8px] !bg-gray-200/50"></div>
+          <div className="swiper-scrollbar !left-0 !w-[8px] !bg-gray-200/50"></div>
         </Swiper>
       </div>
     </div>
