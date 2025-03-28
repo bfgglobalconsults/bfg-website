@@ -3,7 +3,7 @@ import React from "react";
 import TopBanner from "../../../public/assets/career-img.jpg";
 import Link from "next/link";
 import Slides from "@/components/Slides";
-import Banner from "../../../public/assets/career-banner.png";
+import Banner from "../../../public/assets/career-banners.png";
 
 const page = () => {
   return (

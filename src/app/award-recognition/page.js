@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../public/assets/award-banner.png";
+import TopBanner from "../../../public/assets/award-banner.jpg";
 import GovernanceImg from "../../../public/assets/governance-image.png";
 import Slides from "@/components/Slides";
 import FirstAward from "../../../public/assets/award-1.png";

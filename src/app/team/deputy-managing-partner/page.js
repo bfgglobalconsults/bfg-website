@@ -71,10 +71,15 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Azeezat</h4>
               <p className="text-[#999] text-lg">
-                Azeezat Aina Oyefesobi is a seasoned Executive Partner at BFG Global Consulting LLC, bringing a wealth of experience and strategic insight to the firm. With a strong background in corporate governance, strategic planning, and business development, Azeezat plays a crucial role in guiding the company&apos;s long-term vision and ensuring alignment with industry&apos;s best practices. Her expertise in advising on high-level decisions and her ability to provide objective oversight makes her an invaluable part of the leadership team.
+Aina A. Oyefesobi is a business executive with a wealth of experience in administrative management, strategic planning, financial management, and marketing. As the Co-founder, Deputy Managing Partner and Chief Operating Officer (COO) of BFG Global Consulting Limited, she plays a pivotal role in shaping the firms strategic direction, optimizing operations, and fostering long-term growth. With a strong background in governance, compliance, and risk management, Aina ensures that the company aligns with people-oriented consulting practices while managing the vision for innovative solutions. Her leadership in business expansion, stakeholder engagement, and market positioning has made her an invaluable asset to the organization.              </p>
+              <br />
+              <p className="text-[#999] text-lg">
+               Prior to co-founding BFG Global Consulting, Aina began her career at the National Identity Management Commission (NIMC), where she provided administrative support and gained valuable experience in identity management and regulatory compliance in Nigeria. Her diverse professional background has equipped her with a holistic approach to operational excellence. Prior to now, she has held key positions across diverse industries, showcasing her versatility and expertise. She previously served as a Portfolio Manager at Baobab Microfinance Bank, where she managed investment portfolios and advised clients on financial strategies. Aina has also served as Data Enrolment Manager at Knowledgesquare Foresight Limited, where she specialized in data management and analytics, optimizing information systems for operational efficiency.
               </p>
               <br />
-              
+              <p className="text-[#999] text-lg">
+                Currently supporting market entry strategies for BFG Consults in the U.K. Market, Aina leverages her extensive expertise to drive business expansion, establish strategic partnerships, and navigate regulatory frameworks. Her role involves identifying growth opportunities, streamlining operational processes, and ensuring that BFG Consults maintains a strong competitive edge in the consulting industry. Aina holds a Diploma in Law, a Bachelor&apos;s degree in Political Science, and a Master&apos;s degree in International Relations, equipping her with a strong foundation in governance, policy analysis, and strategic decision-making.
+               </p>
             </div>
           </div>
         </div>

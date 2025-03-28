@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ConsumerImg from "../../../../../public/assets/consumers.jpg";
+import ConsumerImg from "../../../../../public/assets/consumers.png";
 import ConsumerImage from "../../../../../public/assets/consumer-image.png";
 import Slides from "@/components/Slides";
 
