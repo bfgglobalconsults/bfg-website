@@ -20,10 +20,10 @@ const page = () => {
               />
             </div>
               </div>
-            <p className="font-sans text-3xl lg:text-5xl font-semibold text-center lg:p-12 my-2">
+            <p className="font-sans text-3xl p-8 lg:text-5xl font-semibold text-center lg:p-12 my-2">
              Power Up Your Skills! Learn, Play, & Grow with Careerfun
             </p>
-            <p className="text-[#999] text-lg text-center lg:px-12 my-2 py-2">
+            <p className="text-[#999] text-lg p-8 text-center lg:px-12 my-2 py-2">
               Our platform combines learning with interactive play, making skill-building enjoyable and engaging. From hands-on exercises to fun challenges, you can grow at your own pace while gaining the knowledge you need to succeed.
             </p>
         

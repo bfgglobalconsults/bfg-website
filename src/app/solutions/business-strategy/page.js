@@ -27,27 +27,27 @@ const page = () => {
         "This involves optimizing and redesigning business processes and systems to improve efficiency, reduce costs, and enhance overall performance. By leveraging cutting-edge methodologies, we help businesses analyze their systems, processes, and data to identify opportunities for improvement and recommend technology-driven solutions.",
     },
     {
-      title: "Business strategy development & implementation",
+      title: "Business Strategy Development & Implementation",
       content:
         "This includes market research & analysis, competitive analysis, & the development of a comprehensive business plan for your business.",
     },
     {
-      title: "Operations assessment & optimization",
+      title: "Operations Assessment & Optimization",
       content:
         "This covers our single-mindedness in reviewing & analysing current operations to identify areas for improvement & implementing changes to increase efficiency & reduce costs for organisations.",
     },
     {
-      title: "Organisational design & restructuring",
+      title: "Organisational Design & Restructuring",
       content:
         "This include reviewing your current organisational structure & making changes to improve alignment with business goals & objectives.",
     },
     {
-      title: "Performance management",
+      title: "Performance Management",
       content:
         "We accelerate business decisions through the implementation of systems & processes for monitoring & measuring performance, as well as providing guidance & support for achieving performance goals in your business.",
     },
     {
-      title: "Change management",
+      title: "Change Management",
       content:
         "This includes planning & executing changes to systems, processes, & organisational structure in a way that minimise disruption & maximise benefits.",
     },
