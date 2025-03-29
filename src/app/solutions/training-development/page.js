@@ -38,7 +38,7 @@ const page = () => {
         "Measuring the effectiveness of training programs & providing follow-up support to ensure that employees can apply new skills & knowledge on the job.",
     },
     {
-      title: "Coaching & mentoring",
+      title: "Coaching & Mentoring",
       content:
         "Providing one-on-one coaching & mentoring to help employees develop their skills & advance in their careers.",
     },

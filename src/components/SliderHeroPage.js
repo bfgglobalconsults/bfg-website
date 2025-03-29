@@ -98,7 +98,7 @@ const HeroSection1 = () => (
       
 
     <div className="w-full lg:w-[40%]  overflow-hidden py-10">
-      <div className="relative w-[370px] h-[550px] lg:h-[550px] lg:w-[500px] ml-0">
+      <div className="relative w-[370px] md:w-[500px] h-[550px] lg:h-[550px] lg:w-[500px] ml-0">
     {/* Center logo */}
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#E45F11] rounded-full w-52 h-52 flex items-center justify-center z-20">
       <div className="relative w-28 h-28">

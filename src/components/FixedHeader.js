@@ -376,27 +376,31 @@ const FixedHeader = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/information-technology" onClick={() => setShowMenu(false)}>
-                            Technology and Software Development
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/business-strategy" onClick={() => setShowMenu(false)}>
-                            Strategy and Operations Transformation
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/research-analytics" onClick={() => setShowMenu(false)}>
-                            Research and Analytics
-                          </Link>
-                        </p>
+                                                  <Link href="/solutions/information-technology" onClick={() => setShowMenu(false)}>
 
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/solutions/training-development" onClick={() => setShowMenu(false)}>
-                            Training and Development
-                          </Link>
+                            Technology and Software Development
+                          </p>
+                                                    </Link>
+                          <Link href="/solutions/business-strategy" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            Strategy and Operations Transformation
+                          </p>
+                                                    </Link>
+                          <Link href="/solutions/research-analytics" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            Research and Analytics
                         </p>
+                          </Link>
+                          <Link href="/solutions/training-development" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            Training and Development
+                          </p>
+                                                    </Link>
+
                       </div>
                     </Collapsible>
 
@@ -430,61 +434,74 @@ const FixedHeader = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
+                                                  <Link href="/industry/industries/consumer" onClick={() => setShowMenu(false)}>
+
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/consumer" onClick={() => setShowMenu(false)}>
                             Consumer and Retail Market
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/financial" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Financial Services
+                          </p>
                           </Link>
-                        </p>
+                                                    <Link href="/industry/industries/hospitality" onClick={() => setShowMenu(false)}>
+
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/hospitality" onClick={() => setShowMenu(false)}>
                             Hospitality and Tourism
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/real-estate" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Real Estate
-                          </Link>
-                        </p>
+                          </p>
+                                                    </Link>
+
+                                                  <Link href="/industry/industries/technology" onClick={() => setShowMenu(false)}>
+
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/industry/industries/technology" onClick={() => setShowMenu(false)}>
                             Technology and Finance
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/government" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Government and Non-for-Profit
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/oil-gas" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Oil and Gas
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/industrial-manufacturing" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Industrial Manufacturing
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/telecom-media" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Telecommunication and Media
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/entertainment" onClick={() => setShowMenu(false)}>
-                            Entertainment and Creative Industry
-                          </Link>
-                        </p>
+
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            Entertainment and Creative Industry
+                          </p>
+                                                    </Link>
                           <Link href="/industry/industries/health-social-care" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Health and Social Care
-                          </Link>
-                        </p>
+                          </p>
+                                                    </Link>
+
                       </div>
                     </Collapsible>
                     <Collapsible
@@ -517,16 +534,19 @@ const FixedHeader = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
+                                                  <Link href="/product/appetiza" onClick={() => setShowMenu(false)}>
+
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/product/appetiza" onClick={() => setShowMenu(false)}>
                             Appetiza
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/product/career-fun" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             CareerFun
-                          </Link>
-                        </p>
+                          </p>
+                                                    </Link>
+
                       </div>
                     </Collapsible>
                     <Collapsible
@@ -558,41 +578,49 @@ const FixedHeader = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
+                                                  <Link href="/program/dialectics" onClick={() => setShowMenu(false)}>
+
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                          <Link href="/program/dialectics" onClick={() => setShowMenu(false)}>
                             Dialetics
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/program/leadership-summit" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Emerging Marketplace Leader
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/program/women-tech" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Women in Tech
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/program/sme-klinic" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             SME Klinic
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/program/ai-advantage" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             The AI Advantage
-                          </Link>
-                        </p>
-                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/program/sme-webinar" onClick={() => setShowMenu(false)}>
-                            SME Webinar Series
-                          </Link>
-                        </p>
+
                         <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            SME Webinar Series
+                          </p>
+                                                    </Link>
                           <Link href="/program/tech-achievers" onClick={() => setShowMenu(false)}>
+
+                        <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Tech Achievers Graduate Scheme
-                          </Link>
-                        </p>
+                          </p>
+                                                    </Link>
+
                       </div>
                     </Collapsible>
                     <Collapsible
@@ -625,26 +653,31 @@ const FixedHeader = () => {
                       }
                     >
                       <div className="bg-[#EFEFEF] divide-y">
+                                                  <Link href="/insight/news" onClick={() => setShowMenu(false)}>
+
                         <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
-                          <Link href="/insight/news" onClick={() => setShowMenu(false)}>
                             Newsroom
-                          </Link>
-                        </p>
-                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/insight/blogs" onClick={() => setShowMenu(false)}>
+
+                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                             Blogs
-                          </Link>
-                        </p>
-                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/insight/case-study" onClick={() => setShowMenu(false)}>
-                            Case Studies
-                          </Link>
-                        </p>
+
                         <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                            Case Studies
+                          </p>
+                                                    </Link>
                           <Link href="/careers" onClick={() => setShowMenu(false)}>
+
+                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                             Careers
-                          </Link>
-                        </p>
+                          </p>
+                                                    </Link>
+
                       </div>
                     </Collapsible>
                     <Collapsible
@@ -680,36 +713,43 @@ const FixedHeader = () => {
                         {/* <p className="pl-[10px] py-[20px] hover:text-[#E45F11]">
                         <Link href="/about">About Us</Link>
                       </p> */}
+                                                  <Link href="/about" onClick={() => setShowMenu(false)}>
+
                         <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
-                          <Link href="/about" onClick={() => setShowMenu(false)}>
                             Who We Are
-                          </Link>
-                        </p>
-                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/clients" onClick={() => setShowMenu(false)}>
+
+                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                             Our Clients
-                          </Link>
-                        </p>
-                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/team" onClick={() => setShowMenu(false)}>
+
+                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                             Our Team
-                          </Link>
-                        </p>
-                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/industry/projects" onClick={() => setShowMenu(false)}>
+
+                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                             Project Executed
-                          </Link>
-                        </p>
-                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                          </p>
+                                                    </Link>
                           <Link href="/award-recognition" onClick={() => setShowMenu(false)}>
-                            Award & Recognition
-                          </Link>
-                        </p>
+
                         <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
+                            Award & Recognition
+                          </p>
+                                                    </Link>
                           <Link href="/governance-culture" onClick={() => setShowMenu(false)}>
+
+                        <p className="ml-9 text-sm py-[20px] hover:text-[#E45F11]">
                             Governance & Culture
-                          </Link>
-                        </p>
+                          </p>
+                                                    </Link>
+
                       </div>
                     </Collapsible>
 
