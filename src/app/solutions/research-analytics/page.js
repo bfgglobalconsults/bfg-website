@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/research-analytic.jpg";
 import TopBanner from "../../../../public/assets/Research-and-analytics.png";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 import ResearchImage from "../../../../public/assets/sales-newbanner.jpg";
 import Simon from "../../../../public/assets/simon-adeh.png";
@@ -23,7 +23,10 @@ import AppraisalImg from "../../../../public/assets/appraisal-images.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
+  const benefitsRef = useRef(null);
+  const isInView = useInView(benefitsRef, { once: true, amount: 0.2 });
+
   const researchSlides = [
     {
       title: "Case Study Analysis",
@@ -38,7 +41,7 @@ const page = () => {
     {
       title: "Business Intelligence Research",
       content:
-        "Unlock the power of data-driven insights with our business research expertise. We combine rigorous methodologies, industry expertise, & analytical capabilities to deliver actionable findings that inform strategic decisions & drive business success.",
+        "Unlock the power of data-driven insights with our business research expertise. We combine rigorous methodologies, industry expertise, & analytical capabilities to deliver actionable findings that inform strategic decisions & drive business success.",
     },
     {
       title: "Market Feasibility & Analysis",
@@ -61,31 +64,59 @@ const page = () => {
         "Stay ahead of the curve with real-time insights into clients needs & satisfaction. Our research & analytics services help you predict, manage, & delight - shaping your services for future success.",
     },
   ];
+
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+    >
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-          Research
-        </span>
-        <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Research and Analytics
-          </h3>
-          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-            Utilise our Business Research and Analytics to help you make wiser
-            business decisions.
-          </p>
-        </div>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 1 }}
+        >
+          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+            Research
+          </span>
+          <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
+            <motion.h3 
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.3, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
+            >
+              Research and Analytics
+            </motion.h3>
+            <motion.p 
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.4, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
+            >
+              Utilise our Business Research and Analytics to help you make wiser
+              business decisions.
+            </motion.p>
+          </div>
+        </motion.div>
       </div>
+
       <div className="px-12">
-        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
+        <motion.div 
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 2.5, duration: 1 }}
+          className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
+        >
           <Image
             src={TopBanner}
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
-        </div>
+        </motion.div>
       </div>
+
       <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">
           <div className="w-full">
@@ -105,7 +136,12 @@ const page = () => {
           </div>
         </div>
         <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
-          <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+          <motion.div 
+            initial={{ x: -30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2.6, duration: 1 }}
+            className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg"
+          >
             <div className="my-4">
               <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
                 Focus Area
@@ -126,22 +162,32 @@ const page = () => {
                 className="w-full rounded-lg"
               />
             </div>
-          </div>
-          <div className="w-[100%] bg-[#041926] p-4  lg:w-[50%] flex flex-col gap-10">
+          </motion.div>
+          <motion.div 
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2.7, duration: 1 }}
+            className="w-[100%] bg-[#041926] p-4 lg:w-[50%] flex flex-col gap-10"
+          >
             <AnimatedItems slides={researchSlides} />
-          </div>
+          </motion.div>
         </div>
 
         <hr />
         <div className="p-[40px]">
-          <div className="my-[80px]">
+          <div ref={benefitsRef} className="my-[80px]">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Benefits
             </span>
             <div>
-              <h3 className="text-[#333] text-3xl my-8 font-semibold">
+              <motion.h3 
+                initial={{ y: 30, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-[#333] text-3xl my-8 font-semibold"
+              >
                 Service Benefits
-              </h3>
+              </motion.h3>
               <p className="text-[#999] text-xl my-2">
                 Discover how our personalized approach to service ensures your
                 unique needs are met, delivering exceptional results & long-term
@@ -165,7 +211,13 @@ const page = () => {
               </div>
             </div> */}
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-6">
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={Optimize}
@@ -185,9 +237,15 @@ const page = () => {
                     to drive innovation & efficiency
                   </p>
                 </div>
-              </div>
+              </motion.div>
               {/* second item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={MeasureImg}
@@ -207,9 +265,15 @@ const page = () => {
                     real-time data collection & analytical management.
                   </p>
                 </div>
-              </div>
+              </motion.div>
               {/* third item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <motion.div
+                initial={{ x: 30, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={ExperienceImg}
@@ -228,9 +292,15 @@ const page = () => {
                     questions in any language.{" "}
                   </p>
                 </div>
-              </div>
+              </motion.div>
               {/* fourth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={AppraisalImg}
@@ -250,9 +320,15 @@ const page = () => {
                     strengthen the operational connection of your organisation.{" "}
                   </p>{" "}
                 </div>
-              </div>
+              </motion.div>
               {/* fifth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <motion.div
+                initial={{ x: 30, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={PredictiveImg}
@@ -270,9 +346,15 @@ const page = () => {
                     proactive business strategies.{" "}
                   </p>{" "}
                 </div>
-              </div>
+              </motion.div>
               {/* sixth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 1 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={ImpactImg}
@@ -290,11 +372,17 @@ const page = () => {
                     business goals and strategies.
                   </p>{" "}
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           {/* portfolio */}
-          <div className="py-[100px]">
+          <motion.div 
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="py-[100px]"
+          >
             <div className="flex flex-col items-center lg:flex-row gap-8">
               <div className="w-[100%] lg:w-[40%]">
                 <Image
@@ -341,9 +429,15 @@ const page = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* service team */}
-          <div className="my-[80px]">
+          <motion.div 
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="my-[80px]"
+          >
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Service Team
             </span>
@@ -403,8 +497,14 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
+          </motion.div>
+          <motion.div 
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto"
+          >
             <div>
               <p className="text-center text-2xl">
                 Connect, collaborate, and drive innovation on your data insights
@@ -419,11 +519,11 @@ const page = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
-export default page;
+export default Page;
