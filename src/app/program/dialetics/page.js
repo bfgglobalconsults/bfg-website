@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import TopBanner from "../../../../public/assets/leadership-summit.png";
-import LeaderGroup from "../../../../public/assets/leadership-card.jpg";
-import Beauty from "../../../../public/assets/sme-woman.png";
+import TopBanner from "../../../../public/assets/dialetics.png";
+import DialeticGroup from "../../../../public/assets/dialetics-card.jpg";
 import Slides from "@/components/Slides";
 import ProgramModal from "@/components/ProgramModal";
 
@@ -33,7 +32,7 @@ const Page = () => {
           className=""
         >
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-            Leadership Summit
+            Dialetics
           </span>
           <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
             <motion.h3 
@@ -42,7 +41,7 @@ const Page = () => {
               transition={{ delay: 2.3, duration: 1 }}
               className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
             >
-              Emerging Marketplace Leadership Summit
+              Dialetics
             </motion.h3>
             <motion.p 
               initial={{ x: 50, opacity: 0 }}
@@ -50,7 +49,7 @@ const Page = () => {
               transition={{ delay: 2.4, duration: 1 }}
               className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
             >
-              Shaping the Future of Nigeria&apos;s Business Ecosystem
+              Fostering Intellectual Discourse and Innovation
             </motion.p>
           </div>
         </motion.div>
@@ -90,19 +89,22 @@ const Page = () => {
               className="w-[100%] lg:w-[60%]"
             >
               <p className="text-[#999] my-4">
-                              The Emerging Marketplace Leadership Summit, an annual event organized by BFG Consults, serves as a vital platform for dialogue among key stakeholders in Nigeria&apos;s marketplace. This summit brings together government officials, innovation leaders from the private sector, and representatives from civil society organizations to discuss pressing issues affecting various sectors and to propose actionable solutions.
-                          </p>
-              <p className="text-[#999] my-4">
-                
-                              In a rapidly changing economic landscape, collaboration is essential. The summit provides an opportunity for participants to share their insights, challenges, and success stories, fostering an environment of collective problem-solving. Each year, we curate a diverse agenda that addresses the most pertinent issues facing the Nigerian marketplace, including economic growth, regulatory frameworks, technological innovation, and sustainable development.
-                          </p>
-              <p className="text-[#999] my-4">
-               Our speakers include thought leaders and experts who are at the forefront of their fields, ensuring that discussions are informed by the latest research and real-world experiences. Participants will engage in panel discussions, workshops, and networking sessions designed to facilitate collaboration and inspire innovative thinking. 
+                Dialectics is an innovative discussion forum hosted by BFG Consults, designed to foster intellectual discourse and drive innovation through structured debate and dialogue. This program brings together thought leaders, industry experts, and forward-thinking professionals to explore complex business challenges and emerging trends in technology and management consulting.
               </p>
               <p className="text-[#999] my-4">
-              The Emerging Marketplace Leadership Summit is more than just a conference; it is a catalyst for change. By bringing together a wide array of stakeholders, we aim to create a shared vision for the future of Nigeria&apos;s marketplace.
-            </p>
+                Through carefully curated sessions, participants engage in meaningful discussions that challenge conventional thinking and encourage the exploration of new ideas. Our format combines elements of traditional debate with modern problem-solving methodologies, creating a unique environment where diverse perspectives converge to generate innovative solutions.
+              </p>
+              <p className="text-[#999] my-4">
+                Each Dialectics session focuses on a specific theme or challenge facing the business world today. Topics range from digital transformation and artificial intelligence to sustainable business practices and the future of work. By bringing together experts from various fields, we create a rich dialogue that bridges theory and practice.
+              </p>
+              <p className="text-[#999] my-4">
+                The program emphasizes active participation and intellectual rigor. Attendees are encouraged to question assumptions, present counterarguments, and work collaboratively to synthesize new insights. This approach not only enhances understanding but also develops critical thinking and communication skills essential for modern business leaders.
+              </p>
+              <p className="text-[#999] my-4">
+                Beyond the discussions themselves, Dialectics serves as a platform for building meaningful professional relationships. Participants connect with peers who share their commitment to intellectual growth and innovation, creating a network of forward-thinking professionals who continue to collaborate and exchange ideas long after each session concludes.
+              </p>
             </motion.div>
+
             <motion.div
               initial={{ x: 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -110,57 +112,45 @@ const Page = () => {
               onClick={handleOpenModal} 
               className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
             >
-               <Image
-                    src={LeaderGroup}
-                    alt="leader-image"
-                    className="w-full h-full object-fit rounded-r-md"
-                  />
-              {/* <div className="w-full h-[400px] shadow-lg rounded-xl relative">
-                <div className="bg-[#E26015] py-10 px-3 rounded-xl">
-                  <div className="w-[60%]">
-                    <h4 className="text-white font-semibold text-3xl lg:text-3xl">
-                      Shaping Nigeria&apos;s Business Future
-                    </h4>
-                    <p className="text-white text-sm my-4 pr-4">
-                      Aren&apos;t you ready to empower your business with
-                      knowledge
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-white py-4 px-3">
-                  <div className="w-[60%]">
-                    <ul className="text-[#333] list-disc marker:text-[#E26015] pl-4">
-                      <li>Various Insights, Strategies and Growth.</li>
-                      <li>Join Our SME Webinar Series Today!</li>
-                    </ul>
-                    <button className="bg-[#E26015] hover:bg-black my-4 text-white rounded-2xl py-2 px-4">
-                      Join Now!
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute top-0 right-0 w-[45%] h-full">
-                  <Image
-                    src={Beauty}
-                    alt="beauty-image"
-                    className="w-full h-full object-cover rounded-r-md"
-                  />
-                </div>
-              </div> */}
+              <Image
+                src={DialeticGroup}
+                alt="dialetics-image"
+                className="w-full h-full object-fit rounded-r-md"
+              />
             </motion.div>
           </div>
+
           <motion.div 
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 2.9, duration: 1 }}
             className=""
           >
-           
-            <p className="text-[#999] my-4">
-              Whether you are looking to improve your organization&apos;s AI capabilities or seeking to elevate your career prospects, the AI Advantage program offers the resources and knowledge needed to succeed.
+            <p className="font-bold text-lg my-4">
+              Program Benefits
             </p>
-             <p className="font-semibold my-4">
-           Join us at the next Emerging Marketplace Leadership Summit and be part of a movement dedicated to transforming Nigeria&apos;s marketplace for the better. Together, we can shape a future that is innovative, inclusive, and sustainable.
+            <ul className="list-disc pl-6 marker:text-[#999]">
+              <li className="text-[#999] my-2">
+                Engage in high-level intellectual discourse with industry leaders and experts
+              </li>
+              <li className="text-[#999] my-2">
+                Develop critical thinking and analytical skills through structured debate
+              </li>
+              <li className="text-[#999] my-2">
+                Gain fresh perspectives on complex business challenges
+              </li>
+              <li className="text-[#999] my-2">
+                Build a network of forward-thinking professionals
+              </li>
+              <li className="text-[#999] my-2">
+                Access cutting-edge insights on emerging trends and technologies
+              </li>
+            </ul>
+
+            <p className="font-semibold my-4">
+              Join our next Dialectics session and be part of a community dedicated to pushing the boundaries of conventional thinking and driving innovation through intellectual discourse.
             </p>
+
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -187,10 +177,10 @@ const Page = () => {
       <ProgramModal 
         isOpen={isModalOpen} 
         onClose={handleCloseModal}
-        program="EML Summit"
+        program="Dialetics"
       />
     </motion.div>
   );
 };
 
-export default Page;
+export default Page; 

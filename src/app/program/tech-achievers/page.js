@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import TopBanner from "../../../../public/assets/tech-achiever.jpg";
 import SmeGroup from "../../../../public/assets/achiever-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
@@ -19,22 +20,47 @@ const Page = () => {
   };
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+    >
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <div className="">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 1 }}
+          className=""
+        >
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Tech Achiever
           </span>
           <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-            <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-Tech Achievers Graduate Scheme
-            </h3>
-            <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+            <motion.h3 
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.3, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
+            >
+              Tech Achievers Graduate Scheme
+            </motion.h3>
+            <motion.p 
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.4, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
+            >
               Peer-to-Peer Learning for SME Leaders
-            </p>
+            </motion.p>
           </div>
-        </div>
-        <div className="px-1 py-12">
+        </motion.div>
+
+        <motion.div 
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 2.5, duration: 1 }}
+          className="px-1 py-12"
+        >
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -42,16 +68,27 @@ Tech Achievers Graduate Scheme
               className="w-full h-full object-cover rounded-xl"
             />
           </div>
-        </div>
+        </motion.div>
+
         <div className="py-[1px] lg:py-[10px]">
           <div className="p-2 lg:p-[40px]">
-            <div className="my-4">
+            <motion.div 
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 2.6, duration: 1 }}
+              className="my-4"
+            >
               <Slides />
-            </div>
+            </motion.div>
           </div>
 
           <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
-            <div className="w-[100%] lg:w-[60%]">
+            <motion.div 
+              initial={{ x: -30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.7, duration: 1 }}
+              className="w-[100%] lg:w-[60%]"
+            >
               <p className="text-[#999] my-4">
                 The Tech Achievers Graduate Scheme is an innovative internship and mentorship program designed for youth, including students and recent graduates, eager to launch their careers in the technology and consulting sectors. Spanning three months, this program provides selected candidates with hands-on experience within various consulting units of our management consulting firm.
 
@@ -68,8 +105,14 @@ Successful candidates will have the opportunity to work on impactful projects, c
 
             </p>
               
-            </div>
-            <div  onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
+            </motion.div>
+            <motion.div
+              initial={{ x: 30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.8, duration: 1 }}
+              onClick={handleOpenModal} 
+              className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
+            >
                <Image
                     src={SmeGroup}
                     alt="beauty-image"
@@ -106,9 +149,14 @@ Successful candidates will have the opportunity to work on impactful projects, c
                   />
                 </div>
               </div> */}
-            </div>
+            </motion.div>
           </div>
-          <div className="">
+          <motion.div 
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2.9, duration: 1 }}
+            className=""
+          >
            
           
             <p className="font-bold text-lg my-4">
@@ -140,7 +188,9 @@ Hands-On Experience: Gain practical experience by working directly within variou
 
              <p className="font-semibold my-4">
 Are you ready to jumpstart your career in technology and consulting? Don&apos;t miss this opportunity to develop your skills and gain invaluable experience. Apply now to be part of the Tech Achievers Graduate Scheme and take the first step towards a successful career!            </p>
-            <button 
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={handleOpenModal}
               className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl hover:bg-[#E26015] transition-colors duration-300"
             >
@@ -156,8 +206,8 @@ Are you ready to jumpstart your career in technology and consulting? Don&apos;t 
                   <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                 </svg>
               </span>
-            </button>
-          </div>
+            </motion.button>
+          </motion.div>
         </div>
       </div>
 
@@ -166,7 +216,7 @@ Are you ready to jumpstart your career in technology and consulting? Don&apos;t 
         onClose={handleCloseModal}
         program="Tech Achievers Graduate Scheme"
       />
-    </>
+    </motion.div>
   );
 };
 

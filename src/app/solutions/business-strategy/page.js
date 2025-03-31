@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 // import Banner from "../../../../public/assets/business-strategy.jpg";
 
@@ -19,7 +21,10 @@ import ServiceImage2 from "../../../../public/assets/service-image2.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
+  const benefitsRef = useRef(null);
+  const isInView = useInView(benefitsRef, { once: true, amount: 0.2 });
+
   const BusinessSlides = [
     {
       title: "Business Process and Systems Engineering",
@@ -52,31 +57,58 @@ const page = () => {
         "This includes planning & executing changes to systems, processes, & organisational structure in a way that minimise disruption & maximise benefits.",
     },
   ];
+
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+    >
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-          Strategy
-        </span>
-        <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Strategy & Operations Transformation
-          </h3>
-          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-            Streamline your operations, optimize your strategy, & achieve your
-            goals
-          </p>
-        </div>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 1 }}
+        >
+          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+            Strategy
+          </span>
+          <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
+            <motion.h3 
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.3, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
+            >
+              Strategy & Operations Transformation
+            </motion.h3>
+            <motion.p 
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.4, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
+            >
+              Streamline your operations, optimize your strategy, & achieve your goals
+            </motion.p>
+          </div>
+        </motion.div>
       </div>
+
       <div className="px-12">
-        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
+        <motion.div 
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 2.5, duration: 1 }}
+          className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
+        >
           <Image
             src={TopBanner}
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
-        </div>
+        </motion.div>
       </div>
+
       <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">
           <div className="w-full">
@@ -96,7 +128,12 @@ const page = () => {
           </div>
         </div>
         <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
-          <div className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg">
+          <motion.div 
+            initial={{ x: -30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2.6, duration: 1 }}
+            className="w-[100%] lg:w-[50%] bg-[#041926] p-10 rounded-lg"
+          >
             <div className="my-4">
               <span className="p-3 rounded-3xl bg-white border-2 font-semibold">
                 Focus Area
@@ -118,26 +155,35 @@ const page = () => {
                 className="w-full rounded-lg"
               />
             </div>
-          </div>
-          <div className="w-[100%] bg-[#041926] p-4 lg:w-[50%] flex flex-col gap-10">
+          </motion.div>
+          <motion.div 
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2.7, duration: 1 }}
+            className="w-[100%] bg-[#041926] p-4 lg:w-[50%] flex flex-col gap-10"
+          >
             <AnimatedItems slides={BusinessSlides} />
-          </div>
+          </motion.div>
         </div>
 
         <hr />
         <div className="p-[40px]">
-          <div className="my-8">
+          <div ref={benefitsRef} className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Benefits
             </span>
             <div>
-              <h3 className="text-[#333] text-3xl my-8 font-semibold">
+              <motion.h3 
+                initial={{ y: 30, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-[#333] text-3xl my-8 font-semibold"
+              >
                 Service Benefits
-              </h3>
+              </motion.h3>
               <p className="text-[#999] text-xl my-2">
-                Experience how our tailored business strategies & operational
-                expertise deliver transformative outcomes, driving long-term
-                success & sustainable growth
+                Experience how our tailored business strategies & operational expertise 
+                deliver transformative outcomes, driving long-term success & sustainable growth
               </p>
             </div>
             {/* <div className="w-full flex flex-col lg:flex-row gap-10">
@@ -157,7 +203,13 @@ const page = () => {
               </div>
             </div> */}
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={Efficiency}
@@ -167,18 +219,21 @@ const page = () => {
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Increased Efficiency & Productivity
+                    Improved Efficiency
                   </h4>
                   <p className="text-[#999]">
-                    By streamlining operations & identifying areas for
-                    improvement, our business strategy & operations service
-                    helps organisations to increase their overall efficiency &
-                    productivity.
+                    Streamline operations, reduce waste, and optimize resource allocation
+                    through data-driven insights and proven methodologies.
                   </p>
                 </div>
-              </div>
-              {/* second item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              </motion.div>
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={Cost}
@@ -188,17 +243,21 @@ const page = () => {
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Cost Savings
+                    Cost Optimization
                   </h4>
                   <p className="text-[#999]">
-                    Identifying & implementing cost-saving measures can help
-                    your organisation reduce expenses & increase its bottom
-                    line.
+                    Identify and implement cost-saving opportunities while maintaining or
+                    improving service quality and operational effectiveness.
                   </p>
                 </div>
-              </div>
-              {/* third item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              </motion.div>
+              <motion.div
+                initial={{ x: 30, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={Decision}
@@ -208,17 +267,21 @@ const page = () => {
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Improved Decision-Making
+                    Better Decision Making
                   </h4>
                   <p className="text-[#999]">
-                    Access to accurate, up-to-date information & expert analysis
-                    helps our clients make more informed & effective decisions
-                    for their businesses.
+                    Access data-driven insights and expert analysis to make informed
+                    strategic decisions that drive business growth.
                   </p>
                 </div>
-              </div>
-              {/* fourth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              </motion.div>
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={Advantage}
@@ -228,16 +291,21 @@ const page = () => {
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Enhanced Competitive Advantage
+                    Competitive Advantage
                   </h4>
                   <p className="text-[#999]">
-                    Identifying & leveraging competitive advantages helps our
-                    clients gain an edge over their rivals in the marketplace.
-                  </p>{" "}
+                    Stay ahead of market trends and competition through innovative
+                    strategies and operational excellence.
+                  </p>
                 </div>
-              </div>
-              {/* fifth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              </motion.div>
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={Scalabity}
@@ -250,14 +318,18 @@ const page = () => {
                     Greater Scalability
                   </h4>
                   <p className="text-[#999]">
-                    Developing scalable systems & processes, also helps leaders
-                    & managers of organisations prepare for & manage growth in
-                    their business.{" "}
-                  </p>{" "}
+                    Developing scalable systems & processes, also helps leaders & managers
+                    of organisations prepare for & manage growth in their business.
+                  </p>
                 </div>
-              </div>
-              {/* sixth item */}
-              <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
+              </motion.div>
+              <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                animate={isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
+                transition={{ duration: 0.8, delay: 1 }}
+                whileHover={{ scale: 1.05 }}
+                className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
+              >
                 <div className="w-full h-[200px]">
                   <Image
                     src={Operations}
@@ -270,16 +342,21 @@ const page = () => {
                     Streamlined Operational Processes
                   </h4>
                   <p className="text-[#999]">
-                    Enhance workflow efficiency through process optimization,
-                    reducing redundancies, and fostering a more agile
-                    operational environment.{" "}
-                  </p>{" "}
+                    Enhance workflow efficiency through process optimization, reducing
+                    redundancies, and fostering a more agile operational environment.
+                  </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           {/* portfolio */}
-          <div className="py-[100px]">
+          <motion.div 
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="py-[100px]"
+          >
             <div className="flex flex-col items-center lg:flex-row gap-8">
               <div className="w-[100%] lg:w-[40%]">
                 <Image
@@ -327,9 +404,15 @@ const page = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* service team */}
-          <div className="my-14">
+          <motion.div 
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="my-[80px]"
+          >
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Service Team
             </span>
@@ -396,8 +479,14 @@ const page = () => {
             </div>
 
             {/* contact */}
-          </div>
-          <div className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto">
+          </motion.div>
+          <motion.div 
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto"
+          >
             <div>
               <p className="text-center text-2xl">
                 Connect, collaborate, and drive innovation from anywhere as you
@@ -412,11 +501,11 @@ const page = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 
-export default page;
+export default Page;

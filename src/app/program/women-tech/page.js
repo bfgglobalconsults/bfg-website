@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import TopBanner from "../../../../public/assets/women-tech.png";
 import WomenGroup from "../../../../public/assets/women-card.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
@@ -19,22 +20,47 @@ const Page = () => {
   };
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+    >
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <div className="">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 1 }}
+          className=""
+        >
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Women in Tech
           </span>
           <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-            <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            <motion.h3 
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.3, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
+            >
               Women in Tech
-            </h3>
-            <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
-                          Bridging the Gender Gap in the Digital Economy
-                      </p>
+            </motion.h3>
+            <motion.p 
+              initial={{ x: 50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.4, duration: 1 }}
+              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
+            >
+              Bridging the Gender Gap in the Digital Economy
+            </motion.p>
           </div>
-        </div>
-        <div className="px-1  py-12">
+        </motion.div>
+
+        <motion.div 
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 2.5, duration: 1 }}
+          className="px-1 py-12"
+        >
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -42,16 +68,27 @@ const Page = () => {
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
-        </div>
+        </motion.div>
+
         <div className="py-[1px] lg:py-[10px]">
           <div className="p-2 lg:p-[40px]">
-            <div className="my-4">
+            <motion.div 
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 2.6, duration: 1 }}
+              className="my-4"
+            >
               <Slides />
-            </div>
+            </motion.div>
           </div>
 
           <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
-            <div className="w-[100%] lg:w-[60%]">
+            <motion.div 
+              initial={{ x: -30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.7, duration: 1 }}
+              className="w-[100%] lg:w-[60%]"
+            >
               <p className="text-[#999] my-4">
                The Women in Tech program, developed by BFG Consults, is a transformative workshop aimed at closing the gender gap in technology skills optimization in Nigeria. Recognizing the critical need for increased female representation in tech, this initiative offers a three-month intensive training course designed to equip women with both coding and non-coding skills essential for thriving in today&apos;s digital economy.
               </p>
@@ -64,8 +101,14 @@ const Page = () => {
                <p className="text-[#999] my-4">
              In addition to skill development, the Women in Tech program emphasizes the importance of community and mentorship. Participants have the opportunity to connect with industry leaders and fellow trainees, fostering relationships that can lead to career advancement and collaboration.
                       </p>
-            </div>
-            <div  onClick={handleOpenModal} className="w-[100%] lg:w-[40%] relative">
+            </motion.div>
+            <motion.div
+              initial={{ x: 30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 2.8, duration: 1 }}
+              onClick={handleOpenModal} 
+              className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
+            >
               <Image
                 src={WomenGroup}
                 alt="klinic-image"
@@ -102,16 +145,23 @@ const Page = () => {
                   />
                 </div>
               </div> */}
-            </div>
+            </motion.div>
           </div>
-          <div className="">
+          <motion.div 
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2.9, duration: 1 }}
+            className=""
+          >
            
                        <p className="text-[#999] my-4">
             By the end of the program, participants emerge with a certification that validates their skills, equipping them to pursue opportunities in the tech sector with confidence. This is aimed at creating a pipeline of skilled women who can contribute meaningfully to the technology landscape in Nigeria.
             </p>
 
             <p className="font-semibold my-4">Join us in our mission to bridge the gender gap in technology and empower women to take their rightful place in this dynamic field. Together, we can inspire the next generation of female tech leaders and innovators.</p>
-            <button 
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={handleOpenModal}
               className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl hover:bg-[#E26015] transition-colors duration-300"
             >
@@ -127,8 +177,8 @@ const Page = () => {
                   <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                 </svg>
               </span>
-            </button>
-          </div>
+            </motion.button>
+          </motion.div>
         </div>
       </div>
 
@@ -137,7 +187,7 @@ const Page = () => {
         onClose={handleCloseModal}
         program="Women in Tech"
       />
-    </>
+    </motion.div>
   );
 };
 
