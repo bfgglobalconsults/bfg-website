@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/research-analytic.jpg";
-import TopBanner from "../../../../public/assets/Research-banner.jpg";
+import TopBanner from "../../../../public/assets/research-banner.jpg";
 import { motion, useInView } from "framer-motion";
 
 import ResearchImage from "../../../../public/assets/sales-newbanner.jpg";
@@ -66,55 +66,30 @@ const Page = () => {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
-    >
+    <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 2.2, duration: 1 }}
-        >
-          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-            Research
-          </span>
-          <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-            <motion.h3 
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.3, duration: 1 }}
-              className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
-            >
-              Research and Analytics
-            </motion.h3>
-            <motion.p 
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.4, duration: 1 }}
-              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
-            >
-              Utilise our Business Research and Analytics to help you make wiser
-              business decisions.
-            </motion.p>
-          </div>
-        </motion.div>
+        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          Research
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
+            Research and Analytics
+          </h3>
+          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+            Utilise our Business Research and Analytics to help you make wiser
+            business decisions.
+          </p>
+        </div>
       </div>
 
       <div className="px-12">
-        <motion.div 
-          initial={{ scale: 0.95, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 2.5, duration: 1 }}
-          className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
-        >
+        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={TopBanner}
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
-        </motion.div>
+        </div>
       </div>
 
       <div className="py-[1px] lg:py-[30px]">
@@ -136,7 +111,7 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full bg-[#041926] rounded-lg flex flex-col lg:flex-row gap-4 my-8">
-          <motion.div 
+          <motion.div
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 2.6, duration: 1 }}
@@ -163,7 +138,7 @@ const Page = () => {
               />
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 2.7, duration: 1 }}
@@ -180,9 +155,11 @@ const Page = () => {
               Benefits
             </span>
             <div>
-              <motion.h3 
+              <motion.h3
                 initial={{ y: 30, opacity: 0 }}
-                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                animate={
+                  isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }
+                }
                 transition={{ duration: 0.8 }}
                 className="text-[#333] text-3xl my-8 font-semibold"
               >
@@ -213,7 +190,9 @@ const Page = () => {
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-6">
               <motion.div
                 initial={{ x: -30, opacity: 0 }}
-                animate={isInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
+                animate={
+                  isInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }
+                }
                 transition={{ duration: 0.8 }}
                 whileHover={{ scale: 1.05 }}
                 className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
@@ -241,7 +220,9 @@ const Page = () => {
               {/* second item */}
               <motion.div
                 initial={{ y: 30, opacity: 0 }}
-                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                animate={
+                  isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }
+                }
                 transition={{ duration: 0.8, delay: 0.2 }}
                 whileHover={{ scale: 1.05 }}
                 className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
@@ -269,7 +250,9 @@ const Page = () => {
               {/* third item */}
               <motion.div
                 initial={{ x: 30, opacity: 0 }}
-                animate={isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
+                animate={
+                  isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }
+                }
                 transition={{ duration: 0.8, delay: 0.4 }}
                 whileHover={{ scale: 1.05 }}
                 className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
@@ -296,7 +279,9 @@ const Page = () => {
               {/* fourth item */}
               <motion.div
                 initial={{ y: 30, opacity: 0 }}
-                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                animate={
+                  isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }
+                }
                 transition={{ duration: 0.8, delay: 0.6 }}
                 whileHover={{ scale: 1.05 }}
                 className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
@@ -324,7 +309,9 @@ const Page = () => {
               {/* fifth item */}
               <motion.div
                 initial={{ x: 30, opacity: 0 }}
-                animate={isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }}
+                animate={
+                  isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }
+                }
                 transition={{ duration: 0.8, delay: 0.8 }}
                 whileHover={{ scale: 1.05 }}
                 className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
@@ -350,7 +337,9 @@ const Page = () => {
               {/* sixth item */}
               <motion.div
                 initial={{ y: 30, opacity: 0 }}
-                animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
+                animate={
+                  isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }
+                }
                 transition={{ duration: 0.8, delay: 1 }}
                 whileHover={{ scale: 1.05 }}
                 className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10 border rounded-2xl shadow-lg"
@@ -376,7 +365,7 @@ const Page = () => {
             </div>
           </div>
           {/* portfolio */}
-          <motion.div 
+          <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -431,7 +420,7 @@ const Page = () => {
             </div>
           </motion.div>
           {/* service team */}
-          <motion.div 
+          <motion.div
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -498,7 +487,7 @@ const Page = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -522,7 +511,7 @@ const Page = () => {
           </motion.div>
         </div>
       </div>
-    </motion.div>
+    </>
   );
 };
 
