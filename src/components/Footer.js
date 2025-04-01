@@ -189,6 +189,11 @@ const Footer = () => {
 
               <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Solutions</h3>
+                 <p className="my-2 text-sm hover:text-[#E26015]">
+                  <Link href="/solutions/information-technology">
+                    Technology & Software <br/> Development 
+                  </Link>
+                </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
                   <Link href="/solutions/research-analytics">
                     Research & Analytics
@@ -204,11 +209,7 @@ const Footer = () => {
                     Training & Development
                   </Link>
                 </p>
-                <p className="my-2 text-sm hover:text-[#E26015]">
-                  <Link href="/solutions/information-technology">
-                    Technology & Software <br/> Development 
-                  </Link>
-                </p>
+               
               </div>
 
               <div className="text-white w-[40%] lg:w-[23%] my-4">

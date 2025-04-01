@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import RealEstateImg from "../../../../../public/assets/realestate-img.png";
+import RealEstateImg from "../../../../../public/assets/realestate-img.jpg";
 import RealImage from "../../../../../public/assets/realestate-image.png";
 import Slides from "@/components/Slides";
 

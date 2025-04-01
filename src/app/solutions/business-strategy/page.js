@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import TopBanner from "../../../../public/assets/business-strategy-banner.jpg";
 import BusinessAnalyst from "../../../../public/assets/business-analyst-new.png";
-import BusinessImage from "../../../../public/assets/business-image.png";
+import BusinessImage from "../../../../public/assets/black-business.jpg";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Ifeoma from "../../../../public/assets/ifeoma.png";
 import Efficiency from "../../../../public/assets/efficiency.png";
@@ -59,54 +59,37 @@ const Page = () => {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
-    >
+    <>
+    
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 2.2, duration: 1 }}
-        >
+       
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Strategy
           </span>
           <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-            <motion.h3 
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.3, duration: 1 }}
+            <h3 
+              
               className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
             >
               Strategy & Operations Transformation
-            </motion.h3>
-            <motion.p 
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.4, duration: 1 }}
-              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
+            </h3>
+            <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
             >
               Streamline your operations, optimize your strategy, & achieve your goals
-            </motion.p>
+            </p>
           </div>
-        </motion.div>
-      </div>
+        </div>
+    
 
       <div className="px-12">
-        <motion.div 
-          initial={{ scale: 0.95, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 2.5, duration: 1 }}
-          className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
+        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
         >
           <Image
             src={TopBanner}
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
-        </motion.div>
+        </div>
       </div>
 
       <div className="py-[1px] lg:py-[30px]">
@@ -504,7 +487,7 @@ const Page = () => {
           </motion.div>
         </div>
       </div>
-    </motion.div>
+      </>
   );
 };
 

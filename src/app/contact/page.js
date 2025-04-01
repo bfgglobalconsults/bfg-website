@@ -35,7 +35,7 @@ const Page = () => {
         "We adhere to strict confidentiality and data security policies to protect client information. Our team follows industry best practices, including the use of secure communication channels, encrypted data storage, and compliance with relevant data protection regulations. Non-disclosure agreements (NDAs) are also standard in our engagements to safeguard sensitive business information.",
     },
     {
-      title: "Measure experience with clients",
+      title: "How do you measure experience with clients?",
       content:
         "We measure client experience through regular feedback, project outcomes, and performance metrics. Client satisfaction surveys, case studies, and key performance indicators (KPIs) help us continuously improve our services. Our goal is to build long-term partnerships by delivering measurable results and exceeding client expectations.",
     },
@@ -458,7 +458,7 @@ const Page = () => {
                   </p>
                   <div className="flex justify-center my-3">
                     <button className="border border-[#E26015] hover:bg-[#E26015] hover:text-white font-semibold p-2 rounded-2xl">
-                      Ask a Question
+                     <a href="mailto:info@bfgconsults.com">Ask a Question</a> 
                     </button>
                   </div>
                 </div>

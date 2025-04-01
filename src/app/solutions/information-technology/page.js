@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/information-technology.jpg";
 import Accordion from "@/components/Accordion";
-import TopBanner from "../../../../public/assets/it-banner.jpeg";
+import TopBanner from "../../../../public/assets/it-banner.jpg";
 
 import ItImage from "../../../../public/assets/it-images.png";
 import Avatar from "../../../../public/assets/new-avatar.png";
@@ -57,40 +57,22 @@ const Page = () => {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
-    >
+    <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 2.2, duration: 1 }}
-        >
+        
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Technology
           </span>
           <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-            <motion.h3 
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.3, duration: 1 }}
-              className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
-            >
+            <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
               Technology & Software
-            </motion.h3>
-            <motion.p 
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.4, duration: 1 }}
-              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
-            >
+            </h3>
+            <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
               Innovative solutions, secure technology, & unparalleled support for
               your business
-            </motion.p>
+            </p>
           </div>
-        </motion.div>
+        
       </div>
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
@@ -526,7 +508,7 @@ const Page = () => {
           </motion.div>
         </div>
       </div>
-    </motion.div>
+    </>
   );
 };
 

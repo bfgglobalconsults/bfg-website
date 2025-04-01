@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TouristImg from "../../../../../public/assets/hospitality-tourism.jpg";
-import TourismImage from "../../../../../public/assets/tourism-image.png";
+import TourismImage from "../../../../../public/assets/hospitality-image.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -71,7 +71,7 @@ const page = () => {
                 areas
               </p>
               <div className="w-full">
-                <Image src={TourismImage} alt="it-image" className="w-full" />
+                <Image src={TourismImage} alt="it-image" className="w-full rounded-lg" />
               </div>
             </div>
             <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">
