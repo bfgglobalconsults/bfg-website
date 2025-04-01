@@ -6,7 +6,7 @@ export const product_links = [
       },
       {
         id: 2,
-        label: "Careerfun",
+        label: "CareerFun",
         link: "/product/career-fun",
       },
      

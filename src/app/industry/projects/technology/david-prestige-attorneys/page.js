@@ -2,7 +2,7 @@ import Slides from "@/components/Slides";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FirstNews from "../../../../../../public/assets/david-presage-web.jpg";
+import FirstNews from "../../../../../../public/assets/law-firm.jpg";
 const page = () => {
   return (
     <>

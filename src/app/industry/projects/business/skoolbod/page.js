@@ -99,16 +99,7 @@ const page = () => {
                 clarity hindered engagement and limited Skoolbod&apos;s ability
                 to stand out in a competitive market.
               </p>
-              <br />
-              <p className="text-lg text-[#9b8b8b]">
-                However, market entry posed several challenges, including
-                identifying reliable local partners, navigating complex
-                regulatory requirements, and assessing the industry&apos;s
-                readiness for large-scale PET recycling. Our objective was to
-                evaluate the current state of Nigeria&apos;s PET recycling
-                sector, identify a suitable local partner, and develop practical
-                strategies for MECEN&apos;s successful market integration.
-              </p>
+             
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>

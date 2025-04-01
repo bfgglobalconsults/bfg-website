@@ -28,7 +28,7 @@ const AnimatedItems = ({slides}) => {
           freeMode={true}
           breakpoints={{
             0: {
-              slidesPerView: "auto",
+              slidesPerView: 3,
               direction: "vertical",
                spaceBetween: 20,
               scrollbar: true,
@@ -70,7 +70,7 @@ const AnimatedItems = ({slides}) => {
                 className="!h-auto mb-4"
                 style={{ height: 'auto' }}
               >
-                <div className="w-full flex-shrink-0">
+                <div className="w-full flex-shrink-0 ml-2">
                   <div className="w-[95%] mx-auto p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div className="flex gap-4">
                       <div className="flex-1">
@@ -83,7 +83,7 @@ const AnimatedItems = ({slides}) => {
               </SwiperSlide>
             ))}
           </div>
-          <div className="swiper-scrollbar !left-0 !w-[8px] !bg-gray-200/50"></div>
+          <div className="swiper-scrollbar !left-0 !w-[8px] !bg-gray-200 "></div>
         </Swiper>
       </div>
     </div>

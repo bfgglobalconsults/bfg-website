@@ -14,7 +14,7 @@ const page = () => {
     <>
       <div className="lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-          Our Team
+          Our Projects
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">

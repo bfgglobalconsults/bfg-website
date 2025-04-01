@@ -79,10 +79,10 @@ const page = () => {
                     <div className="w-full flex flex-wrap gap-8">
                       <div className="w-[100%] lg:w-[40%] p-2 border border-[#F7F7F8] bg-[#FCFCFD] rounded-lg shadow-md">
                         <h3 className="text-lg text-[#222] font-semibold my-2">
-                          A Clear Organizational Structure
+                          Our Clear Organizational Structure
                         </h3>
                         <p className="text-[#999]">
-                          A well-defined hierarchy ensures seamless
+                          Our well-defined hierarchy ensures seamless
                           communication and decision-making, from the Managing
                           Partner & CEO to department heads, unit leaders, and
                           staff.

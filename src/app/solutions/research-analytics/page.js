@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/research-analytic.jpg";
-import TopBanner from "../../../../public/assets/Research-and-analytics.png";
+import TopBanner from "../../../../public/assets/Research-banner.jpg";
 import { motion, useInView } from "framer-motion";
 
 import ResearchImage from "../../../../public/assets/sales-newbanner.jpg";
