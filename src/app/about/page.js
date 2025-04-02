@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <>
       
-        <div className="lg:mt-[150px] p-6 lg:p-12">
+        <div className="lg:mt-[150px] p-12">
           
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               About Us

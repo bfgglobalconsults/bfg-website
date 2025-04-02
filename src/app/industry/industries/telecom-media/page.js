@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TelecomMediaImg from "../../../../../public/assets/telecom-banner.png";
-import TelecomImage from "../../../../../public/assets/telecom-card.png";
+import TelecomImage from "../../../../../public/assets/telecom-img-card.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -58,7 +58,7 @@ const page = () => {
                 <Image
                   src={TelecomImage}
                   alt="telecom-image"
-                  className="w-full"
+                  className="w-full rounded-xl"
                 />
               </div>
             </div>

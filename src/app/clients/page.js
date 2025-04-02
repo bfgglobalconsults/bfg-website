@@ -1,6 +1,6 @@
 import React from "react";
 
-import Banner from "../../../public/assets/teams-banner.png";
+import Banner from "../../../public/assets/our-clients.jpg";
 import Image from "next/image";
 import OurStand from "@/components/OurStand";
 import DMJTravel from "../../../public/assets/dmj.png";

@@ -467,7 +467,7 @@ const Page = () => {
                     alt="md"
                     className="w-full h-full object-cover"
                   />
-                  <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
+                  <div className="bg-white w-[250px] p-4 shadow-md">
                     <h3 className="font-semibold text-lg">
                       Jesunifemi Jeremiah Oluwafemi
                     </h3>
