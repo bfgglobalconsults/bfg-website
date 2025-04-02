@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import NonGovtImg from "../../../../../public/assets/non-profit-vendor-scaled.jpg";
-import NgoImage from "../../../../../public/assets/ngo-img.png";
+import NgoImage from "../../../../../public/assets/ngo-pic.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -70,7 +70,7 @@ const page = () => {
                 make a meaningful difference in key areas{" "}
               </p>
               <div className="w-full">
-                <Image src={NgoImage} alt="it-image" className="w-full" />
+                <Image src={NgoImage} alt="it-image" className="w-full rounded-xl" />
               </div>
             </div>
             <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">

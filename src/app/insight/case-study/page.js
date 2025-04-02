@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Banner from "../../../../public/assets/case-study.jpg";
+import Banner from "../../../../public/assets/case-studies.jpg";
 import Slides from "@/components/Slides";
 import Technology from "../../../../public/assets/technology-software1.png";
 import Business from "../../../../public/assets/business-strategy1.jpg";
