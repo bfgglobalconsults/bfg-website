@@ -441,7 +441,7 @@ const Page = () => {
 
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="flex flex-col mb-12">
-                <div className="w-[250px] h-[250px] aspect-square my-8 bg-[#B0D4EA]">
+                <div className="w-[250px] h-[250px] aspect-square my-14 bg-[#B0D4EA]">
                   <Image
                     src={Bradford}
                     alt="md"
@@ -461,7 +461,7 @@ const Page = () => {
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] my-8 bg-[#B0D4EA]">
+                <div className="w-[250px] h-[250px] my-14 bg-[#B0D4EA]">
                   <Image
                     src={Jeremiah}
                     alt="md"
