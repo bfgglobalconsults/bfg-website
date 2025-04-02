@@ -447,7 +447,7 @@ const Page = () => {
                     alt="md"
                     className="w-full h-full object-cover"
                   />
-                  <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
+                  <div className="bg-white w-[250px] p-4 shadow-md">
                     <h3 className="font-semibold text-lg">David U. Bradford</h3>
                     <p className="text-[#E45F11]">
                       Senior Software Developer/Technology Analyst
@@ -491,7 +491,7 @@ const Page = () => {
             viewport={{ once: true }}
             className="w-[100%] lg:w-[60%] flex justify-center pt-14 my-14 mx-auto"
           >
-            <div>
+            <div className="my-4">
               <p className="text-center text-2xl">
                 Connect, collaborate, and innovate from anywhere as you drive
                 digital transformation with our Technology & Software
