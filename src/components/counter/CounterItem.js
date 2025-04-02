@@ -10,11 +10,11 @@ const CounterItem = ({ end, label, duration = 2000 }) => {
 
   return (
     <div>
-      <h3 className="text-4xl text-white font-bold">
+      <h3 className="text-4xl text-white text-center font-bold">
         {count}
         +
       </h3>
-      <p className="text-white">{label}</p>
+      <p className="text-white text-center">{label}</p>
     </div>
   )
 }
