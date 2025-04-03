@@ -249,7 +249,7 @@ const Footer = () => {
               <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">SaaS Products</h3>
                <Link href="/product/appetiza"> <p className="my-2 text-sm hover:text-[#E26015]">Appetiza</p></Link>
-               <Link href="/product/career-fun"> <p className="my-2 text-sm hover:text-[#E26015]">Careerfun</p></Link>
+               <Link href="/product/career-fun"> <p className="my-2 text-sm hover:text-[#E26015]">CareerFun</p></Link>
               </div>
 
               <div className="text-white w-[50%] lg:w-[23%] my-4">
