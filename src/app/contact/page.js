@@ -76,7 +76,7 @@ const Page = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 2.5 }}
           >
-        <div className="lg:mt-[150px] p-12">
+      <div className="lg:mt-[150px] p-12">
           <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -102,7 +102,7 @@ const Page = () => {
             our services, want to discuss a potential collaboration, or just
             want to say hello, our team is ready to connect with you.
           </motion.p>
-            </div>
+        </div>
             </motion.div>
 
            <motion.div 
@@ -117,7 +117,7 @@ const Page = () => {
             alt="contact-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
-            </div>
+        </div>
             </motion.div>
 
         <div ref={cardsRef} className="flex flex-wrap gap-10 mx-auto my-6">
@@ -510,7 +510,7 @@ const Page = () => {
         </div>
 
       
-        </div>
+            </div>
           </motion.div>
         
     </>

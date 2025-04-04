@@ -32,6 +32,7 @@ const AnimatedItems = ({slides}) => {
               direction: "vertical",
                spaceBetween: 20,
                 autoplay: false,
+                 mousewheel: { forceToAxis: true },
             },
             768: {
               slidesPerView: "auto",

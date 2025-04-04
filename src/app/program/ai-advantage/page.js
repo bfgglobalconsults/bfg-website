@@ -20,47 +20,23 @@ function Page() {
   };
   
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
-    >
+    <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 2.2, duration: 1 }}
-          className=""
-        >
+       
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             AI Advantage
           </span>
           <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
-            <motion.h3 
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.3, duration: 1 }}
-              className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
-            >
+            <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
               The AI Advantage
-            </motion.h3>
-            <motion.p 
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 2.4, duration: 1 }}
-              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
-            >
+            </h3>
+            <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
               Master AI for Business Growth & Efficiency
-            </motion.p>
+            </p>
           </div>
-        </motion.div>
+      
 
-        <motion.div 
-          initial={{ scale: 0.95, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 2.5, duration: 1 }}
-          className="px-1 py-12"
-        >
+        <div className="px-1 py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
               src={TopBanner}
@@ -68,7 +44,7 @@ function Page() {
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
-        </motion.div>
+        </div>
 
         <div className="py-[1px] lg:py-[10px]">
           <div className="p-2 lg:p-[40px]">
@@ -213,7 +189,7 @@ function Page() {
         onClose={handleCloseModal}
         program="AI Advantage"
       />
-    </motion.div>
+    </>
   );
 }
 
