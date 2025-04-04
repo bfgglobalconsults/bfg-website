@@ -22,34 +22,34 @@ const Page = () => {
       
         <div className="lg:mt-[150px] p-12">
           
-            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-              About Us
-            </span>
-            <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
+        <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+          About Us
+        </span>
+        <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
               <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
               >
-                Our Company
-              </h3>
+            Our Company
+          </h3>
               <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
               >
-                Discover BFG Consults, where passion meets expertise in business
-                consulting. We are more than consultants; we are architects of
-                growth, innovators of strategy, & your dedicated partners in
-                success.
-              </p>
-            </div>
-       
+            Discover BFG Consults, where passion meets expertise in business
+            consulting. We are more than consultants; we are architects of
+            growth, innovators of strategy, & your dedicated partners in
+            success.
+          </p>
+        </div>
+
 
           <div className="relative h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
           >
-            <Image
-              src={Banner}
-              alt="about-banner"
-              className="w-full h-full object-cover rounded-3xl"
-            />
-          </div>
+          <Image
+            src={Banner}
+            alt="about-banner"
+            className="w-full h-full object-cover rounded-3xl"
+          />
+        </div>
 
-          <div className="py-[30px]">
+        <div className="py-[30px]">
             <motion.div
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -57,7 +57,7 @@ const Page = () => {
               viewport={{ once: true }}
               className=""
             >
-              <div className="w-full my-4">
+            <div className="w-full my-4">
                 <motion.p
                   initial={{ y: 20, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
@@ -84,14 +84,14 @@ const Page = () => {
                   viewport={{ once: true }}
                   className="text-lg text-[#656565] my-3"
                 >
-                  We are managed by a group of agile product leaders who are
-                  experienced in delivering cutting-edge solutions designed to
-                  meet the evolving needs of modern enterprises of any size. Our
-                  clients range from large-profile brands to medium, small, and
-                  start-up companies in Nigeria, India, Australia, Canada, the
-                  United Kingdom, and the United States.
+                We are managed by a group of agile product leaders who are
+                experienced in delivering cutting-edge solutions designed to
+                meet the evolving needs of modern enterprises of any size. Our
+                clients range from large-profile brands to medium, small, and
+                start-up companies in Nigeria, India, Australia, Canada, the
+                United Kingdom, and the United States.
                 </motion.p>
-              </div>
+            </div>
             </motion.div>
 
             <div ref={statsRef} className="flex flex-col lg:flex-row gap-6">
@@ -204,7 +204,7 @@ const Page = () => {
                 </div> */}
             
              
-              {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
+            {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
                   <div className="flex flex-col lg:flex-row justify-center gap-10">
                     <div>
                       <h3 className="text-4xl text-white font-bold">899+</h3>
@@ -224,35 +224,35 @@ const Page = () => {
                     </div>
                   </div>
                 </div> */}
-              <div className="my-10">
-                <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
-                  CEO Message
-                </span>
-              </div>
-              <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
-                <div className="w-[100%] lg:w-[60%]">
-                  <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
-                    Your Growth Partner in a Changing Business Landscape
-                  </h3>
-                  <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                    I am delighted to address you today as the Managing Partner
-                    and CEO of BFG Global Consulting Limited and introduce our
-                    firm. With great passion and commitment, our team at BFG
+            <div className="my-10">
+              <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
+                CEO Message
+              </span>
+            </div>
+            <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
+              <div className="w-[100%] lg:w-[60%]">
+                <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
+                  Your Growth Partner in a Changing Business Landscape
+                </h3>
+                <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                  I am delighted to address you today as the Managing Partner
+                  and CEO of BFG Global Consulting Limited and introduce our
+                  firm. With great passion and commitment, our team at BFG
                     Global Consulting is dedicated to assisting organizations
                     from diverse industries in their pursuit of business growth.
                     We aim to be your growth partners, guiding you towards the
                     new opportunities of contemporary business.
-                  </p>
-                  <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                    At BFG Global Consulting, we understand that the business
-                    landscape is constantly evolving, presenting both challenges
+                </p>
+                <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                  At BFG Global Consulting, we understand that the business
+                  landscape is constantly evolving, presenting both challenges
                     and prospects for organizations worldwide. In this
                     fast-paced environment, it is crucial for businesses to
                     adapt and thrive to remain competitive. Thats where we come
                     in.
-                  </p>
-                  <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                    Our expertise lies in deploying and managing innovative
+                </p>
+                <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                  Our expertise lies in deploying and managing innovative
                     solutions that empower businesses and organizations to
                     achieve growth. We firmly believe that success in todays
                     marketplace requires a multidimensional approach, blending
@@ -261,9 +261,9 @@ const Page = () => {
                     critical areas, we offer comprehensive consulting services
                     that equip our clients with the tools they need to drive
                     their success.
-                  </p>
-                  <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                    As we embark on this exciting journey, we invite you to join
+                </p>
+                <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                  As we embark on this exciting journey, we invite you to join
                     us in shaping the future of business growth. Whether you are
                     a small startup seeking guidance or a well-established
                     organization looking for fresh insights, BFG Global
@@ -271,55 +271,55 @@ const Page = () => {
                     team of experts are ready to listen, understand your unique
                     challenges, and tailor solutions that align with your
                     specific goals.
-                  </p>
-                  <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                </p>
+                <p className=" text-[#999] my-5 text-lg lg:text-xl">
                     While you explore our business profile, we thank you for
                     your attention, and we look forward to connecting with you
                     soon. Together, let us embrace the possibilities and create
                     a future of sustainable growth and success.
-                  </p>
-                </div>
-                <div className="flex flex-col">
+                </p>
+              </div>
+              <div className="flex flex-col">
                   <div className="">
-                    <Image
-                      src={Picture}
-                      alt="festus-bello"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="bg-white  p-4 shadow-md rounded-lg">
+                  <Image
+                    src={Picture}
+                    alt="festus-bello"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  p-4 shadow-md rounded-lg">
                     <h3 className="font-semibold text-lg">
                       Festus BELLO, mba.
                     </h3>
-                    <p className="text-[#E45F11] font-semibold">
-                      Managing Partner / CEO
-                    </p>
-                  </div>
-                  <div className="my-8">
-                    <a href="mailto:festus.bello@bfgconsults.com">
-                      <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="24"
-                            height="24"
-                            fill="currentColor"
-                          >
-                            <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                          </svg>
-                        </span>
-                        <span>Get in Touch</span>
-                      </button>
-                    </a>
-                  </div>
+                  <p className="text-[#E45F11] font-semibold">
+                    Managing Partner / CEO
+                  </p>
+                </div>
+                <div className="my-8">
+                  <a href="mailto:festus.bello@bfgconsults.com">
+                    <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                        >
+                          <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
+                        </svg>
+                      </span>
+                      <span>Get in Touch</span>
+                    </button>
+                  </a>
                 </div>
               </div>
-              <hr className="my-2" />
-              <div className="my-4">
-                <OurStand />
-              </div>
             </div>
+            <hr className="my-2" />
+            <div className="my-4">
+              <OurStand />
+            </div>
+          </div>
         </div>
       
     </>
