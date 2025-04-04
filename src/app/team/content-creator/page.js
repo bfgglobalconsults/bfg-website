@@ -53,7 +53,7 @@ const page = () => {
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:admin@bfgconsults.com">
+                <a href="mailto:oladipupo.taiwo@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
