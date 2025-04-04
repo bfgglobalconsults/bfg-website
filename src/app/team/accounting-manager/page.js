@@ -73,11 +73,10 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Olawale </h4>
               <p className="text-[#999] text-lg">
-                              Olawale  is an accomplished Accounting Manager in the Finance Department, with a strong track record of overseeing financial operations and ensuring the accuracy of accounting records.  
-                          </p>
+Olawale is a Chartered Accountant, certified by both the Institute of Chartered Accountants of Nigeria (ICAN) and the Institute of Chartered Accountants in England and Wales (ICAEW). With over a decade of professional experience, he is an accomplished Accounting Manager in the Finance Department at BFG Global Consults, with a strong track record of overseeing financial operations and ensuring the accuracy of accounting records.                          </p>
                           <br />
                           <p className="text-[#999] text-lg">
-With expertise in financial reporting, budgeting, and compliance, he plays a key role in maintaining the organization&apos;s financial integrity. Known for his meticulous attention to detail and analytical skills, he effectively leads the accounting team, streamlining processes, managing financial audits, and ensuring adherence to regulatory standards. His strategic approach to financial management helps support informed decision-making and drives the organization&apos;s fiscal health.                          </p>
+With expertise in financial reporting, budgeting, and compliance, he plays a key role in maintaining our organization&apos;s financial integrity. Known for his meticulous attention to detail and analytical skills, he effectively leads the accounting team, streamlining processes, managing financial audits, and ensuring adherence to regulatory standards. His strategic approach to financial management helps support informed decision-making and drives the organization&apos;s fiscal health.               </p>
               <br />
              
             </div>
