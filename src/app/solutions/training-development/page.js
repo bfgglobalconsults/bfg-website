@@ -8,7 +8,7 @@ import TopBanner from "../../../../public/assets/training-development-banner.jpg
 import Happy from "../../../../public/assets/happiness_adama.png";
 import TrainingAnalyst from "../../../../public/assets/training-analyst.png";
 
-import TrainingImage from "../../../../public/assets/business-teacher.jpg";
+import TrainingImage from "../../../../public/assets/business-teacher.png";
 import EmployeePerformance from "../../../../public/assets/employee-perfomance.jpg";
 import Retention from "../../../../public/assets/retention.jpg";
 import GreaterFlexibility from "../../../../public/assets/greater-flexibility.jpg";
