@@ -28,7 +28,7 @@ const AnimatedItems = ({slides}) => {
           freeMode={true}
           breakpoints={{
             0: {
-              slidesPerView: 2, // Try a specific number for mobile
+              slidesPerView: 2, 
               direction: "vertical",
               spaceBetween: 20,
               autoplay: false,

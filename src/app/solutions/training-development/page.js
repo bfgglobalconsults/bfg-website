@@ -24,6 +24,14 @@ import Link from "next/link";
 
 const Page = () => {
   const trainingSlides = [
+  {
+      title: "Strategic Gap Analysis",
+      content: "We diagnose your employee strengths and weaknesses to evaluate the current competencies, knowledge, and performance levels of employees against the evolving demands and benchmarks set by industry standards. This diagnostic approach involves us collecting data through performance reviews, surveys, interviews, and competency assessments to identify specific areas where skills are lacking or underdeveloped.",
+    },
+    {
+      title: "Onboarding Programs",
+      content: "We offer structured, strategic training initiatives designed to ensure that new hires are smoothly and effectively integrated into the organizations culture, values, policies, and operational systems",
+    },
     {
       title: "Customized Training for Employee Development",
       content:
@@ -44,6 +52,10 @@ const Page = () => {
       content:
         "Providing one-on-one coaching & mentoring to help employees develop their skills & advance in their careers.",
     },
+    {
+      title: "",
+      content: "",
+    }
   ];
 
   const benefitsRef = useRef(null);
