@@ -21,37 +21,35 @@ const AnimatedItems = ({slides}) => {
           scrollbar={{
             draggable: true,
             hide: false,
-            el: '.swiper-scrollbar',
+            el: ".swiper-scrollbar",
             dragSize: 100,
           }}
           mousewheel={true}
           freeMode={true}
           breakpoints={{
             0: {
-              slidesPerView: 4,
+              slidesPerView: 2, // Try a specific number for mobile
               direction: "vertical",
-               spaceBetween: 20,
-                autoplay: false,
-                 mousewheel: { forceToAxis: true },
+              spaceBetween: 20,
+              autoplay: false,
+              mousewheel: true, // Keep mousewheel for potential desktop interaction
             },
             768: {
               slidesPerView: "auto",
               direction: "vertical",
               spaceBetween: 20,
-                            autoplay: false,
-
+              autoplay: false,
             },
             1024: {
               slidesPerView: "auto",
               direction: "vertical",
               spaceBetween: 20,
-                            autoplay: false,
-
+              autoplay: false,
             },
           }}
           navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
           }}
           autoplay={{
             delay: 5000,
@@ -59,23 +57,27 @@ const AnimatedItems = ({slides}) => {
           }}
           className="mySwiper h-full overflow-y-auto"
           style={{
-            '--swiper-scrollbar-drag-bg-color': '#E26015',
-            '--swiper-scrollbar-bg-color': '#e0e0e0',
+            "--swiper-scrollbar-drag-bg-color": "#E26015",
+            "--swiper-scrollbar-bg-color": "#e0e0e0",
           }}
         >
           <div className="pr-4">
             {slides.map((slide, index) => (
-              <SwiperSlide 
-                key={index} 
+              <SwiperSlide
+                key={index}
                 className="!h-auto mb-4"
-                style={{ height: 'auto' }}
+                style={{ height: "auto" }}
               >
                 <div className="w-full flex-shrink-0 ml-2">
                   <div className="w-[95%] mx-auto p-4 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div className="flex gap-4">
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-black">{slide.title}</h3>
-                        <p className="text-md text-gray-600 mt-1">{slide.content}</p>
+                        <h3 className="text-lg font-semibold text-black">
+                          {slide.title}
+                        </h3>
+                        <p className="text-md text-gray-600 mt-1">
+                          {slide.content}
+                        </p>
                       </div>
                     </div>
                   </div>

@@ -5,7 +5,7 @@ import Banner from "../../../../public/assets/information-technology.jpg";
 import Accordion from "@/components/Accordion";
 import TopBanner from "../../../../public/assets/it-banner.jpg";
 
-import ItImage from "../../../../public/assets/it-images.png";
+import ItImage from "../../../../public/assets/it-images.jpg";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Bradford from "../../../../public/assets/david-bradford.png";
 import Jeremiah from "../../../../public/assets/jesunifemi.png";
