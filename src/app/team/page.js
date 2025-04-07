@@ -546,7 +546,7 @@ const Page = () => {
                     Abubakar Sultan Faisal
                   </h3>
                   <p className="text-[#E45F11]">Systems Administrator</p>
-                  <Link href="/team/system-administrator">
+                  <Link href="/team/system-adminstrator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
