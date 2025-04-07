@@ -48,7 +48,7 @@ import CaseImage4 from "../../public/assets/training-case.png";
 
 import STTravel from "../../public/assets/News-ST.jpg";
 import AwardNews from "../../public/assets/bfg-award.jpg";
-import CeoNews from "../../public/assets/ceo-news.png";
+import CeoNews from "../../public/assets/ceo-news.jpg";
 import FirstNews from "../../public/assets/first-news.png";
 import SecondNews from "../../public/assets/second-news.png";
 

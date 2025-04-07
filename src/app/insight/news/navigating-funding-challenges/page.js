@@ -2,7 +2,7 @@ import Slides from "@/components/Slides";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FirstNews from "../../../../../public/assets/ceo-news-banner.png";
+import FirstNews from "../../../../../public/assets/ceo-news-banner.jpg";
 import AwardCert from "../../../../../public/assets/award-cert.jpg";
 const page = () => {
   return (
