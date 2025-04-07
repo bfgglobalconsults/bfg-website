@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import Banner from "../../../../public/assets/project-image.jpg";
+import Banner from "../../../../public/assets/project-image.png";
 import Project1 from "../../../../public/assets/project1.png";
 import Project2 from "../../../../public/assets/project2.png";
 

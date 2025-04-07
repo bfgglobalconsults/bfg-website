@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import IndustrialManufactureImg from "../../../../../public/assets/industrial-manufacture-banner.png";
-import ManufactureImage from "../../../../../public/assets/manufacture-card.png";
+import ManufactureImage from "../../../../../public/assets/manufacture-card.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {

@@ -5,7 +5,7 @@ import Banner from "../../../../public/assets/research-analytic.jpg";
 import TopBanner from "../../../../public/assets/research-banner.jpg";
 import { motion, useInView } from "framer-motion";
 
-import ResearchImage from "../../../../public/assets/sales-newbanner.jpg";
+import ResearchImage from "../../../../public/assets/business-teacher.png";
 import Simon from "../../../../public/assets/simon-adeh.png";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
