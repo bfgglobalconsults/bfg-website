@@ -9,6 +9,7 @@ import ItImage from "../../../../public/assets/it-images.jpg";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Bradford from "../../../../public/assets/david-bradford.png";
 import Jeremiah from "../../../../public/assets/jesunifemi.png";
+import Ayobami from "../../../../public/assets/ayobami-picture.png";
 
 import TechnologyPortfolio from "../../../../public/assets/technology-portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
@@ -460,7 +461,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col mb-12">
                 <div className="w-[250px] h-[250px] my-14 bg-[#B0D4EA]">
                   <Image
                     src={Jeremiah}
@@ -475,6 +476,29 @@ const Page = () => {
                       Product Designer / Developer
                     </p>
                     <Link href="/team/product-designer">
+                      <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                        Read More
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              {/* third person */}
+               <div className="flex flex-col mb-12">
+                <div className="w-[250px] h-[250px] my-14 bg-[#B0D4EA]">
+                  <Image
+                    src={Ayobami}
+                    alt="md"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="bg-white w-[250px] p-4 shadow-md">
+                    <h3 className="font-semibold text-lg">
+                      Ayobami Tayo
+                    </h3>
+                    <p className="text-[#E45F11]">
+                      Product Designer / Developer
+                    </p>
+                    <Link href="/team/product-designer-II">
                       <button className="text-[#999] text-cursor text-md underline hover:text-black">
                         Read More
                       </button>
