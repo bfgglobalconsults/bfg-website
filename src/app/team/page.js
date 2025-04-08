@@ -17,6 +17,7 @@ import Elizabeth from "../../../public/assets/elizabeth-mary.png";
 import DavidBradford from "../../../public/assets/david-bradford.png";
 import Happy from "../../../public/assets/happiness_adama.png";
 import Jeremiah from "../../../public/assets/jesunifemi.png";
+import Ayobami from "../../../public/assets/ayobami-picture.png";
 import Simon from "../../../public/assets/simon-adeh.png";
 import Abubakar from "../../../public/assets/abubakar-sadiq.png";
 import CompanySecretary from "../../../public/assets/secretary-md.png";
@@ -278,28 +279,7 @@ const Page = () => {
                 </div>
               </div>
               {/* Third team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={DavidBradford}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">David Uko Bradford</h3>
-                  <p className="text-[#E45F11]">
-                    Senior Software Developer/Technology Analyst
-                  </p>
-                  <Link href="/team/senior-software">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div>
 
-              {/* Fourth team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -321,7 +301,29 @@ const Page = () => {
                 </div>
               </div>
 
-              {/* sixth team */}
+              {/* Fourth Team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={DavidBradford}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">David Uko Bradford</h3>
+                  <p className="text-[#E45F11]">
+                    Senior Software Developer/Technology Analyst
+                  </p>
+                  <Link href="/team/senior-software">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Fifth team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -342,7 +344,7 @@ const Page = () => {
                   </Link>
                 </div>
               </div>
-              {/* seventh team */}
+              {/* Sixth team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -366,27 +368,8 @@ const Page = () => {
                   </Link>
                 </div>
               </div>
-              {/* Fifth team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Jeremiah}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">
-                    Jesunifemi Jeremiah Oluwafemi
-                  </h3>
-                  <p className="text-[#E45F11]">Product Designer / Developer</p>
-                  <Link href="/team/product-designer">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div>
+              {/* Sixth team */}
+              
 
               {/* seventh team */}
               <div className="flex flex-col">
@@ -410,7 +393,49 @@ const Page = () => {
                 </div>
               </div>
 
-              {/* seventh team */}
+              {/* eight team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={Jeremiah}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">
+                    Jesunifemi Jeremiah Oluwafemi
+                  </h3>
+                  <p className="text-[#E45F11]">Senior Product Designer / Developer</p>
+                  <Link href="/team/product-designer">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+
+              {/* ninth team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={Ayobami}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">
+                    Ayobami Tayo
+                  </h3>
+                  <p className="text-[#E45F11]">Product Designer/ Developer </p>
+                  <Link href="/team/product-designer-II">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
