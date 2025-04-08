@@ -473,7 +473,7 @@ const Page = () => {
                       Jesunifemi Jeremiah Oluwafemi
                     </h3>
                     <p className="text-[#E45F11]">
-                      Product Designer / Developer
+                      Senior Product Designer / Developer
                     </p>
                     <Link href="/team/product-designer">
                       <button className="text-[#999] text-cursor text-md underline hover:text-black">
