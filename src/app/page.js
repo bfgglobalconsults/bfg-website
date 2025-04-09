@@ -48,6 +48,8 @@ import CaseImage4 from "../../public/assets/training-case.png";
 
 import STTravel from "../../public/assets/News-ST.jpg";
 import AwardNews from "../../public/assets/bfg-award.jpg";
+import AINews from "../../public/assets/ai-news.jpg";
+
 import CeoNews from "../../public/assets/ceo-news.jpg";
 import FirstNews from "../../public/assets/first-news.png";
 import SecondNews from "../../public/assets/second-news.png";
@@ -917,7 +919,7 @@ export default function Main() {
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[30%] shadow-lg">
               <div className="p-4 relative h-[300px]">
                 <Image
-                  src={CeoNews}
+                  src={AINews}
                   alt="first-news"
                   className="w-full h-full rounded-lg object-cover"
                 />

@@ -394,7 +394,7 @@ const Page = () => {
               </div>
 
               {/* eight team */}
-              <div className="flex flex-col">
+              {/* <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
                     src={Jeremiah}
@@ -406,14 +406,14 @@ const Page = () => {
                   <h3 className="font-semibold text-lg">
                     Jesunifemi Jeremiah Oluwafemi
                   </h3>
-                  <p className="text-[#E45F11]">Senior Product Designer / Developer</p>
+                  <p className="text-[#E45F11]">Product Designer - UI/UX</p>
                   <Link href="/team/product-designer">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
                   </Link>
                 </div>
-              </div>
+              </div> */}
 
               {/* ninth team */}
               <div className="flex flex-col">
@@ -428,7 +428,7 @@ const Page = () => {
                   <h3 className="font-semibold text-lg">
                     Ayobami Tayo
                   </h3>
-                  <p className="text-[#E45F11]">Product Designer/ Developer </p>
+                  <p className="text-[#E45F11]">Product Designer - UI/UX </p>
                   <Link href="/team/product-designer-II">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
