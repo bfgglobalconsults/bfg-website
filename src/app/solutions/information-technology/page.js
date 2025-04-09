@@ -14,12 +14,12 @@ import Ayobami from "../../../../public/assets/ayobami-picture.png";
 import TechnologyPortfolio from "../../../../public/assets/technology-portfolio.jpg";
 import ServiceImage1 from "../../../../public/assets/service-image1.png";
 import ServiceImage2 from "../../../../public/assets/service-image2.png";
-import Employee from "../../../../public/assets/improve-employee.png";
-import DataSecurity from "../../../../public/assets/data-security.png";
-import DataMgt from "../../../../public/assets/data-mgt.png";
-import Flexibility from "../../../../public/assets/flexibility-scalibility.png";
-import Expertise from "../../../../public/assets/expertise-resources.png";
-import Innovation from "../../../../public/assets/innovation-development.png";
+import Employee from "../../../../public/assets/improve-employee.jpg";
+import DataSecurity from "../../../../public/assets/data-security.jpg";
+import DataMgt from "../../../../public/assets/data-mgt.jpg";
+import Flexibility from "../../../../public/assets/flexibility-scalability.jpg";
+import Expertise from "../../../../public/assets/expertise-resources.jpg";
+import Innovation from "../../../../public/assets/innovation-development.jpg";
 
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
@@ -223,13 +223,10 @@ const Page = () => {
                 </div>
                 <div className="w-[100%]">
                   <h4 className="text-xl text-[#333] font-semibold">
-                    Improved Employee Performance
+                    Empowered Workforce Through Seamless Tech Support
                   </h4>
                   <p className="text-[#999]">
-                    By providing employees with the knowledge, skills, &
-                    abilities they need to succeed in their roles, this solution
-                    helps organisations improve employee performance &
-                    productivity.{" "}
+                   By providing reliable, fast, and user-friendly technology solutions, we ensure employees can focus on their work without tech-related frustrations. From responsive helpdesk support to intuitive tools and automation
                   </p>
                 </div>
               </motion.div>
@@ -461,7 +458,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col mb-12">
+              {/* <div className="flex flex-col mb-12">
                 <div className="w-[250px] h-[250px] my-14 bg-[#B0D4EA]">
                   <Image
                     src={Jeremiah}
@@ -482,7 +479,7 @@ const Page = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* third person */}
                <div className="flex flex-col mb-12">
                 <div className="w-[250px] h-[250px] my-14 bg-[#B0D4EA]">
@@ -496,7 +493,7 @@ const Page = () => {
                       Ayobami Tayo
                     </h3>
                     <p className="text-[#E45F11]">
-                      Product Designer / Developer
+                      Product Designer - UI/UX
                     </p>
                     <Link href="/team/product-designer-II">
                       <button className="text-[#999] text-cursor text-md underline hover:text-black">

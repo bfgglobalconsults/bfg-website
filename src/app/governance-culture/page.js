@@ -5,9 +5,9 @@ import GovernanceImg from "../../../public/assets/governance-image.jpg";
 import Slides from "@/components/Slides";
 import { SlideLeft } from "@/components/ui/Transitions";
 import ClientCentric from "../../../public/assets/client-centric.png";
-import Innovative from "../../../public/assets/innovative-learning.png";
-import Inclusivity from "../../../public/assets/inclusivity.png";
-import Sustain from "../../../public/assets/sustain.png";
+import Innovative from "../../../public/assets/innovative-learning.jpg";
+import Inclusivity from "../../../public/assets/inclusivity.jpeg";
+import Sustain from "../../../public/assets/sustain.jpg";
 import OurStand from "@/components/OurStand";
 
 const page = () => {
@@ -153,7 +153,7 @@ const page = () => {
                     <Image
                       src={ClientCentric}
                       alt="client"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -172,7 +172,7 @@ const page = () => {
                     <Image
                       src={Innovative}
                       alt="innovate"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -192,7 +192,7 @@ const page = () => {
                     <Image
                       src={Inclusivity}
                       alt="inclusive"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -212,7 +212,7 @@ const page = () => {
                     <Image
                       src={Sustain}
                       alt="sustain"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">

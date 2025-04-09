@@ -475,14 +475,6 @@ const Header = () => {
                           </p>
                         </Link>
                         <Link
-                          href="/solutions/business-strategy"
-                          onClick={() => setShowMenu(false)}
-                        >
-                          <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
-                            Strategy and Operations Transformation
-                          </p>
-                        </Link>
-                        <Link
                           href="/solutions/research-analytics"
                           onClick={() => setShowMenu(false)}
                         >
@@ -490,6 +482,15 @@ const Header = () => {
                             Research and Analytics
                           </p>
                         </Link>
+                        <Link
+                          href="/solutions/business-strategy"
+                          onClick={() => setShowMenu(false)}
+                        >
+                          <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            Strategy and Operations Transformation
+                          </p>
+                        </Link>
+                        
                         <Link
                           href="/solutions/training-development"
                           onClick={() => setShowMenu(false)}

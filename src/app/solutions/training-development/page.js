@@ -52,10 +52,7 @@ const Page = () => {
       content:
         "Providing one-on-one coaching & mentoring to help employees develop their skills & advance in their careers.",
     },
-    {
-      title: "",
-      content: "",
-    }
+   
   ];
 
   const benefitsRef = useRef(null);
