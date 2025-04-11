@@ -52,12 +52,10 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Ifeoma</h4>
               <p className="text-[#999] text-lg">
-              Ifeoma Ezeamama is a Senior Business Analyst - Business Strategy and Operations Transformation at BFG Global Consulting LLC. With extensive experience in strategic planning and operational excellence, Ifeoma is instrumental in driving organizational change and optimizing business processes. 
-              </p>
+Ifeoma Ezeamama is a results-driven Senior Business Analyst at BFG Global Consulting LLC, where she specializes in Strategy and Operations Transformation. With a robust background in strategic planning, product mapping, competitive analysis, and operational modeling, Ifeoma delivers actionable insights that empower organizations to evolve with confidence. Her analytical acumen and cross-functional collaboration skills allow her to design and implement solutions that are not only innovative but also aligned with each client&apos;s core objectives.              </p>
               <br />
               <p className="text-[#999] text-lg">
-               As the lead of BFG&apos;s Business Strategy and Operations Transformation consulting service unit, Ifeoma is responsible for developing and implementing bespoke strategies that transform operations, enhance efficiency, and align business practices with long-term objectives. Ifeoma excels in leading cross-functional teams to deliver impactful solutions that drive business growth and operational success.
-              </p>
+Passionate about driving sustainable growth and operational excellence, Ifeoma partners closely with stakeholders to uncover inefficiencies, realign business processes, and shape forward-looking strategies. Her contributions have consistently led to measurable improvements in performance, scalability, and market competitiveness for a broad range of clients. Whether steering complex transformations or fine-tuning operational models, she brings clarity, structure, and momentum to every project engagement while also leading cross-functional teams to deliver impactful solutions that drive business growth and operational success.              </p>
               <br />
              
             </div>

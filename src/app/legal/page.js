@@ -75,7 +75,7 @@ const page = () => {
             </div>
             <div className="my-6">
               <p className="font-bold text-xl text-black my-2">
-                Conflict of Interest Policy{" "}
+                Conflict of Interest Policy:{" "}
               </p>
               <p className="text-[#656565] my-2">
                 We shall maintain a conflict of interest policy that outlines
