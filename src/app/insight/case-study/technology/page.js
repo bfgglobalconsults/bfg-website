@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import TopBanner from "../../../../../public/assets/it-banner.jpeg";
+import TopBanner from "../../../../../public/assets/it-banner.jpg";
 
 
 

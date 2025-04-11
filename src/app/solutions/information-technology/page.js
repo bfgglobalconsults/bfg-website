@@ -35,6 +35,11 @@ const Page = () => {
       content:
         "We manage the design & development of customised IT solutions that are tailored to the specific needs of an organisation & or business.",
     },
+     {
+      title: "Web/App Development",
+      content:
+        "We build responsive websites and user-friendly mobile apps tailored to your goals. From idea to launch, our team ensures seamless design, fast performance, and scalable functionality that delivers real results.",
+    },
     {
       title: "IT Risk Assessment & Disaster Recovery",
       content:

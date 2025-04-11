@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import TopBanner from "../../../../../public/assets/Research-and-analytics.png";
+import TopBanner from "../../../../../public/assets/research-banner.jpg";
 import Project1 from "../../../../../public/assets/zenkleus-research.jpg";
 import Project2 from "../../../../../public/assets/business-meeting.jpg";
 import Project4 from "../../../../../public/assets/research-cover-img.jpg";
