@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Banner from "../../../../public/assets/news-banner.png";
 import News1 from "../../../../public/assets/News-ST.jpg";
-import CeoNews from "../../../../public/assets/ceo-news.png"
+import CeoNews from "../../../../public/assets/ceo-news.jpg"
 import News2 from "../../../../public/assets/news2.png";
 import AwardNews from "../../../../public/assets/bfg-award.jpg";
 import Slides from "@/components/Slides";
