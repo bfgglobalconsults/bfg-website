@@ -52,7 +52,7 @@ const page = () => {
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:admin@bfgconsults.com">
+                <a href="mailto:nkeiruka.mordi@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -73,11 +73,11 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Nkeiruka</h4>
               <p className="text-[#999] text-lg">
-                Nkeiruka Vivian Mordi is a dynamic Business Analyst specializing in System Intelligence and Digital Transformation within the Strategy and Operations Transformation unit of our Product team at BFG Global Consulting, LLC. With a keen eye for process optimization and data-driven decision-making, she plays a pivotal role in analyzing complex business challenges and identifying innovative digital solutions.
+                Nkeiruka Vivian Mordi is a dynamic Business Analyst specializing in System Intelligence and Digital Transformation within the Strategy and Operations Transformation unit of our Product team at BFG Global Consulting, LLC. With a keen eye for process optimization and data-driven decision-making, she plays a pivotal role in analyzing complex business challenges and identifying innovative digital solutions for clients.
               </p>{" "}
               <br />
               <p className="text-[#999] text-lg">
-                Nkeiruka excels in translating business needs into actionable strategies, ensuring seamless integration of technology to enhance efficiency and drive operational excellence. Her expertise in system intelligence enables her to assess trends, improve workflows, and support the organization&apos;s digital transformation initiatives. Passionate about innovation and continuous improvement, she is committed to delivering strategic insights that align with business goals and enhance overall product effectiveness.
+                Nkeiruka excels in translating business needs into actionable strategies, ensuring seamless integration of technology to enhance efficiency and drive operational excellence. Her expertise in system intelligence enables her to assess trends, improve workflows, and support the organization&apos;s digital transformation initiatives. Passionate about innovation and continuous improvement, she is committed to delivering strategic insights that align with business goals and enhance overall product effectiveness for our organization and clients.
               </p>
               <br />
             </div>

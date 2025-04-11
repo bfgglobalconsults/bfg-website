@@ -27,12 +27,12 @@ const Page = () => {
 
   const BusinessSlides = [
     {
-      title: "Business Process and Systems Engineering",
+      title: "Process Improvement and Systems Engineering",
       content:
         "This involves optimizing and redesigning business processes and systems to improve efficiency, reduce costs, and enhance overall performance. By leveraging cutting-edge methodologies, we help businesses analyze their systems, processes, and data to identify opportunities for improvement and recommend technology-driven solutions.",
     },
     {
-      title: "Business Strategy Development & Implementation",
+      title: "Business Planning & Strategy Development",
       content:
         "This includes market research & analysis, competitive analysis, & the development of a comprehensive business plan for your business.",
     },
@@ -101,8 +101,7 @@ const Page = () => {
               overall performance by identifying & implementing effective
               business strategies & streamlining operational processes. Using
               the latest deep industry insights, our combined team of business
-              strategists, growth hackers, project managers, & quality control
-              managers helps businesses of every size prosper by creating
+              analysts, growth hackers,  & strategists helps businesses of every size prosper by creating
               impactful solutions tailored to their unique needs today & in the
               future. The goal of this service is to help businesses become more
               efficient, profitable, & competitive in their respective
