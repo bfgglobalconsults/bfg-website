@@ -12,7 +12,7 @@ import "swiper/css/scrollbar"
 const AnimatedItems = ({slides}) => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="relative h-[650px] md:h-[650px] rounded-xl shadow-sm">
+      <div className="relative h-[500px] md:h-[600px] rounded-xl shadow-sm">
         <Swiper
           modules={[Navigation, Autoplay, Scrollbar]}
           spaceBetween={20}

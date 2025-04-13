@@ -9,8 +9,8 @@ import BusinessAnalyst from "../../../../public/assets/business-analyst-new.png"
 import BusinessImage from "../../../../public/assets/black-business.jpg";
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Ifeoma from "../../../../public/assets/ifeoma.png";
-import Efficiency from "../../../../public/assets/efficiency.png";
-import Cost from "../../../../public/assets/cost.png";
+import Efficiency from "../../../../public/assets/efficiency.jpg";
+import Cost from "../../../../public/assets/cost.jpg";
 import Decision from "../../../../public/assets/decision.jpg";
 import Advantage from "../../../../public/assets/advantage.jpg";
 import Scalabity from "../../../../public/assets/scalability.jpg";
@@ -164,7 +164,7 @@ const Page = () => {
                 Service Benefits
               </motion.h3>
               <p className="text-[#999] text-xl my-2">
-                Experience how our tailored business strategies & operational expertise 
+                Experience how our tailored strategies & operation Transformation expertise 
                 deliver transformative outcomes, driving long-term success & sustainable growth
               </p>
             </div>
