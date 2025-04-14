@@ -29,7 +29,7 @@ const Page = () => {
     {
       title: "Process Improvement and Systems Engineering",
       content:
-        "This involves optimizing and redesigning business processes and systems to improve efficiency, reduce costs, and enhance overall performance. By leveraging cutting-edge methodologies, we help businesses analyze their systems, processes, and data to identify opportunities for improvement and recommend technology-driven solutions.",
+        "This involves optimizing and redesigning business processes and systems to improve efficiency, reduce costs, and enhance overall performance. By leveraging cutting-edge methodologies, we help businesses analyze their systems, processes, and data.",
     },
     {
       title: "Business Planning & Strategy Development",
@@ -54,7 +54,7 @@ const Page = () => {
     {
       title: "Change Management",
       content:
-        "This includes planning & executing changes to systems, processes, & organisational structure in a way that minimise disruption & maximise benefits.",
+        "This service involves the strategic planning and seamless execution of changes to systems, processes, and organizational structures, with a strong focus on minimizing disruption and maximizing value.",
     },
   ];
 

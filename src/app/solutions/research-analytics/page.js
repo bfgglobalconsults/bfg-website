@@ -56,12 +56,12 @@ const Page = () => {
     {
       title: "Product Testing",
       content:
-        "Put your products to the test with our rigorous testing services. We simulate real-world scenarios, identify areas for improvement, & ensure your products meet the highest st&ards of quality, reliability, & performance.",
+        "Put your products to the test with our rigorous testing services. We simulate real-world scenarios, identify areas for improvement, & ensure your products meet the highest standards of quality, reliability, & performance.",
     },
     {
       title: "Consumer Needs & Assessment",
       content:
-        "Stay ahead of the curve with real-time insights into clients needs & satisfaction. Our research & analytics services help you predict, manage, & delight - shaping your services for future success.",
+        "Stay ahead of the curve with real-time insights into client needs and satisfaction. Our comprehensive research and analytics services empower businesses to predict trends, manage expectations, and  exceed customer demands.",
     },
   ];
 

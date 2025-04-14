@@ -53,12 +53,12 @@ const Page = () => {
     {
       title: "Cloud Services & Migration",
       content:
-        "We assist organisations in migrating their IT infrastructure & applications to the cloud, ensuring scalability, security & cost-efficiency.",
+        "We assist organisations in migrating their IT infrastructure & applications to the cloud, ensuring scalability, security, cost-efficiency, enhanced performance, and business continuity.",
     },
     {
       title: "Cybersecurity",
       content:
-        "This scope of service includes the implementation of security measures to protect an organisations IT systems & data from unauthorized access & breaches. This can include tasks such as configuring firewalls, implementing intrusion detection systems, & performing security audits.",
+        "This scope of service includes the implementation of security measures to protect an organisations IT systems & data from unauthorized access & breaches. ",
     },
   ];
 
