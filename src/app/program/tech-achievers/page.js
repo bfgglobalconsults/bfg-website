@@ -29,7 +29,7 @@ const Page = () => {
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Tech Achievers Graduate Scheme
           </h3>
-          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
             Peer-to-Peer Learning for SME Leaders
           </p>
         </div>

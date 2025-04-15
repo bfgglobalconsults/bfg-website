@@ -33,7 +33,7 @@ const Page = () => {
               Emerging Marketplace Leadership Summit
             </h3>
             <p 
-              className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
+              className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl"
             >
               Shaping the Future of Nigeria&apos;s Business Ecosystem
             </p>

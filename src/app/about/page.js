@@ -30,7 +30,7 @@ const Page = () => {
               >
             Our Company
           </h3>
-              <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl"
+              <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl"
               >
             Discover BFG Consults, where passion meets expertise in business
             consulting. We are more than consultants; we are architects of

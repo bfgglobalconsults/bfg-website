@@ -39,7 +39,7 @@ const Page = () => {
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Meet the brains.
           </h3>
-          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
             Meet the dedicated team of people who make our business what it is
             today. They represent our primary point of contact with our target
             market & audience.
