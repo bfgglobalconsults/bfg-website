@@ -50,7 +50,7 @@ const Page = () => {
     {
       title: "Coaching & Mentoring",
       content:
-        "Through tailored development plans, constructive feedback, and skill-building sessions.We offer personalized one-on-one coaching and mentoring designed to empower employees with the guidance, support, and tools they need to grow professionally.",
+        "Through tailored development plans, constructive feedback, and skill-building sessions, we offer personalized one-on-one coaching and mentoring designed to empower employees with the guidance, support, and tools they need to grow professionally.",
     },
    
   ];
@@ -70,7 +70,7 @@ const Page = () => {
             >
               Training & Development
             </h3>
-            <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+            <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
               Empowering your workforce, Enhancing your business
             </p>
           </div>
