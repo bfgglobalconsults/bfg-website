@@ -58,7 +58,7 @@ const Page = () => {
     {
       title: "Cybersecurity",
       content:
-        "This scope of service includes the implementation of security measures to protect an organisations IT systems & data from unauthorized access & breaches. ",
+        "This scope of service includes the implementation of security measures to protect an organisation’s IT systems & data from unauthorized access, breaches, and potential cyber threats. ",
     },
   ];
 

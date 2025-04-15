@@ -50,7 +50,7 @@ const Page = () => {
     {
       title: "Coaching & Mentoring",
       content:
-        "We offer personalized one-on-one coaching and mentoring designed to empower employees with the guidance, support, and tools they need to grow professionally. Through tailored development plans, constructive feedback, and skill-building sessions.",
+        "Through tailored development plans, constructive feedback, and skill-building sessions.We offer personalized one-on-one coaching and mentoring designed to empower employees with the guidance, support, and tools they need to grow professionally.",
     },
    
   ];

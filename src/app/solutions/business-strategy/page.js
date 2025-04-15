@@ -54,7 +54,7 @@ const Page = () => {
     {
       title: "Change Management",
       content:
-        "This service involves the strategic planning and seamless execution of changes to systems, processes, and organizational structures, with a strong focus on minimizing disruption and maximizing value.",
+        "This service involves the strategic planning and seamless execution of changes to systems, processes, and organizational structures, with a strong focus on minimizing disruption, maximizing value, and fostering sustainable business growth.",
     },
   ];
 
