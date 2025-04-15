@@ -79,7 +79,7 @@ const Page = () => {
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Contact Us
           </h3>
-          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
             We&apos;ll love to hear from you! Whether you have a question about
             our services, want to discuss a potential collaboration, or just
             want to say hello, our team is ready to connect with you.

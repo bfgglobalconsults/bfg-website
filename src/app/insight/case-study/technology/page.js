@@ -35,7 +35,7 @@ const page = () => {
             
 Technology & Software Development
           </h3>
-          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
             Innovative solutions, secure technology, & unparalleled support for
             your business
           </p>

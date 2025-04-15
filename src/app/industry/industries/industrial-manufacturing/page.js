@@ -15,7 +15,7 @@ const page = () => {
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Industrial Manufacturing
           </h3>
-          <p className="w-[100%] lg:w-[50%] text-[#999] my-2 text-lg lg:text-xl">
+          <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
         Elevating Manufacturing Excellence through Strategic Innovation and Digital Transformation
           </p>
         </div>
