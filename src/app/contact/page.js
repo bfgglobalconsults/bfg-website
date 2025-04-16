@@ -80,9 +80,8 @@ const Page = () => {
             Contact Us
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            We&apos;ll love to hear from you! Whether you have a question about
-            our services, want to discuss a potential collaboration, or just
-            want to say hello, our team is ready to connect with you.
+             Whether you have a question about
+            our services, or want to discuss a potential collaboration, our team is ready to connect with you.
           </p>
         </div>
 

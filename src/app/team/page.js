@@ -40,9 +40,8 @@ const Page = () => {
             Meet the brains.
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Meet the dedicated team of people who make our business what it is
-            today. They represent our primary point of contact with our target
-            market & audience.
+            Meet the dedicated team - The passionate builders, creators and visionaries behind everything we do.
+           
           </p>
         </div>
 

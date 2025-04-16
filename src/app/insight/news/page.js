@@ -20,9 +20,8 @@ const page = () => {
             Latest Updates <br /> & News
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Fuel your business growth with inspiring insights! Explore our
-            expert-curated content on strategy, tech trends, leadership, &
-            industry know-how. Learn, transform, & thrive with us!
+            Explore our expert-curated content on strategy, tech trends, leadership, &
+            industry know-how. 
           </p>
         </div>
 
