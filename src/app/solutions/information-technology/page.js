@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Banner from "../../../../public/assets/information-technology.jpg";
 import Accordion from "@/components/Accordion";
-import TopBanner from "../../../../public/assets/it-banner.png";
+import TopBanner from "../../../../public/assets/it-banner3.jpg";
 
 import ItImage from "../../../../public/assets/it-images.jpg";
 import Avatar from "../../../../public/assets/new-avatar.png";
