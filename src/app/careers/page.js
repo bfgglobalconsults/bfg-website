@@ -39,10 +39,9 @@ Discover a world of possibilities. Elevate your career with us a place where pas
             <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
               Open Jobs
                       </h3>
-            <Link href="https://career-bfgconsults.odoo.com/jobs">
-              <p className="w-[50%] text-[#999] text-decoration-underline hover:text-[#E26015] cursor-pointer">
+            <Link className="w-[50%] text-[#999] text-decoration-underline hover:text-[#E26015] cursor-pointer" href="https://career-bfgconsults.odoo.com/jobs">
                 View Latest Jobs
-              </p>
+              
             </Link>
           </div>
         </div>
