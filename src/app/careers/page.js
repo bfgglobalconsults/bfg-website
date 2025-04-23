@@ -35,7 +35,7 @@ Discover a world of possibilities. Elevate your career with us a place where pas
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
             Our Jobs
           </span>
-          <div className="w-full flex gap-10 items-center justify-between my-4">
+          <div className="w-full flex gap-10 items-center my-4">
             <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
               Open Jobs
                       </h3>
