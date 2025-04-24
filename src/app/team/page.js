@@ -212,7 +212,7 @@ const Page = () => {
                     Elizabeth-Mary N. Okeke
                   </h3>
                   <p className="text-[#E45F11]">
-                    Executive Assistant - Client Relations & People Management
+                    Executive Assistant - Service Delivery and People Management
                   </p>
                   <Link href="/team/executive-assistant">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
