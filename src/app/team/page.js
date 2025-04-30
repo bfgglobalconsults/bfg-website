@@ -5,7 +5,7 @@ import ManagingDirector from "../../../public/assets/festus-md.png";
 import SocialMedia from "../../../public/assets/social-media.png";
 import HeadAdmin from "../../../public/assets/admin-lead.png";
 import BusinessAnalyst from "../../../public/assets/business-analyst-new.png";
-import DigitalMarketer from "../../../public/assets/digital-marketer.png";
+import DigitalMarketer from "../../../public/assets/ezekiel-img.png";
 import HeadService from "../../../public/assets/mr-peter.png";
 import HeadGrowth from "../../../public/assets/moses.png";
 import HeadFinance from "../../../public/assets/finance-lead.png";
@@ -460,7 +460,7 @@ const Page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Perpetual Amanyi</h3>
+                  <h3 className="font-semibold text-lg">Ezekiel Okrude</h3>
                   <p className="text-[#E45F11]">Digital Marketing Executive</p>
                   <Link href="/team/digital-marketer">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
