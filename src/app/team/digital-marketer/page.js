@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Avatar from "../../../../public/assets/new-avatar.png";
-import DigitalMarketer from "../../../../public/assets/digital-marketer.png";
+import DigitalMarketer from "../../../../public/assets/ezekiel-img.png";
 
 import Link from "next/link";
 
@@ -32,7 +32,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Perpetual Amanyi
+            <h3 className="text-3xl font-semibold my-8">Ezekiel Okrude
 </h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
@@ -46,7 +46,7 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Perpetual Amanyi
+                  <h3 className="font-semibold text-lg">Ezekiel Okrude
 </h3>
                   <p className="text-[#E45F11]">
                     Digital Marketing Executive
@@ -54,7 +54,7 @@ const page = () => {
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:amanyi.perpetual@bfgconsults.com">
+                <a href="mailto:dm@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -73,12 +73,12 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Perpetual</h4>
+              <h4 className="text-xl font-semibold mb-6">About Ezekiel</h4>
               <p className="text-[#999] text-lg">
-Perpetual Amanyi is a strategic and data-driven Digital Marketer in the Digital Marketing unit of our Marketing and Sales Department at BFG Global Consulting. She specializes in developing and executing innovative digital marketing campaigns that enhance brand visibility, drive engagement, and generate leads.              </p>
+Ezekiel Okrude is a strategic and data-driven Digital Marketer in the Digital Marketing unit of our Marketing and Sales Department at BFG Global Consulting. he specializes in developing and executing innovative digital marketing campaigns that enhance brand visibility, drive engagement, and generate leads.              </p>
                           <br />
                           <p className="text-[#999] text-lg">
-With expertise in SEO, social media marketing, email campaigns, and performance analytics, Perpetual leverages data insights to optimize strategies and maximize ROI. Her passion for digital trends and audience behavior enables her to craft targeted campaigns that align with business objectives. Committed to delivering impactful results, she plays a key role in strengthening BFG Global Consulting&apos;s digital presence and market influence.              </p>
+With expertise in SEO, social media marketing, email campaigns, and performance analytics, Ezekiel leverages data insights to optimize strategies and maximize ROI. His passion for digital trends and audience behavior enables him to craft targeted campaigns that align with business objectives. Committed to delivering impactful results, he plays a key role in strengthening BFG Global Consulting&apos;s digital presence and market influence.              </p>
               <br />
              
             </div>
