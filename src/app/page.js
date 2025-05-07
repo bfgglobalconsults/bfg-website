@@ -344,12 +344,13 @@ export default function Main() {
           <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('../../public/assets/middle-banner.png')] bg-no-repeat">
             <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
               {solutions.map((solution, index) => (
-                <Transition
-                  transition={{ delay: 1 + index * 0.4 }}
-                  viewport={{ once: true }}
-                  key={solution.id}
-                  layoutId={solution.id}
-                >
+                // <Transition
+                //   transition={{ delay: 1 + index * 0.1 }}
+                //   viewport={{ once: true }}
+                //   key={solution.id}
+                //   layoutId={solution.id}
+                // >
+                <>
                   <Link href={solution.href}>
                     <div className="w-[300px] md:w-[500px] lg:w-[350px] h-[300px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                       <div className="p-5">
@@ -394,8 +395,9 @@ export default function Main() {
                         </div>
                       </div>
                     </div>
-                  </Link>
-                </Transition>
+                </Link>
+                </>
+                //  </Transition>
               ))}
             </div>
           </div>
