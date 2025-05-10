@@ -6,6 +6,7 @@ import SocialMedia from "../../../public/assets/social-media.png";
 import HeadAdmin from "../../../public/assets/admin-lead.png";
 import BusinessAnalyst from "../../../public/assets/business-analyst-new.png";
 import DigitalMarketer from "../../../public/assets/ezekiel-img.png";
+import SalesExecutive from "../../../public/assets/sales-executive.png";
 import HeadService from "../../../public/assets/mr-peter.png";
 import HeadGrowth from "../../../public/assets/moses.png";
 import HeadFinance from "../../../public/assets/finance-lead.png";
@@ -449,7 +450,26 @@ const Page = () => {
             </h3>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Team member card */}
-
+{/* main person */}
+<div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={SalesExecutive}
+                    alt="marketer"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Eleanor Iorhemen</h3>
+                  <p className="text-[#E45F11]">Sales Executive</p>
+                  <Link href="/team/sales-executive">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+{/* main person end */}
               {/* first team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">

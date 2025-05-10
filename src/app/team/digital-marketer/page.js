@@ -75,10 +75,10 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Ezekiel</h4>
               <p className="text-[#999] text-lg">
-Ezekiel Okrude is a strategic and data-driven Digital Marketer in the Digital Marketing unit of our Marketing and Sales Department at BFG Global Consulting. he specializes in developing and executing innovative digital marketing campaigns that enhance brand visibility, drive engagement, and generate leads.              </p>
+Ezekiel Okrude is a strategic and data-driven Digital Marketer in the Digital Marketing unit of our Marketing and Growth Department at BFG Global Consulting. He specializes in developing and executing innovative digital marketing campaigns that enhance brand visibility, drive engagement, and generate leads.</p>
                           <br />
                           <p className="text-[#999] text-lg">
-With expertise in SEO, social media marketing, email campaigns, and performance analytics, Ezekiel leverages data insights to optimize strategies and maximize ROI. His passion for digital trends and audience behavior enables him to craft targeted campaigns that align with business objectives. Committed to delivering impactful results, he plays a key role in strengthening BFG Global Consulting&apos;s digital presence and market influence.              </p>
+With expertise in SEO, social media marketing, email campaigns, and performance analytics, Ezekiel leverages data insights to optimize strategies and maximize ROI. His passion for digital trends and audience behavior enables him to craft targeted campaigns that align with business objectives. Committed to delivering impactful results, he plays a key role in strengthening BFG Global Consulting&apos;s digital presence and market influence.</p>
               <br />
              
             </div>
