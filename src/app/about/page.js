@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 // import Banner from "../../../public/assets/about-banner.png";
-import Banner from "../../../public/assets/glass-building.jpg";
+import Banner from "../../../public/assets/glass-building.jpeg";
 
 import Picture from "../../../public/assets/festus-bello-image.png";
 import Statistics from "@/components/Statistics";
