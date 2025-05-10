@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Avatar from "../../../../public/assets/new-avatar.png";
-import SocialMedia from "../../../../public/assets/social-media.png";
+import SalesExecutive from "../../../../public/assets/sales-executive.png";
+
 import Link from "next/link";
 
 const page = () => {
@@ -31,29 +32,31 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Oladipupo Taiwo</h3>
+            <h3 className="text-3xl font-semibold my-8">Eleanor Iorhemen
+
+</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={SocialMedia}
+                    src={SalesExecutive}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Oladipupo Taiwo
+                  <h3 className="font-semibold text-lg">Eleanor Iorhemen
+
 </h3>
                   <p className="text-[#E45F11]">
-                     Digital Media and Content Strategist
-
+                    Sales Executive
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:oladipupo.taiwo@bfgconsults.com">
+                <a href="mailto:eleanor.iorhemen@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -72,14 +75,13 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Oladipupo</h4>
+              <h4 className="text-xl font-semibold mb-6">About Eleanor</h4>
               <p className="text-[#999] text-lg">
-              Oladipupo Taiwo is a creative and results-driven Digital Media and Content Strategist in the Media unit of our Marketing and Growth Department at BFG Global Consulting. With a deep understanding of digital trends and audience engagement, he develops compelling content strategies that enhance brand visibility and drive meaningful interactions.
-              </p>
+Eleanor Iorhemen is a dynamic and results-driven Sales Executive at BFG Global Consulting Limited, where she plays a pivotal role in driving market expansion and client acquisition strategies. With a keen understanding of business development, Eleanor specializes in creating tailored sales solutions that align with client objectives while supporting the company&apos;s overarching growth goals. </p>
+                          <br />
+                          <p className="text-[#999] text-lg">
+Working within the Marketing and Growth Department, Eleanor collaborates closely with cross-functional teams to identify market opportunities, nurture client relationships, and execute data-informed sales campaigns. She is known for her strategic mindset, strong interpersonal skills, and a relentless commitment to delivering value. Her approach combines consultative selling with a deep understanding of industry trends, positioning BFG Global Consulting as a trusted partner to clients worldwide. </p>
               <br />
-              <p className="text-[#999] text-lg">
-                Oladipupo excels at crafting high-impact media campaigns, optimizing content for multiple platforms, and leveraging data insights to refine marketing approaches. His expertise in storytelling, content creation, and digital marketing ensures that BFG Global Consulting delivers engaging and value-driven content to its target audience. Passionate about innovation and brand growth, he is dedicated to creating content experiences that resonate and inspire.
-               </p>
              
             </div>
           </div>
