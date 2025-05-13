@@ -49,7 +49,7 @@ const page = () => {
                     Elizabeth-Mary N. Okeke
                   </h3>
                   <p className="text-[#E45F11]">
-                    Executive Assistant - Service Delivery and People Management
+                    Executive Assistant – Projects and Service Delivery
 
                   </p>
                 </div>
@@ -78,29 +78,15 @@ const page = () => {
                 About Elizabeth-Mary
               </h4>
               <p className="text-[#999] text-lg">
-                Elizabeth Mary Okeke joined BFG Consults in 2024, bringing a
-                strong background in healthcare, administrative excellence,
-                project management, and client relations. She specializes in
-                streamlining processes, managing projects, and ensuring seamless
-                service delivery while fostering strong relationships with
-                clients.
+                Elizabeth-Mary N. Okeke is a dedicated and results-driven Executive Assistant at BFG Global Consulting Limited, where she plays a pivotal role in supporting project execution and ensuring seamless service delivery across strategic initiatives. With a keen eye for detail and a strong commitment to operational excellence, she collaborates closely with product teams and stakeholders to streamline workflows, enhance communication, and drive project success.
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                Known for her exceptional communication skills and meticulous
-                attention to detail, Elizabeth Mary effectively supports
-                executives and cross-functional teams, ensuring client needs are
-                met with precision and efficiency. She plays a key role in
-                client engagement, relationship management, and service
-                optimization, ensuring that every interaction aligns with
-                organizational goals and enhances client satisfaction.
+               Known for her organizational acumen and problem-solving capabilities, Elizabeth-Mary manages critical project and service delivery functions, coordinates high-level engagements, and oversees the timely execution of deliverables. Her professional demeanor, discretion, and proactive approach make her an invaluable asset in maintaining efficiency within dynamic, high-performance environments.
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                Her proactive approach, problem-solving mindset, and commitment
-                to excellence make her an invaluable asset in building and
-                maintaining long-term client partnerships while driving
-                strategic project outcomes.
+                With a passion for service and a focus on continuous improvement, she contributes meaningfully to BFG Global&apos;s mission of delivering world-class consulting solutions.
               </p>
             </div>
           </div>

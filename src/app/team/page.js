@@ -119,7 +119,7 @@ const Page = () => {
                 </div>
               </div>
               {/* Third team */}
-              <div className="flex flex-col">
+              {/* <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
                     src={HeadService}
@@ -138,7 +138,7 @@ const Page = () => {
                     </button>
                   </Link>
                 </div>
-              </div>
+              </div> */}
               {/* Fourth team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
@@ -213,7 +213,7 @@ const Page = () => {
                     Elizabeth-Mary N. Okeke
                   </h3>
                   <p className="text-[#E45F11]">
-                    Executive Assistant - Service Delivery and People Management
+                    Executive Assistant – Projects and Service Delivery
                   </p>
                   <Link href="/team/executive-assistant">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
