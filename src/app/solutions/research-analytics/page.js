@@ -393,12 +393,8 @@ const Page = () => {
                   unique projects that reflect our commitment to excellence,
                   innovation, and results-driven solutions.
                 </p>
-                <a
-                  href="/bfg-services.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=""
-                >
+                                <Link href="/insight/case-study/research">
+                
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                     <span className="text-white text-md font-semibold">
                       View Our Portfolio
@@ -415,7 +411,7 @@ const Page = () => {
                       </svg>
                     </span>
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
