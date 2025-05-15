@@ -372,12 +372,8 @@ const Page = () => {
                   training and development initiatives, fostering a pipeline of
                   skilled talent ready to tackle tomorrow&apos; challenges.
                 </p>
-                <a
-                  href="/bfg-services.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=""
-                >
+                               <Link href="/insight/case-study/training">
+               
                   <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
                     <span className="text-white text-md font-semibold">
                       View Our Portfolio
@@ -394,7 +390,7 @@ const Page = () => {
                       </svg>
                     </span>
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
