@@ -3,11 +3,10 @@
 import { fetchBaseQuery } from "@reduxjs/toolkit/query";
 import { apiSlice } from "../api";
 
-const API_URL = '/api/v1/users/'
+const API_URL = '/v1/users/'
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
 export const authApiSlice = apiSlice.injectEndpoints({
-    baseEndPoint: fetchBaseQuery({ baseUrl: BASE_URL, credentials: 'include' }),
     endpoints: builder => ({
         login: builder.mutation({
             query: credentials => ({
@@ -20,7 +19,6 @@ export const authApiSlice = apiSlice.injectEndpoints({
 })
 
 export const userCreateApiSlice = apiSlice.injectEndpoints({
-    baseQuery: fetchBaseQuery({ baseUrl: BASE_URL, credentials: 'include' }),
     endpoints: builder => ({
         createUser: builder.mutation({
             query: credentials => ({

@@ -7,7 +7,7 @@ import { ArrowRightStartOnRectangleIcon } from '@heroicons/react/16/solid';
 const apiLink = process.env.NEXT_PUBLIC_BASE_URL
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: apiLink,
+    baseUrl: '/api',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => { 
         const token = getState()?.auth?.token
