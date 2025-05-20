@@ -14,6 +14,7 @@ import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import Loading from "@/components/loader/page";
 import { ReduxProvider } from "@/redux/provider";
+import MetaPixelTracker from "@/components/PixelTracker";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -45,6 +46,8 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-GNHJW9W4PK');
 `}
         </Script>
+        <MetaPixelTracker />
+
       </head>
 
       <body className={inter.className}>
