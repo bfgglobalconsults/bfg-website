@@ -12,17 +12,22 @@ import Spinner from "@/components/Spinner";
 
 const Login = () => {
   const { push } = useRouter();
+
   const [login, { isLoading, error, success, isError }] = useLoginMutation({
     credentials: "include",
   });
+
   const dispatch = useDispatch();
+
   const emailRef = useRef();
+
   const passwordRef = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const email = emailRef?.current?.value;
+
     const password = passwordRef?.current?.value;
 
     try {
@@ -30,18 +35,21 @@ const Login = () => {
 
       if (response?.data?.accessToken) {
         dispatch(setCredentials({ response }));
+
         console.log("Login successful:", response);
+
         toast.success("Successfully logged in");
+
         push("/admin");
       } else {
         console.error("Login failed:", response?.message);
-
       }
     } catch (error) {
       // Handle login error
-      console.log("Logined failed:", error);
-                    toast.error(`${error.data?.message}`);
 
+      console.log("Logined failed:", error);
+
+      toast.error(`${error.data?.message}`);
     }
   };
 
@@ -138,7 +146,6 @@ const Login = () => {
                       value=""
                       className="w-4 h-4 accent-[#E26015] border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                       required
-
                     />
                   </div>
                   <label
@@ -156,9 +163,7 @@ const Login = () => {
                     onClick={(e) => handleSubmit(e)}
                     className="flex w-full justify-center rounded-md border bg-[#E26015] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26015]"
                   >
-                    {isLoading ?  (
-                     <Spinner />
-                    ):("Log in")}
+                    {isLoading ? <Spinner /> : "Log in"}
                   </button>
                 </div>
               </form>

@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
     if (req.method === 'POST') {
         try {
-            const backendUrl = process.env.NEXT_PUBLIC_BASE_URL + '/v1/users/loginUser';
+            const backendUrl = `https://bfg-website-api.onrender.com` + '/api/v1/users/loginUser';
             const response = await fetch(backendUrl, {
                 method: 'POST',
                 headers: {
@@ -9,6 +9,7 @@ export default async function handler(req, res) {
                 },
                 body: JSON.stringify(req.body),
             });
+            console.log('Response from backend:', backendUrl);
 
             const data = await response.json();
             res.status(response.status).json(data);
