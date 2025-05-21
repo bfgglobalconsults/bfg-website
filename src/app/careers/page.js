@@ -14,10 +14,12 @@ const page = () => {
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-           Careers
+            Careers
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-Discover a world of possibilities. Elevate your career with us a place where passion meets purpose.          </p>
+            Discover a world of possibilities. Elevate your career with us a
+            place where passion meets purpose.{" "}
+          </p>
         </div>
 
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
@@ -26,10 +28,10 @@ Discover a world of possibilities. Elevate your career with us a place where pas
             alt="about-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
-              </div>
-              <hr className="my-3" />
-              <div>
-                  <Slides />
+        </div>
+        <hr className="my-3" />
+        <div>
+          <Slides />
         </div>
         <div className="my-8">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
@@ -38,14 +40,17 @@ Discover a world of possibilities. Elevate your career with us a place where pas
           <div className="w-full flex gap-10 items-center my-4">
             <h3 className="w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
               Open Jobs
-                      </h3>
-            <Link className="w-[50%] text-[#999] text-decoration-underline hover:text-[#E26015] cursor-pointer" href="https://career-bfgconsults.odoo.com/jobs">
-                View Latest Jobs
-              
-            </Link>
+            </h3>
+            <div className="w-[50%]">
+              <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] py-2 px-4 rounded-lg">
+                <Link href="https://career-bfgconsults.odoo.com/jobs">
+                  View Latest Jobs
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
-        </div>
+      </div>
       {/* <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
         <Image
           src={TopBanner}
