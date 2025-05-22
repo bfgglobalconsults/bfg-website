@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Executive from "../../../../public/assets/elizabeth-mary.png";
+import Legal from "../../../../public/assets/legal-admin.png";
 import Link from "next/link";
 
 const page = () => {
@@ -31,7 +31,7 @@ const page = () => {
           </span>
           <div className="my-4">
             <h3 className="text-3xl font-semibold my-8">
-              Elizabeth-Mary N. Okeke
+            Adenikinju Damisi
             </h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
@@ -39,23 +39,24 @@ const page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={Executive}
-                    alt="executive"
+                    src={Legal}
+                    alt="legal"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">
-                    Elizabeth-Mary N. Okeke
+                  Adenikinju Damisi
+
                   </h3>
                   <p className="text-[#E45F11]">
-                    Executive Assistant – Projects and Service Delivery
+                  Legal and Compliance Administrator
 
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:elizabeth.okeke@bfgconsults.com">
+                <a href="mailto:admin@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -75,19 +76,21 @@ const page = () => {
             </div>
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">
-                About Elizabeth-Mary
+                About Adenikinju
               </h4>
               <p className="text-[#999] text-lg">
-                Elizabeth-Mary N. Okeke is a dedicated and results-driven Executive Assistant at BFG Global Consulting Limited, where she plays a pivotal role in supporting project execution and ensuring seamless service delivery across strategic initiatives. With a keen eye for detail and a strong commitment to operational excellence, she collaborates closely with product teams and stakeholders to streamline workflows, enhance communication, and drive project success.
-              </p>
+              Adenikinju Damisi is a dedicated legal and regulatory professional currently serving as the Legal and Compliance Administrator at BFG Global Consulting Limited. In his role, he ensures that the company&apos;s operations and client engagements adhere to applicable laws, industry standards, and internal governance policies across its operations.              </p>
               <br />
               <p className="text-[#999] text-lg">
-               Known for her organizational acumen and problem-solving capabilities, Elizabeth-Mary manages critical project and service delivery functions, coordinates high-level engagements, and oversees the timely execution of deliverables. Her professional demeanor, discretion, and proactive approach make her an invaluable asset in maintaining efficiency within dynamic, high-performance environments.
-              </p>
+                              With a strong foundation in corporate law, regulatory compliance, and risk management, Damisi plays a critical role in safeguarding BFG&apos;s integrity and reputation. He is responsible for drafting, reviewing, and managing legal documents, monitoring compliance frameworks, and supporting the leadership team in making informed, risk-aware decisions.
+                          </p>
               <br />
               <p className="text-[#999] text-lg">
-                With a passion for service and a focus on continuous improvement, she contributes meaningfully to BFG Global&apos;s mission of delivering world-class consulting solutions.
-              </p>
+                              His approach to compliance is both proactive and strategic—emphasizing preventive practices, ethical standards, and continuous improvement. Damisi also liaises with external legal partners and regulatory bodies to keep BFG informed and agile in the face of evolving legal landscapes.
+                          </p>
+                          <br />
+              <p className="text-[#999] text-lg">
+              Adenikinju brings a deep sense of professionalism and attention to detail to every task. His work helps ensure that BFG Global Consulting operates with transparency, accountability, and legal confidence as it delivers cutting-edge solutions in strategy, research, and technology.                          </p>
             </div>
           </div>
         </div>

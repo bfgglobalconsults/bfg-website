@@ -17,6 +17,7 @@ import HeadResearch from "../../../public/assets/kenneth.png";
 import Elizabeth from "../../../public/assets/elizabeth-mary.png";
 import DavidBradford from "../../../public/assets/david-bradford.png";
 import Happy from "../../../public/assets/happiness_adama.png";
+import Legal from "../../../public/assets/legal-admin.png";
 import Jeremiah from "../../../public/assets/jesunifemi.png";
 import Ayobami from "../../../public/assets/ayobami-picture.png";
 import Simon from "../../../public/assets/simon-adeh.png";
@@ -213,9 +214,9 @@ const Page = () => {
                     Elizabeth-Mary N. Okeke
                   </h3>
                   <p className="text-[#E45F11]">
-                    Executive Assistant – Projects and Service Delivery
+                  Ag Head, Projects and Service Delivery
                   </p>
-                  <Link href="/team/executive-assistant">
+                  <Link href="/team/service-delivery">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
@@ -597,6 +598,29 @@ const Page = () => {
                   </Link>
                 </div>
               </div>
+              {/* new team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={Legal}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">
+                  Adenikinju Damisi
+
+                  </h3>
+                  <p className="text-[#E45F11]">Legal and Compliance Administrator</p>
+                  <Link href="/team/legal-compliance">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              {/* new team end */}
               {/* second team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
