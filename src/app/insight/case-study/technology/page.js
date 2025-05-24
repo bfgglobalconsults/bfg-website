@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import TopBanner from "../../../../../public/assets/it-banner.jpg";
 
