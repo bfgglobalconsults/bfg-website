@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "USA"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [-124.733, 49.3457],
+              [-124.733, 49.3457],
+              [-124.733, 49.3457],
+              [-124.733, 49.3457],
+              [-124.733, 49.3457]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

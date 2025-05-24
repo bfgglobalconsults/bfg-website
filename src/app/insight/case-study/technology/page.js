@@ -20,6 +20,7 @@ import Expertise from "../../../../../public/assets/expertise-resources.png";
 import Innovation from "../../../../../public/assets/innovation-development.png";
 
 import Link from "next/link";
+import MainDashboard from "@/components/dashboard/technology/MainDashboard";
 
 const page = () => {
   
@@ -41,7 +42,14 @@ Technology & Software Development
           </p>
         </div>
       </div>
-      <div className="px-12">
+      <MainDashboard />
+      <hr className="mx-12"/>
+
+          <div className="mt-8 px-12">
+           
+        
+        </div>
+      {/* <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={TopBanner}
@@ -49,10 +57,17 @@ Technology & Software Development
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
-      </div>
+      </div> */}
+
       <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">
           <div className="w-full">
+          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+              Case Studies
+        </span>
+          <h3 className="text-[#333] text-3xl my-4 font-semibold">
+                Projects Delivered
+              </h3>
             <p className="text-lg text-[#656565] my-3">
               Innovation is at the core of our technology solutions. From custom software development to digital transformation strategies, we help businesses leverage cutting-edge technologies to streamline processes, enhance customer experiences, and boost efficiency. Our case studies showcase how we’ve built scalable, secure, and high-performing solutions tailored to unique business needs.
             </p>
