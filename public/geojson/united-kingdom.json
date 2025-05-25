@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "United Kingdom"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [-6.3986, 50.0683],
+              [-6.3986, 50.0683],
+              [-6.3986, 50.0683],
+              [-6.3986, 50.0683],
+              [-6.3986, 50.0683]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

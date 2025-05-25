@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Canada"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [-141.0, 60.0],
+              [-141.0, 60.0],
+              [-141.0, 60.0],
+              [-141.0, 60.0],
+              [-141.0, 60.0]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
