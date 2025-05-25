@@ -1,6 +1,12 @@
 import React from "react";
+import dynamic from 'next/dynamic';
 import IndustryServedChart from "../charts/IndustryServedCharts";
-import CountriesServedMap from "../maps/CountryServedMap";
+import HowItWorksSection from "../charts/WebTechnologiesSection";
+import TechStackSection from "../charts/TechStackSection";
+
+const CountriesServedMap = dynamic(() => import("../maps/CountryServedMap"), {
+  ssr: false
+});
 
 const allData = [
   {
@@ -106,14 +112,23 @@ const AllComponents = () => {
               </div>
             ))}
           </div>
-                <div className="w-full flex gap-2 px-12">
-                    <div className="w-[50%]">
+                <div className="w-full flex flex-col lg:flex-row gap-2 px-12">
+                    <div className="w-[100%] lg:w-[50%]">
                         <CountriesServedMap />
                     </div>
-                    <div className="w-[50%]">
+                    <div className="w-[100%] lg:w-[50%]">
                         <IndustryServedChart />
                     </div>
           </div>
+          <div className="w-full flex flex-col lg:flex-row gap-2 px-12">
+            <div className="w-[100%] lg:w-[50%]">
+              <HowItWorksSection />
+          </div>
+            <div className="w-[100%] lg:w-[50%]">
+              <TechStackSection />
+          </div>
+          </div>
+
         </div>
       </>
     );

@@ -142,7 +142,7 @@ const Header = () => {
               : "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
           } px-[40px] text-white`}
         >
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center z-20">
             {active ? (
               <>
                 <Link href="/">

@@ -83,7 +83,7 @@ const CountriesServedMap = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-2xl font-bold text-gray-900 mb-12">
+        <h2 className="text-xl  font-bold text-gray-900 mb-12">
           Countries Served
         </h2>
 
