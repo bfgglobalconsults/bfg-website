@@ -21,7 +21,7 @@ const mobilePlatforms = ["Android", "iOS", "Flutter", "React Native"];
 
 const TechStackSection = () => {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white">
       <div className="container mx-auto px-4">
         {/* Cloud Deployments Section (with Bar Chart) */}
         <div className="mb-16">

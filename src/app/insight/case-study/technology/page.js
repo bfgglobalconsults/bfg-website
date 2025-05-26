@@ -29,7 +29,7 @@ const page = () => {
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-        Case Studies & Portfolio
+        Portfolio Metrics
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
@@ -37,13 +37,12 @@ const page = () => {
 Technology & Software Development
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Innovative solutions, secure technology, & unparalleled support for
-            your business
+          Highlights of our key performance indicators for project execution, code quality, system dependability, and team output that guarantee value delivery, strategy alignment, and ongoing development throughout our technology and software development portfolio.
           </p>
         </div>
       </div>
       <MainDashboard />
-      <hr className="mx-12"/>
+      <hr className="mx-12 my-8"/>
 
           <div className="mt-8 px-12">
            
@@ -66,11 +65,12 @@ Technology & Software Development
               Case Studies
         </span>
           <h3 className="text-[#333] text-3xl my-4 font-semibold">
-                Projects Delivered
+                Projects Executed
               </h3>
             <p className="text-lg text-[#656565] my-3">
-              Innovation is at the core of our technology solutions. From custom software development to digital transformation strategies, we help businesses leverage cutting-edge technologies to streamline processes, enhance customer experiences, and boost efficiency. Our case studies showcase how we’ve built scalable, secure, and high-performing solutions tailored to unique business needs.
-            </p>
+            From custom software development to digital transformation strategies, we have delivered cutting-edge technologies to streamline processes, enhance customer experiences, and boost the efficiency of businesses and organizations of all sizes. These case studies showcase how we&apos;ve built scalable, secure, and high-performing solutions tailored to unique business needs.
+
+</p>
           </div>
 
                   <div className="w-full  my-8">
@@ -332,7 +332,7 @@ Technology & Software Development
             
           </div>
 
-          <hr />
+          {/* <hr />
 
           <div className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
@@ -363,7 +363,7 @@ Technology & Software Development
                   className="w-full h-full"
                 />
               </div>
-            </div> */}
+            </div> 
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
@@ -385,7 +385,7 @@ Technology & Software Development
                   </p>
                 </div>
               </div>
-              {/* second item */}
+             
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -406,7 +406,7 @@ Technology & Software Development
                   </p>
                 </div>
               </div>
-              {/* third item */}
+             
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -426,7 +426,7 @@ Technology & Software Development
                   </p>
                 </div>
               </div>
-              {/* fourth item */}
+              
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -446,7 +446,7 @@ Technology & Software Development
                   </p>{" "}
                 </div>
               </div>
-              {/* fifth item */}
+              
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -466,7 +466,7 @@ Technology & Software Development
                   </p>{" "}
                 </div>
               </div>
-              {/* sixth item */}
+              
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -487,7 +487,7 @@ Technology & Software Development
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           
           
          
