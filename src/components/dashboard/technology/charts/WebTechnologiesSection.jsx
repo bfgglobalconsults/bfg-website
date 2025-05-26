@@ -39,7 +39,7 @@ const technologiesData = [
 
 const WebTechnologiesSection = () => {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-xl font-bold text-gray-900 mb-12">
           Web Technologies Used

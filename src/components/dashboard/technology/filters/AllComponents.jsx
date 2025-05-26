@@ -12,7 +12,7 @@ const allData = [
   {
     id: 1,
     name: "Total Digital Projects",
-    stat: "+8% from yesterday",
+    stat: "+8% from 2024",
     value: 81,
     cardColor: "#FFE2E5",
     iconColor: "#FA5A7D",
@@ -31,7 +31,7 @@ const allData = [
   {
     id: 2,
     name: "Web/Mobile Applications Developed",
-    stat: "+8% from yesterday",
+    stat: "+8% from 2024",
     value: 18,
     cardColor: "#FFF4DE",
     iconColor: "#FF947A",
@@ -50,7 +50,7 @@ const allData = [
   {
     id: 3,
     name: "Websites Completed",
-    stat: "+8% from yesterday",
+    stat: "+8% from 2024",
     value: 63,
     cardColor: "#DCFCE7",
     iconColor: "#3CD856",
@@ -69,7 +69,7 @@ const allData = [
   {
     id: 4,
     name: "Client Retention Rate",
-    stat: "+8% from yesterday",
+    stat: "+8% from 2024",
     value: "98%",
     cardColor: "#F3E8FF",
     iconColor: "#BF83FF",
@@ -112,7 +112,7 @@ const AllComponents = () => {
               </div>
             ))}
           </div>
-                <div className="w-full flex flex-col lg:flex-row gap-2 px-12">
+                <div className="w-full flex flex-col lg:flex-row py-8 gap-2 px-12">
                     <div className="w-[100%] lg:w-[50%]">
                         <CountriesServedMap />
                     </div>

@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import World from "../../../../../public/assets/world.png";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -11,6 +12,7 @@ import L from 'leaflet';
 import 'leaflet/dist/images/marker-icon-2x.png';
 import 'leaflet/dist/images/marker-icon.png';
 import 'leaflet/dist/images/marker-shadow.png';
+import Image from "next/image";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -81,7 +83,7 @@ const CountriesServedMap = () => {
   };
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="">
       <div className="container mx-auto px-4">
         <h2 className="text-xl  font-bold text-gray-900 mb-12">
           Countries Served
@@ -89,30 +91,8 @@ const CountriesServedMap = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
           {/* Map */}
-          <div className="w-full lg:w-2/3 h-[500px] rounded-lg shadow-md overflow-hidden">
-            <MapContainer
-              center={mapCenter}
-              zoom={mapZoom}
-              style={{ height: "100%", width: "100%" }}
-              whenCreated={(map) => {
-                // Optional: Store map instance if you need to interact with it later
-                // mapRef.current = map;
-              }}
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-
-              {/* Render GeoJSON layers once data is loaded */}
-              {Object.keys(loadedGeojson).map((name) => (
-                <GeoJSON
-                  key={name}
-                  data={loadedGeojson[name]}
-                  style={countryStyle}
-                />
-              ))}
-            </MapContainer>
+          <div className="w-full rounded-lg shadow-md overflow-hidden">
+           <Image src={World} alt="world-map" className="w-full h-full object-contain" />
           </div>
 
           {/* Legend */}
