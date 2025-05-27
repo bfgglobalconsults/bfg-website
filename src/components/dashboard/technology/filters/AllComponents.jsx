@@ -1,8 +1,8 @@
 import React from "react";
 import dynamic from 'next/dynamic';
 import IndustryServedChart from "../charts/IndustryServedCharts";
-import HowItWorksSection from "../charts/WebTechnologiesSection";
 import TechStackSection from "../charts/TechStackSection";
+import WebTechnologiesSection from "../charts/WebTechnologiesSection";
 
 const CountriesServedMap = dynamic(() => import("../maps/CountryServedMap"), {
   ssr: false
@@ -105,14 +105,14 @@ const AllComponents = () => {
                 </span>
                 <p className="text-3xl font-bold mt-1 text-left">{item.value}</p>
 
-                <h3 className="text-lg font-semibold mt-2 text-left">
+                <h3 className="text-lg mt-2 text-left">
                   {item.name}
                 </h3>
                 <p className="text-sm text-[#E26015] font-semibold text-left">{item.stat}</p>
               </div>
             ))}
           </div>
-                <div className="w-full flex flex-col lg:flex-row py-8 gap-2 px-12">
+                <div className="w-full flex flex-col lg:flex-row py-8 gap-2 px-4 lg:px-12">
                     <div className="w-[100%] lg:w-[50%]">
                         <CountriesServedMap />
                     </div>
@@ -120,9 +120,9 @@ const AllComponents = () => {
                         <IndustryServedChart />
                     </div>
           </div>
-          <div className="w-full flex flex-col lg:flex-row gap-2 px-12">
+          <div className="w-full flex flex-col lg:flex-row gap-2 px-4 lg:px-12">
             <div className="w-[100%] lg:w-[50%]">
-              <HowItWorksSection />
+              <WebTechnologiesSection />
           </div>
             <div className="w-[100%] lg:w-[50%]">
               <TechStackSection />
