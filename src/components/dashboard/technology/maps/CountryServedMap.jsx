@@ -24,11 +24,19 @@ L.Icon.Default.mergeOptions({
 
 const countryData = [
   { name: "India", geojsonPath: "/geojson/india.json", color: "#985EFF" }, // Purple
-  { name: "United Kingdom", geojsonPath: "/geojson/united-kingdom.json", color: "#F7A800" }, // Orange
+  {
+    name: "United Kingdom",
+    geojsonPath: "/geojson/united-kingdom.json",
+    color: "#6495ED",
+  }, // Orange
   { name: "Nigeria", geojsonPath: "/geojson/nigeria.json", color: "#29AB87" }, // Green
   { name: "Canada", geojsonPath: "/geojson/canada.json", color: "#F05454" }, // Red
-  { name: "USA", geojsonPath: "/geojson/usa.json", color: "#6495ED" }, // Blue
-  { name: "Australia", geojsonPath: "/geojson/australia.json", color: "#00BFFF" }, // Light Blue
+  { name: "USA", geojsonPath: "/geojson/usa.json", color: "#F7A800" }, // Blue
+  {
+    name: "Australia",
+    geojsonPath: "/geojson/australia.json",
+    color: "#00BFFF",
+  }, // Light Blue
 ];
 
 const CountriesServedMap = () => {

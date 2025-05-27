@@ -54,20 +54,24 @@ const WebTechnologiesSection = () => {
             <div className="py-2 text-center">Projects</div>
           </div>
 
-          {/* Table Rows */}
-          {technologiesData.map((tech) => (
-            <div
-              key={tech.id}
-              className="grid grid-cols-[auto_1fr_2fr_auto] gap-4 py-4 border-b border-gray-100 items-center last:border-b-0"
-            >
-              <div className="text-gray-600 font-medium text-center">
-                {tech.id.toString().padStart(2, "0")}
-              </div>
-              <div className="text-gray-800">{tech.name}</div>
-              <div className="relative h-2 rounded-full bg-gray-200 overflow-hidden">
+                {technologiesData.map((tech) => (
                 <div
-                  className="absolute inset-0 rounded-full"
-                  style={{
+                  key={tech.id}
+                  className="grid grid-cols-[auto_1fr_2fr_auto] gap-4 py-4 border-b border-gray-100 items-center last:border-b-0"
+                >
+                  <div className="text-gray-600 font-medium text-center">
+                  {tech.id.toString().padStart(2, "0")}
+                  </div>
+                  <div className="text-gray-800">
+                  <span className="md:hidden">
+                    {tech.name.length > 5 ? `${tech.name.slice(0, 5)}...` : tech.name}
+                  </span>
+                  <span className="hidden md:block">{tech.name}</span>
+                  </div>
+                  <div className="relative h-2 rounded-full bg-gray-200 overflow-hidden">
+                  <div
+                    className="absolute inset-0 rounded-full"
+                    style={{
                     width: `${tech.usage}%`,
                     background: `linear-gradient(to right, ${tech.color} 0%, ${tech.color}AA 100%)`, // Solid to slightly transparent gradient
                   }}
