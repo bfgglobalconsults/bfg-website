@@ -1,4 +1,5 @@
 // components/IndustryCard.js
+"use client";
 import React from "react";
 // data/industries.js (or directly in your component)
 const industriesData = [
