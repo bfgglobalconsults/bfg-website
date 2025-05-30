@@ -327,7 +327,7 @@ const page = () => {
             </div>
           </div>
 
-          <hr />
+          {/* <hr />
 
           <div className="my-[80px]">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
@@ -358,7 +358,7 @@ const page = () => {
                   className="w-full h-full"
                 />
               </div>
-            </div> */}
+            </div> 
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
@@ -381,7 +381,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* second item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -403,7 +402,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* third item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -424,7 +422,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* fourth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -446,7 +443,6 @@ const page = () => {
                   </p>{" "}
                 </div>
               </div>
-              {/* fifth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -466,7 +462,6 @@ const page = () => {
                   </p>{" "}
                 </div>
               </div>
-              {/* sixth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col l items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -487,9 +482,8 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* service team */}
         </div>
       </div>
     </>

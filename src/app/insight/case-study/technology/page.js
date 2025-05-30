@@ -42,16 +42,7 @@ const page = () => {
       <MainDashboard />
       <hr className="mx-12 my-8" />
 
-      <div className="mt-8 px-12"></div>
-      {/* <div className="px-12">
-        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
-          <Image
-            src={TopBanner}
-            alt="top-banner"
-            className="w-full h-full object-cover rounded-3xl"
-          />
-        </div>
-      </div> */}
+      
 
       <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">

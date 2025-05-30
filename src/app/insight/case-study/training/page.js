@@ -14,6 +14,7 @@ import TopTalent from "../../../../../public/assets/top-talent.png";
 import Operations from "../../../../../public/assets/operations.png";
 
 import Link from "next/link";
+import MainDashboard from "@/components/dashboard/training/MainDashboard";
 
 const page = () => {
   
@@ -32,18 +33,24 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="px-12">
-        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
-          <Image
-            src={TopBanner}
-            alt="top-banner"
-            className="w-full h-full object-cover rounded-3xl"
-          />
+      <div className="px-6 lg:px-12">
+
+        <MainDashboard />
         </div>
-      </div>
-      <div className="py-[1px] lg:py-[30px]">
-        <div className="p-[40px]">
-          <div className="w-full">
+        
+        <hr className="mx-12 my-8" />
+
+      
+
+<div className="py-[1px] lg:py-[30px]">
+  <div className="p-[40px]">
+    <div className="w-full">
+      <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+        Case Studies
+      </span>
+      <h3 className="text-[#333] text-3xl my-4 font-semibold">
+        Projects Executed
+      </h3>
             <p className="text-lg text-[#656565] my-3">
               A skilled workforce is essential for business success. Our tailored training programs equip teams with the knowledge and skills needed to thrive in a dynamic business environment. From leadership development to technical training, our case studies demonstrate how we&apos;ve helped organizations upskill employees and foster a culture of continuous learning.
             </p>
@@ -226,7 +233,7 @@ const page = () => {
           </div>
           </div>
 
-          <hr />
+          {/* <hr />
 
           <div className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
@@ -257,7 +264,7 @@ const page = () => {
                   className="w-full h-full"
                 />
               </div>
-            </div> */}
+            </div> 
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
@@ -279,7 +286,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* second item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -299,7 +305,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* third item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -320,7 +325,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* fourth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -340,7 +344,6 @@ const page = () => {
                   </p>{" "}
                 </div>
               </div>
-              {/* fifth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -361,7 +364,6 @@ const page = () => {
                   </p>{" "}
                 </div>
               </div>
-              {/* sixth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -382,7 +384,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           
           
          
