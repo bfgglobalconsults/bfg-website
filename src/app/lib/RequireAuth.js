@@ -4,16 +4,16 @@
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import { useSelector } from "react-redux";
-import { useEffect, useState } from 'react';
-import { selectCurrentUser } from '@/redux/auth/authSlice';
-
+import { useContext, useEffect, useState } from 'react';
+import { useAuth } from '@/context/authContext';
+// import { AuthContext } from '@/context/authContext';
 const authenticatedRoutes = [
     '/admin',
 ]
 
 export default function RequireAuth({ children }) {
     const [user, setUser] = useState({})
-    const currentuser = useSelector(selectCurrentUser)
+    const { user: currentuser } = useAuth()
     const pathname = usePathname();
     const { push } = useRouter()
 
