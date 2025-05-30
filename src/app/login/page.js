@@ -9,15 +9,12 @@ import { useRouter } from "next/navigation";
 import { useLoginMutation } from "@/redux/auth/authService";
 import toast from "react-hot-toast";
 import Spinner from "@/components/Spinner";
+import { useAuth } from "@/context/authContext";
 
 const Login = () => {
   const { push } = useRouter();
 
-  const [login, { isLoading, error, success, isError }] = useLoginMutation({
-    credentials: "include",
-  });
-
-  const dispatch = useDispatch();
+  const { login, loading } = useAuth();
 
   const emailRef = useRef();
 
@@ -27,29 +24,14 @@ const Login = () => {
     e.preventDefault();
 
     const email = emailRef?.current?.value;
-
     const password = passwordRef?.current?.value;
 
     try {
-      const response = await login({ email, password }).unwrap();
+      await login({ email, password });
 
-      if (response?.data?.accessToken) {
-        dispatch(setCredentials({ response }));
-
-        console.log("Login successful:", response);
-
-        toast.success("Successfully logged in");
-
-        push("/admin");
-      } else {
-        console.error("Login failed:", response?.message);
-      }
+      push("/admin");
     } catch (error) {
-      // Handle login error
-
-      console.log("Logined failed:", error);
-
-      toast.error(`${error.data?.message}`);
+      console.error("Login component caught error:", error);
     }
   };
 
@@ -159,11 +141,11 @@ const Login = () => {
                 <div>
                   <button
                     type="button"
-                    disabled={isLoading}
+                    disabled={loading}
                     onClick={(e) => handleSubmit(e)}
                     className="flex w-full justify-center rounded-md border bg-[#E26015] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E26015]"
                   >
-                    {isLoading ? <Spinner /> : "Log in"}
+                    {loading ? <Spinner /> : "Log in"}
                   </button>
                 </div>
               </form>

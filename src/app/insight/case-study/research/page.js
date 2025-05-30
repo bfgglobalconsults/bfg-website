@@ -14,6 +14,8 @@ import PredictiveImg from "../../../../../public/assets/predective-image.png";
 import ImpactImg from "../../../../../public/assets/impact-image.png";
 import AppraisalImg from "../../../../../public/assets/appraisal-image.png";
 import Link from "next/link";
+import AllComponents from "@/components/dashboard/research/filters/AllComponents";
+import MainDashboard from "@/components/dashboard/research/MainDashboard";
 
 const page = () => {
   const researchSlides = [
@@ -57,254 +59,272 @@ const page = () => {
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-          Case Studies & Portfolio
+          Portfolio Metrics
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Research and Analytics
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Utilise our Business Research and Analytics to help you make wiser
-            business decisions.
+            Highlights of our key performance indicators for project execution,
+            research, analytical system dependability, and industries that
+            guarantee value delivery, strategic alignment, through informed
+            decision-making.
           </p>
         </div>
       </div>
-      <div className="px-12">
-        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
+      <div className="px-6 lg:px-12">
+        <MainDashboard />
+        {/* <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={TopBanner}
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
-        </div>
+        </div> */}
       </div>
+      <hr className="mx-12 my-8" />
+
+      <div className="mt-8 px-12"></div>
       <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">
           <div className="w-full">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+              Case Studies
+            </span>
+            <h3 className="text-[#333] text-3xl my-4 font-semibold">
+              Projects Executed
+            </h3>
             <p className="text-lg text-[#656565] my-3">
-             Data-driven insights empower businesses to make informed decisions. Through in-depth market research, consumer behavior analysis, and competitive intelligence, we provide actionable recommendations that drive growth. Explore our case studies to see how our research and analytics have helped businesses identify opportunities, mitigate risks, and stay ahead in competitive markets.
+              Data-driven insights empower businesses to make informed
+              decisions. Through in-depth market research, consumer behavior
+              analysis, and competitive intelligence, we provide actionable
+              recommendations that drive growth. Explore our case studies to see
+              how our research and analytics have helped businesses identify
+              opportunities, mitigate risks, and stay ahead in competitive
+              markets.
             </p>
           </div>
 
           <div className="w-full  my-8">
-              <div>
-            <div className="">
-              <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-4">
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project1}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
+            <div>
+              <div className="">
+                <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-4">
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project1}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        ZENKLEUS Nigeria: A UI/UX Research Journey into
+                        User-Centered Design
+                      </h3>
+                      <p className="text-[#999]">
+                        In Nigeria&apos;s rapidly evolving digital landscape,
+                        user experience (UX) and user interface (UI) design are
+                        becoming crucial for product success. ZENKLEUS Nigeria
+                        embarked on a comprehensive UI/UX research initiative to
+                        better understand user behavior, optimize engagement,
+                        and enhance usability.
+                      </p>
+                      <Link href="/industry/projects/research/zenkleus-research">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      ZENKLEUS Nigeria: A UI/UX Research Journey into
-                      User-Centered Design
-                    </h3>
-                    <p className="text-[#999]">
-                      In Nigeria&apos;s rapidly evolving digital landscape, user
-                      experience (UX) and user interface (UI) design are
-                      becoming crucial for product success. ZENKLEUS Nigeria
-                      embarked on a comprehensive UI/UX research initiative to
-                      better understand user behavior, optimize engagement, and
-                      enhance usability.
-                    </p>
-                    <Link href="/industry/projects/research/zenkleus-research">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
+                  {/* second image */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project2}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        MECEN&apos;s Sustainable Expansion: Establishing a PET
+                        Recycling Facility in Nigeria
+                      </h3>
+                      <p className="text-[#999]">
+                        As plastic waste continues to pose a significant
+                        environmental challenge in Nigeria, innovative recycling
+                        solutions have become crucial for sustainable
+                        development. MECEN, a global leader in recycling and
+                        advanced Pyrolysis technology, identified an opportunity
+                        to drive change by establishing a PET recycling facility
+                        in key Nigerian cities—Abuja, Port Harcourt, and Lagos{" "}
+                      </p>
+                      <Link href="/industry/projects/research/mecen-research">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                {/* second image */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project2}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      MECEN&apos;s Sustainable Expansion: Establishing a PET
-                      Recycling Facility in Nigeria
-                    </h3>
-                    <p className="text-[#999]">
-                      As plastic waste continues to pose a significant
-                      environmental challenge in Nigeria, innovative recycling
-                      solutions have become crucial for sustainable development.
-                      MECEN, a global leader in recycling and advanced Pyrolysis
-                      technology, identified an opportunity to drive change by
-                      establishing a PET recycling facility in key Nigerian
-                      cities—Abuja, Port Harcourt, and Lagos{" "}
-                    </p>
-                    <Link href="/industry/projects/research/mecen-research">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* third product */}
+                  {/* third product */}
 
-                {/* fourth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project4}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
+                  {/* fourth product */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project4}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        Corporate Scholarship Funding: Analyzing CSR Investment
+                        in Education Across Industries
+                      </h3>
+                      <p className="text-[#999]">
+                        AKADAPlay commissioned us to conduct a comprehensive
+                        study on corporate scholarship funding as part of CSR
+                        initiatives across various industries. The research
+                        aimed to evaluate how corporations allocate resources
+                        for educational support, identify spending patterns, and
+                        uncover key trends in CSR-driven scholarship programs.
+                      </p>
+                      <Link href="/industry/projects/research/akadapay-research">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Corporate Scholarship Funding: Analyzing CSR Investment in
-                      Education Across Industries
-                    </h3>
-                    <p className="text-[#999]">
-                      AKADAPlay commissioned us to conduct a comprehensive study
-                      on corporate scholarship funding as part of CSR
-                      initiatives across various industries. The research aimed
-                      to evaluate how corporations allocate resources for
-                      educational support, identify spending patterns, and
-                      uncover key trends in CSR-driven scholarship programs.
-                    </p>
-                    <Link href="/industry/projects/research/akadapay-research">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
+                  {/* fifth product */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project5}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        Strategic Market Exploration: Identifying Fintech
+                        Opportunities for Ampersand
+                      </h3>
+                      <p className="text-[#999]">
+                        Ampersand is seeking to enter the fintech industry but
+                        requires strategic direction on the most viable product
+                        line and target market. The company is evaluating
+                        opportunities in both the Nigerian and U.S. markets,
+                        aiming to identify an underserved segment with strong
+                        growth potential.
+                      </p>
+                      <Link href="/industry/projects/research/ampersand-research">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                {/* fifth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project5}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Strategic Market Exploration: Identifying Fintech
-                      Opportunities for Ampersand
-                    </h3>
-                    <p className="text-[#999]">
-                      Ampersand is seeking to enter the fintech industry but
-                      requires strategic direction on the most viable product
-                      line and target market. The company is evaluating
-                      opportunities in both the Nigerian and U.S. markets,
-                      aiming to identify an underserved segment with strong
-                      growth potential.
-                    </p>
-                    <Link href="/industry/projects/research/ampersand-research">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* sixth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project6}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      PocketFI: Market Research and Digital Platform Development
-                      for Nigeria&apos;s P2P Cryptocurrency Ecosystem
-                    </h3>
-                    <p className="text-[#999]">
-                      PocketFI engaged us with a dual objective: to conduct
-                      comprehensive market research on Nigeria&apos;s P2P
-                      cryptocurrency ecosystem and to design and develop a
-                      user-friendly website and mobile application for their
-                      platform.
-                    </p>
-                    <Link href="/industry/projects/research/pocket-fi-research">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
+                  {/* sixth product */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project6}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        PocketFI: Market Research and Digital Platform
+                        Development for Nigeria&apos;s P2P Cryptocurrency
+                        Ecosystem
+                      </h3>
+                      <p className="text-[#999]">
+                        PocketFI engaged us with a dual objective: to conduct
+                        comprehensive market research on Nigeria&apos;s P2P
+                        cryptocurrency ecosystem and to design and develop a
+                        user-friendly website and mobile application for their
+                        platform.
+                      </p>
+                      <Link href="/industry/projects/research/pocket-fi-research">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-            
           </div>
 
           <hr />
@@ -468,9 +488,8 @@ const page = () => {
               </div>
             </div>
           </div>
-          
+
           {/* service team */}
-          
         </div>
       </div>
     </>

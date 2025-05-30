@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import TopBanner from "../../../../../public/assets/it-banner.jpg";
 
-
-
 import Project7 from "../../../../../public/assets/dmj-image.jpg";
 import Project8 from "../../../../../public/assets/st-image.jpg";
 import Project9 from "../../../../../public/assets/skool-image.jpeg";
@@ -23,31 +21,28 @@ import Link from "next/link";
 import MainDashboard from "@/components/dashboard/technology/MainDashboard";
 
 const page = () => {
-  
-
   return (
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-        Portfolio Metrics
+          Portfolio Metrics
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            
-Technology & Software Development
+            Technology & Software Development
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-          Highlights of our key performance indicators for project execution, code quality, system dependability, and team output that guarantee value delivery, strategy alignment, and ongoing development throughout our technology and software development portfolio.
+            Highlights of our key performance indicators for project execution,
+            code quality, system dependability, and team output that guarantee
+            value delivery, strategy alignment, and ongoing development
+            throughout our technology and software development portfolio.
           </p>
         </div>
       </div>
       <MainDashboard />
-      <hr className="mx-12 my-8"/>
+      <hr className="mx-12 my-8" />
 
-          <div className="mt-8 px-12">
-           
-        
-        </div>
+      <div className="mt-8 px-12"></div>
       {/* <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
@@ -61,275 +56,279 @@ Technology & Software Development
       <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">
           <div className="w-full">
-          <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
               Case Studies
-        </span>
-          <h3 className="text-[#333] text-3xl my-4 font-semibold">
-                Projects Executed
-              </h3>
+            </span>
+            <h3 className="text-[#333] text-3xl my-4 font-semibold">
+              Projects Executed
+            </h3>
             <p className="text-lg text-[#656565] my-3">
-            From custom software development to digital transformation strategies, we have delivered cutting-edge technologies to streamline processes, enhance customer experiences, and boost the efficiency of businesses and organizations of all sizes. These case studies showcase how we&apos;ve built scalable, secure, and high-performing solutions tailored to unique business needs.
-
-</p>
+              From custom software development to digital transformation
+              strategies, we have delivered cutting-edge technologies to
+              streamline processes, enhance customer experiences, and boost the
+              efficiency of businesses and organizations of all sizes. These
+              case studies showcase how we&apos;ve built scalable, secure, and
+              high-performing solutions tailored to unique business needs.
+            </p>
           </div>
 
-                  <div className="w-full  my-8">
-                      <div>
-            <div className="">
-              <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-4">
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project7}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
+          <div className="w-full  my-8">
+            <div>
+              <div className="">
+                <div className="w-full flex flex-col lg:flex-row flex-wrap gap-4 my-4">
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project7}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        Digital Gateway: Enhancing Student Travel with DMJ
+                        Travels & Tours Online Platform
+                      </h3>
+                      <p className="text-[#999]">
+                        DMJ Travels and Tours is an international travel agency
+                        specializing in student travel packages. To enhance its
+                        visibility, credibility, and customer engagement, the
+                        agency required a dedicated and comprehensive online
+                        platform to showcase its offerings, attract student
+                        travelers, and streamline the booking process.
+                      </p>
+                      <Link href="/industry/projects/technology/dmj-travels-web">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Digital Gateway: Enhancing Student Travel with DMJ Travels
-                      & Tours Online Platform
-                    </h3>
-                    <p className="text-[#999]">
-                      DMJ Travels and Tours is an international travel agency
-                      specializing in student travel packages. To enhance its
-                      visibility, credibility, and customer engagement, the
-                      agency required a dedicated and comprehensive online
-                      platform to showcase its offerings, attract student
-                      travelers, and streamline the booking process.
-                    </p>
-                    <Link href="/industry/projects/technology/dmj-travels-web">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
+                  {/* second image */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project8}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        Digital Transformation: Comprehensive Web Solution for
+                        ST Travels & Tours
+                      </h3>
+                      <p className="text-[#999]">
+                        ST Travels & Tours is an international travel and
+                        hospitality company serving both individuals and
+                        corporate clients. Operating locally and relying
+                        primarily on referrals, the company sought a
+                        comprehensive, all-in-one web application to enhance its
+                        online presence, streamline operations, and attract a
+                        broader customer base.
+                      </p>
+                      <Link href="/industry/projects/technology/st-travels-web">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                {/* second image */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project8}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
+                  {/* third product */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project9}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        Comprehensive Software System Analysis for Skoolbod
+                        Education Management Platform
+                      </h3>
+                      <p className="text-[#999]">
+                        BFG Global Consulting LLC delivered a comprehensive
+                        software system analysis for the Skoolbod education
+                        management platform. The solution encompassed in-depth
+                        user research and analysis, structured requirements
+                        elicitation workshops, detailed user story and use case
+                        documentation.
+                      </p>
+                      <Link href="/industry/projects/technology/skoolbod">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Digital Transformation: Comprehensive Web Solution for ST
-                      Travels & Tours
-                    </h3>
-                    <p className="text-[#999]">
-                      ST Travels & Tours is an international travel and
-                      hospitality company serving both individuals and corporate
-                      clients. Operating locally and relying primarily on
-                      referrals, the company sought a comprehensive, all-in-one
-                      web application to enhance its online presence, streamline
-                      operations, and attract a broader customer base.
-                    </p>
-                    <Link href="/industry/projects/technology/st-travels-web">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
+                  {/* fourth product */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project10}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        {" "}
+                        Professional Digital Presence: Engaging Website for
+                        David Prestige Law, Abuja
+                      </h3>
+                      <p className="text-[#999]">
+                        A sleek, informative, and interactive website designed
+                        for David Prestige Law, Abuja, ensuring a professional
+                        online presence. The platform is cross-device
+                        compatible, effectively showcasing the firm&apos;s
+                        services and engaging its target audience.
+                      </p>
+                      <Link href="/industry/projects/technology/david-prestige-attorneys">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                {/* third product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project9}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
+                  {/* fifth product */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project11}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        Building a Strong Digital Presence: A Professional
+                        Website for Alubarika Construction
+                      </h3>
+                      <p className="text-[#999]">
+                        A professionally designed website with seamless
+                        navigation, an aesthetically appealing user interface,
+                        high-quality content, and fast responsiveness across all
+                        devices. This platform enhances Alubarika
+                        Construction&apos;s credibility, boosts online
+                        visibility, expands client reach, and strengthens its
+                        brand presence in the industry.
+                      </p>
+                      <Link href="/industry/projects/technology/alubarika-web">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Comprehensive Software System Analysis for Skoolbod
-                      Education Management Platform
-                    </h3>
-                    <p className="text-[#999]">
-                      BFG Global Consulting LLC delivered a comprehensive
-                      software system analysis for the Skoolbod education
-                      management platform. The solution encompassed in-depth
-                      user research and analysis, structured requirements
-                      elicitation workshops, detailed user story and use case
-                      documentation.
-                    </p>
-                    <Link href="/industry/projects/technology/skoolbod">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* fourth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project10}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      {" "}
-                      Professional Digital Presence: Engaging Website for David
-                      Prestige Law, Abuja
-                    </h3>
-                    <p className="text-[#999]">
-                      A sleek, informative, and interactive website designed for
-                      David Prestige Law, Abuja, ensuring a professional online
-                      presence. The platform is cross-device compatible,
-                      effectively showcasing the firm&apos;s services and
-                      engaging its target audience.
-                    </p>
-                    <Link href="/industry/projects/technology/david-prestige-attorneys">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* fifth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project11}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Building a Strong Digital Presence: A Professional Website
-                      for Alubarika Construction
-                    </h3>
-                    <p className="text-[#999]">
-                      A professionally designed website with seamless
-                      navigation, an aesthetically appealing user interface,
-                      high-quality content, and fast responsiveness across all
-                      devices. This platform enhances Alubarika
-                      Construction&apos;s credibility, boosts online visibility,
-                      expands client reach, and strengthens its brand presence
-                      in the industry.
-                    </p>
-                    <Link href="/industry/projects/technology/alubarika-web">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                {/* sixth product */}
-                <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
-                  <div className="h-[200px] lg:h-[350px]">
-                    <Image
-                      src={Project12}
-                      alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Elevating GIGS Travels: A High-Conversion Marketing
-                      Campaign for Migration and Travel Services
-                    </h3>
-                    <p className="text-[#999]">
-                      A strategic, high-conversion marketing campaign designed
-                      to position GIGS Travels as the premier choice for
-                      migration and travel services.
-                    </p>
-                    <Link href="/industry/projects/technology/gigs-travels">
-                      <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
-                        <span className="text-white ml-2 font-semibold">
-                          Read More
-                        </span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="32"
-                            height="32"
-                            fill="rgba(255,255,255,1)"
-                          >
-                            <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                          </svg>
-                        </span>
-                      </button>
-                    </Link>
+                  {/* sixth product */}
+                  <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
+                    <div className="h-[200px] lg:h-[350px]">
+                      <Image
+                        src={Project12}
+                        alt="news1"
+                        className="w-full h-full object-cover rounded-3xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-sans text-xl lg:text-2xl font-semibold">
+                        Elevating GIGS Travels: A High-Conversion Marketing
+                        Campaign for Migration and Travel Services
+                      </h3>
+                      <p className="text-[#999]">
+                        A strategic, high-conversion marketing campaign designed
+                        to position GIGS Travels as the premier choice for
+                        migration and travel services.
+                      </p>
+                      <Link href="/industry/projects/technology/gigs-travels">
+                        <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                          <span className="text-white ml-2 font-semibold">
+                            Read More
+                          </span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="32"
+                              height="32"
+                              fill="rgba(255,255,255,1)"
+                            >
+                              <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-            
           </div>
 
           {/* <hr />
@@ -488,9 +487,6 @@ Technology & Software Development
               </div>
             </div>
           </div> */}
-          
-          
-         
         </div>
       </div>
     </>
