@@ -60,7 +60,7 @@ const IndustryCard = () => {
         Industries Researched
       </h2>
       {/* Top Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6  my-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 my-4">
         {industriesData.map((industry, index) => (
           <div key={index} className="rounded-xl shadow-md p-6 ">
             <div className="flex items-center justify-between mb-4">

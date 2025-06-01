@@ -75,13 +75,7 @@ const page = () => {
       </div>
       <div className="px-6 lg:px-12">
         <MainDashboard />
-        {/* <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
-          <Image
-            src={TopBanner}
-            alt="top-banner"
-            className="w-full h-full object-cover rounded-3xl"
-          />
-        </div> */}
+        
       </div>
       <hr className="mx-12 my-8" />
 

@@ -17,6 +17,7 @@ import Project15 from "../../../../../public/assets/business-image.png";
 import Project16 from "../../../../../public/assets/measure-business.jpg";
 import Project17 from "../../../../../public/assets/case-banner.jpeg";
 import Link from "next/link";
+import MainDashboard from "@/components/dashboard/business/MainDashboard";
 
 const page = () => {
   
@@ -36,18 +37,20 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="px-12">
-        <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
-          <Image
-            src={TopBanner}
-            alt="top-banner"
-            className="w-full h-full object-cover rounded-3xl"
-          />
-        </div>
-      </div>
+      <div className="px-6 lg:px-12">
+       <MainDashboard />
+       <hr className="mx-12 my-8" />
+
+      <div className="mt-8 px-12"></div>
       <div className="py-[1px] lg:py-[30px]">
         <div className="p-[40px]">
           <div className="w-full">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
+              Case Studies
+            </span>
+            <h3 className="text-[#333] text-3xl my-4 font-semibold">
+              Projects Executed
+            </h3>
             <p className="text-lg text-[#656565] my-3">
              Achieving operational excellence requires a strategic approach. Our consulting services help organizations refine business models, optimize workflows, and enhance performance. Our case studies highlight successful projects where we&apos;ve helped clients improve efficiency, reduce costs, and scale operations effectively.
             </p>
@@ -263,7 +266,7 @@ const page = () => {
           </div>
           </div>
 
-          <hr />
+          {/* <hr />
 
           <div className="my-8">
             <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
@@ -279,22 +282,7 @@ const page = () => {
                 success & sustainable growth
               </p>
             </div>
-            {/* <div className="w-full flex flex-col lg:flex-row gap-10">
-              <div className="w-[100%] lg:w-[30%] h-[280px]">
-                <Image
-                  src={ServiceImage1}
-                  alt="service-image1"
-                  className="w-full h-full"
-                />
-              </div>
-              <div className="w-[0%] h-[0%] lg:w-[70%] lg:h-[280px]">
-                <Image
-                  src={ServiceImage2}
-                  alt="service-image2"
-                  className="w-full h-full"
-                />
-              </div>
-            </div> */}
+           
             <div className="w-full flex flex-col lg:flex-row flex-wrap gap-10 my-6">
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
@@ -316,7 +304,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* second item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -336,7 +323,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* third item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -356,7 +342,6 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* fourth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -375,7 +360,6 @@ const page = () => {
                   </p>{" "}
                 </div>
               </div>
-              {/* fifth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -395,7 +379,6 @@ const page = () => {
                   </p>{" "}
                 </div>
               </div>
-              {/* sixth item */}
               <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
@@ -417,10 +400,10 @@ const page = () => {
               </div>
             </div>
            
-          </div>
+          </div> */}
          
            
-          
+          </div>
         </div>
       </div>
     </>
