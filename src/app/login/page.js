@@ -1,35 +1,25 @@
 "use client";
-import { useState, useRef } from "react";
-import { useDispatch } from "react-redux";
-import { login, setCredentials } from "@/redux/auth/authSlice";
+import { useRef } from "react";
 import Image from "next/image";
-import React from "react";
 import Logo from "../../../public/assets/BFG-5.png";
-import { useRouter } from "next/navigation";
-import { useLoginMutation } from "@/redux/auth/authService";
-import toast from "react-hot-toast";
-import Spinner from "@/components/Spinner";
 import { useAuth } from "@/context/authContext";
+import Spinner from "@/components/Spinner";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
-  const { push } = useRouter();
-
   const { login, loading } = useAuth();
-
+  const router = useRouter();
   const emailRef = useRef();
-
   const passwordRef = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const email = emailRef?.current?.value;
     const password = passwordRef?.current?.value;
-
     try {
       await login({ email, password });
-
-      push("/admin");
+      router.push("/admin");
+      // No need to push here, context handles redirection
     } catch (error) {
       console.error("Login component caught error:", error);
     }

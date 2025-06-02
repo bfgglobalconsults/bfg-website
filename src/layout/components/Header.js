@@ -2,11 +2,11 @@ import React from "react";
 import Profile from "../../../public/assets/profile.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useSelector } from "react-redux";
-import { selectCurrentUser } from "@/redux/auth/authSlice";
+import { useAuth } from "@/context/authContext";
 
 const Header = () => {
-  const currentuser = useSelector(selectCurrentUser);
+  // const currentuser = useSelector(selectCurrentUser);
+  const {user} = useAuth();
   const pathname = usePathname();
   const currentPath = pathname?.split("/").pop() || "Dashboard";
 
@@ -38,8 +38,8 @@ const Header = () => {
               />
             </div>
             <div>
-              <p>{currentuser.fullname}</p>
-              <span>{currentuser.role}</span>
+              <p>{user.fullname}</p>
+              <span>{user.role}</span>
             </div>
           </div>
         </div>
