@@ -11,26 +11,7 @@ export const AuthProvider = ({ children }) => {
     
     const [user, setUser] = useState(null);
     const [accessToken, setAccessToken] = useState(null);
-    // const [refreshToken, setRefreshToken] = useState(null);
     const [loading, setLoading] = useState(false);
-
-    // useEffect(() => { 
-    //     const storedUser = localStorage.getItem('user');
-    //     const storedAccessToken = localStorage.getItem('accessToken');
-    //     // const storedRefreshToken = localStorage.getItem('refreshToken');
-
-    //     if ( storedUser && storedAccessToken ) {
-    //         try {
-    //             setUser(JSON.parse(storedUser));
-    //             setAccessToken(storedAccessToken);
-    //             // setRefreshToken(storedRefreshToken);
-    //         } catch (error) {
-    //             console.error('Error parsing stored user:', error);
-    //             localStorage.removeItem('user');
-    //         }
-    //     }
-    //     setLoading(false);
-    // }, []);
 
     useEffect(() => {
         const requestInterceptor = axios.interceptors.request.use(
@@ -56,16 +37,10 @@ export const AuthProvider = ({ children }) => {
                     'Content-Type': 'application/json',
                 },
             });
-            // if (!response.data || !response.data.accessToken) {
-            //     throw new Error('Login failed');
-            // }
-            // const { user: userData, accessToken } = response.data;
-            
-            setUser(response.data.user);
-            setAccessToken(response.data.accessToken);
-            localStorage.setItem('user', JSON.stringify(response.data.user));
-            localStorage.setItem('accessToken', response.data.accessToken);
-push('/admin');
+            const { user: userData, accessToken } = response.data.data;
+            setUser(userData);
+            setAccessToken(accessToken);
+            // push('/admin');
             toast.success('Successfully logged in');
             console.log('Login successful:', response.data);
             return response.data;
@@ -83,22 +58,15 @@ push('/admin');
             setLoading(true);
             setUser(null);
             setAccessToken(null);
-            localStorage.removeItem('user');
-            localStorage.removeItem('accessToken');
             toast.success('Successfully logged out');
-            
         } catch (error) {
             console.error('Error during logout:', error);
             toast.error(error.response?.data?.message || 'Logout failed');
-            
         } finally {
             setLoading(false);
         }
        
     };
-
-
- 
 
   return (
     <AuthContext.Provider value={{user, setUser, accessToken, login, logout, loading}}>

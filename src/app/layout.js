@@ -16,6 +16,7 @@ import Loading from "@/components/loader/page";
 import { ReduxProvider } from "@/redux/provider";
 import MetaPixelTracker from "@/components/PixelTracker";
 import { AuthProvider } from "@/context/authContext";
+import { connectToMongoDB } from "./lib/db";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -32,7 +33,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
+    <>
+      <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
       <head>
         <Script
           async
@@ -48,18 +50,18 @@ export default function RootLayout({ children }) {
 `}
         </Script>
         <MetaPixelTracker />
-
       </head>
 
       <body className={inter.className}>
         <Suspense fallback={<Loading />}>
           <AuthProvider>
-          <Toaster position="top-right" />
+            <Toaster position="top-right" />
 
             <MainPage>{children}</MainPage>
-            </AuthProvider>
+          </AuthProvider>
         </Suspense>
       </body>
-    </html>
+      </html>
+      </>
   );
 }
