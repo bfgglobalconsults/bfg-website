@@ -201,7 +201,7 @@ const page = () => {
                     </div>
                     <div>
                       <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                        Corporate Scholarship Funding: Analyzing CSR Investment
+                        AKADAPlay Corporate Scholarship Funding: Analyzing CSR Investment
                         in Education Across Industries
                       </h3>
                       <p className="text-[#999]">
