@@ -29,8 +29,7 @@ const page = () => {
             Training & Development
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Empowering your workforce, Enhancing your business
-          </p>
+          By meticulously tracking these key performance indicators, we illuminate how our training initiatives directly translate into Optimized Project Execution, Maximized Team Output, and quantify the direct impact of our programs.           </p>
         </div>
       </div>
       <div className="px-6 lg:px-12">

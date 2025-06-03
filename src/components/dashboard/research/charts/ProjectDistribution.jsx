@@ -3,7 +3,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { useEffect, useState } from "react";
 
 const data = [
-  { name: "Market", value: 24, color: "#FF7043" },
+  { name: "M and E", value: 24, color: "#FF7043" },
   { name: "Surveys", value: 25, color: "#A06EEA" },
   { name: "Academic", value: 35, color: "#00D1FF" },
   { name: "Reports", value: 16, color: "#88D14E" },

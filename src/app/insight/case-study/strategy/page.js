@@ -32,8 +32,7 @@ const page = () => {
             Strategy & Operations Transformation
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Streamline your operations, optimize your strategy, & achieve your
-            goals
+          Highlights of how our approach centers on dissecting  current operational landscape to identify inefficiencies and bottlenecks, leveraging deep analytical insights and strategic foresight to Streamline  Operations, Optimize Business Strategies, and Transform Organizational Framework into a finely tuned engine for success. 
           </p>
         </div>
       </div>
@@ -153,7 +152,7 @@ const page = () => {
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
+                      To-Doo Strategic Market Positioning and Business Expansion for
                       Emerging Fintech and Underserved Markets
                     </h3>
                     <p className="text-[#999]">
@@ -233,7 +232,7 @@ const page = () => {
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
+                      Yahweh Yasad Strategic Market Positioning and Business Expansion for
                       Emerging  Markets
                     </h3>
                     <p className="text-[#999]">
