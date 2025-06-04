@@ -1,29 +1,42 @@
 import Blog from "@/app/models/blogModel";
 import { connectToMongoDB } from "@/app/lib/db";
+import { NextResponse } from "next/server";
 
 export async function GET(request) {
   try {
     if (!process.env.MONGODB_URI) {
-      return Response.json({ error: "MONGODB_URI is not set in environment variables" }, { status: 500 });
+      return NextResponse.json({ error: "MONGODB_URI is not set in environment variables" }, { status: 500 });
     }
     await connectToMongoDB();
     const blogs = await Blog.find();
-    return Response.json(blogs);
+    return NextResponse.json(blogs);
   } catch (err) {
-    return Response.json({ error: err.message }, { status: 500 });
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
 
 export async function POST(request) {
   try {
-    if (!process.env.MONGODB_URI) {
-      return Response.json({ error: "MONGODB_URI is not set in environment variables" }, { status: 500 });
-    }
     await connectToMongoDB();
-    const data = await request.json();
-    const blog = await Blog.create(data);
-    return Response.json(blog, { status: 201 });
+    const body = await request.json();
+    const blog = await Blog.create(body);
+    return NextResponse.json(blog, { status: 201 });
   } catch (err) {
-    return Response.json({ error: err.message }, { status: 400 });
+    return NextResponse.json({ error: err.message }, { status: 400 });
+  }
+}
+
+export async function DELETE(request) {
+  try {
+    await connectToMongoDB();
+    const { searchParams } = new URL(request.url);
+    const id = searchParams.get('id');
+    const blog = await Blog.findByIdAndDelete(id);
+    if (!blog) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+    return NextResponse.json({ message: "Deleted" }, { status: 200 });
+  } catch (err) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
