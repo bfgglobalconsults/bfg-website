@@ -3,6 +3,8 @@ import React from "react";
 import Banner from "../../../../public/assets/news-banner.png";
 import News1 from "../../../../public/assets/News-ST.jpg";
 import CeoNews from "../../../../public/assets/ai-news.png";
+import BlogImage from "../../../../public/assets/blog-image.jpeg";
+
 import News2 from "../../../../public/assets/news2.png";
 import AwardNews from "../../../../public/assets/bfg-award.jpg";
 import Slides from "@/components/Slides";
@@ -75,7 +77,39 @@ const page = () => {
                 </div>
               </div>
              
-              {/* second image */}
+            {/* second news */}
+            <div className="w-[100%] lg:w-[50%]  p-10 border border-[#F7F7F8] rounded-3xl">
+                <div className="h-[200px] lg:h-[350px]">
+                  <Image
+                    src={BlogImage}
+                    alt="blog-image"
+                    className="w-full h-full object-cover rounded-3xl"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold my-2">
+                  The Digital Divide: A Tale of Two Nigerian Giants – GTBank&apos;s Ascent vs. Mr. Biggs&apos; Decline                  </h3>
+                  <p className="text-[#999]">
+                  Discover the key lessons from GTBank&apos;s digital masterstroke and Mr. Biggs&apos; costly missteps. Learn why embracing technology, prioritizing mobile-first customer experiences, and acting on data are crucial for survival and growth in today&apos;s rapidly evolving market.
+                  </p>
+                  <Link href="/insight/blogs/the-digital-divide">
+                  <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                    <span className="text-white ml-2 font-semibold">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="32"
+                        height="32"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                  </Link>
+                </div>
+              </div>
               
             </div>
           </div>
