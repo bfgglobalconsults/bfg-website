@@ -4,6 +4,7 @@ import BlogImage from "../../../../../public/assets/blog-image.jpeg";
 import GTBCode from "../../../../../public/assets/gtb.png";
 import MrBiggs from "../../../../../public/assets/biggs.png";
 import Landscape from "../../../../../public/assets/digital-route.png";
+import DigitalSteps from "../../../../../public/assets/digital-steps.png";
 import Banner from "../../../../../public/assets/news-banners.png";
 import SecondNews from "../../../../../public/assets/second-news.png";
 import React from "react";
@@ -140,6 +141,8 @@ const page = () => {
                 </li>
                 
                           </ul>
+                          <Image src={DigitalSteps} alt="digital-steps" className="w-full h-auto rounded-3xl" />
+
                           <h2 className="text-lg font-semibold text-black my-6">
                           The Unavoidable Truth: 3 Lessons for Every Nigerian Business
                           </h2>
