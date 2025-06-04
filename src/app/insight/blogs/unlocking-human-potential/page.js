@@ -9,9 +9,9 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
-      <div className="lg:mt-[150px] p-10">
+      <div className="lg:mt-[150px] p-5 md:p-10">
         <div className="inline-block bg-white border-2 border-[#E26015] p-2 rounded-3xl">
-          <Link href="/">
+          <Link href="/insight/blogs">
             <div className="flex items-center gap-2">
               <span>
                 <svg
