@@ -47,7 +47,7 @@ const page = () => {
                   <h3 className="font-semibold text-lg">Adebayo Adeniyi</h3>
                   <p className="text-[#E45F11]">
                                       
-                    Head, Administration
+                    Ag Head, Administration
 
                   </p>
                 </div>

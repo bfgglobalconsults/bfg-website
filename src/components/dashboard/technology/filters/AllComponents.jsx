@@ -1,11 +1,11 @@
 import React from "react";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 import IndustryServedChart from "../charts/IndustryServedCharts";
 import TechStackSection from "../charts/TechStackSection";
 import WebTechnologiesSection from "../charts/WebTechnologiesSection";
 
 const CountriesServedMap = dynamic(() => import("../maps/CountryServedMap"), {
-  ssr: false
+  ssr: false,
 });
 
 const allData = [
@@ -87,51 +87,50 @@ const allData = [
   },
 ];
 const AllComponents = () => {
-    return (
-      <>
-        <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-12">
-            {allData.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white shadow-lg rounded-lg p-4 flex flex-col text-left"
-                style={{ backgroundColor: item.cardColor }}
+  return (
+    <>
+      <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-12">
+          {allData.map((item) => (
+            <div
+              key={item.id}
+              className="bg-white shadow-lg rounded-lg p-4 flex flex-col text-left"
+              style={{ backgroundColor: item.cardColor }}
+            >
+              <span
+                className="p-3 rounded-full w-fit"
+                style={{ backgroundColor: item.iconColor }}
               >
-                <span
-                  className="p-3 rounded-full w-fit"
-                  style={{ backgroundColor: item.iconColor }}
-                >
-                  {item.icon}
-                </span>
-                <p className="text-3xl font-bold mt-1 text-left">{item.value}</p>
+                {item.icon}
+              </span>
+              <p className="text-3xl font-bold mt-1 text-left">{item.value}</p>
 
-                <h3 className="text-lg mt-2 text-left">
-                  {item.name}
-                </h3>
-                <p className="text-sm text-[#E26015] font-semibold text-left">{item.stat}</p>
-              </div>
-            ))}
-          </div>
-                <div className="w-full flex flex-col lg:flex-row py-8 gap-2 px-4 lg:px-12">
-                    <div className="w-[100%] lg:w-[50%]">
-                        <CountriesServedMap />
-                    </div>
-                    <div className="w-[100%] lg:w-[50%]">
-                        <IndustryServedChart />
-                    </div>
-          </div>
-          <div className="w-full flex flex-col lg:flex-row gap-2 px-4 lg:px-12">
-            <div className="w-[100%] lg:w-[50%]">
-              <WebTechnologiesSection />
-          </div>
-            <div className="w-[100%] lg:w-[50%]">
-              <TechStackSection />
-          </div>
-          </div>
-
+              <h3 className="text-lg mt-2 text-left">{item.name}</h3>
+              <p className="text-sm text-[#E26015] font-semibold text-left">
+                {item.stat}
+              </p>
+            </div>
+          ))}
         </div>
-      </>
-    );
+        <div className="w-full flex flex-col lg:flex-row py-8 gap-2 px-4 lg:px-12">
+          <div className="w-[100%] lg:w-[50%]">
+            <CountriesServedMap />
+          </div>
+          <div className="w-[100%] lg:w-[50%]">
+            <IndustryServedChart />
+          </div>
+        </div>
+        <div className="w-full flex flex-col lg:flex-row gap-2 px-4 lg:px-12">
+          <div className="w-[100%] lg:w-[50%]">
+            <WebTechnologiesSection />
+          </div>
+          <div className="w-[100%] lg:w-[50%]">
+            <TechStackSection />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default AllComponents;

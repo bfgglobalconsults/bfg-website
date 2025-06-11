@@ -14,7 +14,15 @@ const blogSchema = new mongoose.Schema(
     content: {
         type: String,
         required: true,
-        },
+    },
+    coverImage: {
+      type: String,
+      required: true,
+    },
+    contentImages: {
+      type: [String], // Array of strings to hold multiple image URLs
+      default: [], // Default to an empty array if no images are provided
+    },
     author: {
       type: String,
       required: true,
