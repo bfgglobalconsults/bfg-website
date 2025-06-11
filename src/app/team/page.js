@@ -151,7 +151,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Adebayo Adeniyi</h3>
-                  <p className="text-[#E45F11]">Head, Administration</p>
+                  <p className="text-[#E45F11]">Ag Head, Administration</p>
                   <Link href="/team/head-administration">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
@@ -171,7 +171,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Sunday Moses</h3>
-                  <p className="text-[#E45F11]">Head, Marketing & Growth</p>
+                  <p className="text-[#E45F11]">Ag Head, Marketing & Growth</p>
                   <Link href="/team/head-marketing">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
@@ -191,7 +191,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Amoto Seriki</h3>
-                  <p className="text-[#E45F11]">Head, Finance</p>
+                  <p className="text-[#E45F11]">Ag Head, Finance</p>
                   <Link href="/team/head-finance">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More

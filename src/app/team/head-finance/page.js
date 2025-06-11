@@ -48,7 +48,7 @@ const page = () => {
                   <h3 className="font-semibold text-lg">Amoto Seriki
 </h3>
                   <p className="text-[#E45F11]">
-                    Head, Finance
+                    Ag Head, Finance
                   </p>
                 </div>
               </div>

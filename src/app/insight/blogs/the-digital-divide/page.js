@@ -9,7 +9,6 @@ import Banner from "../../../../../public/assets/news-banners.png";
 import SecondNews from "../../../../../public/assets/second-news.png";
 import React from "react";
 import Link from "next/link";
-
 const page = () => {
   return (
     <>

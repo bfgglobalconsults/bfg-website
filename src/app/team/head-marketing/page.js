@@ -47,7 +47,7 @@ const page = () => {
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Sunday Moses</h3>
                   <p className="text-[#E45F11]">
-                    Head, Marketing & Growth
+                    Ag Head, Marketing & Growth
                   </p>
                 </div>
               </div>
