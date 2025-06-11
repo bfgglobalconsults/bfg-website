@@ -1,8 +1,12 @@
 "use client";
-import RichTextEditor from "@/components/RichTextEditor";
+import dynamic from 'next/dynamic';
 import UploadImage from "@/components/UploadImage";
 import { CldImage } from "next-cloudinary";
 import React from "react";
+
+const RichTextEditor = dynamic(() => import("@/components/RichTextEditor"), {
+  ssr: false,
+});
 
 const page = () => {
   return (
