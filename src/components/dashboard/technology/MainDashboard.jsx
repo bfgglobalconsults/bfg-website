@@ -13,6 +13,7 @@ import IndustryServed from "./filters/IndustryServed";
 import CountryServed from "./filters/CountryServed";
 import WebTechnologies from "./filters/WebTechnologies";
 import CloudDeployments from "./filters/CloudDeployments";
+import MobilePlatforms from "./filters/MobilePlatforms";
 
 const MainDashboard = () => {
   const [position, setPosition] = useState("All");
@@ -71,6 +72,7 @@ const MainDashboard = () => {
         {position === "Countries Served" && <CountryServed />}
         {position === "Web Technologies" && <WebTechnologies />}
         {position === "Cloud Deployments" && <CloudDeployments />}
+      {position === "Mobile Platforms" && <MobilePlatforms />}
       </div>
     </>
   );
