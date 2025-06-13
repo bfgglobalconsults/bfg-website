@@ -194,7 +194,7 @@ const page = () => {
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Expansion: Proposal and Pitch Deck for
-                      Educational Growth
+                      Tots Academy
                     </h3>
                     <p className="text-[#999]">
                       A professionally crafted and well-structured proposal and
