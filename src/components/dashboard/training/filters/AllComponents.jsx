@@ -9,7 +9,7 @@ import TrainingBreakdown from "../charts/TrainingBreakdown";
 import TrainingTrendChart from "../charts/TrainingTrendChart";
 // import CountriesServedMap from "../../technology/maps/CountryServedMap";
 
-const CountriesServedMap = dynamic(() => import("../../technology/maps/CountryServedMap"), {
+const CountriesServedMap = dynamic(() => import("../maps/CountryServedMap"), {
   ssr: false
 });
 

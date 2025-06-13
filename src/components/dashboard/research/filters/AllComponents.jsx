@@ -4,10 +4,11 @@ import dynamic from 'next/dynamic';
 import ProjectDistribution from "../charts/ProjectDistribution";
 import IndustryChart from "../charts/IndustryChart";
 import IndustryCard from "../charts/IndustryCard";
+// import CountriesServedMap from "../maps/CountryServedMap";
 // import CountriesServedMap from "../../technology/maps/CountryServedMap";
 
-const CountriesServedMap = dynamic(() => import("../../technology/maps/CountryServedMap"), {
-  ssr: false
+const CountriesServedMap = dynamic(() => import("../maps/CountryServedMap"), {
+  ssr: false,
 });
 
 const allData = [

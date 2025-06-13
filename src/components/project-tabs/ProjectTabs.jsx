@@ -454,7 +454,7 @@ const ProjectTabs = () => {
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Corporate Scholarship Funding: Analyzing CSR Investment in
+                     AKADAPlay Corporate Scholarship Funding: Analyzing CSR Investment in
                       Education Across Industries
                     </h3>
                     <p className="text-[#999]">
@@ -668,7 +668,7 @@ const ProjectTabs = () => {
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
+                      To-Doo Strategic Market Positioning and Business Expansion for
                       Emerging Fintech and Underserved Markets
                     </h3>
                     <p className="text-[#999]">
@@ -710,7 +710,7 @@ const ProjectTabs = () => {
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
                       Strategic Expansion: Proposal and Pitch Deck for
-                      Educational Growth
+                      Tots Academy
                     </h3>
                     <p className="text-[#999]">
                       A professionally crafted and well-structured proposal and
@@ -748,7 +748,7 @@ const ProjectTabs = () => {
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Strategic Market Positioning and Business Expansion for
+                      Yahweh Yasad Strategic Market Positioning and Business Expansion for
                       Emerging Markets
                     </h3>
                     <p className="text-[#999]">

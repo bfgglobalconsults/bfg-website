@@ -5,7 +5,7 @@ import MetricsBarChart from "../charts/MetricsBarChart";
 import KeyInsights from "../charts/KeyInsights";
 // import CountriesServedMap from "../../technology/maps/CountryServedMap";
 
-const CountriesServedMap = dynamic(() => import("../../technology/maps/CountryServedMap"), {
+const CountriesServedMap = dynamic(() => import("../maps/CountryServedMap"), {
   ssr: false
 });
 
