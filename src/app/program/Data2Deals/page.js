@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import TopBanner from "../../../../public/assets/tech-achiever.jpg";
-import SmeGroup from "../../../../public/assets/achiever-card.jpg";
+import TopBanner from "../../../../public/assets/data-deal-img.jpg";
+import DataDeal from "../../../../public/assets/Data2Deals.jpg";
 import Beauty from "../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import ProgramModal from "@/components/ProgramModal";
@@ -30,7 +30,7 @@ const Page = () => {
             Data2Deals
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Peer-to-Peer Learning for SME Leaders
+          Drive Growth with Data-Driven Insights, Now
           </p>
         </div>
 
@@ -81,6 +81,25 @@ const Page = () => {
                 analytics practice, participants will learn how to harness data
                 to drive tangible business deals.
               </p>
+              <p className="font-bold text-lg my-4">Program Objectives</p>
+            <ul className="list-disc pl-6 marker:text-[#999]">
+              <li className="text-[#999] my-2">
+                Equip participants with the fundamentals of data literacy and
+                interpretation
+              </li>
+              <li className="text-[#999] my-2">
+                Provide practical tools for converting customer, sales, and
+                market data into revenue strategies
+              </li>
+              <li className="text-[#999] my-2">
+                Empower SMEs to build data-driven customer acquisition and
+                retention models
+              </li>
+              <li className="text-[#999] my-2">
+                Bridge the gap between technical data analytics and real-world
+                sales outcomes.
+              </li>
+            </ul>
             </motion.div>
             <motion.div
               initial={{ x: 30, opacity: 0 }}
@@ -90,8 +109,8 @@ const Page = () => {
               className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
             >
               <Image
-                src={SmeGroup}
-                alt="beauty-image"
+                src={DataDeal}
+                alt="data-image"
                 className="w-full h-full object-fit rounded-r-md"
               />
               {/* <div className="w-full h-[400px] shadow-lg rounded-xl relative">
@@ -133,25 +152,7 @@ const Page = () => {
             transition={{ delay: 2.9, duration: 1 }}
             className=""
           >
-            <p className="font-bold text-lg my-4">Program Objectives</p>
-            <ul className="list-disc pl-6 marker:text-[#999]">
-              <li className="text-[#999] my-2">
-                Equip participants with the fundamentals of data literacy and
-                interpretation
-              </li>
-              <li className="text-[#999] my-2">
-                Provide practical tools for converting customer, sales, and
-                market data into revenue strategies
-              </li>
-              <li className="text-[#999] my-2">
-                Empower SMEs to build data-driven customer acquisition and
-                retention models
-              </li>
-              <li className="text-[#999] my-2">
-                Bridge the gap between technical data analytics and real-world
-                sales outcomes.
-              </li>
-            </ul>
+           
 
             <p className="font-bold text-lg my-4">What You Will Learn</p>
             <p className="text-lg my-4">
