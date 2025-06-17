@@ -336,7 +336,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Simon Adeh Aba</h3>
                   <p className="text-[#E45F11]">
-                    Junior Research and Data Analyst
+                    Research and Data Analyst
                   </p>
                   <Link href="/team/data-analyst">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
@@ -394,29 +394,9 @@ const Page = () => {
                 </div>
               </div>
 
-              {/* eight team */}
-              {/* <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Jeremiah}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">
-                    Jesunifemi Jeremiah Oluwafemi
-                  </h3>
-                  <p className="text-[#E45F11]">Product Designer - UI/UX</p>
-                  <Link href="/team/product-designer">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div> */}
+              
 
-              {/* ninth team */}
+              {/* eighth team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -588,7 +568,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">
-                    Abubakar Sultan Faisal
+                    Abubakar Sadiq Faisal
                   </h3>
                   <p className="text-[#E45F11]">Systems Administrator</p>
                   <Link href="/team/system-adminstrator">

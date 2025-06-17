@@ -471,7 +471,7 @@ const Page = () => {
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Simon Adeh</h3>
                     <p className="text-[#E45F11]">
-                      Junior Research and Data Analyst
+                      Research and Data Analyst
                     </p>
                     <Link href="/team/data-analyst">
                       <button className="text-[#999] text-cursor text-md underline hover:text-black">

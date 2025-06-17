@@ -44,9 +44,7 @@ const page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Simon Adeh Aba</h3>
-                  <p className="text-[#E45F11]">
-                     Junior Research and Data Analyst
-                  </p>
+                  <p className="text-[#E45F11]">Research and Data Analyst</p>
                 </div>
               </div>
               <div className="my-8">
@@ -70,17 +68,37 @@ const page = () => {
             </div>
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Simon</h4>
+
               <p className="text-[#999] text-lg">
-                              Simon Adeh Aba is a Junior Research and Data Analyst at BFG Global Consulting LLC, where he supports the research and analytics team by conducting detailed data analysis and contributing to data-driven insights.
-                          </p>
+                Simon Adeh Aba serves as a dedicated Research and Data Analyst
+                at BFG Global Consulting LLC, where he is instrumental in
+                bolstering the firm&apos;s analytical capabilities and driving
+                data-informed decision-making.{" "}
+              </p>
               <br />
-                  <p className="text-[#999] text-lg">
-                              With a foundational understanding of research methodologies and data analysis techniques, Simon plays a key role in gathering, processing, and interpreting data to support the firm&apos;s strategic initiatives and client projects.
-                          </p>
+              <p className="text-[#999] text-lg">
+                In this pivotal role, Simon applies a robust understanding of
+                both qualitative and quantitative research methodologies,
+                coupled with advanced data analysis techniques. He is a primary
+                contributor to the research and analytics team, taking lead on
+                various stages of the data lifecycle, from meticulous data
+                collection and rigorous processing to sophisticated
+                interpretation and insightful presentation.
+              </p>
 
               <br />
-             
-          
+              <p className="text-[#999] text-lg">
+                Simon&apos;s work directly supports BFG Global Consulting
+                LLC&apos;s strategic initiatives and a diverse portfolio of
+                client projects. He is adept at transforming complex datasets
+                into actionable intelligence, identifying key trends, patterns,
+                and anomalies that provide a competitive edge. His contributions
+                are crucial in developing comprehensive reports, constructing
+                predictive models, and crafting compelling narratives that guide
+                business strategies and solve intricate client challenges.
+                Simon&apos;s commitment to precision and his ability to unearth
+                valuable insights make him a vital asset to the consulting team.
+              </p>
             </div>
           </div>
         </div>

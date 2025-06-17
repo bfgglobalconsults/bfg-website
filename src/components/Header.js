@@ -29,7 +29,6 @@ const Header = () => {
     }
   };
 
-
   // const handleTabClick = (id) => {
   //   setActiveTab((prevActiveTab) => (prevActiveTab === id ? null : id));
   // };
@@ -317,7 +316,7 @@ const Header = () => {
       </MediaQuery>
 
       {/* small screens */}
-       {/* small screens */}
+      {/* small screens */}
       <MediaQuery max="lg">
         <div
           className={`${
@@ -490,7 +489,7 @@ const Header = () => {
                             Strategy and Operations Transformation
                           </p>
                         </Link>
-                        
+
                         <Link
                           href="/solutions/training-development"
                           onClick={() => setShowMenu(false)}
@@ -775,6 +774,14 @@ const Header = () => {
                         >
                           <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
                             Tech Achievers Graduate Scheme
+                          </p>
+                        </Link>
+                        <Link
+                          href="/program/Data2Deals"
+                          onClick={() => setShowMenu(false)}
+                        >
+                          <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            Data2Deals
                           </p>
                         </Link>
                       </div>
