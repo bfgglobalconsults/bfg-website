@@ -32,7 +32,7 @@ const page = () => {
           </span>
           <div className="my-4">
             <h3 className="text-3xl font-semibold my-8">
-              Abubakar Sultan Faisal
+              Abubakar Sadiq Faisal
             </h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
@@ -47,7 +47,7 @@ const page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">
-                    Abubakar Sultan Faisal
+                    Abubakar Sadiq Faisal
                   </h3>
                   <p className="text-[#E45F11]">
                     Systems Administrator
@@ -76,7 +76,7 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Abubakar</h4>
               <p className="text-[#999] text-lg">
-                Abubakar Sadiq is an experienced System Administrator at BFG
+                Abubakar Faisal is an experienced System Administrator at BFG
                 Global Consulting Limited, where he plays a pivotal role in
                 managing and maintaining the company&apos;s IT infrastructure. A
                 dedicated member of the Administrative and Support Unit,

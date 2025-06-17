@@ -732,6 +732,14 @@ const FixedHeader = () => {
                             Tech Achievers Graduate Scheme
                           </p>
                         </Link>
+                        <Link
+                          href="/program/Data2Deals"
+                          onClick={() => setShowMenu(false)}
+                        >
+                          <p className="text-sm ml-9 py-[20px] hover:text-[#E45F11]">
+                            Data2Deals
+                          </p>
+                        </Link>
                       </div>
                     </Collapsible>
                     <Collapsible
