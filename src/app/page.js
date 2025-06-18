@@ -49,6 +49,7 @@ import CaseImage4 from "../../public/assets/training-case.png";
 import STTravel from "../../public/assets/News-ST.jpg";
 import AwardNews from "../../public/assets/bfg-award.jpg";
 import AINews from "../../public/assets/ai-news.jpg";
+import BlogImage from "../../public/assets/blog-image.jpeg";
 
 import CeoNews from "../../public/assets/ceo-news.jpg";
 import FirstNews from "../../public/assets/first-news.png";
@@ -154,7 +155,7 @@ export default function Main() {
       imageSrc: SliderImage7,
       readMore: "/industry/industries/industrial-manufacturing",
     },
-     {
+    {
       id: 8,
       title: "Telecommunication and Media",
       description:
@@ -163,16 +164,16 @@ export default function Main() {
       imageSrc: SliderImage8,
       readMore: "/industry/industries/telecom-media",
     },
-     {
+    {
       id: 9,
       title: "Entertainment and Creative Industry",
       description:
         "BFG provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.",
       imageAlt: "slider9-img",
       imageSrc: SliderImage9,
-      readMore: "/industry/industries/entertainment"
+      readMore: "/industry/industries/entertainment",
     },
-      {
+    {
       id: 10,
       title: "Health and Social Care",
       description:
@@ -181,7 +182,7 @@ export default function Main() {
       imageSrc: SliderImage10,
       readMore: "/industry/industries/health-social-care",
     },
-       {
+    {
       id: 11,
       title: "Financial and Banking Services",
       description:
@@ -318,25 +319,29 @@ export default function Main() {
                   which guarantee outstanding quality, creativity, and client
                   pleasure at every turn.
                 </p>
-                                <a href="/about-us.pdf" target="_blank"  rel="noopener noreferrer" className="">
-
-                <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
-                  <span className="text-white font-semibold">
-                    View All Services
-                  </span>
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="rgba(255,255,255,1)"
-                    >
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </span>
+                <a
+                  href="/about-us.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
+                    <span className="text-white font-semibold">
+                      View All Services
+                    </span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
                   </button>
-                  </a>
+                </a>
               </div>
             </SlideIn>
             <div className="absolute bottom-10 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div>
@@ -395,7 +400,7 @@ export default function Main() {
                         </div>
                       </div>
                     </div>
-                </Link>
+                  </Link>
                 </>
                 //  </Transition>
               ))}
@@ -412,15 +417,14 @@ export default function Main() {
               <h3 className="my-6 text-white text-3xl lg:text-4xl font-semibold">
                 Serving Diverse Industries
               </h3>
-            
             </div>
 
             <div className="w-[100%] lg:w-[50%] relative">
               <p className="text-white text-lg w-full lg:w-[80%]">
                 Discover success across tech, finance, healthcare,
                 manufacturing, retail, energy, professional services, and
-                hospitality with BFG Global Consults tailored
-                consulting expertise.{" "}
+                hospitality with BFG Global Consults tailored consulting
+                expertise.{" "}
               </p>
               {/* <div className="absolute top-0 right-10 w-[400px] h-[250px] bg-no-repeat bg-cover bg-center bg-[url('../../public/assets/bottom-ring.png')]"></div> */}
 
@@ -463,29 +467,29 @@ export default function Main() {
 
           <div>
             <div className="my-4 relative overflow-hidden">
-            <Swiper
-              modules={[Navigation,  Autoplay]}
-              spaceBetween={30}
-              slidesPerView={1}
-              breakpoints={{
-                1024: {
-                  slidesPerView: 2,
-                },
-              }}
-              navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              }}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: true,
-              }}
-              className="mySwiper"
+              <Swiper
+                modules={[Navigation, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                breakpoints={{
+                  1024: {
+                    slidesPerView: 2,
+                  },
+                }}
+                navigation={{
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                }}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: true,
+                }}
+                className="mySwiper"
               >
                 {slides.map((slide, index) => (
-                <SwiperSlide key={index}>
-                  <div className="w-full flex-shrink-0 flex flex-wrap">
-                    <div className="w-[100%] lg:w-[95%] lg:h-[450px] p-5 bg-white rounded-2xl">
+                  <SwiperSlide key={index}>
+                    <div className="w-full flex-shrink-0 flex flex-wrap">
+                      <div className="w-[100%] lg:w-[95%] lg:h-[450px] p-5 bg-white rounded-2xl">
                         <Image
                           alt={slide.imageAlt}
                           className="w-full h-[250px] object-cover rounded-md"
@@ -498,19 +502,19 @@ export default function Main() {
                           <p className="text-md text-lg text-[#999]">
                             {slide.description}
                           </p>
-                        <Link href={slide.readMore}>
-                          <button className="text-[#E26015] hover:text-[#041926] p-2 text-md font-semibold my-2">
-                            Read More
-                          </button>
-                        </Link>
+                          <Link href={slide.readMore}>
+                            <button className="text-[#E26015] hover:text-[#041926] p-2 text-md font-semibold my-2">
+                              Read More
+                            </button>
+                          </Link>
                         </div>
                       </div>
                     </div>
-                </SwiperSlide>
+                  </SwiperSlide>
                 ))}
-              <div className="swiper-button-prev !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
-              <div className="swiper-button-next !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
-            </Swiper>
+                <div className="swiper-button-prev !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
+                <div className="swiper-button-next !text-white !bg-[#E26015]/80 !w-[35px] !h-[35px] !rounded-full after:!text-[20px]"></div>
+              </Swiper>
             </div>
           </div>
         </div>
@@ -529,8 +533,8 @@ export default function Main() {
               <div className="flex gap-2 justify-end">
                 <p className="text-[#999] text-lg lg:w-[80%]">
                   Unlock success secrets with our Featured Case Studies.
-                  Real-world insights to inform, inspire, & drive your
-                  business forward.
+                  Real-world insights to inform, inspire, & drive your business
+                  forward.
                 </p>
               </div>
               <div className="flex justify-center my-2">
@@ -557,11 +561,11 @@ export default function Main() {
           {/* case images */}
           <div className="w-full flex flex-wrap md:justify-center lg:justify-normal gap-[40px] my-14">
             {cases.map((item, index) => (
-                  <motion.div
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  viewport={{ once: true }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                viewport={{ once: true }}
                 className="relative w-[100%] md:w-[50%] lg:w-[22%] h-[500px] bg-cover bg-center"
                 key={index}
               >
@@ -571,19 +575,19 @@ export default function Main() {
                   className="w-full h-[100%] object-fit"
                 />
                 <div>
-                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-2xl"></div>
-                    <motion.div 
+                  <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-2xl"></div>
+                  <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.5 + index * 0.2 }}
                     className="absolute bottom-14 left-7 w-[80%] flex gap-2 items-center justify-between"
-                    >
+                  >
                     <p className="text-white text-lg my-4">{item.title}</p>
                     <motion.a
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       href={item.link}
-                     className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
+                      className="p-2 font-semibold my-4 rounded-2xl border-2 border-white hover:border-none hover:bg-[#333] text-white text-lg"
                     >
                       <span>
                         <svg
@@ -594,55 +598,55 @@ export default function Main() {
                           fill="rgba(255,255,255,1)"
                         >
                           <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                      </svg>
+                        </svg>
                       </span>
                     </motion.a>
-                    </motion.div>
-                  </div>
                   </motion.div>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
         {/* banner section */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="w-full lg:h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-cover bg-no-repeat flex items-center">
+            <div className="w-[100%] lg:w-[50%] p-12">
+              <motion.p
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
+                className="text-lg text-white font-semibold my-2 border-l-4 border-[#999] p-2"
               >
-                <div className="w-full lg:h-[600px] relative bg-[url('../../public/assets/female-middle-banner.png')] bg-cover bg-no-repeat flex items-center">
-                  <div className="w-[100%] lg:w-[50%] p-12">
-                    <motion.p 
-                      initial={{ x: -100, opacity: 0 }}
-                      whileInView={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.6, delay: 0.3 }}
-                      viewport={{ once: true }}
-                      className="text-lg text-white font-semibold my-2 border-l-4 border-[#999] p-2"
-                    >
                 Unlock your business potential with BFG, your partner in
                 success. Combine the wisdom of today, the innovation of
                 tomorrow, & our expert guidance to achieve exceptional results.
                 At BFG, success is not just a goal - its our standard.
-                    </motion.p>
-                    <motion.div
-                      initial={{ y: 50, opacity: 0 }}
-                      whileInView={{ y: 0, opacity: 1 }}
-                      transition={{ duration: 0.5, delay: 0.6 }}
-                      viewport={{ once: true }}
-                    >
-              <Link href="/contact">
-                        <motion.button 
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl"
-                        >
-                  <span className="text-white font-bold">Contact Us</span>
-                        </motion.button>
-              </Link>
-                    </motion.div>
+              </motion.p>
+              <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <Link href="/contact">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-[#041926] text-white hover:bg-[#E26015] py-3 px-6 rounded-3xl"
+                  >
+                    <span className="text-white font-bold">Contact Us</span>
+                  </motion.button>
+                </Link>
+              </motion.div>
             </div>
           </div>
-              </motion.div>
+        </motion.div>
 
         {/* values */}
         <div className="my-4 p-12">
@@ -667,7 +671,11 @@ export default function Main() {
 
           <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
             <div className="w-[100%]  xl:w-[50%]">
-              <Image src={ContentBanner} alt="content-img" className="w-full rounded-lg" />
+              <Image
+                src={ContentBanner}
+                alt="content-img"
+                className="w-full rounded-lg"
+              />
             </div>
             <div className="w-[100%]  xl:w-[50%] p-2 overflow-hidden">
               <SlideLeft>
@@ -729,7 +737,7 @@ export default function Main() {
             Latest News
           </h3>
           <div className="w-full flex flex-col lg:flex-row gap-3">
-             {/* first news */}
+            {/* first news */}
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[30%] shadow-lg">
               <div className="p-4 relative h-[300px]">
                 <Image
@@ -756,10 +764,13 @@ export default function Main() {
               </div>
               <div className="p-4">
                 <h3 className="text-xl text-[#333] font-semibold my-2">
-                  Navigating Funding Challenges: Our CEO Shares Insights on How Nigerian Startups Can Attract Investment 
+                  Navigating Funding Challenges: Our CEO Shares Insights on How
+                  Nigerian Startups Can Attract Investment
                 </h3>
                 <p className="text-[#999] text-lg">
-                  Our Managing Partner/CEO – Mr. Festus BELLO shared expert insights on how Nigerian startups can successfully attract funding for their businesses and products.
+                  Our Managing Partner/CEO – Mr. Festus BELLO shared expert
+                  insights on how Nigerian startups can successfully attract
+                  funding for their businesses and products.
                 </p>
                 <Link href="/insight/news/navigating-funding-challenges">
                   <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
@@ -883,31 +894,30 @@ export default function Main() {
                 </Link>
               </div>
             </div>
-           
           </div>
           <div className="my-4 flex justify-center">
             <Link href="/insight/news">
-            <button className="py-3 px-4 border border-[#E26015] rounded-3xl flex gap-2 hover:bg-[#E26015] group">
-              <span className="text-[#E26015] font-semibold group-hover:text-white">
-                See More
-              </span>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  className="text-[#E26015] group-hover:text-white"
-                >
-                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                </svg>
-              </span>
+              <button className="py-3 px-4 border border-[#E26015] rounded-3xl flex gap-2 hover:bg-[#E26015] group">
+                <span className="text-[#E26015] font-semibold group-hover:text-white">
+                  See More
+                </span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    className="text-[#E26015] group-hover:text-white"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </span>
               </button>
-              </Link>
+            </Link>
           </div>
         </div>
-<hr/>
+        <hr />
         {/* latest blogs */}
         <div className="my-4 p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
@@ -917,7 +927,61 @@ export default function Main() {
             Latest Blogs
           </h3>
           <div className="w-full flex flex-col lg:flex-row gap-3">
-             {/* first blogs */}
+          <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[30%] shadow-lg">
+              <div className="p-4 relative h-[300px]">
+                <Image
+                  src={BlogImage}
+                  alt="blog-news"
+                  className="w-full h-full rounded-lg object-cover"
+                />
+                <div className="absolute bottom-10 left-10">
+                  <div className="flex gap-1 p-2 bg-white rounded-3xl">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(76,76,77,1)"
+                      >
+                        <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
+                      </svg>
+                    </span>
+                    <span className="text-[#4C4C4D]">January 21, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl text-[#333] font-semibold my-2">
+                  The Digital Divide: A Tale of Two Nigerian Giants –
+                  GTBank&apos;s Ascent vs. Mr. Biggs&apos; Decline
+                </h3>
+                <p className="text-[#999] text-lg">
+                  Rewind to a decade ago. In the bustling landscape of Nigeria,
+                  two household names reigned supreme in their respective
+                  domains: GTBank and Mr. Biggs. GTBank stood as a titan in
+                  financial services, synonymous with trust and accessibility
+                  for millions managing their money.{" "}
+                </p>
+                <Link href="/insight/blogs/the-digital-divide">
+                  <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
+                    <span className="text-white">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </Link>
+              </div>
+            </div>
+            {/* first blogs */}
             <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[30%] shadow-lg">
               <div className="p-4 relative h-[300px]">
                 <Image
@@ -944,10 +1008,15 @@ export default function Main() {
               </div>
               <div className="p-4">
                 <h3 className="text-xl text-[#333] font-semibold my-2">
-                  Unlocking Human Potential in the Age of AI and the 5th Industrial Revolution
+                  Unlocking Human Potential in the Age of AI and the 5th
+                  Industrial Revolution
                 </h3>
                 <p className="text-[#999] text-lg">
-                  In today&apos;s rapidly evolving world, one of the most remarkable demonstrations of human potential is Artificial Intelligence (AI). AI, along with other pillars of the 5th Industrial Revolution, is not just a product of human intellect—it is proof of its boundless capabilities.
+                  In today&apos;s rapidly evolving world, one of the most
+                  remarkable demonstrations of human potential is Artificial
+                  Intelligence (AI). AI, along with other pillars of the 5th
+                  Industrial Revolution, is not just a product of human
+                  intellect—it is proof of its boundless capabilities.
                 </p>
                 <Link href="/insight/blogs/unlocking-human-potential">
                   <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
@@ -967,29 +1036,29 @@ export default function Main() {
                 </Link>
               </div>
             </div>
-     
+            {/* second blog */}
            
           </div>
           <div className="my-4 flex justify-center">
             <Link href="/insight/blogs">
-            <button className="py-3 px-4 border border-[#E26015] rounded-3xl flex gap-2 hover:bg-[#E26015] group">
-              <span className="text-[#E26015] font-semibold group-hover:text-white">
-                See More
-              </span>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  className="text-[#E26015] group-hover:text-white"
-                >
-                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                </svg>
-              </span>
+              <button className="py-3 px-4 border border-[#E26015] rounded-3xl flex gap-2 hover:bg-[#E26015] group">
+                <span className="text-[#E26015] font-semibold group-hover:text-white">
+                  See More
+                </span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    className="text-[#E26015] group-hover:text-white"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </span>
               </button>
-              </Link>
+            </Link>
           </div>
         </div>
 
