@@ -39,7 +39,7 @@ const Page = () => {
             <Image
               src={TopBanner}
               alt="top-banner"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-fit rounded-xl"
             />
           </div>
         </div>

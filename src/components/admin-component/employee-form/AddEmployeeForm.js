@@ -3,20 +3,22 @@ import PersonalInfoForm from "./forms/PersonalInfoForm";
 import JobInfoForm from "./forms/JobInfoForm";
 import EducationalBackgroundForm from "./forms/EducationalBackgroundForm";
 import DocumentsForm from "./forms/DocumentsForm";
-import { useCreateEmployeeMutation } from "@/redux/employee/employeeService";
 import toast from "react-hot-toast";
-import { useCreateUserMutation } from "@/redux/auth/authService";
-import { useDispatch } from "react-redux";
-import { setCredentials } from "@/redux/auth/authSlice";
+import { useAuth } from "@/context/authContext";
+import axios from "axios";
+
+const apiLink = process.env.NEXT_PUBLIC_BASE_URL;
 
 const AddEmployeeForm = ({ close }) => {
-  const Dispatch = useDispatch();
+  const { user } = useAuth();
   const [tab, setTab] = useState("Step1");
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     // Personal Info
+    
     fullName: "",
     email: "",
-    password: "",
+    password: "suduko",
     phoneNumber: "",
     dateOfBirth: "",
     gender: "",
@@ -35,13 +37,11 @@ const AddEmployeeForm = ({ close }) => {
     dateOfEmployment: "",
     payScale: "",
     department: "",
-
     // Educational Background
     highestQualification: "",
     institutionsAttended: [],
     yearOfGraduation: "",
     relevantTrainings: [],
-
     // Documents
     certifications: [],
     passportPhoto: "",
@@ -54,31 +54,93 @@ const AddEmployeeForm = ({ close }) => {
     }));
   };
 
-  const [createUser, { isLoading }] = useCreateUserMutation({
-    credentials: "include",
-  });
+  const validateForm = () => {
+    const requiredFields = [
+      'fullName',
+      'email',
+      'password',
+      'phoneNumber',
+      'dateOfBirth',
+      'gender',
+      'employeeId',
+      'jobTitle',
+      'employmentStatus',
+      'department'
+    ];
+
+    const missingFields = requiredFields.filter(field => !formData[field]);
+    
+    if (missingFields.length > 0) {
+      toast.error(`Please fill in all required fields: ${missingFields.join(', ')}`);
+      return false;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error('Please enter a valid email address');
+      return false;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^\+?[\d\s-]{10,}$/;
+    if (!phoneRegex.test(formData.phoneNumber)) {
+      toast.error('Please enter a valid phone number');
+      return false;
+    }
+
+    return true;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
     try {
+      setIsLoading(true);
       const employeeFormData = new FormData();
 
+      // Append all form fields to FormData
       Object.keys(formData).forEach((key) => {
-        if (key === "passportPhoto") {
-          employeeFormData.append("passportPhoto", formData.passportPhoto);
-        } else {
+        if (key === "passportPhoto" && formData[key]) {
+          employeeFormData.append("passportPhoto", formData[key]);
+        } else if (Array.isArray(formData[key])) {
+          employeeFormData.append(key, JSON.stringify(formData[key]));
+        } else if (formData[key] !== null && formData[key] !== undefined) {
           employeeFormData.append(key, formData[key]);
         }
       });
 
-      const response = await createUser(employeeFormData).unwrap();
-       Dispatch(setCredentials({ response }));
-      console.log("Server response:", response);
-      toast.success("Employee added successfully");
-      close();
+      // Add createdBy field
+      if (user?.id) {
+        employeeFormData.append('createdBy', user.id);
+      }
+
+      const response = await axios.post(
+        `${apiLink}/api/v1/employee/addEmployee`,
+        employeeFormData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+          withCredentials: true
+        }
+      );
+      
+      if (response.data.success) {
+        toast.success("Employee added successfully");
+        close();
+      } else {
+        throw new Error(response.data.message || "Failed to add employee");
+      }
     } catch (error) {
-      console.log(error);
-      toast.error(error?.data?.message || "Failed to add employee");
+      console.error("Error adding employee:", error);
+      toast.error(error?.response?.data?.message || "Failed to add employee. Please try again.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -191,7 +253,10 @@ const AddEmployeeForm = ({ close }) => {
             />
           )}
           {tab === "Step2" && (
-            <JobInfoForm formData={formData} onChange={handleFormDataChange} />
+            <JobInfoForm 
+              formData={formData} 
+              onChange={handleFormDataChange}
+            />
           )}
           {tab === "Step3" && (
             <EducationalBackgroundForm
@@ -216,14 +281,16 @@ const AddEmployeeForm = ({ close }) => {
                 : "bg-[#E26015] text-white hover:bg-[#E26015]/90"
             }`}
           >
-            Prev
+            Previous
           </button>
 
           {getCurrentStepIndex() === steps.length - 1 ? (
             <button
               onClick={handleSubmit}
               disabled={isLoading}
-              className="px-4 py-2 rounded-md bg-[#E26015] text-white hover:bg-[#E26015]/90"
+              className={`px-4 py-2 rounded-md bg-[#E26015] text-white hover:bg-[#E26015]/90 ${
+                isLoading ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               {isLoading ? "Submitting..." : "Submit"}
             </button>
