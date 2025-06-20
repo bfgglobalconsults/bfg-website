@@ -18,8 +18,8 @@ const JobInfoForm = ({ formData, onChange }) => {
                 Employee ID
               </label>
               <input
-                name="employeeId"
-                value={formData.employeeId}
+                name="employeeID"
+                value={formData.employeeID}
                 onChange={handleChange}
                 type="text"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -122,10 +122,10 @@ const JobInfoForm = ({ formData, onChange }) => {
               />
             </div>
             </div>
-                  <div className="flex gap-4 justify-center">
+                  {/* <div className="flex gap-4 justify-center">
                       <button className="border border-[#999999] hover:bg-[#E26015] hover:text-white text-[#999999] rounded-md px-6 py-2">Prev</button>
                       <button className="bg-[#E26015] hover:bg-black text-white px-6 py-2 rounded-md">Next</button>
-                  </div>
+                  </div> */}
               </form>
               </div>
       </>

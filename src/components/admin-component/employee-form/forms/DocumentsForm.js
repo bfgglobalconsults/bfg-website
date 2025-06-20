@@ -1,6 +1,12 @@
-import React from "react";
+"use client";
+import { CldUploadButton } from "next-cloudinary";
+import React, { useState } from "react";
 
 const DocumentsForm = ({ formData, onChange }) => {
+  const [imageId, setImageId] = useState("");
+  const [docId, setDocId] = useState("");
+
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     onChange({
@@ -41,14 +47,14 @@ const DocumentsForm = ({ formData, onChange }) => {
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Passport Photograph
           </label>
-          <input
-            name="passportPhoto"
-            value={formData.passportPhoto}
-            onChange={handleChange}
-            type="file"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Upload Image"
-          />
+           <CldUploadButton
+                  onSuccess={(result) => {
+                    setImageId(result.info.public_id);
+                    {console.log("Image uploaded:", result.info);}
+                    if (onChange) onChange(result.info.url);
+                  }}
+                  uploadPreset="blog-image"
+                />
         </div>
         <div className="w-1/3">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -57,13 +63,14 @@ const DocumentsForm = ({ formData, onChange }) => {
 
           {(formData.certificates || []).map((institution, index) => (
             <div key={index} className="flex mb-2">
-              <input
-                type="file"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Upload Document"
-                value={institution}
-                onChange={(e) => handleCertificateChange(index, e.target.value)}
-              />
+              <CldUploadButton
+                      onSuccess={(result) => {
+                        setDocId(result.info.public_id);
+                        {console.log("Doc uploaded:", result.info);}
+                        if (onChange) onChange(result.info.url);
+                      }}
+                      uploadPreset="blog-image"
+                    />
               <button
                 type="button"
                 onClick={() => removeCertificate(index)}
