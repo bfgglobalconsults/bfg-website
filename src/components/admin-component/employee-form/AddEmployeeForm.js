@@ -30,7 +30,7 @@ const AddEmployeeForm = ({ close }) => {
     nextOfKinName: "",
     emergencyContact: "",
     // Job Info
-    employeeId: "",
+    employeeID: "",
     jobTitle: "",
     employmentStatus: "",
     typeOfEmployment: "",
@@ -62,7 +62,7 @@ const AddEmployeeForm = ({ close }) => {
       'phoneNumber',
       'dateOfBirth',
       'gender',
-      'employeeId',
+      'employeeID',
       'jobTitle',
       'employmentStatus',
       'department'
@@ -101,30 +101,17 @@ const AddEmployeeForm = ({ close }) => {
 
     try {
       setIsLoading(true);
-      const employeeFormData = new FormData();
-
-      // Append all form fields to FormData
-      Object.keys(formData).forEach((key) => {
-        if (key === "passportPhoto" && formData[key]) {
-          employeeFormData.append("passportPhoto", formData[key]);
-        } else if (Array.isArray(formData[key])) {
-          employeeFormData.append(key, JSON.stringify(formData[key]));
-        } else if (formData[key] !== null && formData[key] !== undefined) {
-          employeeFormData.append(key, formData[key]);
-        }
-      });
-
-      // Add createdBy field
-      if (user?.id) {
-        employeeFormData.append('createdBy', user.id);
-      }
+      const employeeFormData = {
+        ...formData,
+        createdBy: user?.id,
+      };
 
       const response = await axios.post(
         `${apiLink}/api/v1/employee/addEmployee`,
         employeeFormData,
         {
           headers: {
-            'Content-Type': 'multipart/form-data',
+            'Content-Type': 'application/json',
           },
           withCredentials: true
         }

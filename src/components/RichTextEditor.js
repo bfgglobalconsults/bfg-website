@@ -6,7 +6,8 @@ import 'quill/dist/quill.snow.css'; // Import Quill styles
 
 
 
-const RichTextEditor = forwardRef((_, ref) => {
+const RichTextEditor = React.forwardRef((props, ref) => {
+
   const editorRef = useRef(null);
   const quillRef = useRef(null);
 

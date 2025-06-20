@@ -34,7 +34,7 @@ const PersonalInfoForm = ({ formData, onChange }) => {
   };
 
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
+    fetch("https://restcountries.com/v3.1/all?fields=name,flags")
       .then((response) => response.json())
       .then((data) => {
         const sortedCountries = data
