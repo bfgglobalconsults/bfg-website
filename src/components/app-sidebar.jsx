@@ -46,11 +46,7 @@ const data = {
       url: "/admin/employees",
       icon: Bot,
     },
-    {
-      title: "Client Mgt",
-      url: "/admin/clients",
-      icon: BookOpen,
-    },
+    
     {
       title: "CMS Mgt",
       url: "/admin/cms",
@@ -58,26 +54,9 @@ const data = {
     },
     {
       title: "Settings",
-      url: "#",
+      url: "/admin/settings",
       icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
+    
     },
   ],
   projects: [

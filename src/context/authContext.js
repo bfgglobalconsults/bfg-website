@@ -1,164 +1,110 @@
 "use client"
-import { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 
-// Define types for better code organization and type safety
-const AuthContext = createContext({
-    user: null,
-    loading: false,
-    error: null,
-    login: async () => {},
-    logout: async () => {},
-    isAuthenticated: false,
-});
-
+const AuthContext = createContext();
 const apiLink = process.env.NEXT_PUBLIC_BASE_URL;
-
-// Custom hook for handling API errors
-const useApiError = () => {
-    return useCallback((error) => {
-        const message = error?.response?.data?.message || 'An error occurred';
-        toast.error(message);
-        return message;
-    }, []);
-};
 
 export const AuthProvider = ({ children }) => {
     const router = useRouter();
-    const handleApiError = useApiError();
-    
-    const [state, setState] = useState({
-        user: null,
-        loading: false,
-        error: null,
-        isAuthenticated: false
-    });
+    const [user, setUser] = useState(null);
+    const [accessToken, setAccessToken] = useState(
+      () => typeof window !== 'undefined' ? localStorage.getItem('accessToken') : null
+    );
+    const [loading, setLoading] = useState(true); // Start as true for initial check
 
-    // Memoized state updater
-    const updateState = useCallback((newState) => {
-        setState(prev => ({ ...prev, ...newState }));
-    }, []);
+    // Persist accessToken in localStorage
+    useEffect(() => {
+        if (accessToken) {
+            localStorage.setItem('accessToken', accessToken);
+        } else {
+            localStorage.removeItem('accessToken');
+        }
+    }, [accessToken]);
 
-    // Configure axios defaults
+    // Attach token to every axios request
     useEffect(() => {
         const requestInterceptor = axios.interceptors.request.use(
             (config) => {
-                updateState({ loading: true, error: null });
+                if (accessToken) {
+                    config.headers['Authorization'] = `Bearer ${accessToken}`;
+                }
                 return config;
             },
-            (error) => {
-                updateState({ loading: false, error: error.message });
-                return Promise.reject(error);
-            }
+            (error) => Promise.reject(error)
         );
+        return () => axios.interceptors.request.eject(requestInterceptor);
+    }, [accessToken]);
 
-        const responseInterceptor = axios.interceptors.response.use(
-            (response) => {
-                updateState({ loading: false });
-                return response;
-            },
-            (error) => {
-                const message = handleApiError(error);
-                updateState({ loading: false, error: message });
-                return Promise.reject(error);
+    // Fetch user on mount or when accessToken changes
+    useEffect(() => {
+        const fetchUser = async () => {
+            if (!accessToken) {
+                setUser(null);
+                setLoading(false);
+                return;
             }
-        );
-
-        return () => {
-            axios.interceptors.request.eject(requestInterceptor);
-            axios.interceptors.response.eject(responseInterceptor);
+            setLoading(true);
+            try {
+                const res = await axios.get(`${apiLink}/api/v1/users/current-user`, {
+                    headers: { Authorization: `Bearer ${accessToken}` }
+                });
+                setUser(res.data.data);
+            } catch (err) {
+                setUser(null);
+                setAccessToken(null);
+                localStorage.removeItem('accessToken');
+            } finally {
+                setLoading(false);
+            }
         };
-    }, [updateState, handleApiError]);
+        fetchUser();
+    }, [accessToken]);
 
-    // Check authentication status on mount
-    // useEffect(() => {
-    //     const checkAuth = async () => {
-    //         try {
-    //             updateState({ loading: true });
-    //             const response = await axios.get(`${apiLink}/api/v1/users/current-user`, {
-    //                 withCredentials: true
-    //             });
-    //             updateState({
-    //                 user: response.data.data,
-    //                 isAuthenticated: true,
-    //                 loading: false
-    //             });
-    //         } catch (error) {
-    //             updateState({
-    //                 user: null,
-    //                 isAuthenticated: false,
-    //                 loading: false
-    //             });
-    //         }
-    //     };
-    //     checkAuth();
-    // }, [updateState]);
-
-    const login = useCallback(async (credentials) => {
+    const login = async (credentials) => {
+        setLoading(true);
         try {
-            updateState({ loading: true, error: null });
-            const response = await axios.post(
+            const res = await axios.post(
                 `${apiLink}/api/v1/users/loginUser`,
-                credentials,
-                {
-                    headers: { 'Content-Type': 'application/json' },
-                    withCredentials: true
-                }
+                credentials
             );
-            
-            const { user: userData } = response.data.data;
-            updateState({
-                user: userData,
-                isAuthenticated: true,
-                loading: false
-            });
-            
+            setUser(res.data.data.user);
+            setAccessToken(res.data.data.accessToken);
             toast.success('Successfully logged in');
-            return response.data;
+            return res.data;
         } catch (error) {
-            const message = handleApiError(error);
-            updateState({ error: message, loading: false });
             throw error;
+        } finally {
+            setLoading(false);
         }
-    }, [updateState, handleApiError]);
+    };
 
-    const logout = useCallback(async () => {
+    const logout = async () => {
+        setLoading(true);
         try {
-            updateState({ loading: true });
-            await axios.post(`${apiLink}/api/v1/users/logout`, {}, {
-                withCredentials: true
-            });
-            
-            updateState({
-                user: null,
-                isAuthenticated: false,
-                loading: false
-            });
-            
+            setUser(null);
+            setAccessToken(null);
+            localStorage.removeItem('accessToken');
             toast.success('Successfully logged out');
             router.push('/login');
         } catch (error) {
-            const message = handleApiError(error);
-            updateState({ error: message, loading: false });
+            toast.error('Something went wrong while logging out');
+            console.error('Logout error:', error);
+            throw error;
+        } finally {
+            setLoading(false);
         }
-    }, [updateState, handleApiError, router]);
-
-    const value = {
-        ...state,
-        login,
-        logout
     };
 
     return (
-        <AuthContext.Provider value={value}>
+        <AuthContext.Provider value={{ user, accessToken, login, logout, loading }}>
             {children}
         </AuthContext.Provider>
     );
 };
 
-// Custom hook with error handling
 export const useAuth = () => {
     const context = useContext(AuthContext);
     if (context === undefined) {

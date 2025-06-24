@@ -41,36 +41,40 @@ const DocumentsForm = ({ formData, onChange }) => {
   };
   return (
     <>
-      {" "}
       <div className="w-full flex gap-2 mb-4">
         <div className="w-1/3">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Passport Photograph
           </label>
-           <CldUploadButton
-                  onSuccess={(result) => {
-                    setImageId(result.info.public_id);
-                    {console.log("Image uploaded:", result.info);}
-                    if (onChange) onChange(result.info.url);
-                  }}
-                  uploadPreset="blog-image"
-                />
+          <input
+            type="file"
+            accept="image/*"
+            onChange={(e) => {
+              const file = e.target.files[0];
+              setImageId(file ? file.name : "");
+              if (onChange && file) {
+                onChange({
+                  ...formData,
+                  passportPhoto: file,
+                });
+              }
+            }}
+          />
         </div>
         <div className="w-1/3">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Certification
           </label>
-
-          {(formData.certificates || []).map((institution, index) => (
-            <div key={index} className="flex mb-2">
-              <CldUploadButton
-                      onSuccess={(result) => {
-                        setDocId(result.info.public_id);
-                        {console.log("Doc uploaded:", result.info);}
-                        if (onChange) onChange(result.info.url);
-                      }}
-                      uploadPreset="blog-image"
-                    />
+          {(formData.certificates || []).map((certificate, index) => (
+            <div key={index} className="flex mb-2 items-center">
+              <input
+                type="file"
+                accept=".pdf,.jpg,.jpeg,.png"
+                onChange={(e) => {
+                  const file = e.target.files[0];
+                  handleCertificateChange(index, file);
+                }}
+              />
               <button
                 type="button"
                 onClick={() => removeCertificate(index)}
@@ -89,7 +93,6 @@ const DocumentsForm = ({ formData, onChange }) => {
           </button>
         </div>
       </div>
-      
     </>
   );
 };

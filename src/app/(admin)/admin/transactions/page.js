@@ -1,246 +1,216 @@
-import DepartmentTable from '@/components/admin-component/employee-components/DepartmentTable';
-import Dropdown from '@/components/admin-component/filter-dropdown';
-import TextTrimming from '@/components/admin-component/TextTrimmer';
-import React from 'react';
+"use client";
+import React, { useState } from "react";
+import { FiArrowDown, FiArrowUp, FiClock, FiCheckCircle, FiSearch, FiFilter, FiEye, FiPlus } from "react-icons/fi";
 
-const employeeData = [
-  {
-    id: 1,
-    name: "John Ogbe",
-    ID: "B001",
-    email: "john.ogbe@gmail.com",
-    phone: "+2347032145667",
-    project: "IT Development",
-    projectStart: "April 1, 2023",
-    projectEnd: "May 21, 2023",
-    status: "Completed",
-  },
-  {
-    id: 2,
-    name: "Jeremiah Gyang",
-    ID: "A007",
-    email: "j.gyang@gmail.com",
-    phone: "+2348082145667",
-    project: "Graphics Designs",
-    projectStart: "June 30, 2023",
-    projectEnd: "July 25, 2023",
-    status: "Completed",
-  },
-  {
-    id: 3,
-    name: "Daniella Okereke",
-    ID: "A002",
-    email: "daniellaokereke@gmail.com",
-    phone: "+2347032145997",
-    project: "Business Strategy for Real Estate",
-    projectStart: "Febr 20, 2023",
-    projectEnd: "April 11, 2023",
-    status: "Ongoing",
-  },
-  {
-    id: 4,
-    name: "Chioma Lizzy",
-    ID: "A004",
-    email: "chi.lizzy@gmail.com",
-    phone: "+2347032145667",
-    project: "Training & Development For Sales",
-    projectStart: "Novem 28, 2023",
-    projectEnd: "Jan 21, 2024",
-    status: "Ongoing",
-  },
-  {
-    id: 5,
-    name: "David Beckham",
-    ID: "A007",
-    email: "davidb07@gmail.com",
-    phone: "+2349032141992",
-    project: "IT Supplies",
-    projectStart: "July 31, 2023",
-    projectEnd: "August 21, 2023",
-    status: "Completed",
-  },
+// Mock Data - Replace with API data
+const initialTransactions = [
+  { id: 1, user: "Jane Doe", type: "Inflow", amount: 5000, date: "2024-07-01", status: "Completed", description: "Client payment" },
+  { id: 2, user: "John Smith", type: "Outflow", amount: 1200, date: "2024-07-02", status: "Pending", description: "Office supplies" },
+  { id: 3, user: "Emily White", type: "Inflow", amount: 3000, date: "2024-07-03", status: "Completed", description: "Consulting fee" },
+  { id: 4, user: "Michael Brown", type: "Outflow", amount: 800, date: "2024-07-04", status: "Rejected", description: "Travel reimbursement" },
+  { id: 5, user: "David Green", type: "Inflow", amount: 2000, date: "2024-07-05", status: "Completed", description: "Project bonus" },
+  { id: 6, user: "Sarah Lee", type: "Outflow", amount: 1500, date: "2024-07-06", status: "Pending", description: "Team lunch" },
 ];
 
-const page = () => {
-  return (
-   <div className="w-full p-4">
-          <div className="flex justify-between">
-             
-        <div></div>
-        <div className="flex gap-3">
-          <button className="flex items-center gap-2 p-2 rounded-md border border-[#E26015]">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="rgba(153,153,153,1)"
-              >
-                <path d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"></path>
-              </svg>
-            </span>
-            <span>Add Transaction</span>
-          </button>
-          <button className="flex items-center gap-2 p-2 rounded-md border border-[#E26015]">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="rgba(153,153,153,1)"
-              >
-                <path d="M11 11V7H13V11H17V13H13V17H11V13H7V11H11ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"></path>
-              </svg>
-            </span>
-            <span>Payment</span>
-          </button>
-        </div>
-      </div>
-      <div className="flex gap-2 my-3 items-center justify-between">
-        <h3 className="text-2xl">Overview</h3>
-        <div>
-          <Dropdown />
-        </div>
-      </div>
-      <div className="flex gap-4 my-4">
-        <div>
-          {/* <AllProjectsCard /> */}
-        </div>
-        <div>
-         
-        </div>
-      </div>
-      <div className="w-full">
-        <div className="relative overflow-x-auto  sm:rounded-lg">
-          <div className="flex items-center justify-between my-3 flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
-            <div>
-              <h3 className="text-lg text-black font-semibold">Projects</h3>
-              </div>
-            
-            {/* <label for="table-search" className="sr-only">
-              Search
-            </label> */}
-            <div className="relative">
-              <div className="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg
-                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="table-search-users"
-                className="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search for projects..."
-              />
-                      </div>
-                      </div>
-              </div>
-              <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-              <tr>
-                <th scope="col" className="px-6 py-3">
-                  Name
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  ID
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Email
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Phone
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Project
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Project Start
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Project End
-                </th>
-                <th scope="col" className="px-6 py-3">
-                  Status
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {employeeData.map((employee) => {
-                return (
-                  <>
-                    <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                      <th
-                        scope="row"
-                        class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
-                      >
-                      
-                        <div className="">
-                          <div className="font-semibold">
-                          <TextTrimming text={employee.name} maxLength={6} />
-                          </div>
-                        </div>
-                      </th>
-                      <td className="px-6 py-4"><TextTrimming text={employee.ID} maxLength={6} /></td>
-                      <td className="px-6 py-4">
-                        <div className="font-normal text-gray-500">
-                         <TextTrimming text={employee.email} maxLength={6} />
-                        </div>
-                      </td>
-                      <td class="px-6 py-4">
-                        <div className="font-normal text-gray-500">
-                          {employee.phone}
-                        </div>
-                            </td>
-                            <td class="px-6 py-4">
-                        <div className="font-normal text-gray-500">
-<TextTrimming text={employee.project} maxLength={6} />                        </div>
-                            </td>
-                            <td class="px-6 py-4">
-                        <div className="font-normal text-gray-500">
-                          {employee.projectStart}
-                        </div>
-                            </td>
-                            <td class="px-6 py-4">
-                        <div className="font-normal text-gray-500">
-                          {employee.projectEnd}
-                        </div>
-                            </td>
-                            <td class="px-6 py-4">
-                        <span className={`font-normal bg-[#E2E8F966] p-2 rounded-md text-black ${employee.status === "Completed" ? "text-green-600": "text-[#DFA510]"}`}>
-                          {employee.status}
-                        </span>
-                      </td>
-                    </tr>
-                  </>
-                );
-              })}
-            </tbody>
-                  </table>
-                  </div>
-              <div className="w-full flex gap-4 my-4">
-                  <div className="w-[60%]">
-                      <DepartmentTable />
-                  </div>
-                  <div className="w-[40%]"></div>
-              </div>
-        </div>
-      </div>
-  )
-}
+const StatCard = ({ icon, title, value, color }) => (
+  <div className="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4">
+    <div className={`p-3 rounded-full ${color}`}>{icon}</div>
+    <div>
+      <p className="text-gray-500 text-sm">{title}</p>
+      <p className="text-2xl font-bold">{value}</p>
+    </div>
+  </div>
+);
 
-export default page
+const StatusBadge = ({ status }) => {
+  const statusStyles = {
+    Completed: "bg-green-100 text-green-800",
+    Pending: "bg-yellow-100 text-yellow-800",
+    Rejected: "bg-red-100 text-red-800",
+  };
+  return (
+    <span className={`px-3 py-1 text-xs font-medium rounded-full ${statusStyles[status]}`}>
+      {status}
+    </span>
+  );
+};
+
+const TransactionManagementPage = () => {
+  const [transactions, setTransactions] = useState(initialTransactions);
+  const [filter, setFilter] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedTransaction, setSelectedTransaction] = useState(null);
+
+  const handleStatusChange = (id, newStatus) => {
+    setTransactions(transactions.map(txn => txn.id === id ? { ...txn, status: newStatus } : txn));
+  };
+
+  const filteredTransactions = transactions
+    .filter(txn => filter === "All" || txn.status === filter)
+    .filter(txn =>
+      txn.user.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      txn.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      txn.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+  const totalFunds = transactions
+    .filter(txn => txn.status === "Completed")
+    .reduce((sum, txn) => txn.type === "Inflow" ? sum + txn.amount : sum - txn.amount, 0);
+
+  const inflow = transactions
+    .filter(txn => txn.type === "Inflow" && txn.status === "Completed")
+    .reduce((sum, txn) => sum + txn.amount, 0);
+
+  const outflow = transactions
+    .filter(txn => txn.type === "Outflow" && txn.status === "Completed")
+    .reduce((sum, txn) => sum + txn.amount, 0);
+
+  const pendingCount = transactions.filter(txn => txn.status === "Pending").length;
+
+  return (
+    <div className="p-8 bg-gray-50 min-h-screen">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+        <h1 className="text-3xl font-bold text-gray-800">Funds & Transactions</h1>
+        <button className="flex items-center bg-[#E26015] hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg transition space-x-2">
+          <FiPlus />
+          <span>Add Transaction</span>
+        </button>
+      </div>
+
+      {/* Stats */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <StatCard icon={<FiCheckCircle size={24} className="text-blue-600" />} title="Total Funds" value={`₦${totalFunds.toLocaleString()}`} color="bg-blue-100" />
+        <StatCard icon={<FiArrowDown size={24} className="text-green-600" />} title="Inflow" value={`₦${inflow.toLocaleString()}`} color="bg-green-100" />
+        <StatCard icon={<FiArrowUp size={24} className="text-red-600" />} title="Outflow" value={`₦${outflow.toLocaleString()}`} color="bg-red-100" />
+        <StatCard icon={<FiClock size={24} className="text-yellow-600" />} title="Pending Approvals" value={pendingCount} color="bg-yellow-100" />
+      </div>
+
+      {/* Table Controls */}
+      <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="relative w-full md:w-1/3">
+            <FiSearch className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-400" />
+            <input
+              type="text"
+              placeholder="Search by user, type, or description..."
+              value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
+              className="w-full pl-12 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="relative">
+            <FiFilter className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400" />
+            <select
+              value={filter}
+              onChange={e => setFilter(e.target.value)}
+              className="pl-10 pr-4 py-2 border rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+            >
+              <option value="All">All Statuses</option>
+              <option value="Completed">Completed</option>
+              <option value="Pending">Pending</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* Transactions Table */}
+      <div className="bg-white rounded-lg shadow-md overflow-x-auto">
+        <table className="w-full text-left">
+          <thead className="bg-gray-50">
+            <tr>
+              <th className="p-4 font-semibold text-sm text-gray-600">Date</th>
+              <th className="p-4 font-semibold text-sm text-gray-600">User</th>
+              <th className="p-4 font-semibold text-sm text-gray-600">Type</th>
+              <th className="p-4 font-semibold text-sm text-gray-600">Amount</th>
+              <th className="p-4 font-semibold text-sm text-gray-600">Description</th>
+              <th className="p-4 font-semibold text-sm text-gray-600">Status</th>
+              <th className="p-4 font-semibold text-sm text-gray-600">Actions</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y">
+            {filteredTransactions.map(txn => (
+              <tr key={txn.id}>
+                <td className="p-4">{txn.date}</td>
+                <td className="p-4">{txn.user}</td>
+                <td className="p-4">
+                  <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${txn.type === "Inflow" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}>
+                    {txn.type}
+                  </span>
+                </td>
+                <td className="p-4 font-semibold">₦{txn.amount.toLocaleString()}</td>
+                <td className="p-4">{txn.description}</td>
+                <td className="p-4"><StatusBadge status={txn.status} /></td>
+                <td className="p-4">
+                  <div className="flex space-x-2">
+                    <button
+                      className="text-blue-600 hover:bg-blue-50 p-2 rounded-full"
+                      title="View"
+                      onClick={() => setSelectedTransaction(txn)}
+                    >
+                      <FiEye size={18} />
+                    </button>
+                    {txn.status === "Pending" && (
+                      <>
+                        <button
+                          className="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-600 transition"
+                          onClick={() => handleStatusChange(txn.id, "Completed")}
+                        >
+                          Approve
+                        </button>
+                        <button
+                          className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600 transition"
+                          onClick={() => handleStatusChange(txn.id, "Rejected")}
+                        >
+                          Reject
+                        </button>
+                      </>
+                    )}
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {filteredTransactions.length === 0 && (
+          <div className="text-center p-8 text-gray-500">
+            No transactions found.
+          </div>
+        )}
+      </div>
+
+      {/* Transaction Details Modal */}
+      {selectedTransaction && (
+        <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-md relative">
+            <button
+              className="absolute top-2 right-2 text-gray-400 hover:text-gray-700"
+              onClick={() => setSelectedTransaction(null)}
+            >
+              &times;
+            </button>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">Transaction Details</h2>
+            <div className="space-y-2">
+              <div><span className="font-semibold">User:</span> {selectedTransaction.user}</div>
+              <div><span className="font-semibold">Type:</span> {selectedTransaction.type}</div>
+              <div><span className="font-semibold">Amount:</span> ₦{selectedTransaction.amount.toLocaleString()}</div>
+              <div><span className="font-semibold">Date:</span> {selectedTransaction.date}</div>
+              <div><span className="font-semibold">Status:</span> <StatusBadge status={selectedTransaction.status} /></div>
+              <div><span className="font-semibold">Description:</span> {selectedTransaction.description}</div>
+            </div>
+            <div className="flex justify-end mt-6">
+              <button
+                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                onClick={() => setSelectedTransaction(null)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default TransactionManagementPage;

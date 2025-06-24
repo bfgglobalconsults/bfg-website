@@ -41,7 +41,7 @@ const AddEmployeeForm = ({ close }) => {
     highestQualification: "",
     institutionsAttended: [],
     yearOfGraduation: "",
-    relevantTrainings: [],
+    relevantTrainings: ["none"],
     // Documents
     certifications: [],
     passportPhoto: "",
