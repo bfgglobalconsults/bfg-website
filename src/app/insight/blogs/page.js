@@ -4,7 +4,7 @@ import Banner from "../../../../public/assets/news-banner.png";
 import News1 from "../../../../public/assets/News-ST.jpg";
 import CeoNews from "../../../../public/assets/ai-news.png";
 import BlogImage from "../../../../public/assets/blog-image.jpeg";
-
+import AfricaImage from "../../../../public/assets/africa-rising.png";
 import News2 from "../../../../public/assets/news2.png";
 import AwardNews from "../../../../public/assets/bfg-award.jpg";
 import Slides from "@/components/Slides";
@@ -40,7 +40,42 @@ const page = () => {
         <div className="py-[30px]">
           <div className="">
             <div className="w-full flex flex-col lg:flex-row gap-10 my-4">
-               
+            {/* first news */}
+            <div className="w-[100%] lg:w-[50%]  p-10 border border-[#F7F7F8] rounded-3xl">
+                <div className="h-[200px] lg:h-[350px]">
+                  <Image
+                    src={AfricaImage}
+                    alt="blog-image"
+                    className="w-full h-full object-cover rounded-3xl"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold my-2">
+                  Africa Rising: Why Nigeria Is the Next Big Digital Business
+                  Opportunity       </h3>
+                  <p className="text-[#999]">
+                  While global business growth has long centered on the established markets of U.S. tech hubs, industrial Europe, and Asia, a profound shift is now redefining the landscape. Africa, particularly Nigeria, is emerging not merely as a new frontier for foreign investment, but as a vibrant economic powerhouse brimming with unprecedented potential for savvy businesses.
+
+
+                  </p>
+                  <Link href="/insight/blogs/africa-rising-why-nigeria-next-big-digital-business-opportunity">
+                  <button className="flex gap-1 py-1 px-2 items-center bg-[#E26015] hover:bg-[#333] rounded-3xl my-3">
+                    <span className="text-white ml-2 font-semibold">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="32"
+                        height="32"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                  </Link>
+                </div>
+              </div>
             {/* first news */}
             <div className="w-[100%] lg:w-[50%]  p-10 border border-[#F7F7F8] rounded-3xl">
                 <div className="h-[200px] lg:h-[350px]">

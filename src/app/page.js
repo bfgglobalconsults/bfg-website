@@ -50,6 +50,8 @@ import STTravel from "../../public/assets/News-ST.jpg";
 import AwardNews from "../../public/assets/bfg-award.jpg";
 import AINews from "../../public/assets/ai-news.jpg";
 import BlogImage from "../../public/assets/blog-image.jpeg";
+import AfricaImage from "../../public/assets/africa-rising.png";
+
 
 import CeoNews from "../../public/assets/ceo-news.jpg";
 import FirstNews from "../../public/assets/first-news.png";
@@ -927,6 +929,57 @@ export default function Main() {
             Latest Blogs
           </h3>
           <div className="w-full flex flex-col lg:flex-row gap-3">
+            {/* first blog */}
+            <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[30%] shadow-lg">
+              <div className="p-4 relative h-[300px]">
+                <Image
+                  src={AfricaImage}
+                  alt="blog-news"
+                  className="w-full h-full rounded-lg object-cover"
+                />
+                <div className="absolute bottom-10 left-10">
+                  <div className="flex gap-1 p-2 bg-white rounded-3xl">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(76,76,77,1)"
+                      >
+                        <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
+                      </svg>
+                    </span>
+                    <span className="text-[#4C4C4D]">June 24, 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl text-[#333] font-semibold my-2">
+                Africa Rising: Why Nigeria Is the Next Big Digital Business Opportunity
+                </h3>
+                <p className="text-[#999] text-lg">
+                While global business growth has long centered on the established markets of U.S. tech hubs, industrial Europe, and Asia, a profound shift is now redefining the landscape. Africa, particularly Nigeria, is emerging not merely as a new frontier for foreign investment, but as a vibrant economic powerhouse brimming with unprecedented potential for savvy businesses.
+                </p>
+                <Link href="/insight/blogs/africa-rising-why-nigeria-next-big-digital-business-opportunity">
+                  <button className="flex gap-2 items-center py-2 px-4 rounded-3xl bg-[#E26015] hover:bg-[#222] my-4">
+                    <span className="text-white">Read More</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </Link>
+              </div>
+            </div>
+            {/* first blog end */}
           <div className="p-4 border border-[#F7F7F8] rounded-lg w-[100%] lg:w-[30%] shadow-lg">
               <div className="p-4 relative h-[300px]">
                 <Image
@@ -947,7 +1000,7 @@ export default function Main() {
                         <path d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z"></path>
                       </svg>
                     </span>
-                    <span className="text-[#4C4C4D]">January 21, 2025</span>
+                    <span className="text-[#4C4C4D]">June 6, 2025</span>
                   </div>
                 </div>
               </div>

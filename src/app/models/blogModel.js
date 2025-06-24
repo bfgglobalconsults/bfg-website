@@ -1,6 +1,5 @@
 import mongoose, { Document, Model } from "mongoose";
 
-
 const blogSchema = new mongoose.Schema(
   {
     title: {
@@ -10,9 +9,12 @@ const blogSchema = new mongoose.Schema(
     description: {
       type: String,
       required: true,
-        },
+    },
     content: {
-        type: String,
+      type: String,
+    },
+    tag: {
+      type: String,
     },
     coverImage: {
       type: String,

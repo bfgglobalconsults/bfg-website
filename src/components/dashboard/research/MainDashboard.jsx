@@ -13,6 +13,7 @@ import {
 import IndustriesResearched from "./filters/IndustriesResearched";
 import ResearchedProjects from "./filters/ResearchedProjects";
 import SurveyGroups from "./filters/SurveyGroups";
+import Reports from "./filters/Reports";
 
 
 const MainDashboard = () => {
@@ -71,6 +72,7 @@ const MainDashboard = () => {
         {position === "Researched Projects" && <ResearchedProjects />}
         {position === "Industries Researched" && <IndustriesResearched />}
         {position === "Survey & Focus Groups" && <SurveyGroups />}
+        {position === "Reports & Dashboards" && <Reports />}
       </div>
     </>
   );

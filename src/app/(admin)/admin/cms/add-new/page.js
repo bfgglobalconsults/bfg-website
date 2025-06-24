@@ -24,8 +24,18 @@ const Page = () => {
 
   const handleSubmit = async (e) => { 
     e.preventDefault();
-    const content = editorRef.current?.getContent() || "";
-    setLoading(true);
+    let content = "";
+    if (editorRef.current && typeof editorRef.current.getContent === "function") {
+      content = editorRef.current.getContent();
+    }
+    if (!content) {
+      // fallback: get from DOM
+      content = document.querySelector('.ql-editor')?.innerHTML || "";
+    }
+    console.log("Editor content:", content);
+    // Now you can send { title, content } to your API
+  
+  setLoading(true);
     try {
       // Here you would typically send the data to your backend
       console.log("Content:", content);
