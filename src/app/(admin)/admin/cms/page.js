@@ -131,9 +131,11 @@ const CMSPage = () => {
                 <p className="text-gray-600">{post.description}</p>
               </div>
               <div className="flex items-center space-x-3 mt-4 md:mt-0">
-                <button className="text-gray-500 hover:text-blue-600 p-2 rounded-full hover:bg-gray-100 transition" title="View">
-                  <FiEye size={18} />
-                </button>
+                <Link href={`/admin/cms/${post._id}`}>
+                  <button className="text-gray-500 hover:text-blue-600 p-2 rounded-full hover:bg-gray-100 transition" title="View">
+                    <FiEye size={18} />
+                  </button>
+                </Link>
                 <Link href={`/admin/cms/edit/${post._id}`}>
                   <button className="text-gray-500 hover:text-green-600 p-2 rounded-full hover:bg-gray-100 transition" title="Edit">
                     <FiEdit size={18} />

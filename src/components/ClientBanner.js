@@ -48,7 +48,7 @@ const ClientBanner = () => {
               ▶ Watch Video
             </button>
           </div>
-          <div className="w-full flex flex-col lg:flex-row gap-10 my-6">
+          {/* <div className="w-full flex flex-col lg:flex-row gap-10 my-6">
             <div className="w-[100%] lg:w-[30%] p-3 border border-white rounded-xl">
               <p className="text-white">
                 &quot; BFG Global Consult has been a trusted partner to Sensang
@@ -111,7 +111,7 @@ const ClientBanner = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {showVideo && (

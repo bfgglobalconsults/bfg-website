@@ -19,6 +19,7 @@ import Innovation from "../../../../../public/assets/innovation-development.png"
 
 import Link from "next/link";
 import MainDashboard from "@/components/dashboard/technology/MainDashboard";
+import CustomerReview from "@/components/customer-review/CustomerReview";
 
 const page = () => {
   return (
@@ -321,6 +322,7 @@ const page = () => {
               </div>
             </div>
           </div>
+          <CustomerReview unit="Information Technology" />
 
           {/* <hr />
 
