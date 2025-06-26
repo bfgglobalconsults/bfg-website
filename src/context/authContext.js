@@ -24,6 +24,15 @@ export const AuthProvider = ({ children }) => {
         }
     }, [accessToken]);
 
+    // Persist user in localStorage
+    useEffect(() => {
+        if (user) {
+            localStorage.setItem('user', JSON.stringify(user));
+        } else {
+            localStorage.removeItem('user');
+        }
+    }, [user]);
+
     // Attach token to every axios request
     useEffect(() => {
         const requestInterceptor = axios.interceptors.request.use(
@@ -72,7 +81,9 @@ export const AuthProvider = ({ children }) => {
             );
             setUser(res.data.data.user);
             setAccessToken(res.data.data.accessToken);
+            localStorage.setItem('user', JSON.stringify(res.data.data.user));
             toast.success('Successfully logged in');
+            console.log('Login response:', res.data);
             return res.data;
         } catch (error) {
             throw error;
@@ -87,6 +98,7 @@ export const AuthProvider = ({ children }) => {
             setUser(null);
             setAccessToken(null);
             localStorage.removeItem('accessToken');
+            localStorage.removeItem('user');
             toast.success('Successfully logged out');
             router.push('/login');
         } catch (error) {
