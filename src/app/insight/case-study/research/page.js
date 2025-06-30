@@ -15,6 +15,7 @@ import AppraisalImg from "../../../../../public/assets/appraisal-image.png";
 import Link from "next/link";
 import AllComponents from "@/components/dashboard/research/filters/AllComponents";
 import MainDashboard from "@/components/dashboard/research/MainDashboard";
+import CustomerReview from "@/components/customer-review/CustomerReview";
 
 const page = () => {
   const researchSlides = [
@@ -319,6 +320,7 @@ const page = () => {
               </div>
             </div>
           </div>
+          <CustomerReview unit="Research and Analytics" />
 
           {/* <hr />
 

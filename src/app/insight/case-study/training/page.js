@@ -15,6 +15,7 @@ import Operations from "../../../../../public/assets/operations.png";
 
 import Link from "next/link";
 import MainDashboard from "@/components/dashboard/training/MainDashboard";
+import CustomerReview from "@/components/customer-review/CustomerReview";
 
 const page = () => {
   
@@ -231,6 +232,7 @@ const page = () => {
             </div>
           </div>
           </div>
+          <CustomerReview unit="Training and Development" />
 
           {/* <hr />
 

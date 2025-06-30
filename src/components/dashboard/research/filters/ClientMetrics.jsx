@@ -14,9 +14,9 @@ const CountriesServedMap = dynamic(() => import("../maps/CountryServedMap"), {
 const allData = [
   {
     id: 1,
-    name: "Reports Delivered",
+    name: "Active Clients",
     stat: "+15% from last quarter",
-    value: 1453,
+    value: 147,
     iconColor: "#4A90E2",
     icon: (
       <svg
@@ -32,9 +32,9 @@ const allData = [
   },
   {
     id: 2,
-    name: "Interactive Dashboards",
+    name: "Client Retention",
     stat: "+8% from last quarter",
-    value: 87,
+    value: "94%",
     iconColor: "#27AE60",
     icon: (
       <svg
@@ -50,9 +50,9 @@ const allData = [
   },
   {
     id: 3,
-    name: "Avg. Days to Delivery",
-    stat: "-20% Improvement",
-    value: 5.2,
+    name: "Average Satisfaction Score",
+    stat: "+0.2 from last quarter",
+    value: 4.8,
     cardColor: "#F3F0FF",
     iconColor: "#9B51E0",
     icon: (
@@ -69,9 +69,9 @@ const allData = [
   },
   {
     id: 4,
-    name: "Client Satisfaction Score",
-    stat: "+5% Improvement",
-    value: 4.9,
+    name: "Repeat Engagement Rate",
+    stat: "+7% from last quarter",
+    value: "89%",
     iconColor: "#F2C94C",
     icon: (
       <svg
@@ -89,92 +89,118 @@ const allData = [
 
 const industriesData = [
   {
-    name: "Market Analysis Reports",
+    name: "Enterprise (1000+ employees)",
     percentage: 31,
-    figure: 456,
-    unit: "MAR",
-    tailwindColorClass: "bg-[#FC7E99]",
+    figure: 45,
+    unit: "E",
+    tailwindColorClass: "bg-[#00AAFF]",
   },
   {
-    name: "Consumer Insights Reports",
-    percentage: 26,
-    figure: 378,
-    unit: "CIR",
-    tailwindColorClass: "bg-[#39CEF3]",
+    name: "Mid-Market (100-999 employees)",
+    percentage: 46,
+    figure: 67,
+    unit: "MM",
+    tailwindColorClass: "bg-[#5BC200]",
   },
   {
-    name: "Competitive Intelligence",
-    percentage: 20,
-    figure: 289,
-    unit: "CI",
-    tailwindColorClass: "bg-[#9AD960]",
+    name: "Small Business (10-99 employees)",
+    percentage: 19,
+    figure: 28,
+    unit: "SB",
+    tailwindColorClass: "bg-[#F55BF5]",
   },
   {
-    name: "Industry Trend Reports",
-    percentage: 14,
-    figure: 198,
-    unit: "ITR",
-    tailwindColorClass: "bg-[#8950FC]",
-  },
-  {
-    name: "Custom Research Reports",
-    percentage: 9,
-    figure: 132,
-    unit: "CRR",
-    tailwindColorClass: "bg-[#8950FC]",
-  },
-];
-
-const deliveryData = [
-  {
-    name: "On-Time Delivery",
-    percentage: 96,
-    tailwindColorClass: "bg-[#3F3F3F]",
-  },
-  {
-    name: "Early Delivery",
-    percentage: 23,
-    tailwindColorClass: "bg-[#3F3F3F]",
-  },
-  {
-    name: "Rush Deliveries",
-    percentage: 8,
-    tailwindColorClass: "bg-[#3F3F3F]",
+    name: "Startups (<10 employees)",
+    percentage: 4,
+    figure: 75,
+    unit: "",
+    tailwindColorClass: "bg-[#CE5600]",
   },
  
 ];
 
+const deliveryData = [
+  {
+    name: "Research Quality",
+    percentage: 96,
+    rate: "4.9/5.0",
+    tailwindColorClass: "bg-[#3F3F3F]",
+  },
+  {
+    name: "Timeliness",
+    percentage: 73,
+    rate: "4.7/5.0",
+
+    tailwindColorClass: "bg-[#3F3F3F]",
+  },
+  {
+    name: "Communication",
+    percentage: 58,
+    rate: "4.8/5.0",
+
+    tailwindColorClass: "bg-[#3F3F3F]",
+  },
+  {
+    name: "Value for Money",
+    percentage: 38,
+    rate: "4.6/5.0",
+
+    tailwindColorClass: "bg-[#3F3F3F]",
+  },
+];
+
+const clientData = [
+  {
+    name: "Project Success Rate",
+    percentage: 97,
+    tailwindColorClass: "bg-[#3F3F3F]",
+  },
+  {
+    name: "On-Time Delivery",
+    percentage: 94,
+    tailwindColorClass: "bg-[#3F3F3F]",
+  },
+  {
+    name: "Budget Adherence",
+    percentage: 96,
+    tailwindColorClass: "bg-[#3F3F3F]",
+  },
+];
+
 const metricsData = [
   {
-    name: "Average Response Rate",
-    value: "92%",
+    name: "Monthly Clients",
+    value: "67",
+    stat: "46% of total",
     color: "#0297E2",
   },
   {
-    name: "Completion Rate",
-    value: "87%",
+    name: "Quarterly Clients",
+    value: "52",
+    stat: "35% of total",
     color: "#67C30B",
   },
   {
-    name: "Avg. Engagement Score",
-    value: "4.6",
+    name: "Presentations",
+    value: "10",
+    stat: "35% of total",
     color: "#AB5CFF",
   },
 ];
 
 const formatInsight = [
   {
-    name: "PDF Reports",
+    name: "Total Revenue",
     value: "67%",
-    color: "#0297E2",
-  },
-  {
-    name: "Interactive Dashboards",
-    value: "23%",
     color: "#67C30B",
   },
   {
-    name: "Presentations",
+    name: "Average Project Value",
+    value: "23%",
+    color: "#0297E2",
+  },
+  {
+    name: "Average Client",
     value: "10%",
     color: "#AB5CFF",
   },
@@ -228,7 +254,7 @@ const projectDistribution = [
   },
 ];
 
-const Reports = () => {
+const ClientMetrics = () => {
   return (
     <>
       <div>
@@ -309,30 +335,32 @@ const Reports = () => {
           <div>
             <div className="bg-white ">
               <h2 className="text-xl font-bold text-gray-900 lg:text-left ">
-                Focus Group Categories
+                Client Satisfaction Breakdown
               </h2>
               {/* Top Section */}
               <div className="grid grid-cols-1 gap-2 my-4">
-                {groupCategoriesData.map((industry, index) => (
+                {deliveryData.map((industry, index) => (
                   <div key={index} className="rounded-xl shadow-md p-6 ">
-                    <div className="flex items-center justify-between mb-8">
+                    <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center space-x-2">
-                        {/* Colored Dot */}
-                        <div
-                          className={`w-5 h-5 rounded-full ${industry.tailwindColorClass}`}
-                        ></div>
-                        <div className="flex flex-col">
-                          <span className="text-gray-900 text-lg font-medium mb-2">
-                            {industry.name}
-                          </span>
-                          <span className="text-gray-600 text-md font-medium">
-                            {industry.description}
-                          </span>
-                        </div>
+                        <span className="text-gray-900 text-md font-medium">
+                          {industry.name}
+                        </span>
                       </div>
                       <span className="text-gray-700 bg-[#F4F4F4] p-2 rounded-full text-base">
-                        {industry.dashboard} dashboards
+                        {industry.rate}
                       </span>
+                    </div>
+
+                    {/* Bottom Section - Percentage & Progress Bar */}
+
+                    <div>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div
+                          className={`h-2 rounded-full ${industry.tailwindColorClass}`}
+                          style={{ width: `${industry.percentage}%` }}
+                        ></div>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -345,15 +373,72 @@ const Reports = () => {
           <div>
             <div className="bg-white ">
               <h2 className="text-xl font-bold text-gray-900 lg:text-left ">
-                Delivery Performance
+                Engagement Frequency
+              </h2>
+              {/* Top Section */}
+              <div className="grid grid-cols-1 gap-2 my-10">
+                {metricsData.map((industry, index) => (
+                  <div key={index} className="rounded-xl shadow-md p-6 my-4">
+                    <div className="flex items-center  mb-4">
+                      <div className="text-left">
+                        <p className="text-gray-900 text-md font-medium">
+                          {industry.name}
+                        </p>
+                        <p
+                          style={{ color: industry.color }}
+                          className="text-xl font-extrabold"
+                        >
+                          {industry.value}
+                        </p>
+                        <p className="text-gray-600 text-sm font-medium">
+                          {industry.stat}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="bg-white ">
+              <h2 className="text-xl font-bold text-gray-900 lg:text-left ">
+                Revenue Metrics
+              </h2>
+              {/* Top Section */}
+              <div className="grid grid-cols-1 gap-2 my-10">
+                {formatInsight.map((industry, index) => (
+                  <div key={index} className="rounded-xl shadow-md p-6 my-4">
+                    <div className="flex items-center justify-center mb-4">
+                      <div className="text-center">
+                        <p
+                          style={{ color: industry.color }}
+                          className="text-3xl font-extrabold"
+                        >
+                          ₦
+                        </p>
+                        <p className="text-gray-900 text-md font-medium">
+                          {industry.name}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="bg-white ">
+              <h2 className="text-xl font-bold text-gray-900 lg:text-left ">
+                Client Success Metrics
               </h2>
               {/* Top Section */}
               <div className="grid grid-cols-1 gap-2 my-4">
-                {deliveryData.map((industry, index) => (
+                {clientData.map((industry, index) => (
                   <div key={index} className="rounded-xl shadow-md p-6 ">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center space-x-2">
-                        <span className="text-gray-900 text-md font-medium">a
+                        <span className="text-gray-900 text-md font-medium">
                           {industry.name}
                         </span>
                       </div>
@@ -377,60 +462,6 @@ const Reports = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className="bg-white ">
-              <h2 className="text-xl font-bold text-gray-900 lg:text-left ">
-                Quality Metrics
-              </h2>
-              {/* Top Section */}
-              <div className="grid grid-cols-1 gap-2 my-10">
-                {metricsData.map((industry, index) => (
-                  <div key={index} className="rounded-xl shadow-md p-6 my-4">
-                    <div className="flex items-center justify-center mb-4">
-                      <div className="text-center">
-                        <p
-                          style={{ color: industry.color }}
-                          className="text-xl font-medium"
-                        >
-                          {industry.value}
-                        </p>
-                        <p className="text-gray-900 text-md font-medium">
-                          {industry.name}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="bg-white ">
-              <h2 className="text-xl font-bold text-gray-900 lg:text-left ">
-                Format Distribution
-              </h2>
-              {/* Top Section */}
-              <div className="grid grid-cols-1 gap-2 my-10">
-                {formatInsight.map((industry, index) => (
-                  <div key={index} className="rounded-xl shadow-md p-6 my-4">
-                    <div className="flex items-center justify-center mb-4">
-                      <div className="text-center">
-                        <p className="text-gray-900 text-md font-medium">
-                          {industry.name}
-                        </p>
-                        <p
-                          style={{ color: industry.color }}
-                          className="text-xl font-medium"
-                        >
-                          {industry.value}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
 
           {/* second section */}
         </div>
@@ -441,4 +472,4 @@ const Reports = () => {
   );
 };
 
-export default Reports;
+export default ClientMetrics;

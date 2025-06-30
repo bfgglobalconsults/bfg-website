@@ -322,7 +322,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <CustomerReview unit="Information Technology" />
+          <CustomerReview unit="Technology and Software Development" />
 
           {/* <hr />
 
