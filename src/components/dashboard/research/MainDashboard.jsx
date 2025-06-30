@@ -14,7 +14,6 @@ import IndustriesResearched from "./filters/IndustriesResearched";
 import ResearchedProjects from "./filters/ResearchedProjects";
 import SurveyGroups from "./filters/SurveyGroups";
 import Reports from "./filters/Reports";
-import ClientMetrics from "./filters/ClientMetrics";
 
 
 const MainDashboard = () => {
@@ -74,7 +73,6 @@ const MainDashboard = () => {
         {position === "Industries Researched" && <IndustriesResearched />}
         {position === "Survey & Focus Groups" && <SurveyGroups />}
         {position === "Reports & Dashboards" && <Reports />}
-        {position === "Client Metrics" && <ClientMetrics />}
       </div>
     </>
   );

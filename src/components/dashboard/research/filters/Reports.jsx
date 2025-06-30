@@ -353,7 +353,7 @@ const Reports = () => {
                   <div key={index} className="rounded-xl shadow-md p-6 ">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center space-x-2">
-                        <span className="text-gray-900 text-md font-medium">a
+                        <span className="text-gray-900 text-md font-medium">
                           {industry.name}
                         </span>
                       </div>
