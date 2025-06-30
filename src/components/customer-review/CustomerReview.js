@@ -115,28 +115,29 @@ export default function CustomerReview({ unit = "" }) {
               {testimonials.length > 0 && (
                 <div className="flex justify-center">
                   <div className="bg-gray-50 rounded-xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
-                    <Avatar name={testimonials[currentIndex].name} />
-                    <StarRating rating={testimonials[currentIndex].rating} />
-                    <p className="text-gray-700 italic mb-4">“ {testimonials[currentIndex].review} “</p>
-                    <div>
-                      <div className="font-bold text-gray-900">{testimonials[currentIndex].name}</div>
-                      <div className="text-gray-400 text-sm">{testimonials[currentIndex].role}</div>
-                      <div className="text-gray-400 text-sm">{testimonials[currentIndex].department}</div>
-                    </div>
+                    {testimonials[currentIndex] && (
+                      <>
+                        <Avatar name={testimonials[currentIndex].name} />
+                        <StarRating rating={testimonials[currentIndex].rating} />
+                        <p className="text-gray-700 italic mb-4">“ {testimonials[currentIndex].review} “</p>
+                        <div>
+                          <div className="font-bold text-gray-900">{testimonials[currentIndex].name}</div>
+                          <div className="text-gray-400 text-sm">{testimonials[currentIndex].role}</div>
+                          <div className="text-gray-400 text-sm">{testimonials[currentIndex].company}</div>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               )}
             </div>
             {/* Tablet and up: show 2 or 3 cards */}
             <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {testimonials.length > 0 &&
-                [0, 1, 2].map((offset) => {
-                  const idx = (currentIndex + offset) % testimonials.length;
-                  const review = testimonials[idx];
-                  if (!review) return null;
+              {testimonials.map((review, index) => {
+                  
                   return (
                     <div
-                      key={idx}
+                      key={index}
                       className="bg-gray-50 rounded-xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300"
                     >
                       <Avatar name={review.name} />
@@ -145,7 +146,7 @@ export default function CustomerReview({ unit = "" }) {
                       <div>
                         <div className="font-bold text-gray-900">{review.name}</div>
                         <div className="text-gray-400 text-sm">{review.role}</div>
-                        <div className="text-gray-400 text-sm">{review.department}</div>
+                        <div className="text-gray-400 text-sm">{review.company}</div>
                       </div>
                     </div>
                   );
@@ -204,3 +205,7 @@ export default function CustomerReview({ unit = "" }) {
     </section>
   );
 }
+
+// cursor prompt
+
+// i want this to map just based on the data normally and be responsive for mobile, i also want each unit, should have its own specific data based on the department

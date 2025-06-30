@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function ReviewFormModal({ isOpen, onClose, unit, onSubmit }) {
   const [form, setForm] = useState({
     department: unit || "",
     name: "",
     role: "",
-    organization: "",
+    company: "",
     review: "",
     logo: null,
     rating: "",
@@ -30,17 +31,36 @@ export default function ReviewFormModal({ isOpen, onClose, unit, onSubmit }) {
       if (value) formData.append(key, value);
     });
 
-    // Send to backend (replace with your API endpoint)
-    const res = await fetch("/api/reviews", {
-      method: "POST",
-      body: formData,
+    // Prepare Formspree data (as plain object)
+    const formspreeData = new FormData();
+    Object.entries(form).forEach(([key, value]) => {
+      if (value) formspreeData.append(key, value);
     });
 
-    if (res.ok) {
-      onSubmit();
-      onClose();
-    } else {
-      alert("Submission failed. Please try again.");
+    try {
+      // Send to your API route
+      const apiPromise = fetch("/api/reviews", {
+        method: "POST",
+        body: formData,
+      });
+      // Send to Formspree (replace with your Formspree endpoint)
+      const formspreePromise = fetch("https://formspree.io/f/xvgrlpak", {
+        method: "POST",
+        body: formspreeData,
+        headers: { Accept: "application/json" },
+      });
+      // Wait for both
+      const [apiRes, formspreeRes] = await Promise.all([apiPromise, formspreePromise]);
+      if (apiRes.ok && formspreeRes.ok) {
+        onSubmit();
+        onClose();
+                    toast.success('Form Submitted Successfully');
+        
+      } else {
+                    toast.error("Submission failed. Please try again.");
+      }
+    } catch (err) {
+      toast.error("Submission failed. Please try again.");
     }
     setSubmitting(false);
   };
@@ -63,11 +83,15 @@ export default function ReviewFormModal({ isOpen, onClose, unit, onSubmit }) {
               required
               className="w-full border rounded-lg px-3 py-2"
             >
-              <option value="">Select a department</option>
-              <option value="Information Technology">Technology and Software Development</option>
-              <option value="Strategy">Strategy and Operations Transformation</option>
-              <option value="Research">Research and Analytics</option>
-              <option value="Training">Training and Development</option>
+              <option value="">Select a department/unit</option>
+              <option value="Technology and Software Development">Technology and Software Development</option>
+              <option value="Strategy and Operations Transformation
+
+">Strategy and Operations Transformation
+
+</option>
+              <option value="Research and Analytics">Research and Analytics</option>
+              <option value="Training and Development">Training and Development</option>
             </select>
           </div>
           <div>
@@ -89,14 +113,14 @@ export default function ReviewFormModal({ isOpen, onClose, unit, onSubmit }) {
               onChange={handleChange}
               required
               className="w-full border rounded-lg px-3 py-2"
-              placeholder="e.g. CEO"
+              placeholder="e.g. CEO."
             />
           </div>
           <div>
             <label className="block mb-1 font-medium">Organization *</label>
             <input
-              name="organization"
-              value={form.organization}
+              name="company"
+              value={form.company}
               onChange={handleChange}
               required
               className="w-full border rounded-lg px-3 py-2"
