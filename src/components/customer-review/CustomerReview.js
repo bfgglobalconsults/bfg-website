@@ -133,7 +133,7 @@ export default function CustomerReview({ unit = "" }) {
             </div>
             {/* Tablet and up: show 2 or 3 cards */}
             <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {testimonials.map((review, index) => {
+              {testimonials?.map((review, index) => {
                   
                   return (
                     <div
