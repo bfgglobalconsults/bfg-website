@@ -11,16 +11,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import AssessmentFilter from "./filters/AssessmentFilter";
-import ClientSegmentationFilter from "./filters/ClientSegmentationFilter";
-import CustomizationFilter from "./filters/CustomizationFilter";
-import ParticipantsFilter from "./filters/ParticipantsFilter";
-import TrainingSessionFilter from "./filters/TrainingSessionFilter";
-import TrainingSessionDashboard from "./filters/TrainingSessionDashboard";
-import ClientSegmentationDashboard from "./filters/ClientSegmentationDashboard";
-import CustomizationDashboard from "./filters/CustomizationDashboard";
-import ParticipantsDashboard from "./filters/ParticipantsDashboard";
-import AssessmentDashboard from "./filters/AssessmentDashboard";
+import ClientROIDashboard from "./filters/ClientROIDashboard";
+import CountriesDashboard from "./filters/CountriesDashboard";
+import ProcessReengineeringDashboard from "./filters/ProcessReengineeringDashboard";
+import ProjectDistributionDashboard from "./filters/ProjectDistributionDashboard";
+import TransformationProjectsDashboard from "./filters/TransformationProjectsDashboard";
 
 const MainDashboard = () => {
   const [position, setPosition] = useState("All");
@@ -75,12 +70,12 @@ const MainDashboard = () => {
           </DropdownMenu>
         </div>
         {position === "All" && <AllComponents />}
-        {position === "Training Sessions" && <TrainingSessionDashboard />}
-        {position === "Participants" && <ParticipantsDashboard />}
+        {position === "Training Sessions" && <ClientROIDashboard />}
+        {position === "Participants" && <CountriesDashboard />}
 
-        {position === "Assessment" && <AssessmentDashboard />}
-        {position === "Client Segmentation" && <ClientSegmentationDashboard />}
-        {position === "Customization" && <CustomizationDashboard />}
+        {position === "Assessment" && <ProcessReengineeringDashboard />}
+        {position === "Client Segmentation" && <ProjectDistributionDashboard />}
+        {position === "Customization" && <TransformationProjectsDashboard />}
       </div>
     </>
   );

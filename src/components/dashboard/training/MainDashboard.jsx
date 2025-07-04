@@ -11,11 +11,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import AssessmentFilter from "./filters/AssessmentFilter";
-import ClientSegmentationFilter from "./filters/ClientSegmentationFilter";
-import CustomizationFilter from "./filters/CustomizationFilter";
-import ParticipantsFilter from "./filters/ParticipantsFilter";
-import TrainingSessionFilter from "./filters/TrainingSessionFilter";
 import TrainingSessionDashboard from "./filters/TrainingSessionDashboard";
 import ClientSegmentationDashboard from "./filters/ClientSegmentationDashboard";
 import CustomizationDashboard from "./filters/CustomizationDashboard";
