@@ -65,24 +65,18 @@ export default function ClientROIDashboard() {
             <div className="text-gray-500 text-sm mt-1">{m.label}</div>
           </div>
         ))}
-        <button className="ml-auto bg-white border px-4 py-2 rounded-lg shadow flex items-center gap-2 h-fit self-start">
-          <span role="img" aria-label="filter">
-            💹
-          </span>{" "}
-          Client ROI
-        </button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* ROI Distribution */}
-        <div className="bg-white rounded-xl shadow p-6">
-          <h2 className="font-semibold mb-4">ROI Distribution</h2>
+        <div className="bg-white">
+          <h2 className="font-semibold my-4">ROI Distribution</h2>
           {roiDistribution.map((r) => (
-            <div key={r.label} className="mb-4">
-              <div className="flex justify-between items-center mb-1">
+            <div key={r.label} className="rounded-xl shadow p-6 my-4">
+              <div className="flex justify-between items-center my-2">
                 <span>{r.label}</span>
                 <span className="font-semibold">{r.value} Projects</span>
               </div>
-              <div className="w-full bg-gray-200 rounded-full h-2 mb-1">
+              <div className="w-full bg-gray-200 rounded-full h-2 my-2">
                 <div
                   className="bg-blue-500 h-2 rounded-full"
                   style={{ width: `${r.value * 50}%` }}
@@ -92,12 +86,12 @@ export default function ClientROIDashboard() {
           ))}
         </div>
         {/* Top Performing Projects */}
-        <div className="bg-white rounded-xl shadow p-6">
-          <h2 className="font-semibold mb-4">Top Performing Projects</h2>
+        <div className="bg-white">
+          <h2 className="font-semibold my-4">Top Performing Projects</h2>
           {topProjects.map((p) => (
             <div
               key={p.name}
-              className="mb-4 flex justify-between items-center"
+              className="rounded-xl shadow p-6 my-4 flex justify-between items-center"
             >
               <div>
                 <div className="font-semibold">{p.name}</div>
@@ -112,11 +106,11 @@ export default function ClientROIDashboard() {
         </div>
       </div>
       {/* Project ROI Details */}
-      <div className="bg-white rounded-xl shadow p-6 mt-8">
-        <h2 className="font-semibold mb-4">Project ROI Details</h2>
+      <div className="bg-white my-8">
+        <h2 className="font-semibold my-4">Project ROI Details</h2>
         {projectDetails.map((p, i) => (
-          <div key={i} className="mb-6">
-            <div className="flex flex-wrap gap-8 mb-2 text-sm">
+          <div key={i} className=" rounded-xl shadow p-6 mb-6">
+            <div className="flex justify-between flex-wrap gap-8 my-2 text-sm">
               <div>
                 <span className="font-semibold">{p.name}</span> ({p.country})
               </div>
@@ -134,7 +128,7 @@ export default function ClientROIDashboard() {
                 <span className="font-semibold">Net Gain:</span> {p.netGain}
               </div>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2 mb-1">
+            <div className="w-full bg-gray-200 rounded-full h-2 my-2">
               <div
                 className="bg-green-500 h-2 rounded-full"
                 style={{ width: p.progress }}

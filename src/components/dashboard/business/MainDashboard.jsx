@@ -50,32 +50,38 @@ const MainDashboard = () => {
                 onValueChange={setPosition}
               >
                 <DropdownMenuRadioItem value="All">All</DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="Training Sessions">
-                  Training Sessions
+                <DropdownMenuRadioItem value="Client ROI">
+                  Client ROI
                 </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="Participants">
-                  Participants
+                <DropdownMenuRadioItem value="Countries">
+                  Countries
                 </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="Assessment">
-                  Assessment
+                <DropdownMenuRadioItem value="Process Re-engineering">
+                  Process Re-engineering
                 </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="Client Segmentation">
-                  Client Segmentation
+                <DropdownMenuRadioItem value="Project Distribution">
+                  Project Distribution
                 </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="Customization">
-                  Customization
+                <DropdownMenuRadioItem value="Transformation Projects">
+                  Transformation Projects
                 </DropdownMenuRadioItem>
               </DropdownMenuRadioGroup>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
         {position === "All" && <AllComponents />}
-        {position === "Training Sessions" && <ClientROIDashboard />}
-        {position === "Participants" && <CountriesDashboard />}
+        {position === "Client ROI" && <ClientROIDashboard />}
+        {position === "Countries" && <CountriesDashboard />}
 
-        {position === "Assessment" && <ProcessReengineeringDashboard />}
-        {position === "Client Segmentation" && <ProjectDistributionDashboard />}
-        {position === "Customization" && <TransformationProjectsDashboard />}
+        {position === "Process Re-engineering" && (
+          <ProcessReengineeringDashboard />
+        )}
+        {position === "Project Distribution" && (
+          <ProjectDistributionDashboard />
+        )}
+        {position === "Transformation Projects" && (
+          <TransformationProjectsDashboard />
+        )}
       </div>
     </>
   );

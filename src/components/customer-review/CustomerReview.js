@@ -10,7 +10,7 @@ function Avatar({ name }) {
     .toUpperCase()
     .slice(0, 2);
   return (
-    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gray-200 text-2xl text-gray-600">
+    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#fabebb] text-2xl text-black">
       {initials}
     </div>
   );
@@ -114,7 +114,7 @@ export default function CustomerReview({ unit = "" }) {
             <div className="block sm:hidden">
               {testimonials.length > 0 && (
                 <div className="flex justify-center">
-                  <div className="bg-gray-50 rounded-xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
+                  <div className="bg-white border-2 border-[#E62015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
                     {testimonials[currentIndex] && (
                       <>
                         <Avatar name={testimonials[currentIndex].name} />
@@ -138,7 +138,7 @@ export default function CustomerReview({ unit = "" }) {
                   return (
                     <div
                       key={index}
-                      className="bg-gray-50 rounded-xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300"
+                      className="bg-white border-2 border-[#E62015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300"
                     >
                       <Avatar name={review.name} />
                       <StarRating rating={review.rating} />

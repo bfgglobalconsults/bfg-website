@@ -57,12 +57,7 @@ export default function ProcessReengineeringDashboard() {
             <div className="text-gray-500 text-sm mt-1">{m.label}</div>
           </div>
         ))}
-        <button className="ml-auto bg-white border px-4 py-2 rounded-lg shadow flex items-center gap-2 h-fit self-start">
-          <span role="img" aria-label="filter">
-            🔄
-          </span>{" "}
-          Process Re-engineering
-        </button>
+       
       </div>
       <div className="space-y-8">
         {initiatives.map((p, i) => (
@@ -72,7 +67,7 @@ export default function ProcessReengineeringDashboard() {
             </div>
             <h2 className="text-xl font-bold mb-1">{p.name}</h2>
             <div className="text-gray-500 mb-2">{p.country}</div>
-            <div className="flex flex-wrap gap-8 mb-2 text-sm">
+            <div className="flex justify-between flex-wrap gap-8 mb-2 text-sm">
               <div>
                 <span className="font-semibold">Start Date:</span> {p.startDate}
               </div>
