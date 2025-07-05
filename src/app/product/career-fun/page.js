@@ -202,7 +202,7 @@ const SelectedProductCards = () => (
       </div>
       <div className="bg-white border border-gray-200 rounded-xl p-6 shadow flex flex-col items-center">
         <Image
-          src={ProductImage}
+          src={CareerImg}
           alt="Skill Growth"
           className="w-32 h-32 object-contain mb-4"
         />
