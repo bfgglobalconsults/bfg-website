@@ -8,7 +8,7 @@ export default function ReviewFormModal({ isOpen, onClose, unit, onSubmit }) {
     role: "",
     company: "",
     review: "",
-    logo: null,
+    location: "",
     rating: "",
   });
   const [submitting, setSubmitting] = useState(false);
@@ -149,21 +149,22 @@ export default function ReviewFormModal({ isOpen, onClose, unit, onSubmit }) {
               className="w-full border rounded-lg px-3 py-2"
             >
               <option value="">Select a rating</option>
-              <option value="1">1 - Poor</option>
-              <option value="2">2 - Fair</option>
-              <option value="3">3 - Good</option>
-              <option value="4">4 - Very Good</option>
-              <option value="5">5 - Excellent</option>
+              <option value="1">1 - Strongly Unsatisfactory</option>
+              <option value="2">2 - Unsatisfactory</option>
+              <option value="3">3 - Neutral </option>
+              <option value="4">4 - Satisfactory</option>
+              <option value="5">5 - Strongly Satisfactory</option>
             </select>
           </div>
           <div>
-            <label className="block mb-1 font-medium">Company Logo (Optional)</label>
+            <label className="block mb-1 font-medium">Location *</label>
             <input
-              type="file"
-              name="logo"
-              accept="image/*"
+              name="location"
+              value={form.location}
               onChange={handleChange}
+              required
               className="w-full border rounded-lg px-3 py-2"
+              placeholder="Enter your location (e.g. City, Country)"
             />
           </div>
           <button

@@ -1,6 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import ReviewFormModal from "./ReviewFormModal";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
+import { useRouter } from "next/navigation";
+import { ChevronDown, MessageSquare, FileText } from "lucide-react";
 
 function Avatar({ name }) {
   const initials = name
@@ -19,6 +27,7 @@ function Avatar({ name }) {
 export default function CustomerReview({ unit = "" }) {
   const [showModal, setShowModal] = useState(false);
   const [testimonials, setTestimonials] = useState([]);
+  const router = useRouter();
 
   // Fetch testimonials from backend
   const fetchTestimonials = async () => {
@@ -114,7 +123,7 @@ export default function CustomerReview({ unit = "" }) {
             <div className="block sm:hidden">
               {testimonials.length > 0 && (
                 <div className="flex justify-center">
-                  <div className="bg-white border-2 border-[#E62015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
+                  <div className="bg-white border-2 border-[#E26015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
                     {testimonials[currentIndex] && (
                       <>
                         <Avatar name={testimonials[currentIndex].name} />
@@ -138,7 +147,7 @@ export default function CustomerReview({ unit = "" }) {
                   return (
                     <div
                       key={index}
-                      className="bg-white border-2 border-[#E62015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300"
+                      className="bg-white border-2 border-[#E26015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300"
                     >
                       <Avatar name={review.name} />
                       <StarRating rating={review.rating} />
@@ -187,13 +196,33 @@ export default function CustomerReview({ unit = "" }) {
           ))}
         </div>
         <div className="flex justify-center">
-          <button
-            className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-6 rounded-lg transition"
-            onClick={() => setShowModal(true)}
-          >
-            <span className="text-2xl leading-none">+</span>
-            Leave a Review
-          </button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                className="flex items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 text-white font-bold py-3 px-8 rounded-xl shadow-lg text-lg transition-all duration-200 group"
+              >
+                <span className="text-3xl leading-none">+</span>
+                Leave a Review
+                <ChevronDown className="ml-2 w-5 h-5 group-hover:rotate-180 transition-transform" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="min-w-[220px] rounded-xl shadow-xl border-0 p-2 bg-white">
+              <DropdownMenuItem
+                onClick={() => setShowModal(true)}
+                className="flex items-center gap-3 px-4 py-3 rounded-lg text-base hover:bg-orange-50 hover:text-orange-700 cursor-pointer transition-all"
+              >
+                <MessageSquare className="w-5 h-5 text-orange-600" />
+                Leave an Instant Review
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => router.push("/feedback")}
+                className="flex items-center gap-3 px-4 py-3 rounded-lg text-base hover:bg-orange-50 hover:text-orange-700 cursor-pointer transition-all"
+              >
+                <FileText className="w-5 h-5 text-orange-600" />
+                Share feedback on your project.
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
         <ReviewFormModal
           isOpen={showModal}

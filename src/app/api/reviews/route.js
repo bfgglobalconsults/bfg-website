@@ -16,14 +16,27 @@ export async function POST(req) {
   await connectToMongoDB();
   try {
     const data = await req.formData();
+    let serviceUnits = [];
+    let department = data.get('department') || '';
+    if (data.get('serviceUnits')) {
+      try {
+        serviceUnits = JSON.parse(data.get('serviceUnits'));
+        if (serviceUnits.length > 0) {
+          department = serviceUnits[0].unit;
+        }
+      } catch (e) {
+        // fallback: ignore serviceUnits if parsing fails
+      }
+    }
     const review = await Review.create({
-      department: data.get('department'),
+      department,
+      serviceUnits,
       name: data.get('name'),
       role: data.get('role'),
       company: data.get('company'),
-      review: data.get('review'),
+      review: data.get('review') || data.get('ratingComment') || '',
       rating: data.get('rating'),
-      logo: data.get('logo') || '',
+      location: data.get('location'),
     });
     return NextResponse.json(review, { status: 201 });
   } catch (error) {
