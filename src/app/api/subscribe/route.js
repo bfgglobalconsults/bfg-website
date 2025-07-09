@@ -56,7 +56,7 @@ client.setConfig({
 
 export async function POST(req) {
   try {
-    const { email_address, firstName, lastName, phone } = await req.json();
+    const { email_address, firstName, lastName, phone, subject, message } = await req.json();
 
     // Create subscriber hash from the lowercase email address
     const subscriberHash = crypto.createHash("md5").update(email_address.toLowerCase()).digest("hex");
@@ -71,8 +71,10 @@ export async function POST(req) {
           FNAME: firstName,
           LNAME: lastName,
           PHONE: phone,
+          SUBJECT: subject,
+          MESSAGE: message, 
         },
-        tags: ["Automated Email #1"],
+        tags: ["Website Contacts"],
       }
     );
 

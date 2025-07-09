@@ -7,6 +7,7 @@ import Link from "next/link";
 import ContactBanner from "../../../public/assets/contact-image.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 const Page = () => {
   const [state, handleSubmit] = useForm("xwkgrkre");
@@ -41,11 +42,38 @@ const Page = () => {
     },
   ];
 
+  // Wrap the original handleSubmit to also send to Mailchimp
+  const mailchimpSubmit = async (e) => {
+    await handleSubmit(e);
+    // Only send to Mailchimp if the form was not submitting and not already succeeded
+    if (!state.submitting && !state.succeeded) {
+      try {
+        const form = e.target;
+        const firstName = form["first-name"].value;
+        const lastName = form["last-name"].value;
+        const email_address = form["email"].value;
+        const phone = form["phone"].value;
+        const subject = form["subject"].value;
+        const message = form["message"].value;
+        await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email_address, firstName, lastName, phone, subject, message }),
+        });
+        // Optionally show a toast
+       toast.success("Message Submitted Successfully!");
+      } catch (err) {
+        toast.error("Message Submission failed");
+       console.error("Mailchimp subscription failed", err);
+      }
+    }
+  };
+
   if (state.succeeded) {
     return (
-      <div className="p-8 flex justify-center mx-8 my-8 rounded-md bg-[#1c416d]">
+      <div className="p-8 flex justify-center mx-8 my-8 lg:mt-[150px] rounded-md bg-[#1c416d]">
         <div>
-          <p className="text-black text-2xl font-bold">
+          <p className="text-white text-2xl font-bold">
             Thanks for Contacting Us!
           </p>
           <Link href="/">
@@ -503,7 +531,7 @@ const Page = () => {
             </div>
           </div>
           <div className="w-[100%] lg:w-[60%] bg-[#EEF3F6] rounded-r-3xl p-10">
-            <form onSubmit={handleSubmit} className="w-full">
+            <form onSubmit={mailchimpSubmit} className="w-full">
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label
