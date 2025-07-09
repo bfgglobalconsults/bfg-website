@@ -27,6 +27,8 @@ const NotifyModal = ({ isOpen, onClose, onSubmit }) => {
     e.preventDefault();
     setSubmitting(true);
 
+    // Send to Formspree
+    let formspreeOk = false;
     try {
       const response = await fetch("https://formspree.io/f/mzzgynyz", {
         method: "POST",
@@ -35,7 +37,7 @@ const NotifyModal = ({ isOpen, onClose, onSubmit }) => {
         },
         body: JSON.stringify(form),
       });
-
+      formspreeOk = response.ok;
       if (response.ok) {
         setSubmitStatus("success");
         setTimeout(() => {
@@ -50,18 +52,38 @@ const NotifyModal = ({ isOpen, onClose, onSubmit }) => {
             email: "",
           });
         }, 2000);
-                    toast.success('Form Submitted Successfully');
-        
+        toast.success('Form Submitted Successfully');
       } else {
         setSubmitStatus("error");
       }
     } catch (error) {
       setSubmitStatus("error");
       toast.error('Form Submission Failed');
-
-    } finally {
-      setSubmitting(false);
     }
+
+    // Send to Mailchimp via /api/product
+    try {
+      const [firstName, ...lastNameArr] = form.name.split(" ");
+      const lastName = lastNameArr.join(" ");
+      await fetch("/api/product", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email_address: form.email,
+          firstName: firstName || form.name,
+          lastName: lastName || "",
+          phone: form.phone,
+          organization: form.organization,
+          location: form.location,
+          product: form.product,
+        }),
+      });
+      // Optionally show a toast
+      // toast.success("Added to waitlist!");
+    } catch (err) {
+      toast.error("Mailchimp subscription failed");
+    }
+    setSubmitting(false);
   };
 
   if (!isOpen) return null;
