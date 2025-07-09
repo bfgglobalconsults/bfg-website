@@ -642,7 +642,7 @@ const Page = () => {
                   disabled={state.submitting}
                   className="py-2 px-4 text-white flex items-center gap-2 bg-[#E26015] hover:bg-[#333] rounded-3xl"
                 >
-                  <span className="font-semibold">Send Your Message</span>
+                  <span className="font-semibold">{state.submitting ? "Submitting..." : "Send Your Message"}</span>
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
