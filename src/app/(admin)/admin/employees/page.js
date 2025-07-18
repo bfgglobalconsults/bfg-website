@@ -3,7 +3,7 @@ import TotalDepartmentCard from "@/components/admin-component/employee-cards/Tot
 import TotalEmployeeCard from "@/components/admin-component/employee-cards/TotalEmployeeCard";
 import Dropdown from "@/components/admin-component/filter-dropdown";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Avatar from "../../../../../public/assets/avatar.png";
 import TextTrimming from "@/components/admin-component/TextTrimmer";
 import DepartmentTable from "@/components/admin-component/employee-components/DepartmentTable";
@@ -17,6 +17,12 @@ import {
 } from "@headlessui/react";
 import AddEmployeeForm from "@/components/admin-component/employee-form/AddEmployeeForm";
 import AddDepartmentForm from "@/components/admin-component/department-form/AddDepartmentForm";
+import axios from "axios";
+
+
+
+
+  
 
 const employeeData = [
   {
@@ -76,6 +82,7 @@ const employeeData = [
   },
 ];
 const EmployeePage = () => {
+    const [employees, setEmployees] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [dptOpen, setDptOpen] = useState(false);
   
@@ -95,9 +102,18 @@ const EmployeePage = () => {
   function close() {
     setIsOpen(false);
   }
+
+    useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`)
+      .then((res) => setEmployees(res.data.data || []))
+      .catch(() => setEmployees([]));
+  }, []);
   return (
     <div className="w-full p-4">
-          <div className="flex justify-between">
+     
+
+      <div className="flex justify-between">
              
         <div></div>
         <div className="flex gap-3">
@@ -235,7 +251,7 @@ const EmployeePage = () => {
       </div>
       <div className="w-full">
         <div className="relative overflow-x-auto  sm:rounded-lg">
-          <div className="flex items-center justify-between my-3 flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+          <div className="flex items-center justify-between my-3 p-2 flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
             <div>
               <h3 className="text-lg text-black font-semibold">Employees</h3>
               </div>
@@ -298,8 +314,9 @@ const EmployeePage = () => {
                 </th>
               </tr>
             </thead>
+             
             <tbody>
-              {employeeData.map((employee) => {
+              {employees?.map((employee) => {
                 return (
                   <>
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -316,11 +333,11 @@ const EmployeePage = () => {
                         />
                         <div className="px-2 py-4">
                           <div className="font-semibold">
-                          <TextTrimming text={employee.name} maxLength={6} />
+                          <TextTrimming text={employee.fullName} maxLength={6} />
                           </div>
                         </div>
                       </th>
-                      <td className="px-6 py-4"><TextTrimming text={employee.ID} maxLength={6} /></td>
+                      <td className="px-6 py-4"><TextTrimming text={employee.employeeID || employee._id} maxLength={6} /></td>
                       <td className="px-6 py-4">
                         <div className="font-normal text-gray-500">
                          <TextTrimming text={employee.email} maxLength={6} />
@@ -328,7 +345,7 @@ const EmployeePage = () => {
                       </td>
                       <td class="px-6 py-4">
                         <div className="font-normal text-gray-500">
-                          {employee.phone}
+                          {employee.phoneNumber}
                         </div>
                             </td>
                             <td class="px-6 py-4">
@@ -342,12 +359,12 @@ const EmployeePage = () => {
                             </td>
                             <td class="px-6 py-4">
                         <div className="font-normal text-gray-500">
-                          {employee.hireDate}
+                          {employee.dateOfEmployment ? new Date(employee.dateOfEmployment).toLocaleDateString() : ''}
                         </div>
                             </td>
                             <td class="px-6 py-4">
                         <span className={`font-normal bg-[#E2E8F966] p-2 rounded-md text-black ${employee.status === "Active" ? "text-green-600": employee.status === "Suspended"? "text-red-600": "text-[#DFA510]"}`}>
-                          {employee.status}
+                          {employee.employmentStatus}
                         </span>
                       </td>
                     </tr>
