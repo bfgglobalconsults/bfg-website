@@ -15,36 +15,41 @@ const AddEmployeeForm = ({ close }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     // Personal Info
-    
-    fullName: "",
-    email: "",
+    fullName: "John Doe",
+    email: "john.doe@example.com",
     password: "suduko",
-    phoneNumber: "",
-    dateOfBirth: "",
-    gender: "",
-    maritalStatus: "",
-    nationality: "",
-    stateOfOrigin: "",
-    localGovernmentArea: "",
-    residentialAddress: "",
-    nextOfKinName: "",
-    emergencyContact: "",
+    phoneNumber: "+2348012345678",
+    dateOfBirth: "1990-01-01",
+    gender: "Male",
+    maritalStatus: "Single",
+    nationality: "Nigerian",
+    stateOfOrigin: "Lagos",
+    localGovernmentArea: "Ikeja",
+    residentialAddress: "123 Example Street, Ikeja, Lagos",
+    nextOfKinName: "Jane Doe",
+    emergencyContact: "+2348098765432",
     // Job Info
-    employeeID: "",
-    jobTitle: "",
-    employmentStatus: "",
-    typeOfEmployment: "",
-    dateOfEmployment: "",
-    payScale: "",
-    department: "",
+    employeeID: "EMP12345",
+    jobTitle: "Software Engineer",
+    employmentStatus: "Active",
+    typeOfEmployment: "Full-Time",
+    dateOfEmployment: "2022-05-01",
+    payScale: "Level 8",
+    department: "Engineering",
     // Educational Background
-    highestQualification: "",
-    institutionsAttended: [],
-    yearOfGraduation: "",
-    relevantTrainings: ["none"],
-    // Documents
-    certifications: [],
-    passportPhoto: "",
+    // highestQualification: "B.Sc Computer Science",
+    // institutionsAttended: ["University of Lagos", "MIT"],
+    // yearOfGraduation: "2018",
+    // relevantTrainings: [
+    //   { trainingName: "React Bootcamp", yearAttended: "2019" },
+    //   { trainingName: "AWS Cloud Practitioner", yearAttended: "2021" }
+    // ],
+    // // Documents
+    // certifications: [
+    //   { name: "Certified Scrum Master", year: "2020", issuer: "Scrum Alliance" },
+    //   { name: "Google IT Support", year: "2022", issuer: "Google" }
+    // ],
+    // passportPhoto: "https://randomuser.me/api/portraits/men/1.jpg",
   });
 
   const handleFormDataChange = (stepData) => {
@@ -58,17 +63,35 @@ const AddEmployeeForm = ({ close }) => {
     const requiredFields = [
       'fullName',
       'email',
-      'password',
       'phoneNumber',
       'dateOfBirth',
       'gender',
+      'maritalStatus',
+      'nationality',
+      'stateOfOrigin',
+      'localGovernmentArea',
+      'residentialAddress',
+      'nextOfKinName',
+      'emergencyContact',
       'employeeID',
       'jobTitle',
+      'department',
+      'dateOfEmployment',
+      'payScale',
+      'typeOfEmployment',
       'employmentStatus',
-      'department'
+      // 'highestQualification',
+      // 'institutionsAttended',
+      // 'yearOfGraduation',
+      // 'relevantTrainings'
     ];
 
-    const missingFields = requiredFields.filter(field => !formData[field]);
+    const missingFields = requiredFields.filter(field => {
+      if (Array.isArray(formData[field])) {
+        return !formData[field] || formData[field].length === 0;
+      }
+      return !formData[field];
+    });
     
     if (missingFields.length > 0) {
       toast.error(`Please fill in all required fields: ${missingFields.join(', ')}`);
@@ -134,8 +157,8 @@ const AddEmployeeForm = ({ close }) => {
   const steps = [
     "Personal Information",
     "Job Information",
-    "Educational Background",
-    "Documents",
+    // "Educational Background",
+    // "Documents",
   ];
 
   const getCurrentStepIndex = () => parseInt(tab.replace("Step", "")) - 1;
@@ -245,7 +268,7 @@ const AddEmployeeForm = ({ close }) => {
               onChange={handleFormDataChange}
             />
           )}
-          {tab === "Step3" && (
+          {/* {tab === "Step3" && (
             <EducationalBackgroundForm
               formData={formData}
               onChange={handleFormDataChange}
@@ -256,7 +279,7 @@ const AddEmployeeForm = ({ close }) => {
               formData={formData}
               onChange={handleFormDataChange}
             />
-          )}
+          )} */}
         </div>
         <div className="flex justify-between mt-6">
           <button

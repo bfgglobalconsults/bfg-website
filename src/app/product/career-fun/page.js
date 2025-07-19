@@ -185,7 +185,7 @@ const ComingSoonCard = ({ onNotify }) => (
       Coming Soon
     </span>
     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-4">
-      Coming Soon: CareerFun — Learning Made Easy
+      CareerFun — Learning Made Easy
     </h2>
     <p className="text-lg text-gray-700 text-center mb-6 max-w-xl">
       <span className="font-semibold">Power Up Your Skills with CareerFun</span>

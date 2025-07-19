@@ -236,7 +236,7 @@ export default function FeedbackPage() {
                     Participation is entirely voluntary, and we sincerely appreciate your consideration either way.
                     </p>
     <div className="max-w-5xl mx-auto p-6 md:p-10 bg-white rounded-xl shadow my-16">
-      <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">FEEDBACK</h1>
+      {/* <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">FEEDBACK</h1> */}
      
       {/* <div className="text-gray-700 mb-8 space-y-2 text-base">
         <p>This short online questionnaire consists of seven questions — five open-ended and two closed-ended — and will take approximately three minutes to complete.</p>

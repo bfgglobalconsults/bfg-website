@@ -119,8 +119,8 @@ export default function CustomerReview({ unit = "" }) {
         {/* Carousel */}
         <div className="relative mb-8">
           <div className="w-full">
-            {/* Mobile: show only one card, swipeable */}
-            <div className="block sm:hidden">
+            {/* Mobile: show only one card, swipeable & auto-slide */}
+            <div className="block sm:block lg:hidden">
               {testimonials.length > 0 && (
                 <div className="flex justify-center">
                   <div className="bg-white border-2 border-[#E26015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
@@ -132,7 +132,7 @@ export default function CustomerReview({ unit = "" }) {
                         <div>
                           <div className="font-bold text-gray-900">{testimonials[currentIndex].name}</div>
                           <div className="text-gray-400 text-sm">{testimonials[currentIndex].role}</div>
-                          <div className="text-gray-400 text-sm">{testimonials[currentIndex].company}</div>
+                          <div className="text-gray-400 text-sm">{testimonials[currentIndex].department}</div>
                         </div>
                       </>
                     )}
@@ -140,26 +140,31 @@ export default function CustomerReview({ unit = "" }) {
                 </div>
               )}
             </div>
-            {/* Tablet and up: show 2 or 3 cards */}
-            <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {testimonials?.map((review, index) => {
-                  
-                  return (
-                    <div
-                      key={index}
-                      className="bg-white border-2 border-[#E26015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300"
-                    >
-                      <Avatar name={review.name} />
-                      <StarRating rating={review.rating} />
-                      <p className="text-gray-700 italic mb-4">“ {review.review} “</p>
-                      <div>
-                        <div className="font-bold text-gray-900">{review.name}</div>
-                        <div className="text-gray-400 text-sm">{review.role}</div>
-                        <div className="text-gray-400 text-sm">{review.company}</div>
+            {/* Desktop: show 3 cards per screen, auto-slide */}
+            <div className="hidden lg:block">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {testimonials.length > 0 &&
+                  [...Array(Math.min(3, testimonials.length))].map((_, i) => {
+                    // Calculate the index for each card in the carousel window
+                    const idx = (currentIndex + i) % testimonials.length;
+                    const review = testimonials[idx];
+                    return (
+                      <div
+                        key={idx}
+                        className="bg-white border-2 border-[#E26015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300"
+                      >
+                        <Avatar name={review.name} />
+                        <StarRating rating={review.rating} />
+                        <p className="text-gray-700 italic mb-4">“ {review.review} “</p>
+                        <div>
+                          <div className="font-bold text-gray-900">{review.name}</div>
+                          <div className="text-gray-400 text-sm">{review.role}</div>
+                          <div className="text-gray-400 text-sm">{review.department}</div>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+              </div>
             </div>
           </div>
           {/* Carousel controls */}

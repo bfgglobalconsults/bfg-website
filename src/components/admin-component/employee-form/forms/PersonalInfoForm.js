@@ -134,8 +134,8 @@ const PersonalInfoForm = ({ formData, onChange }) => {
                 <option value="" disabled selected>
                   Select Status
                 </option>
-                <option value="married">Married</option>
-                <option value="single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
               </select>
             </div>
           </div>

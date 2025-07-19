@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FiArrowDown, FiArrowUp, FiClock, FiCheckCircle, FiSearch, FiFilter, FiEye, FiPlus, FiEdit2 } from "react-icons/fi";
 import { useAuth } from "@/context/authContext";
+import UploadImage from "@/components/UploadImage";
+import { CldImage, CldUploadButton } from "next-cloudinary";
 
 // Status badge
 const StatusBadge = ({ status }) => {
@@ -21,17 +23,40 @@ const StatusBadge = ({ status }) => {
 // Transaction Modal (Add/Edit)
 function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
   const { user } = useAuth()
+  const [employees, setEmployees] = useState([]); 
+    const [department, setDepartment] = useState([]); 
+
+  const [imageId, setImageId] = useState("");
+  
+   
   const [form, setForm] = useState({
-    client_id: user._id,
+    employee_id: "", 
     description: "",
     amount: "",
     status: "Pending",
+    type: "inflow", 
+    attachment: imageId,
   });
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
+    if (isOpen) {
+      axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`)
+        .then(res => setEmployees(res.data.data || []))
+        .catch(() => setEmployees([]));
+    }
     if (initialData) setForm(initialData);
-    else setForm({  client_id: user?._id, description: "", amount: "", status: "Pending" });
+    else setForm({  client_id: user?._id, employee_id: "", description: "", amount: "", status: "Pending", type: "inflow" });
+  }, [initialData, isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/departments/getDepartments`)
+        .then(res => setDepartment(res.data.data || []))
+        .catch(() => setDepartment([]));
+    }
+    if (initialData) setForm(initialData);
+    else setForm({  client_id: user?._id, employee_id: "", department_id:"", description: "", amount: "", status: "Pending", type: "inflow" });
   }, [initialData, isOpen]);
 
   const handleChange = (e) => {
@@ -70,13 +95,64 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
         <h2 className="text-2xl font-bold mb-4">{initialData ? "Edit" : "Add"} Transaction</h2>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block mb-1 font-medium">Client *</label>
-            <input
-              name="client_id"
-              value={user?._id}
-              disabled
-              className="w-full border rounded-lg px-3 py-2 bg-gray-100 text-gray-500 cursor-not-allowed"
-            />
+            <label className="block mb-1 font-medium">Employee *</label>
+            <select
+              name="employee_id"
+              value={form.employee_id}
+              onChange={e => setForm({ ...form, employee_id: e.target.value })}
+              required
+              className="w-full border rounded-lg px-3 py-2"
+            >
+              <option value="">Select Employee</option>
+              
+              {employees.map(emp => (
+                <option key={emp._id} value={emp._id}>
+                  {emp.fullName} ({emp.email})
+                </option>
+              ))}
+            </select>
+          </div>
+           <div>
+            <label className="block mb-1 font-medium">Department ID *</label>
+            <select
+              name="department_id"
+              value={form.department_id}
+              onChange={e => setForm({ ...form, department_id: e.target.value })}
+              required
+              className="w-full border rounded-lg px-3 py-2"
+            >
+              <option value="">Select Department</option>
+              
+              {department.map(emp => (
+                <option key={emp._id} value={emp._id}>
+                  {emp.name} 
+                </option>
+              ))}
+            </select>
+
+          </div>
+          <div style={{ margin: '1em 0' }}>
+            <label style={{ marginRight: '1em' }}>Transaction Type:</label>
+            <label style={{ marginRight: '1em' }}>
+              <input
+                type="radio"
+                name="type"
+                value="inflow"
+                checked={form.type === "inflow"}
+                onChange={e => setForm({ ...form, type: e.target.value })}
+              />
+              Inflow
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="type"
+                value="outflow"
+                checked={form.type === "outflow"}
+                onChange={e => setForm({ ...form, type: e.target.value })}
+              />
+              Outflow
+            </label>
           </div>
           <div>
             <label className="block mb-1 font-medium">Description *</label>
@@ -116,6 +192,26 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
               <option value="Rejected">Rejected</option>
             </select>
           </div>
+          <div>
+          <CldUploadButton
+        onSuccess={(result) => {
+          setImageId(result.info.public_id);
+          setForm((prev) => ({ ...prev, attachment: result.info.public_id }));
+          console.log("Image uploaded:", result.info);
+        }}
+        uploadPreset="blog-image"
+            />
+             {imageId && (
+                    <CldImage
+                      width="500"
+                      height="500"
+                      src={imageId}
+                      sizes="100vw"
+                      alt="Blog Image"
+                    />
+                  )}
+          </div>
+          
           <button
             type="submit"
             className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold"

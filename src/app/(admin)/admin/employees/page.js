@@ -3,7 +3,7 @@ import TotalDepartmentCard from "@/components/admin-component/employee-cards/Tot
 import TotalEmployeeCard from "@/components/admin-component/employee-cards/TotalEmployeeCard";
 import Dropdown from "@/components/admin-component/filter-dropdown";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Avatar from "../../../../../public/assets/avatar.png";
 import TextTrimming from "@/components/admin-component/TextTrimmer";
 import DepartmentTable from "@/components/admin-component/employee-components/DepartmentTable";
@@ -17,6 +17,12 @@ import {
 } from "@headlessui/react";
 import AddEmployeeForm from "@/components/admin-component/employee-form/AddEmployeeForm";
 import AddDepartmentForm from "@/components/admin-component/department-form/AddDepartmentForm";
+import axios from "axios";
+
+
+
+
+  
 
 const employeeData = [
   {
@@ -76,8 +82,12 @@ const employeeData = [
   },
 ];
 const EmployeePage = () => {
+  const [employees, setEmployees] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [dptOpen, setDptOpen] = useState(false);
+  const [editEmployee, setEditEmployee] = useState(null);
+  const [editModalOpen, setEditModalOpen] = useState(false);
+  const [editForm, setEditForm] = useState({});
   
    function dptIsOpen() {
     setDptOpen(true);
@@ -95,9 +105,58 @@ const EmployeePage = () => {
   function close() {
     setIsOpen(false);
   }
+
+    useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`)
+      .then((res) => setEmployees(res.data.data || []))
+      .catch(() => setEmployees([]));
+  }, []);
+
+  // Delete employee
+  const handleDeleteEmployee = async (id) => {
+    if (!window.confirm("Are you sure you want to delete this employee?")) return;
+    await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/deleteEmployees`, { ids: [id] });
+    // Refresh employees list
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`);
+    setEmployees(res.data.data || []);
+  };
+
+  // Edit employee
+  const handleEditEmployee = (employee) => {
+    setEditEmployee(employee);
+    setEditForm({
+      fullName: employee.fullName || '',
+      email: employee.email || '',
+      phoneNumber: employee.phoneNumber || '',
+      department: employee.department || '',
+      jobTitle: employee.jobTitle || '',
+      dateOfEmployment: employee.dateOfEmployment ? new Date(employee.dateOfEmployment).toISOString().slice(0,10) : '',
+      employmentStatus: employee.employmentStatus || '',
+    });
+    setEditModalOpen(true);
+  };
+
+  const handleEditFormChange = (e) => {
+    setEditForm({ ...editForm, [e.target.name]: e.target.value });
+  };
+
+  const handleEditFormSubmit = async (e) => {
+    e.preventDefault();
+    await axios.put(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/${editEmployee._id}`, editForm);
+    setEditModalOpen(false);
+    setEditEmployee(null);
+    // Refresh employees list
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`);
+    setEmployees(res.data.data || []);
+  };
+
   return (
+    <>
     <div className="w-full p-4">
-          <div className="flex justify-between">
+     
+
+      <div className="flex justify-between">
              
         <div></div>
         <div className="flex gap-3">
@@ -235,7 +294,7 @@ const EmployeePage = () => {
       </div>
       <div className="w-full">
         <div className="relative overflow-x-auto  sm:rounded-lg">
-          <div className="flex items-center justify-between my-3 flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
+          <div className="flex items-center justify-between my-3 p-2 flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
             <div>
               <h3 className="text-lg text-black font-semibold">Employees</h3>
               </div>
@@ -296,10 +355,14 @@ const EmployeePage = () => {
                 <th scope="col" className="px-6 py-3">
                   Status
                 </th>
+                <th scope="col" className="px-6 py-3">
+                  Actions
+                </th>
               </tr>
             </thead>
+             
             <tbody>
-              {employeeData.map((employee) => {
+              {employees?.map((employee) => {
                 return (
                   <>
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -316,11 +379,11 @@ const EmployeePage = () => {
                         />
                         <div className="px-2 py-4">
                           <div className="font-semibold">
-                          <TextTrimming text={employee.name} maxLength={6} />
+                          <TextTrimming text={employee.fullName} maxLength={6} />
                           </div>
                         </div>
                       </th>
-                      <td className="px-6 py-4"><TextTrimming text={employee.ID} maxLength={6} /></td>
+                      <td className="px-6 py-4"><TextTrimming text={employee.employeeID || employee._id} maxLength={6} /></td>
                       <td className="px-6 py-4">
                         <div className="font-normal text-gray-500">
                          <TextTrimming text={employee.email} maxLength={6} />
@@ -328,7 +391,7 @@ const EmployeePage = () => {
                       </td>
                       <td class="px-6 py-4">
                         <div className="font-normal text-gray-500">
-                          {employee.phone}
+                          {employee.phoneNumber}
                         </div>
                             </td>
                             <td class="px-6 py-4">
@@ -342,13 +405,17 @@ const EmployeePage = () => {
                             </td>
                             <td class="px-6 py-4">
                         <div className="font-normal text-gray-500">
-                          {employee.hireDate}
+                          {employee.dateOfEmployment ? new Date(employee.dateOfEmployment).toLocaleDateString() : ''}
                         </div>
                             </td>
                             <td class="px-6 py-4">
                         <span className={`font-normal bg-[#E2E8F966] p-2 rounded-md text-black ${employee.status === "Active" ? "text-green-600": employee.status === "Suspended"? "text-red-600": "text-[#DFA510]"}`}>
-                          {employee.status}
+                          {employee.employmentStatus}
                         </span>
+                      </td>
+                      <td class="px-6 py-4">
+                        <button className="text-blue-600 mr-2" onClick={() => handleEditEmployee(employee)}>Edit</button>
+                        <button className="text-red-600" onClick={() => handleDeleteEmployee(employee._id)}>Delete</button>
                       </td>
                     </tr>
                   </>
@@ -358,13 +425,53 @@ const EmployeePage = () => {
                   </table>
                   </div>
               <div className="w-full flex gap-4 my-4">
-                  <div className="w-[60%]">
+                  <div className="w-full">
                       <DepartmentTable />
                   </div>
-                  <div className="w-[40%]"></div>
               </div>
         </div>
       </div>
+
+      {editModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+          <div className="bg-white rounded-xl p-8 w-full max-w-md shadow-lg relative max-h-[90vh] overflow-y-auto">
+            <button className="absolute top-4 right-4 text-2xl" onClick={() => setEditModalOpen(false)}>&times;</button>
+            <h2 className="text-2xl font-bold mb-4">Edit Employee</h2>
+            <form onSubmit={handleEditFormSubmit} className="space-y-5">
+              <div>
+                <label className="block mb-1 font-medium">Full Name</label>
+                <input name="fullName" value={editForm.fullName} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" required />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium">Email</label>
+                <input name="email" value={editForm.email} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" required />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium">Phone</label>
+                <input name="phoneNumber" value={editForm.phoneNumber} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" required />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium">Department</label>
+                <input name="department" value={editForm.department} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium">Job Title</label>
+                <input name="jobTitle" value={editForm.jobTitle} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium">Hire Date</label>
+                <input name="dateOfEmployment" type="date" value={editForm.dateOfEmployment} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
+              </div>
+              <div>
+                <label className="block mb-1 font-medium">Status</label>
+                <input name="employmentStatus" value={editForm.employmentStatus} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
+              </div>
+              <button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold">Save</button>
+            </form>
+          </div>
+        </div>
+      )}
+      </>
   );
 };
 
