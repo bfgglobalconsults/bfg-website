@@ -22,7 +22,7 @@ const AdminLayout = ({ children }) => {
       </div>
       <div className="w-full flex flex-col flex-1">
         <NavMain /> 
-        <div className="flex-1 p-4 min-h-0 overflow-y-auto bg-gray-400">{children}</div>
+        <div className="flex-1 p-4 min-h-0 overflow-y-auto bg-gray-100">{children}</div>
       </div>
       </div>
       </RequireAuth>
