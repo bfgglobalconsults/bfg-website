@@ -24,6 +24,8 @@ const StatusBadge = ({ status }) => {
 function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
   const { user } = useAuth()
   const [employees, setEmployees] = useState([]); 
+    const [department, setDepartment] = useState([]); 
+
   const [imageId, setImageId] = useState("");
   
    
@@ -45,6 +47,16 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
     }
     if (initialData) setForm(initialData);
     else setForm({  client_id: user?._id, employee_id: "", description: "", amount: "", status: "Pending", type: "inflow" });
+  }, [initialData, isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/departments/getDepartments`)
+        .then(res => setDepartment(res.data.data || []))
+        .catch(() => setDepartment([]));
+    }
+    if (initialData) setForm(initialData);
+    else setForm({  client_id: user?._id, employee_id: "", department_id:"", description: "", amount: "", status: "Pending", type: "inflow" });
   }, [initialData, isOpen]);
 
   const handleChange = (e) => {
@@ -92,12 +104,32 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
               className="w-full border rounded-lg px-3 py-2"
             >
               <option value="">Select Employee</option>
+              
               {employees.map(emp => (
                 <option key={emp._id} value={emp._id}>
                   {emp.fullName} ({emp.email})
                 </option>
               ))}
             </select>
+          </div>
+           <div>
+            <label className="block mb-1 font-medium">Department ID *</label>
+            <select
+              name="department_id"
+              value={form.department_id}
+              onChange={e => setForm({ ...form, department_id: e.target.value })}
+              required
+              className="w-full border rounded-lg px-3 py-2"
+            >
+              <option value="">Select Department</option>
+              
+              {department.map(emp => (
+                <option key={emp._id} value={emp._id}>
+                  {emp.name} 
+                </option>
+              ))}
+            </select>
+
           </div>
           <div style={{ margin: '1em 0' }}>
             <label style={{ marginRight: '1em' }}>Transaction Type:</label>
