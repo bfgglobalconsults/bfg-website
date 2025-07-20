@@ -27,6 +27,7 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
     const [department, setDepartment] = useState([]); 
 
   const [imageId, setImageId] = useState("");
+  const [imageView, setImageView] = useState("");
   
    
   const [form, setForm] = useState({
@@ -194,18 +195,19 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
           </div>
           <div>
           <CldUploadButton
-        onSuccess={(result) => {
-          setImageId(result.info.public_id);
-          setForm((prev) => ({ ...prev, attachment: result.info.public_id }));
+              onSuccess={(result) => {
+                setImageId(result.info.url);
+          setImageView(result.info.public_id);
+          setForm((prev) => ({ ...prev, attachment: result.info.url }));
           console.log("Image uploaded:", result.info);
         }}
         uploadPreset="blog-image"
             />
-             {imageId && (
+             {imageView && (
                     <CldImage
                       width="500"
                       height="500"
-                      src={imageId}
+                      src={imageView}
                       sizes="100vw"
                       alt="Blog Image"
                     />
@@ -362,13 +364,13 @@ const TransactionManagementPage = () => {
                 <td className="p-4">{txn.date ? new Date(txn.date).toLocaleDateString() : ""}</td>
                 <td className="p-4">{txn.client?.name || "N/A"}</td>
                 <td className="p-4">
-                  <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${txn.type === "Inflow" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}>
+                  <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${txn.type === "inflow" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}>
                     {txn.type}
                   </span>
                 </td>
                 <td className="p-4 font-semibold">₦{txn.amount?.toLocaleString()}</td>
                 <td className="p-4">{txn.description}</td>
-                <td className="p-4"><StatusBadge status={txn.status} /></td>
+                <td className="p-4"><StatusBadge status={txn.transaction_status} /></td>
                 <td className="p-4">
                   <div className="flex space-x-2">
                     <button

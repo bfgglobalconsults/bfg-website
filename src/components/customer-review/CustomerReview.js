@@ -193,7 +193,7 @@ export default function CustomerReview({ unit = "" }) {
         </div>
         {/* Carousel dots */}
         <div className="flex justify-center space-x-2 mb-8">
-          {testimonials.map((_, idx) => (
+          {testimonials?.map((_, idx) => (
             <span
               key={idx}
               className={`h-2 ${idx === currentIndex ? "w-6 bg-gray-900" : "w-2 bg-gray-300"} rounded-full inline-block transition-all`}
