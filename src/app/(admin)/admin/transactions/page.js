@@ -5,6 +5,8 @@ import { FiArrowDown, FiArrowUp, FiClock, FiCheckCircle, FiSearch, FiFilter, FiE
 import { useAuth } from "@/context/authContext";
 import UploadImage from "@/components/UploadImage";
 import { CldImage, CldUploadButton } from "next-cloudinary";
+import toast from "react-hot-toast";
+import Link from "next/link";
 
 // Status badge
 const StatusBadge = ({ status }) => {
@@ -34,7 +36,7 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
     employee_id: "", 
     description: "",
     amount: "",
-    status: "Pending",
+    transaction_status: "",
     type: "inflow", 
     attachment: imageId,
   });
@@ -81,9 +83,11 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
         );
       }
       onSubmit();
+                        toast.success('Transaction Created Successfully');
+    
       onClose();
     } catch (err) {
-      alert("Failed to save transaction.");
+                         toast.error("Failed to save transaction.");
     }
     setSubmitting(false);
   };
@@ -182,8 +186,8 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
           <div>
             <label className="block mb-1 font-medium">Status *</label>
             <select
-              name="status"
-              value={form.status}
+              name="transaction_status"
+              value={form.transaction_status}
               onChange={handleChange}
               required
               className="w-full border rounded-lg px-3 py-2"
@@ -274,25 +278,25 @@ const TransactionManagementPage = () => {
   };
 
   const filteredTransactions = transactions
-    .filter(txn => filter === "All" || txn.status === filter)
+    .filter(txn => filter === "All" || txn.transaction_status === filter)
     .filter(txn =>
       (txn.client?.name || "").toLowerCase().includes(searchTerm.toLowerCase()) ||
       (txn.description || "").toLowerCase().includes(searchTerm.toLowerCase())
     );
 
   const totalFunds = transactions
-    .filter(txn => txn.status === "Completed")
+    .filter(txn => txn.transaction_status === "Completed")
     .reduce((sum, txn) => txn.type === "Inflow" ? sum + txn.amount : sum - txn.amount, 0);
 
   const inflow = transactions
-    .filter(txn => txn.type === "Inflow" && txn.status === "Completed")
+    .filter(txn => txn.type === "Inflow" && txn.transaction_status === "Completed")
     .reduce((sum, txn) => sum + txn.amount, 0);
 
   const outflow = transactions
-    .filter(txn => txn.type === "Outflow" && txn.status === "Completed")
+    .filter(txn => txn.type === "Outflow" && txn.transaction_status === "Completed")
     .reduce((sum, txn) => sum + txn.amount, 0);
 
-  const pendingCount = transactions.filter(txn => txn.status === "Pending").length;
+  const pendingCount = transactions.filter(txn => txn.transaction_status === "Pending").length;
 
   return (
     <div className="p-8 bg-gray-50 min-h-screen">
@@ -387,6 +391,20 @@ const TransactionManagementPage = () => {
                     >
                       <FiEdit2 size={18} />
                     </button>
+                    <button
+                      className="text-red-600 hover:bg-red-50 p-2 rounded-full"
+                      title="Delete"
+                      onClick={async () => {
+                        if (window.confirm('Are you sure you want to delete this transaction?')) {
+                          await axios.delete(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/transaction/${txn._id}`);
+                          fetchTransactions();
+                        }
+                      }}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
                   </div>
                 </td>
               </tr>
@@ -416,8 +434,21 @@ const TransactionManagementPage = () => {
               <div><span className="font-semibold">Type:</span> {selectedTransaction.type}</div>
               <div><span className="font-semibold">Amount:</span> ₦{selectedTransaction.amount?.toLocaleString()}</div>
               <div><span className="font-semibold">Date:</span> {selectedTransaction.date ? new Date(selectedTransaction.date).toLocaleDateString() : ""}</div>
-              <div><span className="font-semibold">Status:</span> <StatusBadge status={selectedTransaction.status} /></div>
+              <div><span className="font-semibold">Status:</span> <StatusBadge status={selectedTransaction.transaction_status} /></div>
               <div><span className="font-semibold">Description:</span> {selectedTransaction.description}</div>
+               {selectedTransaction.attachment && (
+                  <div>
+                    <span className="font-semibold">Attachment:</span>{" "}
+                    <Link
+                      href={selectedTransaction.attachment}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 underline hover:text-blue-800"
+                    >
+                      View Attachment
+                    </Link>
+                  </div>
+                )}
             </div>
             <div className="flex justify-end mt-6">
               <button
