@@ -433,16 +433,18 @@ const LeaveManagementPage = () => {
     const fetchLeaves = async () => {
       try {
         setLoading(true);
+        let endpoint = '/api/v1/leaves/my-leaves';
+        if (userRole === 'admin' || userRole === 'super_admin') {
+          endpoint = '/api/v1/leaves/all';
+        }
         const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/leaves/my-leaves`,
+          `${process.env.NEXT_PUBLIC_BASE_URL}${endpoint}`,
           {
             headers: {
               'Content-Type': 'application/json',
             }
           }
         );
-        
-        console.log('Fetched leaves:', response.data);
         setLeaveRequests(response.data.data || []);
       } catch (error) {
         console.error('Error fetching leaves:', error);
@@ -451,9 +453,8 @@ const LeaveManagementPage = () => {
         setLoading(false);
       }
     };
-
     fetchLeaves();
-  }, []);
+  }, [userRole]);
 
   // Fetch user details
   const fetchUserDetails = async (userId) => {
