@@ -116,7 +116,7 @@ const EmployeePage = () => {
   // Delete employee
   const handleDeleteEmployee = async (id) => {
     if (!window.confirm("Are you sure you want to delete this employee?")) return;
-    await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/deleteEmployees`, { ids: [id] });
+    await axios.delete(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/${id}`);
     // Refresh employees list
     const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`);
     setEmployees(res.data.data || []);
@@ -434,40 +434,22 @@ const EmployeePage = () => {
 
       {editModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-          <div className="bg-white rounded-xl p-8 w-full max-w-md shadow-lg relative max-h-[90vh] overflow-y-auto">
+          <div className="bg-white rounded-xl p-8 w-full max-w-2xl shadow-lg relative max-h-[90vh] overflow-y-auto">
             <button className="absolute top-4 right-4 text-2xl" onClick={() => setEditModalOpen(false)}>&times;</button>
             <h2 className="text-2xl font-bold mb-4">Edit Employee</h2>
-            <form onSubmit={handleEditFormSubmit} className="space-y-5">
-              <div>
-                <label className="block mb-1 font-medium">Full Name</label>
-                <input name="fullName" value={editForm.fullName} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium">Email</label>
-                <input name="email" value={editForm.email} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium">Phone</label>
-                <input name="phoneNumber" value={editForm.phoneNumber} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" required />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium">Department</label>
-                <input name="department" value={editForm.department} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium">Job Title</label>
-                <input name="jobTitle" value={editForm.jobTitle} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium">Hire Date</label>
-                <input name="dateOfEmployment" type="date" value={editForm.dateOfEmployment} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
-              </div>
-              <div>
-                <label className="block mb-1 font-medium">Status</label>
-                <input name="employmentStatus" value={editForm.employmentStatus} onChange={handleEditFormChange} className="w-full border rounded-lg px-3 py-2" />
-              </div>
-              <button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold">Save</button>
-            </form>
+            <AddEmployeeForm
+              close={() => setEditModalOpen(false)}
+              employee={editEmployee}
+              isEdit={true}
+              onSubmit={async (formData) => {
+                await axios.put(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/${editEmployee._id}`, formData);
+                setEditModalOpen(false);
+                setEditEmployee(null);
+                // Refresh employees list
+                const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`);
+                setEmployees(res.data.data || []);
+              }}
+            />
           </div>
         </div>
       )}

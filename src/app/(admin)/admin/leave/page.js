@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FiCalendar, FiCheckCircle, FiClock, FiXCircle, FiFilter, FiSearch, FiPlus, FiEye } from 'react-icons/fi';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
+import { CldImage, CldUploadButton } from 'next-cloudinary';
 
 const StatCard = ({ icon, title, value, color }) => (
   <div className="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4">
@@ -163,12 +164,18 @@ const LeaveDetailsModal = ({ isOpen, onClose, leaveData, userData, isAdmin, hand
 };
 
 const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
+  const [imageId, setImageId] = useState("");
+    const [employees, setEmployees] = useState([]); 
+
+    const [imageView, setImageView] = useState("");
   const [formData, setFormData] = useState({
+    employee_id: '',
     leave_type: '',
     leave_duration: '',
     start_date: '',
     end_date: '',
-    description: ''
+    description: '',
+    attachment: ''
   });
   const [loading, setLoading] = useState(false);
 
@@ -206,11 +213,13 @@ const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
       
       onSubmit(response.data);
       setFormData({
+        employee_id: '',
         leave_type: '',
         leave_duration: '',
         start_date: '',
         end_date: '',
-        description: ''
+        description: '',
+        attachment: ''
       });
       onClose();
     } catch (error) {
@@ -220,6 +229,15 @@ const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
       setLoading(false);
     }
   };
+
+   useEffect(() => {
+      if (isOpen) {
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`)
+          .then(res => setEmployees(res.data.data || []))
+          .catch(() => setEmployees([]));
+      }
+     
+    }, [isOpen]);
 
   const handleChange = (e) => {
     setFormData({
@@ -232,7 +250,7 @@ const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg p-6 w-full max-w-md">
+      <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold">Apply for Leave</h2>
           <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
@@ -241,6 +259,24 @@ const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
         </div>
         
         <form onSubmit={handleSubmit} className="space-y-4">
+           <div>
+            <label className="block mb-1 font-medium">Employee *</label>
+            <select
+              name="employee_id"
+              value={formData.employee_id}
+              onChange={handleChange}
+              required
+              className="w-full border rounded-lg px-3 py-2"
+            >
+              <option value="">Select Employee</option>
+              
+              {employees.map(emp => (
+                <option key={emp._id} value={emp._id}>
+                  {emp.fullName} 
+                </option>
+              ))}
+            </select>
+          </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Leave Type
@@ -318,6 +354,26 @@ const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
               required
             />
           </div>
+          <div>
+            <CldUploadButton
+              onSuccess={(result) => {
+                setImageId(result.info.url);
+                setImageView(result.info.public_id);
+                setFormData((prev) => ({ ...prev, attachment: result.info.url }));
+                console.log("Image uploaded:", result.info);
+              }}
+              uploadPreset="blog-image"
+            />
+            {imageView && (
+              <CldImage
+                width="500"
+                height="500"
+                src={imageView}
+                sizes="100vw"
+                alt="Blog Image"
+              />
+            )}
+          </div>
 
           <div className="flex space-x-3 pt-4">
             <button
@@ -377,16 +433,18 @@ const LeaveManagementPage = () => {
     const fetchLeaves = async () => {
       try {
         setLoading(true);
+        let endpoint = '/api/v1/leaves/my-leaves';
+        if (userRole === 'admin' || userRole === 'super_admin') {
+          endpoint = '/api/v1/leaves/all';
+        }
         const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/leaves/my-leaves`,
+          `${process.env.NEXT_PUBLIC_BASE_URL}${endpoint}`,
           {
             headers: {
               'Content-Type': 'application/json',
             }
           }
         );
-        
-        console.log('Fetched leaves:', response.data);
         setLeaveRequests(response.data.data || []);
       } catch (error) {
         console.error('Error fetching leaves:', error);
@@ -395,9 +453,8 @@ const LeaveManagementPage = () => {
         setLoading(false);
       }
     };
-
     fetchLeaves();
-  }, []);
+  }, [userRole]);
 
   // Fetch user details
   const fetchUserDetails = async (userId) => {

@@ -78,14 +78,14 @@ const page = () => {
                 About Elizabeth-Mary
               </h4>
               <p className="text-[#999] text-lg">
-                Elizabeth-Mary N. Okeke is an accomplished project management and service delivery practitioner currently serving as the Acting Head of Projects and Service Delivery at BFG Global Consulting Limited. With a passion for operational excellence and a proven track record in managing complex, cross-functional initiatives, she plays a pivotal role in ensuring the seamless execution of projects and the consistent delivery of high-quality services to BFG&apos;s diverse clientele.
+Elizabeth-Mary N. Okeke is an agile and forward-looking leader serving as the Acting Head of Projects and Service Delivery at BFG Global Consulting Ltd. In this role, she provides strategic direction and operational oversight across four core service units: Software Development, Market Research, Strategy Development, and Workforce Training.              </p>
+              <br />
+              <p className="text-[#999] text-lg">
+              Known for her structured approach to project execution and stakeholder engagement, Elizabeth-Mary drives high-impact service delivery that aligns with client needs and organizational priorities. Her multidisciplinary leadership enables seamless collaboration across technical, research, strategic, and capacity-building teams, ensuring consistent quality and timely execution of deliverables.          </p>
+              <br />
+              <p className="text-[#999] text-lg">
+                With a strong focus on innovation, client satisfaction, and team empowerment, she plays a critical role in transforming ideas into scalable solutions. Elizabeth-Mary brings a unique ability to balance detail-oriented project management with big-picture strategic thinking, positioning her as a key force in our continued growth and service excellence.
               </p>
-              <br />
-              <p className="text-[#999] text-lg">
-              Elizabeth-Mary brings strategic insight and hands-on leadership to the firm&apos;s technology, research, and consulting portfolios. She oversees the end-to-end lifecycle of client engagements—from planning and resource allocation to delivery and post-project evaluation—ensuring alignment with business objectives and industry best practices.              </p>
-              <br />
-              <p className="text-[#999] text-lg">
-              Her leadership is characterized by a client-centric mindset, strong stakeholder engagement, and a commitment to continuous improvement. Under her direction, BFG&apos;s service delivery framework continues to evolve in pace with emerging trends in digital transformation, innovation, and organizational agility — steering project teams with precision, empathy, and an unwavering dedication to excellence.              </p>
             </div>
           </div>
         </div>

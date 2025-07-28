@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PersonalInfoForm from "./forms/PersonalInfoForm";
 import JobInfoForm from "./forms/JobInfoForm";
 import EducationalBackgroundForm from "./forms/EducationalBackgroundForm";
@@ -9,48 +9,45 @@ import axios from "axios";
 
 const apiLink = process.env.NEXT_PUBLIC_BASE_URL;
 
-const AddEmployeeForm = ({ close }) => {
+const AddEmployeeForm = ({ close, employee, onSubmit, isEdit, isLoading: externalLoading }) => {
   const { user } = useAuth();
   const [tab, setTab] = useState("Step1");
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     // Personal Info
-    fullName: "John Doe",
-    email: "john.doe@example.com",
-    password: "suduko",
-    phoneNumber: "+2348012345678",
-    dateOfBirth: "1990-01-01",
-    gender: "Male",
-    maritalStatus: "Single",
-    nationality: "Nigerian",
-    stateOfOrigin: "Lagos",
-    localGovernmentArea: "Ikeja",
-    residentialAddress: "123 Example Street, Ikeja, Lagos",
-    nextOfKinName: "Jane Doe",
-    emergencyContact: "+2348098765432",
+    fullName: employee?.fullName || "",
+    email: employee?.email || "",
+    password: employee ? undefined : "suduko",
+    phoneNumber: employee?.phoneNumber || "",
+    dateOfBirth: employee?.dateOfBirth || "",
+    gender: employee?.gender || "",
+    maritalStatus: employee?.maritalStatus || "",
+    nationality: employee?.nationality || "",
+    stateOfOrigin: employee?.stateOfOrigin || "",
+    localGovernmentArea: employee?.localGovernmentArea || "",
+    residentialAddress: employee?.residentialAddress || "",
+    nextOfKinName: employee?.nextOfKinName || "",
+    emergencyContact: employee?.emergencyContact || "",
     // Job Info
-    employeeID: "EMP12345",
-    jobTitle: "Software Engineer",
-    employmentStatus: "Active",
-    typeOfEmployment: "Full-Time",
-    dateOfEmployment: "2022-05-01",
-    payScale: "Level 8",
-    department: "Engineering",
-    // Educational Background
-    // highestQualification: "B.Sc Computer Science",
-    // institutionsAttended: ["University of Lagos", "MIT"],
-    // yearOfGraduation: "2018",
-    // relevantTrainings: [
-    //   { trainingName: "React Bootcamp", yearAttended: "2019" },
-    //   { trainingName: "AWS Cloud Practitioner", yearAttended: "2021" }
-    // ],
-    // // Documents
-    // certifications: [
-    //   { name: "Certified Scrum Master", year: "2020", issuer: "Scrum Alliance" },
-    //   { name: "Google IT Support", year: "2022", issuer: "Google" }
-    // ],
-    // passportPhoto: "https://randomuser.me/api/portraits/men/1.jpg",
+    employeeID: employee?.employeeID || "",
+    jobTitle: employee?.jobTitle || "",
+    employmentStatus: employee?.employmentStatus || "",
+    typeOfEmployment: employee?.typeOfEmployment || "",
+    dateOfEmployment: employee?.dateOfEmployment ? new Date(employee.dateOfEmployment).toISOString().slice(0,10) : "",
+    payScale: employee?.payScale || "",
+    department: employee?.department || "",
+    // Educational Background, Documents, etc. can be added here if needed
   });
+
+  useEffect(() => {
+    if (employee) {
+      setFormData((prev) => ({
+        ...prev,
+        ...employee,
+        dateOfEmployment: employee.dateOfEmployment ? new Date(employee.dateOfEmployment).toISOString().slice(0,10) : "",
+      }));
+    }
+  }, [employee]);
 
   const handleFormDataChange = (stepData) => {
     setFormData((prevData) => ({
@@ -80,10 +77,6 @@ const AddEmployeeForm = ({ close }) => {
       'payScale',
       'typeOfEmployment',
       'employmentStatus',
-      // 'highestQualification',
-      // 'institutionsAttended',
-      // 'yearOfGraduation',
-      // 'relevantTrainings'
     ];
 
     const missingFields = requiredFields.filter(field => {
@@ -117,18 +110,21 @@ const AddEmployeeForm = ({ close }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
     if (!validateForm()) {
       return;
     }
-
+    if (onSubmit && isEdit) {
+      setIsLoading(true);
+      await onSubmit(formData);
+      setIsLoading(false);
+      return;
+    }
     try {
       setIsLoading(true);
       const employeeFormData = {
         ...formData,
         createdBy: user?.id,
       };
-
       const response = await axios.post(
         `${apiLink}/api/v1/employee/addEmployee`,
         employeeFormData,
@@ -139,7 +135,6 @@ const AddEmployeeForm = ({ close }) => {
           withCredentials: true
         }
       );
-      
       if (response.data.success) {
         toast.success("Employee added successfully");
         close();
@@ -181,28 +176,6 @@ const AddEmployeeForm = ({ close }) => {
 
   return (
     <>
-      {/* <div>
-        <div className="flex items-center justify-between">
-          <div className="flex gap-x-[24px] my-4 border-b border-b-[#efeff4]">
-            <div className="flex gap-2 items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1">
-              <p className="text-[#D9D9D9]">Personal Information</p>
-              <span className="w-5 h-5 p-2 text-[#D9D9D9] rounded-full border border-[#D9D9D9]">1</span>
-            </div>
-            <div className="flex gap-2 items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1">
-              <p className="text-[#D9D9D9]">Job Information</p>
-              <span className="w-5 h-5 p-3 text-[#D9D9D9] rounded-full border border-[#D9D9D9]">2</span>
-            </div>
-            <div className="flex gap-2 items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1">
-              <p className="text-[#D9D9D9]">Educational Background</p>
-              <span className="w-5 h-5 p-3 text-[#D9D9D9] rounded-full border border-[#D9D9D9]">3</span>
-            </div>
-            <div className="flex gap-2 items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1">
-              <p className="text-[#D9D9D9]">Documents</p>
-              <span className="w-5 h-5 p-3 text-[#D9D9D9] rounded-full border border-[#D9D9D9]">4</span>
-            </div>
-          </div>
-        </div>
-      </div>*/}
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex gap-x-6 my-4  w-full">
@@ -268,18 +241,6 @@ const AddEmployeeForm = ({ close }) => {
               onChange={handleFormDataChange}
             />
           )}
-          {/* {tab === "Step3" && (
-            <EducationalBackgroundForm
-              formData={formData}
-              onChange={handleFormDataChange}
-            />
-          )}
-          {tab === "Step4" && (
-            <DocumentsForm
-              formData={formData}
-              onChange={handleFormDataChange}
-            />
-          )} */}
         </div>
         <div className="flex justify-between mt-6">
           <button
@@ -297,12 +258,12 @@ const AddEmployeeForm = ({ close }) => {
           {getCurrentStepIndex() === steps.length - 1 ? (
             <button
               onClick={handleSubmit}
-              disabled={isLoading}
+              disabled={isLoading || externalLoading}
               className={`px-4 py-2 rounded-md bg-[#E26015] text-white hover:bg-[#E26015]/90 ${
-                isLoading ? "opacity-50 cursor-not-allowed" : ""
+                isLoading || externalLoading ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
-              {isLoading ? "Submitting..." : "Submit"}
+              {(isLoading || externalLoading) ? "Submitting..." : (isEdit ? "Update" : "Submit")}
             </button>
           ) : (
             <button

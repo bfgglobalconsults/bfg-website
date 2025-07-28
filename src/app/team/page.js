@@ -3,7 +3,7 @@ import Auditor from "../../../public/assets/internal-auditor.png";
 import OfficeAdmin from "../../../public/assets/office-admin.png";
 import ManagingDirector from "../../../public/assets/festus-md.png";
 import SocialMedia from "../../../public/assets/social-media.png";
-import HeadAdmin from "../../../public/assets/admin-lead.png";
+import HeadAdmin from "../../../public/assets/head-admin.png";
 import BusinessAnalyst from "../../../public/assets/business-analyst-new.png";
 import DigitalMarketer from "../../../public/assets/ezekiel-img.png";
 import SalesExecutive from "../../../public/assets/sales-executive.png";
@@ -119,7 +119,50 @@ const Page = () => {
                   </Link>
                 </div>
               </div>
-              {/* Third team */}
+              
+
+              {/* seventh team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={Elizabeth}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">
+                    Elizabeth-Mary N. Okeke
+                  </h3>
+                  <p className="text-[#E45F11]">
+                  Ag Head, Projects and Service Delivery
+                  </p>
+                  <Link href="/team/service-delivery">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              {/* Fourth team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={HeadAdmin}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Abubakar Sadiq Faisal</h3>
+                  <p className="text-[#E45F11]">Ag Head, Administration</p>
+                  <Link href="/team/head-administration">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
               {/* <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -140,19 +183,20 @@ const Page = () => {
                   </Link>
                 </div>
               </div> */}
-              {/* Fourth team */}
+
+              {/* Third team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={HeadAdmin}
+                    src={HeadFinance}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Adebayo Adeniyi</h3>
-                  <p className="text-[#E45F11]">Ag Head, Administration</p>
-                  <Link href="/team/head-administration">
+                  <h3 className="font-semibold text-lg">Amoto Seriki</h3>
+                  <p className="text-[#E45F11]">Ag Head, Finance</p>
+                  <Link href="/team/head-finance">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
@@ -181,48 +225,7 @@ const Page = () => {
               </div>
 
               {/* sixth team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={HeadFinance}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Amoto Seriki</h3>
-                  <p className="text-[#E45F11]">Ag Head, Finance</p>
-                  <Link href="/team/head-finance">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div>
-
-              {/* seventh team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={Elizabeth}
-                    alt="avatar"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">
-                    Elizabeth-Mary N. Okeke
-                  </h3>
-                  <p className="text-[#E45F11]">
-                  Ag Head, Projects and Service Delivery
-                  </p>
-                  <Link href="/team/service-delivery">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -558,7 +561,7 @@ const Page = () => {
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Team member card */}
 
-              <div className="flex flex-col">
+              {/* <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
                     src={Abubakar}
@@ -577,7 +580,7 @@ const Page = () => {
                     </button>
                   </Link>
                 </div>
-              </div>
+              </div> */}
               {/* new team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
