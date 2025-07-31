@@ -45,7 +45,16 @@ const ClientBanner = () => {
               style={{ width: "100%", height: "100%" }}
               aria-label="Watch Video"
             >
-              ▶ Watch Video
+              <span className="bg-red-600 hover:bg-red-700 p-3 lg:p-6 rounded-2xl">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 24 24" 
+                  className="w-6 h-6 md:w-8 md:h-8" 
+                  fill="rgba(255,255,255,1)">
+                  <path d="M6 20.1957V3.80421C6 3.01878 6.86395 2.53993 7.53 2.95621L20.6432 11.152C21.2699 11.5436 21.2699 12.4563 20.6432 12.848L7.53 21.0437C6.86395 21.46 6 20.9812 6 20.1957Z"></path>
+                </svg>
+              </span>
+              {/* ▶ Watch Video */}
             </button>
           </div>
           {/* <div className="w-full flex flex-col lg:flex-row gap-10 my-6">
