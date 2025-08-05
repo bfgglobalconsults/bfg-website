@@ -47,7 +47,7 @@ const page = () => {
                   <h3 className="font-semibold text-lg">Oladipupo Taiwo
 </h3>
                   <p className="text-[#E45F11]">
-                     Digital Media and Content Strategist
+                     Digital Media Executive
 
                   </p>
                 </div>
@@ -74,7 +74,7 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Oladipupo</h4>
               <p className="text-[#999] text-lg">
-              Oladipupo Taiwo is a creative and results-driven Digital Media and Content Strategist in the Media unit of our Marketing and Growth Department at BFG Global Consulting. With a deep understanding of digital trends and audience engagement, he develops compelling content strategies that enhance brand visibility and drive meaningful interactions.
+              Oladipupo Taiwo is a creative and results-driven Digital Media Executive in the Media unit of our Marketing and Growth Department at BFG Global Consulting. With a deep understanding of digital trends and audience engagement, he develops compelling content strategies that enhance brand visibility and drive meaningful interactions.
               </p>
               <br />
               <p className="text-[#999] text-lg">
