@@ -485,9 +485,9 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Oladipupo Taiwo</h3>
                   <p className="text-[#E45F11]">
-                    Digital Media and Content Strategist
+                    Digital Media Executive
                   </p>
-                  <Link href="/team/content-creator">
+                  <Link href="/team/media-executive">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
