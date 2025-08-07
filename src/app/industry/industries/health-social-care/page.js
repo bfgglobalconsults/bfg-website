@@ -59,7 +59,7 @@ const page = () => {
             </h3>
             <p className="text-white my-2">
               We provide a comprehensive suite of services tailored to the
-              unique challenges of the Entertainment & Creative Industry
+              unique challenges of the Health & Social Care industry
             </p>
             <div className="w-full">
               <Image

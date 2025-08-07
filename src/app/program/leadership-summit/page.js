@@ -141,7 +141,7 @@ const Page = () => {
           >
            
             <p className="text-[#999] my-4">
-              Whether you are looking to improve your organization&apos;s AI capabilities or seeking to elevate your career prospects, the AI Advantage program offers the resources and knowledge needed to succeed.
+              Whether you are looking to improve your organization&apos;s performance, enhance your leadership skills, or simply stay informed about the latest trends in the marketplace, the Emerging Marketplace Leadership Summit is an event you cannot afford to miss. 
             </p>
              <p className="font-semibold my-4">
            Join us at the next Emerging Marketplace Leadership Summit and be part of a movement dedicated to transforming Nigeria&apos;s marketplace for the better. Together, we can shape a future that is innovative, inclusive, and sustainable.

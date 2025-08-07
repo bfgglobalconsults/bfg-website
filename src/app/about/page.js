@@ -64,17 +64,7 @@ const Page = () => {
                   viewport={{ once: true }}
                   className="text-lg text-[#656565] my-3"
                 >
-                  BFG Global Consulting LLC (also trading as BFG Consults)
-                  offers custom solutions in software development, market
-                  research, strategy development, and workforce training. With
-                  offices in Nigeria and the United Kingdom, we offer our
-                  services globally as a solution partner to individuals,
-                  businesses, corporate organizations, and government agencies.
-                  Our business model is built on innovation, combining
-                  Consulting-as-a-Service (CaaS) and Software-as-a-Service
-                  (SaaS) offerings to individuals and businesses in navigating
-                  complex challenges, optimizing performance, and achieving
-                  sustainable growth across various industries
+                  BFG Global Consulting LLC (also trading as BFG Consults) provides tailored solutions in software development, market research, strategy development, and workforce training. With offices in Nigeria and the United Kingdom, we serve a global clientele, partnering with individuals, startups, SMEs, corporate organisations, and government agencies to deliver transformative outcomes.
                 </motion.p>
                 <motion.p
                   initial={{ y: 20, opacity: 0 }}
@@ -83,12 +73,16 @@ const Page = () => {
                   viewport={{ once: true }}
                   className="text-lg text-[#656565] my-3"
                 >
-                We are managed by a group of agile product leaders who are
-                experienced in delivering cutting-edge solutions designed to
-                meet the evolving needs of modern enterprises of any size. Our
-                clients range from large-profile brands to medium, small, and
-                start-up companies in Nigeria, India, Australia, Canada, the
-                United Kingdom, and the United States.
+                Our services are designed with a clear mission: <span className="text-black font-semibold">to secure industry relevance for African-owned businesses—both on the continent and across the diaspora—to thrive in a competitive, digital-first world.</span> From early-stage startups to growth-focused enterprises, we work with clients who are ready to innovate, scale, and lead within their industries.
+              </motion.p>
+              <motion.p
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  className="text-lg text-[#656565] my-3"
+              >
+                Our hybrid business model combines Consulting-as-a-Service (CaaS) and Software-as-a-Service (SaaS), enabling us to support clients in navigating complex challenges, optimising business performance, and achieving sustainable growth across various industries.
                 </motion.p>
             </div>
             </motion.div>
@@ -231,16 +225,10 @@ const Page = () => {
             <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
               <div className="w-[100%] lg:w-[60%]">
                 <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
-                  Your Growth Partner in a Changing Business Landscape
+                  Empowering African Businesses for Global Growth
                 </h3>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                  I am delighted to address you today as the Managing Partner
-                  and CEO of BFG Global Consulting Limited and introduce our
-                  firm. With great passion and commitment, our team at BFG
-                    Global Consulting is dedicated to assisting organizations
-                    from diverse industries in their pursuit of business growth.
-                    We aim to be your growth partners, guiding you towards the
-                    new opportunities of contemporary business.
+                 As the Managing Partner and CEO of BFG Global Consulting Limited, it is my pleasure to welcome you and introduce our firm, a company driven by a passion for growth, innovation, and transformation. At BFG, we are committed to partnering with individuals, startups, SMEs, and institutions, especially those led by African entrepreneurs and diaspora professionals, as they navigate today&apos;s fast-evolving business landscape.
                 </p>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
                   At BFG Global Consulting, we understand that the business
@@ -251,31 +239,15 @@ const Page = () => {
                     in.
                 </p>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                  Our expertise lies in deploying and managing innovative
-                    solutions that empower businesses and organizations to
-                    achieve growth. We firmly believe that success in todays
-                    marketplace requires a multidimensional approach, blending
-                    research, strategy, workforce training, and information
-                    technology. By operating at the intersection of these
-                    critical areas, we offer comprehensive consulting services
-                    that equip our clients with the tools they need to drive
-                    their success.
+                  In a world marked by constant change and digital disruption, we understand the unique challenges and opportunities faced by African-owned and diaspora-driven businesses seeking relevance, resilience, and growth. Our mission is to be the trusted partner that helps you seize these opportunities and thrive in your industry.
                 </p>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                  As we embark on this exciting journey, we invite you to join
-                    us in shaping the future of business growth. Whether you are
-                    a small startup seeking guidance or a well-established
-                    organization looking for fresh insights, BFG Global
-                    Consulting is here to support you every step of the way. Our
-                    team of experts are ready to listen, understand your unique
-                    challenges, and tailor solutions that align with your
-                    specific goals.
+                  We offer a unique blend of consulting and technology solutions, built around software development, market research, strategic advisory, and workforce training. This integrated approach empowers our clients across Africa and in key global markets to scale their ventures, build capacity, and unlock new value in competitive environments.
                 </p>
                 <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                    While you explore our business profile, we thank you for
-                    your attention, and we look forward to connecting with you
-                    soon. Together, let us embrace the possibilities and create
-                    a future of sustainable growth and success.
+                    At BFG, we don&apos;t just deliver services, we co-create solutions tailored to your goals. Whether you&apos;re an early-stage startup aiming to build a solid foundation or an established organisation looking for fresh insights and scalable systems, our team is equipped to guide you with precision and care.
+As you explore our business profile, we thank you for your time and interest. We look forward to partnering with you to create a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
+
                 </p>
               </div>
               <div className="flex flex-col">
