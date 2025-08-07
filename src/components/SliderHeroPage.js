@@ -68,11 +68,11 @@ const HeroSection1 = () => (
         <div className="max-w-4xl space-y-6">
           <h1 className="font-sans text-4xl font-bold tracking-tight text-[#333] sm:text-5xl md:text-6xl">
             <span className="block text-4xl md:text-6xl font-light mb-2">
-              Democratizing{" "}
+              Democratising{" "}
             </span>
             Management Consulting
             <br />
-            and Technology Solutions for African-Owned Businesses
+            and Technology Solutions for African Businesses
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
           We are at the intersection of market research, strategy advisory, workforce training, and software development.

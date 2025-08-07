@@ -73,7 +73,7 @@ const Page = () => {
                   viewport={{ once: true }}
                   className="text-lg text-[#656565] my-3"
                 >
-                Our services are designed with a clear mission: <span className="text-black font-semibold">to secure industry relevance for African-owned businesses—both on the continent and across the diaspora—to thrive in a competitive, digital-first world.</span> From early-stage startups to growth-focused enterprises, we work with clients who are ready to innovate, scale, and lead within their industries.
+                Our services are designed with a clear mission: <span className="text-black italic">To secure industry relevance for African-owned businesses—both on the continent and across the diaspora—to thrive in a competitive, digital-first world.</span> From early-stage startups to growth-focused enterprises, we work with clients who are ready to innovate, scale, and lead within their industries.
               </motion.p>
               <motion.p
                   initial={{ y: 20, opacity: 0 }}
