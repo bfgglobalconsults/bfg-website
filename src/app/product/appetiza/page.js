@@ -60,7 +60,6 @@ const NotifyModal = ({ isOpen, onClose, onSubmit }) => {
       setSubmitStatus("error");
       toast.error('Form Submission Failed');
     }
-
     // Send to Mailchimp via /api/product
     try {
       const [firstName, ...lastNameArr] = form.name.split(" ");

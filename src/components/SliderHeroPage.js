@@ -72,7 +72,7 @@ const HeroSection1 = () => (
             </span>
             Management Consulting
             <br />
-            and Technology Solutions across Borders
+            and Technology Solutions for African-Owned Businesses
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
           We are at the intersection of market research, strategy advisory, workforce training, and software development.
@@ -191,7 +191,7 @@ const HeroSection2 = () => (
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
             Driving transformative solutions that empower innovation, growth,
-            efficiency, and success for Startups, SMEs and Large corporations.
+            efficiency, and success for African Startups, SMEs and Large corporations.
           </p>
           <div className="pt-4">
             <Link

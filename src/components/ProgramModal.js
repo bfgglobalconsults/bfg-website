@@ -9,6 +9,7 @@ import {
   Transition,
   TransitionChild,
 } from "@headlessui/react";
+import toast from "react-hot-toast";
 
 const ProgramModal = ({ isOpen, onClose, program }) => {
   const [formData, setFormData] = useState({
@@ -53,9 +54,34 @@ const ProgramModal = ({ isOpen, onClose, program }) => {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    }
+    catch (error) {
       setSubmitStatus('error');
-    } finally {
+    }
+    // Send to Mailchimp via /api/product
+        try {
+          const [firstName, ...lastNameArr] = formData.name.split(" ");
+          const lastName = lastNameArr.join(" ");
+          await fetch("/api/programs", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              email: formData.email,
+              firstName: firstName || formData.name,
+              lastName: lastName || "",
+              phone: formData.phone,
+              company: formData.company,
+              title: formData.title,
+              message: formData.message,
+            }),
+          });
+          // Optionally show a toast
+          // toast.success("Added to waitlist!");
+        } catch (err) {
+          console.error("Mailchimp error:", err);
+  toast.error("Mailchimp subscription failed");
+        }
+    finally {
       setIsSubmitting(false);
     }
   };
