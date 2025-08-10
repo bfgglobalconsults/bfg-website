@@ -33,10 +33,10 @@ const SliderHeroPage = () => {
     <div className="overflow-hidden max-w-[100vw]">
       <Slider {...settings}>
         <div>
-          <HeroSection2 />
+          <HeroSection1 />
         </div>
         <div>
-          <HeroSection1 />
+          <HeroSection2 />
         </div>
       </Slider>
     </div>
