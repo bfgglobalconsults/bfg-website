@@ -123,7 +123,7 @@ export default function CustomerReview({ unit = "" }) {
             <div className="block sm:block lg:hidden">
               {testimonials.length > 0 && (
                 <div className="flex justify-center">
-                  <div className="bg-white border-2 border-[#E26015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
+                  <div className="bg-white border-2 border-[#E26015] rounded-xl p-8  flex flex-col items-center text-center transition-all duration-300 w-full max-w-xs mx-auto">
                     {testimonials[currentIndex] && (
                       <>
                         <Avatar name={testimonials[currentIndex].name} />
@@ -151,7 +151,7 @@ export default function CustomerReview({ unit = "" }) {
                     return (
                       <div
                         key={idx}
-                        className="bg-white border-2 border-[#E26015] rounded-xl p-8 shadow-2xl flex flex-col items-center text-center transition-all duration-300"
+                        className="bg-white border-2 border-[#E26015] rounded-xl p-8  flex flex-col items-center text-center transition-all duration-300"
                       >
                         <Avatar name={review.name} />
                         <StarRating rating={review.rating} />
