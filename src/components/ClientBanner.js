@@ -25,7 +25,7 @@ const ClientBanner = () => {
             </div>
             <div className="w-[100%] lg:w-[40%]">
               <p className="text-white text-xl">
-                Discover how businesses like yours are driving change and thriving with our high-impact sustainability solutions.
+                Discover how businesses like yours are driving change and thriving with our high-impact consulting and technology solutions.
               </p>
             </div>
             <div className="w-[100%] lg:w-[30%]">
