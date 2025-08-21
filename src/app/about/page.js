@@ -19,28 +19,21 @@ const Page = () => {
 
   return (
     <>
-      
-        <div className="lg:mt-[150px] p-12">
-          
+      <div className="lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
           About Us
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 items-center justify-between my-4">
-              <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl"
-              >
+          <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
             Our Company
           </h3>
-              <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl"
-              >
-            We are more than consultants; we are architects of
-            growth, innovators of products, & your dedicated partners in
-            success.
+          <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
+            We are more than consultants; we are architects of growth,
+            innovators of products, & your dedicated partners in success.
           </p>
         </div>
 
-
-          <div className="relative h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
-          >
+        <div className="relative h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
             src={Banner}
             alt="about-banner"
@@ -49,133 +42,141 @@ const Page = () => {
         </div>
 
         <div className="py-[30px]">
-            <motion.div
-              initial={{ y: 30, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-              className=""
-            >
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className=""
+          >
             <div className="w-full my-4">
-                <motion.p
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: true }}
-                  className="text-lg text-[#656565] my-3"
-                >
-                  BFG Global Consulting LLC (also trading as BFG Consults) provides tailored solutions in software development, market research, strategy development, and workforce training. With offices in Nigeria and the United Kingdom, we serve a global clientele, partnering with individuals, startups, SMEs, corporate organisations, and government agencies to deliver transformative outcomes.
-                </motion.p>
-                <motion.p
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="text-lg text-[#656565] my-3"
-                >
-                Our services are designed with a clear mission: <span className="text-black italic">To secure industry relevance for African-owned businesses—both on the continent and across the diaspora—to thrive in a competitive, digital-first world.</span> From early-stage startups to growth-focused enterprises, we work with clients who are ready to innovate, scale, and lead within their industries.
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-lg text-[#656565] my-3"
+              >
+                At BFG Global Consulting (BFG Consults), our mission is to
+                democratize world-class management consulting and technology
+                solutions to African-owned businesses both locally and across
+                the diaspora—helping them, from startups to established
+                corporations, innovate, grow, and thrive in today&apos;s dynamic
+                markets.{" "}
               </motion.p>
               <motion.p
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.3 }}
-                  viewport={{ once: true }}
-                  className="text-lg text-[#656565] my-3"
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-[#656565] my-3"
               >
-                Our hybrid business model combines Consulting-as-a-Service (CaaS) and Software-as-a-Service (SaaS), enabling us to support clients in navigating complex challenges, optimising business performance, and achieving sustainable growth across various industries.
+                We deliver custom solutions in software development, market
+                research, strategy advisory, and workforce training, blending
+                Consulting-as-a-Service (CaaS) with Software-as-a-Service (SaaS)
+                to make expertise and innovation more accessible, scalable, and
+                impactful for African-owned enterprises and organizations
+                worldwide.{" "}
+              </motion.p>
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-lg text-[#656565] my-3"
+              >
+                With offices in Nigeria and the United Kingdom, our team of
+                agile product leaders brings deep expertise in delivering
+                cutting-edge solutions that unlock opportunities, optimize
+                performance, and drive sustainable growth for clients across
+                Africa, Europe, Asia, North America, and Australia.{" "}
+              </motion.p>
+            </div>
+          </motion.div>
+
+          <div ref={statsRef} className="flex flex-col lg:flex-row gap-6">
+            <motion.div
+              initial={{ x: -30, opacity: 0 }}
+              animate={
+                isStatsInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }
+              }
+              transition={{ duration: 0.8 }}
+              className="w-[100%] lg:w-[50%]"
+            >
+              <div className="my-10">
+                <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
+                  Business Stats
+                </span>
+              </div>
+              <div>
+                <motion.h3
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={
+                    isStatsInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }
+                  }
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl"
+                >
+                  Our services have consistently demonstrated success in
+                  enhancing business performance.
+                </motion.h3>
+                <motion.p
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={
+                    isStatsInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }
+                  }
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="text-[#999] my-5 text-lg lg:text-xl"
+                >
+                  We help you unleash the power within your business,
+                  transforming potential into performance through tailored
+                  strategies and innovative solutions that fuel growth and
+                  success.
                 </motion.p>
-            </div>
+                <motion.a
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={
+                    isStatsInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }
+                  }
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  whileHover={{ scale: 1.05 }}
+                  href="/bfg-about-us.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
+                    <span className="text-white text-md font-semibold">
+                      View Our Profile
+                    </span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="rgba(255,255,255,1)"
+                      >
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </motion.a>
+              </div>
             </motion.div>
+            <motion.div
+              initial={{ x: 30, opacity: 0 }}
+              animate={
+                isStatsInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }
+              }
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="w-[100%] lg:w-[50%]"
+            >
+              <CounterSection />
+            </motion.div>
+          </div>
 
-            <div ref={statsRef} className="flex flex-col lg:flex-row gap-6">
-              <motion.div
-                initial={{ x: -30, opacity: 0 }}
-                animate={
-                  isStatsInView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }
-                }
-                transition={{ duration: 0.8 }}
-                className="w-[100%] lg:w-[50%]"
-              >
-                <div className="my-10">
-                  <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
-                    Business Stats
-                  </span>
-                </div>
-                <div>
-                  <motion.h3
-                    initial={{ y: 30, opacity: 0 }}
-                    animate={
-                      isStatsInView
-                        ? { y: 0, opacity: 1 }
-                        : { y: 30, opacity: 0 }
-                    }
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl"
-                  >
-                    Our services have consistently demonstrated success in
-                    enhancing business performance.
-                  </motion.h3>
-                  <motion.p
-                    initial={{ y: 30, opacity: 0 }}
-                    animate={
-                      isStatsInView
-                        ? { y: 0, opacity: 1 }
-                        : { y: 30, opacity: 0 }
-                    }
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-[#999] my-5 text-lg lg:text-xl"
-                  >
-                    We help you unleash the power within your business,
-                    transforming potential into performance through tailored
-                    strategies and innovative solutions that fuel growth and
-                    success.
-                  </motion.p>
-                  <motion.a
-                    initial={{ y: 30, opacity: 0 }}
-                    animate={
-                      isStatsInView
-                        ? { y: 0, opacity: 1 }
-                        : { y: 30, opacity: 0 }
-                    }
-                    transition={{ duration: 0.8, delay: 0.6 }}
-                    whileHover={{ scale: 1.05 }}
-                    href="/bfg-about-us.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=""
-                  >
-                    <button className="bg-[#041926] py-2 px-6 rounded-xl hover:bg-[#E26015] flex gap-2 items-center">
-                      <span className="text-white text-md font-semibold">
-                        View Our Profile
-                      </span>
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                          fill="rgba(255,255,255,1)"
-                        >
-                          <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </motion.a>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ x: 30, opacity: 0 }}
-                animate={
-                  isStatsInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }
-                }
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="w-[100%] lg:w-[50%]"
-              >
-                <CounterSection />
-              </motion.div>
-            </div>
-
-            {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
+          {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
                   <div className="flex flex-col lg:flex-row justify-center gap-10">
                     <div>
                       <h3 className="text-4xl text-white font-bold">899+</h3>
@@ -195,9 +196,8 @@ const Page = () => {
                     </div>
                   </div>
                 </div> */}
-            
-             
-            {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
+
+          {/* <div className="bg-[#E26015] px-3 py-6 rounded-2xl">
                   <div className="flex flex-col lg:flex-row justify-center gap-10">
                     <div>
                       <h3 className="text-4xl text-white font-bold">899+</h3>
@@ -217,82 +217,100 @@ const Page = () => {
                     </div>
                   </div>
                 </div> */}
-            <div className="my-10">
-              <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
-                CEO Message
-              </span>
+          <div className="my-10">
+            <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold my-4">
+              CEO Message
+            </span>
+          </div>
+          <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
+            <div className="w-[100%] lg:w-[60%]">
+              <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
+                Empowering African Businesses for Global Growth
+              </h3>
+              <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                As the Managing Partner and CEO of BFG Global Consulting
+                Limited, it is my pleasure to welcome you and introduce our
+                firm, a company driven by a passion for growth, innovation, and
+                transformation. At BFG, we are committed to partnering with
+                individuals, startups, SMEs, and institutions, especially those
+                led by African entrepreneurs and diaspora professionals, as they
+                navigate today&apos;s fast-evolving business landscape.
+              </p>
+              <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                At BFG Global Consulting, we understand that the business
+                landscape is constantly evolving, presenting both challenges and
+                prospects for organizations worldwide. In this fast-paced
+                environment, it is crucial for businesses to adapt and thrive to
+                remain competitive. Thats where we come in.
+              </p>
+              <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                In a world marked by constant change and digital disruption, we
+                understand the unique challenges and opportunities faced by
+                African-owned and diaspora-driven businesses seeking relevance,
+                resilience, and growth. Our mission is to be the trusted partner
+                that helps you seize these opportunities and thrive in your
+                industry.
+              </p>
+              <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                We offer a unique blend of consulting and technology solutions,
+                built around software development, market research, strategic
+                advisory, and workforce training. This integrated approach
+                empowers our clients across Africa and in key global markets to
+                scale their ventures, build capacity, and unlock new value in
+                competitive environments.
+              </p>
+              <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                At BFG, we don&apos;t just deliver services, we co-create
+                solutions tailored to your goals. Whether you&apos;re an
+                early-stage startup aiming to build a solid foundation or an
+                established organisation looking for fresh insights and scalable
+                systems, our team is equipped to guide you with precision and
+                care. As you explore our business profile, we thank you for your
+                time and interest. We look forward to partnering with you to
+                create a future defined by sustainable growth, innovation, and
+                industry relevance—across borders and beyond limits.
+              </p>
             </div>
-            <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
-              <div className="w-[100%] lg:w-[60%]">
-                <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
-                  Empowering African Businesses for Global Growth
-                </h3>
-                <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                 As the Managing Partner and CEO of BFG Global Consulting Limited, it is my pleasure to welcome you and introduce our firm, a company driven by a passion for growth, innovation, and transformation. At BFG, we are committed to partnering with individuals, startups, SMEs, and institutions, especially those led by African entrepreneurs and diaspora professionals, as they navigate today&apos;s fast-evolving business landscape.
-                </p>
-                <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                  At BFG Global Consulting, we understand that the business
-                  landscape is constantly evolving, presenting both challenges
-                    and prospects for organizations worldwide. In this
-                    fast-paced environment, it is crucial for businesses to
-                    adapt and thrive to remain competitive. Thats where we come
-                    in.
-                </p>
-                <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                  In a world marked by constant change and digital disruption, we understand the unique challenges and opportunities faced by African-owned and diaspora-driven businesses seeking relevance, resilience, and growth. Our mission is to be the trusted partner that helps you seize these opportunities and thrive in your industry.
-                </p>
-                <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                  We offer a unique blend of consulting and technology solutions, built around software development, market research, strategic advisory, and workforce training. This integrated approach empowers our clients across Africa and in key global markets to scale their ventures, build capacity, and unlock new value in competitive environments.
-                </p>
-                <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                    At BFG, we don&apos;t just deliver services, we co-create solutions tailored to your goals. Whether you&apos;re an early-stage startup aiming to build a solid foundation or an established organisation looking for fresh insights and scalable systems, our team is equipped to guide you with precision and care.
-As you explore our business profile, we thank you for your time and interest. We look forward to partnering with you to create a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
-
+            <div className="flex flex-col">
+              <div className="">
+                <Image
+                  src={Picture}
+                  alt="festus-bello"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-white  p-4 shadow-md rounded-lg">
+                <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
+                <p className="text-[#E45F11] font-semibold">
+                  Managing Partner / CEO
                 </p>
               </div>
-              <div className="flex flex-col">
-                  <div className="">
-                  <Image
-                    src={Picture}
-                    alt="festus-bello"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white  p-4 shadow-md rounded-lg">
-                    <h3 className="font-semibold text-lg">
-                      Festus BELLO, mba.
-                    </h3>
-                  <p className="text-[#E45F11] font-semibold">
-                    Managing Partner / CEO
-                  </p>
-                </div>
-                <div className="my-8">
-                  <a href="mailto:festus.bello@bfgconsults.com">
-                    <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                        >
-                          <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
-                        </svg>
-                      </span>
-                      <span>Get in Touch</span>
-                    </button>
-                  </a>
-                </div>
+              <div className="my-8">
+                <a href="mailto:festus.bello@bfgconsults.com">
+                  <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                      >
+                        <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
+                      </svg>
+                    </span>
+                    <span>Get in Touch</span>
+                  </button>
+                </a>
               </div>
-            </div>
-            <hr className="my-2" />
-            <div className="my-4">
-              <OurStand />
             </div>
           </div>
+          <hr className="my-2" />
+          <div className="my-4">
+            <OurStand />
+          </div>
         </div>
-      
+      </div>
     </>
   );
 };
