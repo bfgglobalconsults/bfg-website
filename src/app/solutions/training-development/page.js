@@ -446,7 +446,7 @@ const Page = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
-                    <h3 className="font-semibold text-lg">Justina Aderinluwo</h3>
+                    <h3 className="font-semibold text-lg">Isaiah Okwori</h3>
                                      <p className="text-[#E45F11]">Training and Development Analyst</p>
                                    <Link href="/team/training-analyst">
                                        <button className="text-[#999] text-cursor text-md underline hover:text-black">Read More</button>

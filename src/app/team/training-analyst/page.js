@@ -32,7 +32,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Justina Aderinluwo</h3>
+            <h3 className="text-3xl font-semibold my-8">Isaiah Okwori</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -45,8 +45,7 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Justina Aderinluwo
-</h3>
+                  <h3 className="font-semibold text-lg">Isaiah Okwori</h3>
                   <p className="text-[#E45F11]">
                     Training and Development Analyst
                   </p>
@@ -72,24 +71,22 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Justina </h4>
+              <h4 className="text-xl font-semibold mb-6">About Isaiah</h4>
               <p className="text-[#999] text-lg">
-                Justina is an enthusiastic Junior Training and Development
-                Analyst with a passion for fostering learning and professional
-                growth within organizations. Skilled in supporting the design,
-                implementation, and evaluation of training programs that enhance
-                employee skills and performance.
+                Isaiah Okwori is a dynamic Training and Development Analyst at BFG Global Consulting, where he designs and implements capacity-building initiatives that empower organizations and communities to achieve sustainable impact. With a strong background in international development, project management, and policy analysis, he bridges technical expertise with practical strategies to drive organizational growth and social change.
+
               </p>
               <br />
               <p className="text-[#999] text-lg">
-                Proficient in assisting with needs assessments, coordinating
-                training sessions, and leveraging learning technologies to
-                deliver engaging and impactful learning experiences. He is adept
-                at gathering feedback, analyzing training outcomes, and
-                contributing to the continuous improvement of development
-                initiatives.
+                His work spans critical areas including climate resilience, health equity, and strategic communications, where he has contributed to research-driven solutions and program strategies that address complex development challenges. Passionate about advancing equity and sustainability, Isaiah leverages his analytical and communication skills to translate insights into actionable policies and training programs.
+
               </p>
               <br />
+              <p className="text-[#999] text-lg">
+                Isaiah is committed to fostering inclusive development practices and equipping leaders with the tools to navigate evolving global challenges.
+
+
+              </p>
             </div>
           </div>
         </div>

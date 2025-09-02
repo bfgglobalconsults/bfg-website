@@ -12,6 +12,7 @@ import Logo from "@/app/bfg-logo.png";
 import WhiteLogo from "@/app/bfg-whitelogo.png";
 import MediaQuery from "./media-query";
 import { navigation_links } from "@/constants/navigation-constant";
+import RegionSwitcher from "./RegionSwitcher";
 
 const FixedHeader = () => {
   const [active, setActive] = useState(false);
@@ -133,6 +134,9 @@ const FixedHeader = () => {
                   </ul>
                 </div>
                 <div>
+                  <RegionSwitcher />
+                </div>
+                <div>
                   <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
                     <Link href="/contact">Discuss Your Project</Link>
                   </button>
@@ -217,7 +221,10 @@ const FixedHeader = () => {
                       )
                     )}
                   </ul>
-                </div>
+                  </div>
+                  <div>
+                    <RegionSwitcher />
+                  </div>
                 <div>
                   <button className="bg-[#E26015] hover:bg-black hover:text-white text-white border-[#E26015] font-semibold  py-2 px-4 rounded-lg">
                     <Link href="/contact">Discuss Your Project</Link>
