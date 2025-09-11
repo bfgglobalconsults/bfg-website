@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { FiCalendar, FiCheckCircle, FiClock, FiXCircle, FiFilter, FiSearch, FiPlus, FiEye } from 'react-icons/fi';
-import axios from 'axios';
 import { toast } from 'react-hot-toast';
+import httpService from '@/services/httpService';
 import { CldImage, CldUploadButton } from 'next-cloudinary';
+import Link from 'next/link';
 
 const StatCard = ({ icon, title, value, color }) => (
   <div className="bg-white p-6 rounded-lg shadow-md flex items-center space-x-4">
@@ -88,6 +89,20 @@ const LeaveDetailsModal = ({ isOpen, onClose, leaveData, userData, isAdmin, hand
                 <p className="text-sm text-gray-600">Description</p>
                 <p className="font-medium">{leaveData.description}</p>
               </div>
+               <div>
+                <p className="text-sm text-gray-600">Employee Name</p>
+                <p className="font-medium">{leaveData.employee_id?.fullName || "N/A"}</p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-600">Employee Email</p>
+                <p className="font-medium">{leaveData.employee_id?.email|| "N/A"}</p>
+              </div>
+             <div>
+                              <p className="text-sm text-gray-600">Document</p>
+
+              <Link href={leaveData.attachment|| "N/A"} target="_blank" className="text-md text-blue-600 text-undeline">View Attachment</Link> 
+              </div>
+              
               <div>
                 <p className="text-sm text-gray-600">Status</p>
                 <LeaveStatusBadge status={leaveData.status} />
@@ -102,7 +117,7 @@ const LeaveDetailsModal = ({ isOpen, onClose, leaveData, userData, isAdmin, hand
           {/* User Information */}
           {userData && (
             <div className="bg-blue-50 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold mb-4 text-gray-800">Employee Information</h3>
+              <h3 className="text-lg font-semibold mb-4 text-gray-800">Creator Information</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm text-gray-600">Full Name</p>
@@ -184,15 +199,7 @@ const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
     setLoading(true);
     
     try {
-      const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/leaves/apply`,
-        formData,
-        {
-          headers: {
-            'Content-Type': 'application/json',
-          }
-        }
-      );
+      const response = await httpService.post('/leaves/apply', formData);
       
       console.log('Leave application submitted:', response.data);
       
@@ -232,7 +239,7 @@ const LeaveApplicationForm = ({ isOpen, onClose, onSubmit }) => {
 
    useEffect(() => {
       if (isOpen) {
-        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`)
+        httpService.get('/employee/getEmployees')
           .then(res => setEmployees(res.data.data || []))
           .catch(() => setEmployees([]));
       }
@@ -408,6 +415,14 @@ const LeaveManagementPage = () => {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [loadingUser, setLoadingUser] = useState(false);
   const [userRole, setUserRole] = useState(null);
+  // State for pagination
+const [currentPage, setCurrentPage] = useState(1);
+const [rowsPerPage, setRowsPerPage] = useState(5);
+
+// Pagination logic
+const indexOfLastRow = currentPage * rowsPerPage;
+const indexOfFirstRow = indexOfLastRow - rowsPerPage;
+
 
   // Check if user is admin or super_admin
   const isAdmin = userRole === 'admin' || userRole === 'super_admin';
@@ -416,8 +431,7 @@ const LeaveManagementPage = () => {
   useEffect(() => {
     const fetchUserRole = async () => {
       try {
-        // You can get user role from your auth context or API
-        // For now, we'll check if there's a user in localStorage or context
+        
         const user = JSON.parse(localStorage.getItem('user') || '{}');
         setUserRole(user.role || 'user');
       } catch (error) {
@@ -428,31 +442,29 @@ const LeaveManagementPage = () => {
     fetchUserRole();
   }, []);
 
+  // Define fetchLeaves function
+  const fetchLeaves = async () => {
+    if (!userRole) return; // Don't fetch if userRole is not set yet
+    
+    try {
+      setLoading(true);
+      let endpoint = '/leaves/my-leaves';
+      if (userRole === 'admin' || userRole === 'super_admin') {
+        endpoint = '/leaves/all';
+      }
+      const response = await httpService.get(endpoint);
+      setLeaveRequests(response.data.data || []);
+      console.log('fetch leaves response:', response.data.data);
+    } catch (error) {
+      console.error('Error fetching leaves:', error);
+      toast.error('Failed to fetch leave requests');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Fetch leaves from API
   useEffect(() => {
-    const fetchLeaves = async () => {
-      try {
-        setLoading(true);
-        let endpoint = '/api/v1/leaves/my-leaves';
-        if (userRole === 'admin' || userRole === 'super_admin') {
-          endpoint = '/api/v1/leaves/all';
-        }
-        const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_BASE_URL}${endpoint}`,
-          {
-            headers: {
-              'Content-Type': 'application/json',
-            }
-          }
-        );
-        setLeaveRequests(response.data.data || []);
-      } catch (error) {
-        console.error('Error fetching leaves:', error);
-        toast.error('Failed to fetch leave requests');
-      } finally {
-        setLoading(false);
-      }
-    };
     fetchLeaves();
   }, [userRole]);
 
@@ -460,14 +472,7 @@ const LeaveManagementPage = () => {
   const fetchUserDetails = async (userId) => {
     try {
       setLoadingUser(true);
-      const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/users/current-user/${userId}`,
-        {
-          headers: {
-            'Content-Type': 'application/json',
-          }
-        }
-      );
+      const response = await httpService.get(`/users/current-user`);
       
       console.log('Fetched user:', response.data);
       return response.data.data;
@@ -494,14 +499,9 @@ const LeaveManagementPage = () => {
   // Update leave status (approve/reject)
   const handleStatusChange = async (leaveId, newStatus) => {
     try {
-      const response = await axios.put(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/leaves/${leaveId}/status`,
-        { status: newStatus },
-        {
-          headers: {
-            'Content-Type': 'application/json',
-          }
-        }
+      const response = await httpService.put(
+        `/leaves/${leaveId}/status`,
+        { status: newStatus }
       );
       
       console.log('Status updated:', response.data);
@@ -525,21 +525,6 @@ const LeaveManagementPage = () => {
 
   const handleLeaveSubmit = (newLeave) => {
     // Refresh the leaves list after successful submission
-    const fetchLeaves = async () => {
-      try {
-        const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/leaves/my-leaves`,
-          {
-            headers: {
-              'Content-Type': 'application/json',
-            }
-          }
-        );
-        setLeaveRequests(response.data.data || []);
-      } catch (error) {
-        console.error('Error refreshing leaves:', error);
-      }
-    };
     fetchLeaves();
   };
 
@@ -549,6 +534,9 @@ const LeaveManagementPage = () => {
 
   const pendingCount = leaveRequests.filter(req => req.status === 'Pending').length;
   const approvedCount = leaveRequests.filter(req => req.status === 'Approved').length;
+  const currentRequests = filteredRequests.slice(indexOfFirstRow, indexOfLastRow);
+  const totalPages = Math.ceil(filteredRequests.length / rowsPerPage);
+
 
   // Format date helper function
   const formatDate = (dateString) => {
@@ -636,7 +624,7 @@ const LeaveManagementPage = () => {
               </tr>
             </thead>
             <tbody className="divide-y">
-              {filteredRequests.map(request => (
+              {currentRequests.map(request => (
                 <tr key={request._id}>
                   <td className="p-4">
                     <p className="font-semibold text-gray-800">{request.leave_type}</p>
@@ -685,6 +673,69 @@ const LeaveManagementPage = () => {
           </div>
         )}
       </div>
+      {/* Pagination Controls */}
+{filteredRequests.length > 0 && (
+  <div className="flex flex-col md:flex-row justify-between items-center p-4 border-t bg-gray-50 gap-2">
+    {/* Summary */}
+    <p className="text-sm text-gray-600">
+      Showing {indexOfFirstRow + 1} – {Math.min(indexOfLastRow, filteredRequests.length)} of {filteredRequests.length}
+    </p>
+
+    {/* Rows per page selector */}
+    <div className="flex items-center space-x-2">
+      <label htmlFor="rowsPerPage" className="text-sm text-gray-600">
+        Rows per page:
+      </label>
+      <select
+        id="rowsPerPage"
+        value={rowsPerPage}
+        onChange={(e) => {
+          setRowsPerPage(Number(e.target.value));
+          setCurrentPage(1); // reset to first page
+        }}
+        className="border rounded-md px-2 py-1 text-sm"
+      >
+        {[5, 10, 20, 50].map((size) => (
+          <option key={size} value={size}>
+            {size}
+          </option>
+        ))}
+      </select>
+    </div>
+
+    {/* Pagination buttons */}
+    <div className="flex space-x-2">
+      <button
+        onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+        disabled={currentPage === 1}
+        className="px-3 py-1 border rounded-md text-gray-600 hover:bg-gray-100 disabled:opacity-50"
+      >
+        Previous
+      </button>
+      {Array.from({ length: totalPages }, (_, i) => (
+        <button
+          key={i + 1}
+          onClick={() => setCurrentPage(i + 1)}
+          className={`px-3 py-1 border rounded-md ${
+            currentPage === i + 1
+              ? "bg-blue-600 text-white border-blue-600"
+              : "text-gray-600 hover:bg-gray-100"
+          }`}
+        >
+          {i + 1}
+        </button>
+      ))}
+      <button
+        onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+        disabled={currentPage === totalPages}
+        className="px-3 py-1 border rounded-md text-gray-600 hover:bg-gray-100 disabled:opacity-50"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+)}
+
 
       {/* Leave Application Form Modal */}
       <LeaveApplicationForm

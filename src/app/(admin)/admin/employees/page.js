@@ -20,67 +20,6 @@ import AddDepartmentForm from "@/components/admin-component/department-form/AddD
 import axios from "axios";
 
 
-
-
-  
-
-const employeeData = [
-  {
-    id: 1,
-    name: "John Ogbe",
-    ID: "BFG/IIT/B001",
-    email: "john.ogbe@gmail.com",
-    phone: "+2347032145667",
-    department: "IT",
-    jobTitle: "Software Engineer",
-    hireDate: "May 21, 2023",
-    status: "Active",
-  },
-  {
-    id: 2,
-    name: "Jeremiah Gyang",
-    ID: "BFG/IIT/A007",
-    email: "j.gyang@gmail.com",
-    phone: "+2348082145667",
-    department: "IT",
-    jobTitle: "Product Designer",
-    hireDate: "July 25, 2023",
-    status: "Active",
-  },
-  {
-    id: 3,
-    name: "Daniella Okereke",
-    ID: "BFG/BSO/A002",
-    email: "daniellaokereke@gmail.com",
-    phone: "+2347032145997",
-    department: "Business Strategy",
-    jobTitle: "Business Strategist",
-    hireDate: "April 11, 2022",
-    status: "Leave",
-  },
-  {
-    id: 4,
-    name: "Chioma Lizzy",
-    ID: "BFG/TD/A004",
-    email: "chi.lizzy@gmail.com",
-    phone: "+2347032145667",
-    department: "Training & Development",
-    jobTitle: "Associate, Training Officer",
-    hireDate: "Jan 21, 2024",
-    status: "Suspended",
-  },
-  {
-    id: 5,
-    name: "David Beckham",
-    ID: "BFG/IIT/A007",
-    email: "davidb07@gmail.com",
-    phone: "+2349032141992",
-    department: "IT",
-    jobTitle: "Software Engineer",
-    hireDate: "August 21, 2023",
-    status: "Active",
-  },
-];
 const EmployeePage = () => {
   const [employees, setEmployees] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -153,7 +92,7 @@ const EmployeePage = () => {
 
   return (
     <>
-    <div className="w-full p-4">
+    <div className="p-8 bg-gray-50 min-h-screen">
      
 
       <div className="flex justify-between">
@@ -286,13 +225,13 @@ const EmployeePage = () => {
       </div>
       <div className="flex gap-4 my-4">
         <div>
-          <TotalEmployeeCard />
+          <TotalEmployeeCard employees={employees} />
         </div>
         <div>
           <TotalDepartmentCard />
         </div>
       </div>
-      <div className="w-full">
+       <div className="max-w-5xl">
         <div className="relative overflow-x-auto  sm:rounded-lg">
           <div className="flex items-center justify-between my-3 p-2 flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
             <div>
@@ -426,10 +365,10 @@ const EmployeePage = () => {
                   </div>
               <div className="w-full flex gap-4 my-4">
                   <div className="w-full">
-                      <DepartmentTable />
+                       <DepartmentTable /> 
                   </div>
               </div>
-        </div>
+        </div> 
       </div>
 
       {editModalOpen && (

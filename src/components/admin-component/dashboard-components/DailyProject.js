@@ -1,46 +1,93 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import analyticsService from "@/services/analyticsService";
 
-const DayProject = [
-  {
-    id: 1,
-    name: "Create a user flow of social application design",
-    checked: true,
-    status: "Completed",
-  },
-  {
-    id: 2,
-    name: "Create a social application ",
-    checked: false,
-    status: "On going",
-  },
-  {
-    id: 3,
-    name: "Landing page design for Fintech project of singapore",
-    checked: false,
-    status: "On going",
-  },
-  {
-    id: 4,
-    name: "Interactive prototype for app screens of deltamine project",
-    checked: false,
-    status: "Delayed",
-  },
-  {
-    id: 5,
-    name: "Interactive prototype for app screens of deltamine project",
-    checked: true,
-    status: "Completed",
-  },
-];
 const DailyProject = () => {
-  const inProgressProjects = DayProject.filter(
+  const [dayProjects, setDayProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [tab, settab] = useState("All");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const dailyData = await analyticsService.fetchDailyProjects();
+        setDayProjects(dailyData.projects || []);
+      } catch (err) {
+        setError(err.message);
+        // Fallback data
+        setDayProjects([
+          {
+            id: 1,
+            name: "Create a user flow of social application design",
+            checked: true,
+            status: "Completed",
+          },
+          {
+            id: 2,
+            name: "Create a social application ",
+            checked: false,
+            status: "On going",
+          },
+          {
+            id: 3,
+            name: "Landing page design for Fintech project of singapore",
+            checked: false,
+            status: "On going",
+          },
+          {
+            id: 4,
+            name: "Interactive prototype for app screens of deltamine project",
+            checked: false,
+            status: "Delayed",
+          },
+          {
+            id: 5,
+            name: "Interactive prototype for app screens of deltamine project",
+            checked: true,
+            status: "Completed",
+          },
+        ]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const inProgressProjects = dayProjects.filter(
     (project) => project.status === "On going"
   );
-  const completedProjects = DayProject.filter(
+  const completedProjects = dayProjects.filter(
     (project) => project.status === "Completed"
   );
-  const [tab, settab] = useState("All");
+  if (loading) {
+    return (
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg p-3">
+        <div className="animate-pulse">
+          <div className="flex gap-x-[24px] my-4 border-b border-b-[#efeff4]">
+            <div className="h-4 bg-gray-200 rounded w-8"></div>
+            <div className="h-4 bg-gray-200 rounded w-16"></div>
+            <div className="h-4 bg-gray-200 rounded w-16"></div>
+          </div>
+          <div className="space-y-3">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <div key={i} className="flex items-center justify-between">
+                <div className="flex gap-2">
+                  <div className="h-4 w-4 bg-gray-200 rounded"></div>
+                  <div className="h-4 bg-gray-200 rounded w-48"></div>
+                </div>
+                <div className="h-4 bg-gray-200 rounded w-16"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="">
@@ -88,7 +135,7 @@ const DailyProject = () => {
           <div className="my-4">
             {tab === "All" && (
               <div>
-                {DayProject.map((project) => {
+                {dayProjects.map((project) => {
                   return (
                     <>
                       <div className="flex items-center justify-between">
