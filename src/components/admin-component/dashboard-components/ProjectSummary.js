@@ -1,48 +1,102 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import analyticsService from "@/services/analyticsService";
 
 const ProjectSummary = () => {
-  const projectSummaryData = [
-    {
-      id: 1,
-      projectTitle: "Nelsa web developement",
-      projectManager: "James Akpan",
-      dueDate: "May 25, 2023",
-      status: "Completed",
-      progress: 100,
-    },
-    {
-      id: 2,
-      projectTitle: "Datascale AI app",
-      projectManager: "Ebuka Okoli",
-      dueDate: "Jun 20, 2023",
-      status: "Delayed",
-      progress: 30,
-    },
-    {
-      id: 3,
-      projectTitle: "Media channel branding",
-      projectManager: "Femi Adenrele",
-      dueDate: "July 13, 2023",
-      status: "Delayed",
-      progress: 30,
-    },
-    {
-      id: 4,
-      projectTitle: "Corlax iOS app development",
-      projectManager: "Tunde Ednut",
-      dueDate: "Dec 20, 2023",
-      status: "Completed",
-      progress: 100,
-    },
-    {
-      id: 5,
-      projectTitle: "Website builder development",
-      projectManager: "Sadiq Abubakar",
-      dueDate: "Mar 15, 2024",
-      status: "Ongoing",
-      progress: 50,
-    }
-  ];
+  const [projectSummaryData, setProjectSummaryData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const overview = await analyticsService.fetchOverview();
+        setProjectSummaryData(overview.recentProjects || []);
+      } catch (err) {
+        setError(err.message);
+        // Fallback data
+        setProjectSummaryData([
+          {
+            id: 1,
+            title: "Nelsa web developement",
+            projectManager: "James Akpan",
+            dueDate: "May 25, 2023",
+            status: "Completed",
+            progress: 100,
+          },
+          {
+            id: 2,
+            title: "Datascale AI app",
+            projectManager: "Ebuka Okoli",
+            dueDate: "Jun 20, 2023",
+            status: "Delayed",
+            progress: 30,
+          },
+          {
+            id: 3,
+            title: "Media channel branding",
+            projectManager: "Femi Adenrele",
+            dueDate: "July 13, 2023",
+            status: "Delayed",
+            progress: 30,
+          },
+          {
+            id: 4,
+            title: "Corlax iOS app development",
+            projectManager: "Tunde Ednut",
+            dueDate: "Dec 20, 2023",
+            status: "Completed",
+            progress: 100,
+          },
+          {
+            id: 5,
+            title: "Website builder development",
+            projectManager: "Sadiq Abubakar",
+            dueDate: "Mar 15, 2024",
+            status: "Ongoing",
+            progress: 50,
+          }
+        ]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const formatDate = (dateString) => {
+    if (!dateString) return 'N/A';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'short', 
+      day: 'numeric' 
+    });
+  };
+  if (loading) {
+    return (
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div className="p-4">
+          <div className="animate-pulse">
+            <div className="h-4 bg-gray-200 rounded w-1/4 mb-4"></div>
+            <div className="space-y-3">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="flex space-x-4">
+                  <div className="h-4 bg-gray-200 rounded w-1/4"></div>
+                  <div className="h-4 bg-gray-200 rounded w-1/6"></div>
+                  <div className="h-4 bg-gray-200 rounded w-1/6"></div>
+                  <div className="h-4 bg-gray-200 rounded w-1/6"></div>
+                  <div className="h-4 bg-gray-200 rounded w-1/6"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -70,9 +124,9 @@ const ProjectSummary = () => {
                       {projectSummaryData.map((projectSummary)=>{
                           return (
                             <tr key={projectSummary.id}  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <td className="px-6 py-4">{projectSummary.projectTitle}</td>
+                            <td className="px-6 py-4">{projectSummary.title}</td>
                               <td className="px-6 py-4">{projectSummary.projectManager}</td>
-                              <td className="px-6 py-4">{projectSummary.dueDate}</td>
+                              <td className="px-6 py-4">{formatDate(projectSummary.dueDate)}</td>
                              <td className="px-6 py-4">
   <span
     className={`px-2 py-1 rounded-md ${
@@ -89,10 +143,7 @@ const ProjectSummary = () => {
 
                               <td className="px-6 py-4">
                                 <div className="flex items-center gap-2">
-                                
-                                  <td className="px-6 py-4">
-                                    <div className="flex items-center gap-2">
-                                      <div className="relative w-10 h-10">
+                                    <div className="relative w-10 h-10">
                                         <svg className="w-10 h-10">
                                           <circle
                                             className="text-gray-300"
@@ -126,8 +177,6 @@ const ProjectSummary = () => {
                                           {projectSummary.progress}%
                                         </span>
                                       </div>
-                                    </div>
-                                  </td>
                                 </div>
                               </td>
                             </tr>

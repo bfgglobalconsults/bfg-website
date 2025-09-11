@@ -43,14 +43,13 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    if (isOpen) {
+    
       axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/employee/getEmployees`)
         .then(res => setEmployees(res.data.data || []))
         .catch(() => setEmployees([]));
-    }
-    if (initialData) setForm(initialData);
-    else setForm({  client_id: user?._id, employee_id: "", description: "", amount: "", status: "Pending", type: "inflow" });
-  }, [initialData, isOpen]);
+    
+    
+  }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) {
@@ -105,7 +104,7 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
               name="employee_id"
               value={form.employee_id}
               onChange={e => setForm({ ...form, employee_id: e.target.value })}
-              required
+             
               className="w-full border rounded-lg px-3 py-2"
             >
               <option value="">Select Employee</option>
@@ -123,7 +122,7 @@ function TransactionModal({ isOpen, onClose, onSubmit, initialData, clients }) {
               name="department_id"
               value={form.department_id}
               onChange={e => setForm({ ...form, department_id: e.target.value })}
-              required
+            
               className="w-full border rounded-lg px-3 py-2"
             >
               <option value="">Select Department</option>
@@ -255,7 +254,7 @@ const TransactionManagementPage = () => {
     const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/transaction/getTransactions`);
     setTransactions(res.data.data || []);
   };
-
+  console.log('transactions', transactions);
   // Fetch clients (update endpoint if needed)
   // const fetchClients = async () => {
   //   const res = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/clients`);
@@ -286,14 +285,14 @@ const TransactionManagementPage = () => {
 
   const totalFunds = transactions
     .filter(txn => txn.transaction_status === "Completed")
-    .reduce((sum, txn) => txn.type === "Inflow" ? sum + txn.amount : sum - txn.amount, 0);
+    .reduce((sum, txn) => txn.type === "inflow" ? sum + txn.amount : sum - txn.amount, 0);
 
   const inflow = transactions
-    .filter(txn => txn.type === "Inflow" && txn.transaction_status === "Completed")
+    .filter(txn => txn.type === "inflow" && txn.transaction_status === "Completed")
     .reduce((sum, txn) => sum + txn.amount, 0);
 
   const outflow = transactions
-    .filter(txn => txn.type === "Outflow" && txn.transaction_status === "Completed")
+    .filter(txn => txn.type === "outflow" && txn.transaction_status === "Completed")
     .reduce((sum, txn) => sum + txn.amount, 0);
 
   const pendingCount = transactions.filter(txn => txn.transaction_status === "Pending").length;

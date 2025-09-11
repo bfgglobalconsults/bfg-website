@@ -28,7 +28,7 @@ const DepartmentTable = () => {
     if (!window.confirm("Are you sure you want to delete this department?")) return;
     setLoading(true);
     try {
-      await axios.delete(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/department/${id}`);
+      await axios.delete(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/department`);
       toast.success("Department deleted successfully");
       setDepartments((prev) => prev.filter((dept) => dept._id !== id));
     } catch (error) {

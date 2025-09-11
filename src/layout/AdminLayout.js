@@ -20,7 +20,7 @@ const AdminLayout = ({ children }) => {
       <div className=" min-h-screen overflow-y-auto border">
         <AppSidebar />
       </div>
-      <div className="w-full flex flex-col flex-1">
+      <div className="w-full flex flex-col flex-1 ml-64">
         <NavMain /> 
         <div className="flex-1 p-4 min-h-0 overflow-y-auto bg-gray-100">{children}</div>
       </div>

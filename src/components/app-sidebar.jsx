@@ -9,6 +9,7 @@ import {
   Frame,
   GalleryVerticalEnd,
   Map,
+  ScrollText,
   PieChart,
   Settings2,
   SquareTerminal,
@@ -70,9 +71,9 @@ const data = {
       icon: PieChart,
     },
     {
-      name: "Travel",
-      url: "#",
-      icon: Map,
+      name: "Attendance",
+      url: "/admin/attendance",
+      icon: ScrollText,
     },
   ],
 };
