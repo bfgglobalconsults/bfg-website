@@ -240,6 +240,3 @@ export default function CustomerReview({ unit = "" }) {
   );
 }
 
-// cursor prompt
-
-// i want this to map just based on the data normally and be responsive for mobile, i also want each unit, should have its own specific data based on the department
