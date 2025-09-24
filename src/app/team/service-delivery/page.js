@@ -49,7 +49,7 @@ const page = () => {
                     Elizabeth-Mary N. Okeke
                   </h3>
                   <p className="text-[#E45F11]">
-                  Ag Head, Projects and Service Delivery
+                  Head, Projects and Service Delivery
 
                   </p>
                 </div>
@@ -78,7 +78,7 @@ const page = () => {
                 About Elizabeth-Mary
               </h4>
               <p className="text-[#999] text-lg">
-Elizabeth-Mary N. Okeke is an agile and forward-looking leader serving as the Acting Head of Projects and Service Delivery at BFG Global Consulting Ltd. In this role, she provides strategic direction and operational oversight across four core service units: Software Development, Market Research, Strategy Development, and Workforce Training.              </p>
+Elizabeth-Mary N. Okeke is an agile and forward-looking leader serving as th Head of Projects and Service Delivery at BFG Global Consulting Ltd. In this role, she provides strategic direction and operational oversight across four core service units: Software Development, Market Research, Strategy Development, and Workforce Training.              </p>
               <br />
               <p className="text-[#999] text-lg">
               Known for her structured approach to project execution and stakeholder engagement, Elizabeth-Mary drives high-impact service delivery that aligns with client needs and organizational priorities. Her multidisciplinary leadership enables seamless collaboration across technical, research, strategic, and capacity-building teams, ensuring consistent quality and timely execution of deliverables.          </p>

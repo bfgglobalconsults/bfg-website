@@ -45,7 +45,7 @@ const page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Abubakar Sadiq Faisal</h3>
-                  <p className="text-[#E45F11]">Ag Head, Administration</p>
+                  <p className="text-[#E45F11]">Head, Administration</p>
                 </div>
               </div>
               <div className="my-8">
@@ -71,7 +71,7 @@ const page = () => {
               <h4 className="text-xl font-semibold mb-6">About Abubakar</h4>
               <p className="text-[#999] text-lg">
                 Abubakar Sadiq Faisal is an administrative professional serving
-                as the Acting Head of Administration at BFG Global Consulting
+                as the Head of Administration at BFG Global Consulting
                 Ltd. In this role, he leads and coordinates key operational
                 units, including System Administration, Human Resources, Legal &
                 Compliance, and Office Management.{" "}

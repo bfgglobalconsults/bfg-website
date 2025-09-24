@@ -135,7 +135,7 @@ const Page = () => {
                     Elizabeth-Mary N. Okeke
                   </h3>
                   <p className="text-[#E45F11]">
-                  Ag Head, Projects and Service Delivery
+                  Head, Projects and Service Delivery
                   </p>
                   <Link href="/team/service-delivery">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
@@ -155,7 +155,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Abubakar Sadiq Faisal</h3>
-                  <p className="text-[#E45F11]">Ag Head, Administration</p>
+                  <p className="text-[#E45F11]">Head, Administration</p>
                   <Link href="/team/head-administration">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
