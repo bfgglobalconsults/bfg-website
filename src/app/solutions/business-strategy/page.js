@@ -417,8 +417,8 @@ const Page = () => {
                   <div className="bg-white p-2 shadow-md rounded-tr-xl">
                     <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
                     <p className="text-[#E45F11]">
-                      Senior Business Analyst - Strategy and Operations
-                      Transformation
+                       Senior Business Analyst - Organizational Strategy and Growth
+                    Transformation
                     </p>
                     <Link href="/team/head-business">
                       <button className="text-[#999] text-cursor text-md underline hover:text-black">
