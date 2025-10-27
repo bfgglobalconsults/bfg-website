@@ -32,7 +32,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Ayomide Oyabunmi
+            <h3 className="text-3xl font-semibold my-8">Uwana Micheal
 </h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
@@ -46,10 +46,10 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Ayomide Oyabunmi
+                  <h3 className="font-semibold text-lg">Uwana Micheal
 </h3>
                   <p className="text-[#E45F11]">
-                    Office Administrator
+                    Office Administrator Support
                   </p>
                 </div>
               </div>
@@ -73,13 +73,13 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Ayomide </h4>
+              <h4 className="text-xl font-semibold mb-6">About Uwana </h4>
               <p className="text-[#999] text-lg">
-                              Ayomide is the Office Administrator at BFG Global Consulting LLC, where she plays a significant role in maintaining the organization, and overall functionality of our office environment. Sadiq oversees the coordination of our facility maintenance, such as handling routine maintenance tasks, and providing essential support to staff to ensure smooth and efficient office operation. 
+                              Uwana Micheal is a dedicated Office Administration Support at BFG Global Consulting Limited, ensuring seamless day-to-day operations and administrative efficiency. She plays a key role in coordinating schedules, managing documentation, and supporting administration teams, enabling the organisation to focus on delivering high-quality services to clients.
                           </p>
                           <br />
                           <p className="text-[#999] text-lg">
-                              Her proactive approach and attention to detail help create a productive and pleasant workspace, supporting our firm&apos;s operational success and contributing to a positive work atmosphere.
+                             With strong organizational skills, attention to detail, and a commitment to excellence, Uwana helps maintain a structured and collaborative work environment that drives the firm&apos;s success.
                           </p>
               <br />
              

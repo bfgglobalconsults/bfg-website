@@ -272,7 +272,7 @@ const Page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
                   <p className="text-[#E45F11]">
-                    Senior Business Analyst - Strategy and Operations
+                    Senior Business Analyst - Organizational Strategy and Growth
                     Transformation
                   </p>
                   <Link href="/team/head-business">
@@ -609,13 +609,13 @@ const Page = () => {
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
                     src={OfficeAdmin}
-                    alt="research"
+                    alt="office"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Ayomide Oyabunmi</h3>
-                  <p className="text-[#E45F11]">Office Administrator</p>
+                  <h3 className="font-semibold text-lg">Uwana Micheal</h3>
+                  <p className="text-[#E45F11]">Office Administrator Support</p>
                   <Link href="/team/office-administrator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
