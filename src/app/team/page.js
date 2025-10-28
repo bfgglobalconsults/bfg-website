@@ -615,7 +615,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Uwana Micheal</h3>
-                  <p className="text-[#E45F11]">Office Administrator Support</p>
+                  <p className="text-[#E45F11]">Office Administration Support</p>
                   <Link href="/team/office-administrator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
