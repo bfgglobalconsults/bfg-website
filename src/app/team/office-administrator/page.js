@@ -49,7 +49,7 @@ const page = () => {
                   <h3 className="font-semibold text-lg">Uwana Micheal
 </h3>
                   <p className="text-[#E45F11]">
-                    Office Administrator Support
+                    Office Administration Support
                   </p>
                 </div>
               </div>
