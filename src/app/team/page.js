@@ -8,7 +8,7 @@ import BusinessAnalyst from "../../../public/assets/business-analyst-new.png";
 import DigitalMarketer from "../../../public/assets/ezekiel-img.png";
 import SalesExecutive from "../../../public/assets/sales-executive.png";
 import HeadService from "../../../public/assets/mr-peter.png";
-import HeadGrowth from "../../../public/assets/moses.png";
+import HeadGrowth from "../../../public/assets/head-market.png";
 import HeadFinance from "../../../public/assets/finance-lead.png";
 import TrainingAnalyst from "../../../public/assets/training-analyst.png";
 import AccountingManager from "../../../public/assets/accounting-manager.png";
@@ -214,8 +214,8 @@ const Page = () => {
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sunday Moses</h3>
-                  <p className="text-[#E45F11]">Ag Head, Marketing & Growth</p>
+                  <h3 className="font-semibold text-lg">Joseph Anozie Omon</h3>
+                  <p className="text-[#E45F11]">Head, Marketing & Sales</p>
                   <Link href="/team/head-marketing">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More

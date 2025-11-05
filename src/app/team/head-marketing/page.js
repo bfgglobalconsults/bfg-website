@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import HeadGrowth from "../../../../public/assets/moses.png";
+import HeadGrowth from "../../../../public/assets/head-market.png";
 
 import Avatar from "../../../../public/assets/new-avatar.png";
 import Link from "next/link";
@@ -32,7 +32,7 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">Sunday Moses</h3>
+            <h3 className="text-3xl font-semibold my-8">Joseph Anozie Omon</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
@@ -45,9 +45,9 @@ const page = () => {
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Sunday Moses</h3>
+                  <h3 className="font-semibold text-lg">Joseph Anozie Omon</h3>
                   <p className="text-[#E45F11]">
-                    Ag Head, Marketing & Growth
+                    Head, Marketing & Sales
                   </p>
                 </div>
               </div>
@@ -71,15 +71,18 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Moses</h4>
+              <h4 className="text-xl font-semibold mb-6">About Joseph</h4>
               <p className="text-[#999] text-lg">
-Moses is an innovative Head of Marketing and Growth with extensive experience in driving brand strategy, customer engagement, and business expansion. He excels in developing data-driven marketing campaigns, identifying growth opportunities, and building impactful sales strategies that deliver measurable results.                           </p>
+Joseph Omon is an innovative Head of Marketing and Sales at bfgconsults.com, where he oversees our marketing cycle operations, including digital marketing, digital media, sales, and community engagement </p>
               <br />
                   <p className="text-[#999] text-lg">
-With a focus on innovation and market trends, he aligns marketing efforts with organizational objectives to ensure sustained growth and competitive advantage. His leadership, creativity, and ability to foster collaboration make his an integral part of the management team, driving both brand value and revenue growth.                          </p>
+With extensive experience in driving brand strategy, customer engagement, and business expansion, he excels in developing data-driven marketing campaigns, identifying growth opportunities, and building impactful sales strategies that deliver measurable results.</p>
 
               <br />
-            
+            <p className="text-[#999] text-lg">
+With a focus on innovation and market trends, he aligns marketing efforts with organizational objectives to ensure sustained growth and competitive advantage. His leadership, creativity, and ability to foster collaboration make him an integral part of the management team, driving both brand value and revenue growth.</p>
+
+              <br />
           
             </div>
           </div>
