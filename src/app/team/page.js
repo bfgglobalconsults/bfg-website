@@ -1,6 +1,7 @@
 import React from "react";
 import Auditor from "../../../public/assets/internal-auditor.png";
 import OfficeAdmin from "../../../public/assets/office-admin.png";
+import FacilityAdmin from "../../../public/assets/facility-admin.png";
 import ManagingDirector from "../../../public/assets/festus-md.png";
 import SocialMedia from "../../../public/assets/social-media.png";
 import HeadAdmin from "../../../public/assets/head-admin.png";
@@ -617,6 +618,26 @@ const Page = () => {
                   <h3 className="font-semibold text-lg">Uwana Micheal</h3>
                   <p className="text-[#E45F11]">Office Administration Support</p>
                   <Link href="/team/office-administrator">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+                {/* third team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={FacilityAdmin}
+                    alt="office"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Abdulkareem Kasheem
+</h3>
+                  <p className="text-[#E45F11]">Facility and Maintenance Administrator</p>
+                  <Link href="/team/facility-administrator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
