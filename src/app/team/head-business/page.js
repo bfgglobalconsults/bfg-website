@@ -35,8 +35,7 @@ const page = () => {
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
                   <p className="text-[#E45F11]">
-                    Senior Business Analyst - Strategy and Operations
-                    Transformation
+                    Senior Business Analyst - Organizational Strategy and Growth
                   </p>
                 </div>
                           </div>
