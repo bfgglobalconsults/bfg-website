@@ -274,7 +274,6 @@ const Page = () => {
                   <h3 className="font-semibold text-lg">Ifeoma Ezeamama</h3>
                   <p className="text-[#E45F11]">
                     Senior Business Analyst - Organizational Strategy and Growth
-                    Transformation
                   </p>
                   <Link href="/team/head-business">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
@@ -605,7 +604,27 @@ const Page = () => {
                 </div>
               </div>
               {/* new team end */}
-              {/* second team */}
+             
+                {/* third team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={FacilityAdmin}
+                    alt="office"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Abdulkareem Kasheem</h3>
+                  <p className="text-[#E45F11]">Facility and Maintenance Administrator</p>
+                  <Link href="/team/facility-administrator">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+               {/* second team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -618,26 +637,6 @@ const Page = () => {
                   <h3 className="font-semibold text-lg">Uwana Micheal</h3>
                   <p className="text-[#E45F11]">Office Administration Support</p>
                   <Link href="/team/office-administrator">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div>
-                {/* third team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={FacilityAdmin}
-                    alt="office"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Abdulkareem Kasheem
-</h3>
-                  <p className="text-[#E45F11]">Facility and Maintenance Administrator</p>
-                  <Link href="/team/facility-administrator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
