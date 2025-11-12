@@ -42,7 +42,7 @@ const page = () => {
                   <Image
                     src={DigitalMedia}
                     alt="md"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
