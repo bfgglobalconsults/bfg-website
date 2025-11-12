@@ -504,7 +504,7 @@ const Page = () => {
                   <Image
                     src={DigitalMedia}
                     alt="avatar"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
@@ -613,7 +613,7 @@ const Page = () => {
                   <Image
                     src={HR}
                     alt="avatar"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
@@ -623,7 +623,7 @@ const Page = () => {
 
                   </h3>
                   <p className="text-[#E45F11]">HR Administrator</p>
-                  <Link href="/team/legal-compliance">
+                  <Link href="/team/hr-administrator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
                     </button>
