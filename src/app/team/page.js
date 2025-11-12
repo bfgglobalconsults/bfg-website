@@ -4,6 +4,8 @@ import OfficeAdmin from "../../../public/assets/office-admin.png";
 import FacilityAdmin from "../../../public/assets/facility-admin.png";
 import ManagingDirector from "../../../public/assets/festus-md.png";
 import SocialMedia from "../../../public/assets/social-media.png";
+import DigitalMedia from "../../../public/assets/digital-support.png";
+
 import HeadAdmin from "../../../public/assets/head-admin.png";
 import BusinessAnalyst from "../../../public/assets/business-analyst-new.png";
 import DigitalMarketer from "../../../public/assets/ezekiel-img.png";
@@ -500,7 +502,7 @@ const Page = () => {
                <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={SocialMedia}
+                    src={DigitalMedia}
                     alt="avatar"
                     className="w-full h-full object-cover"
                   />
