@@ -13,6 +13,9 @@ import HeadGrowth from "../../../public/assets/head-market.png";
 import HeadFinance from "../../../public/assets/finance-lead.png";
 import TrainingAnalyst from "../../../public/assets/training-analyst.png";
 import AccountingManager from "../../../public/assets/accounting-manager.png";
+import SystemAdmin from "../../../public/assets/system-admin.png";
+import HR from "../../../public/assets/hr-admin.png";
+
 import HeadBusiness from "../../../public/assets/ifeoma.png";
 import HeadResearch from "../../../public/assets/kenneth.png";
 import Elizabeth from "../../../public/assets/elizabeth-mary.png";
@@ -474,7 +477,7 @@ const Page = () => {
                 </div>
               </div>
               {/* second person */}
-              <div className="flex flex-col">
+              {/* <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
                     src={SocialMedia}
@@ -493,7 +496,29 @@ const Page = () => {
                     </button>
                   </Link>
                 </div>
+              </div> */}
+               <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={SocialMedia}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Peter Itodo</h3>
+                  <p className="text-[#E45F11]">
+                   Digital Media Support
+
+                  </p>
+                  <Link href="/team/media-support">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -581,6 +606,28 @@ const Page = () => {
                   </Link>
                 </div>
               </div> */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={HR}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">
+                  Ibikunle Oluwatosin Mary
+
+
+                  </h3>
+                  <p className="text-[#E45F11]">HR Administrator</p>
+                  <Link href="/team/legal-compliance">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
               {/* new team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
@@ -604,6 +651,27 @@ const Page = () => {
                 </div>
               </div>
               {/* new team end */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={SystemAdmin}
+                    alt="avatar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">
+                  Olamide Samuel
+
+                  </h3>
+                  <p className="text-[#E45F11]">System Administration Support</p>
+                  <Link href="/team/system-adminstrator ">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
              
                 {/* third team */}
               <div className="flex flex-col">

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Happy from "../../../../public/assets/happiness_adama.png";
 import Link from "next/link";
-import SystemAdmin from "../../../../public/assets/system-admin.png";
+import HR from "../../../../public/assets/hr-admin.png";
 
 const page = () => {
   return (
@@ -32,7 +32,7 @@ const page = () => {
           </span>
           <div className="my-4">
             <h3 className="text-3xl font-semibold my-8">
-              Olamide Samuel
+              Ibikunle Oluwatosin Mary
 
             </h3>
           </div>
@@ -41,24 +41,24 @@ const page = () => {
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={SystemAdmin}
+                    src={HR}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">
-                    Olamide Samuel
+                    Ibikunle Oluwatosin Mary
 
                   </h3>
                   <p className="text-[#E45F11]">
-                   System Administration Support
+                    HR Administration Support
 
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:olamide.samuel@bfgconsults.com">
+                <a href="mailto:ibikunle.mary@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -77,12 +77,11 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Olamide </h4>
+              <h4 className="text-xl font-semibold mb-6">About Ibikunle </h4>
               <p className="text-[#999] text-lg">
-                Olamide Samuel provides technical and system support within BFG Global Consulting Limited&apos;s Administration Department. He assists in maintaining the company&apos;s IT infrastructure, managing user systems, troubleshooting technical issues, and ensuring smooth daily operations across departments. Olamide is dedicated to system efficiency, data integrity, and supporting technology-driven productivity within the organization.
-              </p>{" "}
+              Ibikunle Oluwatosin Mary serves as the HR Administrator in the Administration Department at BFG Global Consulting Limited. She is responsible for coordinating human resource operations, supporting recruitment processes, managing employee records, and ensuring compliance with company policies. Mary plays a vital role in promoting a positive work culture, facilitating staff welfare, and enhancing administrative efficiency across departments. Her professionalism and attention to detail contribute to BFG&apos;s commitment to organizational excellence and employee development.</p>
               <br />
-              <p className="text-[#999] text-lg">
+              {/* <p className="text-[#999] text-lg">
                 With expertise in network management, system security, and
                 troubleshooting, Abubakar is committed to optimizing IT
                 processes and delivering reliable solutions that align with the
@@ -93,7 +92,7 @@ const page = () => {
               <p className="text-[#999] text-lg">
                Known for his problem-solving mindset and strong work ethic, Olamide brings a structured approach to system administration and a passion for leveraging technology to improve business processes.
               </p>
-              <br />
+              <br /> */}
             </div>
           </div>
         </div>

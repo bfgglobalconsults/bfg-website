@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import Happy from "../../../../public/assets/happiness_adama.png";
+import Avatar from "../../../../public/assets/new-avatar.png";
+import DigitalMedia from "../../../../public/assets/digital-support.png";
+
 import Link from "next/link";
-import SystemAdmin from "../../../../public/assets/system-admin.png";
 
 const page = () => {
   return (
@@ -31,34 +32,29 @@ const page = () => {
             Team Members
           </span>
           <div className="my-4">
-            <h3 className="text-3xl font-semibold my-8">
-              Olamide Samuel
-
-            </h3>
+            <h3 className="text-3xl font-semibold my-8">Peter Itodo
+</h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
             <div className="w-[100%] lg:w-[20%]">
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
-                    src={SystemAdmin}
+                    src={DigitalMedia}
                     alt="md"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">
-                    Olamide Samuel
-
-                  </h3>
+                  <h3 className="font-semibold text-lg">Peter Itodo
+</h3>
                   <p className="text-[#E45F11]">
-                   System Administration Support
-
+                    Digital Media Support
                   </p>
                 </div>
               </div>
               <div className="my-8">
-                <a href="mailto:olamide.samuel@bfgconsults.com">
+                <a href="mailto:peter.itodo@bfgconsults.com">
                   <button className="w-full flex justify-center gap-4 p-3 border border-[#E26015] hover:bg-[#E26015] hover:text-white rounded-md">
                     <span>
                       <svg
@@ -77,23 +73,11 @@ const page = () => {
               </div>
             </div>
             <div className="w-[100%] lg:w-[80%]">
-              <h4 className="text-xl font-semibold mb-6">About Olamide </h4>
+              <h4 className="text-xl font-semibold mb-6">About Peter</h4>
               <p className="text-[#999] text-lg">
-                Olamide Samuel provides technical and system support within BFG Global Consulting Limited&apos;s Administration Department. He assists in maintaining the company&apos;s IT infrastructure, managing user systems, troubleshooting technical issues, and ensuring smooth daily operations across departments. Olamide is dedicated to system efficiency, data integrity, and supporting technology-driven productivity within the organization.
-              </p>{" "}
+Peter Itodo serves as Digital Media Support in the Marketing and Sales Department at BFG Global Consulting Limited. He contributes to the company&apos;s digital communication strategy by producing media graphics, creating engaging content, and supporting online brand visibility. Peter plays a key role in enhancing digital campaigns, monitoring content performance analytics, and ensuring consistent brand representation across all media channels. His creativity and attention to detail help strengthen BFG&apos;s digital presence and client engagement.</p>
               <br />
-              <p className="text-[#999] text-lg">
-                With expertise in network management, system security, and
-                troubleshooting, Abubakar is committed to optimizing IT
-                processes and delivering reliable solutions that align with the
-                company&apos;s goals. His proactive approach and strong
-                problem-solving skills make him a valuable asset to the team.{" "}
-              </p>
-              <br />
-              <p className="text-[#999] text-lg">
-               Known for his problem-solving mindset and strong work ethic, Olamide brings a structured approach to system administration and a passion for leveraging technology to improve business processes.
-              </p>
-              <br />
+             
             </div>
           </div>
         </div>
