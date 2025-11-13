@@ -641,7 +641,7 @@ const Page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">
-                  Adenikinju Damisi
+                  Prince Ezeabata Chibuzor
 
                   </h3>
                   <p className="text-[#E45F11]">Legal and Compliance Administrator</p>
