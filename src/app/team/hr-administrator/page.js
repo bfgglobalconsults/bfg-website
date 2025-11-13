@@ -43,7 +43,7 @@ const page = () => {
                   <Image
                     src={HR}
                     alt="md"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
