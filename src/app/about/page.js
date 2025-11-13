@@ -280,7 +280,7 @@ const Page = () => {
                 />
               </div>
               <div className="bg-white  p-4 shadow-md rounded-lg">
-                <h3 className="font-semibold text-lg">Festus BELLO, mba.</h3>
+                <h3 className="font-semibold text-lg">Festus BELLO, cmi.</h3>
                 <p className="text-[#E45F11] font-semibold">
                   Managing Partner / CEO
                 </p>

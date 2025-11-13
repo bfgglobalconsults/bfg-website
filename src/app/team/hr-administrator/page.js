@@ -52,7 +52,7 @@ const page = () => {
 
                   </h3>
                   <p className="text-[#E45F11]">
-                    Human Resource Administration Support
+                    Human Resource Administrator
 
                   </p>
                 </div>
