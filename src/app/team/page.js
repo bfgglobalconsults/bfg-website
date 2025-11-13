@@ -622,7 +622,7 @@ const Page = () => {
 
 
                   </h3>
-                  <p className="text-[#E45F11]">HR Administrator</p>
+                  <p className="text-[#E45F11]">Human Resource Administrator</p>
                   <Link href="/team/hr-administrator">
                     <button className="text-[#999] text-cursor text-md underline hover:text-black">
                       Read More
@@ -653,6 +653,26 @@ const Page = () => {
                 </div>
               </div>
               {/* new team end */}
+               {/* third team */}
+              <div className="flex flex-col">
+                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
+                  <Image
+                    src={FacilityAdmin}
+                    alt="office"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
+                  <h3 className="font-semibold text-lg">Abdulkareem Kasheem</h3>
+                  <p className="text-[#E45F11]">Facility and Maintenance Administrator</p>
+                  <Link href="/team/facility-administrator">
+                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+              {/* end */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
                   <Image
@@ -675,25 +695,7 @@ const Page = () => {
                 </div>
               </div>
              
-                {/* third team */}
-              <div className="flex flex-col">
-                <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">
-                  <Image
-                    src={FacilityAdmin}
-                    alt="office"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="bg-white w-[250px] p-4 shadow-md rounded-lg">
-                  <h3 className="font-semibold text-lg">Abdulkareem Kasheem</h3>
-                  <p className="text-[#E45F11]">Facility and Maintenance Administrator</p>
-                  <Link href="/team/facility-administrator">
-                    <button className="text-[#999] text-cursor text-md underline hover:text-black">
-                      Read More
-                    </button>
-                  </Link>
-                </div>
-              </div>
+               
                {/* second team */}
               <div className="flex flex-col">
                 <div className="w-[250px] h-[250px] aspect-square bg-[#B0D4EA] mb-4">

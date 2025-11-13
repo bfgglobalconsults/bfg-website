@@ -52,7 +52,7 @@ const page = () => {
 
                   </h3>
                   <p className="text-[#E45F11]">
-                    HR Administration Support
+                    Human Resource Administration Support
 
                   </p>
                 </div>
@@ -79,7 +79,7 @@ const page = () => {
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">About Ibikunle </h4>
               <p className="text-[#999] text-lg">
-              Ibikunle Oluwatosin Mary serves as the HR Administrator in the Administration Department at BFG Global Consulting Limited. She is responsible for coordinating human resource operations, supporting recruitment processes, managing employee records, and ensuring compliance with company policies. Mary plays a vital role in promoting a positive work culture, facilitating staff welfare, and enhancing administrative efficiency across departments. Her professionalism and attention to detail contribute to BFG&apos;s commitment to organizational excellence and employee development.</p>
+              Ibikunle Oluwatosin Mary serves as the Human Resource Administrator in the Administration Department at BFG Global Consulting Limited. She is responsible for coordinating human resource operations, supporting recruitment processes, managing employee records, and ensuring compliance with company policies. Mary plays a vital role in promoting a positive work culture, facilitating staff welfare, and enhancing administrative efficiency across departments. Her professionalism and attention to detail contribute to BFG&apos;s commitment to organizational excellence and employee development.</p>
               <br />
               {/* <p className="text-[#999] text-lg">
                 With expertise in network management, system security, and
