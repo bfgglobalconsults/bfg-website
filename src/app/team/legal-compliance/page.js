@@ -31,7 +31,8 @@ const page = () => {
           </span>
           <div className="my-4">
             <h3 className="text-3xl font-semibold my-8">
-            Adenikinju Damisi
+            Prince Ezeabata Chibuzor
+
             </h3>
           </div>
           <div className="flex flex-col lg:flex-row w-[100%] gap-8 my-8">
@@ -46,7 +47,8 @@ const page = () => {
                 </div>
                 <div className="bg-white  w-[250px] p-4 shadow-md rounded-lg">
                   <h3 className="font-semibold text-lg">
-                  Adenikinju Damisi
+                 Prince Ezeabata Chibuzor
+
 
                   </h3>
                   <p className="text-[#E45F11]">
@@ -76,21 +78,15 @@ const page = () => {
             </div>
             <div className="w-[100%] lg:w-[80%]">
               <h4 className="text-xl font-semibold mb-6">
-                About Adenikinju
+                About Prince
+
               </h4>
               <p className="text-[#999] text-lg">
-              Adenikinju Damisi is a dedicated legal and regulatory professional currently serving as the Legal and Compliance Administrator at BFG Global Consulting Limited. In his role, he ensures that the company&apos;s operations and client engagements adhere to applicable laws, industry standards, and internal governance policies across its operations.              </p>
+Prince Ezeabata Chibuzor serves as the Legal and Compliance Administrator in the Administration Department at BFG Global Consulting Limited. He oversees the company&apos;s legal documentation, ensures regulatory compliance, and supports the development and implementation of corporate policies.    </p>            <br />
+              <p className="text-[#999] text-lg">
+Prince plays a key role in safeguarding the organization&apos;s legal and ethical standards, providing guidance on compliance matters, and maintaining adherence to both internal and external regulations. His diligence and integrity strengthen BFG&apos;s commitment to transparency, accountability, and good corporate governance.                          </p>
               <br />
-              <p className="text-[#999] text-lg">
-                              With a strong foundation in corporate law, regulatory compliance, and risk management, Damisi plays a critical role in safeguarding BFG&apos;s integrity and reputation. He is responsible for drafting, reviewing, and managing legal documents, monitoring compliance frameworks, and supporting the leadership team in making informed, risk-aware decisions.
-                          </p>
-              <br />
-              <p className="text-[#999] text-lg">
-                              His approach to compliance is both proactive and strategic—emphasizing preventive practices, ethical standards, and continuous improvement. Damisi also liaises with external legal partners and regulatory bodies to keep BFG informed and agile in the face of evolving legal landscapes.
-                          </p>
-                          <br />
-              <p className="text-[#999] text-lg">
-              Adenikinju brings a deep sense of professionalism and attention to detail to every task. His work helps ensure that BFG Global Consulting operates with transparency, accountability, and legal confidence as it delivers cutting-edge solutions in strategy, research, and technology.                          </p>
+             
             </div>
           </div>
         </div>
