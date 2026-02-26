@@ -2,9 +2,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import TopBanner from "../../../../public/assets/dialectics.png";
-import DialetGroup from "../../../../public/assets/dialet-card.jpg";
-import Beauty from "../../../../public/assets/sme-woman.png";
+import TopBanner from "../../../../../public/assets/dialectics.png";
+import DialetGroup from "../../../../../public/assets/dialet-card.jpg";
+import Beauty from "../../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import Link from "next/link";
 import ProgramModal from "@/components/ProgramModal";
