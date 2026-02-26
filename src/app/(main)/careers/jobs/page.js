@@ -26,7 +26,7 @@ const page = () => {
             basic skill in graphics design, UI/UX design, and video graphics
             that are human centered and appealing to users. Unit of Function:
             Innovation and Technology Consulting Services Reporting To: The Unit
-            Head, Innovation and Technology Consulting Services{" "}
+            Head, Innovation and Technology Consulting Services.{" "}
           </p>
           <p className="text-lg">
             Interested applicants should apply via{" "}
