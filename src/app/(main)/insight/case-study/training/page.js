@@ -1,20 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-
-import TopBanner from "../../../../../public/assets/training-development-banner.jpg";
-import Project18 from "../../../../../public/assets/training-areai.jpg";
-import Project21 from "../../../../../public/assets/training-do-action.jpg";
-import Project20 from "../../../../../public/assets/training-hope-behind-bars.jpg"
-import Project19 from "../../../../../public/assets/training-ilead.jpg";
-import EmployeePerformance from "../../../../../public/assets/employee-perfomance.jpg";
-import Retention from "../../../../../public/assets/retention.png";
-import GreaterFlexibility from "../../../../../public/assets/greater-flexibility.png";
-import DecisionMaking from "../../../../../public/assets/decision-making.png";
-import TopTalent from "../../../../../public/assets/top-talent.png";
-import Operations from "../../../../../public/assets/operations.png";
-
-import Link from "next/link";
 import MainDashboard from "@/components/dashboard/training/MainDashboard";
 import CustomerReview from "@/components/customer-review/CustomerReview";
 import CaseStudiesList from "@/components/CaseStudiesList";

@@ -1,23 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-// import Banner from "../../../../../public/assets/business-strategy.jpg";
-
-import TopBanner from "../../../../../public/assets/business-strategy-banner.jpg";
-
-
-import Efficiency from "../../../../../public/assets/efficiency.png";
-import Cost from "../../../../../public/assets/cost.png";
-import Decision from "../../../../../public/assets/decision.png";
-import Advantage from "../../../../../public/assets/advantage.png";
-import Scalabity from "../../../../../public/assets/scalability.png";
-import Operations from "../../../../../public/assets/operations.png";
-import Project13 from "../../../../../public/assets/business-meeting.jpg";
-import Project14 from "../../../../../public/assets/business-cover.jpg";
-import Project15 from "../../../../../public/assets/business-image.png";
-import Project16 from "../../../../../public/assets/measure-business.jpg";
-import Project17 from "../../../../../public/assets/case-banner.jpeg";
-import Link from "next/link";
 import MainDashboard from "@/components/dashboard/business/MainDashboard";
 import CustomerReview from "@/components/customer-review/CustomerReview";
 import CaseStudiesList from "@/components/CaseStudiesList";
