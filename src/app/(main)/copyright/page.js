@@ -43,7 +43,7 @@ const page = () => {
                  Our Company owns all copyrights in the materials it produces, including but not limited to reports, presentations, proposals, written and visual materials and other materials. These materials are protected by copyright laws and international treaties. And the BFG Global Consulting Inc. retains ownership of all copyrightable works created by our employees, contractors, or third-party vendors during their engagement with the firm, including but not limited to those already earlier stated. We will hold the exclusive rights to use, reproduce, distribute, display, and modify the works as it deems appropriate.
                               </p>
                               <p className="text-[#656565] my-2">
-                 Employees of our Company are prohibited from using, reproducing, modifying, distributing, or creating derivative works of the Company’s copyrighted materials without the prior written permission of the Company. Employees may use the Company’s copyrighted materials only in the course of their work for the Company and only to the extent necessary to perform their job duties.
+                 Employees of our Company are prohibited from using, reproducing, modifying, distributing, or creating derivative works of the Company&apos;s copyrighted materials without the prior written permission of the Company. Employees may use the Company’s copyrighted materials only in the course of their work for the Company and only to the extent necessary to perform their job duties.
                 </p>
               </div>
               <div className="my-6">
