@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import TopBanner from "../../../../public/assets/data-deal-img.jpg";
-import DataDeal from "../../../../public/assets/Data2Deals.jpg";
-import Beauty from "../../../../public/assets/sme-woman.png";
+import TopBanner from "../../../../../public/assets/data-deal-img.jpg";
+import DataDeal from "../../../../../public/assets/Data2Deals.jpg";
+import Beauty from "../../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import ProgramModal from "@/components/ProgramModal";
 
