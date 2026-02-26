@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 const regions = [
-  { code: "", name: "Nigeria", flag: "🇳🇬" },
+  { code: "ng", name: "Nigeria", flag: "🇳🇬" },
   { code: "uk", name: "United Kingdom", flag: "🇬🇧" },
-  { code: "global", name: "Global", flag: "🌍" },
+  { code: "", name: "Global", flag: "🌍" },
 ];
 
 export default function RegionSwitcher() {

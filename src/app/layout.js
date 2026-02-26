@@ -33,35 +33,25 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <html className={`${montserrat.variable} ${inter.variable}`} lang="en">
+    <html className={`${montserrat.variable} ${inter.variable}`} lang="en" suppressHydrationWarning>
       <head>
         <Script
-          async
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-GNHJW9W4PK"
-        ></Script>
-        <Script id="google-analytics">
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-          gtag('config', 'G-GNHJW9W4PK');
-`}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GNHJW9W4PK');
+          `}
         </Script>
-        <MetaPixelTracker />
       </head>
-
-      <body className={inter.className}>
-        <Suspense fallback={<Loading />}>
-          <AuthProvider>
-            <Toaster position="top-right" />
-
-            <MainPage>{children}</MainPage>
-          </AuthProvider>
-        </Suspense>
+      <body className={inter.className} suppressHydrationWarning>
+        <MetaPixelTracker />
+        {children}
       </body>
-      </html>
-      </>
+    </html>
   );
 }

@@ -185,9 +185,9 @@ const HeroSection2 = () => (
             <span className="block text-4xl lg:text-6xl font-light mb-2">
               Tailored expertise in{" "}
             </span>
-            Software Development,
+            Market Research
             <br />
-            Market Research, Strategy, & Training
+            ,Software Development, Strategy, & Training
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
             Driving transformative solutions that empower innovation, growth,

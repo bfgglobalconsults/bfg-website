@@ -14,15 +14,28 @@ import AdminLayout from "@/layout/AdminLayout";
 const MainPage = ({ children }) => {
   const pathname = usePathname();
   const isSalesPage = pathname === "/sales-masterclass";
-  const isAdminPage = pathname.startsWith("/admin");
+  // Check for /admins (your custom admin) but NOT /admin (Payload admin)
+  const isCustomAdminPage = pathname.startsWith("/admins");
+  const isPayloadAdmin = pathname.startsWith("/admin") && !pathname.startsWith("/admins");
   const isLogin = pathname === "/login";
+  const isLandingPage = pathname === "/landing";
 
   if (isLogin) {
     return <Login />
   }
 
-  if (isAdminPage) {
+  // Let Payload admin render without any wrapper
+  if (isPayloadAdmin) {
+    return <>{children}</>;
+  }
+
+  // Your custom admin dashboard uses AdminLayout
+  if (isCustomAdminPage) {
     return <AdminLayout>{children}</AdminLayout>;
+  }
+
+  if (isLandingPage) {
+    return <>{children}</>;
   }
 
   return (
