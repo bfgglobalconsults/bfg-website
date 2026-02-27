@@ -53,10 +53,10 @@ import Client39 from "../../../../public/assets/client39.png";
 import Client40 from "../../../../public/assets/client40.png";
 import Client41 from "../../../../public/assets/client41.png";
 import Client42 from "../../../../public/assets/client42.png";
-import Client43 from "../../../public/assets/client43.png";
-import Client44 from "../../../public/assets/client44.png";
-import Client45 from "../../../public/assets/client45.jpg";
-import Client46 from "../../../public/assets/client46.jpeg";
+import Client43 from "../../../../public/assets/client43.png";
+import Client44 from "../../../../public/assets/client44.png";
+import Client45 from "../../../../public/assets/client45.jpg";
+import Client46 from "../../../../public/assets/client46.jpeg";
 
 
 
