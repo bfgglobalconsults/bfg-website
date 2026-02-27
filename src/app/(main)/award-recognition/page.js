@@ -1,13 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../../public/assets/award-banner.jpg";
-import GovernanceImg from "../../../../public/assets/governance-image.png";
 import Slides from "@/components/Slides";
-import FirstAward from "../../../../public/assets/award-1.png";
-import SecondAward from "../../../../public/assets/award-2.png";
-import ThirdAward from "../../../../public/assets/award-3.png";
-import FourthAward from "../../../../public/assets/award-4.png";
-
 import OurStand from "@/components/OurStand";
 
 const page = () => {
@@ -29,7 +22,7 @@ const page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={TopBanner}
+            src="/assets/award-banner.jpg"
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -63,7 +56,7 @@ const page = () => {
               <div className="bg-[#F7F7F8] w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={FirstAward}
+                    src="/assets/award-1.png"
                     alt="client"
                     className="w-full h-full object-fit"
                   />
@@ -83,7 +76,7 @@ const page = () => {
               <div className="bg-[#F7F7F8] w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={SecondAward}
+                    src="/assets/award-2.png"
                     alt="innovate"
                     className="w-full h-full object-fit"
                   />
@@ -104,7 +97,7 @@ const page = () => {
               <div className="bg-[#F7F7F8] w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={ThirdAward}
+                    src="/assets/award-3.png"
                     alt="inclusive"
                     className="w-full h-full object-fit"
                   />
@@ -124,7 +117,7 @@ const page = () => {
               <div className="bg-[#F7F7F8] w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                 <div className="">
                   <Image
-                    src={FourthAward}
+                    src="/assets/award-4.png"
                     alt="sustain"
                     className="w-full h-full object-fit"
                   />

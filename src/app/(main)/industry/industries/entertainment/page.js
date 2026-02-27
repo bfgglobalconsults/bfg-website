@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import EntertainmentImg from "../../../../../../public/assets/entertainment-banner.jpg";
-import EntertainmentImage from "../../../../../../public/assets/entertainment-card.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -23,7 +21,7 @@ const page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={EntertainmentImg}
+            src="/assets/entertainment-banner.jpg"
             alt="telecom-media"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -56,7 +54,7 @@ const page = () => {
                           </p>
               <div className="w-full">
                 <Image
-                  src={EntertainmentImage}
+                  src="/assets/entertainment-card.jpg"
                   alt="telecom-image"
                   className="w-full rounded-xl"
                 />

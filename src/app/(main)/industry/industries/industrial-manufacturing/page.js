@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import IndustrialManufactureImg from "../../../../../../public/assets/industrial-manufacture-banner.png";
-import ManufactureImage from "../../../../../../public/assets/manufacture-card.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -23,7 +21,7 @@ const page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={IndustrialManufactureImg}
+            src="/assets/industrial-manufacture-banner.png"
             alt="oil-gas"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -62,7 +60,7 @@ const page = () => {
               </p>
               <div className="w-full">
                 <Image
-                  src={ManufactureImage}
+                  src="/assets/manufacture-card.jpg"
                   alt="oil-image"
                   className="w-full"
                 />

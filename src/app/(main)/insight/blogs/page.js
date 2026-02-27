@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import Banner from "../../../../../public/assets/news-banner.png";
+
 import Slides from "@/components/Slides";
 import Link from "next/link";
 import { getBlogs } from "@/lib/api";
@@ -37,7 +37,7 @@ const BlogsPage = () => {
 
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={Banner}
+            src="/assets/news-banner.png"
             alt="blogs-banner"
             className="w-full h-full object-cover rounded-3xl"
           />

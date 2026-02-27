@@ -1,33 +1,11 @@
-"use client"
-import React, { useState } from 'react'
-import Project1 from "../../../public/assets/zenkleus-research.jpg";
-import Project2 from "../../../public/assets/business-meeting.jpg";
-import Project4 from "../../../public/assets/research-cover-img.jpg";
-import Project5 from "../../../public/assets/gigs-travel-research.jpg";
-import Project6 from "../../../public/assets/last-research.jpg";
-import Project7 from "../../../public/assets/dmj-image.jpg";
-import Project8 from "../../../public/assets/st-image.jpg";
-import Project9 from "../../../public/assets/skool-image.jpeg";
-import Project10 from "../../../public/assets/david-presage-web.jpg";
-import Project11 from "../../../public/assets/real-estate.jpg";
-import Project12 from "../../../public/assets/gig-image.jpg";
-import Project13 from "../../../public/assets/business-meeting.jpg";
-import Project14 from "../../../public/assets/business-cover.jpg";
-import Project15 from "../../../public/assets/business-image.png";
-import Project16 from "../../../public/assets/measure-business.jpg";
-import Project17 from "../../../public/assets/case-banner.jpeg";
-
-import Project18 from "../../../public/assets/training-areai.jpg";
-import Project21 from "../../../public/assets/training-do-action.jpg";
-import Project20 from "../../../public/assets/training-hope-behind-bars.jpg"
-import Project19 from "../../../public/assets/training-ilead.jpg";
-
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const ProjectTabs = () => {
-        const [tab, settab] = useState("Technology and Software Development");
-    
+  const [tab, settab] = useState("Technology and Software Development");
+
   return (
     <>
       <div className="my-6">
@@ -103,7 +81,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project7}
+                      src="/assets/dmj-image.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -145,7 +123,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project8}
+                      src="/assets/st-image.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -187,7 +165,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project9}
+                      src="/assets/skool-image.jpeg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -229,7 +207,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project10}
+                      src="/assets/david-presage-web.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -271,7 +249,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project11}
+                      src="/assets/real-estate.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -314,7 +292,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project12}
+                      src="/assets/gig-image.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -360,7 +338,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project1}
+                      src="/assets/zenkleus-research.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -402,7 +380,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project2}
+                      src="/assets/business-meeting.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -447,15 +425,15 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project4}
+                      src="/assets/research-cover-img.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                     AKADAPlay Corporate Scholarship Funding: Analyzing CSR Investment in
-                      Education Across Industries
+                      AKADAPlay Corporate Scholarship Funding: Analyzing CSR
+                      Investment in Education Across Industries
                     </h3>
                     <p className="text-[#999]">
                       AKADAPlay commissioned us to conduct a comprehensive study
@@ -489,7 +467,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project5}
+                      src="/assets/gigs-travel-research.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -531,7 +509,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project6}
+                      src="/assets/last-research.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -579,7 +557,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project13}
+                      src="/assets/business-meeting.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -620,7 +598,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project14}
+                      src="/assets/business-cover.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -661,15 +639,15 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project15}
+                      src="/assets/business-image.png"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      To-Doo Strategic Market Positioning and Business Expansion for
-                      Emerging Fintech and Underserved Markets
+                      To-Doo Strategic Market Positioning and Business Expansion
+                      for Emerging Fintech and Underserved Markets
                     </h3>
                     <p className="text-[#999]">
                       To-Doo presented a business idea to us with a focus on a
@@ -702,15 +680,15 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project16}
+                      src="/assets/measure-business.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Strategic Expansion: Proposal and Pitch Deck for
-                      Tots Academy
+                      Strategic Expansion: Proposal and Pitch Deck for Tots
+                      Academy
                     </h3>
                     <p className="text-[#999]">
                       A professionally crafted and well-structured proposal and
@@ -741,15 +719,15 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project17}
+                      src="/assets/case-banner.jpeg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
                     <h3 className="font-sans text-xl lg:text-2xl font-semibold">
-                      Yahweh Yasad Strategic Market Positioning and Business Expansion for
-                      Emerging Markets
+                      Yahweh Yasad Strategic Market Positioning and Business
+                      Expansion for Emerging Markets
                     </h3>
                     <p className="text-[#999]">
                       Yahweh Yasad sought to explore business opportunities
@@ -787,7 +765,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project18}
+                      src="/assets/training-areai.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -831,7 +809,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project19}
+                      src="/assets/training-ilead.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -872,7 +850,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project20}
+                      src="/assets/training-hope-behind-bars.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -916,7 +894,7 @@ const ProjectTabs = () => {
                 <div className="w-[100%] lg:w-[30%] p-4 lg:p-10 border border-[#F7F7F8] rounded-3xl">
                   <div className="h-[200px] lg:h-[350px]">
                     <Image
-                      src={Project21}
+                      src="/assets/training-do-action.jpg"
                       alt="news1"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -959,6 +937,6 @@ const ProjectTabs = () => {
       </div>
     </>
   );
-}
+};
 
-export default ProjectTabs
+export default ProjectTabs;

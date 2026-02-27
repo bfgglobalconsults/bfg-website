@@ -2,9 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import TopBanner from "../../../../../public/assets/sme-webinar.png";
-import SmeGroup from "../../../../../public/assets/sme-card.jpg";
-import Beauty from "../../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import ProgramModal from "@/components/ProgramModal";
 
@@ -37,7 +34,7 @@ const Page = () => {
         <div className="px-1 py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
-              src={TopBanner}
+              src="/assets/sme-webinar.png"
               alt="top-banner"
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -112,7 +109,7 @@ const Page = () => {
               className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
             >
               <Image
-                src={SmeGroup}
+                src="/assets/sme-card.jpg"
                 alt="webinar-image"
                 className="w-full h-full object-fit rounded-r-md"
               />

@@ -4,7 +4,7 @@ import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
-import ContactBanner from "@public/assets/contact-image.png";
+import ContactBanner from "/assets/contact-image.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import toast from "react-hot-toast";

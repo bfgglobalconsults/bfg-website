@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-import Banner from "../../public/assets/bfg1.jpg";
 import WaveImage from "../app/bfg-whitelogo.png";
 
 // Import the CSS for react-slick
@@ -218,8 +217,10 @@ const HeroSection2 = () => (
         transition={{ repeat: Infinity, duration: 50 }}
       >
        <Image 
-      src={Banner} 
+      src="/assets/bfg1.jpg"
       alt="banner" 
+      width={500}
+      height={500}
       className="w-full h-full object-contain scale-125"
       priority 
     />

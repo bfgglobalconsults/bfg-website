@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import MapBanner from "@public/assets/nigeria-banner.png";
-import NgTeam from "@public/assets/ng-team.png";
-import NgBackground from "@public/assets/ng-background.png";
+import MapBanner from "/assets/nigeria-banner.png";
+import NgTeam from "/assets/ng-team.png";
+import NgBackground from "/assets/ng-background.png";
 
 export default function NigeriaPage() {
   return (

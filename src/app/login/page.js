@@ -1,7 +1,6 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
-import Logo from "../../../public/assets/BFG-5.png";
 import { useAuth } from "@/context/authContext";
 import Spinner from "@/components/Spinner";
 import { useRouter } from "next/navigation";
@@ -34,7 +33,7 @@ const Login = () => {
               <div className="w-[100px] h-[90px] mx-auto">
                 <Image
                   alt="BFG"
-                  src={Logo}
+                  src="/assets/BFG-5.png"
                   className="w-full h-full object-fit"
                 />
               </div>

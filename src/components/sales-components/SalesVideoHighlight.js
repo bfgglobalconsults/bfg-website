@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Img from "./Img";
-import Videobanner from "../../../public/assets/video-banner.png";
 import VideoModal from "./VideoModal";
 import Image from "next/image";
 
@@ -14,7 +13,7 @@ const SalesVideoHighlight = () => {
         <div className="mx-[20px] lg:mx-[100px] video-image relative">
           <div className="side-effect"></div>
           <div className="w-[365px] lg:w-[100%] ">
-            <Image src={Videobanner} className="Img img-fluid object-cover" alt="youtube-video" />
+            <Image src="/assets/video-banner.png" width={800} height={450} className="Img img-fluid object-cover" alt="youtube-video" />
             <div className="absolute inset-0 bg-black opacity-20 rounded-3xl"></div>
           </div>
           <div className="absolute inset-0 flex items-center justify-center text-center">

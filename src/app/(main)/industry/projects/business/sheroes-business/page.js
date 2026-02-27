@@ -2,7 +2,7 @@ import Slides from "@/components/Slides";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FirstNews from "../../../../../../public/assets/business-meeting.jpg";
+
 const page = () => {
   return (
     <>
@@ -33,9 +33,10 @@ const page = () => {
         </div>
         <div className="relative w-full h-[300px] lg:h-[500px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={FirstNews}
+            src="/assets/business-meeting.jpg"
             alt="about-banner"
-            className="w-full h-full object-cover rounded-3xl"
+            fill
+            className="object-cover rounded-3xl"
           />
         </div>
         <div className="my-4">

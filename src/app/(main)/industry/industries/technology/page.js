@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import FinTechImg from "../../../../../../public/assets/financial-tech.jpg";
-import TechImage from "../../../../../../public/assets/fintech-img.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -23,8 +21,10 @@ const page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={FinTechImg}
+            src="/assets/financial-tech.jpg"
             alt="tech"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -72,7 +72,7 @@ const page = () => {
                 solutions drive impact in key areas
               </p>
               <div className="w-full">
-                <Image src={TechImage} alt="it-image" className="w-full rounded-lg" />
+                <Image src="/assets/fintech-img.jpg" alt="it-image" width={600} height={400} className="w-full rounded-lg" />
               </div>
             </div>
             <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">

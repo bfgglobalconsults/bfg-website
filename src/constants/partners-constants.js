@@ -27,33 +27,27 @@
 // import Image27 from "../../public/assets/partner-27.jpg";
 // import Image28 from "../../public/assets/partner-28.jpg";
 
-import Image1 from "../../public/assets/netline-img.png";
-import Image2 from "../../public/assets/apex-img.png";
-import Image3 from "../../public/assets/microsoft-img.png";
-import Image4 from "../../public/assets/qualtrics-img.png";
-import Image5 from "../../public/assets/namecheap-images.png";
-
-
 export const partners_links = [
   {
     id: 1,
     name: "Image1",
-    image: Image1,
+    logo: "/assets/netline-img.png",
+    logo: "/assets/netline-img.png",
   },
   {
     id: 2,
     name: "Image2",
-    image: Image2,
+    logo: "/assets/apex-img.png",
   },
   {
     id: 3,
     name: "Image3",
-    image: Image3,
+    logo: "/assets/microsoft-img.png",
   },
   {
     id: 4,
     name: "Image4",
-    image: Image4,
+    logo: "/assets/qualtrics-img.png",
   },
   // {
   //   id: 5,

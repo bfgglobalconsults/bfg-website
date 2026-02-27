@@ -1,15 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import TopBanner from "../../../../../public/assets/it-banner.png";
-import ItImage from "../../../../../public/assets/it-images.jpg";
-import TechnologyPortfolio from "../../../../../public/assets/technology-portfolio.jpg";
-import Employee from "../../../../../public/assets/improve-employee.jpg";
-import DataSecurity from "../../../../../public/assets/data-security.jpg";
-import DataMgt from "../../../../../public/assets/data-mgt.jpg";
-import Flexibility from "../../../../../public/assets/flexibility-scalability.jpg";
-import Expertise from "../../../../../public/assets/expertise-resources.jpg";
-import Innovation from "../../../../../public/assets/innovation-development.jpg";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import OfficeAddresses from "@/components/OfficeAddresses";
 import { motion, useInView } from "framer-motion";
@@ -73,7 +64,7 @@ const Page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={TopBanner}
+            src="/assets/it-banner.png"
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -119,7 +110,7 @@ const Page = () => {
             </p>
             <div className="w-full">
               <Image
-                src={ItImage}
+                src="/assets/it-images.jpg"
                 alt="it-image"
                 className="w-full rounded-lg"
               />
@@ -211,7 +202,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Employee}
+                    src="/assets/improve-employee.jpg"
                     alt="employee-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -235,7 +226,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={DataSecurity}
+                    src="/assets/data-security.jpg"
                     alt="data-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -262,7 +253,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={DataMgt}
+                    src="/assets/data-mgt.jpg"
                     alt="datamgt-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -288,7 +279,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Flexibility}
+                    src="/assets/flexibility-scalability.jpg"
                     alt="flex-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -314,7 +305,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Expertise}
+                    src="/assets/expertise-resources.jpg"
                     alt="expertise-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -340,7 +331,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Innovation}
+                    src="/assets/innovation-development.jpg"
                     alt="innovation-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -369,7 +360,7 @@ const Page = () => {
             <div className="flex flex-col items-center lg:flex-row gap-8">
               <div className="w-[100%] lg:w-[40%]">
                 <Image
-                  src={TechnologyPortfolio}
+                  src="/assets/technology-portfolio.jpg"
                   alt="research"
                   className="w-full h-full object-cover"
                 />

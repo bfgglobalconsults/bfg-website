@@ -11,7 +11,7 @@ import {
   DropdownMenuCheckboxItem,
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
-import FeedbackBanner from "../../../../public/assets/feedback.png";
+
 
 import Image from "next/image";
 
@@ -194,7 +194,7 @@ export default function FeedbackPage() {
                     <div className="px-1 py-12">
                       <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
                         <Image
-                          src={FeedbackBanner}
+                          src="/assets/feedback.png"
                           alt="contact-banner"
                           className="w-full h-full object-cover rounded-3xl"
                         />

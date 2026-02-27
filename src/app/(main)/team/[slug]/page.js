@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { getTeamMemberBySlug } from "@/lib/api";
-import Avatar from "../../../../../public/assets/new-avatar.png";
-import VideoThumbnail from "../../../../../public/assets/female-middle-banner.png";
 
 const TeamMemberDetail = () => {
   const params = useParams();
@@ -109,7 +107,7 @@ const TeamMemberDetail = () => {
                   />
                 ) : (
                   <Image
-                    src={Avatar}
+                    src="/assets/new-avatar.png"
                     alt={member.name}
                     width={250}
                     height={250}

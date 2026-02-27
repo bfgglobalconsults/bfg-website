@@ -5,20 +5,8 @@ import Image from "next/image";
 // import Banner from "../../../../public/assets/business-strategy.jpg";
 import OfficeAddresses from "@/components/OfficeAddresses";
 
-import TopBanner from "../../../../../public/assets/business-strategy-banner.jpg";
-import BusinessAnalyst from "../../../../../public/assets/business-analyst-new.png";
-import BusinessImage from "../../../../../public/assets/black-business.jpg";
-import Avatar from "../../../../../public/assets/new-avatar.png";
-import Ifeoma from "../../../../../public/assets/ifeoma.png";
-import Efficiency from "../../../../../public/assets/efficiency.jpg";
-import Cost from "../../../../../public/assets/cost.jpg";
-import Decision from "../../../../../public/assets/decision.jpg";
-import Advantage from "../../../../../public/assets/advantage.jpg";
-import Scalabity from "../../../../../public/assets/scalability.jpg";
-import Operations from "../../../../../public/assets/operations.jpg";
-import BusinessPortfolio from "../../../../../public/assets/business-portfolio.jpg";
-import ServiceImage1 from "../../../../../public/assets/service-image1.png";
-import ServiceImage2 from "../../../../../public/assets/service-image2.png";
+
+
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
 
@@ -86,7 +74,7 @@ const Page = () => {
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center"
         >
           <Image
-            src={TopBanner}
+            src="/assets/business-strategy-banner.jpg"
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -133,7 +121,7 @@ const Page = () => {
             </p>
             <div className="w-full">
               <Image
-                src={BusinessImage}
+                src="/assets/black-business.jpg"
                 alt="business-image"
                 className="w-full rounded-lg"
               />
@@ -172,14 +160,14 @@ const Page = () => {
             {/* <div className="w-full flex flex-col lg:flex-row gap-10">
               <div className="w-[100%] lg:w-[30%] h-[280px]">
                 <Image
-                  src={ServiceImage1}
+                  src="/assets/service-image1.png"
                   alt="service-image1"
                   className="w-full h-full"
                 />
               </div>
               <div className="w-[0%] h-[0%] lg:w-[70%] lg:h-[280px]">
                 <Image
-                  src={ServiceImage2}
+                  src="/assets/service-image2.png"
                   alt="service-image2"
                   className="w-full h-full"
                 />
@@ -195,7 +183,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Efficiency}
+                    src="/assets/efficiency.jpg"
                     alt="efficiency"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -219,7 +207,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Cost}
+                    src="/assets/cost.jpg"
                     alt="cost"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -243,7 +231,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Decision}
+                    src="/assets/decision.jpg"
                     alt="decision"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -267,7 +255,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Advantage}
+                    src="/assets/advantage.jpg"
                     alt="advantage"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -291,7 +279,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Scalabity}
+                    src="/assets/scalability.jpg"
                     alt="scalability"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -315,7 +303,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Operations}
+                    src="/assets/operations.jpg"
                     alt="operations"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -343,7 +331,7 @@ const Page = () => {
             <div className="flex flex-col items-center lg:flex-row gap-8">
               <div className="w-[100%] lg:w-[40%]">
                 <Image
-                  src={BusinessPortfolio}
+                  src="/assets/business-portfolio.jpg"
                   alt="research"
                   className="w-full h-full object-cover"
                 />

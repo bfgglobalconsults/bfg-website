@@ -1,5 +1,4 @@
 import React from "react";
-import Profile from "../../../public/assets/profile.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/authContext";
@@ -32,7 +31,9 @@ const Header = () => {
             </span>
             <div className="w-[40px] h-[40px]">
               <Image
-                src={Profile}
+                src="/assets/profile.png"
+                width={40}
+                height={40}
                 className="rounded-full w-full h-full"
                 alt="profile-img"
               />

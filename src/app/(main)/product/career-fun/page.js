@@ -1,9 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import CareerImg from "../../../../../public/assets/careerfun-bg.png";
-import ProductImage from "../../../../../public/assets/career-game.jpg";
-import ProductExpand from "../../../../../public/assets/career-goal.jpg";
 import toast from "react-hot-toast";
 
 const NotifyModal = ({ isOpen, onClose, onSubmit }) => {
@@ -214,7 +211,7 @@ const SelectedProductCards = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="bg-white border border-gray-200 rounded-xl p-6 shadow flex flex-col items-center">
         <Image
-          src={CareerImg}
+          src="/assets/careerfun-bg.png"
           alt="Learning Play"
           className="w-32 h-32 object-contain mb-4"
         />
@@ -226,7 +223,7 @@ const SelectedProductCards = () => (
       </div>
       <div className="bg-white border border-gray-200 rounded-xl p-6 shadow flex flex-col items-center">
         <Image
-          src={CareerImg}
+          src="/assets/careerfun-bg.png"
           alt="Skill Growth"
           className="w-32 h-32 object-contain mb-4"
         />

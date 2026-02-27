@@ -1,11 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Banner from "../../../../../public/assets/case-studies.jpg";
 import Slides from "@/components/Slides";
-import Technology from "../../../../../public/assets/technology-software1.png";
-import Business from "../../../../../public/assets/business-strategy1.jpg";
-import Research from "../../../../../public/assets/research-analytics1.jpg";
-import Training from "../../../../../public/assets/training-development1.jpg";
 import Link from "next/link";
 
 const page = () => {
@@ -27,7 +22,7 @@ const page = () => {
 
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={Banner}
+            src="/assets/case-studies.jpg"
             alt="about-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -55,7 +50,7 @@ const page = () => {
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
             <div className="w-full h-[350px]">
               <Image
-                src={Technology}
+                src="/assets/technology-software1.png"
                 alt="client"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -84,7 +79,7 @@ const page = () => {
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
             <div className="w-full h-[350px]">
               <Image
-                src={Business}
+                src="/assets/business-strategy1.jpg"
                 alt="innovate"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -112,7 +107,7 @@ const page = () => {
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
             <div className="w-full h-[350px]">
               <Image
-                src={Research}
+                src="/assets/research-analytics1.jpg"
                 alt="inclusive"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -141,7 +136,7 @@ const page = () => {
           <div className="bg-[#F7F7F8] w-[100%] lg:w-[45%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
             <div className="w-full h-[350px]">
               <Image
-                src={Training}
+                src="/assets/training-development1.jpg"
                 alt="sustain"
                 className="w-full h-full object-cover rounded-lg"
               />

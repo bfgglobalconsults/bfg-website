@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import OilGasImg from "../../../../../../public/assets/oilgas-banner.png";
-import OilGasImage from "../../../../../../public/assets/oil-gas.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -23,7 +21,7 @@ const page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={OilGasImg}
+            src="/assets/oilgas-banner.png"
             alt="oil-gas"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -61,7 +59,7 @@ const page = () => {
               unique challenges of the oil and gas industry
             </p>
             <div className="w-full">
-              <Image src={OilGasImage} alt="oil-image" className="w-full rounded-xl" />
+              <Image src="/assets/oil-gas.jpg" alt="oil-image" className="w-full rounded-xl" />
             </div>
           </div>
           <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">

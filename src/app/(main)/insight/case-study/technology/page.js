@@ -1,21 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import TopBanner from "../../../../../../public/assets/it-banner.jpg";
-
-import Project7 from "../../../../../../public/assets/dmj-image.jpg";
-import Project8 from "../../../../../../public/assets/st-image.jpg";
-import Project9 from "../../../../../../public/assets/skool-image.jpeg";
-import Project10 from "../../../../../../public/assets/david-presage-web.jpg";
-import Project11 from "../../../../../../public/assets/real-estate.jpg";
-import Project12 from "../../../../../../public/assets/gig-image.jpg";
-
-import Employee from "../../../../../../public/assets/improve-employee.png";
-import DataSecurity from "../../../../../../public/assets/data-security.png";
-import DataMgt from "../../../../../../public/assets/data-mgt.png";
-import Flexibility from "../../../../../../public/assets/flexibility-scalibility.png";
-import Expertise from "../../../../../../public/assets/expertise-resources.png";
-import Innovation from "../../../../../../public/assets/innovation-development.png";
 
 import Link from "next/link";
 import MainDashboard from "@/components/dashboard/technology/MainDashboard";

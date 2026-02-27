@@ -5,21 +5,8 @@ import React, { useEffect, useState } from "react";
 import Logo from "@/app/bfg-logo.png";
 import { Button, Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react'
 
-import Banner from "../../../../public/assets/ai-banner.png";
-import Avatar from "../../../../public/assets/avatar.png";
-import MidBanner from "../../../../public/assets/mid-banner.png";
-import ContentBanner from "../../../../public/assets/content-banner.png";
-import BottomBanner from "../../../../public/assets/bottom-banner.png";
-import CustomerBanner from "../../../../public/assets/customer-banner.png";
-import ProfitBanner from "../../../../public/assets/profit-chart.png";
 
-import NumberOne from "../../../../public/assets/number1.png";
-import NumberTwo from "../../../../public/assets/number2.png";
-import NumberThree from "../../../../public/assets/number3.png";
 
-import Work1 from "../../../../public/assets/work1.png";
-import Work2 from "../../../../public/assets/work2.png";
-import Work3 from "../../../../public/assets/work3.png";
 
 const Funnel = () => {
   const [active, setActive] = useState(false);
@@ -154,7 +141,7 @@ const Funnel = () => {
             <div className="w-[40%]">
               <div className="w-full">
                 <Image
-                  src={Banner}
+                  src="/assets/ai-banner.png"
                   alt="banner"
                   className="w-full h-full object-cover"
                 />
@@ -164,7 +151,7 @@ const Funnel = () => {
           <div className="mx-5">
             <div className="w-full h-[350px]">
               <Image
-                src={MidBanner}
+                src="/assets/mid-banner.png"
                 alt="mid-banner"
                 className="w-full h-full object-cover"
               />
@@ -190,7 +177,7 @@ const Funnel = () => {
                 <div className="flex gap-3">
                   <div className="mt-3">
                     <Image
-                      src={NumberOne}
+                      src="/assets/number1.png"
                       alt="number-one"
                       className="w-[100px] h-[30px] object-cover"
                     />
@@ -207,7 +194,7 @@ const Funnel = () => {
                 <div className="flex gap-3">
                   <div className="mt-3">
                     <Image
-                      src={NumberTwo}
+                      src="/assets/number2.png"
                       alt="number-one"
                       className="w-[50px] h-[30px] object-cover"
                     />
@@ -224,7 +211,7 @@ const Funnel = () => {
                 <div className="flex gap-3">
                   <div className="mt-3">
                     <Image
-                      src={NumberThree}
+                      src="/assets/number3.png"
                       alt="number-one"
                       className="w-[70px] h-[30px] object-cover"
                     />
@@ -242,7 +229,7 @@ const Funnel = () => {
               <div className="w-[50%]">
                 <div className="w-full h-[400px]">
                   <Image
-                    src={ContentBanner}
+                    src="/assets/content-banner.png"
                     alt="content-banner"
                     className="w-full h-full object-cover"
                   />
@@ -253,7 +240,7 @@ const Funnel = () => {
         </div>
         <div className="w-full h-[800px] mt-20 relative">
           <Image
-            src={BottomBanner}
+            src="/assets/bottom-banner.png"
             alt="bottom-banner"
             className="w-full h-full object-cover"
           />
@@ -273,15 +260,15 @@ const Funnel = () => {
           <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
             <div className="flex flex-row gap-10">
               <div>
-                <Image src={Work1} alt="work1" className="w-full h-full" />
+                <Image src="/assets/work1.png" alt="work1" className="w-full h-full" />
                 <div></div>
               </div>
               <div>
-                <Image src={Work2} alt="work2" className="w-full h-full" />
+                <Image src="/assets/work2.png" alt="work2" className="w-full h-full" />
                 <div></div>
               </div>
               <div>
-                <Image src={Work3} alt="work3" className="w-full h-full" />
+                <Image src="/assets/work3.png" alt="work3" className="w-full h-full" />
                 <div></div>
               </div>
             </div>
@@ -289,7 +276,7 @@ const Funnel = () => {
         </div>
         <div className="w-full h-[800px] relative">
           <Image
-            src={CustomerBanner}
+            src="/assets/customer-banner.png"
             alt="customer-banner"
             className="w-full h-full object-cover"
           />
@@ -328,7 +315,7 @@ const Funnel = () => {
                       </blockquote>
                       <figcaption className="flex items-center justify-center mt-6 space-x-3">
                         <Image
-                          src={Avatar}
+                          src="/assets/avatar.png"
                           alt="profile picture"
                           width={100}
                           height={100}
@@ -374,7 +361,7 @@ const Funnel = () => {
             </div>
             <div className="w-[50%]">
               <Image
-                src={ProfitBanner}
+                src="/assets/profit-chart.png"
                 alt="profit-banner"
                 className="w-full h-full object-cover"
               />
@@ -387,3 +374,4 @@ const Funnel = () => {
 };
 
 export default Funnel;
+

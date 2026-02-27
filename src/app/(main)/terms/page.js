@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../../public/assets/policy-banner.png";
 import Slides from "@/components/Slides";
 
 const page = () => {
@@ -23,7 +22,7 @@ const page = () => {
             <div className="">
               <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
                 <Image
-                  src={TopBanner}
+                  src="/assets/policy-banner.png"
                   alt="top-banner"
                   className="w-full h-full object-cover rounded-3xl"
                 />

@@ -2,24 +2,8 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
-import Banner from "../../../../../public/assets/training-development.jpg";
 import Accordion from "@/components/Accordion";
-import TopBanner from "../../../../../public/assets/training-development-banner.jpg";
-import Happy from "../../../../../public/assets/happiness_adama.png";
-import TrainingAnalyst from "../../../../../public/assets/training-analyst.png";
 import OfficeAddresses from "@/components/OfficeAddresses";
-
-import TrainingImage from "../../../../../public/assets/sales-newbanner.jpg";
-import EmployeePerformance from "../../../../../public/assets/employee-perfomance.jpg";
-import Retention from "../../../../../public/assets/retention.jpg";
-import GreaterFlexibility from "../../../../../public/assets/greater-flexibility.jpg";
-import DecisionMaking from "../../../../../public/assets/decision-making.jpg";
-import TopTalent from "../../../../../public/assets/top-talent.jpg";
-import Operations from "../../../../../public/assets/operations.jpg";
-import Avatar from "../../../../../public/assets/new-avatar.png";
-import TrainingPortfolio from "../../../../../public/assets/Training-Portfolio.jpg";
-import ServiceImage1 from "../../../../../public/assets/service-image1.png";
-import ServiceImage2 from "../../../../../public/assets/service-image2.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
 
@@ -80,7 +64,7 @@ const Page = () => {
 
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
-          <Image src={TopBanner} alt="top-banner" className="w-full h-full object-cover rounded-3xl" />
+          <Image src="/assets/training-development-banner.jpg" alt="top-banner" className="w-full h-full object-cover rounded-3xl" />
         </div>
       </div>
 
@@ -130,7 +114,7 @@ const Page = () => {
             </p>
             <div className="w-full">
               <Image
-                src={TrainingImage}
+                src="/assets/sales-newbanner.jpg"
                 alt="training-image"
                 className="w-full rounded-lg"
               />
@@ -171,14 +155,14 @@ const Page = () => {
             {/* <div className="w-full flex flex-col lg:flex-row gap-10">
               <div className="w-[100%] lg:w-[30%] h-[280px]">
                 <Image
-                  src={ServiceImage1}
+                  src="/assets/service-image1.png"
                   alt="service-image1"
                   className="w-full h-full"
                 />
               </div>
               <div className="w-[0%] h-[0%] lg:w-[70%] lg:h-[280px]">
                 <Image
-                  src={ServiceImage2}
+                  src="/assets/service-image2.png"
                   alt="service-image2"
                   className="w-full h-full"
                 />
@@ -194,7 +178,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={EmployeePerformance}
+                    src="/assets/employee-perfomance.jpg"
                     alt="employee"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -221,7 +205,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Retention}
+                    src="/assets/retention.jpg"
                     alt="retention"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -247,7 +231,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={GreaterFlexibility}
+                    src="/assets/greater-flexibility.jpg"
                     alt="flexibility"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -274,7 +258,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={DecisionMaking}
+                    src="/assets/decision-making.jpg"
                     alt="decision"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -300,7 +284,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={TopTalent}
+                    src="/assets/top-talent.jpg"
                     alt="talent"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -327,7 +311,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Operations}
+                    src="/assets/operations.jpg"
                     alt="operations"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -356,7 +340,7 @@ const Page = () => {
             <div className="flex flex-col items-center lg:flex-row gap-8">
               <div className="w-[100%] lg:w-[40%]">
                 <Image
-                  src={TrainingPortfolio}
+                  src="/assets/Training-Portfolio.jpg"
                   alt="training"
                   className="w-full h-full object-cover"
                 />

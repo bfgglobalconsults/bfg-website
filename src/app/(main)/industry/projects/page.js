@@ -1,9 +1,6 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import Banner from "../../../../../public/assets/project-image.png";
-import Project1 from "../../../../../public/assets/project1.png";
-import Project2 from "../../../../../public/assets/project2.png";
 
 import OurStand from "@/components/OurStand";
 import ProjectTabs from "@/components/project-tabs/ProjectTabs";
@@ -27,8 +24,10 @@ const page = () => {
 
         <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={Banner}
+            src="/assets/project-image.png"
             alt="about-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>

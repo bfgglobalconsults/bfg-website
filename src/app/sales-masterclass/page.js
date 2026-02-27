@@ -10,24 +10,11 @@ import {
   Transition,
   TransitionChild,
 } from "@headlessui/react";
-import Banner from "../../../public/assets/sales-newbanner.jpg";
-import SecondBanner from "../../../public/assets/second-banner.png";
 import SalesTestimonial from "@/components/sales-components/SalesTestimonial";
 import SalesVideoHighlight from "@/components/sales-components/SalesVideoHighlight";
-import Speaker1 from "../../../public/assets/speaker1.png";
-import Speaker2 from "../../../public/assets/speaker2.png";
-import Speakers from "../../../public/assets/masterclass-flyer.png";
-import Thinkingman from "../../../public/assets/thinking-man.png";
-import SalesChart from "../../../public/assets/sales-chart.png";
 import SalesEventCounter from "@/components/sales-components/SalesEventCounter";
-import Salesman from "../../../public/assets/salesman.png";
 import EmbeddedForms from "@/components/sales-components/EmbeddedForms";
-import SalesMaster from "../../../public/assets/master-image.png";
-import ClientImage from "../../../public/assets/client-struggle.png";
-import BFGImage from "../../../public/assets/BFG-5.png";
-import OutSell from "../../../public/assets/outsell.png";
-import PriceImage from "../../../public/assets/price-image.png";
-import Arrows from "../../../public/assets/arrow-red-3.webp";
+
 import Countdown from "@/components/Countdown";
 
 const Page = () => {
@@ -48,7 +35,7 @@ const Page = () => {
             <div className="w-full relative">
               <div className="w-full h-[500px]">
                 <Image
-                  src={Banner}
+                  src="/assets/sales-newbanner.jpg"
                   alt="banner"
                   quality={100}
                   className="w-full h-full object-cover"
@@ -143,7 +130,7 @@ const Page = () => {
                 <div className="w-full lg:w-[50%] my-4 lg:my-0">
                   <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
                     <Image
-                      src={Thinkingman}
+                      src="/assets/thinking-man.png"
                       alt="first-image"
                       className="w-full h-full object-cover"
                     />
@@ -155,7 +142,7 @@ const Page = () => {
             <div className="w-full relative">
               <div className="h-[300px]">
                 <Image
-                  src={SecondBanner}
+                  src="/assets/second-banner.png"
                   quality={100}
                   alt="second banner"
                   className="w-full h-full object-cover"
@@ -227,7 +214,7 @@ const Page = () => {
                 <div className="w-[100%] lg:w-[50%]">
                   <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
                     <Image
-                      src={SalesChart}
+                      src="/assets/sales-chart.png"
                       alt=""
                       className="w-full h-full object-cover"
                     />
@@ -241,7 +228,7 @@ const Page = () => {
                 <div className="w-[100%] lg:w-[50%]">
                   <div className="w-[350px] h-[350px] lg:w-[400px] lg:h-[400px]">
                     <Image
-                      src={Salesman}
+                      src="/assets/salesman.png"
                       alt=""
                       className="w-full h-full object-cover"
                     />
@@ -346,7 +333,7 @@ const Page = () => {
                 </div>
                 <div className="flex justify-center mx-auto w-[170px] h-[100px]">
                   <Image
-                    src={Arrows}
+                    src="/assets/arrow-red-3.webp"
                     alt="arrow"
                     className="w-full h-full object-cover"
                   />
@@ -437,7 +424,7 @@ const Page = () => {
                     </div>
                     <div className="flex justify-center mx-auto w-[170px] h-[100px]">
                       <Image
-                        src={Arrows}
+                        src="/assets/arrow-red-3.webp"
                         alt="arrow"
                         className="w-full h-full object-cover"
                       />
@@ -471,7 +458,7 @@ const Page = () => {
                     <div className="w-full lg:w-[50%] my-4 lg:my-0">
                       <div className="w-[350px] h-[350px] lg:w-[500px] lg:h-[300px]">
                         <Image
-                          src={ClientImage}
+                          src="/assets/client-struggle.png"
                           alt="client-image"
                           className="w-full h-full rounded-md object-cover"
                         />
@@ -512,7 +499,7 @@ const Page = () => {
                       <div className="w-full lg:w-[50%] my-4 lg:my-0">
                         <div className="w-[260px] h-[260px] lg:w-[260px] lg:h-[260px]">
                           <Image
-                            src={BFGImage}
+                            src="/assets/BFG-5.png"
                             alt="bfg-image"
                             className="w-full h-full rounded-md object-cover"
                           />
@@ -568,7 +555,7 @@ const Page = () => {
                       <div className="w-full lg:w-[50%] my-4 lg:my-0">
                         <div className="w-[300px] h-[350px] lg:w-[500px] lg:h-[500px]">
                           <Image
-                            src={OutSell}
+                            src="/assets/outsell.png"
                             alt="outsell-image"
                             className="w-full h-full rounded-md object-cover"
                           />
@@ -625,7 +612,7 @@ const Page = () => {
                       <div className="w-[100%] lg:w-[50%]">
                         <div className="w-[300px] h-[350px] lg:w-[400px] lg:h-[400px]">
                           <Image
-                            src={SalesMaster}
+                            src="/assets/master-image.png"
                             alt="sales-master"
                             className="w-full h-full object-cover"
                           />
@@ -644,7 +631,7 @@ const Page = () => {
                         </p>
                         <div className="w-[250px] h-[250px] mt-6 flex justify-center">
                           <Image
-                            src={PriceImage}
+                            src="/assets/price-image.png"
                             alt="price-image"
                             className="w-full h-full object-cover"
                           />
@@ -702,7 +689,7 @@ const Page = () => {
                     </div>
                     <div className="flex justify-center mx-auto w-[170px] h-[100px]">
                       <Image
-                        src={Arrows}
+                        src="/assets/arrow-red-3.webp"
                         alt="arrow"
                         className="w-full h-full object-cover"
                       />
@@ -885,7 +872,7 @@ const Page = () => {
                   <div className="lg:flex gap-[50px] justify-center">
                     <div className="w-[350px] h-[350px] my-8 lg:my-0 lg:w-[400px] lg:[400px]">
                       <Image
-                        src={Speaker2}
+                        src="/assets/speaker2.png"
                         alt="Speaker 2"
                         className="object-cover"
                         width={300}
@@ -894,7 +881,7 @@ const Page = () => {
                     </div>
                     <div className="w-[350px] h-[350px] my-8 lg:my-0 lg:w-[400px] lg:[400px]">
                       <Image
-                        src={Speaker1}
+                        src="/assets/speaker1.png"
                         alt="Speaker 1"
                         className="object-cover"
                         width={300}
@@ -923,7 +910,7 @@ const Page = () => {
                 <section className="mx-[30px] my-[30px] lg:mx-[100px] lg:my-[100px]">
                   <div className="w-[350px] lg:w-[100%]">
                     <Image
-                      src={Speakers}
+                      src="/assets/masterclass-flyer.png"
                       alt="speakers-banner"
                       className="w-full h-full object-cover"
                     />

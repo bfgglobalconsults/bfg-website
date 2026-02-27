@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../../public/assets/career-img.jpg";
 import Link from "next/link";
 import Slides from "@/components/Slides";
-import Banner from "../../../../public/assets/career-banners-new.jpg";
 
 const page = () => {
   return (
@@ -24,7 +22,7 @@ const page = () => {
 
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={Banner}
+            src="/assets/career-banners-new.jpg"
             alt="about-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -53,7 +51,7 @@ const page = () => {
       </div>
       {/* <div className="relative w-full h-[400px] bg-cover bg-center flex justify-center items-center">
         <Image
-          src={TopBanner}
+          src="/assets/career-img.jpg"
           alt="top-banner"
           className="absolute inset-0 w-full h-full object-cover"
         />

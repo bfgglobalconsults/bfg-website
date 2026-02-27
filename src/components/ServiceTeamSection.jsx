@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getTeamMembers } from "@/lib/api";
-import Avatar from "../../public/assets/new-avatar.png";
 
 export default function ServiceTeamSection({ department = "product" }) {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -53,7 +52,7 @@ export default function ServiceTeamSection({ department = "product" }) {
             <div key={member.id} className="flex flex-col group">
               <div className="w-full aspect-square bg-[#B0D4EA] rounded-lg overflow-hidden mb-4 transition-transform duration-300 group-hover:scale-105">
                 <Image
-                  src={member.profileImage || Avatar}
+                  src={member.profileImage || "/assets/new-avatar.png"}
                   alt={member.name}
                   width={250}
                   height={250}

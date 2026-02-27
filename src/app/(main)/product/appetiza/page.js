@@ -1,8 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Appetizer from "../../../../../public/assets/appetiza-bg.png";
-import ProductImage from "../../../../../public/assets/product-banner.png";
-import ProductExpand from "../../../../../public/assets/product-expand.jpg";
 import Image from "next/image";
 import toast from "react-hot-toast";
 
@@ -249,7 +246,7 @@ const SelectedProductCards = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="bg-white border border-gray-200 rounded-xl p-6 shadow flex flex-col items-center">
         <Image
-          src={Appetizer}
+          src="/assets/appetiza-bg.png"
           alt="Business Planning"
           className="w-32 h-32 object-contain mb-4"
         />
@@ -261,7 +258,7 @@ const SelectedProductCards = () => (
       </div>
       <div className="bg-white border border-gray-200 rounded-xl p-6 shadow flex flex-col items-center">
         <Image
-          src={Appetizer}
+          src="/assets/appetiza-bg.png"
           alt="Expansion"
           className="w-32 h-32 object-contain mb-4"
         />

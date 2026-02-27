@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { getTeamMembers } from "@/lib/api";
 import OurStand from "@/components/OurStand";
-import Banner from "../../../../public/assets/team-image-banner.jpg";
-import Avatar from "../../../../public/assets/new-avatar.png";
 
 const Page = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -95,7 +93,7 @@ const Page = () => {
         {/* Banner image section */}
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-top">
           <Image
-            src={Banner}
+            src="/assets/team-image-banner.jpg"
             alt="about-banner"
             className="w-full h-full object-cover object-top rounded-3xl"
           />

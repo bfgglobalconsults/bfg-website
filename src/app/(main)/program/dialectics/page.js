@@ -2,9 +2,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import TopBanner from "../../../../../public/assets/dialectics.png";
-import DialetGroup from "../../../../../public/assets/dialet-card.jpg";
-import Beauty from "../../../../../public/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import Link from "next/link";
 import ProgramModal from "@/components/ProgramModal";
@@ -44,7 +41,7 @@ const Page = () => {
         >
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
-              src={TopBanner}
+              src="/assets/dialectics.png"
               alt="top-banner"
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -98,7 +95,7 @@ const Page = () => {
               className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
             >
               <Image
-                src={DialetGroup}
+                src="/assets/dialet-card.jpg"
                 alt="dialet-image"
                 className="w-full h-full object-fit rounded-r-md"
               />

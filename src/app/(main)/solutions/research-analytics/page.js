@@ -1,25 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import Banner from "../../../../../public/assets/research-analytic.jpg";
-import TopBanner from "../../../../../public/assets/research-banner.jpg";
 import { motion, useInView } from "framer-motion";
-
-import ResearchImage from "../../../../../public/assets/business-teacher.png";
-import Simon from "../../../../../public/assets/simon-adeh.png";
-import ServiceImage1 from "../../../../../public/assets/service-image1.png";
-import ServiceImage2 from "../../../../../public/assets/service-image2.png";
-
 import Accordion from "@/components/Accordion";
-import ResearchPortfolio from "../../../../../public/assets/research-portfolio.jpg";
-import Kenneth from "../../../../../public/assets/kenneth.png";
-import Avatar from "../../../../../public/assets/new-avatar.png";
-import Optimize from "../../../../../public/assets/optimize-image.png";
-import MeasureImg from "../../../../../public/assets/measure-image.jpg";
-import ExperienceImg from "../../../../../public/assets/experience-image.jpg";
-import PredictiveImg from "../../../../../public/assets/predictive-image.jpg";
-import ImpactImg from "../../../../../public/assets/impact-image.jpg";
-import AppraisalImg from "../../../../../public/assets/appraisal-images.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
 import OfficeAddresses from "@/components/OfficeAddresses";
@@ -86,7 +69,7 @@ const Page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={TopBanner}
+            src="/assets/research-banner.jpg"
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -133,7 +116,7 @@ const Page = () => {
             </p>
             <div className="w-full">
               <Image
-                src={ResearchImage}
+                src="/assets/business-teacher.png"
                 alt="research-image"
                 className="w-full rounded-lg"
               />
@@ -175,14 +158,14 @@ const Page = () => {
             {/* <div className="w-full flex flex-col lg:flex-row gap-10">
               <div className="w-[100%] lg:w-[30%] h-[280px]">
                 <Image
-                  src={ServiceImage1}
+                  src="/assets/service-image1.png"
                   alt="service-image1"
                   className="w-full h-full"
                 />
               </div>
               <div className="w-[0%] h-[0%] lg:w-[70%] lg:h-[280px]">
                 <Image
-                  src={ServiceImage2}
+                  src="/assets/service-image2.png"
                   alt="service-image2"
                   className="w-full h-full"
                 />
@@ -200,7 +183,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={Optimize}
+                    src="/assets/optimize-image.png"
                     alt="optimize-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -230,7 +213,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={MeasureImg}
+                    src="/assets/measure-image.jpg"
                     alt="measure-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -260,7 +243,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={ExperienceImg}
+                    src="/assets/experience-image.jpg"
                     alt="exp-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -289,7 +272,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={AppraisalImg}
+                    src="/assets/appraisal-images.png"
                     alt="appraisal-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -319,7 +302,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={PredictiveImg}
+                    src="/assets/predictive-image.jpg"
                     alt="predective-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -347,7 +330,7 @@ const Page = () => {
               >
                 <div className="w-full h-[200px]">
                   <Image
-                    src={ImpactImg}
+                    src="/assets/impact-image.jpg"
                     alt="impact-img"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -376,7 +359,7 @@ const Page = () => {
             <div className="flex flex-col items-center lg:flex-row gap-8">
               <div className="w-[100%] lg:w-[40%]">
                 <Image
-                  src={ResearchPortfolio}
+                  src="/assets/research-portfolio.jpg"
                   alt="research"
                   className="w-full h-full object-cover"
                 />

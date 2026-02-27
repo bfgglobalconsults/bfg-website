@@ -1,13 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../../public/assets/governance-images.png";
-import GovernanceImg from "../../../../public/assets/governance-image.jpg";
 import Slides from "@/components/Slides";
 import { SlideLeft } from "@/components/ui/Transitions";
-import ClientCentric from "../../../../public/assets/client-centric.png";
-import Innovative from "../../../../public/assets/innovative-learning.jpg";
-import Inclusivity from "../../../../public/assets/inclusivity.jpeg";
-import Sustain from "../../../../public/assets/sustain.jpg";
 import OurStand from "@/components/OurStand";
 
 const page = () => {
@@ -29,7 +23,7 @@ const page = () => {
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={TopBanner}
+            src="/assets/governance-images.png"
             alt="top-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -67,7 +61,7 @@ const page = () => {
               <div className="w-[100%] lg:w-[40%]">
                 <div className="w-full h-full">
                   <Image
-                    src={GovernanceImg}
+                    src="/assets/governance-image.jpg"
                     alt=""
                     className="w-full h-full rounded-md object-cover"
                   />
@@ -151,7 +145,7 @@ const page = () => {
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                   <div className="w-full">
                     <Image
-                      src={ClientCentric}
+                      src="/assets/client-centric.png"
                       alt="client"
                       className="w-full h-full object-cover rounded-xl"
                     />
@@ -170,7 +164,7 @@ const page = () => {
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                   <div className="w-full">
                     <Image
-                      src={Innovative}
+                      src="/assets/innovative-learning.jpg"
                       alt="innovate"
                       className="w-full h-full object-cover rounded-xl"
                     />
@@ -190,7 +184,7 @@ const page = () => {
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                   <div className="w-full">
                     <Image
-                      src={Inclusivity}
+                      src="/assets/inclusivity.jpeg"
                       alt="inclusive"
                       className="w-full h-full object-cover rounded-xl"
                     />
@@ -210,7 +204,7 @@ const page = () => {
                 <div className="w-[100%] lg:w-[30%] flex flex-col  items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
                   <div className="w-full">
                     <Image
-                      src={Sustain}
+                      src="/assets/sustain.jpg"
                       alt="sustain"
                       className="w-full h-full object-cover rounded-xl"
                     />

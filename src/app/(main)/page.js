@@ -6,50 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
-import Banner from "../../../public/assets/new_banner.png";
-import NewBanner from "../../../public/assets/new-banner.png";
-import ImageBanner from "../../../public/assets/banner-image1.jpg";
-import ImageBanner2 from "../../../public/assets/banner-image2.jpg";
-import ImageBanner3 from "../../../public/assets/case-study-banner.jpg";
-import MidBanner from "../../../public/assets/midbanner.jpg";
-import HeadGrowth from "../../../public/assets/moses-sunday.jpg";
-import Marketer from "../../../public/assets/ifeoma.jpg";
-import Appetizer from "../../../public/assets/appetiza.jpg";
-import Careerfun from "../../../public/assets/careerfun.jpg";
-import Microsoft from "../../../public/assets/microsoft-banner.png";
-import Qualitrics from "../../../public/assets/qualitrics-banner.png";
-import Netline from "../../../public/assets/netline-banner.png";
-import IBM from "../../../public/assets/ibm-banner.png";
-import Apex from "../../../public/assets/apexgroup-banner.png";
 import Logo from "../bfg-logo.png";
-import Animation from "../../../public/office_banner.jpg";
-import Picture1 from "../../../public/assets/picture-1.png";
-import Picture2 from "../../../public/assets/picture-2.png";
-import Picture3 from "../../../public/assets/picture-3.png";
-import SliderImage1 from "../../../public/assets/sliderimage1.jpg";
-import SliderImage2 from "../../../public/assets/sliderimage2.jpg";
-import SliderImage3 from "../../../public/assets/hospitality.jpg";
-import SliderImage4 from "../../../public/assets/sliderimage4.jpg";
-import SliderImage5 from "../../../public/assets/consumer-img.jpg";
-import SliderImage6 from "../../../public/assets/oilgas-banner.png";
-import SliderImage7 from "../../../public/assets/industrial-manufacture-banner.png";
-import SliderImage8 from "../../../public/assets/telecom-banner.png";
-import SliderImage9 from "../../../public/assets/entertainment-banner.png";
-import SliderImage10 from "../../../public/assets/health-banner.png";
-import SliderImage11 from "../../../public/assets/financial-img.png";
-import CaseImage1 from "../../../public/assets/technology-case.png";
-import CaseImage2 from "../../../public/assets/research-case.png";
-import CaseImage3 from "../../../public/assets/business-case.png";
-import CaseImage4 from "../../../public/assets/training-case.png";
-import STTravel from "../../../public/assets/News-ST.jpg";
-import AwardNews from "../../../public/assets/bfg-award.jpg";
-import AINews from "../../../public/assets/ai-news.jpg";
-import BlogImage from "../../../public/assets/blog-image.jpeg";
-import AfricaImage from "../../../public/assets/africa-rising.png";
-import CeoNews from "../../../public/assets/ceo-news.jpg";
-import FirstNews from "../../../public/assets/first-news.png";
-import SecondNews from "../../../public/assets/second-news.png";
-import ContentBanner from "../../../public/assets/middle-content-banner.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import { partners_links } from "@/constants/partners-constants";
@@ -131,7 +88,7 @@ export default function Main() {
       description:
         "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
       imageAlt: "slider1-img",
-      imageSrc: SliderImage1,
+      imageSrc: "/assets/sliderimage1.jpg",
       readMore: "/industry/industries/technology",
     },
     {
@@ -140,7 +97,7 @@ export default function Main() {
       description:
         "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
       imageAlt: "slider5-img",
-      imageSrc: SliderImage5,
+      imageSrc: "/assets/consumer-img.jpg",
       readMore: "/industry/industries/consumer",
     },
     {
@@ -149,7 +106,7 @@ export default function Main() {
       description:
         "Building success, BFG guides construction companies to navigate complex projects, enhance efficiency, & drive innovation.",
       imageAlt: "slider2-img",
-      imageSrc: SliderImage2,
+      imageSrc: "/assets/sliderimage2.jpg",
       readMore: "/industry/industries/real-estate",
     },
     {
@@ -158,7 +115,7 @@ export default function Main() {
       description:
         "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
       imageAlt: "slider3-img",
-      imageSrc: SliderImage3,
+      imageSrc: "/assets/hospitality.jpg",
       readMore: "/industry/industries/hospitality",
     },
     {
@@ -167,7 +124,7 @@ export default function Main() {
       description:
         "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider4-img",
-      imageSrc: SliderImage4,
+      imageSrc: "/assets/sliderimage4.jpg",
       readMore: "/industry/industries/government",
     },
     {
@@ -176,7 +133,7 @@ export default function Main() {
       description:
         "BFG empowers oil and gas companies to optimize operations, enhance safety protocols, and implement sustainable practices while navigating industry regulations and market dynamics.",
       imageAlt: "slider6-img",
-      imageSrc: SliderImage6,
+      imageSrc: "/assets/oilgas-banner.png",
       readMore: "/industry/industries/oil-gas",
     },
     {
@@ -185,7 +142,7 @@ export default function Main() {
       description:
         "BFG helps manufacturers streamline production processes, optimize supply chains, integrate smart technologies, and enhance operational efficiency.",
       imageAlt: "slider7-img",
-      imageSrc: SliderImage7,
+      imageSrc: "/assets/industrial-manufacture-banner.png",
       readMore: "/industry/industries/industrial-manufacturing",
     },
     {
@@ -194,7 +151,7 @@ export default function Main() {
       description:
         "BFG helps businesses in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
       imageAlt: "slider8-img",
-      imageSrc: SliderImage8,
+      imageSrc: "/assets/telecom-banner.png",
       readMore: "/industry/industries/telecom-media",
     },
     {
@@ -203,7 +160,7 @@ export default function Main() {
       description:
         "BFG provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.",
       imageAlt: "slider9-img",
-      imageSrc: SliderImage9,
+      imageSrc: "/assets/entertainment-banner.png",
       readMore: "/industry/industries/entertainment",
     },
     {
@@ -212,7 +169,7 @@ export default function Main() {
       description:
         "BFG supports healthcare providers, social care organizations, and health-tech startups in adopting advanced healthcare strategies, improving service delivery, and ensuring regulatory compliance.",
       imageAlt: "slider10-img",
-      imageSrc: SliderImage10,
+      imageSrc: "/assets/health-banner.png",
       readMore: "/industry/industries/health-social-care",
     },
     {
@@ -221,7 +178,7 @@ export default function Main() {
       description:
         "We partner with financial institutions, fintech companies, & other stakeholders to navigate regulatory complexities, harness emerging technologies, & unlock new opportunities.",
       imageAlt: "slider11-img",
-      imageSrc: SliderImage11,
+      imageSrc: "/assets/financial-img.png",
       readMore: "/industry/industries/financial",
     },
   ];
@@ -229,14 +186,14 @@ export default function Main() {
   const cases = [
        {
       id: 1,
-      image: CaseImage2,
+      image: "/assets/research-case.png",
       img_name: "banner",
       title: "Research & Analytics",
       link: "/insight/case-study/research",
     },
     {
       id: 2,
-      image: CaseImage1,
+      image: "/assets/technology-case.png",
       img_name: "banner",
       title: "Technology & Software Development",
       link: "/insight/case-study/technology",
@@ -244,14 +201,14 @@ export default function Main() {
  
     {
       id: 3,
-      image: CaseImage3,
+      image: "/assets/business-case.png",
       img_name: "banner",
       title: "Strategy & Operations Transformation",
       link: "/insight/case-study/strategy",
     },
     {
       id: 4,
-      image: CaseImage4,
+      image: "/assets/training-case.png",
       img_name: "banner",
       title: "Training & Development",
       link: "/insight/case-study/training",
@@ -261,21 +218,21 @@ export default function Main() {
   const banner = [
     {
       id: 1,
-      image: ImageBanner,
+      image: "/assets/banner-image1.jpg",
       img_name: "banner",
       title: "The BFG Story",
       link: "https://businessday.ng/life/article/how-festus-bello-catalyse-nigerias-entrepreneurship-ecosystem/",
     },
     {
       id: 2,
-      image: ImageBanner2,
+      image: "/assets/banner-image2.jpg",
       img_name: "banner2",
       title: "BFG Consults bags UK Award for Research",
       link: "https://guardian.ng/news/bfg-consults-bags-uk-award-for-research-others/",
     },
     {
       id: 3,
-      image: ImageBanner3,
+      image: "/assets/case-study-banner.jpg",
       img_name: "banner3",
       title: "Case Studies",
       link: "",
@@ -666,8 +623,10 @@ export default function Main() {
           <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
             <div className="w-[100%]  xl:w-[50%]">
               <Image
-                src={ContentBanner}
+                src="/assets/middle-content-banner.png"
                 alt="content-img"
+                width={600}
+                height={400}
                 className="w-full rounded-lg"
               />
             </div>
@@ -744,7 +703,7 @@ export default function Main() {
                   >
                     <div className="p-4 relative h-[300px]">
                       <Image
-                        src={item.featuredImage || CeoNews}
+                        src={item.featuredImage || "/assets/ceo-news.jpg"}
                         alt={item.title}
                         width={400}
                         height={300}
@@ -854,7 +813,7 @@ export default function Main() {
                   >
                     <div className="p-4 relative h-[300px]">
                       <Image
-                        src={item.featuredImage || BlogImage}
+                        src={item.featuredImage || "/assets/blog-image.jpeg"}
                         alt={item.title}
                         width={400}
                         height={300}

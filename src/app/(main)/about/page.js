@@ -3,9 +3,6 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 // import Banner from "../../../../public/assets/about-banner.png";
-import Banner from "../../../../public/assets/glass-building.jpeg";
-
-import Picture from "../../../../public/assets/festus-bello-image.png";
 import Statistics from "@/components/Statistics";
 import OurStand from "@/components/OurStand";
 import CounterSection from "@/components/counter/CounterSection";
@@ -35,7 +32,7 @@ const Page = () => {
 
         <div className="relative h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
           <Image
-            src={Banner}
+            src="/assets/glass-building.jpeg"
             alt="about-banner"
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -269,7 +266,7 @@ const Page = () => {
             <div className="flex flex-col">
               <div className="">
                 <Image
-                  src={Picture}
+                  src="/assets/festus-bello-image.png"
                   alt="festus-bello"
                   className="w-full h-full object-cover"
                 />
