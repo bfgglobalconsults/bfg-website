@@ -18,7 +18,7 @@ import Scalabity from "../../../../../public/assets/scalability.jpg";
 import Operations from "../../../../../public/assets/operations.jpg";
 import BusinessPortfolio from "../../../../../public/assets/business-portfolio.jpg";
 import ServiceImage1 from "../../../../../public/assets/service-image1.png";
-import ServiceImage2 from "../../../../public/assets/service-image2.png";
+import ServiceImage2 from "../../../../../public/assets/service-image2.png";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
 import Link from "next/link";
 

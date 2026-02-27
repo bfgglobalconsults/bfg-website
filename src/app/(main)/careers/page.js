@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import TopBanner from "../../../public/assets/career-img.jpg";
+import TopBanner from "../../../../public/assets/career-img.jpg";
 import Link from "next/link";
 import Slides from "@/components/Slides";
-import Banner from "../../../public/assets/career-banners-new.jpg";
+import Banner from "../../../../public/assets/career-banners-new.jpg";
 
 const page = () => {
   return (

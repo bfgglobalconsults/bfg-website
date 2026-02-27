@@ -5,21 +5,21 @@ import React, { useEffect, useState } from "react";
 import Logo from "@/app/bfg-logo.png";
 import { Button, Dialog, DialogPanel, DialogTitle, Transition, TransitionChild } from '@headlessui/react'
 
-import Banner from "../../../../../public/assets/ai-banner.png";
-import Avatar from "../../../../../public/assets/avatar.png";
-import MidBanner from "../../../../../public/assets/mid-banner.png";
-import ContentBanner from "../../../../../public/assets/content-banner.png";
-import BottomBanner from "../../../../../public/assets/bottom-banner.png";
-import CustomerBanner from "../../../../../public/assets/customer-banner.png";
-import ProfitBanner from "../../../../../public/assets/profit-chart.png";
+import Banner from "../../../../public/assets/ai-banner.png";
+import Avatar from "../../../../public/assets/avatar.png";
+import MidBanner from "../../../../public/assets/mid-banner.png";
+import ContentBanner from "../../../../public/assets/content-banner.png";
+import BottomBanner from "../../../../public/assets/bottom-banner.png";
+import CustomerBanner from "../../../../public/assets/customer-banner.png";
+import ProfitBanner from "../../../../public/assets/profit-chart.png";
 
-import NumberOne from "../../../../../public/assets/number1.png";
-import NumberTwo from "../../../../../public/assets/number2.png";
-import NumberThree from "../../../../../public/assets/number3.png";
+import NumberOne from "../../../../public/assets/number1.png";
+import NumberTwo from "../../../../public/assets/number2.png";
+import NumberThree from "../../../../public/assets/number3.png";
 
-import Work1 from "../../../../../public/assets/work1.png";
-import Work2 from "../../../../../public/assets/work2.png";
-import Work3 from "../../../../../public/assets/work3.png";
+import Work1 from "../../../../public/assets/work1.png";
+import Work2 from "../../../../public/assets/work2.png";
+import Work3 from "../../../../public/assets/work3.png";
 
 const Funnel = () => {
   const [active, setActive] = useState(false);

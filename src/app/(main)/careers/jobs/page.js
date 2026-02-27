@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../../app/bfg-logo.png";
+import Logo from "../../../../app/bfg-logo.png";
 
 const page = () => {
   return (
