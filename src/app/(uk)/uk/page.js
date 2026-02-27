@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import UkHeroBanner from "../../../../public/assets/uk-hero-banner.png";
-import UkTeam from "../../../../public/assets/ng-team.png";
-import UkBackground from "../../../../public/assets/ng-background.png";
+import UkHeroBanner from "@public/assets/uk-hero-banner.png";
+import UkTeam from "@public/assets/ng-team.png";
+import UkBackground from "@public/assets/ng-background.png";
 
 export default function UKPage() {
   return (

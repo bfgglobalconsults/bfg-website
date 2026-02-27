@@ -2,7 +2,7 @@ import Slides from "@/components/Slides";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FirstNews from "../../../../../../public/assets/business-cover.jpg";
+import FirstNews from "@public/assets/business-cover.jpg";
 const page = () => {
   return (
     <>
