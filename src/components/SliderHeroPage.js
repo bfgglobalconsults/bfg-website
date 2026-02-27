@@ -177,7 +177,7 @@ const HeroSection2 = () => (
           </span>
           <span className="text-sm font-medium text-[#E45F11]">
             MEA Business Award: Best Start-Up & SME Consultancy Firm in West
-            Africa, 2024
+            Africa, 2024.
           </span>
         </div>
         <div className="max-w-4xl space-y-6">
