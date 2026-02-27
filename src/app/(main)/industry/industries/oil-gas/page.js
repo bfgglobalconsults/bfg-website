@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import OilGasImg from "../../../../../public/assets/oilgas-banner.png";
-import OilGasImage from "../../../../../public/assets/oil-gas.jpg";
+import OilGasImg from "../../../../../../public/assets/oilgas-banner.png";
+import OilGasImage from "../../../../../../public/assets/oil-gas.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {

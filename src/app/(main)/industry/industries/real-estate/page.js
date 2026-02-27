@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import RealEstateImg from "../../../../../public/assets/realestate-img.jpg";
-import RealImage from "../../../../../public/assets/realestate-image.jpg";
+import RealEstateImg from "../../../../../../public/assets/realestate-img.jpg";
+import RealImage from "../../../../../../public/assets/realestate-image.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {

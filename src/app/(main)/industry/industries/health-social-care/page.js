@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import HealthImg from "../../../../../public/assets/health-banner.jpg";
-import HealthImage from "../../../../../public/assets/health-card.jpg";
+import HealthImg from "../../../../../../public/assets/health-banner.jpg";
+import HealthImage from "../../../../../../public/assets/health-card.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {

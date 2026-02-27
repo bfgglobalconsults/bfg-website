@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import NonGovtImg from "../../../../../public/assets/non-profit-vendor-scaled.jpg";
-import NgoImage from "../../../../../public/assets/ngo-pic.jpg";
+import NonGovtImg from "../../../../../../public/assets/non-profit-vendor-scaled.jpg";
+import NgoImage from "../../../../../../public/assets/ngo-pic.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {

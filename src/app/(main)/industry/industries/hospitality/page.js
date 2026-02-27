@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import TouristImg from "../../../../../public/assets/hospitality-tourism.jpg";
-import TourismImage from "../../../../../public/assets/hospitality-image.jpg";
+import TouristImg from "../../../../../../public/assets/hospitality-tourism.jpg";
+import TourismImage from "../../../../../../public/assets/hospitality-image.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {

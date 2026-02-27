@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import FinancialImg from "../../../../../public/assets/financial-img.png";
-import FinanceImage from "../../../../../public/assets/finance-image.jpg";
+import FinancialImg from "../../../../../../public/assets/financial-img.png";
+import FinanceImage from "../../../../../../public/assets/finance-image.jpg";
 import Slides from "@/components/Slides";
 
 const page = () => {
