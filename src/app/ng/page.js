@@ -1,9 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import MapBanner from "/assets/nigeria-banner.png";
-import NgTeam from "/assets/ng-team.png";
-import NgBackground from "/assets/ng-background.png";
 
 export default function NigeriaPage() {
   return (
@@ -12,7 +9,7 @@ export default function NigeriaPage() {
       <section className="container mx-auto py-16 lg:py-[150px] relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src={NgBackground}
+            src="/assets/ng-background.png"
             alt="Nigeria business landscape background with modern office buildings"
             fill
             className="object-cover"
@@ -71,7 +68,7 @@ export default function NigeriaPage() {
               {/* Africa Map Placeholder */}
               <div className="relative w-full h-[500px] flex items-center justify-center z-5">
                 <Image
-                  src={MapBanner}
+                  src="/assets/nigeria-banner.png"
                   alt="Map of Nigeria highlighting business regions and key cities"
                   className="w-full h-full object-cover rounded-xl"
                 />
@@ -366,7 +363,7 @@ export default function NigeriaPage() {
             <div className="flex flex-col items-center gap-8">
               <div className="bg-white rounded-full aspect-square flex items-center justify-center p-8 lg:p-12 shadow-2xl overflow-hidden">
                 <Image
-                  src={NgTeam}
+                  src="/assets/ng-team.png"
                   alt="BFG Global Consults Nigeria team of expert consultants"
                   className="w-full h-full object-cover rounded-full"
                 />

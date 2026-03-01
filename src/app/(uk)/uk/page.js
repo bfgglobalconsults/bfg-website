@@ -1,9 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import UkHeroBanner from "/assets/uk-hero-banner.png";
-import UkTeam from "/assets/ng-team.png";
-import UkBackground from "/assets/ng-background.png";
 
 export default function UKPage() {
   return (
@@ -12,7 +9,7 @@ export default function UKPage() {
       <section className="container mx-auto py-16 lg:py-[150px] relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src={UkBackground}
+            src="/assets/ng-background.png"
             alt="UK business landscape background with modern office buildings"
             fill
             className="object-cover"
@@ -72,7 +69,7 @@ export default function UKPage() {
               {/* UK Map/Banner */}
               <div className="relative w-full h-[500px] flex items-center justify-center z-5">
                 <Image
-                  src={UkHeroBanner}
+                  src="/assets/uk-hero-banner.png"
                   alt="UK map with business analytics and growth statistics"
                   className="w-full h-full object-contain rounded-xl"
                 />
@@ -367,7 +364,7 @@ export default function UKPage() {
             <div className="flex flex-col items-center gap-8">
               <div className="bg-white rounded-full aspect-square flex items-center justify-center p-8 lg:p-12 shadow-2xl overflow-hidden">
                 <Image
-                  src={UkTeam}
+                  src="/assets/ng-team.png"
                   alt="BFG Global Consults UK team of expert consultants"
                   className="w-full h-full object-cover rounded-full"
                 />
