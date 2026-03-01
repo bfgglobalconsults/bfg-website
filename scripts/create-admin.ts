@@ -12,8 +12,9 @@ async function createAdmin() {
       data: {
         email: "admin@bfgconsults.com",
         password: "Admin@123456",
+        name: "Super Admin",
         role: "super-admin",
-      },
+      } as any,
     });
 
     console.log("✅ Admin user created successfully!");
