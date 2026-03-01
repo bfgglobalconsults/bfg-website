@@ -84,7 +84,7 @@ export const Industries: CollectionConfig = {
     {
       name: "caseStudies",
       type: "relationship",
-      relationTo: "case-studies",
+      relationTo: "case-studies" as any,
       hasMany: true,
       required: false,
       admin: {
@@ -165,5 +165,3 @@ export const Industries: CollectionConfig = {
     },
   ],
 };
-
-
