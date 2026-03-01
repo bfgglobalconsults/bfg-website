@@ -4,7 +4,6 @@ import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
-import ContactBanner from "/assets/contact-image.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import toast from "react-hot-toast";
@@ -116,8 +115,10 @@ const Page = () => {
         <div className="px-1 py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
-              src={ContactBanner}
+              src="/assets/contact-image.png"
               alt="contact-banner"
+              width={1200}
+              height={400}
               className="w-full h-full object-cover rounded-3xl"
             />
           </div>
