@@ -25,7 +25,7 @@ Our SaaS offerings are designed to empower businesses by providing scalable and 
           </div>
           <div className="w-[40%]">
           {product_links.map(({id, label, link}) =>(
-              <>
+              <div key={id}>
               <p className="flex gap-2 items-center mx-4 py-4  border-b text-black border-[#E45F11] text-lg font-semibold cursor-pointer hover:text-[#E45F11]"
               onClick={() => handleLinkClick(link)}>
                 {label}
@@ -33,7 +33,7 @@ Our SaaS offerings are designed to empower businesses by providing scalable and 
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(228,95,17,1)"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
             </span>
                 </p>
-                </>
+                </div>
             ))}
           </div>
           <div className="w-[40%]"></div>

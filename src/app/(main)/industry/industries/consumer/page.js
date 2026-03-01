@@ -23,6 +23,8 @@ const page = () => {
           <Image
             src="/assets/consumers.png"
             alt="consumer-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -65,7 +67,7 @@ const page = () => {
                 delivering impactful results in key area{" "}
               </p>
               <div className="w-full">
-                <Image src="/assets/consumer-image.jpg" alt="it-image" className="w-full" />
+                <Image src="/assets/consumer-image.jpg" alt="it-image" width={1200} height={600} className="w-full" />
               </div>
             </div>
             <div className="w-[100%] lg:w-[50%] p-[40px] flex flex-col gap-10">

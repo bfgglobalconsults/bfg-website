@@ -71,6 +71,8 @@ const Page = () => {
           <Image
             src="/assets/research-banner.jpg"
             alt="top-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -118,6 +120,8 @@ const Page = () => {
               <Image
                 src="/assets/business-teacher.png"
                 alt="research-image"
+                width={1200}
+                height={600}
                 className="w-full rounded-lg"
               />
             </div>
@@ -160,6 +164,8 @@ const Page = () => {
                 <Image
                   src="/assets/service-image1.png"
                   alt="service-image1"
+                  width={400}
+                  height={280}
                   className="w-full h-full"
                 />
               </div>
@@ -167,6 +173,8 @@ const Page = () => {
                 <Image
                   src="/assets/service-image2.png"
                   alt="service-image2"
+                  width={800}
+                  height={280}
                   className="w-full h-full"
                 />
               </div>
@@ -185,6 +193,8 @@ const Page = () => {
                   <Image
                     src="/assets/optimize-image.png"
                     alt="optimize-img"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -215,6 +225,8 @@ const Page = () => {
                   <Image
                     src="/assets/measure-image.jpg"
                     alt="measure-img"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -245,6 +257,8 @@ const Page = () => {
                   <Image
                     src="/assets/experience-image.jpg"
                     alt="exp-img"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -274,6 +288,8 @@ const Page = () => {
                   <Image
                     src="/assets/appraisal-images.png"
                     alt="appraisal-img"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -304,6 +320,8 @@ const Page = () => {
                   <Image
                     src="/assets/predictive-image.jpg"
                     alt="predective-img"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -332,6 +350,8 @@ const Page = () => {
                   <Image
                     src="/assets/impact-image.jpg"
                     alt="impact-img"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -361,6 +381,8 @@ const Page = () => {
                 <Image
                   src="/assets/research-portfolio.jpg"
                   alt="research"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover"
                 />
               </div>

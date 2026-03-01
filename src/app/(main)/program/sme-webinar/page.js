@@ -36,6 +36,8 @@ const Page = () => {
             <Image
               src="/assets/sme-webinar.png"
               alt="top-banner"
+              width={1200}
+              height={400}
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
@@ -111,6 +113,8 @@ const Page = () => {
               <Image
                 src="/assets/sme-card.jpg"
                 alt="webinar-image"
+                width={600}
+                height={400}
                 className="w-full h-full object-fit rounded-r-md"
               />
             </motion.div>

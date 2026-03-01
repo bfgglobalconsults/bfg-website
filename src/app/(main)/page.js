@@ -522,6 +522,8 @@ export default function Main() {
                 <Image
                   src={item.image}
                   alt={item.title}
+                  width={400}
+                  height={500}
                   className="w-full h-[100%] object-fit"
                 />
                 <div>

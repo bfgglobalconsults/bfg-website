@@ -95,6 +95,8 @@ const Page = () => {
           <Image
             src="/assets/team-image-banner.jpg"
             alt="about-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover object-top rounded-3xl"
           />
         </div>

@@ -2,9 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import TopBanner from "/assets/data-deal-img.jpg";
-import DataDeal from "/assets/Data2Deals.jpg";
-import Beauty from "/assets/sme-woman.png";
 import Slides from "@/components/Slides";
 import ProgramModal from "@/components/ProgramModal";
 
@@ -37,8 +34,10 @@ const Page = () => {
         <div className="px-1 py-12">
           <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
             <Image
-              src={TopBanner}
+              src="/assets/data-deal-img.jpg"
               alt="top-banner"
+              width={1200}
+              height={400}
               className="w-full h-full object-fit rounded-xl"
             />
           </div>
@@ -109,8 +108,10 @@ const Page = () => {
               className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
             >
               <Image
-                src={DataDeal}
+                src="/assets/Data2Deals.jpg"
                 alt="data-image"
+                width={600}
+                height={400}
                 className="w-full h-full object-fit rounded-r-md"
               />
               {/* <div className="w-full h-[400px] shadow-lg rounded-xl relative">
@@ -138,8 +139,10 @@ const Page = () => {
                 </div>
                 <div className="absolute top-0 right-0 w-[45%] h-full">
                   <Image
-                    src={Beauty}
+                    src="/assets/sme-woman.png"
                     alt="beauty-image"
+                    width={300}
+                    height={400}
                     className="w-full h-full object-cover rounded-r-md"
                   />
                 </div>

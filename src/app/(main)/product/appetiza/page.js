@@ -232,7 +232,7 @@ const FeatureCard = ({ icon, title, points, image, reverse }) => (
     </div>
     <div className="md:w-1/2 flex justify-center">
       <div className="w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-lg">
-        <Image src={image} alt={title} className="w-full h-full object-cover" />
+        <Image src={image} alt={title} width={384} height={384} className="w-full h-full object-cover" />
       </div>
     </div>
   </div>
@@ -248,6 +248,8 @@ const SelectedProductCards = () => (
         <Image
           src="/assets/appetiza-bg.png"
           alt="Business Planning"
+          width={128}
+          height={128}
           className="w-32 h-32 object-contain mb-4"
         />
         <h4 className="font-bold text-lg mb-2">AI-Driven Business Planning</h4>
@@ -260,6 +262,8 @@ const SelectedProductCards = () => (
         <Image
           src="/assets/appetiza-bg.png"
           alt="Expansion"
+          width={128}
+          height={128}
           className="w-32 h-32 object-contain mb-4"
         />
         <h4 className="font-bold text-lg mb-2">Global Expansion Toolkit</h4>
@@ -288,7 +292,7 @@ const Page = () => {
             "Specialized solutions designed to address the unique challenges & opportunities of the African market.",
             "Leverage local market expertise to develop effective expansion & optimization plans.",
           ]}
-          image={ProductImage}
+          image="/assets/product-banner.png"
         />
         <FeatureCard
           icon="Expansion"
@@ -297,7 +301,7 @@ const Page = () => {
             "Seamlessly scale your business beyond Africa with comprehensive internationalization support.",
             "Navigate complex regulatory environments & cultural differences with expert guidance.",
           ]}
-          image={ProductExpand}
+          image="/assets/product-expand.jpg"
           reverse
         />
       </div>

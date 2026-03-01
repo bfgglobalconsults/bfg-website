@@ -33,7 +33,7 @@ const ClientBanner = () => {
             </div>
           </div>
           <div className="w-full relative">
-            <Image src="/assets/video-img.png" alt="video-img" className="w-full" />
+            <Image src="/assets/video-img.png" alt="video-img" width={1200} height={600} className="w-full" />
             <button
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-xl font-bold rounded-xl transition hover:bg-opacity-60"
               onClick={() => setShowVideo(true)}
@@ -62,7 +62,7 @@ const ClientBanner = () => {
               </p>
               <div className="my-4 flex gap-2">
                 <div>
-                  <Image src="/assets/sensang-img.png" alt="sendsang-img" className="" />
+                  <Image src="/assets/sensang-img.png" alt="sendsang-img" width={100} height={100} className="" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">
@@ -83,7 +83,7 @@ const ClientBanner = () => {
               </p>
               <div className="my-4 flex gap-2">
                 <div>
-                  <Image src="/assets/gigs-img.png" alt="gigs-img" className="" />
+                  <Image src="/assets/gigs-img.png" alt="gigs-img" width={100} height={100} className="" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">
@@ -105,7 +105,7 @@ const ClientBanner = () => {
               </p>
               <div className="my-4 flex gap-2">
                 <div>
-                  <Image src="/assets/12twenty-img.png" alt="twenty-img" className="" />
+                  <Image src="/assets/12twenty-img.png" alt="twenty-img" width={100} height={100} className="" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">

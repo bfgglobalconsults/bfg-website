@@ -213,6 +213,8 @@ const SelectedProductCards = () => (
         <Image
           src="/assets/careerfun-bg.png"
           alt="Learning Play"
+          width={128}
+          height={128}
           className="w-32 h-32 object-contain mb-4"
         />
         <h4 className="font-bold text-lg mb-2">Interactive Learning Games</h4>
@@ -225,6 +227,8 @@ const SelectedProductCards = () => (
         <Image
           src="/assets/careerfun-bg.png"
           alt="Skill Growth"
+          width={128}
+          height={128}
           className="w-32 h-32 object-contain mb-4"
         />
         <h4 className="font-bold text-lg mb-2">Personalized Skill Growth</h4>
@@ -266,7 +270,7 @@ const FeatureCard = ({ icon, title, points, image, reverse }) => (
     </div>
     <div className="md:w-1/2 flex justify-center">
       <div className="w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-lg">
-        <Image src={image} alt={title} className="w-full h-full object-cover" />
+        <Image src={image} alt={title} width={384} height={384} className="w-full h-full object-cover" />
       </div>
     </div>
   </div>
@@ -288,7 +292,7 @@ const Page = () => {
             "Experience a new way to learn with interactive games and real-world scenarios.",
             "Stay motivated with rewards, badges, and friendly competition.",
           ]}
-          image={ProductExpand}
+          image="/assets/career-goal.jpg"
         />
         <FeatureCard
           icon="Skill Paths"
@@ -297,7 +301,7 @@ const Page = () => {
             "Choose your own learning adventure and track your progress every step of the way.",
             "Access resources and mentorship tailored to your career goals.",
           ]}
-          image={ProductImage}
+          image="/assets/career-game.jpg"
           reverse
         />
       </div>

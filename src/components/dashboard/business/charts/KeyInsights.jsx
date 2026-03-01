@@ -32,6 +32,8 @@ const KeyInsights = () => {
                 <Image
                   src={industry.img}
                   alt={industry.name}
+                  width={24}
+                  height={24}
                   className="w-6 h-6 rounded-full object-fit"
                 />
                 <span className="text-gray-900 text-md font-medium">

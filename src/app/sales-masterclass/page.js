@@ -132,7 +132,7 @@ const Page = () => {
                     <Image
                       src="/assets/thinking-man.png"
                       alt="first-image"
-                      className="w-full h-full object-cover"
+                      width={400} height={400} className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
@@ -335,7 +335,7 @@ const Page = () => {
                   <Image
                     src="/assets/arrow-red-3.webp"
                     alt="arrow"
-                    className="w-full h-full object-cover"
+                    width={400} height={400} className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="flex justify-center">
@@ -426,7 +426,7 @@ const Page = () => {
                       <Image
                         src="/assets/arrow-red-3.webp"
                         alt="arrow"
-                        className="w-full h-full object-cover"
+                        width={400} height={400} className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="flex justify-center">
@@ -614,7 +614,7 @@ const Page = () => {
                           <Image
                             src="/assets/master-image.png"
                             alt="sales-master"
-                            className="w-full h-full object-cover"
+                            width={400} height={400} className="w-full h-full object-cover"
                           />
                         </div>
                       </div>
@@ -633,7 +633,7 @@ const Page = () => {
                           <Image
                             src="/assets/price-image.png"
                             alt="price-image"
-                            className="w-full h-full object-cover"
+                            width={400} height={400} className="w-full h-full object-cover"
                           />
                         </div>
                       </div>
@@ -691,7 +691,7 @@ const Page = () => {
                       <Image
                         src="/assets/arrow-red-3.webp"
                         alt="arrow"
-                        className="w-full h-full object-cover"
+                        width={400} height={400} className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="flex justify-center">
@@ -912,7 +912,7 @@ const Page = () => {
                     <Image
                       src="/assets/masterclass-flyer.png"
                       alt="speakers-banner"
-                      className="w-full h-full object-cover"
+                      width={400} height={400} className="w-full h-full object-cover"
                     />
                   </div>
                 </section>
@@ -931,3 +931,4 @@ const Page = () => {
 };
 
 export default Page;
+

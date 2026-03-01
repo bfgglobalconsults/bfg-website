@@ -23,6 +23,8 @@ const page = () => {
           <Image
             src="/assets/oilgas-banner.png"
             alt="oil-gas"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -59,7 +61,7 @@ const page = () => {
               unique challenges of the oil and gas industry
             </p>
             <div className="w-full">
-              <Image src="/assets/oil-gas.jpg" alt="oil-image" className="w-full rounded-xl" />
+              <Image src="/assets/oil-gas.jpg" alt="oil-image" width={1200} height={600} className="w-full rounded-xl" />
             </div>
           </div>
           <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">

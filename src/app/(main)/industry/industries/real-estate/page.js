@@ -23,6 +23,8 @@ const page = () => {
           <Image
             src="/assets/realestate-img.jpg"
             alt="real-estate"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -67,7 +69,7 @@ const page = () => {
                 making a lasting impact in key areas{" "}
               </p>
               <div className="w-full">
-                <Image src="/assets/realestate-image.jpg" alt="it-image" className="w-full rounded-xl" />
+                <Image src="/assets/realestate-image.jpg" alt="it-image" width={1200} height={600} className="w-full rounded-xl" />
               </div>
             </div>
             <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">

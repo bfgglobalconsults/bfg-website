@@ -83,7 +83,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/dmj-image.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -125,7 +125,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/st-image.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -167,7 +167,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/skool-image.jpeg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -209,7 +209,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/david-presage-web.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -251,7 +251,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/real-estate.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -294,7 +294,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/gig-image.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -340,7 +340,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/zenkleus-research.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -382,7 +382,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/business-meeting.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -427,7 +427,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/research-cover-img.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -469,7 +469,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/gigs-travel-research.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -511,7 +511,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/last-research.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -559,7 +559,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/business-meeting.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -600,7 +600,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/business-cover.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -641,7 +641,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/business-image.png"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -682,7 +682,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/measure-business.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -721,7 +721,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/case-banner.jpeg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -767,7 +767,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/training-areai.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -811,7 +811,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/training-ilead.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -852,7 +852,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/training-hope-behind-bars.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -896,7 +896,7 @@ const ProjectTabs = () => {
                     <Image
                       src="/assets/training-do-action.jpg"
                       alt="news1"
-                      className="w-full h-full object-cover rounded-3xl"
+                      width={400} height={350} className="w-full h-full object-cover rounded-3xl"
                     />
                   </div>
                   <div>
@@ -940,3 +940,4 @@ const ProjectTabs = () => {
 };
 
 export default ProjectTabs;
+

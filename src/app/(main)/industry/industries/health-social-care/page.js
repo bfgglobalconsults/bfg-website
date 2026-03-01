@@ -23,6 +23,8 @@ const page = () => {
           <Image
             src="/assets/health-banner.jpg"
             alt="health-media"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -63,6 +65,8 @@ const page = () => {
               <Image
                 src="/assets/health-card.jpg"
                 alt="telecom-image"
+                width={1200}
+                height={600}
                 className="w-full rounded-xl"
               />
             </div>

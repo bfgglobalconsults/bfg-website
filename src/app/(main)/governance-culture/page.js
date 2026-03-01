@@ -25,6 +25,8 @@ const page = () => {
           <Image
             src="/assets/governance-images.png"
             alt="top-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -63,7 +65,7 @@ const page = () => {
                   <Image
                     src="/assets/governance-image.jpg"
                     alt=""
-                    className="w-full h-full rounded-md object-cover"
+                    width={600} height={400} className="w-full h-full rounded-md object-cover"
                   />
                 </div>
               </div>
@@ -147,7 +149,7 @@ const page = () => {
                     <Image
                       src="/assets/client-centric.png"
                       alt="client"
-                      className="w-full h-full object-cover rounded-xl"
+                      width={600} height={400} className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -166,7 +168,7 @@ const page = () => {
                     <Image
                       src="/assets/innovative-learning.jpg"
                       alt="innovate"
-                      className="w-full h-full object-cover rounded-xl"
+                      width={600} height={400} className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -186,7 +188,7 @@ const page = () => {
                     <Image
                       src="/assets/inclusivity.jpeg"
                       alt="inclusive"
-                      className="w-full h-full object-cover rounded-xl"
+                      width={600} height={400} className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -206,7 +208,7 @@ const page = () => {
                     <Image
                       src="/assets/sustain.jpg"
                       alt="sustain"
-                      className="w-full h-full object-cover rounded-xl"
+                      width={600} height={400} className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
                   <div className="w-[100%]">
@@ -235,3 +237,4 @@ const page = () => {
 };
 
 export default page;
+

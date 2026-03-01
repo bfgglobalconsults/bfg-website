@@ -23,6 +23,8 @@ const page = () => {
           <Image
             src="/assets/hospitality-tourism.jpg"
             alt="consumer-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -69,7 +71,7 @@ const page = () => {
                 areas
               </p>
               <div className="w-full">
-                <Image src="/assets/hospitality-image.jpg" alt="it-image" className="w-full rounded-lg" />
+                <Image src="/assets/hospitality-image.jpg" alt="it-image" width={1200} height={600} className="w-full rounded-lg" />
               </div>
             </div>
             <div className="w-[100%] lg:w-[50%] flex flex-col gap-10">

@@ -23,6 +23,8 @@ const page = () => {
           <Image
             src="/assets/industrial-manufacture-banner.png"
             alt="oil-gas"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -62,6 +64,8 @@ const page = () => {
                 <Image
                   src="/assets/manufacture-card.jpg"
                   alt="oil-image"
+                  width={1200}
+                  height={600}
                   className="w-full"
                 />
               </div>

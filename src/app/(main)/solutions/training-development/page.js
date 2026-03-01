@@ -64,7 +64,7 @@ const Page = () => {
 
       <div className="px-12">
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-center flex justify-center items-center">
-          <Image src="/assets/training-development-banner.jpg" alt="top-banner" className="w-full h-full object-cover rounded-3xl" />
+          <Image src="/assets/training-development-banner.jpg" alt="top-banner" width={1200} height={400} className="w-full h-full object-cover rounded-3xl" />
         </div>
       </div>
 
@@ -116,6 +116,8 @@ const Page = () => {
               <Image
                 src="/assets/sales-newbanner.jpg"
                 alt="training-image"
+                width={1200}
+                height={600}
                 className="w-full rounded-lg"
               />
             </div>
@@ -180,6 +182,8 @@ const Page = () => {
                   <Image
                     src="/assets/employee-perfomance.jpg"
                     alt="employee"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -207,6 +211,8 @@ const Page = () => {
                   <Image
                     src="/assets/retention.jpg"
                     alt="retention"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -233,6 +239,8 @@ const Page = () => {
                   <Image
                     src="/assets/greater-flexibility.jpg"
                     alt="flexibility"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -260,6 +268,8 @@ const Page = () => {
                   <Image
                     src="/assets/decision-making.jpg"
                     alt="decision"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -286,6 +296,8 @@ const Page = () => {
                   <Image
                     src="/assets/top-talent.jpg"
                     alt="talent"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -313,6 +325,8 @@ const Page = () => {
                   <Image
                     src="/assets/operations.jpg"
                     alt="operations"
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
@@ -342,6 +356,8 @@ const Page = () => {
                 <Image
                   src="/assets/Training-Portfolio.jpg"
                   alt="training"
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover"
                 />
               </div>

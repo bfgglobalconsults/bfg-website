@@ -24,6 +24,8 @@ const page = () => {
           <Image
             src="/assets/case-studies.jpg"
             alt="about-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -52,7 +54,7 @@ const page = () => {
               <Image
                 src="/assets/technology-software1.png"
                 alt="client"
-                className="w-full h-full object-cover rounded-lg"
+                width={600} height={350} className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="w-[100%]">
@@ -81,7 +83,7 @@ const page = () => {
               <Image
                 src="/assets/business-strategy1.jpg"
                 alt="innovate"
-                className="w-full h-full object-cover rounded-lg"
+                width={600} height={350} className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="w-[100%]">
@@ -109,7 +111,7 @@ const page = () => {
               <Image
                 src="/assets/research-analytics1.jpg"
                 alt="inclusive"
-                className="w-full h-full object-cover rounded-lg"
+                width={600} height={350} className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="w-[100%]">
@@ -138,7 +140,7 @@ const page = () => {
               <Image
                 src="/assets/training-development1.jpg"
                 alt="sustain"
-                className="w-full h-full object-cover rounded-lg"
+                width={600} height={350} className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="w-[100%]">
@@ -162,3 +164,4 @@ const page = () => {
 };
 
 export default page;
+

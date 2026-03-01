@@ -38,6 +38,8 @@ function Page() {
             <Image
               src="/assets/ai-advantage.png"
               alt="top-banner"
+              width={1200}
+              height={400}
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
@@ -107,6 +109,8 @@ function Page() {
               <Image
                 src="/assets/ai-card.jpg"
                 alt="ai-image"
+                width={600}
+                height={400}
                 className="w-full h-full object-fit rounded-r-md"
               />
               {/* <div className="w-full h-[400px] shadow-lg rounded-xl relative">
@@ -136,6 +140,8 @@ function Page() {
                   <Image
                     src="/assets/sme-woman.png"
                     alt="beauty-image"
+                    width={300}
+                    height={400}
                     className="w-full h-full object-cover rounded-r-md"
                   />
                 </div>

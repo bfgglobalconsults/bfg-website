@@ -12,7 +12,6 @@ import L from "leaflet";
 import "leaflet/dist/images/marker-icon-2x.png";
 import "leaflet/dist/images/marker-icon.png";
 import "leaflet/dist/images/marker-shadow.png";
-import Image from "next/image";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -97,6 +96,8 @@ const CountriesServedMap = () => {
             <Image
               src="/assets/training-world.png"
               alt="world-map"
+              width={1200}
+              height={600}
               className="w-full h-full object-contain"
             />
           </div>

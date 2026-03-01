@@ -46,6 +46,8 @@ const Page = () => {
             <Image
               src="/assets/sme-klinic.png"
               alt="top-banner"
+              width={1200}
+              height={400}
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
@@ -114,6 +116,8 @@ const Page = () => {
               <Image
                 src="/assets/klinic-card.jpg"
                 alt="klinic-image"
+                width={600}
+                height={400}
                 className="w-full h-full object-fit rounded-r-md"
               />
               {/* <div className="w-full h-[400px] shadow-lg rounded-xl relative">
@@ -143,6 +147,8 @@ const Page = () => {
                   <Image
                     src="/assets/sme-woman.png"
                     alt="beauty-image"
+                    width={300}
+                    height={400}
                     className="w-full h-full object-cover rounded-r-md"
                   />
                 </div>

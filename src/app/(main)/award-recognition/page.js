@@ -24,6 +24,8 @@ const page = () => {
           <Image
             src="/assets/award-banner.jpg"
             alt="top-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -58,7 +60,7 @@ const page = () => {
                   <Image
                     src="/assets/award-1.png"
                     alt="client"
-                    className="w-full h-full object-fit"
+                    width={300} height={300} className="w-full h-full object-fit"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -78,7 +80,7 @@ const page = () => {
                   <Image
                     src="/assets/award-2.png"
                     alt="innovate"
-                    className="w-full h-full object-fit"
+                    width={300} height={300} className="w-full h-full object-fit"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -99,7 +101,7 @@ const page = () => {
                   <Image
                     src="/assets/award-3.png"
                     alt="inclusive"
-                    className="w-full h-full object-fit"
+                    width={300} height={300} className="w-full h-full object-fit"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -119,7 +121,7 @@ const page = () => {
                   <Image
                     src="/assets/award-4.png"
                     alt="sustain"
-                    className="w-full h-full object-fit"
+                    width={300} height={300} className="w-full h-full object-fit"
                   />
                 </div>
                 <div className="w-[100%]">
@@ -147,3 +149,4 @@ const page = () => {
 };
 
 export default page;
+

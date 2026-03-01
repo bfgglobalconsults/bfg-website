@@ -16,186 +16,186 @@ import OurStand from "@/components/OurStand";
 const ClientData = [
   {
     id: 1,
-    image: Client1,
+    image: "/assets/client-1.png",
   },
   {
     id: 2,
-    image: Client2,
+    image: "/assets/client-2.png",
   },
   {
     id: 3,
-    image: Client3,
+    image: "/assets/client-3.png",
   },
   {
     id: 4,
-    image:  Client4,
+    image: "/assets/client-4.png",
   },
   {
     id: 5,
-    image:  Client5,
+    image: "/assets/client-5.png",
   },{
     id: 6,
-    image:  Client6,
+    image: "/assets/client-6.png",
   },
   {
     id: 7,
-    image:  Client7,
+    image: "/assets/client-7.png",
   },
   {
     id: 8,
-    image:  Client8,
+    image: "/assets/client-8.png",
   },
     {
     id: 9,
-    image:  Client9,
+    image: "/assets/client-9.png",
   },
       {
     id: 10,
-    image:  Client10,
+    image: "/assets/client-10.png",
   },
         {
     id: 11,
-    image:  Client11,
+    image: "/assets/client-11.png",
   },
           {
     id: 12,
-    image:  Client12,
+    image: "/assets/client-12.png",
   },
             {
     id: 13,
-    image:  Client13,
+    image: "/assets/client-13.png",
   },
               {
     id: 14,
-    image:  Client14,
+    image: "/assets/client-14.png",
   },
                 {
     id: 15,
-    image:  Client15,
+    image: "/assets/client-15.png",
   },
                   {
     id: 16,
-    image:  Client16,
+    image: "/assets/client-16.png",
   },
                     {
     id: 17,
-    image:  Client17,
+    image: "/assets/client-17.png",
   },
                       {
     id: 18,
-    image:  Client18,
+    image: "/assets/client-18.png",
   },
   {
     id: 19, 
-    image: Client19,
+    image: "/assets/client-19.png",
   },
   {
     id: 20,
-    image: Client20,
+    image: "/assets/client-20.png",
     },
     {
     id: 21,
-    image: Client21,
+    image: "/assets/client-21.png",
     },
     {
     id: 22,
-    image: Client22,
+    image: "/assets/client-22.png",
     },
     {
     id: 23,
-    image: Client23,
+    image: "/assets/client-23.png",
     },
     {
     id: 24,
-    image: Client24,
+    image: "/assets/client-24.png",
     },
     {
     id: 25,
-    image: Client25,
+    image: "/assets/client-25.png",
     },
     {
     id: 26,
-    image: Client26,
+    image: "/assets/client-26.png",
     },
     {
     id: 27,
-    image: Client27,
+    image: "/assets/client-27.png",
     },
     {
     id: 28,
-    image: Client28,
+    image: "/assets/client-28.png",
     },
     {
     id: 29,
-    image: Client29,
+    image: "/assets/client-29.png",
     },
     {
     id: 30,
-    image: Client30,
+    image: "/assets/client-30.png",
     },
     {
     id: 31,
-    image: Client31,
+    image: "/assets/client-31.png",
     },
     {
     id: 32,
-    image: Client32,
+    image: "/assets/client-32.png",
     },
     {
     id: 33,
-    image: Client33,
+    image: "/assets/client-33.png",
     },
     {
     id: 34,
-    image: Client34,
+    image: "/assets/client-34.png",
     },
     {
     id: 35,
-    image: Client35,
+    image: "/assets/client-35.png",
     },
     {
     id: 36,
-    image: Client36,
+    image: "/assets/client-36.png",
     },
     {
     id: 37,
-    image: Client37,
+    image: "/assets/client-37.png",
     },
     {
     id: 38,
-    image: Client38,
+    image: "/assets/client-38.png",
     },
     {
     id: 39,
-    image: Client39,
+    image: "/assets/client-39.png",
     },
     {
     id: 40,
-    image: Client40,
+    image: "/assets/client-40.png",
     },
     {
     id: 41,
-    image: Client41,
+    image: "/assets/client-41.png",
     },
     {
     id: 42,
-    image: Client42,
+    image: "/assets/client-42.png",
     },
     {
     id: 43,
-    image: Client43,
+    image: "/assets/client-43.png",
     },
     {
     id: 44,
-    image: Client44,
+    image: "/assets/client-44.png",
     },
     {
     id: 45,
-    image: Client45,
+    image: "/assets/client-45.png",
     },
     {
     id: 46,
-    image: Client46,
+    image: "/assets/client-46.png",
     }
 ]
 
@@ -220,6 +220,8 @@ const page = () => {
           <Image
             src="/assets/our-clients.jpg"
             alt="about-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -690,4 +692,5 @@ Executive Assistant - Office Administration and Client Relations
 };
 
 export default page;
+
 

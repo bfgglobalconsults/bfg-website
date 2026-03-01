@@ -54,6 +54,8 @@ const Slides = () => {
                           <Image
                             src={image}
                             alt={name}
+                            width={200}
+                            height={70}
                             className="w-[200px] h-[70px] object-fit"
                           />
                         </div>

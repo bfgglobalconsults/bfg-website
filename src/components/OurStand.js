@@ -27,6 +27,8 @@ const OurStand = () => {
                 <Image
                   src="/assets/growth-image.jpg"
                   alt="growth"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -46,6 +48,8 @@ const OurStand = () => {
                 <Image
                   src="/assets/value-driven.jpg"
                   alt="growth"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -66,6 +70,8 @@ const OurStand = () => {
                 <Image
                   src="/assets/innovation-image.jpg"
                   alt="innovation"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -86,6 +92,8 @@ const OurStand = () => {
                 <Image
                   src="/assets/client-success.jpg"
                   alt="client"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -106,6 +114,8 @@ const OurStand = () => {
                 <Image
                   src="/assets/tailored-image.jpg"
                   alt="tailored"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -125,6 +135,8 @@ const OurStand = () => {
                 <Image
                   src="/assets/pan.png"
                   alt="pan"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>

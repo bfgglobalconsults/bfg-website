@@ -34,6 +34,8 @@ const Page = () => {
           <Image
             src="/assets/glass-building.jpeg"
             alt="about-banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
@@ -268,6 +270,8 @@ const Page = () => {
                 <Image
                   src="/assets/festus-bello-image.png"
                   alt="festus-bello"
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover"
                 />
               </div>

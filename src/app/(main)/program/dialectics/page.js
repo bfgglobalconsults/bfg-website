@@ -43,6 +43,8 @@ const Page = () => {
             <Image
               src="/assets/dialectics.png"
               alt="top-banner"
+              width={1200}
+              height={400}
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
@@ -97,6 +99,8 @@ const Page = () => {
               <Image
                 src="/assets/dialet-card.jpg"
                 alt="dialet-image"
+                width={600}
+                height={400}
                 className="w-full h-full object-fit rounded-r-md"
               />
             </motion.div>
