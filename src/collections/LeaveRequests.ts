@@ -27,13 +27,13 @@ export const LeaveRequests: CollectionConfig = {
   access: {
     create: () => true, // All authenticated users can create leave requests
     read: ({ req: { user } }) => {
-      if (["super-admin", "admin"].includes(user?.role)) return true;
-      return { requestedBy: { equals: user?.id } }; // Users can only see their own
+      if (["super-admin", "admin"].includes((user as any)?.role)) return true;
+      return { requestedBy: { equals: (user as any)?.id } }; // Users can only see their own
     },
     update: ({ req: { user } }) =>
-      ["super-admin", "admin"].includes(user?.role),
+      ["super-admin", "admin"].includes((user as any)?.role),
     delete: ({ req: { user } }) =>
-      ["super-admin", "admin"].includes(user?.role),
+      ["super-admin", "admin"].includes((user as any)?.role),
   },
   fields: [
     {
@@ -100,7 +100,7 @@ export const LeaveRequests: CollectionConfig = {
       ],
       access: {
         update: ({ req: { user } }) =>
-          ["super-admin", "admin"].includes(user?.role),
+          ["super-admin", "admin"].includes((user as any)?.role),
       },
     },
     {
@@ -127,3 +127,5 @@ export const LeaveRequests: CollectionConfig = {
     },
   ],
 };
+
+

@@ -55,7 +55,7 @@ export const Complaints: CollectionConfig = {
 
     // Only hr-admin/admin/super-admin can delete
     delete: ({ req: { user } }) =>
-      ["super-admin", "admin", "hr-admin"].includes(user?.role),
+      ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
   },
   fields: [
     {
@@ -105,7 +105,7 @@ export const Complaints: CollectionConfig = {
       },
       access: {
         update: ({ req: { user } }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
     },
     {
@@ -125,7 +125,7 @@ export const Complaints: CollectionConfig = {
       },
       access: {
         update: ({ req: { user } }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
     },
     {
@@ -156,11 +156,11 @@ export const Complaints: CollectionConfig = {
       admin: {
         description: "HR Admin assigned to handle this complaint",
         condition: (data, siblingData, { user }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
       access: {
         update: ({ req: { user } }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
     },
     {
@@ -189,13 +189,13 @@ export const Complaints: CollectionConfig = {
       admin: {
         description: "Internal notes for HR/Admin use only",
         condition: (data, siblingData, { user }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
       access: {
         read: ({ req: { user } }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
         update: ({ req: { user } }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
     },
     {
@@ -205,11 +205,11 @@ export const Complaints: CollectionConfig = {
       admin: {
         description: "Resolution details and actions taken",
         condition: (data, siblingData, { user }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
       access: {
         update: ({ req: { user } }) =>
-          ["super-admin", "admin", "hr-admin"].includes(user?.role),
+          ["super-admin", "admin", "hr-admin"].includes((user as any)?.role),
       },
     },
     {
@@ -248,3 +248,5 @@ export const Complaints: CollectionConfig = {
     ],
   },
 };
+
+

@@ -73,16 +73,18 @@ export const Users: CollectionConfig = {
         { label: "User", value: "user" },
       ],
       access: {
-        update: ({ req: { user } }) => user?.role === "super-admin",
+        update: ({ req: { user } }) => (user as any)?.role === "super-admin",
       },
     },
   ],
   access: {
     create: ({ req: { user } }) =>
-      user?.role === "super-admin" || user?.role === "admin",
+      (user as any)?.role === "super-admin" || (user as any)?.role === "admin",
     read: () => true,
     update: ({ req: { user } }) =>
-      user?.role === "super-admin" || user?.role === "admin",
-    delete: ({ req: { user } }) => user?.role === "super-admin",
+      (user as any)?.role === "super-admin" || (user as any)?.role === "admin",
+    delete: ({ req: { user } }) => (user as any)?.role === "super-admin",
   },
 };
+
+

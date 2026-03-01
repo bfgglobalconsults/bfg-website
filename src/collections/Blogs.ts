@@ -8,12 +8,12 @@ export const Blogs: CollectionConfig = {
   },
   access: {
     create: ({ req: { user } }) =>
-      ["super-admin", "admin", "blogger"].includes(user?.role),
+      ["super-admin", "admin", "blogger"].includes((user as any)?.role),
     read: () => true,
     update: ({ req: { user } }) =>
-      ["super-admin", "admin", "blogger"].includes(user?.role),
+      ["super-admin", "admin", "blogger"].includes((user as any)?.role),
     delete: ({ req: { user } }) =>
-      ["super-admin", "admin"].includes(user?.role),
+      ["super-admin", "admin"].includes((user as any)?.role),
   },
   fields: [
     {

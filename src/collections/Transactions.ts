@@ -8,12 +8,12 @@ export const Transactions: CollectionConfig = {
   },
   access: {
     create: ({ req: { user } }) =>
-      ["super-admin", "admin"].includes(user?.role),
+      ["super-admin", "admin"].includes((user as any)?.role),
     read: ({ req: { user } }) =>
-      ["super-admin", "admin", "blogger", "user"].includes(user?.role), // All can view
+      ["super-admin", "admin", "blogger", "user"].includes((user as any)?.role), // All can view
     update: ({ req: { user } }) =>
-      ["super-admin", "admin"].includes(user?.role),
-    delete: ({ req: { user } }) => user?.role === "super-admin",
+      ["super-admin", "admin"].includes((user as any)?.role),
+    delete: ({ req: { user } }) => (user as any)?.role === "super-admin",
   },
   fields: [
     {
@@ -99,3 +99,5 @@ export const Transactions: CollectionConfig = {
     },
   ],
 };
+
+
