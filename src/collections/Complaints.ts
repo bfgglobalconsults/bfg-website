@@ -15,14 +15,14 @@ export const Complaints: CollectionConfig = {
     read: ({ req: { user } }) => {
       if (!user) return false;
 
-      if (["super-admin", "admin", "hr-admin"].includes(user.role)) {
+      if (["super-admin", "admin", "hr-admin"].includes((user as any).role)) {
         return true;
       }
 
       // Regular users can only see their own complaints
       return {
         createdBy: {
-          equals: user.id,
+          equals: (user as any).id,
         },
       };
     },
@@ -32,7 +32,7 @@ export const Complaints: CollectionConfig = {
     update: ({ req: { user } }) => {
       if (!user) return false;
 
-      if (["super-admin", "admin", "hr-admin"].includes(user.role)) {
+      if (["super-admin", "admin", "hr-admin"].includes((user as any).role)) {
         return true;
       }
 
@@ -41,7 +41,7 @@ export const Complaints: CollectionConfig = {
         and: [
           {
             createdBy: {
-              equals: user.id,
+              equals: (user as any).id,
             },
           },
           {
@@ -141,7 +141,7 @@ export const Complaints: CollectionConfig = {
         beforeChange: [
           ({ req, operation, value }) => {
             if (operation === "create") {
-              return req.user.id;
+              return (req.user as any).id;
             }
             return value;
           },
@@ -241,12 +241,16 @@ export const Complaints: CollectionConfig = {
       async ({ req, operation, data }) => {
         // Set createdBy on create
         if (operation === "create" && req.user) {
-          data.createdBy = req.user.id;
+          data.createdBy = (req.user as any).id;
         }
         return data;
       },
     ],
   },
 };
+
+
+
+
 
 

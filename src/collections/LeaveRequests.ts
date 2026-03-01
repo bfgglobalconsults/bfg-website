@@ -17,7 +17,7 @@ export const LeaveRequests: CollectionConfig = {
       ({ req, operation, data }) => {
         if (operation === "create") {
           if (req.user) {
-            data.requestedBy = req.user.id;
+            data.requestedBy = (req.user as any).id;
           }
         }
         return data;
@@ -127,5 +127,8 @@ export const LeaveRequests: CollectionConfig = {
     },
   ],
 };
+
+
+
 
 
