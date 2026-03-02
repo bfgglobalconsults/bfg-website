@@ -299,7 +299,7 @@ const Page = () => {
           title="Personalized Growth Paths"
           points={[
             "Choose your own learning adventure and track your progress every step of the way.",
-            "Access resources and mentorship tailored to your career goals.",
+            "Access resources and mentorship tailored to your career goals..",
           ]}
           image="/assets/career-game.jpg"
           reverse
