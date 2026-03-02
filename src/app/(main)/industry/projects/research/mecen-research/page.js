@@ -1,6 +1,6 @@
 import Slides from "@/components/Slides";
 import Image from "next/image";
-import Link from "next/image";
+import Link from "next/link";
 import React from "react";
 const page = () => {
   return (
