@@ -5,6 +5,8 @@ import { useAuth } from "@/context/authContext";
 import Spinner from "@/components/Spinner";
 import { useRouter } from "next/navigation";
 
+export const dynamic = 'force-dynamic';
+
 const Login = () => {
   const { login, loading } = useAuth();
   const router = useRouter();
