@@ -31,9 +31,21 @@ export default function CustomerReview({ unit = "" }) {
 
   // Fetch testimonials from backend
   const fetchTestimonials = async () => {
-    const res = await fetch("/api/reviews");
-    const data = await res.json();
-    setTestimonials(data);
+    try {
+      const res = await fetch("/api/reviews");
+      const data = await res.json();
+      // Handle both array and object with docs property
+      if (Array.isArray(data)) {
+        setTestimonials(data);
+      } else if (data.docs && Array.isArray(data.docs)) {
+        setTestimonials(data.docs);
+      } else {
+        setTestimonials([]);
+      }
+    } catch (error) {
+      console.error("Error fetching testimonials:", error);
+      setTestimonials([]);
+    }
   };
 
   useEffect(() => {

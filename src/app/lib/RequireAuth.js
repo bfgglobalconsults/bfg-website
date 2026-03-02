@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { useAuth } from '@/context/authContext';
 
 const authenticatedRoutes = [
-    '/admin',
+    '/admins', // Your custom admin dashboard (note: plural)
 ]
 
 export default function RequireAuth({ children }) {
@@ -16,7 +16,8 @@ export default function RequireAuth({ children }) {
     const { push } = useRouter();
 
     useEffect(() => {
-        const requiresAuth = pathname.startsWith('/admin');
+        // Only check for /admins (your custom dashboard), not /admin (PayloadCMS)
+        const requiresAuth = pathname.startsWith('/admins');
         if (!loading && !user && requiresAuth) {
             push('/login');
         }

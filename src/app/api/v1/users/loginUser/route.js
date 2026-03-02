@@ -1,24 +1,27 @@
-export default async function handler(req, res) {
-    if (req.method === 'POST') {
-        try {
-            const backendUrl = `https://bfg-website-api.onrender.com` + '/api/v1/users/loginUser';
-            const response = await fetch(backendUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(req.body),
-            });
-            console.log('Response from backend:', backendUrl);
+import { NextResponse } from 'next/server';
 
-            const data = await response.json();
-            res.status(response.status).json(data);
-        } catch (error) {
-            console.error('Error proxying login request:', error);
-            res.status(500).json({ error: 'Failed to login' });
-        }
-    } else {
-        res.setHeader('Allow', ['POST']);
-        res.status(405).end(`Method ${req.method} Not Allowed`);
+export async function POST(request) {
+    try {
+        const body = await request.json();
+        const backendUrl = `https://bfg-website-api.onrender.com/api/v1/users/loginUser`;
+        
+        const response = await fetch(backendUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+        });
+        
+        console.log('Response from backend:', backendUrl);
+        const data = await response.json();
+        
+        return NextResponse.json(data, { status: response.status });
+    } catch (error) {
+        console.error('Error proxying login request:', error);
+        return NextResponse.json(
+            { error: 'Failed to login' },
+            { status: 500 }
+        );
     }
 }

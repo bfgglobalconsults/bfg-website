@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
-import Banner from "../../public/assets/bfg1.jpg";
 import WaveImage from "../app/bfg-whitelogo.png";
 
 // Import the CSS for react-slick
@@ -177,7 +176,7 @@ const HeroSection2 = () => (
           </span>
           <span className="text-sm font-medium text-[#E45F11]">
             MEA Business Award: Best Start-Up & SME Consultancy Firm in West
-            Africa, 2024
+            Africa, 2024.
           </span>
         </div>
         <div className="max-w-4xl space-y-6">
@@ -185,9 +184,9 @@ const HeroSection2 = () => (
             <span className="block text-4xl lg:text-6xl font-light mb-2">
               Tailored expertise in{" "}
             </span>
-            Software Development,
+            Market Research
             <br />
-            Market Research, Strategy, & Training
+            ,Software Development, Strategy, & Training
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
             Driving transformative solutions that empower innovation, growth,
@@ -218,8 +217,10 @@ const HeroSection2 = () => (
         transition={{ repeat: Infinity, duration: 50 }}
       >
        <Image 
-      src={Banner} 
+      src="/assets/bfg1.jpg"
       alt="banner" 
+      width={500}
+      height={500}
       className="w-full h-full object-contain scale-125"
       priority 
     />

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { FiClock, FiUser, FiEye, FiRefreshCw, FiDownload } from 'react-icons/fi';
 import { toast } from 'react-hot-toast';
 import Image from 'next/image';
-import Avatar from "../../../../public/assets/avatar.png";
 
 const AttendanceTable = ({ records, employees, onClockIn, onClockOut, onRefresh }) => {
   const [sortField, setSortField] = useState('clock_in_time');
@@ -240,7 +239,7 @@ const AttendanceTable = ({ records, employees, onClockIn, onClockOut, onRefresh 
                     <div className="flex-shrink-0 h-10 w-10">
                       <Image
                         className="h-10 w-10 rounded-full"
-                        src={Avatar}
+                        src="/assets/avatar.png"
                         width={40}
                         height={40}
                         alt="Employee avatar"

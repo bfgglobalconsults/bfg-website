@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
-import Login from "@/app/login/page";
 import SalesHeader from "@/components/sales-components/SalesHeader";
 import HeaderWrapper from "@/components/HeadWrapper";
 import Messenger from "@/components/Messenger";
@@ -14,15 +13,26 @@ import AdminLayout from "@/layout/AdminLayout";
 const MainPage = ({ children }) => {
   const pathname = usePathname();
   const isSalesPage = pathname === "/sales-masterclass";
-  const isAdminPage = pathname.startsWith("/admin");
-  const isLogin = pathname === "/login";
+  // Check for /admins (your custom admin) but NOT /admin (Payload admin)
+  const isCustomAdminPage = pathname.startsWith("/admins");
+  const isPayloadAdmin = pathname.startsWith("/admin") && !pathname.startsWith("/admins");
+  const isLandingPage = pathname === "/landing";
 
-  if (isLogin) {
-    return <Login />
+  // Removed login route handling since login page is deleted
+
+
+  // Let Payload admin render without any wrapper
+  if (isPayloadAdmin) {
+    return <>{children}</>;
   }
 
-  if (isAdminPage) {
+  // Your custom admin dashboard uses AdminLayout
+  if (isCustomAdminPage) {
     return <AdminLayout>{children}</AdminLayout>;
+  }
+
+  if (isLandingPage) {
+    return <>{children}</>;
   }
 
   return (

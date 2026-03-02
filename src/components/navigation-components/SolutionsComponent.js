@@ -21,7 +21,7 @@ const SolutionsComponent = ({ closeModal, color }) => {
               Solutions
             </h3>
             <p className="text-[#999999] text-lg">
-              We specialize in offering custom solutions in software development, market research, strategy development, and workforce training to a global clientele, including individuals, businesses, corporate organizations, and government agencies.
+              We specialise in offering custom solutions in software development, market research, strategy development, and workforce training to a global clientele, including individuals, businesses, corporate organisations, and government agencies.
             </p>
             {/* <button
               onClick={closeModal}
@@ -32,9 +32,8 @@ const SolutionsComponent = ({ closeModal, color }) => {
           </div>
           <div className="w-[40%]">
             {solution_links.map(({ id, label, link }) => (
-            <>
+            <React.Fragment key={id}>
             <p
-              key={id}
               className={`flex gap-2 items-center mx-4 py-4  border-b text-black border-[#E45F11] text-lg font-semibold cursor-pointer hover:text-[#E45F11] ${color ? `hover:bg-white hover:text-${color}` : ''}`}
               onClick={() => handleLinkClick(link)}
             >
@@ -45,7 +44,7 @@ const SolutionsComponent = ({ closeModal, color }) => {
 
             </p>
               
-              </>
+              </React.Fragment>
           ))}
         </div>
           <div className="w-[40%]">

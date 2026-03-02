@@ -1,15 +1,24 @@
-// pages/api/users.js (Next.js)
-export default async function handler(req, res) {
-    try {
-      const response = await fetch(`process.env.NEXT_PUBLIC_BASE_URL/`, { // Proxy to your Express.js server
-        method: req.method,
-        headers: req.headers, // Forward necessary headers
-        body: req.method !== 'GET' ? req.body : undefined,
-      });
-      const data = await response.json();
-      res.status(response.status).json(data);
-    } catch (error) {
-      console.error('Error proxying request:', error);
-      res.status(500).json({ error: 'Failed to fetch data from backend' });
-    }
+// API route for login using Next.js App Router
+import { NextResponse } from 'next/server';
+
+export async function POST(request) {
+  try {
+    const body = await request.json();
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/login`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+    
+    const data = await response.json();
+    return NextResponse.json(data, { status: response.status });
+  } catch (error) {
+    console.error('Error proxying login request:', error);
+    return NextResponse.json(
+      { error: 'Failed to fetch data from backend' },
+      { status: 500 }
+    );
   }
+}

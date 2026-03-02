@@ -2,25 +2,23 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import World from "../../../../../public/assets/world.png";
+import Image from "next/image";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 // Fix for default Leaflet icon issue with Webpack
 // (Leaflet's default marker icon is not bundled correctly by some bundlers without this)
-import L from 'leaflet';
-import 'leaflet/dist/images/marker-icon-2x.png';
-import 'leaflet/dist/images/marker-icon.png';
-import 'leaflet/dist/images/marker-shadow.png';
-import Image from "next/image";
+import L from "leaflet";
+import "leaflet/dist/images/marker-icon-2x.png";
+import "leaflet/dist/images/marker-icon.png";
+import "leaflet/dist/images/marker-shadow.png";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'leaflet/dist/images/marker-icon-2x.png',
-  iconUrl: 'leaflet/dist/images/marker-icon.png',
-  shadowUrl: 'leaflet/dist/images/marker-shadow.png',
+  iconRetinaUrl: "leaflet/dist/images/marker-icon-2x.png",
+  iconUrl: "leaflet/dist/images/marker-icon.png",
+  shadowUrl: "leaflet/dist/images/marker-shadow.png",
 });
-
 
 const countryData = [
   { name: "India", geojsonPath: "/geojson/india.json", color: "#985EFF" }, // Purple
@@ -79,7 +77,9 @@ const CountriesServedMap = () => {
   const countryStyle = (feature) => {
     // Ensure feature.properties exists and has a name
     const countryName = feature?.properties?.name;
-    const countryInfo = countryData.find((c) => countryName && countryName.includes(c.name)); // Use .includes for more flexible matching
+    const countryInfo = countryData.find(
+      (c) => countryName && countryName.includes(c.name),
+    ); // Use .includes for more flexible matching
 
     return {
       fillColor: countryInfo ? countryInfo.color : "#cccccc", // Default gray if no match
@@ -100,7 +100,13 @@ const CountriesServedMap = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
           {/* Map */}
           <div className="w-full rounded-lg shadow-md overflow-hidden">
-           <Image src={World} alt="world-map" className="w-full h-full object-contain" />
+            <Image
+              src="/assets/world.png"
+              alt="world-map"
+              width={1200}
+              height={600}
+              className="w-full h-full object-contain"
+            />
           </div>
 
           {/* Legend */}

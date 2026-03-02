@@ -1,22 +1,19 @@
 // components/IndustryCard.js
 "use client";
 import React from "react";
-import Image1 from "../../../../../public/assets/highlight-img.png";
-import Image2 from "../../../../../public/assets/growth-img.png"
 import Image from "next/image";
 
 // data/industries.js (or directly in your component)
 const industriesData = [
   {
     name: "Performance Highlight",
-    img: Image1,
+    img: "/assets/highlight-img.png",
     desc: "Average implementation time reduced by 30% through our streamlined methodology.",
   },
   {
     name: "Growth Trend",
-    img: Image2,
-    desc:"Consistent quarterly growth with 245% ROI achievement across all transformation projects.",
-    
+    img: "/assets/growth-img.png",
+    desc: "Consistent quarterly growth with 245% ROI achievement across all transformation projects.",
   },
 ];
 const KeyInsights = () => {
@@ -32,20 +29,22 @@ const KeyInsights = () => {
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center space-x-2">
                 {/* Colored Dot */}
-                <Image src={industry.img} alt={industry.name} className="w-6 h-6 rounded-full object-fit" />
+                <Image
+                  src={industry.img}
+                  alt={industry.name}
+                  width={24}
+                  height={24}
+                  className="w-6 h-6 rounded-full object-fit"
+                />
                 <span className="text-gray-900 text-md font-medium">
                   {industry.name}
                 </span>
               </div>
-              
             </div>
 
             {/* Bottom Section - Percentage & Progress Bar */}
             <div>
-              <p className="text-gray-500 text-sm mb-2">
-                {industry.desc}
-              </p>
-              
+              <p className="text-gray-500 text-sm mb-2">{industry.desc}</p>
             </div>
           </div>
         ))}

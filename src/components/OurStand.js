@@ -1,13 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Growth from "../../public/assets/growth-image.jpg";
-import Innovation from "../../public/assets/innovation-image.jpg";
-import Value from "../../public/assets/value-driven.jpg";
-import Client from "../../public/assets/client-success.jpg";
-import Tailored from "../../public/assets/tailored-image.jpg";
-import Pan from "../../public/assets/pan.png";
-import ServiceImage1 from "../../public/assets/service-image1.png";
-import ServiceImage2 from "../../public/assets/service-image2.png";
 
 const OurStand = () => {
   return (
@@ -33,8 +25,10 @@ const OurStand = () => {
             <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
               <div className="w-full h-[190px]">
                 <Image
-                  src={Growth}
+                  src="/assets/growth-image.jpg"
                   alt="growth"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -52,8 +46,10 @@ const OurStand = () => {
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
               <div className="w-full h-[190px]">
                 <Image
-                  src={Value}
+                  src="/assets/value-driven.jpg"
                   alt="growth"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -72,8 +68,10 @@ const OurStand = () => {
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
               <div className="w-full h-[190px]">
                 <Image
-                  src={Innovation}
+                  src="/assets/innovation-image.jpg"
                   alt="innovation"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -92,8 +90,10 @@ const OurStand = () => {
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
               <div className="w-full h-[190px]">
                 <Image
-                  src={Client}
+                  src="/assets/client-success.jpg"
                   alt="client"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -112,8 +112,10 @@ const OurStand = () => {
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
               <div className="w-full h-[190px]">
                 <Image
-                  src={Tailored}
+                  src="/assets/tailored-image.jpg"
                   alt="tailored"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
@@ -131,8 +133,10 @@ const OurStand = () => {
              <div className="w-[100%] lg:w-[30%] flex flex-col items-center gap-7 p-4 lg:p-10  border rounded-2xl shadow-lg">
               <div className="w-full h-[190px]">
                 <Image
-                  src={Pan}
+                  src="/assets/pan.png"
                   alt="pan"
+                  width={400}
+                  height={190}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>

@@ -87,9 +87,9 @@ const Footer = () => {
                       <g
                         fill="none"
                         stroke="#fff"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       >
                         <path d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z" />
                         <path d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4" />
@@ -108,8 +108,8 @@ const Footer = () => {
                       <path
                         fill="none"
                         stroke="#fff"
-                        stroke-linejoin="round"
-                        stroke-width="3.8"
+                        strokeLinejoin="round"
+                        strokeWidth="3.8"
                         d="M36 12.6h-6.013c-1.086 0-1.967.88-1.967 1.967v6.9H36l-1.169 7.597h-6.81V43h-8.776V29.064H12v-7.597h7.151l.094-7.21l-.013-1.31A7.87 7.87 0 0 1 27.099 5H36z"
                       />
                     </svg>
@@ -145,7 +145,7 @@ const Footer = () => {
                       viewBox="0 0 14 14"
                     >
                       <g fill="none">
-                        <g clip-path="url(#primeTwitter0)">
+                        <g clipPath="url(#primeTwitter0)">
                           <path
                             fill="#fff"
                             d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"
@@ -189,14 +189,14 @@ const Footer = () => {
 
               <div className="text-white w-[50%] lg:w-[23%] my-4">
                 <h3 className="font-semibold">Solutions</h3>
+                  <p className="my-2 text-sm hover:text-[#E26015]">
+                  <Link href="/solutions/research-analytics">
+                    Research & Analytics
+                  </Link>
+                </p>
                  <p className="my-2 text-sm hover:text-[#E26015]">
                   <Link href="/solutions/information-technology">
                     Technology & Software <br/> Development 
-                  </Link>
-                </p>
-                <p className="my-2 text-sm hover:text-[#E26015]">
-                  <Link href="/solutions/research-analytics">
-                    Research & Analytics
                   </Link>
                 </p>
                 <p className="my-2 text-sm hover:text-[#E26015]">
@@ -280,7 +280,7 @@ const Footer = () => {
           <div className="">
             <span className="text-white text-sm  dark:text-gray-400">
               © 2018 - {year}{" "}
-              <a href="https://bfgconsults.com/" class="hover:underline">
+              <a href="https://bfgconsults.com/" className="hover:underline">
                 BFG Global Consults™
               </a>
               . All Rights Reserved.

@@ -15,7 +15,7 @@ export const insight_links = [
         link: "/insight/case-study",
       },
       {
-        id: 3,
+        id: 4,
         label: "Careers",
         link: "/careers",
       },

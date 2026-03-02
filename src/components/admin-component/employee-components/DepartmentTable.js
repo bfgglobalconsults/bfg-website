@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import TextTrimming from "../TextTrimmer";
 import Image from "next/image";
-import Avatar from "../../../../public/assets/avatar.png";
 import axios from "axios";
 import toast from "react-hot-toast";
 import AddDepartmentForm from "../department-form/AddDepartmentForm";

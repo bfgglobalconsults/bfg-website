@@ -1,10 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import VideoImg from "../../public/assets/video-img.png";
-import SensangImg from "../../public/assets/sensang-img.png";
-import GigsImg from "../../public/assets/gigs-img.png";
-import TwentyImg from "../../public/assets/12twenty-img.png";
 import Link from "next/link";
 
 const ClientBanner = () => {
@@ -37,7 +33,7 @@ const ClientBanner = () => {
             </div>
           </div>
           <div className="w-full relative">
-            <Image src={VideoImg} alt="video-img" className="w-full" />
+            <Image src="/assets/video-img.png" alt="video-img" width={1200} height={600} className="w-full" />
             <button
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-xl font-bold rounded-xl transition hover:bg-opacity-60"
               onClick={() => setShowVideo(true)}
@@ -66,7 +62,7 @@ const ClientBanner = () => {
               </p>
               <div className="my-4 flex gap-2">
                 <div>
-                  <Image src={SensangImg} alt="sendsang-img" className="" />
+                  <Image src="/assets/sensang-img.png" alt="sendsang-img" width={100} height={100} className="" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">
@@ -87,7 +83,7 @@ const ClientBanner = () => {
               </p>
               <div className="my-4 flex gap-2">
                 <div>
-                  <Image src={GigsImg} alt="gigs-img" className="" />
+                  <Image src="/assets/gigs-img.png" alt="gigs-img" width={100} height={100} className="" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">
@@ -109,7 +105,7 @@ const ClientBanner = () => {
               </p>
               <div className="my-4 flex gap-2">
                 <div>
-                  <Image src={TwentyImg} alt="twenty-img" className="" />
+                  <Image src="/assets/12twenty-img.png" alt="twenty-img" width={100} height={100} className="" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">

@@ -18,7 +18,7 @@ export const AboutComponent = ({ closeModal, color }) => {
         <div className="w-[20%]">
           <h3 className="text-2xl text-black font-semibold my-3">About us</h3>
           <p className="text-[#999] text-lg">
-           BFG Global Consulting, LLC. ediﬁes your business and organisation to grow. We are at the intersection of software development, research, strategy, and workforce training.
+           BFG Global Consulting, LLC. ediﬁes your business and organisation to grow. We are at the intersection of market research, software development, strategy design and workforce training.
           </p>
           <Link href="/about">
             <button onClick={closeModal} className="my-8 px-6 py-4 border-2 text-black border-[#E45F11] text-lg font-semibold">

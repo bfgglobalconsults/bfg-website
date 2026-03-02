@@ -2,7 +2,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import WhiteLogo from "../../../public/assets/white-logo.png";
 import { usePathname } from "next/navigation";
 import { sidebar_links } from "@/constants/dashboard/sidebarlinks-constant";
 
@@ -13,7 +12,9 @@ const Sidebar = () => {
       <div className="w-[120px] h-[80px]  my-[60px] mx-auto">
         <Image
           alt="logo"
-          src={WhiteLogo}
+          src="/assets/white-logo.png"
+          width={120}
+          height={80}
           className="w-full h-full object-fit"
         />
       </div>
