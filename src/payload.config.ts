@@ -16,6 +16,8 @@ import { LeaveRequests } from "./collections/LeaveRequests";
 import { Transactions } from "./collections/Transactions";
 import { Team } from "./collections/Team";
 import { Complaints } from "./collections/Complaints";
+import { EmployeeBiodata } from "./collections/EmployeeBiodata";
+import { Documents } from "./collections/Documents";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -23,6 +25,7 @@ const dirname = path.dirname(filename);
 export default buildConfig({
   admin: {
     user: Users.slug,
+    theme: "auto", // Options: 'light', 'dark', 'auto' (follows system preference)
   },
   collections: [
     Users,
@@ -35,6 +38,8 @@ export default buildConfig({
     Transactions,
     Team,
     Complaints,
+    EmployeeBiodata,
+    Documents,
   ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || "",
