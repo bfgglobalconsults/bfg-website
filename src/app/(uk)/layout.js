@@ -4,16 +4,47 @@ import Loading from "@/components/loader/page";
 import { AuthProvider } from "@/context/authContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Inter, Montserrat } from "next/font/google";
+import Script from "next/script";
+import MetaPixelTracker from "@/components/PixelTracker";
+import "../globals.css";
+import "../slider.css";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  variable: "--montserrat",
+});
+const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 
 export default function UkLayout({ children }) {
   return (
-    <Suspense fallback={<Loading />}>
-      <AuthProvider>
-        <Toaster position="top-right" />
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </AuthProvider>
-    </Suspense>
+    <html className={`${montserrat.variable} ${inter.variable}`} lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-GNHJW9W4PK"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GNHJW9W4PK');
+          `}
+        </Script>
+      </head>
+      <body className={inter.className} suppressHydrationWarning>
+        <MetaPixelTracker />
+        <Suspense fallback={<Loading />}>
+          <AuthProvider>
+            <Toaster position="top-right" />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </AuthProvider>
+        </Suspense>
+      </body>
+    </html>
   );
 }

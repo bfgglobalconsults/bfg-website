@@ -1,0 +1,122 @@
+// Custom Payload Admin Dark Mode Styles
+
+// Light mode defaults
+:root {
+  --theme-bg: #fafafa;
+  --theme-elevation-0: #ffffff;
+}
+
+// Enhanced dark mode support
+[data-theme="dark"] {
+  // Background colors
+  --theme-bg: #0a0a0a;
+  --theme-elevation-0: #1a1a1a;
+  --theme-elevation-50: #1f1f1f;
+  --theme-elevation-100: #252525;
+  --theme-elevation-150: #2a2a2a;
+  --theme-elevation-200: #2f2f2f;
+  --theme-elevation-250: #353535;
+  --theme-elevation-300: #3a3a3a;
+  --theme-elevation-400: #404040;
+  --theme-elevation-500: #4a4a4a;
+  --theme-elevation-600: #555555;
+  --theme-elevation-700: #606060;
+  --theme-elevation-800: #6a6a6a;
+
+  // Text colors
+  --theme-text: #ffffff;
+  --theme-elevation-1000: #ffffff;
+
+  // Skeleton loader colors
+  --theme-elevation-skeleton-from: #2a2a2a;
+  --theme-elevation-skeleton-to: #404040;
+}
+
+// Fix skeleton loading visibility in dark mode
+[data-theme="dark"] .payload-skeleton,
+[data-theme="dark"] [class*="skeleton"] {
+  background: linear-gradient(
+    90deg,
+    var(--theme-elevation-skeleton-from, #2a2a2a) 0%,
+    var(--theme-elevation-skeleton-to, #404040) 50%,
+    var(--theme-elevation-skeleton-from, #2a2a2a) 100%
+  ) !important;
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+// Ensure login page elements are visible in dark mode
+[data-theme="dark"] input,
+[data-theme="dark"] button {
+  background-color: var(--theme-elevation-200) !important;
+  color: var(--theme-text) !important;
+  border-color: var(--theme-elevation-400) !important;
+}
+
+[data-theme="dark"] input::placeholder {
+  color: var(--theme-elevation-700) !important;
+}
+
+[data-theme="dark"] input:focus {
+  border-color: var(--theme-elevation-600) !important;
+  outline: 2px solid var(--theme-elevation-500) !important;
+}
+
+[data-theme="dark"] button:hover {
+  background-color: var(--theme-elevation-300) !important;
+}
+
+// Login form specific styles
+[data-theme="dark"] form {
+  background-color: var(--theme-elevation-100) !important;
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    background-color: var(--theme-elevation-250) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--theme-elevation-500) !important;
+
+    &::placeholder {
+      color: var(--theme-elevation-700) !important;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      background-color: var(--theme-elevation-300) !important;
+      border-color: var(--theme-elevation-700) !important;
+    }
+  }
+
+  button[type="submit"] {
+    background-color: var(--theme-elevation-500) !important;
+    color: #ffffff !important;
+
+    &:hover {
+      background-color: var(--theme-elevation-600) !important;
+    }
+  }
+
+  label {
+    color: var(--theme-elevation-1000) !important;
+  }
+}
+
+// Fix any white backgrounds in dark mode
+[data-theme="dark"] * {
+  &[style*="background: white"],
+  &[style*="background-color: white"],
+  &[style*="background: #fff"],
+  &[style*="background-color: #fff"] {
+    background-color: var(--theme-elevation-200) !important;
+  }
+}
