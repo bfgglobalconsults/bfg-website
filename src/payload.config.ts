@@ -25,7 +25,7 @@ const dirname = path.dirname(filename);
 export default buildConfig({
   admin: {
     user: Users.slug,
-    theme: "auto", // Options: 'light', 'dark', 'auto' (follows system preference)
+    theme: "light", // Options: 'light', 'dark'
   },
   collections: [
     Users,
