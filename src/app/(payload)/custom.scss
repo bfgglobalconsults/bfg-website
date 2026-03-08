@@ -66,6 +66,51 @@
   color: var(--theme-elevation-700) !important;
 }
 
+[data-theme="dark"] input:focus {
+  border-color: var(--theme-elevation-600) !important;
+  outline: 2px solid var(--theme-elevation-500) !important;
+}
+
+[data-theme="dark"] button:hover {
+  background-color: var(--theme-elevation-300) !important;
+}
+
+// Login form specific styles
+[data-theme="dark"] form {
+  background-color: var(--theme-elevation-100) !important;
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    background-color: var(--theme-elevation-250) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--theme-elevation-500) !important;
+
+    &::placeholder {
+      color: var(--theme-elevation-700) !important;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      background-color: var(--theme-elevation-300) !important;
+      border-color: var(--theme-elevation-700) !important;
+    }
+  }
+
+  button[type="submit"] {
+    background-color: var(--theme-elevation-500) !important;
+    color: #ffffff !important;
+
+    &:hover {
+      background-color: var(--theme-elevation-600) !important;
+    }
+  }
+
+  label {
+    color: var(--theme-elevation-1000) !important;
+  }
+}
+
 // Fix any white backgrounds in dark mode
 [data-theme="dark"] * {
   &[style*="background: white"],
