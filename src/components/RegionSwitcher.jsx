@@ -85,7 +85,7 @@ export default function RegionSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg">
+        <div className="absolute right-0 z-[200] mt-2 w-56 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg">
           <div className="py-1">
             {regions.map((region) => (
               <button
