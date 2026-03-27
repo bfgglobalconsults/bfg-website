@@ -30,15 +30,20 @@ const SliderHeroPage = () => {
 
   return (
     <div className="overflow-hidden max-w-[100vw]">
-      <Slider {...settings}>
-        {/* <div>
-          <HeroSection1 />
-        </div> */}
-        <div>
+      
           <HeroSection2 />
-        </div>
-      </Slider>
+       
     </div>
+    // <div className="overflow-hidden max-w-[100vw]">
+    //   <Slider {...settings}>
+    //     <div>
+    //       <HeroSection1 />
+    //     </div>
+    //     <div>
+    //       <HeroSection2 />
+    //     </div>
+    //   </Slider>
+    // </div>
   );
 };
 
@@ -184,9 +189,9 @@ const HeroSection2 = () => (
             <span className="block text-4xl lg:text-6xl font-light mb-2">
               Tailored expertise in{" "}
             </span>
-            Market Research
+            Market Research,
             <br />
-            ,Software Development, Strategy, & Training
+            Software Development, Strategy, & Training
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
             Driving transformative solutions that empower innovation, growth,
