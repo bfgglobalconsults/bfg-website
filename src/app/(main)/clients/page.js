@@ -16,186 +16,186 @@ import OurStand from "@/components/OurStand";
 const ClientData = [
   {
     id: 1,
-    image: "/assets/client-1.png",
+    image: "/assets/client1.png",
   },
   {
     id: 2,
-    image: "/assets/client-2.png",
+    image: "/assets/client2.png",
   },
   {
     id: 3,
-    image: "/assets/client-3.png",
+    image: "/assets/client3.png",
   },
   {
     id: 4,
-    image: "/assets/client-4.png",
+    image: "/assets/client4.png",
   },
   {
     id: 5,
-    image: "/assets/client-5.png",
+    image: "/assets/client5.png",
   },{
     id: 6,
-    image: "/assets/client-6.png",
+    image: "/assets/client6.png",
   },
   {
     id: 7,
-    image: "/assets/client-7.png",
+    image: "/assets/client7.png",
   },
   {
     id: 8,
-    image: "/assets/client-8.png",
+    image: "/assets/client8.png",
   },
     {
     id: 9,
-    image: "/assets/client-9.png",
+    image: "/assets/client9.png",
   },
       {
     id: 10,
-    image: "/assets/client-10.png",
+    image: "/assets/client10.png",
   },
         {
     id: 11,
-    image: "/assets/client-11.png",
+    image: "/assets/client11.png",
   },
           {
     id: 12,
-    image: "/assets/client-12.png",
+    image: "/assets/client12.png",
   },
             {
     id: 13,
-    image: "/assets/client-13.png",
+    image: "/assets/client13.png",
   },
               {
     id: 14,
-    image: "/assets/client-14.png",
+    image: "/assets/client14.png",
   },
                 {
     id: 15,
-    image: "/assets/client-15.png",
+    image: "/assets/client15.png",
   },
                   {
     id: 16,
-    image: "/assets/client-16.png",
+    image: "/assets/client16.png",
   },
                     {
     id: 17,
-    image: "/assets/client-17.png",
+    image: "/assets/client17.png",
   },
                       {
     id: 18,
-    image: "/assets/client-18.png",
+    image: "/assets/client18.png",
   },
   {
     id: 19, 
-    image: "/assets/client-19.png",
+    image: "/assets/client19.png",
   },
   {
     id: 20,
-    image: "/assets/client-20.png",
+    image: "/assets/client20.png",
     },
     {
     id: 21,
-    image: "/assets/client-21.png",
+    image: "/assets/client21.png",
     },
     {
     id: 22,
-    image: "/assets/client-22.png",
+    image: "/assets/client22.png",
     },
     {
     id: 23,
-    image: "/assets/client-23.png",
+    image: "/assets/client23.png",
     },
     {
     id: 24,
-    image: "/assets/client-24.png",
+    image: "/assets/client24.png",
     },
     {
     id: 25,
-    image: "/assets/client-25.png",
+    image: "/assets/client25.png",
     },
     {
     id: 26,
-    image: "/assets/client-26.png",
+    image: "/assets/client26.png",
     },
     {
     id: 27,
-    image: "/assets/client-27.png",
+    image: "/assets/client27.png",
     },
     {
     id: 28,
-    image: "/assets/client-28.png",
+    image: "/assets/client28.png",
     },
     {
     id: 29,
-    image: "/assets/client-29.png",
+    image: "/assets/client29.png",
     },
     {
     id: 30,
-    image: "/assets/client-30.png",
+    image: "/assets/client30.png",
     },
     {
     id: 31,
-    image: "/assets/client-31.png",
+    image: "/assets/client31.png",
     },
     {
     id: 32,
-    image: "/assets/client-32.png",
+    image: "/assets/client32.png",
     },
     {
     id: 33,
-    image: "/assets/client-33.png",
+    image: "/assets/client33.png",
     },
     {
     id: 34,
-    image: "/assets/client-34.png",
+    image: "/assets/client34.png",
     },
     {
     id: 35,
-    image: "/assets/client-35.png",
+    image: "/assets/client35.png",
     },
     {
     id: 36,
-    image: "/assets/client-36.png",
+    image: "/assets/client36.png",
     },
     {
     id: 37,
-    image: "/assets/client-37.png",
+    image: "/assets/client37.png",
     },
     {
     id: 38,
-    image: "/assets/client-38.png",
+    image: "/assets/client38.png",
     },
     {
     id: 39,
-    image: "/assets/client-39.png",
+    image: "/assets/client39.png",
     },
     {
     id: 40,
-    image: "/assets/client-40.png",
+    image: "/assets/client40.png",
     },
     {
     id: 41,
-    image: "/assets/client-41.png",
+    image: "/assets/client41.png",
     },
     {
     id: 42,
-    image: "/assets/client-42.png",
+    image: "/assets/client42.png",
     },
     {
     id: 43,
-    image: "/assets/client-43.png",
+    image: "/assets/client43.png",
     },
     {
     id: 44,
-    image: "/assets/client-44.png",
+    image: "/assets/client44.png",
     },
     {
     id: 45,
-    image: "/assets/client-45.png",
+    image: "/assets/client45.png",
     },
     {
     id: 46,
-    image: "/assets/client-46.png",
+    image: "/assets/client46.png",
     }
 ]
 
