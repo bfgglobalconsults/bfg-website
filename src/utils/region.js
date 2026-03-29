@@ -1,13 +1,16 @@
 /**
  * Get the current region based on the URL path
  * @param {string} pathname - The current pathname
- * @returns {string} - 'nigeria' or 'uk'
+ * @returns {string} - 'uk', 'ng', or 'global'
  */
 export function getRegionFromPath(pathname) {
   if (pathname.startsWith('/uk')) {
     return 'uk';
   }
-  return 'nigeria';
+  if (pathname.startsWith('/ng')) {
+    return 'ng';
+  }
+  return 'global'; // Main site shows all regions
 }
 
 /**

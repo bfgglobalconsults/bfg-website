@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getRegionFromPath } from "@/utils/region";
+import { lexicalToHtml } from "@/utils/lexicalToHtml";
 import Slides from "@/components/Slides";
 
 export default function CaseStudyDetail({ params }) {
@@ -177,8 +178,8 @@ export default function CaseStudyDetail({ params }) {
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <div
-                className="text-lg text-[#9b8b8b]"
-                dangerouslySetInnerHTML={{ __html: caseStudy.solution }}
+                className="prose prose-lg max-w-none text-[#9b8b8b]"
+                dangerouslySetInnerHTML={{ __html: lexicalToHtml(caseStudy.solution) }}
               />
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
