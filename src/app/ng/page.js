@@ -1,12 +1,145 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function NigeriaPage() {
+  const [formStatus, setFormStatus] = useState("");
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      id: 1,
+      title: "Financial Technology",
+      description: "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
+      imageAlt: "slider1-img",
+      imageSrc: "/assets/sliderimage1.jpg",
+      readMore: "/industry/industries/technology",
+    },
+    {
+      id: 2,
+      title: "Consumer and Retail Market",
+      description: "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
+      imageAlt: "slider5-img",
+      imageSrc: "/assets/consumer-img.jpg",
+      readMore: "/industry/industries/consumer",
+    },
+    {
+      id: 3,
+      title: "Real Estate",
+      description: "Building success, BFG guides construction companies to navigate complex projects, enhance efficiency, & drive innovation.",
+      imageAlt: "slider2-img",
+      imageSrc: "/assets/sliderimage2.jpg",
+      readMore: "/industry/industries/real-estate",
+    },
+    {
+      id: 4,
+      title: "Hospitality and Tourism",
+      description: "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
+      imageAlt: "slider3-img",
+      imageSrc: "/assets/hospitality.jpg",
+      readMore: "/industry/industries/hospitality",
+    },
+    {
+      id: 5,
+      title: "Government and Non-for-Profit",
+      description: "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+      imageAlt: "slider4-img",
+      imageSrc: "/assets/sliderimage4.jpg",
+      readMore: "/industry/industries/government",
+    },
+    {
+      id: 6,
+      title: "Oil and Gas",
+      description: "BFG empowers oil and gas companies to optimize operations, enhance safety protocols, and implement sustainable practices while navigating industry regulations and market dynamics.",
+      imageAlt: "slider6-img",
+      imageSrc: "/assets/oilgas-banner.png",
+      readMore: "/industry/industries/oil-gas",
+    },
+    {
+      id: 7,
+      title: "Industrial Manufacturing",
+      description: "BFG helps manufacturers streamline production processes, optimize supply chains, integrate smart technologies, and enhance operational efficiency.",
+      imageAlt: "slider7-img",
+      imageSrc: "/assets/industrial-manufacture-banner.png",
+      readMore: "/industry/industries/industrial-manufacturing",
+    },
+    {
+      id: 8,
+      title: "Telecommunication and Media",
+      description: "BFG helps businesses in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
+      imageAlt: "slider8-img",
+      imageSrc: "/assets/telecom-banner.png",
+      readMore: "/industry/industries/telecom-media",
+    },
+    {
+      id: 9,
+      title: "Entertainment and Creative Industry",
+      description: "BFG provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.",
+      imageAlt: "slider9-img",
+      imageSrc: "/assets/entertainment-banner.png",
+      readMore: "/industry/industries/entertainment",
+    },
+    {
+      id: 10,
+      title: "Health and Social Care",
+      description: "BFG supports healthcare providers, social care organizations, and health-tech startups in adopting advanced healthcare strategies, improving service delivery, and ensuring regulatory compliance.",
+      imageAlt: "slider10-img",
+      imageSrc: "/assets/health-banner.png",
+      readMore: "/industry/industries/health-social-care",
+    },
+    {
+      id: 11,
+      title: "Financial and Banking Services",
+      description: "We partner with financial institutions, fintech companies, & other stakeholders to navigate regulatory complexities, harness emerging technologies, & unlock new opportunities.",
+      imageAlt: "slider11-img",
+      imageSrc: "/assets/financial-img.png",
+      readMore: "/industry/industries/financial",
+    },
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 3 >= slides.length ? 0 : prev + 3));
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 3 < 0 ? Math.max(0, slides.length - 3) : prev - 3));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    setFormStatus("submitting");
+
+    try {
+      const response = await fetch("https://formspree.io/f/mkopjjjp", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setFormStatus("success");
+        form.reset();
+        setTimeout(() => setFormStatus(""), 5000);
+      } else {
+        setFormStatus("error");
+        setTimeout(() => setFormStatus(""), 5000);
+      }
+    } catch (error) {
+      setFormStatus("error");
+      setTimeout(() => setFormStatus(""), 5000);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto py-16 lg:py-[150px] relative">
+      <section className="relative py-16 lg:py-[150px]">
         <div className="absolute inset-0 z-0">
           <Image
             src="/assets/ng-background.png"
@@ -14,9 +147,9 @@ export default function NigeriaPage() {
             fill
             className="object-cover"
           />
-        </div>
-        <div className="relative z-10"></div>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        </div> 
+        <div className="container mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
@@ -66,11 +199,12 @@ export default function NigeriaPage() {
               </div> */}
 
               {/* Africa Map Placeholder */}
-              <div className="relative w-full h-[500px] flex items-center justify-center z-5">
+              <div className="relative w-full h-[500px] flex items-center justify-center">
                 <Image
                   src="/assets/nigeria-banner.png"
                   alt="Map of Nigeria highlighting business regions and key cities"
-                  className="w-full h-full object-cover rounded-xl"
+                  fill
+                  className="object-cover rounded-xl"
                 />
                 {/* <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-[#E26015] text-white px-6 py-3 rounded-lg font-bold text-xl shadow-lg">
@@ -93,6 +227,7 @@ export default function NigeriaPage() {
               </div> */}
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -248,39 +383,50 @@ export default function NigeriaPage() {
 
           <div className="relative">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Industry Card 1 */}
-              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-                <div className="relative h-64 bg-gray-200">
-                  {/* Placeholder for image */}
+              {slides.slice(currentSlide, currentSlide + 3).map((slide) => (
+                <div key={slide.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                  <div className="relative h-64">
+                    <Image
+                      src={slide.imageSrc}
+                      alt={slide.imageAlt}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-[#333] mb-3">{slide.title}</h3>
+                    <p className="text-gray-600 mb-4 line-clamp-3">
+                      {slide.description}
+                    </p>
+                    <Link href={slide.readMore}>
+                      <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                        See More
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                          <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-[#333] mb-3">Technology & Software</h3>
-                  <p className="text-gray-600 mb-4">
-                    Boost your business growth with digital tools. We take you through 
-                    the process of designing & developing cutting-edge technology.
-                  </p>
-                  <Link href="/ng/industry/technology">
-                    <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
-                      See More
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                      </svg>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-
-              {/* Add more industry cards here */}
+              ))}
             </div>
 
             {/* Navigation Arrows */}
             <div className="flex justify-center gap-4 mt-8">
-              <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <button 
+                onClick={prevSlide}
+                disabled={currentSlide === 0}
+                className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="text-gray-600">
                   <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
                 </svg>
               </button>
-              <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <button 
+                onClick={nextSlide}
+                disabled={currentSlide + 3 >= slides.length}
+                className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="text-gray-600">
                   <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                 </svg>
@@ -361,11 +507,12 @@ export default function NigeriaPage() {
 
             {/* Right Content - Illustration */}
             <div className="flex flex-col items-center gap-8">
-              <div className="bg-white rounded-full aspect-square flex items-center justify-center p-8 lg:p-12 shadow-2xl overflow-hidden">
+              <div className="relative bg-white rounded-full aspect-square flex items-center justify-center p-8 lg:p-12 shadow-2xl overflow-hidden w-full max-w-md">
                 <Image
                   src="/assets/ng-team.png"
                   alt="BFG Global Consults Nigeria team of expert consultants"
-                  className="w-full h-full object-cover rounded-full"
+                  fill
+                  className="object-cover rounded-full"
                 />
               </div>
               
@@ -537,7 +684,7 @@ export default function NigeriaPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#333] mb-1">Call Us</p>
-                    <p className="text-gray-600">+234 (0) 800 123 4567</p>
+                    <p className="text-gray-600">+234 818 416 5533</p>
                   </div>
                 </div>
 
@@ -550,7 +697,7 @@ export default function NigeriaPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#333] mb-1">Email Us</p>
-                    <p className="text-gray-600">hello@bfgconsults.com</p>
+                    <p className="text-gray-600">projects@bfgconsults.com</p>
                   </div>
                 </div>
 
@@ -571,13 +718,14 @@ export default function NigeriaPage() {
 
             {/* Right Content - Contact Form */}
             <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-10">
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label className="block text-sm font-semibold text-[#333] mb-2">
                     Full Name <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
+                    name="name"
                     placeholder="John Doe"
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E26015] focus:border-transparent"
                     required
@@ -590,6 +738,7 @@ export default function NigeriaPage() {
                   </label>
                   <input
                     type="text"
+                    name="company"
                     placeholder="Your Company"
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E26015] focus:border-transparent"
                   />
@@ -602,6 +751,7 @@ export default function NigeriaPage() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       placeholder="john@company.com"
                       className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E26015] focus:border-transparent"
                       required
@@ -613,6 +763,7 @@ export default function NigeriaPage() {
                     </label>
                     <input
                       type="tel"
+                      name="phone"
                       placeholder="+234 800 000 0000"
                       className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E26015] focus:border-transparent"
                       required
@@ -625,6 +776,7 @@ export default function NigeriaPage() {
                     Service Needed <span className="text-red-500">*</span>
                   </label>
                   <select
+                    name="service"
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E26015] focus:border-transparent appearance-none bg-white"
                     required
                   >
@@ -641,6 +793,7 @@ export default function NigeriaPage() {
                     Message
                   </label>
                   <textarea
+                    name="message"
                     rows="4"
                     placeholder="Tell us about your project or business needs..."
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E26015] focus:border-transparent resize-none"
@@ -648,11 +801,24 @@ export default function NigeriaPage() {
                   <p className="text-xs text-gray-500 mt-1">0/500 characters</p>
                 </div>
 
+                {formStatus === "success" && (
+                  <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
+                    Thank you! Your message has been sent successfully.
+                  </div>
+                )}
+
+                {formStatus === "error" && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                    Oops! Something went wrong. Please try again.
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full px-6 py-4 bg-[#0A2540] text-white font-semibold rounded-lg hover:bg-[#E26015] transition-colors"
+                  className="w-full px-6 py-4 bg-[#0A2540] text-white font-semibold rounded-lg hover:bg-[#E26015] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled={formStatus === "submitting"}
                 >
-                  Book a Consultation
+                  {formStatus === "submitting" ? "Sending..." : "Book a Consultation"}
                 </button>
               </form>
             </div>
