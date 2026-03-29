@@ -138,11 +138,11 @@ const Header = () => {
         <div
           className={`${
             active === true
-              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
-              : "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
+              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-50"
+              : "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-50"
           } px-[40px] text-white`}
         >
-          <div className="flex justify-between items-center z-20">
+          <div className="flex justify-between items-center z-50">
             {active ? (
               <>
                 <Link href="/">
@@ -328,7 +328,7 @@ const Header = () => {
         <div
           className={`${
             active === true
-              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-10"
+              ? "w-full p-[10px] px-[40px] bg-white fixed top-0 left-0 z-50"
               : null
           } px-[40px] text-white border-b border-[#e4e4eb]`}
         >
@@ -387,7 +387,7 @@ const Header = () => {
             (styles, item) =>
               item && (
                 <animated.div
-                  className=" bg-black fixed top-0 left-0 w-full h-full z-50 opacity-50 "
+                  className=" bg-black fixed top-0 left-0 w-full h-full z-[60] opacity-50 "
                   onClick={() => setShowMenu(false)}
                 ></animated.div>
               )
@@ -397,7 +397,7 @@ const Header = () => {
               item && (
                 <animated.div
                   style={styles}
-                  className="fixed p-3 bg-white top-0 left-0 w-[70%] z-50 h-full shadow overflow-y-auto"
+                  className="fixed p-3 bg-white top-0 left-0 w-[70%] z-[70] h-full shadow overflow-y-auto"
                 >
                   <div className="flex justify-between items-center">
                     <div className="w-[100px] h-[100px] p-1">
