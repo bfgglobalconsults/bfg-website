@@ -76,6 +76,20 @@ export const Users: CollectionConfig = {
         update: ({ req: { user } }) => (user as any)?.role === "super-admin",
       },
     },
+    {
+      name: "resetPasswordToken",
+      type: "text",
+      admin: {
+        hidden: true,
+      },
+    },
+    {
+      name: "resetPasswordExpiration",
+      type: "date",
+      admin: {
+        hidden: true,
+      },
+    },
   ],
   access: {
     create: ({ req: { user } }) =>
@@ -86,5 +100,3 @@ export const Users: CollectionConfig = {
     delete: ({ req: { user } }) => (user as any)?.role === "super-admin",
   },
 };
-
-

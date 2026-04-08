@@ -27,7 +27,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 // const poppins = Poppins({ subsets: ["latin"], variable: "--poppins"});
 
 export const metadata = {
-  title: "BFG Consults - Software Development, Market Research, Strategy, & Training Services",
+  title: "BFG Consults - Market Research, Software Development,  Strategy, & Training Services",
   description: "Management Consulting and Software Development Firm",
 };
 

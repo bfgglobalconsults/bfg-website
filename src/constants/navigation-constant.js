@@ -72,28 +72,28 @@ export const navigation_links = [
       },
     ],
   },
+  // {
+  //   id: 4,
+  //   label: "Programs",
+  //   link: "program",
+  //   component: <ProgramComponent />,
+  //   componentName:"program",
+  //   dropdown: true,
+  //   dropdown_item: [
+  //     {
+  //       id: 1,
+  //       label: "Product Item",
+  //       link: "product/product-item",
+  //     },
+  //     {
+  //       id: 2,
+  //       label: "Product bfg",
+  //       link: "product/product-bfg",
+  //     },
+  //   ],
+  // },
   {
     id: 4,
-    label: "Programs",
-    link: "program",
-    component: <ProgramComponent />,
-    componentName:"program",
-    dropdown: true,
-    dropdown_item: [
-      {
-        id: 1,
-        label: "Product Item",
-        link: "product/product-item",
-      },
-      {
-        id: 2,
-        label: "Product bfg",
-        link: "product/product-bfg",
-      },
-    ],
-  },
-  {
-    id: 5,
     label: "Resources",
     link: "insight",
     component: <InsightComponent />,
@@ -113,7 +113,7 @@ export const navigation_links = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     label: "About Us",
     link: "about",
     component: <AboutComponent />,

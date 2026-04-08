@@ -601,6 +601,282 @@ export default function Main() {
           </div>
         </motion.div>
 
+        {/* Programs Section */}
+        <div className="bg-gray-50 py-16 lg:py-24">
+          <div className="container mx-auto px-4 lg:px-12">
+            <div className="mb-12">
+              <span className="inline-block px-4 py-2 bg-white border-2 border-[#E26015] text-[#E26015] rounded-full text-sm font-semibold mb-4">
+                Our Programs
+              </span>
+              <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+                <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-[#333]">
+                  Transformative Programs
+                </h2>
+                <p className="text-gray-600 text-lg max-w-2xl">
+                  Empowering businesses and professionals through specialized training, workshops, and development programs designed to drive growth and innovation.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative">
+              <Swiper
+                modules={[Navigation, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                  },
+                }}
+                navigation={{
+                  nextEl: ".programs-button-next",
+                  prevEl: ".programs-button-prev",
+                }}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: true,
+                }}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/ai-advantage.png"
+                        alt="AI Advantage Program"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">AI Advantage</h3>
+                      <p className="text-gray-600 mb-4">
+                        Master artificial intelligence and machine learning to transform your business operations and stay ahead in the digital age.
+                      </p>
+                      <Link href="/program/ai-advantage">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/dialectics.png"
+                        alt="Dialectics Program"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">Dialectics</h3>
+                      <p className="text-gray-600 mb-4">
+                        Engage in thought-provoking discussions and debates that challenge conventional thinking and foster innovation.
+                      </p>
+                      <Link href="/program/dialectics">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/leadership-summit.png"
+                        alt="Leadership Summit"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">Leadership Summit</h3>
+                      <p className="text-gray-600 mb-4">
+                        Connect with industry leaders and develop the skills needed to lead effectively in today's dynamic business environment.
+                      </p>
+                      <Link href="/program/leadership-summit">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/women-tech.png"
+                        alt="Women in Tech Program"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">Women in Tech</h3>
+                      <p className="text-gray-600 mb-4">
+                        Empowering women to excel in technology careers through mentorship, training, and networking opportunities.
+                      </p>
+                      <Link href="/program/women-tech">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/sme-klinic.png"
+                        alt="SME Klinic Program"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">SME Klinic</h3>
+                      <p className="text-gray-600 mb-4">
+                        Practical solutions and expert guidance to help small and medium enterprises overcome challenges and scale effectively.
+                      </p>
+                      <Link href="/program/sme-klinic">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/sme-webinar.png"
+                        alt="SME Webinar Series"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">SME Webinar</h3>
+                      <p className="text-gray-600 mb-4">
+                        Interactive online sessions covering essential topics for SME growth, from finance to marketing strategies.
+                      </p>
+                      <Link href="/program/sme-webinar">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/tech-achiever.jpg"
+                        alt="Tech Achievers Program"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">Tech Achievers</h3>
+                      <p className="text-gray-600 mb-4">
+                        Recognizing and celebrating excellence in technology innovation and entrepreneurship across Africa.
+                      </p>
+                      <Link href="/program/tech-achievers">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow h-full">
+                    <div className="relative h-64">
+                      <Image
+                        src="/assets/data-deal-img.jpg"
+                        alt="Data2Deals Program"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">Data2Deals</h3>
+                      <p className="text-gray-600 mb-4">
+                        Transform data insights into actionable business strategies and close more deals with data-driven decision making.
+                      </p>
+                      <Link href="/program/Data2Deals">
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          Learn More
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+
+              {/* Navigation Arrows */}
+              <div className="programs-button-prev !text-white !bg-[#E26015]/80 !w-[40px] !h-[40px] !rounded-full after:!text-[20px] absolute left-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                  <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
+                </svg>
+              </div>
+              <div className="programs-button-next !text-white !bg-[#E26015]/80 !w-[40px] !h-[40px] !rounded-full after:!text-[20px] absolute right-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+
+        
+
         {/* values */}
         <div className="my-4 p-12">
           <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">

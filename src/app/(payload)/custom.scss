@@ -120,3 +120,45 @@
     background-color: var(--theme-elevation-200) !important;
   }
 }
+
+// Password visibility toggle styles
+input[type="password"],
+input[type="text"][name="password"] {
+  padding-right: 45px !important;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    color: #333;
+    background: none !important;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+[data-theme="dark"] .password-toggle-btn {
+  color: var(--theme-elevation-700);
+
+  &:hover {
+    color: var(--theme-elevation-1000);
+  }
+}

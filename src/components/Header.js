@@ -178,7 +178,7 @@ const Header = () => {
                     )}
                   </ul>
                 </div>
-                <div>
+                <div className="relative z-[100]">
                   <RegionSwitcher />
                 </div>
                 <div>
@@ -191,7 +191,7 @@ const Header = () => {
                     <div
                       key={id}
                       ref={modalRef}
-                      className={`modal relative z-5 inset-0 overflow-y-auto ${
+                      className={`modal relative z-[40] inset-0 overflow-y-auto ${
                         activeTab === id ? "block" : "hidden"
                       }`}
                     >
@@ -202,7 +202,7 @@ const Header = () => {
                             : "animate-slide-out"
                         }`}
                       >
-                        <div className="relative z-10 modal-content mt-[21px] bg-white  border-[#E45F11] border-r-4 border-l-4 border-b-4 rounded-b-xl rounded-l-xl rounded-r-xl rounded-tr-none rounded-tl-none w-full p-8">
+                        <div className="relative z-[45] modal-content mt-[21px] bg-white  border-[#E45F11] border-r-4 border-l-4 border-b-4 rounded-b-xl rounded-l-xl rounded-r-xl rounded-tr-none rounded-tl-none w-full p-8">
                           <div className="flex flex-col items-center justify-center">
                             <span
                               className="absolute bottom-5 justify-center p-2 cursor-pointer"
@@ -265,7 +265,7 @@ const Header = () => {
                     )}
                   </ul>
                 </div>
-                <div>
+                <div className="relative z-[100]">
                   <RegionSwitcher />
                 </div>
                 <div>
@@ -278,7 +278,7 @@ const Header = () => {
                     <div
                       key={id}
                       ref={modalRef}
-                      className={`modal relative z-5 inset-0 overflow-y-auto ${
+                      className={`modal relative z-[40] inset-0 overflow-y-auto ${
                         activeTab === id ? "block" : "hidden"
                       }`}
                     >
@@ -289,7 +289,7 @@ const Header = () => {
                             : "animate-slide-out"
                         }`}
                       >
-                        <div className="relative z-10 modal-content mt-[21px] bg-white  border-[#E45F11] border-r-4 border-l-4 border-b-4 rounded-b-xl rounded-l-xl rounded-r-xl rounded-tr-none rounded-tl-none w-full p-8">
+                        <div className="relative z-[45] modal-content mt-[21px] bg-white  border-[#E45F11] border-r-4 border-l-4 border-b-4 rounded-b-xl rounded-l-xl rounded-r-xl rounded-tr-none rounded-tl-none w-full p-8">
                           <div className="flex flex-col items-center justify-center">
                             <span
                               className="absolute bottom-5 justify-center p-2 cursor-pointer"

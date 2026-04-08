@@ -43,18 +43,8 @@ export default function RegionSwitcher() {
   }, [isOpen]);
 
   const handleRegionChange = (regionCode) => {
-    // Get the path without the current region
-    let remainingPath = pathname;
-
-    // If current path starts with a region code, remove it
-    if (pathSegments[0] && regions.some((r) => r.code === pathSegments[0])) {
-      remainingPath = "/" + pathSegments.slice(1).join("/");
-    }
-
-    // Construct new path
-    const newPath = regionCode
-      ? `/${regionCode}${remainingPath}`
-      : remainingPath;
+    // Always navigate to the region's landing page
+    const newPath = regionCode ? `/${regionCode}` : "/";
 
     router.push(newPath);
     setIsOpen(false);

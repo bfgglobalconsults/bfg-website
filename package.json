@@ -46,6 +46,7 @@
     "next": "^15.4.10",
     "next-cloudinary": "^6.16.0",
     "node-fetch": "^3.3.2",
+    "nodemailer": "^8.0.4",
     "payload": "^3.69.0",
     "quill": "^2.0.3",
     "react": "^19.2.3",
