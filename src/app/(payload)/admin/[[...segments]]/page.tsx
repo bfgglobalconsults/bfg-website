@@ -7,10 +7,10 @@ import { importMap } from "../importMap.js";
 import Script from "next/script";
 
 type Args = {
-  params: {
+  params: Promise<{
     segments: string[];
-  };
-  searchParams: { [key: string]: string | string[] };
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] }>;
 };
 
 export const generateMetadata = ({
