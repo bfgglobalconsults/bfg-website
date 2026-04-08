@@ -83,8 +83,8 @@ export const resetPassword = async (password, token) => {
 
 export const changePassword = async (form) => {
 	try {
-		const response = await httpService.patch(
-			`/employee-auth/reset/password`,
+		const response = await httpService.post(
+			`/api/change-password`,
 			form,
 		);
 		return response.data;
