@@ -1,15 +1,17 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import Accordion from "@/components/Accordion";
 import AnimatedItems from "@/components/information-technology/AnimatedItems";
+import CalendlyModal from "@/components/CalendlyModal";
 import Link from "next/link";
 import OfficeAddresses from "@/components/OfficeAddresses";
 
 const Page = () => {
   const benefitsRef = useRef(null);
   const isInView = useInView(benefitsRef, { once: true, amount: 0.2 });
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
   const researchSlides = [
     {
@@ -437,16 +439,24 @@ const Page = () => {
                 Solutions.
               </p>
               <div className="flex justify-center">
-                <Link href="/contact">
-                  <button className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg">
-                    Contact our Service Team
+                 <button 
+                   onClick={() => setIsCalendlyOpen(true)}
+                   className="bg-[#E26015] hover:bg-black my-4 text-white text-md lg:text-lg py-2 px-4 rounded-lg"
+                 >
+                    Book a Quick Call
                   </button>
-                </Link>
               </div>
             </div>
           </motion.div>
         </div>
       </div>
+
+      {/* Calendly Modal */}
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={() => setIsCalendlyOpen(false)}
+        calendlyUrl={process.env.NEXT_PUBLIC_CALENDLY_URL}
+      />
     </>
   );
 };

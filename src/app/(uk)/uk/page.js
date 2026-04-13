@@ -518,8 +518,8 @@ export default function UKPage() {
               </div>
               
               {/* CTA Button */}
-              <Link href="/team">
-                <button className="px-8 py-4 bg-white text-[#E26015] font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
+             <Link href="/team">
+                <button className="px-8 py-4 bg-[#0A2540] text-white font-bold rounded-full shadow-xl hover:bg-white hover:text-[#E26015] border-2 border-white hover:border-[#0A2540] hover:shadow-2xl hover:scale-105 transition-all">
                   Meet Our UK Team
                 </button>
               </Link>
