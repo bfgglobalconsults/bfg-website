@@ -601,8 +601,7 @@ export default function Main() {
           </div>
         </motion.div>
 
-        {/* Programs Section */}
-        <div className="bg-gray-50 py-16 lg:py-24">
+        {/* <div className="bg-gray-50 py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-12">
             <div className="mb-12">
               <span className="inline-block px-4 py-2 bg-white border-2 border-[#E26015] text-[#E26015] rounded-full text-sm font-semibold mb-4">
@@ -858,7 +857,6 @@ export default function Main() {
                 </SwiperSlide>
               </Swiper>
 
-              {/* Navigation Arrows */}
               <div className="programs-button-prev !text-white !bg-[#E26015]/80 !w-[40px] !h-[40px] !rounded-full after:!text-[20px] absolute left-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                   <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
@@ -873,7 +871,7 @@ export default function Main() {
 
             
           </div>
-        </div>
+        </div>  */}
 
         
 
