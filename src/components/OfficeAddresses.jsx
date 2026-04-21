@@ -59,7 +59,7 @@ export default function OfficeAddresses() {
               </a>
             </div>
           </div>
-          <Link href="/">
+          <Link href="/ng">
             <button className="w-full mt-4 py-3 px-6 bg-[#E26015] hover:bg-[#333] text-white font-semibold rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 group">
               <span>Visit Nigeria Site</span>
               <svg

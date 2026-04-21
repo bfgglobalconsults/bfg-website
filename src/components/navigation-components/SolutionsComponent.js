@@ -21,7 +21,7 @@ const SolutionsComponent = ({ closeModal, color }) => {
               Solutions
             </h3>
             <p className="text-[#999999] text-lg">
-              We specialise in offering custom solutions in software development, market research, strategy development, and workforce training to a global clientele, including individuals, businesses, corporate organisations, and government agencies.
+             We specialise in offering custom solutions in market research, software development, strategy design, and workforce training to a global clientele, including individuals, businesses, corporate organisations, and government agencies.
             </p>
             {/* <button
               onClick={closeModal}

@@ -440,6 +440,226 @@ export default function NigeriaPage() {
         </div>
       </section>
 
+       {/* Global Expertise Section */}
+      <section className="bg-[#E26015] py-16 lg:py-24">
+        <div className="container mx-auto px-4 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="space-y-6">
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
+                Global Expertise. Local Understanding.
+              </h2>
+              
+              <div className="space-y-4 text-white">
+                <p className="leading-relaxed">
+                  Our team combines decades of international consulting experience with 
+                  deep knowledge of the Nigerian business landscape. We understand the 
+                  unique challenges and opportunities in African markets, and we bring 
+                  proven methodologies from global best practices to deliver solutions 
+                  that work in your context.
+                </p>
+                <p className="leading-relaxed">
+                  With consultants who have worked across Fortune 500 companies, leading 
+                  tech firms, and high-growth African startups, we bridge the gap between 
+                  world-class standards and local market realities.
+                </p>
+              </div>
+
+              {/* Feature Grid */}
+              <div className="grid grid-cols-2 gap-4 pt-4">
+                {/* International Standards */}
+                <div className="bg-white rounded-xl p-6 text-center">
+                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z"></path>
+                    </svg>
+                  </div>
+                  <p className="text-[#E26015] font-semibold">International Standards</p>
+                </div>
+
+                {/* Local Market Expertise */}
+                <div className="bg-white rounded-xl p-6 text-center">
+                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                      <path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995Z"></path>
+                    </svg>
+                  </div>
+                  <p className="text-[#E26015] font-semibold">Local Market Expertise</p>
+                </div>
+
+                {/* Proven Track Record */}
+                <div className="bg-white rounded-xl p-6 text-center">
+                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z"></path>
+                    </svg>
+                  </div>
+                  <p className="text-[#E26015] font-semibold">Proven Track Record</p>
+                </div>
+
+                {/* Dedicated Support */}
+                <div className="bg-white rounded-xl p-6 text-center">
+                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z"></path>
+                    </svg>
+                  </div>
+                  <p className="text-[#E26015] font-semibold">Dedicated Support</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content - Illustration */}
+            <div className="flex flex-col items-center gap-8">
+              <div className="relative bg-white rounded-full aspect-square flex items-center justify-center p-8 lg:p-12 shadow-2xl overflow-hidden w-full max-w-md">
+                <Image
+                  src="/assets/ng-team.png"
+                  alt="BFG Global Consults Nigeria team of expert consultants"
+                  fill
+                  className="object-cover rounded-full"
+                />
+              </div>
+              
+              {/* CTA Button */}
+              <Link href="/team">
+                <button className="px-8 py-4 bg-[#0A2540] text-white font-bold rounded-full shadow-xl hover:bg-white hover:text-[#E26015] border-2 border-white hover:border-[#0A2540] hover:shadow-2xl hover:scale-105 transition-all">
+                  Meet Our Nigeria Team
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        {/* Statistics & Testimonials Section */}
+      <section className="bg-gray-50 py-16 lg:py-24">
+        <div className="container mx-auto px-4 lg:px-12">
+          {/* Statistics Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {/* Projects Completed */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                  <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z"></path>
+                </svg>
+              </div>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">899+</h3>
+              <p className="text-gray-600">Projects Completed</p>
+            </div>
+
+            {/* Clients Served */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                  <path d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.3431 13.6569 13 12 13C10.3431 13 9 14.3431 9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z"></path>
+                </svg>
+              </div>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">99+</h3>
+              <p className="text-gray-600">Clients Served</p>
+            </div>
+
+            {/* Years of Impact */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                  <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z"></path>
+                </svg>
+              </div>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">7+</h3>
+              <p className="text-gray-600">Years of Impact</p>
+            </div>
+
+            {/* Expert Consultants */}
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                  <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564 19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962 3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252 16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016 5.92603 17.041 5.35635L17.5962 3.41321Z"></path>
+                </svg>
+              </div>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">20+</h3>
+              <p className="text-gray-600">Expert Consultants</p>
+            </div>
+          </div>
+
+          {/* Testimonials */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Testimonial 1 */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
+                    <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                "BFG Consults transformed our digital infrastructure and helped us scale from 
+                50,000 to over 2 million users in 8 months. Their understanding of the Nigerian 
+                fintech landscape is unmatched."
+              </p>
+              <div>
+                <p className="font-bold text-[#333]">Chidi Okonkwo</p>
+                <p className="text-sm text-gray-500">CEO, PayFlow Nigeria</p>
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
+                    <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                "The market research and strategic advisory from BFG gave us the insights we 
+                needed to expand into three new African markets. Their data-driven approach 
+                saved us months of trial and error."
+              </p>
+              <div>
+                <p className="font-bold text-[#333]">Amina Bello</p>
+                <p className="text-sm text-gray-500">COO, HealthConnect Africa</p>
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
+                    <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                "Working with BFG Consults was a game-changer for our logistics operations. 
+                They implemented systems that reduced our delivery times by 40% and cut 
+                operational costs significantly."
+              </p>
+              <div>
+                <p className="font-bold text-[#333]">Tunde Adeyemi</p>
+                <p className="text-sm text-gray-500">Founder, SwiftLogistics</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <div className="flex justify-center gap-4 mt-8">
+            <button className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E26015">
+                <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
+              </svg>
+            </button>
+            <button className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E26015">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
        {/* Programs Section */}
         <div className="bg-gray-50 py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-12">
@@ -714,225 +934,9 @@ export default function NigeriaPage() {
           </div>
         </div>
 
-      {/* Global Expertise Section */}
-      <section className="bg-[#E26015] py-16 lg:py-24">
-        <div className="container mx-auto px-4 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
-                Global Expertise. Local Understanding.
-              </h2>
-              
-              <div className="space-y-4 text-white">
-                <p className="leading-relaxed">
-                  Our team combines decades of international consulting experience with 
-                  deep knowledge of the Nigerian business landscape. We understand the 
-                  unique challenges and opportunities in African markets, and we bring 
-                  proven methodologies from global best practices to deliver solutions 
-                  that work in your context.
-                </p>
-                <p className="leading-relaxed">
-                  With consultants who have worked across Fortune 500 companies, leading 
-                  tech firms, and high-growth African startups, we bridge the gap between 
-                  world-class standards and local market realities.
-                </p>
-              </div>
+     
 
-              {/* Feature Grid */}
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                {/* International Standards */}
-                <div className="bg-white rounded-xl p-6 text-center">
-                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
-                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z"></path>
-                    </svg>
-                  </div>
-                  <p className="text-[#E26015] font-semibold">International Standards</p>
-                </div>
-
-                {/* Local Market Expertise */}
-                <div className="bg-white rounded-xl p-6 text-center">
-                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
-                      <path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995Z"></path>
-                    </svg>
-                  </div>
-                  <p className="text-[#E26015] font-semibold">Local Market Expertise</p>
-                </div>
-
-                {/* Proven Track Record */}
-                <div className="bg-white rounded-xl p-6 text-center">
-                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
-                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z"></path>
-                    </svg>
-                  </div>
-                  <p className="text-[#E26015] font-semibold">Proven Track Record</p>
-                </div>
-
-                {/* Dedicated Support */}
-                <div className="bg-white rounded-xl p-6 text-center">
-                  <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
-                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z"></path>
-                    </svg>
-                  </div>
-                  <p className="text-[#E26015] font-semibold">Dedicated Support</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Content - Illustration */}
-            <div className="flex flex-col items-center gap-8">
-              <div className="relative bg-white rounded-full aspect-square flex items-center justify-center p-8 lg:p-12 shadow-2xl overflow-hidden w-full max-w-md">
-                <Image
-                  src="/assets/ng-team.png"
-                  alt="BFG Global Consults Nigeria team of expert consultants"
-                  fill
-                  className="object-cover rounded-full"
-                />
-              </div>
-              
-              {/* CTA Button */}
-              <Link href="/team">
-                <button className="px-8 py-4 bg-[#0A2540] text-white font-bold rounded-full shadow-xl hover:bg-white hover:text-[#E26015] border-2 border-white hover:border-[#0A2540] hover:shadow-2xl hover:scale-105 transition-all">
-                  Meet Our Nigeria Team
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Statistics & Testimonials Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="container mx-auto px-4 lg:px-12">
-          {/* Statistics Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {/* Projects Completed */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
-                  <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z"></path>
-                </svg>
-              </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">899+</h3>
-              <p className="text-gray-600">Projects Completed</p>
-            </div>
-
-            {/* Clients Served */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
-                  <path d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.3431 13.6569 13 12 13C10.3431 13 9 14.3431 9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z"></path>
-                </svg>
-              </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">99+</h3>
-              <p className="text-gray-600">Clients Served</p>
-            </div>
-
-            {/* Years of Impact */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
-                  <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z"></path>
-                </svg>
-              </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">7+</h3>
-              <p className="text-gray-600">Years of Impact</p>
-            </div>
-
-            {/* Expert Consultants */}
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
-                  <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564 19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962 3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252 16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016 5.92603 17.041 5.35635L17.5962 3.41321Z"></path>
-                </svg>
-              </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">20+</h3>
-              <p className="text-gray-600">Expert Consultants</p>
-            </div>
-          </div>
-
-          {/* Testimonials */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
-                    <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                "BFG Consults transformed our digital infrastructure and helped us scale from 
-                50,000 to over 2 million users in 8 months. Their understanding of the Nigerian 
-                fintech landscape is unmatched."
-              </p>
-              <div>
-                <p className="font-bold text-[#333]">Chidi Okonkwo</p>
-                <p className="text-sm text-gray-500">CEO, PayFlow Nigeria</p>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
-                    <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                "The market research and strategic advisory from BFG gave us the insights we 
-                needed to expand into three new African markets. Their data-driven approach 
-                saved us months of trial and error."
-              </p>
-              <div>
-                <p className="font-bold text-[#333]">Amina Bello</p>
-                <p className="text-sm text-gray-500">COO, HealthConnect Africa</p>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
-                    <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                "Working with BFG Consults was a game-changer for our logistics operations. 
-                They implemented systems that reduced our delivery times by 40% and cut 
-                operational costs significantly."
-              </p>
-              <div>
-                <p className="font-bold text-[#333]">Tunde Adeyemi</p>
-                <p className="text-sm text-gray-500">Founder, SwiftLogistics</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Navigation Arrows */}
-          <div className="flex justify-center gap-4 mt-8">
-            <button className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E26015">
-                <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
-              </svg>
-            </button>
-            <button className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E26015">
-                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Contact/Consultation Section */}
       <section className="bg-white py-16 lg:py-24">

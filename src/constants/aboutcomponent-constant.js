@@ -9,23 +9,23 @@ export const about_links = [
         label: "Our Clients",
         link: "/clients",
       },
+      // {
+      //   id: 3,
+      //   label: "Our Team",
+      //   link: "/team",
+      // },
       {
         id: 3,
-        label: "Our Team",
-        link: "/team",
-      },
-      {
-        id: 4,
         label: "Projects Executed",
         link: "/industry/projects",
       },
       {
-        id: 5,
+        id: 4,
         label: "Awards & Recognition",
         link: "/award-recognition",
       },
       {
-        id: 6,
+        id: 5,
         label: "Governance & Culture",
         link: "/governance-culture",
       },
