@@ -120,13 +120,13 @@ export const navigation_links = [
     componentName:"about",
     dropdown: true,
     dropdown_item: [
+      // {
+      //   id: 1,
+      //   label: "Our Team",
+      //   link: "about/about-team",
+      // },
       {
         id: 1,
-        label: "Our Team",
-        link: "about/about-team",
-      },
-      {
-        id: 2,
         label: "Our Story",
         link: "about/bfg-story",
       },
