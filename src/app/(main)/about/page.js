@@ -56,7 +56,7 @@ const Page = () => {
                 viewport={{ once: true }}
                 className="text-lg text-[#656565] my-3"
               >
-                At BFG Global Consulting (BFG Consults), our mission is to secure industry relevance for African-owned businesses both locally and across the diaspora—helping them, from startups to established corporations, innovate, grow, and thrive in today&apos;s dynamic markets.{" "}
+                BFG Global Consulting (BFG Consults) is a business transformation consulting firm helping African enterprises unlock growth through market research, strategy intelligence, digital software, and workforce training. Our mission is to secure industry relevance for African-owned businesses and organisations both locally and across the diaspora—helping them to innovate, grow, and thrive in today&apos;s dynamic markets.
               </motion.p>
               <motion.p
                 initial={{ y: 20, opacity: 0 }}
@@ -65,12 +65,7 @@ const Page = () => {
                 viewport={{ once: true }}
                 className="text-lg text-[#656565] my-3"
               >
-                We deliver custom solutions in software development, market
-                research, strategy advisory, and workforce training, blending
-                Consulting-as-a-Service (CaaS) with Software-as-a-Service (SaaS)
-                to make expertise and innovation more accessible, scalable, and
-                impactful for African-owned enterprises and organizations
-                worldwide.{" "}
+                Blending Consulting-as-a-Service (CaaS) with Consulting-as-a-Product (CaaP), we make expertise and innovation more accessible, scalable, and impactful for African-owned enterprises and organisations worldwide.
               </motion.p>
               <motion.p
                 initial={{ y: 20, opacity: 0 }}
@@ -79,11 +74,7 @@ const Page = () => {
                 viewport={{ once: true }}
                 className="text-lg text-[#656565] my-3"
               >
-                With offices in Nigeria and the United Kingdom, our team of
-                agile product leaders brings deep expertise in delivering
-                cutting-edge solutions that unlock opportunities, optimize
-                performance, and drive sustainable growth for clients across
-                Africa, Europe, Asia, North America, and Australia.{" "}
+                With offices in Nigeria and the United Kingdom, our team of agile product leaders brings deep expertise in delivering cutting-edge solutions that unlock opportunities, optimise performance, and drive sustainable growth for clients across Africa, Europe, Asia, North America, and Australia.
               </motion.p>
             </div>
           </motion.div>

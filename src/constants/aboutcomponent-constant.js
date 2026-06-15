@@ -9,11 +9,11 @@ export const about_links = [
         label: "Our Clients",
         link: "/clients",
       },
-      // {
-      //   id: 3,
-      //   label: "Our Team",
-      //   link: "/team",
-      // },
+      {
+        id: 3,
+        label: "Our Team - #TheBFGPeople",
+        link: "/team",
+      },
       {
         id: 3,
         label: "Projects Executed",
