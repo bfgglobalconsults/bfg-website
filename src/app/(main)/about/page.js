@@ -65,7 +65,7 @@ const Page = () => {
                 viewport={{ once: true }}
                 className="text-lg text-[#656565] my-3"
               >
-                Blending Consulting-as-a-Service (CaaS) with Consulting-as-a-Product (CaaP), we make expertise and innovation more accessible, scalable, and impactful for African-owned enterprises and organisations worldwide.
+               Blending Consulting-as-a-Service (CaaS) with Consulting-as-a-Product (CaaP), we make expertise and innovation more accessible, scalable, and impactful for enterprise clients, governments, and multilateral organisations shaping Africa&apos;s future.
               </motion.p>
               <motion.p
                 initial={{ y: 20, opacity: 0 }}
@@ -74,7 +74,7 @@ const Page = () => {
                 viewport={{ once: true }}
                 className="text-lg text-[#656565] my-3"
               >
-                With offices in Nigeria and the United Kingdom, our team of agile product leaders brings deep expertise in delivering cutting-edge solutions that unlock opportunities, optimise performance, and drive sustainable growth for clients across Africa, Europe, Asia, North America, and Australia.
+                With offices in Nigeria and the United Kingdom, our team of agile leaders brings deep expertise in delivering cutting-edge management solutions that unlock opportunities, optimise performance, and drive sustainable growth for clients across Africa, Europe, Asia, North America, and Australia.
               </motion.p>
             </div>
           </motion.div>
@@ -210,50 +210,22 @@ const Page = () => {
           <div className="w-full flex flex-col lg:flex-row gap-4 my-4">
             <div className="w-[100%] lg:w-[60%]">
               <h3 className="text-[#333] font-bold text-3xl md:text-3xl lg:text-4xl">
-                Empowering African Businesses for Global Growth
+                Transforming Africa&apos;s Potential into Growth since 2018
               </h3>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                As the Managing Partner and CEO of BFG Global Consulting
-                Limited, it is my pleasure to welcome you and introduce our
-                firm, a company driven by a passion for growth, innovation, and
-                transformation. At BFG, we are committed to partnering with
-                individuals, startups, SMEs, and institutions, especially those
-                led by African entrepreneurs and diaspora professionals, as they
-                navigate today&apos;s fast-evolving business landscape.
+               As the Managing Partner and CEO of BFG Global Consulting Limited, it is my pleasure to welcome you and introduce our firm, a company driven by a passion for growth, innovation, and transformation. At BFG Consults, we are committed to partnering with individuals, startups, SMEs, governments and multilateral organisations, as they navigate today's fast-evolving market landscape.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                At BFG Global Consulting, we understand that the business
-                landscape is constantly evolving, presenting both challenges and
-                prospects for organizations worldwide. In this fast-paced
-                environment, it is crucial for businesses to adapt and thrive to
-                remain competitive. Thats where we come in.
+                In a world marked by constant change and digital disruption, we understand the unique challenges and opportunities faced by private, public, and multilateral organisations seeking to scale impact, drive sustainability, and shape Africa&apos;s future. Our mission is to be the trusted partner that helps you seize these opportunities on your projects. 
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                In a world marked by constant change and digital disruption, we
-                understand the unique challenges and opportunities faced by
-                African-owned and diaspora-driven businesses seeking relevance,
-                resilience, and growth. Our mission is to be the trusted partner
-                that helps you seize these opportunities and thrive in your
-                industry.
+                We offer a unique blend of consulting and technology solutions, built around data-driven market research, digital software, strategy intelligence and workforce training. This integrated approach empowers our clients across Africa and in key global markets to scale their relevance, build capacity, and unlock new value in competitive environments.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                We offer a unique blend of consulting and technology solutions,
-                built around software development, market research, strategic
-                advisory, and workforce training. This integrated approach
-                empowers our clients across Africa and in key global markets to
-                scale their ventures, build capacity, and unlock new value in
-                competitive environments.
+                At BFG, we don't just deliver services, we co-create solutions tailored to your goals. Whether you're an enterprise clients, governments, or multilateral organisations, our team is equipped to drive your growth agenda, amplify impact, and turn challenges into breakthroughs.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                At BFG, we don&apos;t just deliver services, we co-create
-                solutions tailored to your goals. Whether you&apos;re an
-                early-stage startup aiming to build a solid foundation or an
-                established organisation looking for fresh insights and scalable
-                systems, our team is equipped to guide you with precision and
-                care. As you explore our business profile, we thank you for your
-                time and interest. We look forward to partnering with you to
-                create a future defined by sustainable growth, innovation, and
-                industry relevance—across borders and beyond limits.
+                As you explore our business page, we thank you for your time and interest. We look forward to partnering with you to create a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
               </p>
             </div>
             <div className="flex flex-col">

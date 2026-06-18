@@ -194,8 +194,7 @@ const HeroSection2 = () => (
             Software Development, Strategy, & Training
           </h1>
           <p className="text-xl text-[#333] max-w-3xl">
-            Driving transformative solutions that empower innovation, growth,
-            efficiency, and success for African Startups, SMEs and Large corporations.
+            Driving transformative solutions that empower innovation, growth, efficiency, and success for enterprise clients, governments, and multilateral organisations.
           </p>
           <div className="pt-4">
             <Link
