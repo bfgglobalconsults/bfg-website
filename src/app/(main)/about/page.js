@@ -56,7 +56,7 @@ const Page = () => {
                 viewport={{ once: true }}
                 className="text-lg text-[#656565] my-3"
               >
-                BFG Global Consulting (BFG Consults) is a business transformation consulting firm helping African enterprises unlock growth through market research, strategy intelligence, digital software, and workforce training. Our mission is to secure industry relevance for African-owned businesses and organisations both locally and across the diaspora—helping them to innovate, grow, and thrive in today&apos;s dynamic markets.
+             BFG Global Consulting is a management consulting firm built for Africa&apos;s new industrial age. We help enterprises grow through data-driven market research, digital software, strategy intelligence, and workforce training. Our mission is to secure industry relevance for African businesses and organisations both locally and globally—helping them to innovate, grow, and thrive in today&apos;s dynamic markets.
               </motion.p>
               <motion.p
                 initial={{ y: 20, opacity: 0 }}
@@ -74,7 +74,7 @@ const Page = () => {
                 viewport={{ once: true }}
                 className="text-lg text-[#656565] my-3"
               >
-                With offices in Nigeria and the United Kingdom, our team of agile leaders brings deep expertise in delivering cutting-edge management solutions that unlock opportunities, optimise performance, and drive sustainable growth for clients across Africa, Europe, Asia, North America, and Australia.
+               With offices in Nigeria and the United Kingdom, our team of agile leaders brings deep expertise in delivering cutting-edge management solutions that unlock opportunities, optimise performance, and drive sustainable growth for clients across Africa, Europe, Asia, North America, and Australia.
               </motion.p>
             </div>
           </motion.div>
