@@ -208,7 +208,7 @@ export default function NigeriaPage() {
                   src="/assets/nigeria-banner.png"
                   alt="Map of Nigeria highlighting business regions and key cities"
                   fill
-                  className="object-cover rounded-xl"
+                  className="object-contain rounded-xl"
                 />
                 {/* <div className="absolute inset-0 flex items-center justify-center">
                   <div className="bg-[#E26015] text-white px-6 py-3 rounded-lg font-bold text-xl shadow-lg">
