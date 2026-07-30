@@ -140,14 +140,14 @@ export default function UKPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-16 lg:py-[150px]">
-        <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 z-0">
           <Image
             src="/assets/ng-background.png"
             alt="UK business landscape background with modern office buildings"
             fill
             className="object-cover"
           />
-        </div>
+        </div> */}
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -185,7 +185,7 @@ export default function UKPage() {
 
           {/* Right Content - Map with Stats */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 lg:p-12 shadow-xl">
+            {/* <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 lg:p-12 shadow-xl"> */}
               {/* Growth Rate Badge */}
               {/* <div className="absolute top-8 left-8 bg-white rounded-lg shadow-lg p-3 flex items-center gap-3">
                 <div className="w-10 h-10 bg-[#E26015] rounded-lg flex items-center justify-center">
@@ -226,7 +226,7 @@ export default function UKPage() {
                   <p className="text-lg font-bold text-[#E26015]">99.8%</p>
                 </div>
               </div> */}
-            </div>
+            {/* </div> */}
           </div>
         </div>
         </div>
