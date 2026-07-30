@@ -213,7 +213,7 @@ const Page = () => {
                 Transforming Africa&apos;s Potential into Growth since 2018
               </h3>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-               As the Managing Partner and CEO of BFG Global Consulting Limited, it is my pleasure to welcome you and introduce our firm, a company driven by a passion for growth, innovation, and transformation. At BFG Consults, we are committed to partnering with individuals, startups, SMEs, governments and multilateral organisations, as they navigate today's fast-evolving market landscape.
+               As the Managing Partner and CEO of BFG Global Consulting Limited, it is my pleasure to welcome you and introduce our firm, a company driven by a passion for growth, innovation, and transformation. At BFG Consults, we are committed to partnering with individuals, startups, SMEs, governments and multilateral organisations to secure industry relevance.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
                 In a world marked by constant change and digital disruption, we understand the unique challenges and opportunities faced by private, public, and multilateral organisations seeking to scale impact, drive sustainability, and shape Africa&apos;s future. Our mission is to be the trusted partner that helps you seize these opportunities on your projects. 
