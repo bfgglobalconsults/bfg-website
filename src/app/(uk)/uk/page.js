@@ -151,32 +151,30 @@ export default function UKPage() {
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+          <div className="space-y-6 px-4 lg:px-0">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
               Market Research,{" "}
               <span className="text-[#E26015]">
                 Software Development & Growth Strategy
-              </span>
-              <br />
-              for Afro-Asian Excellence
-              <br />
+              </span>{" "}
+              for Afro-Asian Excellence{" "}
               <span className="text-[#333]">in the UK.</span>
             </h1>
             
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               From market research and software development to strategy and training, 
               we equip Afro-Asian students, start-ups, and businesses to compete, scale, and lead.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="/contact">
-                <button className="px-6 py-3 bg-[#E26015] text-white font-semibold rounded-lg hover:bg-[#c54f0f] transition-colors">
+              <Link href="/contact" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto px-6 py-3 bg-[#E26015] text-white font-semibold rounded-lg hover:bg-[#c54f0f] transition-colors">
                   Request your custom solution
                 </button>
               </Link>
               
-              <Link href="/insight/case-study">
-                <button className="px-6 py-3 border-2 border-[#E26015] text-[#E26015] font-semibold rounded-lg hover:bg-[#E26015] hover:text-white transition-colors">
+              <Link href="/insight/case-study" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto px-6 py-3 border-2 border-[#E26015] text-[#E26015] font-semibold rounded-lg hover:bg-[#E26015] hover:text-white transition-colors">
                   View Our Global Work
                 </button>
               </Link>
@@ -185,33 +183,15 @@ export default function UKPage() {
 
           {/* Right Content - Map with Stats */}
           <div className="relative">
-            {/* <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 lg:p-12 shadow-xl"> */}
-              {/* Growth Rate Badge */}
-              {/* <div className="absolute top-8 left-8 bg-white rounded-lg shadow-lg p-3 flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#E26015] rounded-lg flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white">
-                    <path d="M16 16V4H8V16H2V20C2 20.5523 2.44772 21 3 21H21C21.5523 21 22 20.5523 22 20V16H16ZM14 16H10V6H14V16Z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">Growth Rate</p>
-                  <p className="text-lg font-bold text-[#E26015]">+247%</p>
-                </div>
-              </div> */}
-
               {/* UK Map/Banner */}
-              <div className="relative w-full h-[500px] flex items-center justify-center">
+              <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
                 <Image
                   src="/assets/uk-hero-banner.png"
                   alt="UK map with business analytics and growth statistics"
                   fill
                   className="object-contain rounded-xl"
+                  priority
                 />
-                {/* <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-[#E26015] text-white px-6 py-3 rounded-lg font-bold text-xl shadow-lg">
-                    Nigeria
-                  </div>
-                </div> */}
               </div>
 
               {/* Client Satisfaction Badge */}
