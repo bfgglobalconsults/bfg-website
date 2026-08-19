@@ -20,7 +20,16 @@ module.exports = {
   			],
   			montserrat: [
   				'var(--montserrat)'
-  			]
+				],
+			pacifico: [
+				'var(--font-pacifico)',
+				'sans-serif',
+					
+				],
+				dancing_script: [
+					'var(--font-dancing-script)',
+					'cursive'
+				]
   		},
   		colors: {
   			'theme-color': '#e73139',

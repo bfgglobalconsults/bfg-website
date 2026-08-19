@@ -4,7 +4,7 @@ import Loading from "@/components/loader/page";
 import { AuthProvider } from "@/context/authContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Dancing_Script } from "next/font/google";
 import Script from "next/script";
 import MetaPixelTracker from "@/components/PixelTracker";
 import "../globals.css";
@@ -16,10 +16,15 @@ const montserrat = Montserrat({
   variable: "--montserrat",
 });
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
+const dancing_script = Dancing_Script({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-dancing-script',
+});
 
 export default function NgLayout({ children }) {
   return (
-    <html className={`${montserrat.variable} ${inter.variable}`} lang="en" suppressHydrationWarning>
+    <html className={`${montserrat.variable} ${inter.variable} ${dancing_script.variable}`} lang="en" suppressHydrationWarning>
       <head>
         <Script
           strategy="afterInteractive"

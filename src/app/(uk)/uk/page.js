@@ -148,17 +148,32 @@ export default function UKPage() {
             className="object-cover"
           />
         </div> */}
+         <div className="inline-flex items-center rounded-2xl  border border-[#0470ec]  px-4 mx-[40px] py-2 backdrop-blur-sm mb-3 lg:mb-0">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="32"
+              height="32"
+              fill="rgba(4, 112, 236, 1)"
+            >
+              <path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path>
+            </svg>
+          </span>
+          <span className="text-sm font-medium text-[#0470ec]">
+            Best International Business Research & Analytics Specialists 2023–UK
+          </span>
+        </div>
         <div className="px-[20px] md:px-[40px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+            <h1 className="font-sans text-4xl lg:text-6xl font-bold text-[#333] leading-tight">
               Market Research,{" "}
               <span className="">
-                Software Development & Growth Strategy
+                Software Development & Growth Strategy for
               </span>{" "}
-              for Afro-Asian Excellence{" "}
-              <span className="">in the UK.</span>
+             <span className="font-dancing-script"> Afro-Asian Excellence in the UK.</span>
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -169,7 +184,7 @@ export default function UKPage() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="/contact" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto px-6 py-3 bg-[#E26015] text-white font-semibold rounded-lg hover:bg-[#c54f0f] transition-colors">
-                  Request your custom solution
+                  Book a Discovery Call
                 </button>
               </Link>
               
