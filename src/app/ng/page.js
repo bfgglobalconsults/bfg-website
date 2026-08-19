@@ -152,13 +152,13 @@ export default function NigeriaPage() {
             className="object-cover"
           />
         </div>  */}
-        <div className="container mx-auto relative z-10">
+        <div className="p-[40px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
               Everything{" "}
-              <span className="text-[#E26015]">
+              <span className="">
                 Market Research, Software Development, Strategy
               </span>{" "}
               &{" "}
@@ -166,7 +166,7 @@ export default function NigeriaPage() {
               <span className="text-[#333]">Nigeria</span>
             </h1>
             
-            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               From market research and software development to strategy and training, 
               we equip startups, SMEs and organisations to compete, scale, and lead.
             </p>
