@@ -148,7 +148,7 @@ export default function UKPage() {
             className="object-cover"
           />
         </div> */}
-        <div className="container mx-auto relative z-10">
+        <div className="px-[20px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
@@ -158,7 +158,7 @@ export default function UKPage() {
                 Software Development & Growth Strategy
               </span>{" "}
               for Afro-Asian Excellence{" "}
-              <span className="text-[#333]">in the UK.</span>
+              <span className="">in the UK.</span>
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">

@@ -152,7 +152,7 @@ export default function NigeriaPage() {
             className="object-cover"
           />
         </div>  */}
-        <div className="container mx-auto relative z-10">
+        <div className="px-[20px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
@@ -162,8 +162,8 @@ export default function NigeriaPage() {
                 Market Research, Software Development, Strategy
               </span>{" "}
               &{" "}
-              <span className="text-[#E26015]">Training</span> for Businesses in{" "}
-              <span className="text-[#333]">Nigeria</span>
+              <span className="">Training</span> for Businesses in{" "}
+              <span className="">Nigeria</span>
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">
