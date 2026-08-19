@@ -148,20 +148,20 @@ export default function UKPage() {
             className="object-cover"
           />
         </div> */}
-        <div className="container mx-auto relative z-10">
+        <div className="p-[40px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
               Market Research,{" "}
-              <span className="text-[#E26015]">
+              <span className="">
                 Software Development & Growth Strategy
               </span>{" "}
               for Afro-Asian Excellence{" "}
               <span className="text-[#333]">in the UK.</span>
             </h1>
             
-            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               From market research and software development to strategy and training, 
               we equip Afro-Asian students, start-ups, and businesses to compete, scale, and lead.
             </p>
