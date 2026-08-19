@@ -201,7 +201,7 @@ const HeroSection2 = () => (
               href="/contact"
               className="inline-flex items-center rounded-lg bg-[#E45F11] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-black hover:text-white transition-colors duration-200"
             >
-              Request your Custom Solution
+              Book a Discovery Call
             </Link>
           </div>
         </div>
