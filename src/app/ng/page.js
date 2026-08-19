@@ -152,7 +152,7 @@ export default function NigeriaPage() {
             className="object-cover"
           />
         </div>  */}
-        <div className="p-[40px] relative z-10">
+        <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
