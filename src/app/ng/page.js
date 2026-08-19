@@ -152,7 +152,7 @@ export default function NigeriaPage() {
             className="object-cover"
           />
         </div>  */}
-        <div className="px-[20px] md:px-[30px] relative z-10">
+        <div className="px-[20px] md:px-[40px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
@@ -219,7 +219,7 @@ export default function NigeriaPage() {
 
       {/* Services Section */}
       <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4 lg:px-12">
           <div className="grid lg:grid-cols-5 gap-8 items-start">
             {/* Left - Section Header */}
             <div className="lg:col-span-2 space-y-6">
@@ -352,7 +352,7 @@ export default function NigeriaPage() {
 
       {/* Industries Section */}
       <section className="bg-[#0A2540] py-16 lg:py-24">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4 lg:px-12">
           <div className="mb-12">
             <span className="inline-block px-4 py-2 bg-white text-[#E26015] rounded-full text-sm font-semibold mb-4">
               Industries We Cover
@@ -424,7 +424,7 @@ export default function NigeriaPage() {
 
        {/* Global Expertise Section */}
       <section className="bg-[#E26015] py-16 lg:py-24">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6">
@@ -515,7 +515,7 @@ export default function NigeriaPage() {
 
         {/* Statistics & Testimonials Section */}
       <section className="bg-gray-50 py-16 lg:py-24">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4 lg:px-12">
           {/* Statistics Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {/* Projects Completed */}
@@ -644,7 +644,7 @@ export default function NigeriaPage() {
 
        {/* Programs Section */}
         <div className="bg-gray-50 py-16 lg:py-24">
-          <div className="container mx-auto px-4">
+          <div className="mx-auto px-4 lg:px-12">
             <div className="mb-12">
               <span className="inline-block px-4 py-2 bg-white border-2 border-[#E26015] text-[#E26015] rounded-full text-sm font-semibold mb-4">
                 Our Programs
@@ -922,7 +922,7 @@ export default function NigeriaPage() {
 
       {/* Contact/Consultation Section */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Content */}
             <div className="space-y-8">
