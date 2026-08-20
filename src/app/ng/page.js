@@ -152,19 +152,19 @@ export default function NigeriaPage() {
             className="object-cover"
           />
         </div>  */}
-        <div className="inline-flex items-center rounded-2xl  border border-[#07aa1d]  px-4 mx-[40px] py-2 backdrop-blur-sm mb-3 lg:mb-0">
+        <div className="inline-flex items-center rounded-2xl  border border-[#E45F11]  px-4 mx-[40px] py-2 backdrop-blur-sm mb-3 lg:mb-0">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
               height="32"
-              fill="rgba(7, 170, 29, 1)"
+              fill="rgba(228, 95, 17, 1)"
             >
               <path d="M12 7.00002C16.4183 7.00002 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 7.00002 12 7.00002ZM12 10.5L10.6775 13.1797L7.72025 13.6094L9.86012 15.6953L9.35497 18.6406L12 17.25L14.645 18.6406L14.1399 15.6953L16.2798 13.6094L13.3225 13.1797L12 10.5ZM13 1.99902L18 2.00002V5.00002L16.6366 6.13758C15.5305 5.55773 14.3025 5.17887 13.0011 5.04951L13 1.99902ZM11 1.99902L10.9997 5.04943C9.6984 5.17866 8.47046 5.55738 7.36441 6.13706L6 5.00002V2.00002L11 1.99902Z"></path>
             </svg>
           </span>
-          <span className="text-sm font-medium text-[#07aa1d]">
+          <span className="text-sm font-medium text-[#E45F11]">
 Nigeria's Leading Management Consulting & Digital Transformation Partner          </span>
         </div>
         <div className="px-[20px] md:px-[40px] relative z-10">
@@ -172,13 +172,13 @@ Nigeria's Leading Management Consulting & Digital Transformation Partner        
           {/* Left Content */}
           <div className="space-y-6 px-4 lg:px-0">
             <h1 className="font-sans text-4xl lg:text-6xl font-bold text-[#333] leading-tight">
-              <span className="font-dancing-script">Everything{" "}</span>
+              {/* <span className="font-dancing-script">Everything{" "}</span> */}
               <span className="">
                 Market Research, Software Development, Strategy
               </span>{" "}
-              &{" "}
-              <span className="">Training</span> for Businesses in{" "}
-              <span className="font-dancing-script">Nigeria</span>
+              &{" "} for
+              <span className="">Training</span> <span className="font-dancing-script">Businesses in{" "}
+              Nigeria</span>
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">
