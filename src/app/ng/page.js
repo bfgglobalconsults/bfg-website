@@ -176,8 +176,8 @@ Nigeria's Leading Management Consulting & Digital Transformation Partner        
               <span className="">
                 Market Research, Software Development, Strategy
               </span>{" "}
-              &{" "} for
-              <span className="">Training</span> <span className="font-dancing-script">Businesses in{" "}
+              &{" "} Training{" "}
+              <span className="">for</span> <span className="font-dancing-script"> Businesses in{" "}
               Nigeria</span>
             </h1>
             
