@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
@@ -11,9 +11,11 @@ import WaveImage from "../app/bfg-whitelogo.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MediaQuery from "./media-query";
+import CalendlyModal from "./CalendlyModal";
 
 const SliderHeroPage = () => {
-  
+        const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
   
 
   const settings = {
@@ -31,7 +33,7 @@ const SliderHeroPage = () => {
   return (
     <div className="overflow-hidden max-w-[100vw]">
       
-          <HeroSection2 />
+          <HeroSection2 isCalendlyOpen={isCalendlyOpen} setIsCalendlyOpen={setIsCalendlyOpen} />
        
     </div>
     // <div className="overflow-hidden max-w-[100vw]">
@@ -162,7 +164,7 @@ const SliderHeroPage = () => {
 //   </div>
 // );
 
-const HeroSection2 = () => (
+const HeroSection2 = ({ isCalendlyOpen, setIsCalendlyOpen }) => (
   <div className="w-full lg:flex items-center my-0 lg:my-0 xl:my-4 py-2 lg:py-5">
     <div className="w-full lg:w-[55%]">
       <div className="p-[40px]">
@@ -197,12 +199,12 @@ const HeroSection2 = () => (
             Driving transformative solutions that empower innovation, growth, efficiency, and success for enterprise clients, governments, and multilateral organisations.
           </p>
           <div className="pt-4">
-            <Link
-              href="/contact"
+            <button
+              onClick={() => setIsCalendlyOpen(true)}
               className="inline-flex items-center rounded-lg bg-[#E45F11] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-black hover:text-white transition-colors duration-200"
             >
               Book a Discovery Call
-            </Link>
+            </button>
           </div>
         </div>
         {/* Slider dots (decorative) */}
@@ -230,6 +232,11 @@ const HeroSection2 = () => (
     />
       </motion.div>
     </div>
+     <CalendlyModal
+                  isOpen={isCalendlyOpen}
+                  onClose={() => setIsCalendlyOpen(false)}
+                  calendlyUrl={process.env.NEXT_PUBLIC_CALENDLY_URL}
+                />
   </div>
 );
 export default SliderHeroPage;

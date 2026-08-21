@@ -1,11 +1,24 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import CalendlyModal from "@/components/CalendlyModal";
 
 export default function UKPage() {
   const [formStatus, setFormStatus] = useState("");
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  
+  const heroRef = useRef(null);
+  const servicesRef = useRef(null);
+  const industriesRef = useRef(null);
+  const expertiseRef = useRef(null);
+  
+  const heroInView = useInView(heroRef, { once: true, amount: 0.3 });
+  const servicesInView = useInView(servicesRef, { once: true, amount: 0.2 });
+  const industriesInView = useInView(industriesRef, { once: true, amount: 0.2 });
+  const expertiseInView = useInView(expertiseRef, { once: true, amount: 0.2 });
 
   const slides = [
     {
@@ -67,7 +80,7 @@ export default function UKPage() {
     {
       id: 8,
       title: "Telecommunication and Media",
-      description: "BFG helps businesses in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
+      description: "BFG helps African businesses and organizations in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
       imageAlt: "slider8-img",
       imageSrc: "/assets/telecom-banner.png",
       readMore: "/industry/industries/telecom-media",
@@ -140,14 +153,6 @@ export default function UKPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-16 lg:py-[150px]">
-        {/* <div className="absolute inset-0 z-0">
-          <Image
-            src="/assets/ng-background.png"
-            alt="UK business landscape background with modern office buildings"
-            fill
-            className="object-cover"
-          />
-        </div> */}
          <div className="inline-flex items-center rounded-2xl  border border-[#E45F11]  px-4 mx-[40px] py-2 backdrop-blur-sm mb-3 lg:mb-0">
           <span>
             <svg
@@ -167,37 +172,64 @@ export default function UKPage() {
         <div className="px-[20px] md:px-[40px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6 px-4 lg:px-0">
-            <h1 className="font-sans text-4xl lg:text-6xl font-bold text-[#333] leading-tight">
+          <motion.div 
+            ref={heroRef}
+            initial={{ opacity: 0, x: -50 }}
+            animate={heroInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="space-y-6 px-4 lg:px-0"
+          >
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="font-sans text-4xl lg:text-6xl font-bold text-[#333] leading-tight"
+            >
               Market Research,{" "}
               <span className="">
                 Software Development & Growth Strategy for
               </span>{" "}
              <span className="font-dancing-script"> Afro-Asian Excellence in the UK.</span>
-            </h1>
+            </motion.h1>
             
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-xl text-gray-600 leading-relaxed"
+            >
               From market research and software development to strategy and training, 
               we equip Afro-Asian students, start-ups, and businesses to compete, scale, and lead.
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="/contact" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto px-6 py-3 bg-[#E26015] text-white font-semibold rounded-lg hover:bg-[#c54f0f] transition-colors">
-                  Book a Discovery Call
-                </button>
-              </Link>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="flex flex-col sm:flex-row gap-4 pt-4"
+            >
+              <button 
+                onClick={() => setIsCalendlyOpen(true)}
+                className="w-full sm:w-auto px-6 py-3 bg-[#E26015] text-white font-semibold rounded-lg hover:bg-[#c54f0f] transition-colors"
+              >
+                Book a Discovery Call
+              </button>
               
               <Link href="/insight/case-study" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto px-6 py-3 border-2 border-[#E26015] text-[#E26015] font-semibold rounded-lg hover:bg-[#E26015] hover:text-white transition-colors">
                   View Our Global Work
                 </button>
               </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Right Content - Map with Stats */}
-          <div className="relative">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={heroInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative"
+          >
               {/* UK Map/Banner */}
               <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
                 <Image
@@ -208,31 +240,22 @@ export default function UKPage() {
                   priority
                 />
               </div>
-
-              {/* Client Satisfaction Badge */}
-              {/* <div className="absolute bottom-8 right-8 bg-white rounded-lg shadow-lg p-3 flex items-center gap-3 z-10">
-                <div className="w-10 h-10 bg-[#E26015] rounded-lg flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white">
-                    <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500">Client Satisfaction</p>
-                  <p className="text-lg font-bold text-[#E26015]">99.8%</p>
-                </div>
-              </div> */}
-            {/* </div> */}
-          </div>
+          </motion.div>
         </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="bg-gray-50 py-16 lg:py-24">
+      <section ref={servicesRef} className="bg-gray-50 py-16 lg:py-24">
         <div className="mx-auto px-4 lg:px-12">
           <div className="grid lg:grid-cols-5 gap-8 items-start">
             {/* Left - Section Header */}
-            <div className="lg:col-span-2 space-y-6">
+            <motion.div 
+              initial={{ opacity: 0, y: 50 }}
+              animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-2 space-y-6"
+            >
               <span className="inline-block px-4 py-2 bg-[#FFF5F0] text-[#E26015] text-sm font-semibold rounded-full">
                 Our Solution
               </span>
@@ -254,14 +277,19 @@ export default function UKPage() {
                   </svg>
                 </button>
               </Link>
-            </div>
+            </motion.div>
 
             {/* Right - Service Cards Grid */}
             <div className="lg:col-span-3 grid md:grid-cols-2 gap-6">
              
 
               {/* Research & Analytics Card */}
-              <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group">
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
+              >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
                     <path d="M6 4V8H18V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H6Z"></path>
@@ -269,23 +297,28 @@ export default function UKPage() {
                 </div>
                 <h3 className="text-xl font-bold text-[#333] mb-3">Research & Analytics</h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  We provide startups, & SMEs with valuable insights & information that 
+                  We provide enterprise clients, governments, and multilateral organisations with valuable insights & information that 
                   can inform business strategies, decision-making processes, & problem-solving 
-                  efforts. We serve as an impartial partner for businesses in the process of 
+                  efforts. We serve as an impartial partner for African businesses and organizations in the process of 
                   gathering, analyzing & interpreting data in order to make informed decisions.
                 </p>
-                <Link href="/solutions/research-analytics">
+                {/* <Link href="/solutions/research-analytics">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                     See More
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                       <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                     </svg>
                   </button>
-                </Link>
-              </div>
+                </Link> */}
+              </motion.div>
 
                {/* Technology & Software Card */}
-              <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group">
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
+              >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
                     <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168Z"></path>
@@ -298,18 +331,23 @@ export default function UKPage() {
                   business effectiveness, ranging from web development & artificial 
                   intelligence to machine learning & block chain technology.
                 </p>
-                <Link href="/solutions/information-technology">
+                {/* <Link href="/solutions/information-technology">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                     See More
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                       <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                     </svg>
                   </button>
-                </Link>
-              </div>
+                </Link> */}
+              </motion.div>
 
               {/* Strategy & Operations Card */}
-              <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group">
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
+              >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
                     <path d="M11 2.04938V13H21.9506C21.4489 18.0533 17.1853 22 12 22C6.47715 22 2 17.5229 2 12C2 6.81465 5.94668 2.5511 11 2.04938Z"></path>
@@ -319,21 +357,26 @@ export default function UKPage() {
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   Earn your business the ability to achieve desired goals through the 
                   development & implementation of plans & processes aimed at improving 
-                  competitiveness. Through this service, we help startups & SMEs align 
+                  competitiveness. Through this service, we help enterprise clients, governments, and multilateral organisations align 
                   their operations.
                 </p>
-                <Link href="/solutions/business-strategy">
+                {/* <Link href="/solutions/business-strategy">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                     See More
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                       <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                     </svg>
                   </button>
-                </Link>
-              </div>
+                </Link> */}
+              </motion.div>
 
               {/* Training & Development Card */}
-              <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group">
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
+              >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
                     <path d="M2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934Z"></path>
@@ -343,27 +386,32 @@ export default function UKPage() {
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   Improve job performance through employee training. Win the process of 
                   enhancing the skills, knowledge & abilities of employees to perform their 
-                  jobs more effectively. Through this solution, we help startups & SMEs 
+                  jobs more effectively. Through this solution, we help enterprise clients, governments, and multilateral organisations 
                   improve their overall performance.
                 </p>
-                <Link href="/solutions/training-development">
+                {/* <Link href="/solutions/training-development">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                     See More
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                       <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                     </svg>
                   </button>
-                </Link>
-              </div>
+                </Link> */}
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Industries Section */}
-      <section className="bg-[#0A2540] py-16 lg:py-24">
+      <section ref={industriesRef} className="bg-[#0A2540] py-16 lg:py-24">
         <div className="mx-auto px-4 lg:px-12">
-          <div className="mb-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            animate={industriesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 0.8 }}
+            className="mb-12"
+          >
             <span className="inline-block px-4 py-2 bg-white text-[#E26015] rounded-full text-sm font-semibold mb-4">
               Industries We Cover
             </span>
@@ -375,12 +423,18 @@ export default function UKPage() {
               energy, professional services, and hospitality with BFG Global Consults 
               tailored consulting expertise.
             </p>
-          </div>
+          </motion.div>
 
           <div className="relative">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {slides.slice(currentSlide, currentSlide + 3).map((slide) => (
-                <div key={slide.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+              {slides.slice(currentSlide, currentSlide + 3).map((slide, index) => (
+                <motion.div 
+                  key={slide.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={industriesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                  transition={{ duration: 0.6, delay: 0.2 + (index * 0.1) }}
+                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
+                >
                   <div className="relative h-64">
                     <Image
                       src={slide.imageSrc}
@@ -403,7 +457,7 @@ export default function UKPage() {
                       </button>
                     </Link>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
 
@@ -433,11 +487,16 @@ export default function UKPage() {
       </section>
 
       {/* Global Expertise Section */}
-      <section className="bg-[#E26015] py-16 lg:py-24">
+      <section ref={expertiseRef} className="bg-[#E26015] py-16 lg:py-24">
         <div className="mx-auto px-4 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-6">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              animate={expertiseInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
+            >
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
                 Global Expertise. Local Understanding.
               </h2>
@@ -499,10 +558,15 @@ export default function UKPage() {
                   <p className="text-[#E26015] font-semibold">Dedicated Support</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Right Content - Illustration */}
-            <div className="flex flex-col items-center gap-8">
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              animate={expertiseInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="flex flex-col items-center gap-8"
+            >
               <div className="relative bg-white rounded-full aspect-square flex items-center justify-center p-8 lg:p-12 shadow-2xl overflow-hidden w-full max-w-md">
                 <Image
                   src="/assets/ng-team.png"
@@ -518,7 +582,7 @@ export default function UKPage() {
                   Meet Our UK Team
                 </button>
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -821,6 +885,13 @@ export default function UKPage() {
           </div>
         </div>
       </section>
+
+      {/* Calendly Modal */}
+      <CalendlyModal
+        isOpen={isCalendlyOpen}
+        onClose={() => setIsCalendlyOpen(false)}
+        calendlyUrl={process.env.NEXT_PUBLIC_CALENDLY_URL}
+      />
     </div>
   );
 }
