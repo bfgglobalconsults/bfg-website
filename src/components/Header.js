@@ -178,7 +178,7 @@ const Header = () => {
                     )}
                   </ul>
                 </div>
-                <div className="relative z-[100]">
+                <div className="relative">
                   <RegionSwitcher />
                 </div>
                 <div>

@@ -715,7 +715,7 @@
                   Transformative Programs
                 </h2>
                 <p className="text-gray-600 text-lg max-w-2xl">
-                  Empowering African businesses and organisations through specialized
+                  Empowering African businesses and organisations in Nigeria through specialized
                   training, workshops, and development programs designed to
                   drive growth and innovation.
                 </p>
