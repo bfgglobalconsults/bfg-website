@@ -15,17 +15,17 @@ export const about_links = [
         link: "/team",
       },
       {
-        id: 3,
+        id: 4,
         label: "Projects Executed",
         link: "/industry/projects",
       },
       {
-        id: 4,
+        id: 5,
         label: "Awards & Recognition",
         link: "/award-recognition",
       },
       {
-        id: 5,
+        id: 6,
         label: "Governance & Culture",
         link: "/governance-culture",
       },
