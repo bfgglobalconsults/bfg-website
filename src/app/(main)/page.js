@@ -337,7 +337,7 @@ export default function Main() {
             <div className="w-[100%] lg:w-[800px] md:relative lg:absolute bottom-6 right-0 flex flex-row flex-wrap gap-3">
               {solutions.map((solution, index) => (
                 <Link href={solution.href} key={solution.id}>
-                  <div className="w-[300px] md:w-[500px] lg:w-[350px] h-[300px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
+                  <div className="w-[300px] md:w-[500px] lg:w-[350px] h-[400px] bg-white hover:bg-[#E26015] hover:text-white shadow-2xl rounded-md cursor-pointer group">
                     <div className="p-5">
                       <div className="flex gap-2 items-center">
                         <span className="p-2 bg-[#E26015] group-hover:bg-white rounded-md">
