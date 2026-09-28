@@ -20,14 +20,15 @@ const Page = () => {
     <>
       <div className="mt-[0px] lg:mt-[150px] p-12">
         <span className="p-3 rounded-3xl bg-white border-2 border-[#E26015] font-semibold">
-          Tech Achiever
+          Tech Achievers Accelerator
         </span>
         <div className="flex flex-col lg:flex-row w-full gap-4 justify-between my-4">
           <h3 className="w-[100%] lg:w-[50%] text-[#333] font-bold text-4xl md:text-3xl lg:text-5xl">
-            Tech Achievers Graduate Scheme
+            Build the skills to shape Africa&apos;s future
           </h3>
           <p className="w-[100%] lg:w-[50%] text-[#E26015] my-2 text-lg lg:text-xl">
-            Peer-to-Peer Learning for SME Leaders
+            Three months of practical learning, collaboration, and skill
+            development for young people in Nigeria
           </p>
         </div>
 
@@ -63,38 +64,80 @@ const Page = () => {
               className="w-[100%] lg:w-[60%]"
             >
               <p className="text-[#999] my-4">
-                The Tech Achievers Graduate Scheme is an innovative internship
-                and mentorship program designed for youth, including students
-                and recent graduates, eager to launch their careers in the
-                technology and consulting sectors. Spanning three months, this
-                program provides selected candidates with hands-on experience
-                within various consulting units of our management consulting
-                firm.
+                Technology is changing how organisations across Africa work,
+                grow, and serve their communities. The Tech Achiever Accelerator
+                Program helps young people in Nigeria prepare for those
+                opportunities through three months of practical learning,
+                collaboration, and skill development.
               </p>
               <p className="text-[#999] my-4">
-                Participants in the Tech Achievers Graduate Scheme will benefit
-                from a structured learning environment where they can develop
-                essential skills, gain industry insights, and apply theoretical
-                knowledge in real-world scenarios. Through mentorship from
-                experienced professionals, graduates will receive guidance
-                tailored to their career aspirations, helping them to navigate
-                the complexities of the business landscape.
+                The accelerator brings participants together to develop
+                technology skills relevant to Africa&apos;s changing industries.
+                Through structured learning, peer collaboration, and practical
+                projects, you will explore new ideas, apply what you learn, and
+                receive feedback on your progress.
               </p>
               <p className="text-[#999] my-4">
-                Successful candidates will have the opportunity to work on
-                impactful projects, collaborate with diverse teams, and enhance
-                their professional networks. By immersing themselves in the
-                operations of a leading consulting firm, participants will gain
-                invaluable insights into the workings of the industry, setting
-                them up for future success.
+                You will also build the professional skills needed to work with
+                others and tackle challenges with confidence, including
+                communication, teamwork, problem-solving, and adaptability.
               </p>
+
+              <h4 className="text-[#333] font-semibold text-xl my-6">
+                Who can join?
+              </h4>
               <p className="text-[#999] my-4">
-                The Tech Achievers Graduate Scheme is not just an internship;
-                it&apos;s a launchpad for aspiring professionals ready to make
-                their mark in the tech and consulting fields. We are committed
-                to empowering the next generation of leaders, equipping them
-                with the skills and experiences necessary to thrive in an
-                increasingly competitive marketplace.
+                The program is designed for students, young graduates, and
+                National Youth Service Corps (NYSC) members in Nigeria who want
+                to develop practical skills for a changing world of work.
+              </p>
+
+              <h4 className="text-[#333] font-semibold text-xl my-6">
+                Choose a cohort that works for you
+              </h4>
+              <div className="overflow-x-auto my-4">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-[#041926]">
+                      <th className="border border-gray-300 px-4 py-3 text-left text-white">
+                        Cohort
+                      </th>
+                      <th className="border border-gray-300 px-4 py-3 text-left text-white">
+                        Program dates
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-3 text-[#999]">
+                        First cohort
+                      </td>
+                      <td className="border border-gray-300 px-4 py-3 text-[#999]">
+                        January–March
+                      </td>
+                    </tr>
+                    <tr className="bg-gray-50">
+                      <td className="border border-gray-300 px-4 py-3 text-[#999]">
+                        Second cohort
+                      </td>
+                      <td className="border border-gray-300 px-4 py-3 text-[#999]">
+                        May–July
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-3 text-[#999]">
+                        Third cohort
+                      </td>
+                      <td className="border border-gray-300 px-4 py-3 text-[#999]">
+                        September–November
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-[#999] my-4">
+                Each cohort runs for three months, giving you time to learn,
+                practise, collaborate, and demonstrate your progress.
               </p>
             </motion.div>
             <motion.div
@@ -105,7 +148,7 @@ const Page = () => {
               className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
             >
               <Image
-                src="/assets/achiever-card.jpg"
+                src="/assets/achiever-card.png"
                 alt="beauty-image"
                 width={600}
                 height={400}
@@ -153,51 +196,57 @@ const Page = () => {
             className=""
           >
             <p className="font-bold text-lg my-4">Benefits for Applicants</p>
-            <ul className="list-disc pl-6 marker:text-[#999]">
+            <ul className="list-disc pl-6 marker:text-[#E26015]">
               <li className="text-[#999] my-2">
-                Hands-On Experience: Gain practical experience by working
-                directly within various consulting units, allowing you to apply
-                your academic knowledge in real-world scenarios
+                <span className="font-semibold text-[#333]">
+                  Build relevant skills:
+                </span>{" "}
+                Develop technology capabilities connected to opportunities in
+                Africa&apos;s evolving industries.
               </li>
               <li className="text-[#999] my-2">
-                Mentorship Opportunities: Receive guidance and support from
-                experienced professionals in the industry, helping you to refine
-                your skills and navigate your career path.
+                <span className="font-semibold text-[#333]">
+                  Put learning into practice:
+                </span>{" "}
+                Work on projects and challenges that help you apply new
+                knowledge.
               </li>
               <li className="text-[#999] my-2">
-                Skill Development: Enhance your technical and soft skills,
-                including problem-solving, communication, teamwork, and project
-                management, which are essential for success in the consulting
-                sector.
+                <span className="font-semibold text-[#333]">
+                  Grow professionally:
+                </span>{" "}
+                Strengthen the communication, teamwork, and problem-solving
+                skills employers value.
               </li>
               <li className="text-[#999] my-2">
-                Networking: Build valuable connections with industry experts,
-                fellow interns, and potential employers, expanding your
-                professional network and opening doors for future opportunities.
+                <span className="font-semibold text-[#333]">
+                  Learn with peers:
+                </span>{" "}
+                Share ideas and build connections with other emerging talents.
               </li>
               <li className="text-[#999] my-2">
-                Career Preparation: Get insights into industry trends and best
-                practices, equipping you with the knowledge and confidence
-                needed to succeed in a competitive job market.
+                <span className="font-semibold text-[#333]">
+                  Prepare for your next step:
+                </span>{" "}
+                Gain confidence and a clearer sense of direction for work or
+                further learning.
               </li>
               <li className="text-[#999] my-2">
-                Project Involvement: Contribute to meaningful projects that
-                impact the firm and its clients, allowing you to showcase your
-                abilities and make a tangible difference.
-              </li>
-              <li className="text-[#999] my-2">
-                Certification: Upon successful completion of the program,
-                receive a certificate recognizing your participation and the
-                skills you&apos;ve acquired, adding value to your resume.
+                <span className="font-semibold text-[#333]">
+                  Show what you can do:
+                </span>{" "}
+                Develop project work that demonstrates the skills you have
+                built.
               </li>
             </ul>
 
-            <p className="font-semibold my-4">
-              Are you ready to jumpstart your career in technology and
-              consulting? Don&apos;t miss this opportunity to develop your
-              skills and gain invaluable experience. Apply now to be part of the
-              Tech Achievers Graduate Scheme and take the first step towards a
-              successful career!{" "}
+            <h4 className="text-[#333] font-semibold text-xl my-6">
+              Take your next step
+            </h4>
+            <p className="text-[#999] my-4">
+              Develop skills for emerging opportunities and join a community of
+              young people preparing to contribute to innovation and industrial
+              growth in Nigeria and across Africa.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -205,7 +254,9 @@ const Page = () => {
               onClick={handleOpenModal}
               className="bg-[#041926] py-2 px-4 flex gap-2 my-3 rounded-2xl hover:bg-[#E26015] transition-colors duration-300"
             >
-              <span className="text-white">Apply for our next session</span>
+              <span className="text-white">
+                Apply for the Tech Achiever Accelerator Program
+              </span>
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +276,7 @@ const Page = () => {
       <ProgramModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
-        program="Tech Achievers Graduate Scheme"
+        program="Tech Achievers Accelerator"
       />
     </>
   );
