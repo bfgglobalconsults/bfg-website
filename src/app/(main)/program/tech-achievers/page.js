@@ -61,7 +61,7 @@ const Page = () => {
               initial={{ x: -30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 2.7, duration: 1 }}
-              className="w-[100%] lg:w-[60%]"
+              className="w-[100%] lg:w-[50%]"
             >
               <p className="text-[#999] my-4">
                 Technology is changing how organisations across Africa work,
@@ -145,12 +145,12 @@ const Page = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 2.8, duration: 1 }}
               onClick={handleOpenModal}
-              className="w-[100%] lg:w-[40%] relative cursor-pointer hover:scale-[1.02] transition-transform"
+              className="w-[100%] lg:w-[50%] relative cursor-pointer hover:scale-[1.02] transition-transform"
             >
               <Image
                 src="/assets/achiever-card.png"
                 alt="beauty-image"
-                width={600}
+                width={700}
                 height={400}
                 className="w-full h-full object-fit rounded-r-md"
               />
