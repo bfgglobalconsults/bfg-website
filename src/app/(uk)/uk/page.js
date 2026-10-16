@@ -9,22 +9,26 @@ export default function UKPage() {
   const [formStatus, setFormStatus] = useState("");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-  
+
   const heroRef = useRef(null);
   const servicesRef = useRef(null);
   const industriesRef = useRef(null);
   const expertiseRef = useRef(null);
-  
+
   const heroInView = useInView(heroRef, { once: true, amount: 0.3 });
   const servicesInView = useInView(servicesRef, { once: true, amount: 0.2 });
-  const industriesInView = useInView(industriesRef, { once: true, amount: 0.2 });
+  const industriesInView = useInView(industriesRef, {
+    once: true,
+    amount: 0.2,
+  });
   const expertiseInView = useInView(expertiseRef, { once: true, amount: 0.2 });
 
   const slides = [
     {
       id: 1,
       title: "Financial Technology",
-      description: "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
+      description:
+        "BFG propels tech companies forward, from startup to established players, with strategic guidance for navigating the evolving landscape, enhancing product development, & driving innovation.",
       imageAlt: "slider1-img",
       imageSrc: "/assets/sliderimage1.jpg",
       readMore: "/industry/industries/technology",
@@ -32,7 +36,8 @@ export default function UKPage() {
     {
       id: 2,
       title: "Consumer and Retail Market",
-      description: "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
+      description:
+        "Driving Growth, BFG empowers consumer and retail brands to innovate, optimize customer experiences, and expand market presence with data-driven strategies and tailored solutions.",
       imageAlt: "slider5-img",
       imageSrc: "/assets/consumer-img.jpg",
       readMore: "/industry/industries/consumer",
@@ -40,7 +45,8 @@ export default function UKPage() {
     {
       id: 3,
       title: "Real Estate",
-      description: "Building success, BFG guides construction companies to navigate complex projects, enhance efficiency, & drive innovation.",
+      description:
+        "Building success, BFG guides construction companies to navigate complex projects, enhance efficiency, & drive innovation.",
       imageAlt: "slider2-img",
       imageSrc: "/assets/sliderimage2.jpg",
       readMore: "/industry/industries/real-estate",
@@ -48,7 +54,8 @@ export default function UKPage() {
     {
       id: 4,
       title: "Hospitality and Tourism",
-      description: "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
+      description:
+        "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
       imageAlt: "slider3-img",
       imageSrc: "/assets/hospitality.jpg",
       readMore: "/industry/industries/hospitality",
@@ -56,7 +63,8 @@ export default function UKPage() {
     {
       id: 5,
       title: "Government and Non-for-Profit",
-      description: "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
+      description:
+        "Amplifying impact, BFG guides NGOs to navigate social landscapes, enhance program effectiveness, & drive innovation.",
       imageAlt: "slider4-img",
       imageSrc: "/assets/sliderimage4.jpg",
       readMore: "/industry/industries/government",
@@ -64,7 +72,8 @@ export default function UKPage() {
     {
       id: 6,
       title: "Oil and Gas",
-      description: "BFG empowers oil and gas companies to optimize operations, enhance safety protocols, and implement sustainable practices while navigating industry regulations and market dynamics.",
+      description:
+        "BFG empowers oil and gas companies to optimize operations, enhance safety protocols, and implement sustainable practices while navigating industry regulations and market dynamics.",
       imageAlt: "slider6-img",
       imageSrc: "/assets/oilgas-banner.png",
       readMore: "/industry/industries/oil-gas",
@@ -72,7 +81,8 @@ export default function UKPage() {
     {
       id: 7,
       title: "Industrial Manufacturing",
-      description: "BFG helps manufacturers streamline production processes, optimize supply chains, integrate smart technologies, and enhance operational efficiency.",
+      description:
+        "BFG helps manufacturers streamline production processes, optimize supply chains, integrate smart technologies, and enhance operational efficiency.",
       imageAlt: "slider7-img",
       imageSrc: "/assets/industrial-manufacture-banner.png",
       readMore: "/industry/industries/industrial-manufacturing",
@@ -80,7 +90,8 @@ export default function UKPage() {
     {
       id: 8,
       title: "Telecommunication and Media",
-      description: "BFG helps African businesses and organizations in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
+      description:
+        "BFG helps African businesses and organizations in this sector navigate technological disruptions, regulatory shifts, and digital transformations to remain competitive and deliver superior services.",
       imageAlt: "slider8-img",
       imageSrc: "/assets/telecom-banner.png",
       readMore: "/industry/industries/telecom-media",
@@ -88,7 +99,8 @@ export default function UKPage() {
     {
       id: 9,
       title: "Entertainment and Creative Industry",
-      description: "BFG provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.",
+      description:
+        "BFG provides strategic solutions to help artists, production houses, and media companies optimize their creative output, expand their reach, and capitalize on emerging opportunities in the digital age.",
       imageAlt: "slider9-img",
       imageSrc: "/assets/entertainment-banner.png",
       readMore: "/industry/industries/entertainment",
@@ -96,7 +108,8 @@ export default function UKPage() {
     {
       id: 10,
       title: "Health and Social Care",
-      description: "BFG supports healthcare providers, social care organizations, and health-tech startups in adopting advanced healthcare strategies, improving service delivery, and ensuring regulatory compliance.",
+      description:
+        "BFG supports healthcare providers, social care organizations, and health-tech startups in adopting advanced healthcare strategies, improving service delivery, and ensuring regulatory compliance.",
       imageAlt: "slider10-img",
       imageSrc: "/assets/health-banner.png",
       readMore: "/industry/industries/health-social-care",
@@ -104,7 +117,8 @@ export default function UKPage() {
     {
       id: 11,
       title: "Financial and Banking Services",
-      description: "We partner with financial institutions, fintech companies, & other stakeholders to navigate regulatory complexities, harness emerging technologies, & unlock new opportunities.",
+      description:
+        "We partner with financial institutions, fintech companies, & other stakeholders to navigate regulatory complexities, harness emerging technologies, & unlock new opportunities.",
       imageAlt: "slider11-img",
       imageSrc: "/assets/financial-img.png",
       readMore: "/industry/industries/financial",
@@ -116,7 +130,9 @@ export default function UKPage() {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 3 < 0 ? Math.max(0, slides.length - 3) : prev - 3));
+    setCurrentSlide((prev) =>
+      prev - 3 < 0 ? Math.max(0, slides.length - 3) : prev - 3,
+    );
   };
 
   const handleSubmit = async (e) => {
@@ -153,7 +169,7 @@ export default function UKPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-16 lg:py-[150px]">
-         <div className="inline-flex items-center rounded-2xl  border border-[#E45F11]  px-4 mx-[40px] py-2 backdrop-blur-sm mb-3 lg:mb-0">
+        <div className="inline-flex items-center rounded-2xl  border border-[#E45F11]  px-4 mx-[40px] py-2 backdrop-blur-sm mb-3 lg:mb-0">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -171,65 +187,79 @@ export default function UKPage() {
         </div>
         <div className="px-[20px] md:px-[40px] relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <motion.div 
-            ref={heroRef}
-            initial={{ opacity: 0, x: -50 }}
-            animate={heroInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-6 px-4 lg:px-0"
-          >
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-sans text-4xl lg:text-6xl font-bold text-[#333] leading-tight"
+            {/* Left Content */}
+            <motion.div
+              ref={heroRef}
+              initial={{ opacity: 0, x: -50 }}
+              animate={
+                heroInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }
+              }
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="space-y-6 px-4 lg:px-0"
             >
-              Market Research,{" "}
-              <span className="">
-                Software Development & Growth Strategy for
-              </span>{" "}
-             <span className="font-dancing-script"> Afro-Asian Excellence in the UK.</span>
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-gray-600 leading-relaxed"
-            >
-              From market research and software development to strategy and training, 
-              we equip Afro-Asian students, start-ups, and businesses to compete, scale, and lead.
-            </motion.p>
-
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
-            >
-              <button 
-                onClick={() => setIsCalendlyOpen(true)}
-                className="w-full sm:w-auto px-6 py-3 bg-[#E26015] text-white font-semibold rounded-lg hover:bg-[#c54f0f] transition-colors"
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={
+                  heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="font-sans text-4xl lg:text-6xl font-bold text-[#333] leading-tight"
               >
-                Book a Discovery Call
-              </button>
-              
-              <Link href="/insight/case-study" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto px-6 py-3 border-2 border-[#E26015] text-[#E26015] font-semibold rounded-lg hover:bg-[#E26015] hover:text-white transition-colors">
-                  View Our Global Work
-                </button>
-              </Link>
-            </motion.div>
-          </motion.div>
+                Market Research,{" "}
+                <span className="">
+                  Software Development & Growth Strategy for
+                </span>{" "}
+                <span className="font-dancing-script">
+                  {" "}
+                  Afro-Asian Excellence in the UK.
+                </span>
+              </motion.h1>
 
-          {/* Right Content - Map with Stats */}
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            animate={heroInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
-          >
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={
+                  heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-xl text-gray-600 leading-relaxed"
+              >
+                From market research and software development to strategy and
+                training, we equip Afro-Asian students, start-ups, and
+                businesses to compete, scale, and lead.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={
+                  heroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="flex flex-col sm:flex-row gap-4 pt-4"
+              >
+                <button
+                  onClick={() => setIsCalendlyOpen(true)}
+                  className="w-full sm:w-auto px-6 py-3 bg-[#E26015] text-white font-semibold rounded-lg hover:bg-[#c54f0f] transition-colors"
+                >
+                  Book a Discovery Call
+                </button>
+
+                <Link href="/insight/case-study" className="w-full sm:w-auto">
+                  <button className="w-full sm:w-auto px-6 py-3 border-2 border-[#E26015] text-[#E26015] font-semibold rounded-lg hover:bg-[#E26015] hover:text-white transition-colors">
+                    View Our Global Work
+                  </button>
+                </Link>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Content - Map with Stats */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={
+                heroInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }
+              }
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="relative"
+            >
               {/* UK Map/Banner */}
               <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
                 <Image
@@ -240,8 +270,8 @@ export default function UKPage() {
                   priority
                 />
               </div>
-          </motion.div>
-        </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -250,57 +280,78 @@ export default function UKPage() {
         <div className="mx-auto px-4 lg:px-12">
           <div className="grid lg:grid-cols-5 gap-8 items-start">
             {/* Left - Section Header */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 50 }}
-              animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              animate={
+                servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+              }
               transition={{ duration: 0.8 }}
               className="lg:col-span-2 space-y-6"
             >
               <span className="inline-block px-4 py-2 bg-[#FFF5F0] text-[#E26015] text-sm font-semibold rounded-full">
                 Our Solution
               </span>
-              
+
               <h2 className="text-3xl lg:text-4xl font-bold text-[#333]">
                 Customized Services for Exceptional Results
               </h2>
-              
+
               <p className="text-gray-600 leading-relaxed">
-                Every project we execute is shaped by our fundamental beliefs, which 
-                guarantee outstanding quality, creativity, and client pleasure at every turn.
+                Every project we execute is shaped by our fundamental beliefs,
+                which guarantee outstanding quality, creativity, and client
+                pleasure at every turn.
               </p>
-              
-              <Link href="/solutions">
-                <button className="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-[#E26015] transition-colors inline-flex items-center gap-2">
-                  View All Services
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white">
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                  </svg>
-                </button>
-              </Link>
+
+              <button
+                onClick={() => setIsCalendlyOpen(true)}
+                className="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-[#E26015] transition-colors inline-flex items-center gap-2"
+              >
+                Book a Quick Call
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="white"
+                >
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </button>
             </motion.div>
 
             {/* Right - Service Cards Grid */}
             <div className="lg:col-span-3 grid md:grid-cols-2 gap-6">
-             
-
               {/* Research & Analytics Card */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
               >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="white"
+                  >
                     <path d="M6 4V8H18V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H6Z"></path>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#333] mb-3">Research & Analytics</h3>
+                <h3 className="text-xl font-bold text-[#333] mb-3">
+                  Research & Analytics
+                </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  We provide enterprise clients, governments, and multilateral organisations with valuable insights & information that 
-                  can inform business strategies, decision-making processes, & problem-solving 
-                  efforts. We serve as an impartial partner for African businesses and organizations in the process of 
-                  gathering, analyzing & interpreting data in order to make informed decisions.
+                  We provide enterprise clients, governments, and multilateral
+                  organisations with valuable insights & information that can
+                  inform business strategies, decision-making processes, &
+                  problem-solving efforts. We serve as an impartial partner for
+                  African businesses and organizations in the process of
+                  gathering, analyzing & interpreting data in order to make
+                  informed decisions.
                 </p>
                 {/* <Link href="/solutions/research-analytics">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -312,24 +363,35 @@ export default function UKPage() {
                 </Link> */}
               </motion.div>
 
-               {/* Technology & Software Card */}
-              <motion.div 
+              {/* Technology & Software Card */}
+              <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
               >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="white"
+                  >
                     <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168Z"></path>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#333] mb-3">Technology & Software</h3>
+                <h3 className="text-xl font-bold text-[#333] mb-3">
+                  Technology & Software
+                </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Boost your business growth with digital tools. We take you through the 
-                  process of designing & developing cutting-edge technology to enhance 
-                  business effectiveness, ranging from web development & artificial 
-                  intelligence to machine learning & block chain technology.
+                  Boost your business growth with digital tools. We take you
+                  through the process of designing & developing cutting-edge
+                  technology to enhance business effectiveness, ranging from web
+                  development & artificial intelligence to machine learning &
+                  block chain technology.
                 </p>
                 {/* <Link href="/solutions/information-technology">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -342,23 +404,34 @@ export default function UKPage() {
               </motion.div>
 
               {/* Strategy & Operations Card */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
               >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="white"
+                  >
                     <path d="M11 2.04938V13H21.9506C21.4489 18.0533 17.1853 22 12 22C6.47715 22 2 17.5229 2 12C2 6.81465 5.94668 2.5511 11 2.04938Z"></path>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#333] mb-3">Strategy & Operations Transformation</h3>
+                <h3 className="text-xl font-bold text-[#333] mb-3">
+                  Strategy & Operations Transformation
+                </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Earn your business the ability to achieve desired goals through the 
-                  development & implementation of plans & processes aimed at improving 
-                  competitiveness. Through this service, we help enterprise clients, governments, and multilateral organisations align 
-                  their operations.
+                  Earn your business the ability to achieve desired goals
+                  through the development & implementation of plans & processes
+                  aimed at improving competitiveness. Through this service, we
+                  help enterprise clients, governments, and multilateral
+                  organisations align their operations.
                 </p>
                 {/* <Link href="/solutions/business-strategy">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -371,23 +444,34 @@ export default function UKPage() {
               </motion.div>
 
               {/* Training & Development Card */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                animate={servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  servicesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow group"
               >
                 <div className="w-12 h-12 bg-[#E26015] rounded-lg flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="white"
+                  >
                     <path d="M2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934Z"></path>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#333] mb-3">Training & Development</h3>
+                <h3 className="text-xl font-bold text-[#333] mb-3">
+                  Training & Development
+                </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Improve job performance through employee training. Win the process of 
-                  enhancing the skills, knowledge & abilities of employees to perform their 
-                  jobs more effectively. Through this solution, we help enterprise clients, governments, and multilateral organisations 
-                  improve their overall performance.
+                  Improve job performance through employee training. Win the
+                  process of enhancing the skills, knowledge & abilities of
+                  employees to perform their jobs more effectively. Through this
+                  solution, we help enterprise clients, governments, and
+                  multilateral organisations improve their overall performance.
                 </p>
                 {/* <Link href="/solutions/training-development">
                   <button className="text-[#E26015] font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -406,9 +490,11 @@ export default function UKPage() {
       {/* Industries Section */}
       <section ref={industriesRef} className="bg-[#0A2540] py-16 lg:py-24">
         <div className="mx-auto px-4 lg:px-12">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
-            animate={industriesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            animate={
+              industriesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+            }
             transition={{ duration: 0.8 }}
             className="mb-12"
           >
@@ -419,65 +505,93 @@ export default function UKPage() {
               Serving Diverse Industries
             </h2>
             <p className="text-gray-300 text-lg max-w-3xl">
-              Discover success across tech, finance, healthcare, manufacturing, retail, 
-              energy, professional services, and hospitality with BFG Global Consults 
-              tailored consulting expertise.
+              Discover success across tech, finance, healthcare, manufacturing,
+              retail, energy, professional services, and hospitality with BFG
+              Global Consults tailored consulting expertise.
             </p>
           </motion.div>
 
           <div className="relative">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {slides.slice(currentSlide, currentSlide + 3).map((slide, index) => (
-                <motion.div 
-                  key={slide.id}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={industriesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                  transition={{ duration: 0.6, delay: 0.2 + (index * 0.1) }}
-                  className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
-                >
-                  <div className="relative h-64">
-                    <Image
-                      src={slide.imageSrc}
-                      alt={slide.imageAlt}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#333] mb-3">{slide.title}</h3>
-                    <p className="text-gray-600 mb-4 line-clamp-3">
-                      {slide.description}
-                    </p>
-                    <Link href={slide.readMore}>
-                      <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
-                        See More
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                          <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                        </svg>
-                      </button>
-                    </Link>
-                  </div>
-                </motion.div>
-              ))}
+              {slides
+                .slice(currentSlide, currentSlide + 3)
+                .map((slide, index) => (
+                  <motion.div
+                    key={slide.id}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={
+                      industriesInView
+                        ? { opacity: 1, y: 0 }
+                        : { opacity: 0, y: 50 }
+                    }
+                    transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                    className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
+                  >
+                    <div className="relative h-64">
+                      <Image
+                        src={slide.imageSrc}
+                        alt={slide.imageAlt}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#333] mb-3">
+                        {slide.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 line-clamp-3">
+                        {slide.description}
+                      </p>
+                      <Link href={slide.readMore}>
+                        <button className="flex items-center gap-2 text-[#E26015] font-semibold hover:gap-3 transition-all">
+                          See More
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                          >
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                          </svg>
+                        </button>
+                      </Link>
+                    </div>
+                  </motion.div>
+                ))}
             </div>
 
             {/* Navigation Arrows */}
             <div className="flex justify-center gap-4 mt-8">
-              <button 
+              <button
                 onClick={prevSlide}
                 disabled={currentSlide === 0}
                 className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  className="text-gray-600"
+                >
                   <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
                 </svg>
               </button>
-              <button 
+              <button
                 onClick={nextSlide}
                 disabled={currentSlide + 3 >= slides.length}
                 className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" className="text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  className="text-gray-600"
+                >
                   <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                 </svg>
               </button>
@@ -491,28 +605,31 @@ export default function UKPage() {
         <div className="mx-auto px-4 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
-              animate={expertiseInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+              animate={
+                expertiseInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }
+              }
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
                 Global Expertise. Local Understanding.
               </h2>
-              
+
               <div className="space-y-4 text-white">
                 <p className="leading-relaxed">
-                  Our team combines decades of international consulting experience with 
-                  deep knowledge of the UK business landscape. We understand the 
-                  unique challenges and opportunities for Afro-Asian businesses, and we bring 
-                  proven methodologies from global best practices to deliver solutions 
-                  that work in your context.
+                  Our team combines decades of international consulting
+                  experience with deep knowledge of the UK business landscape.
+                  We understand the unique challenges and opportunities for
+                  Afro-Asian businesses, and we bring proven methodologies from
+                  global best practices to deliver solutions that work in your
+                  context.
                 </p>
                 <p className="leading-relaxed">
-                  With consultants who have worked across Fortune 500 companies, leading 
-                  tech firms, and high-growth startups, we bridge the gap between 
-                  world-class standards and local market realities.
+                  With consultants who have worked across Fortune 500 companies,
+                  leading tech firms, and high-growth startups, we bridge the
+                  gap between world-class standards and local market realities.
                 </p>
               </div>
 
@@ -521,49 +638,83 @@ export default function UKPage() {
                 {/* International Standards */}
                 <div className="bg-white rounded-xl p-6 text-center">
                   <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="28"
+                      height="28"
+                      fill="white"
+                    >
                       <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z"></path>
                     </svg>
                   </div>
-                  <p className="text-[#E26015] font-semibold">International Standards</p>
+                  <p className="text-[#E26015] font-semibold">
+                    International Standards
+                  </p>
                 </div>
 
                 {/* Local Market Expertise */}
                 <div className="bg-white rounded-xl p-6 text-center">
                   <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="28"
+                      height="28"
+                      fill="white"
+                    >
                       <path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995Z"></path>
                     </svg>
                   </div>
-                  <p className="text-[#E26015] font-semibold">Local Market Expertise</p>
+                  <p className="text-[#E26015] font-semibold">
+                    Local Market Expertise
+                  </p>
                 </div>
 
                 {/* Proven Track Record */}
                 <div className="bg-white rounded-xl p-6 text-center">
                   <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="28"
+                      height="28"
+                      fill="white"
+                    >
                       <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z"></path>
                     </svg>
                   </div>
-                  <p className="text-[#E26015] font-semibold">Proven Track Record</p>
+                  <p className="text-[#E26015] font-semibold">
+                    Proven Track Record
+                  </p>
                 </div>
 
                 {/* Dedicated Support */}
                 <div className="bg-white rounded-xl p-6 text-center">
                   <div className="w-16 h-16 bg-[#E26015] rounded-full flex items-center justify-center mx-auto mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="28"
+                      height="28"
+                      fill="white"
+                    >
                       <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z"></path>
                     </svg>
                   </div>
-                  <p className="text-[#E26015] font-semibold">Dedicated Support</p>
+                  <p className="text-[#E26015] font-semibold">
+                    Dedicated Support
+                  </p>
                 </div>
               </div>
             </motion.div>
 
             {/* Right Content - Illustration */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 50 }}
-              animate={expertiseInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+              animate={
+                expertiseInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }
+              }
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex flex-col items-center gap-8"
             >
@@ -575,9 +726,9 @@ export default function UKPage() {
                   className="object-cover rounded-full"
                 />
               </div>
-              
+
               {/* CTA Button */}
-             <Link href="/team">
+              <Link href="/team">
                 <button className="px-8 py-4 bg-[#0A2540] text-white font-bold rounded-full shadow-xl hover:bg-white hover:text-[#E26015] border-2 border-white hover:border-[#0A2540] hover:shadow-2xl hover:scale-105 transition-all">
                   Meet Our UK Team
                 </button>
@@ -595,44 +746,76 @@ export default function UKPage() {
             {/* Projects Completed */}
             <div className="text-center">
               <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="white"
+                >
                   <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z"></path>
                 </svg>
               </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">899+</h3>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">
+                899+
+              </h3>
               <p className="text-gray-600">Projects Completed</p>
             </div>
 
             {/* Clients Served */}
             <div className="text-center">
               <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="white"
+                >
                   <path d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.3431 13.6569 13 12 13C10.3431 13 9 14.3431 9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z"></path>
                 </svg>
               </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">99+</h3>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">
+                99+
+              </h3>
               <p className="text-gray-600">Clients Served</p>
             </div>
 
             {/* Years of Impact */}
             <div className="text-center">
               <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="white"
+                >
                   <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z"></path>
                 </svg>
               </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">7+</h3>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">
+                7+
+              </h3>
               <p className="text-gray-600">Years of Impact</p>
             </div>
 
             {/* Expert Consultants */}
             <div className="text-center">
               <div className="w-16 h-16 bg-[#E26015] rounded-xl flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="white"
+                >
                   <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564 19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962 3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252 16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016 5.92603 17.041 5.35635L17.5962 3.41321Z"></path>
                 </svg>
               </div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">20+</h3>
+              <h3 className="text-4xl lg:text-5xl font-bold text-[#333] mb-2">
+                20+
+              </h3>
               <p className="text-gray-600">Expert Consultants</p>
             </div>
           </div>
@@ -643,15 +826,23 @@ export default function UKPage() {
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="#E26015"
+                  >
                     <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
                   </svg>
                 ))}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                "BFG Consults helped us navigate the UK market with their deep understanding 
-                of both local regulations and our cultural background. Their support was 
-                invaluable in scaling our startup."
+                "BFG Consults helped us navigate the UK market with their deep
+                understanding of both local regulations and our cultural
+                background. Their support was invaluable in scaling our
+                startup."
               </p>
               <div>
                 <p className="font-bold text-[#333]">Priya Sharma</p>
@@ -663,19 +854,28 @@ export default function UKPage() {
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="#E26015"
+                  >
                     <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
                   </svg>
                 ))}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                "The market research insights from BFG gave us the confidence to expand 
-                into new sectors. Their team understands the unique challenges Afro-Asian 
-                businesses face in the UK."
+                "The market research insights from BFG gave us the confidence to
+                expand into new sectors. Their team understands the unique
+                challenges Afro-Asian businesses face in the UK."
               </p>
               <div>
                 <p className="font-bold text-[#333]">David Okafor</p>
-                <p className="text-sm text-gray-500">CEO, Global Ventures Ltd</p>
+                <p className="text-sm text-gray-500">
+                  CEO, Global Ventures Ltd
+                </p>
               </div>
             </div>
 
@@ -683,19 +883,28 @@ export default function UKPage() {
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#E26015">
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="#E26015"
+                  >
                     <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path>
                   </svg>
                 ))}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                "From strategy to implementation, BFG Consults delivered exceptional results. 
-                Their training programs equipped our team with the skills needed to compete 
-                in the UK market."
+                "From strategy to implementation, BFG Consults delivered
+                exceptional results. Their training programs equipped our team
+                with the skills needed to compete in the UK market."
               </p>
               <div>
                 <p className="font-bold text-[#333]">Mei Chen</p>
-                <p className="text-sm text-gray-500">Director, Innovation Hub</p>
+                <p className="text-sm text-gray-500">
+                  Director, Innovation Hub
+                </p>
               </div>
             </div>
           </div>
@@ -703,12 +912,24 @@ export default function UKPage() {
           {/* Navigation Arrows */}
           <div className="flex justify-center gap-4 mt-8">
             <button className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E26015">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="#E26015"
+              >
                 <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
               </svg>
             </button>
             <button className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E26015">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="#E26015"
+              >
                 <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
               </svg>
             </button>
@@ -727,9 +948,10 @@ export default function UKPage() {
                   Let's Build the Future of Your Business — Together
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Ready to transform your business with expert guidance and innovative 
-                  solutions? Our team is here to help you navigate challenges, seize 
-                  opportunities, and achieve sustainable growth in the UK market.
+                  Ready to transform your business with expert guidance and
+                  innovative solutions? Our team is here to help you navigate
+                  challenges, seize opportunities, and achieve sustainable
+                  growth in the UK market.
                 </p>
               </div>
 
@@ -738,7 +960,13 @@ export default function UKPage() {
                 {/* Call Us */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#0A2540] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="white"
+                    >
                       <path d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821Z"></path>
                     </svg>
                   </div>
@@ -751,7 +979,13 @@ export default function UKPage() {
                 {/* Email Us */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#0A2540] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="white"
+                    >
                       <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM2 4H20V19H2V4ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
                     </svg>
                   </div>
@@ -764,13 +998,22 @@ export default function UKPage() {
                 {/* Visit Us */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#0A2540] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="white"
+                    >
                       <path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995Z"></path>
                     </svg>
                   </div>
                   <div>
                     <p className="font-semibold text-[#333] mb-1">Visit Us</p>
-                    <p className="text-gray-600">BFG Place, 12 Oxford Street, Margate, Kent CT91TD, United Kingdom</p>
+                    <p className="text-gray-600">
+                      BFG Place, 12 Oxford Street, Margate, Kent CT91TD, United
+                      Kingdom
+                    </p>
                   </div>
                 </div>
               </div>
@@ -878,7 +1121,9 @@ export default function UKPage() {
                   className="w-full px-6 py-4 bg-[#0A2540] text-white font-semibold rounded-lg hover:bg-[#E26015] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={formStatus === "submitting"}
                 >
-                  {formStatus === "submitting" ? "Sending..." : "Book a Consultation"}
+                  {formStatus === "submitting"
+                    ? "Sending..."
+                    : "Book a Consultation"}
                 </button>
               </form>
             </div>

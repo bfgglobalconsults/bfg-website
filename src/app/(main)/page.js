@@ -313,7 +313,7 @@ export default function Main() {
                 <Link href="/industry/projects">
                   <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
                     <span className="text-white font-semibold">
-                      View All Services
+                      Explore Our Projects
                     </span>
                     <span>
                       <svg

@@ -391,14 +391,21 @@
                   pleasure at every turn.
                 </p>
 
-                <Link href="/solutions">
-                  <button className="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-[#E26015] transition-colors inline-flex items-center gap-2">
-                    View All Services
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white">
-                      <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                    </svg>
-                  </button>
-                </Link>
+                 <button
+                onClick={() => setIsCalendlyOpen(true)}
+                className="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-[#E26015] transition-colors inline-flex items-center gap-2"
+              >
+                Book a Quick Call
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="white"
+                >
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </button>
               </motion.div>
 
               {/* Right - Service Cards Grid */}
