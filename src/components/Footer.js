@@ -235,7 +235,7 @@ const Footer = () => {
                 <Link href="/program/women-tech"><p className="my-2 text-sm hover:text-[#E26015]">Women in Tech</p></Link>
 
                 <Link href="/program/sme-klinic"><p className="my-2 text-sm hover:text-[#E26015]">SME Klinic</p></Link>
-                <Link href="/program/tech-achievers"><p className="my-2 text-sm hover:text-[#E26015]">Tech Achievers Graduate Scheme</p></Link> 
+                <Link href="/program/tech-achievers"><p className="my-2 text-sm hover:text-[#E26015]">Tech Achievers Accelerator</p></Link> 
                                <Link href="/program/Data2Deals"><p className="my-2 text-sm hover:text-[#E26015]">Data2Deals</p></Link> 
 
               </div>
