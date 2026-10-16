@@ -222,7 +222,7 @@ const Page = () => {
                 We don't just deliver services; we co-create solutions tailored to your goals. Whether you're an enterprise client, a government, or a multilateral organisation, our firm exists to drive your growth agenda, amplify impact, and turn challenges into breakthroughs.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-               As you explore our solutions and <Link href="/insight/case-study">case studies </Link>, we thank you for your time and interest. We look forward to partnering with you in creating a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
+               As you explore our solutions and <Link href="/insight/case-study" className="text-black">case studies </Link>, we thank you for your time and interest. We look forward to partnering with you in creating a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
               </p>
               {/* <p className=" text-[#999] my-5 text-lg lg:text-xl">
                 As you explore our business page, we thank you for your time and interest. We look forward to partnering with you to create a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
