@@ -213,20 +213,20 @@ const Page = () => {
                 Transforming Africa&apos;s Potential into Growth since 2018
               </h3>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-               As the Managing Partner and CEO of BFG Global Consulting Limited, it is my pleasure to welcome you and introduce our firm, a company driven by a passion for growth, innovation, and transformation. At BFG Consults, we are committed to partnering with individuals, startups, SMEs, governments and multilateral organisations to secure industry relevance.
-              </p>
-              <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                In a world marked by constant change and digital disruption, we understand the unique challenges and opportunities faced by private, public, and multilateral organisations seeking to scale impact, drive sustainability, and shape Africa&apos;s future. Our mission is to be the trusted partner that helps you seize these opportunities on your projects. 
+              At BFG Consults, we partner with individuals, startups, SMEs, governments and multilateral organisations in securing their industry relevance. In a world of constant change and digital disruption, we understand the unique challenges and opportunities for private, public, and multilateral organisations that want to scale impact, drive sustainability, and shape Africa's future. Our mission is to be the trusted partner that helps you seize these opportunities on your projects.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
                 We offer a unique blend of consulting and technology solutions, built around data-driven market research, digital software, strategy intelligence and workforce training. This integrated approach empowers our clients across Africa and in key global markets to scale their relevance, build capacity, and unlock new value in competitive environments.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                At BFG, we don't just deliver services, we co-create solutions tailored to your goals. Whether you're an enterprise clients, governments, or multilateral organisations, our team is equipped to drive your growth agenda, amplify impact, and turn challenges into breakthroughs.
+                We don't just deliver services; we co-create solutions tailored to your goals. Whether you're an enterprise client, a government, or a multilateral organisation, our firm exists to drive your growth agenda, amplify impact, and turn challenges into breakthroughs.
               </p>
               <p className=" text-[#999] my-5 text-lg lg:text-xl">
-                As you explore our business page, we thank you for your time and interest. We look forward to partnering with you to create a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
+               As you explore our solutions and <Link href="/insight/case-study">case studies </Link>, we thank you for your time and interest. We look forward to partnering with you in creating a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
               </p>
+              {/* <p className=" text-[#999] my-5 text-lg lg:text-xl">
+                As you explore our business page, we thank you for your time and interest. We look forward to partnering with you to create a future defined by sustainable growth, innovation, and industry relevance—across borders and beyond limits.
+              </p> */}
             </div>
             <div className="flex flex-col">
               <div className="">
