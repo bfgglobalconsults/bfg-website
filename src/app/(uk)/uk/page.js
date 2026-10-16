@@ -744,7 +744,7 @@ export default function UKPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#333] mb-1">Call Us</p>
-                    <p className="text-gray-600">(+44) 7551 107100</p>
+                    <p className="text-gray-600">(+44) 7492 603114</p>
                   </div>
                 </div>
 
@@ -770,7 +770,7 @@ export default function UKPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-[#333] mb-1">Visit Us</p>
-                    <p className="text-gray-600">London, United Kingdom</p>
+                    <p className="text-gray-600">BFG Place, 12 Oxford Street, Margate, Kent CT91TD, United Kingdom</p>
                   </div>
                 </div>
               </div>

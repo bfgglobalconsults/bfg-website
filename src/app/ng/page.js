@@ -833,7 +833,7 @@
                     </div>
                     <div>
                       <p className="font-semibold text-[#333] mb-1">Visit Us</p>
-                      <p className="text-gray-600">Abuja, Nigeria</p>
+                      <p className="text-gray-600">BFG Place, Road B3, House 6, Pentville Estate, Lokogoma, FCT, Abuja</p>
                     </div>
                   </div>
                 </div>
