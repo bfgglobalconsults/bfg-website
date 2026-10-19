@@ -93,7 +93,7 @@ const Page = () => {
         {/* Banner image section */}
         <div className="relative w-full h-[200px] lg:h-[400px] bg-cover bg-top">
           <Image
-            src="/assets/team-image-banner.png"
+            src="/assets/team-image-banner.jpeg"
             alt="about-banner"
             width={1200}
             height={400}

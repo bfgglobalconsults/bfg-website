@@ -209,7 +209,7 @@ export default function Main() {
     },
     {
       id: 4,
-      image: "/assets/training-case.jpeg",
+      image: "/assets/training-case.png",
       img_name: "banner",
       title: "Training & Development",
       link: "/insight/case-study/training",
@@ -899,7 +899,7 @@ export default function Main() {
           <div className="w-full flex flex-col lg:flex-row gap-2 my-4">
             <div className="w-[100%]  xl:w-[50%]">
               <Image
-                src="/assets/middle-content-banner.png"
+                src="/assets/middle-content-banner.jpeg"
                 alt="content-img"
                 width={600}
                 height={400}
