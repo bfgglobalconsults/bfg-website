@@ -209,7 +209,7 @@ export default function Main() {
     },
     {
       id: 4,
-      image: "/assets/training-case.png",
+      image: "/assets/training-case.jpeg",
       img_name: "banner",
       title: "Training & Development",
       link: "/insight/case-study/training",

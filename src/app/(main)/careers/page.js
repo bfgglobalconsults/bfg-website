@@ -24,7 +24,9 @@ const page = () => {
           <Image
             src="/assets/career-banners-new.jpg"
             alt="about-banner"
-            className="w-full h-full object-cover rounded-3xl"
+              width={1200}
+            height={400}
+            className="w-full h-full object-cover rounded-3xl object-top"
           />
         </div>
         <hr className="my-3" />
