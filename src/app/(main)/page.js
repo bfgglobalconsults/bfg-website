@@ -116,7 +116,7 @@ export default function Main() {
       description:
         "Transforming travel, BFG helps tourism companies navigate change, enhance clients experiences, & drive innovation.",
       imageAlt: "slider3-img",
-      imageSrc: "/assets/hospitality.jpg",
+      imageSrc: "/assets/hospitality.webp",
       readMore: "/industry/industries/hospitality",
     },
     {
@@ -313,7 +313,7 @@ export default function Main() {
                 <Link href="/industry/projects">
                   <button className="bg-black hover:bg-[#e26015] flex gap-2 p-3 rounded-2xl my-3">
                     <span className="text-white font-semibold">
-                      Explore Our Projects
+                      Client Project Stories
                     </span>
                     <span>
                       <svg
