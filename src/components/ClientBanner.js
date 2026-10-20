@@ -33,7 +33,7 @@ const ClientBanner = () => {
             </div>
           </div>
           <div className="w-full relative">
-            <Image src="/assets/video-img.jpeg" alt="video-img" width={1200} height={600} className="w-full" />
+            <Image src="/assets/video-img.jpeg" alt="video-img" width={1200} height={600} className="w-full rounded-xl" />
             <button
               className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-xl font-bold rounded-xl transition hover:bg-opacity-60"
               onClick={() => setShowVideo(true)}
