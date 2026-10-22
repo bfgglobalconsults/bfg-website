@@ -297,7 +297,7 @@ export default function Main() {
 
         <div className="w-full h-full lg:h-[800px] flex flex-col lg:flex-row items-center flex-wrap">
           <div className="w-[100%] h-full xl:w-[40%] relative lg:flex lg:items-center lg:justify-center">
-            <SlideIn>
+            <SlideIn className="relative z-10">
               <div className="p-12">
                 <span className="p-3 rounded-3xl border-2 border-[#E26015] font-semibold">
                   Our Solution
@@ -330,7 +330,7 @@ export default function Main() {
                 </Link>
               </div>
             </SlideIn>
-            <div className="absolute bottom-10 left-0 w-[400px] h-[200px] bg-no-repeat bg-cover bg-center bg-[url('/assets/bottom-ring.png')]"></div>
+            <div className="absolute bottom-10 left-0 w-[400px] h-[200px] pointer-events-none bg-no-repeat bg-cover bg-center bg-[url('/assets/bottom-ring.png')]"></div>
           </div>
 
           <div className="p-2 w-[100%] xl:w-[60%] xl:h-[800px] relative bg-[url('/assets/middle-banner.png')] bg-no-repeat">
