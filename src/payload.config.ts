@@ -27,6 +27,10 @@ export default buildConfig({
     user: Users.slug,
     theme: "light", // Options: 'light', 'dark'
   },
+  routes: {
+    admin: "/admin",
+    api: "/admin/api",
+  },
   collections: [
     Users,
     Media,
