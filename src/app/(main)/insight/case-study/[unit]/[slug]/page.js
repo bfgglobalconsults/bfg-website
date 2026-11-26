@@ -19,7 +19,7 @@ export default function CaseStudyDetail({ params }) {
     const fetchCaseStudy = async () => {
       try {
         const response = await fetch(
-          `/api/case-studies?slug=${unwrappedParams.slug}&unit=${unwrappedParams.unit}&region=${region}`
+          `/api/case-studies-custom?slug=${unwrappedParams.slug}&unit=${unwrappedParams.unit}&region=${region}`,
         );
         const data = await response.json();
 
@@ -48,7 +48,7 @@ export default function CaseStudyDetail({ params }) {
     notFound();
   }
 
-  const basePath = region === 'uk' ? '/uk' : '';
+  const basePath = region === "uk" ? "/uk" : "";
 
   return (
     <div className="lg:mt-[150px] p-10">
@@ -109,11 +109,14 @@ export default function CaseStudyDetail({ params }) {
               <div className="flex justify-between">
                 <p className="text-[#999]">Date</p>
                 <p className="text-[#999]">
-                  {new Date(caseStudy.publishedDate).toLocaleDateString("en-US", {
-                    month: "short",
-                    day: "2-digit",
-                    year: "numeric",
-                  })}
+                  {new Date(caseStudy.publishedDate).toLocaleDateString(
+                    "en-US",
+                    {
+                      month: "short",
+                      day: "2-digit",
+                      year: "numeric",
+                    },
+                  )}
                 </p>
               </div>
               <div className="flex justify-between">
@@ -127,7 +130,10 @@ export default function CaseStudyDetail({ params }) {
               <div className="flex justify-between">
                 <p className="text-[#999]">Author</p>
                 <p className="text-[#999]">
-                  {caseStudy.author?.name || caseStudy.author?.email || "BFG Product"}<br /> Team
+                  {caseStudy.author?.name ||
+                    caseStudy.author?.email ||
+                    "BFG Product"}
+                  <br /> Team
                 </p>
               </div>
             </div>
@@ -160,9 +166,7 @@ export default function CaseStudyDetail({ params }) {
           </h3>
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
-              <p className="text-lg text-[#9b8b8b]">
-                {caseStudy.approach}
-              </p>
+              <p className="text-lg text-[#9b8b8b]">{caseStudy.approach}</p>
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>
@@ -179,7 +183,9 @@ export default function CaseStudyDetail({ params }) {
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <div
                 className="prose prose-lg max-w-none text-[#9b8b8b]"
-                dangerouslySetInnerHTML={{ __html: lexicalToHtml(caseStudy.solution) }}
+                dangerouslySetInnerHTML={{
+                  __html: lexicalToHtml(caseStudy.solution),
+                }}
               />
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>

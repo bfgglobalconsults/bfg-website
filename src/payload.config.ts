@@ -29,7 +29,7 @@ export default buildConfig({
   },
   routes: {
     admin: "/admin",
-    api: "/admin/api",
+    api: "/api",
   },
   collections: [
     Users,
