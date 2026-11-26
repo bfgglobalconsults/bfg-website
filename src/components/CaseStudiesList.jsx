@@ -15,7 +15,7 @@ export default function CaseStudiesList({ unit }) {
     const fetchCaseStudies = async () => {
       try {
         const response = await fetch(
-          `/api/case-studies?unit=${unit}&region=${region}`
+          `/api/case-studies-custom?unit=${unit}&region=${region}`
         );
         const data = await response.json();
         setCaseStudies(data.docs || []);
