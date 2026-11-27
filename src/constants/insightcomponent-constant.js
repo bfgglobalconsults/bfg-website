@@ -12,7 +12,7 @@ export const insight_links = [
       {
         id: 3,
         label: "Case Studies",
-        link: "/insight/case-study",
+        link: "/industry/projects",
       },
       {
         id: 4,
