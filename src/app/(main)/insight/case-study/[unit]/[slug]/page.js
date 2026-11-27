@@ -136,6 +136,29 @@ export default function CaseStudyDetail({ params }) {
                   <br /> Team
                 </p>
               </div>
+
+              {/* Read the Report Button */}
+              {caseStudy.reportUrl && (
+                <div className="mt-6">
+                  <a
+                    href={caseStudy.reportUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between gap-2 bg-[#E26015] text-white p-3 rounded-lg hover:bg-[#333] transition-colors duration-300"
+                  >
+                    <span className="font-semibold">Read the report</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                    >
+                      <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
+                    </svg>
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -182,7 +205,7 @@ export default function CaseStudyDetail({ params }) {
           <div className="w-full flex gap-3">
             <div className="w-[100%] lg:w-[80%] bg-[#FCFCFD] border-2 border-[#F7F7F8] rounded-3xl p-5 lg:p-10">
               <div
-                className="prose prose-lg max-w-none text-[#9b8b8b]"
+                className="prose prose-lg max-w-none text-lg text-[#9b8b8b]"
                 dangerouslySetInnerHTML={{
                   __html: lexicalToHtml(caseStudy.solution),
                 }}
@@ -190,6 +213,29 @@ export default function CaseStudyDetail({ params }) {
             </div>
             <div className="hidden lg:block lg:w-[20%]"></div>
           </div>
+
+          {/* Read the Report Button - After Solution (Left aligned) */}
+          {caseStudy.reportUrl && (
+            <div className="mt-6 w-full lg:w-[80%]">
+              <a
+                href={caseStudy.reportUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-between gap-3 bg-[#E26015] text-white px-6 py-4 rounded-lg hover:bg-[#333] transition-colors duration-300"
+              >
+                <span className="font-semibold text-lg">Read the report</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                >
+                  <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
+                </svg>
+              </a>
+            </div>
+          )}
         </div>
       )}
     </div>

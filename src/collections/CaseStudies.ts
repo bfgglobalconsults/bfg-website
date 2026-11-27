@@ -123,7 +123,13 @@ export const CaseStudies: CollectionConfig = {
         description: "Author of this case study",
       },
     },
+    {
+      name: "reportUrl",
+      type: "text",
+      admin: {
+        description: "External link to the full report (optional)",
+        placeholder: "https://example.com/report.pdf",
+      },
+    },
   ],
 };
-
-
