@@ -17,7 +17,7 @@ export const about_links = [
       {
         id: 4,
         label: "Projects Executed",
-        link: "/industry/projects",
+        link: "/insight/case-study",
       },
       {
         id: 5,
